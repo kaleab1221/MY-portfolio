@@ -704,16 +704,6 @@ function initThemeEngine() {
       const newTheme = (currentTheme === 'dark') ? 'light' : 'dark';
       applyTheme(newTheme);
       localStorage.setItem('kb_theme', newTheme);
-
-      if (typeof window.showToast === 'function') {
-        const lang = (window.getCurrentLang && window.getCurrentLang()) || 'en';
-        const isDark = (newTheme === 'dark');
-        const title = isDark ? (lang === 'am' ? 'ጨለማ ገጽታ' : 'DARK MODE') : (lang === 'am' ? 'ብርሃን ገጽታ' : 'LIGHT MODE');
-        const msg = isDark
-          ? (lang === 'am' ? 'የጨለማ ገጽታ በርቷል (Obsidian Navy)' : 'Obsidian Navy Dark Mode Active')
-          : (lang === 'am' ? 'የብርሃን ገጽታ በርቷል (Pure White)' : 'Pure White Light Mode Active');
-        window.showToast(title, msg, isDark ? '🌙' : '☀️');
-      }
     });
   });
 
@@ -880,14 +870,6 @@ function initLanguageEngine() {
       const current = window.getCurrentLang();
       const nextLang = (current === 'am') ? 'en' : 'am';
       applyLanguage(nextLang);
-
-      if (typeof window.showToast === 'function') {
-        if (nextLang === 'am') {
-          window.showToast('ቋንቋ / LANGUAGE', 'አማርኛ ተመርጧል (Amharic Active)', '🇪🇹');
-        } else {
-          window.showToast('LANGUAGE / ቋንቋ', 'English Language Active', '🌐');
-        }
-      }
     });
   });
 
