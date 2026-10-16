@@ -761,7 +761,8 @@ const KB_I18N = {
     // Practice Filter Pills
     filter_all: "All Works (11)",
     filter_arch: "Spatial Architecture (05)",
-    filter_brand: "Brand & Graphic Design (06)",
+    filter_vis: "3D Visualization (05)",
+    filter_brand: "Brand Identity (06)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -824,7 +825,8 @@ const KB_I18N = {
     // Practice Filter Pills
     filter_all: "ሁሉም ስራዎች (11)",
     filter_arch: "አርክቴክቸር (05)",
-    filter_brand: "ብራንድ እና ግራፊክ ዲዛይን (06)",
+    filter_vis: "3D ቪዥዋላይዜሽን (05)",
+    filter_brand: "የብራንድ መለያ (06)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
@@ -945,18 +947,61 @@ function initProjectsArchive() {
 
   render();
 
+  // FLIP Layout Animation Engine: First, Last, Invert, Play
   function transitionFilter(updateFn) {
-    container.classList.add('filtering-out');
-    setTimeout(() => {
-      updateFn();
-      render();
-      container.classList.remove('filtering-out');
-      const cards = container.querySelectorAll('.simplified-project-card');
-      cards.forEach((c, idx) => {
-        c.classList.add('filter-entering');
-        c.style.animationDelay = `${(idx * 0.03).toFixed(2)}s`;
+    const cards = Array.from(container.querySelectorAll('.simplified-project-card'));
+    const firstPositions = new Map();
+
+    cards.forEach(card => {
+      const id = card.getAttribute('data-id');
+      if (id) {
+        firstPositions.set(id, card.getBoundingClientRect());
+      }
+    });
+
+    updateFn();
+    render();
+
+    const newCards = Array.from(container.querySelectorAll('.simplified-project-card'));
+
+    newCards.forEach(card => {
+      const id = card.getAttribute('data-id');
+      const firstRect = firstPositions.get(id);
+
+      if (firstRect) {
+        const lastRect = card.getBoundingClientRect();
+        const dx = firstRect.left - lastRect.left;
+        const dy = firstRect.top - lastRect.top;
+
+        if (dx !== 0 || dy !== 0) {
+          card.style.transform = `translate(${dx}px, ${dy}px)`;
+          card.style.transition = 'none';
+        }
+      } else {
+        card.style.opacity = '0';
+        card.style.transform = 'scale(0.94)';
+        card.style.transition = 'none';
+      }
+    });
+
+    // Force layout reflow
+    void container.offsetHeight;
+
+    requestAnimationFrame(() => {
+      newCards.forEach(card => {
+        card.style.transition = 'transform 350ms cubic-bezier(0.22, 1, 0.36, 1), opacity 350ms cubic-bezier(0.22, 1, 0.36, 1)';
+        card.style.transform = 'translate(0, 0) scale(1)';
+        card.style.opacity = '1';
       });
-    }, 150);
+
+      setTimeout(() => {
+        newCards.forEach(card => {
+          card.style.transition = '';
+          card.style.transform = '';
+          card.style.opacity = '';
+        });
+      }, 370);
+    });
   }
 
   practicePills.forEach(pill => {
@@ -985,7 +1030,9 @@ function initProjectsArchive() {
   function render() {
     let filtered = KB_PROJECTS;
 
-    if (activePractice !== 'all') {
+    if (activePractice === 'visualization') {
+      filtered = filtered.filter(p => p.practice === 'architecture' || (p.software && p.software.some(s => /D5|Rhino|Blender|Lumion/i.test(s))));
+    } else if (activePractice !== 'all') {
       filtered = filtered.filter(p => p.practice === activePractice);
     }
 
@@ -1001,6 +1048,7 @@ function initProjectsArchive() {
       const currentIdx = projectSlideIndexes[item.id] || 0;
       const currentSlide = item.slides[currentIdx] || item.slides[0];
       const totalSlides = item.slides.length;
+      const primaryTool = (item.software && item.software.length) ? item.software.slice(0, 2).join(' + ') : 'Revit + D5';
 
       return `
       <!-- SIMPLIFIED PROJECT CARD: [${item.gridRef}] -->
@@ -1036,6 +1084,15 @@ function initProjectsArchive() {
                 </span>
               </div>
             </div>
+          </div>
+
+          <!-- Bottom Metadata Reveal Bar on Hover (Year • Typology • Primary Tool) -->
+          <div class="project-bottom-meta-bar font-mono" aria-hidden="true">
+            <span class="meta-bar-year">${item.year}</span>
+            <span class="meta-bar-sep">•</span>
+            <span class="meta-bar-typology">${item.service || item.practiceLabel}</span>
+            <span class="meta-bar-sep">•</span>
+            <span class="meta-bar-tool">${primaryTool}</span>
           </div>
 
           <!-- Slide Counter Badge (01 / 05) -->
@@ -1280,9 +1337,12 @@ function initMoveableCardTilt() {
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
 
-      // Subtle architectural 3D tilt (max 3.2 degrees)
-      const rotateX = ((y - centerY) / centerY) * -3.2;
-      const rotateY = ((x - centerX) / centerX) * 3.2;
+      // 3D perspective tilt: capped at 6.0deg for Hero Profile Card, 3.2deg for project cards
+      const isHero = card.id === 'hero-emblem-card' || card.classList.contains('hero-emblem-card');
+      const maxAngle = isHero ? 6.0 : 3.2;
+
+      const rotateX = ((y - centerY) / centerY) * -maxAngle;
+      const rotateY = ((x - centerX) / centerX) * maxAngle;
 
       card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
 
@@ -1304,49 +1364,19 @@ function initMoveableCardTilt() {
 }
 
 /* ==========================================================================
-   5. Devani-Style Core Skills Interactive Animations & Count-Up Engine
+   5. Bento Skill Cards Specular Radial Glow & Workflow Interaction Engine
    ========================================================================== */
 function initSkillsAnimation() {
-  const skillsSection = document.getElementById('skills');
-  if (!skillsSection) return;
-
-  const skillBars = document.querySelectorAll('.skill-progress-fill');
-  let animated = false;
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting && !animated) {
-        animated = true;
-        animateAllBars();
-      }
+  const bentoCards = document.querySelectorAll('.bento-skill-card');
+  bentoCards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      card.style.setProperty('--mouse-x', `${x}px`);
+      card.style.setProperty('--mouse-y', `${y}px`);
     });
-  }, { threshold: 0.2 });
-
-  observer.observe(skillsSection);
-
-  function animateAllBars() {
-    skillBars.forEach(bar => {
-      const targetPercent = parseInt(bar.getAttribute('data-percent'), 10) || 0;
-      const countEl = bar.closest('.skill-progress-row')?.querySelector('.skill-percent-number');
-
-      // Expand progress bar width
-      bar.style.width = `${targetPercent}%`;
-
-      // Animate percentage count-up
-      if (countEl) {
-        let current = 0;
-        const stepTime = Math.max(10, Math.floor(1200 / targetPercent));
-        const timer = setInterval(() => {
-          current += 1;
-          countEl.textContent = `${current}%`;
-          if (current >= targetPercent) {
-            countEl.textContent = `${targetPercent}%`;
-            clearInterval(timer);
-          }
-        }, stepTime);
-      }
-    });
-  }
+  });
 }
 
 /* ==========================================================================
@@ -1388,6 +1418,37 @@ window.openCaseStudy = function(projectId, triggerEl) {
   document.getElementById('modal-practice-tag').textContent = `${project.service || project.practiceLabel} // 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY [${project.gridRef}]`;
 
   const softwareList = Array.isArray(project.software) ? project.software : [project.medium];
+  const isArch = project.practice === 'architecture';
+  const afterSlide = project.slides[0];
+  const beforeSlide = project.slides[1] || project.slides[0];
+
+  const beforeAfterMarkup = isArch ? `
+    <!-- 03.5 // INTERACTIVE BEFORE/AFTER SPLIT SLIDER FOR ARCHITECTURE -->
+    <div class="modal-before-after-module">
+      <div class="modal-block-tag font-mono">✦ DUAL-PHASE ARCHITECTURAL STUDY // DRAGGABLE SPLIT SLIDER</div>
+      <div class="modal-ba-header">
+        <div class="font-mono text-gold" style="font-size: 0.8rem; font-weight: 700;">
+          COMPARE: TECTONIC / MASSING STUDY (LEFT) ↔ FINAL D5 PHOTOREALISTIC RENDER (RIGHT)
+        </div>
+        <div class="font-mono" style="font-size: 0.72rem; color: var(--text-secondary);">
+          DRAG KNOB OR CLICK ANYWHERE TO REVEAL
+        </div>
+      </div>
+      <div class="ba-slider-container" id="modal-ba-slider" style="--slider-pct: 50%;">
+        <div class="ba-badge ba-badge-left font-mono">01 // MASSING / WIREFRAME</div>
+        <div class="ba-badge ba-badge-right font-mono">02 // FINAL D5 RENDER</div>
+        <img src="${afterSlide.url}" alt="${project.title} - Final Photorealistic Render" class="ba-img-after">
+        <img src="${beforeSlide.url}" alt="${project.title} - Tectonic Massing Study" class="ba-img-before">
+        <div class="ba-slider-handle">
+          <div class="ba-handle-line"></div>
+          <div class="ba-handle-knob font-mono" aria-label="Drag to compare before and after">
+            <span>‹</span>
+            <span>›</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  ` : '';
 
   body.innerHTML = `
     <!-- Case Study Header Meta -->
@@ -1452,6 +1513,8 @@ window.openCaseStudy = function(projectId, triggerEl) {
       </div>
     </div>
 
+    ${beforeAfterMarkup}
+
     <!-- 04 & 05 // CHALLENGE & SOLUTION SPLIT CARDS -->
     <div class="modal-challenge-solution-grid">
       <!-- 04 // CHALLENGE -->
@@ -1503,7 +1566,56 @@ window.openCaseStudy = function(projectId, triggerEl) {
 
   overlay.classList.add('active');
   document.body.style.overflow = 'hidden';
+
+  if (isArch) {
+    const sliderEl = document.getElementById('modal-ba-slider');
+    if (sliderEl) {
+      initBeforeAfterSlider(sliderEl);
+    }
+  }
 };
+
+function initBeforeAfterSlider(container) {
+  if (!container) return;
+  let isDragging = false;
+
+  function updateSlider(clientX) {
+    const rect = container.getBoundingClientRect();
+    const x = clientX - rect.left;
+    const pct = Math.max(0, Math.min(100, (x / rect.width) * 100));
+    container.style.setProperty('--slider-pct', `${pct.toFixed(2)}%`);
+  }
+
+  container.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    updateSlider(e.clientX);
+  });
+
+  window.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    updateSlider(e.clientX);
+  });
+
+  window.addEventListener('mouseup', () => {
+    isDragging = false;
+  });
+
+  container.addEventListener('touchstart', (e) => {
+    if (e.touches && e.touches[0]) {
+      isDragging = true;
+      updateSlider(e.touches[0].clientX);
+    }
+  }, { passive: true });
+
+  window.addEventListener('touchmove', (e) => {
+    if (!isDragging || !e.touches || !e.touches[0]) return;
+    updateSlider(e.touches[0].clientX);
+  }, { passive: true });
+
+  window.addEventListener('touchend', () => {
+    isDragging = false;
+  });
+}
 
 window.selectModalSlide = function(url, caption, btnEl, fit, bg) {
   const heroImg = document.getElementById('modal-active-img');

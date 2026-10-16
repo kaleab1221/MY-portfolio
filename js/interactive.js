@@ -226,9 +226,11 @@
         }
       }
 
-      // Show/hide or pulse HUD
+      // Show/hide floating HUD dock: only appears after scrolling past the Hero section
       if (hud) {
-        if (scrollTop > 180) {
+        const heroEl = document.getElementById('about');
+        const heroThreshold = heroEl ? (heroEl.offsetTop + heroEl.offsetHeight * 0.7) : 480;
+        if (scrollTop > heroThreshold) {
           hud.classList.add('visible');
         } else {
           hud.classList.remove('visible');

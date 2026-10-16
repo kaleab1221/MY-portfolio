@@ -352,16 +352,17 @@
   </aside>
 
   <!-- ========================================================================
-       PRACTICE & TYPOLOGY NAVIGATOR
-       ✏️ NOTE: Clicking these pills filters all 11 projects dynamically via "js/main.js"
+       PRACTICE & TYPOLOGY NAVIGATOR (Sticky Glassmorphic Filter Bar)
+       ✏️ NOTE: Clicking these pills filters all 11 projects dynamically with smooth FLIP transitions
        ======================================================================== -->
-  <nav class="practice-navigator-bar" aria-label="Practice Categories">
+  <nav class="practice-navigator-bar sticky-filter-bar" aria-label="Practice Categories">
     <div class="container navigator-flex">
       <!-- Primary Practice Filter Pills -->
       <div class="practice-toggle-pills" role="tablist">
         <button class="practice-pill active" data-practice="all" data-i18n="filter_all">All Works (11)</button>
         <button class="practice-pill" data-practice="architecture" data-i18n="filter_arch">Spatial Architecture (05)</button>
-        <button class="practice-pill" data-practice="graphic" data-i18n="filter_brand">Brand &amp; Graphic Design (06)</button>
+        <button class="practice-pill" data-practice="visualization" data-i18n="filter_vis">3D Visualization (05)</button>
+        <button class="practice-pill" data-practice="graphic" data-i18n="filter_brand">Brand Identity (06)</button>
       </div>
 
       <!-- Sub-Category Typology Filter Pills -->
@@ -494,144 +495,263 @@
         </article>
       </div>
 
-      <!-- PART B: Software Proficiency (8 Tools) & Languages (2 Tongues) with Interactive Progress Bars -->
-      <div class="skills-analytics-grid">
+      <!-- PART B: Interactive Bento Skill Cards (Grouped by Workflow with Specular Radial Glow & Deliverable Pills) -->
+      <div class="bento-skills-container">
         
-        <!-- Left Column: Software Skills (8 Items) -->
-        <div class="skill-analytics-box">
-          <div class="analytics-box-header">
-            <div class="analytics-box-tag">TECHNICAL COMPUTING // 8 INDUSTRY TOOLS</div>
-            <h3 class="analytics-box-title">Software Skills</h3>
+        <!-- Workflow 01: BIM & Spatial Modeling -->
+        <div class="bento-workflow-group">
+          <div class="bento-group-header">
+            <div class="bento-group-tag font-mono">01 // SPATIAL ARCHITECTURE WORKFLOW</div>
+            <h3 class="bento-group-title">BIM &amp; Spatial Modeling</h3>
           </div>
+          <div class="bento-cards-subgrid">
+            <!-- Revit -->
+            <article class="bento-skill-card" data-tool="revit">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">BIM ARCHITECTURE</span>
+                <span class="bento-version font-mono">Autodesk</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">🏛️</div>
+                <h4 class="bento-tool-name">Autodesk Revit</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">BIM Documentation &amp; Tectonic Detailing</span>
+              </div>
+            </article>
 
-          <div class="software-skills-subgrid">
-            <!-- AutoCAD: 80% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>AutoCAD</span>
-                <span class="skill-percent-number">0%</span>
+            <!-- AutoCAD -->
+            <article class="bento-skill-card" data-tool="autocad">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">WORKING DRAWINGS</span>
+                <span class="bento-version font-mono">Autodesk</span>
               </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="80"></div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">📐</div>
+                <h4 class="bento-tool-name">AutoCAD</h4>
               </div>
-            </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Working Drawings &amp; Municipal Permitting</span>
+              </div>
+            </article>
 
-            <!-- Revit: 85% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>Revit</span>
-                <span class="skill-percent-number">0%</span>
+            <!-- SketchUp -->
+            <article class="bento-skill-card" data-tool="sketchup">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">MASSING &amp; SCHEMATICS</span>
+                <span class="bento-version font-mono">Trimble</span>
               </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="85"></div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">📦</div>
+                <h4 class="bento-tool-name">SketchUp Pro</h4>
               </div>
-            </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Parametric Massing &amp; Volume Studies</span>
+              </div>
+            </article>
 
-            <!-- SketchUp: 70% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>SketchUp</span>
-                <span class="skill-percent-number">0%</span>
+            <!-- Rhino 3D -->
+            <article class="bento-skill-card" data-tool="rhino">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">NURBS FORM</span>
+                <span class="bento-version font-mono">McNeel</span>
               </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="70"></div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">🦏</div>
+                <h4 class="bento-tool-name">Rhino 3D</h4>
               </div>
-            </div>
-
-            <!-- D5 Render: 90% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>D5 Render</span>
-                <span class="skill-percent-number">0%</span>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">NURBS Form Generation &amp; Complex Envelopes</span>
               </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="90"></div>
-              </div>
-            </div>
-
-            <!-- Photoshop: 85% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>Photoshop</span>
-                <span class="skill-percent-number">0%</span>
-              </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="85"></div>
-              </div>
-            </div>
-
-            <!-- Illustrator: 83% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>Illustrator</span>
-                <span class="skill-percent-number">0%</span>
-              </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="83"></div>
-              </div>
-            </div>
-
-            <!-- InDesign: 65% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>InDesign</span>
-                <span class="skill-percent-number">0%</span>
-              </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="65"></div>
-              </div>
-            </div>
-
-            <!-- Canva: 95% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>Canva</span>
-                <span class="skill-percent-number">0%</span>
-              </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="95"></div>
-              </div>
-            </div>
+            </article>
           </div>
         </div>
 
-        <!-- Right Column: Languages & Multilingual Capacity -->
-        <div class="skill-analytics-box">
-          <div class="analytics-box-header">
-            <div class="analytics-box-tag">FLUENCY &amp; REGIONAL CONTEXT</div>
-            <h3 class="analytics-box-title">Languages</h3>
+        <!-- Workflow 02: Photorealistic CGI & Daylight Simulation -->
+        <div class="bento-workflow-group">
+          <div class="bento-group-header">
+            <div class="bento-group-tag font-mono">02 // REAL-TIME RENDERING &amp; CGI</div>
+            <h3 class="bento-group-title">Photorealistic CGI &amp; Daylight Simulation</h3>
           </div>
+          <div class="bento-cards-subgrid">
+            <!-- D5 Render -->
+            <article class="bento-skill-card bento-card-featured" data-tool="d5">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono text-gold">PRIMARY CGI ENGINE</span>
+                <span class="bento-version font-mono">RTX Real-Time</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">✨</div>
+                <h4 class="bento-tool-name">D5 Render</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Daylight &amp; Atmospheric Simulation</span>
+              </div>
+            </article>
 
-          <div class="languages-list-wrap">
-            <!-- Amharic: 98% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>Amharic (Native Proficiency)</span>
-                <span class="skill-percent-number">0%</span>
+            <!-- Lumion / V-Ray -->
+            <article class="bento-skill-card" data-tool="lumion">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">ENVIRONMENTAL CGI</span>
+                <span class="bento-version font-mono">Cinematic</span>
               </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="98"></div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">🎬</div>
+                <h4 class="bento-tool-name">Lumion &amp; V-Ray</h4>
               </div>
-            </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Cinematic Flythroughs &amp; Environmental Context</span>
+              </div>
+            </article>
 
-            <!-- English: 70% -->
-            <div class="skill-progress-row">
-              <div class="skill-label-meta">
-                <span>English (Professional Working)</span>
-                <span class="skill-percent-number">0%</span>
+            <!-- Blender -->
+            <article class="bento-skill-card" data-tool="blender">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">3D BRAND ASSETS</span>
+                <span class="bento-version font-mono">Cycles</span>
               </div>
-              <div class="skill-progress-track">
-                <div class="skill-progress-fill" data-percent="70"></div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">🔮</div>
+                <h4 class="bento-tool-name">Blender 3D</h4>
               </div>
-            </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">3D Brand Objects &amp; Physical Asset Modeling</span>
+              </div>
+            </article>
           </div>
+        </div>
 
-          <!-- Studio Multilingual Communication Note -->
-          <div class="multilingual-note-box">
-            <div class="multilingual-note-title font-mono">LEADERSHIP &amp; COLLABORATION</div>
-            <p class="multilingual-note-text">
-              Multilingual fluency facilitating seamless technical coordination with construction teams on site, academic peers at Wolkite University, and commercial corporate clients across Ethiopia and worldwide.
-            </p>
+        <!-- Workflow 03: Brand Architecture & Motion Systems -->
+        <div class="bento-workflow-group">
+          <div class="bento-group-header">
+            <div class="bento-group-tag font-mono">03 // BRAND SYSTEMS &amp; EDITORIAL</div>
+            <h3 class="bento-group-title">Brand Architecture &amp; Motion Systems</h3>
+          </div>
+          <div class="bento-cards-subgrid">
+            <!-- Illustrator -->
+            <article class="bento-skill-card" data-tool="illustrator">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono text-gold">VECTOR CORE</span>
+                <span class="bento-version font-mono">Adobe CC</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">✒️</div>
+                <h4 class="bento-tool-name">Adobe Illustrator</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Vector Monograms &amp; Geometric Grid Geometry</span>
+              </div>
+            </article>
+
+            <!-- Photoshop -->
+            <article class="bento-skill-card" data-tool="photoshop">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">POST-PRODUCTION</span>
+                <span class="bento-version font-mono">Adobe CC</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">🎨</div>
+                <h4 class="bento-tool-name">Adobe Photoshop</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Texture Compositing &amp; Matte Painting</span>
+              </div>
+            </article>
+
+            <!-- InDesign -->
+            <article class="bento-skill-card" data-tool="indesign">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">EDITORIAL DOSSIERS</span>
+                <span class="bento-version font-mono">Adobe CC</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">📖</div>
+                <h4 class="bento-tool-name">Adobe InDesign</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Architectural Dossiers &amp; Brand Guidelines</span>
+              </div>
+            </article>
+
+            <!-- Canva -->
+            <article class="bento-skill-card" data-tool="canva">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono">RAPID COLLATERAL</span>
+                <span class="bento-version font-mono">Cloud</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">⚡</div>
+                <h4 class="bento-tool-name">Canva Pro</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">Rapid Social Collateral &amp; Pitch Systems</span>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Workflow 04: Multilingual Fluencies & Regional Execution -->
+        <div class="bento-workflow-group">
+          <div class="bento-group-header">
+            <div class="bento-group-tag font-mono">04 // FLUENCY &amp; REGIONAL CONTEXT</div>
+            <h3 class="bento-group-title">Multilingual Communication &amp; Leadership</h3>
+          </div>
+          <div class="bento-cards-subgrid bento-lang-subgrid">
+            <!-- Amharic -->
+            <article class="bento-skill-card bento-card-lang" data-tool="amharic">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono text-gold">NATIVE PROFICIENCY</span>
+                <span class="bento-version font-mono">ቋንቋ</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">🇪🇹</div>
+                <h4 class="bento-tool-name">Amharic (አማርኛ)</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">On-Site Technical Coordination &amp; Contractor Alignment</span>
+              </div>
+            </article>
+
+            <!-- English -->
+            <article class="bento-skill-card bento-card-lang" data-tool="english">
+              <div class="bento-card-glow"></div>
+              <div class="bento-card-top">
+                <span class="bento-tool-badge font-mono text-gold">PROFESSIONAL WORKING</span>
+                <span class="bento-version font-mono">International</span>
+              </div>
+              <div class="bento-card-main">
+                <div class="bento-tool-icon">🌐</div>
+                <h4 class="bento-tool-name">English</h4>
+              </div>
+              <div class="bento-deliverable-pill font-mono">
+                <span class="deliverable-arrow">→</span>
+                <span class="deliverable-text">International Client Consulting &amp; Architectural Dossiers</span>
+              </div>
+            </article>
           </div>
         </div>
 
@@ -768,7 +888,10 @@
             Project Title
           </h3>
         </div>
-        <button class="case-modal-close-btn" id="case-modal-close" aria-label="Close modal">✕</button>
+        <button class="case-modal-close-btn font-mono" id="case-modal-close" aria-label="Close modal">
+          <span class="esc-kbd">ESC</span>
+          <span class="close-x">✕</span>
+        </button>
       </div>
 
       <div style="padding: 2.5rem;" id="case-modal-body">
