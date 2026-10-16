@@ -96,6 +96,18 @@ A bespoke, world-class portfolio website combining the minimalist typographic cl
     - **Laptops & Tablets (1024px, 768px)**: Seamless transition to single-column hero with centered Studio ID card, 2-column skills matrix, and app-style horizontal swipeable category pill strip (`-webkit-overflow-scrolling: touch; scrollbar-width: none;`).
     - **Mobile Devices (480px, 414px, 390px, 375px, 360px)**: Custom cursor gracefully hidden on touchscreens to ensure native 60fps scrolling, condensed header layout with touch-friendly pills, responsive modal dialogue scaling (`clamp(200px, 48vw, 340px)` viewport height), single-column Swiss meta tables, and top-docked toast notifications avoiding bottom UI collision.
     - **Strict Zero Horizontal Overflow**: Hardened with `overflow-x: hidden; width: 100%;` across `html` and `body`.
+11. **Clean Mobile Navigation Drawer**:
+    - Accessible hamburger button morphing into an animated close glyph.
+    - Glassmorphic slide-in drawer featuring direct links to `01 Works`, `02 Core Skills`, and `03 Contact`.
+    - Integrated direct download button for the complete 2026 CV / Portfolio PDF archive.
+12. **Simplified Project Cards & Clear "View Case Study" Button**:
+    - Streamlined, high-legibility project card typography emphasizing titles, locations, and punchy 1-line concept summaries.
+    - High-contrast, tactile **`View Case Study ↗`** button on every project card and on hover overlays.
+13. **Download CV / Portfolio PDF Integration**:
+    - Prominently placed in the Hero action group, Contact section, and Mobile Navigation drawer.
+    - Linked directly to the authentic 7.4 MB 2026 design archive (`assets/Kaleegziabher_Fekede_Portfolio.pdf`).
+14. **Disciplinary Availability Statement**:
+    - Real-time pulse indicator communicating open availability for **Spatial Architecture**, **3D Visualization**, and **Brand Identity Systems**.
 
 ---
 

@@ -768,7 +768,7 @@ function initProjectsArchive() {
               <p class="big-hover-summary">${item.summary}</p>
               
               <div class="big-hover-action-wrap">
-                <span class="big-hover-btn font-mono">EXPLORE DOSSIER ↗</span>
+                <span class="big-hover-btn font-mono">VIEW CASE STUDY ↗</span>
                 <span class="big-hover-slide-caption font-mono" id="caption-${item.id}">${currentSlide.caption}</span>
               </div>
             </div>
@@ -793,37 +793,44 @@ function initProjectsArchive() {
         </div>
         
         <!-- Swiss Modular Details Box -->
-        <div class="big-project-meta-box" onclick="openCaseStudy('${item.id}')" style="cursor: pointer;">
+        <div class="big-project-meta-box">
           <!-- BIG.dk Style Monogram Geometric Pictogram -->
-          <div class="big-project-icon-square" aria-hidden="true">
+          <div class="big-project-icon-square" aria-hidden="true" onclick="openCaseStudy('${item.id}')">
             ${item.iconSvg}
           </div>
 
           <div class="big-project-details">
-            <h3 class="big-project-title">
-              <span>${item.title}</span>
-              <span class="text-gold arrow-glyph">↗</span>
-            </h3>
-            <div class="big-project-location">
-              ${item.location} • <span class="text-gold font-mono">${item.practiceLabel}</span>
-            </div>
-            
-            <!-- In-card Size Dimension Badge -->
-            <div class="in-card-size-pill font-mono">
-              <span>📐 ${item.sizeContext}</span>
+            <div class="card-title-row">
+              <h3 class="big-project-title" onclick="openCaseStudy('${item.id}')">
+                <span>${item.title}</span>
+              </h3>
+              <span class="card-category-badge font-mono">${item.practice === 'architecture' ? 'SPATIAL' : 'BRAND'}</span>
             </div>
 
+            <div class="big-project-location font-mono">
+              <span>${item.location}</span>
+              <span class="text-gold">•</span>
+              <span class="text-gold">${item.year}</span>
+            </div>
+
+            <!-- Simplified Minimalist Summary -->
             <p class="big-project-desc">${item.summary}</p>
-            <div class="big-project-tags">
-              ${item.medium.split(',').slice(0, 3).map(m => `<span class="big-tag-item">${m.trim()}</span>`).join('')}
+
+            <!-- Prominent View Case Study Action Bar -->
+            <div class="card-action-footer">
+              <button type="button" class="btn-view-case-study" onclick="openCaseStudy('${item.id}')" aria-label="View Case Study for ${item.title}">
+                <span>View Case Study</span>
+                <span class="btn-arrow" aria-hidden="true">↗</span>
+              </button>
+              <span class="card-views-count font-mono">${totalSlides} Perspectives</span>
             </div>
           </div>
         </div>
 
         <!-- Exposed Swiss Modular Footer Footnote -->
         <div class="swiss-cell-footer font-mono">
-          <span>SCOPE: ${item.scale}</span>
-          <span class="text-gold">EXPLORE 5 PERSPECTIVES ↗</span>
+          <span>REF: ${item.gridRef}</span>
+          <span class="text-gold" style="cursor: pointer;" onclick="openCaseStudy('${item.id}')">VIEW CASE STUDY (${totalSlides} PERSPECTIVES) ↗</span>
         </div>
       </article>
       `;
