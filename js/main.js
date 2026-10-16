@@ -679,6 +679,9 @@ const KB_PROJECTS = [
   }
 ];
 
+// Make projects globally available for scrubbing engine
+window.KB_PROJECTS = KB_PROJECTS;
+
 // Active slide tracking index for each project card
 const projectSlideIndexes = {};
 
@@ -802,14 +805,28 @@ function initProjectsArchive() {
         <div class="carousel-media-wrap" onclick="openCaseStudy('${item.id}')" title="Click to open case study">
           <img src="${currentSlide.url}" alt="${item.title}" class="carousel-slide-img" id="img-${item.id}" loading="lazy" style="${currentSlide.fit === 'contain' ? `object-fit: contain; background: ${currentSlide.bg || '#041B2B'};`: ''}">
           
-          <!-- Architectural Showcase Hover Overlay -->
+          <!-- BIG.dk Signature Architectural Showcase Hover Overlay -->
           <div class="big-hover-scrim">
             <div class="big-hover-content">
-              <span class="big-hover-discipline font-mono">${(item.service || item.practiceLabel).toUpperCase()}</span>
+              <div class="big-hover-meta-top font-mono">
+                <span class="big-hover-discipline">${(item.service || item.practiceLabel).toUpperCase()}</span>
+                <span class="big-hover-year">${item.year}</span>
+              </div>
               <h4 class="big-hover-heading">${item.title}</h4>
+              <div class="big-hover-location font-mono">
+                <span>📍 ${item.location}</span>
+              </div>
+              ${item.sizeContext ? `
+                <div class="big-hover-size-pill font-mono">
+                  <span class="size-icon" aria-hidden="true">📐</span>
+                  <span class="size-text">${item.sizeContext}</span>
+                </div>
+              ` : ''}
               <div class="big-hover-action-wrap">
                 <span class="big-hover-btn font-mono">VIEW CASE STUDY ↗</span>
-                <span class="big-hover-slide-caption font-mono" id="caption-${item.id}">${currentSlide.caption}</span>
+                <span class="big-hover-slide-caption font-mono" id="caption-${item.id}">
+                  <span class="scrub-hint">↔ SCRUB:</span> ${currentSlide.caption}
+                </span>
               </div>
             </div>
           </div>
@@ -926,8 +943,8 @@ window.changeSlide = function(e, projectId, direction) {
   updateCardSlide(project, current);
 };
 
-window.goToSlide = function(e, projectId, index) {
-  e.stopPropagation();
+window.goToSlide = function(e, projectId, index, isScrubbing = false) {
+  if (e && e.stopPropagation) e.stopPropagation();
   const project = KB_PROJECTS.find(p => p.id === projectId);
   if (!project) return;
 
@@ -936,10 +953,10 @@ window.goToSlide = function(e, projectId, index) {
   }
 
   projectSlideIndexes[projectId] = index;
-  updateCardSlide(project, index);
+  updateCardSlide(project, index, isScrubbing);
 };
 
-function updateCardSlide(project, index) {
+function updateCardSlide(project, index, isScrubbing = false) {
   const imgEl = document.getElementById(`img-${project.id}`);
   const cardEl = document.getElementById(`card-${project.id}`);
   const counterEl = document.getElementById(`counter-${project.id}`);
@@ -949,12 +966,8 @@ function updateCardSlide(project, index) {
 
   const slide = project.slides[index];
 
-  // Architectural Fade-Up Project Slide Transition
-  imgEl.style.transition = 'opacity 0.2s cubic-bezier(0.4, 0, 1, 1), transform 0.2s cubic-bezier(0.4, 0, 1, 1)';
-  imgEl.style.opacity = '0.05';
-  imgEl.style.transform = 'translateY(16px) scale(0.985)';
-
-  setTimeout(() => {
+  if (isScrubbing) {
+    // Instantaneous responsive update during horizontal mouse scrubbing (BIG.dk feel)
     imgEl.src = slide.url;
     if (slide.fit === 'contain') {
       imgEl.style.objectFit = 'contain';
@@ -963,39 +976,70 @@ function updateCardSlide(project, index) {
       imgEl.style.objectFit = 'cover';
       imgEl.style.background = '';
     }
+    imgEl.style.opacity = '1';
+    imgEl.style.transform = 'translateY(0) scale(1)';
+  } else {
+    // Architectural Fade-Up Project Slide Transition
+    imgEl.style.transition = 'opacity 0.2s cubic-bezier(0.4, 0, 1, 1), transform 0.2s cubic-bezier(0.4, 0, 1, 1)';
+    imgEl.style.opacity = '0.05';
+    imgEl.style.transform = 'translateY(16px) scale(0.985)';
 
-    requestAnimationFrame(() => {
-      imgEl.style.transition = 'opacity 0.42s cubic-bezier(0.16, 1, 0.3, 1), transform 0.48s cubic-bezier(0.16, 1, 0.3, 1)';
-      imgEl.style.opacity = '1';
-      imgEl.style.transform = 'translateY(0) scale(1)';
-    });
-  }, 120);
+    setTimeout(() => {
+      imgEl.src = slide.url;
+      if (slide.fit === 'contain') {
+        imgEl.style.objectFit = 'contain';
+        imgEl.style.background = slide.bg || '#041B2B';
+      } else {
+        imgEl.style.objectFit = 'cover';
+        imgEl.style.background = '';
+      }
+
+      requestAnimationFrame(() => {
+        imgEl.style.transition = 'opacity 0.42s cubic-bezier(0.16, 1, 0.3, 1), transform 0.48s cubic-bezier(0.16, 1, 0.3, 1)';
+        imgEl.style.opacity = '1';
+        imgEl.style.transform = 'translateY(0) scale(1)';
+      });
+    }, 120);
+  }
 
   // Update Slide Counter (e.g. 02 / 05) with fade-up micro-tick
   if (counterEl) {
     const total = project.slides.length;
-    counterEl.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
-    counterEl.style.opacity = '0.2';
-    counterEl.style.transform = 'translateY(4px)';
-    setTimeout(() => {
+    if (isScrubbing) {
       counterEl.textContent = `0${index + 1} / 0${total}`;
       counterEl.style.opacity = '1';
       counterEl.style.transform = 'translateY(0)';
-    }, 90);
+    } else {
+      counterEl.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+      counterEl.style.opacity = '0.2';
+      counterEl.style.transform = 'translateY(4px)';
+      setTimeout(() => {
+        counterEl.textContent = `0${index + 1} / 0${total}`;
+        counterEl.style.opacity = '1';
+        counterEl.style.transform = 'translateY(0)';
+      }, 90);
+    }
   }
 
-  // Update Slide Caption inside hover overlay with synchronized fade-up
+  // Update Slide Caption inside hover overlay with synchronized scrub hint
   if (captionEl) {
-    captionEl.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
-    captionEl.style.opacity = '0.1';
-    captionEl.style.transform = 'translateY(8px)';
-
-    setTimeout(() => {
-      captionEl.textContent = slide.caption;
-      captionEl.style.transition = 'opacity 0.38s cubic-bezier(0.16, 1, 0.3, 1), transform 0.42s cubic-bezier(0.16, 1, 0.3, 1)';
+    const total = project.slides.length;
+    if (isScrubbing) {
+      captionEl.innerHTML = `<span class="scrub-hint">↔ SCRUB [0${index + 1}/0${total}]:</span> ${slide.caption}`;
       captionEl.style.opacity = '1';
       captionEl.style.transform = 'translateY(0)';
-    }, 110);
+    } else {
+      captionEl.style.transition = 'opacity 0.15s ease, transform 0.15s ease';
+      captionEl.style.opacity = '0.1';
+      captionEl.style.transform = 'translateY(8px)';
+
+      setTimeout(() => {
+        captionEl.innerHTML = `<span class="scrub-hint">↔ SCRUB [0${index + 1}/0${total}]:</span> ${slide.caption}`;
+        captionEl.style.transition = 'opacity 0.38s cubic-bezier(0.16, 1, 0.3, 1), transform 0.42s cubic-bezier(0.16, 1, 0.3, 1)';
+        captionEl.style.opacity = '1';
+        captionEl.style.transform = 'translateY(0)';
+      }, 110);
+    }
   }
 
   // Update dots smoothly

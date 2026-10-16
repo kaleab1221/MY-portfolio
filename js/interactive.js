@@ -247,6 +247,9 @@
     if (isTouchDevice()) return;
 
     function attachScrubbing() {
+      const ring = document.getElementById('kb-cursor-ring');
+      const badgeText = document.getElementById('kb-cursor-badge-text');
+
       document.querySelectorAll('.big-project-card').forEach((card) => {
         if (card._scrubAttached) return;
         card._scrubAttached = true;
@@ -259,20 +262,28 @@
 
         mediaWrap.addEventListener('mousemove', (e) => {
           const rect = mediaWrap.getBoundingClientRect();
-          const normX = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+          const normX = Math.max(0, Math.min(0.999, (e.clientX - rect.left) / rect.width));
 
-          // Map 0 -> 1 to slide index 0 -> 4
-          const totalSlides = 5;
+          // Map 0 -> 1 to slide index based on dynamic project slides
+          const proj = (window.KB_PROJECTS || []).find(p => p.id === projectId);
+          const totalSlides = proj && proj.slides ? proj.slides.length : 5;
           const scrubIndex = Math.min(totalSlides - 1, Math.floor(normX * totalSlides));
+
+          if (badgeText) {
+            badgeText.textContent = `0${scrubIndex + 1}/0${totalSlides} ↗`;
+          }
 
           if (scrubIndex !== lastScrubIndex && typeof window.goToSlide === 'function') {
             lastScrubIndex = scrubIndex;
-            window.goToSlide(e, projectId, scrubIndex);
+            window.goToSlide(e, projectId, scrubIndex, true);
           }
         });
 
         mediaWrap.addEventListener('mouseleave', () => {
           lastScrubIndex = -1;
+          if (badgeText) {
+            badgeText.textContent = 'VIEW ↗';
+          }
         });
       });
     }
