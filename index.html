@@ -93,29 +93,24 @@
         </ul>
       </nav>
 
-      <!-- Language Option (Short Abbreviation: EN / አማ), Merged Theme Switch with Icons, Inquire CTA & Mobile Toggle -->
+      <!-- Circular Language Toggle (EN / አማ) and Circular Theme Toggle (Moon / Sun) matching User Reference -->
       <div class="nav-controls">
-        <!-- Language Option: Short Abbreviation Name (EN / አማ) -->
-        <button class="lang-toggle-btn font-mono" id="lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ" title="Switch Language (EN / አማ)">
-          <span class="lang-opt lang-en active">EN</span>
-          <span class="lang-divider" aria-hidden="true">/</span>
-          <span class="lang-opt lang-am">አማ</span>
+        <!-- Circular Language Button (EN / አማ) -->
+        <button class="circle-nav-btn lang-circle-btn" id="lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ" title="Switch Language (EN / አማ)">
+          <span class="lang-circle-text" id="lang-circle-text">EN</span>
         </button>
 
-        <!-- Merged Dark / Light Mode On-Off Toggle Button with Icons -->
-        <button class="theme-toggle-switch" id="theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode" title="Switch to Dark Mode">
-          <span class="switch-icon switch-icon-sun" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="4"></circle>
-              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+        <!-- Circular Dark / Light Mode Toggle Button (Moon / Sun) -->
+        <button class="circle-nav-btn theme-circle-btn" id="theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode" title="Switch to Dark Mode">
+          <span class="theme-circle-icon icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </span>
-          <span class="switch-slider">
-            <span class="switch-thumb"></span>
-          </span>
-          <span class="switch-icon switch-icon-moon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          <span class="theme-circle-icon icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
             </svg>
           </span>
         </button>
@@ -145,31 +140,26 @@
           <button class="mobile-nav-close-btn" id="mobile-nav-close" aria-label="Close navigation menu">✕</button>
         </div>
 
-        <!-- Mobile Drawer Quick Controls Strip (Language & Theme) -->
+        <!-- Mobile Drawer Quick Controls Strip (Language & Theme Circular Buttons) -->
         <div class="mobile-nav-settings-strip">
           <div class="mobile-setting-item">
             <span class="setting-label font-mono">LANG:</span>
-            <button class="lang-toggle-btn font-mono" id="mobile-lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ">
-              <span class="lang-opt lang-en active">EN</span>
-              <span class="lang-divider" aria-hidden="true">/</span>
-              <span class="lang-opt lang-am">አማ</span>
+            <button class="circle-nav-btn lang-circle-btn" id="mobile-lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ">
+              <span class="lang-circle-text">EN</span>
             </button>
           </div>
           <div class="mobile-setting-item">
             <span class="setting-label font-mono">THEME:</span>
-            <button class="theme-toggle-switch" id="mobile-theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode">
-              <span class="switch-icon switch-icon-sun" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <circle cx="12" cy="12" r="4"></circle>
-                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            <button class="circle-nav-btn theme-circle-btn" id="mobile-theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode">
+              <span class="theme-circle-icon icon-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
               </span>
-              <span class="switch-slider">
-                <span class="switch-thumb"></span>
-              </span>
-              <span class="switch-icon switch-icon-moon" aria-hidden="true">
-                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              <span class="theme-circle-icon icon-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
                 </svg>
               </span>
             </button>

@@ -329,146 +329,95 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 /* ==========================================================================
-   LANGUAGE TOGGLE (SHORT ABBREVIATION: EN / አማ)
+   CIRCULAR NAVIGATION TOGGLE BUTTONS (MATCHING USER REFERENCE DESIGN)
+   - Left circle: [ EN ] (toggles to [ አማ ])
+   - Right circle: [ 🌙 ] (toggles to [ ☀️ ])
    ========================================================================== */
-.lang-toggle-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  padding: 4px 8px;
-  border-radius: var(--radius-xs);
-  cursor: pointer;
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-  user-select: none;
-}
-
-.lang-toggle-btn:hover {
-  border-color: var(--brand-yellow);
-  color: var(--brand-navy);
-  transform: translateY(-1px);
-}
-
-[data-theme="dark"] .lang-toggle-btn:hover {
-  color: var(--brand-yellow);
-}
-
-.lang-opt {
-  padding: 2px 5px;
-  border-radius: 2px;
-  transition: all 0.2s ease;
-  line-height: 1.1;
-}
-
-.lang-opt.active {
-  background: var(--brand-navy);
-  color: var(--brand-yellow);
-  font-weight: 800;
-  box-shadow: 0 1px 4px rgba(4, 71, 113, 0.25);
-}
-
-[data-theme="dark"] .lang-opt.active {
-  background: var(--brand-yellow);
-  color: var(--brand-navy-dark);
-  box-shadow: 0 1px 6px rgba(255, 208, 66, 0.35);
-}
-
-.lang-divider {
-  opacity: 0.45;
-  font-size: 0.65rem;
-}
-
-/* ==========================================================================
-   MERGED DARK / LIGHT MODE ON-OFF TOGGLE BUTTON WITH ICON
-   ========================================================================== */
-.theme-toggle-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  padding: 4px 8px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  color: var(--text-muted);
-  position: relative;
-  user-select: none;
-}
-
-.theme-toggle-switch:hover {
-  border-color: var(--brand-yellow);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transform: translateY(-1px);
-}
-
-.switch-icon {
+.circle-nav-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--bg-surface);
+  border: 1.5px solid #BED2E8;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 15px;
-  height: 15px;
-  transition: all 0.22s ease;
-  color: var(--text-muted);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  color: var(--brand-navy-dark);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  user-select: none;
+  flex-shrink: 0;
 }
 
-.switch-icon-sun {
-  color: #F59E0B;
+.circle-nav-btn:hover {
+  border-color: var(--brand-navy);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(4, 71, 113, 0.15);
 }
 
-.switch-icon-moon {
-  color: var(--text-muted);
+.circle-nav-btn:active {
+  transform: scale(0.93);
 }
 
-.switch-slider {
-  display: inline-block;
-  width: 28px;
-  height: 16px;
-  background: #CBD5E1;
-  border-radius: 10px;
-  position: relative;
-  transition: background-color 0.25s ease;
+[data-theme="dark"] .circle-nav-btn {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #F8FAFC;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 }
 
-.switch-thumb {
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 12px;
-  height: 12px;
-  background: #FFFFFF;
-  border-radius: 50%;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.25s ease;
+[data-theme="dark"] .circle-nav-btn:hover {
+  border-color: var(--brand-yellow);
+  box-shadow: 0 3px 10px rgba(255, 208, 66, 0.25);
 }
 
-/* Dark Active State (Thumb moves to right, Moon lights up) */
-[data-theme="dark"] .switch-slider,
-.theme-toggle-switch[aria-checked="true"] .switch-slider {
-  background: #0A3D62;
+/* Language Circle Button Text */
+.lang-circle-text {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: #041B2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
-[data-theme="dark"] .switch-thumb,
-.theme-toggle-switch[aria-checked="true"] .switch-thumb {
-  transform: translateX(12px);
-  background: var(--brand-yellow);
-  box-shadow: 0 0 8px rgba(255, 208, 66, 0.6);
+[data-theme="dark"] .lang-circle-text {
+  color: #F8FAFC;
 }
 
-[data-theme="dark"] .switch-icon-sun,
-.theme-toggle-switch[aria-checked="true"] .switch-icon-sun {
-  color: rgba(255, 255, 255, 0.3);
+/* Theme Circle Button Icons */
+.theme-circle-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
-[data-theme="dark"] .switch-icon-moon,
-.theme-toggle-switch[aria-checked="true"] .switch-icon-moon {
+.theme-circle-btn .icon-moon {
+  color: #041B2B;
+  display: inline-flex;
+}
+
+.theme-circle-btn .icon-sun {
+  display: none;
   color: var(--brand-yellow);
+}
+
+/* Dark Mode Icon Display */
+[data-theme="dark"] .theme-circle-btn .icon-moon,
+.theme-circle-btn[aria-checked="true"] .icon-moon {
+  display: none !important;
+}
+
+[data-theme="dark"] .theme-circle-btn .icon-sun,
+.theme-circle-btn[aria-checked="true"] .icon-sun {
+  display: inline-flex !important;
+  filter: drop-shadow(0 0 4px rgba(255, 208, 66, 0.6));
 }
 
 /* Mobile Settings Strip Inside Drawer */
@@ -2712,27 +2661,14 @@ body.dark-mode .academic-banner-tag {
     display: none;
   }
   .nav-controls {
-    gap: 0.35rem;
+    gap: 0.45rem;
   }
-  .lang-toggle-btn {
-    padding: 3px 6px;
-    font-size: 0.62rem;
+  .circle-nav-btn {
+    width: 32px;
+    height: 32px;
   }
-  .theme-toggle-switch {
-    padding: 3px 6px;
-    gap: 4px;
-  }
-  .switch-slider {
-    width: 24px;
-    height: 14px;
-  }
-  .switch-thumb {
-    width: 10px;
-    height: 10px;
-  }
-  [data-theme="dark"] .switch-thumb,
-  .theme-toggle-switch[aria-checked="true"] .switch-thumb {
-    transform: translateX(10px);
+  .lang-circle-text {
+    font-size: 0.78rem;
   }
   .inquire-cta-pill {
     padding: 0.45rem 0.8rem;

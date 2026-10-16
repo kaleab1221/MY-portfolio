@@ -690,7 +690,7 @@ const projectSlideIndexes = {};
    2. Theme Switcher Engine (Merged On/Off Toggle Button with Sun/Moon Icons)
    ========================================================================== */
 function initThemeEngine() {
-  const themeToggles = document.querySelectorAll('.theme-toggle-switch, #theme-toggle-btn, #mobile-theme-toggle-btn');
+  const themeToggles = document.querySelectorAll('.theme-circle-btn, .theme-toggle-switch, #theme-toggle-btn, #mobile-theme-toggle-btn');
   const storedTheme = localStorage.getItem('kb_theme') || 'light';
   
   // Enforce light or dark only
@@ -858,7 +858,7 @@ window.getCurrentLang = function() {
 };
 
 function initLanguageEngine() {
-  const langToggles = document.querySelectorAll('.lang-toggle-btn, #lang-toggle-btn, #mobile-lang-toggle-btn');
+  const langToggles = document.querySelectorAll('.lang-circle-btn, .lang-toggle-btn, #lang-toggle-btn, #mobile-lang-toggle-btn');
   const storedLang = localStorage.getItem('kb_lang') || 'en';
   const initialLang = (storedLang === 'am') ? 'am' : 'en';
 
@@ -880,12 +880,26 @@ function initLanguageEngine() {
 
     // Update all language toggle buttons
     langToggles.forEach(btn => {
+      const textEl = btn.querySelector('.lang-circle-text');
+      if (textEl) {
+        textEl.textContent = (currentLang === 'am') ? 'አማ' : 'EN';
+      }
       const enOpt = btn.querySelector('.lang-en');
       const amOpt = btn.querySelector('.lang-am');
       if (enOpt) enOpt.classList.toggle('active', currentLang === 'en');
       if (amOpt) amOpt.classList.toggle('active', currentLang === 'am');
       btn.setAttribute('title', currentLang === 'am' ? 'Switch to English (EN)' : 'ወደ አማርኛ ቀይር (አማ)');
     });
+
+    // Also sync theme button titles
+    const themeBtn = document.getElementById('theme-toggle-btn');
+    if (themeBtn) {
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      themeBtn.setAttribute('title', isDark 
+        ? (currentLang === 'am' ? 'ወደ ብርሃን ገጽታ ቀይር (Light Mode)' : 'Switch to Light Mode')
+        : (currentLang === 'am' ? 'ወደ ጨለማ ገጽታ ቀይር (Dark Mode)' : 'Switch to Dark Mode')
+      );
+    }
 
     const dict = KB_I18N[currentLang];
     if (!dict) return;
