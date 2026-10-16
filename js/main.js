@@ -1364,19 +1364,49 @@ function initMoveableCardTilt() {
 }
 
 /* ==========================================================================
-   5. Bento Skill Cards Specular Radial Glow & Workflow Interaction Engine
+   5. Devani-Style Core Skills Interactive Animations & Count-Up Engine
    ========================================================================== */
 function initSkillsAnimation() {
-  const bentoCards = document.querySelectorAll('.bento-skill-card');
-  bentoCards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      card.style.setProperty('--mouse-x', `${x}px`);
-      card.style.setProperty('--mouse-y', `${y}px`);
+  const skillsSection = document.getElementById('skills');
+  if (!skillsSection) return;
+
+  const skillBars = document.querySelectorAll('.skill-progress-fill');
+  let animated = false;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        animateAllBars();
+      }
     });
-  });
+  }, { threshold: 0.15 });
+
+  observer.observe(skillsSection);
+
+  function animateAllBars() {
+    skillBars.forEach(bar => {
+      const targetPercent = parseInt(bar.getAttribute('data-percent'), 10) || 0;
+      const countEl = bar.closest('.skill-progress-row')?.querySelector('.skill-percent-number');
+
+      // Expand progress bar width smoothly
+      bar.style.width = `${targetPercent}%`;
+
+      // Animate percentage count-up
+      if (countEl) {
+        let current = 0;
+        const stepTime = Math.max(10, Math.floor(1200 / targetPercent));
+        const timer = setInterval(() => {
+          current += 1;
+          countEl.textContent = `${current}%`;
+          if (current >= targetPercent) {
+            countEl.textContent = `${targetPercent}%`;
+            clearInterval(timer);
+          }
+        }, stepTime);
+      }
+    });
+  }
 }
 
 /* ==========================================================================
