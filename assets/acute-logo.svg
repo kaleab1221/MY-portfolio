@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="100%" height="100%">
+  <rect width="100%" height="100%" fill="#FFFFFF"/>
+  <g transform="translate(400, 240)">
+    <!-- Blue Block with stylized Acute Angle Geometry -->
+    <rect x="-90" y="-90" width="180" height="180" rx="12" fill="#1456CC"/>
+    <!-- Red Acute 'A' Chevron Form -->
+    <path d="M-60 60 L0 -65 L60 60 L30 60 L0 -5 L-30 60 Z" fill="#E6222E"/>
+    <polygon points="-24,20 24,20 0,-30" fill="#1456CC"/>
+    <polygon points="-16,22 16,22 0,-10" fill="#E6222E"/>
+  </g>
+  <!-- Brand Typography -->
+  <text x="400" y="420" text-anchor="middle" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="58" fill="#1456CC" letter-spacing="4">ACUTE</text>
+  <text x="400" y="468" text-anchor="middle" font-family="'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="28" fill="#E6222E" letter-spacing="10">ENGINEERING</text>
+</svg>
