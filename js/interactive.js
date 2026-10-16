@@ -20,12 +20,13 @@
 
   // Check if device supports hover/mouse (disable custom cursor on touchscreens)
   const isTouchDevice = () => window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ==========================================================================
      1. FLUID MAGNETIC CURSOR SUITE (Desktop Only)
      ========================================================================== */
   function initInteractiveCursor() {
-    if (isTouchDevice()) return;
+    if (isTouchDevice() || prefersReducedMotion()) return;
 
     const ring = document.getElementById('cursor-ring');
     const dot = document.getElementById('cursor-dot');
@@ -361,40 +362,173 @@
   }
 
   /* ==========================================================================
-     7. SCROLL-DRIVEN STORYTELLING CASCADE REVEAL
+     7. SCROLL-REVEAL & STORYTELLING CASCADE ENGINE
+     Smooth 60fps GPU-accelerated reveals for headings, cards, and sections
      ========================================================================== */
-  function initScrollStorytellingCascade() {
-    function observeCards() {
-      const cards = document.querySelectorAll('.big-project-card:not(._cascadeAttached)');
-      if (!cards.length) return;
+  function initScrollReveal() {
+    const isReduced = prefersReducedMotion();
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setTimeout(() => {
-              entry.target.classList.add('cascade-revealed');
-            }, 60);
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.1 });
+    function revealElement(el) {
+      el.classList.add('is-revealed');
+      if (el.classList.contains('big-project-card')) {
+        el.classList.add('cascade-revealed');
+      }
+    }
 
-      cards.forEach((card, index) => {
+    if (isReduced) {
+      document.querySelectorAll('.reveal-on-scroll, .big-project-card').forEach(revealElement);
+      return;
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          revealElement(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    function observeElements() {
+      document.querySelectorAll('.reveal-on-scroll:not(._revealObserved)').forEach((el) => {
+        el._revealObserved = true;
+        observer.observe(el);
+      });
+
+      document.querySelectorAll('.big-project-card:not(._cascadeAttached)').forEach((card) => {
         card._cascadeAttached = true;
         card.classList.add('cascade-item');
         observer.observe(card);
       });
     }
 
-    observeCards();
+    observeElements();
     const container = document.getElementById('big-projects-container');
     if (container) {
-      new MutationObserver(observeCards).observe(container, { childList: true });
+      new MutationObserver(observeElements).observe(container, { childList: true });
     }
   }
 
   /* ==========================================================================
-     8. KINETIC TYPOGRAPHY HEADLINE MICRO-INTERACTIONS
+     8. ANIMATED NUMBER COUNTERS FOR KEY STATISTICS
+     Counts up smoothly from 0 to target value on scroll into view
+     ========================================================================== */
+  function initNumberCounters() {
+    const counterElements = document.querySelectorAll('[data-counter]');
+    if (!counterElements.length) return;
+
+    const isReduced = prefersReducedMotion();
+
+    function startCounter(el) {
+      if (el._counterAnimated) return;
+      el._counterAnimated = true;
+
+      const target = parseInt(el.getAttribute('data-counter'), 10) || 0;
+      const suffix = el.getAttribute('data-suffix') || '';
+      const prefix = el.getAttribute('data-prefix') || '';
+
+      if (isReduced) {
+        el.textContent = `${prefix}${target}${suffix}`;
+        return;
+      }
+
+      const duration = 1200;
+      const startTime = performance.now();
+
+      function tick(now) {
+        const elapsed = now - startTime;
+        const progress = Math.min(elapsed / duration, 1);
+        // Easing: easeOutQuad
+        const ease = progress * (2 - progress);
+        const currentVal = Math.floor(ease * target);
+
+        el.textContent = `${prefix}${currentVal}${suffix}`;
+
+        if (progress < 1) {
+          requestAnimationFrame(tick);
+        } else {
+          el.textContent = `${prefix}${target}${suffix}`;
+        }
+      }
+
+      requestAnimationFrame(tick);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          startCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+
+    counterElements.forEach((el) => observer.observe(el));
+  }
+
+  /* ==========================================================================
+     9. SUBTLE PARALLAX & GRID MOVEMENT IN HERO BACKGROUND
+     Gentle mouse tracking and scroll-driven parallax (desktop only)
+     ========================================================================== */
+  function initHeroGridParallax() {
+    if (isTouchDevice() || prefersReducedMotion()) return;
+
+    const heroSection = document.getElementById('about');
+    const heroBgArt = document.getElementById('hero-bg-art');
+    if (!heroSection || !heroBgArt) return;
+
+    let targetX = 0;
+    let targetY = 0;
+    let currentX = 0;
+    let currentY = 0;
+    let isTracking = false;
+
+    heroSection.addEventListener('mousemove', (e) => {
+      const rect = heroSection.getBoundingClientRect();
+      const normX = ((e.clientX - rect.left) / rect.width - 0.5) * 2; // -1 to 1
+      const normY = ((e.clientY - rect.top) / rect.height - 0.5) * 2; // -1 to 1
+
+      targetX = normX * 14; // max 14px displacement
+      targetY = normY * 10; // max 10px displacement
+
+      if (!isTracking) {
+        isTracking = true;
+        requestAnimationFrame(updateGrid);
+      }
+    });
+
+    heroSection.addEventListener('mouseleave', () => {
+      targetX = 0;
+      targetY = 0;
+    });
+
+    function updateGrid() {
+      // Smooth lerp
+      currentX += (targetX - currentX) * 0.12;
+      currentY += (targetY - currentY) * 0.12;
+
+      heroBgArt.style.setProperty('--hero-grid-x', `${currentX.toFixed(2)}px`);
+      heroBgArt.style.setProperty('--hero-grid-y', `${currentY.toFixed(2)}px`);
+
+      if (Math.abs(targetX - currentX) > 0.05 || Math.abs(targetY - currentY) > 0.05) {
+        requestAnimationFrame(updateGrid);
+      } else {
+        isTracking = false;
+      }
+    }
+
+    // Scroll parallax offset
+    window.addEventListener('scroll', () => {
+      const scrollY = window.scrollY || window.pageYOffset;
+      if (scrollY < window.innerHeight) {
+        const offset = scrollY * 0.06;
+        heroBgArt.style.transform = `translate3d(0, ${offset.toFixed(1)}px, 0)`;
+      }
+    }, { passive: true });
+  }
+
+  /* ==========================================================================
+     10. KINETIC TYPOGRAPHY HEADLINE MICRO-INTERACTIONS
      ========================================================================== */
   function initKineticTypographyInteractions() {
     const kineticTitle = document.querySelector('.hero-main-title');
@@ -406,7 +540,7 @@
   }
 
   /* ==========================================================================
-     9. CLEAN MOBILE NAVIGATION DRAWER & ACCESSIBILITY
+     11. CLEAN MOBILE NAVIGATION DRAWER & ACCESSIBILITY
      ========================================================================== */
   function initMobileNavigation() {
     const toggleBtn = document.getElementById('mobile-nav-toggle');
@@ -477,7 +611,9 @@
     initClickRipple();
     initKeyboardNavigation();
     initStudioCardInteractions();
-    initScrollStorytellingCascade();
+    initScrollReveal();
+    initNumberCounters();
+    initHeroGridParallax();
     initKineticTypographyInteractions();
     initMobileNavigation();
   }

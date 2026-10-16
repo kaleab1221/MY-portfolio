@@ -193,12 +193,13 @@
        HERO SECTION: Modern Minimalist Architectural Introduction
        ======================================================================== -->
   <section class="hero-minimal-section" id="about">
-    <div class="hero-minimal-bg-art">
+    <div class="hero-minimal-bg-art" id="hero-bg-art">
+      <div class="hero-grid-mesh" id="hero-grid-mesh" aria-hidden="true"></div>
       <canvas id="spline-bg-canvas" aria-hidden="true"></canvas>
     </div>
 
     <div class="container hero-content-grid-minimal">
-      <div>
+      <div class="reveal-on-scroll">
         <div class="hero-discipline-tag">
           <span>● 4TH YEAR ARCHITECTURE STUDENT</span>
           <span>•</span>
@@ -252,7 +253,7 @@
       </div>
 
       <!-- Hero Official KB CREATIVE Studio Identity Card (3D Tilt & Specular Glare) -->
-      <div class="hero-emblem-card" id="hero-emblem-card">
+      <div class="hero-emblem-card reveal-on-scroll reveal-delay-1" id="hero-emblem-card">
         <div class="card-glare-overlay"></div>
         <div class="hero-emblem-logo-wrap">
           <img src="assets/kb-logo.png" alt="KB CREATIVE Official Logo" class="hero-emblem-logo-img">
@@ -264,15 +265,19 @@
           Department of Architecture, Wolkite University
         </p>
 
-        <!-- Studio Quick Metrics -->
+        <!-- Studio Quick Metrics with Animated Counters -->
         <div class="hero-emblem-stats">
           <div class="emblem-stat-box">
-            <div class="emblem-stat-val">4th Yr</div>
+            <div class="emblem-stat-val" data-counter="4" data-suffix="th Yr">4th Yr</div>
             <div class="emblem-stat-label">Architecture Student</div>
           </div>
           <div class="emblem-stat-box">
-            <div class="emblem-stat-val">25+</div>
-            <div class="emblem-stat-label">Spatial &amp; Brand Works</div>
+            <div class="emblem-stat-val" data-counter="11" data-suffix="+">11+</div>
+            <div class="emblem-stat-label">Curated Case Studies</div>
+          </div>
+          <div class="emblem-stat-box">
+            <div class="emblem-stat-val" data-counter="100" data-suffix="%">100%</div>
+            <div class="emblem-stat-label">Daylight Orientation</div>
           </div>
         </div>
       </div>
@@ -349,7 +354,7 @@
     <div class="container">
       
       <!-- Exposed Swiss Modular Editorial Header -->
-      <div class="section-editorial-header">
+      <div class="section-editorial-header reveal-on-scroll">
         <div class="storytelling-chapter-pill font-mono">
           <span class="story-dot" aria-hidden="true"></span>
           <span>CHAPTER 01 // ARCHITECTURAL &amp; BRAND CHRONICLE</span>
@@ -378,7 +383,7 @@
     <div class="container">
       
       <!-- Section Editorial Header -->
-      <div class="section-editorial-header">
+      <div class="section-editorial-header reveal-on-scroll">
         <div class="storytelling-chapter-pill font-mono">
           <span class="story-dot" aria-hidden="true"></span>
           <span>CHAPTER 02 // TECHNICAL DISCIPLINE &amp; CGI MATRIX</span>
@@ -393,7 +398,7 @@
       </div>
 
       <!-- Academic Standing & Studio Affiliation Banner -->
-      <div class="academic-profile-banner">
+      <div class="academic-profile-banner reveal-on-scroll reveal-delay-1">
         <div class="academic-banner-content">
           <div class="academic-banner-tag">ACADEMIC PROFILE &amp; STUDIO PEDAGOGY</div>
           <h3 class="academic-banner-title">4th-Year Architecture Student — Wolkite University</h3>
@@ -606,7 +611,7 @@
        ======================================================================== -->
   <section class="devani-contact-section" id="contact">
     <div class="container contact-layout-grid">
-      <div>
+      <div class="reveal-on-scroll">
         <div class="storytelling-chapter-pill font-mono" style="margin-bottom: 0.75rem;">
           <span class="story-dot" aria-hidden="true"></span>
           <span>CHAPTER 03 // DIALOGUE &amp; COMMISSION INQUIRY</span>
@@ -687,7 +692,7 @@
       </div>
 
       <!-- Quick Project Inquiry Form -->
-      <div class="contact-inquiry-box">
+      <div class="contact-inquiry-box reveal-on-scroll reveal-delay-1">
         <form onsubmit="handleContactSubmit(event)">
           <label class="inquiry-label" for="inquiry-name">Your Full Name</label>
           <input type="text" id="inquiry-name" class="inquiry-input" placeholder="e.g. Samuel Yohannes" required>

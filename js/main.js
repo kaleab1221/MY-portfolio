@@ -735,15 +735,30 @@ function initProjectsArchive() {
 
   render();
 
+  function transitionFilter(updateFn) {
+    container.classList.add('filtering-out');
+    setTimeout(() => {
+      updateFn();
+      render();
+      container.classList.remove('filtering-out');
+      const cards = container.querySelectorAll('.simplified-project-card');
+      cards.forEach((c, idx) => {
+        c.classList.add('filter-entering');
+        c.style.animationDelay = `${(idx * 0.03).toFixed(2)}s`;
+      });
+    }, 150);
+  }
+
   practicePills.forEach(pill => {
     pill.addEventListener('click', () => {
       practicePills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
-      activePractice = pill.getAttribute('data-practice');
-      activeSubCategory = 'all';
-      subPills.forEach(sp => sp.classList.remove('active'));
-      subPills[0]?.classList.add('active');
-      render();
+      transitionFilter(() => {
+        activePractice = pill.getAttribute('data-practice');
+        activeSubCategory = 'all';
+        subPills.forEach(sp => sp.classList.remove('active'));
+        subPills[0]?.classList.add('active');
+      });
     });
   });
 
@@ -751,8 +766,9 @@ function initProjectsArchive() {
     sp.addEventListener('click', () => {
       subPills.forEach(s => s.classList.remove('active'));
       sp.classList.add('active');
-      activeSubCategory = sp.getAttribute('data-sub');
-      render();
+      transitionFilter(() => {
+        activeSubCategory = sp.getAttribute('data-sub');
+      });
     });
   });
 
@@ -831,7 +847,7 @@ function initProjectsArchive() {
           <p class="simplified-card-summary">${item.summary}</p>
 
           <div class="simplified-card-action">
-            <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('${item.id}')" aria-label="View Case Study for ${item.title}">
+            <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('${item.id}', this)" aria-label="View Case Study for ${item.title}">
               <span>View Case Study</span>
               <span class="case-study-arrow" aria-hidden="true">↗</span>
             </button>
@@ -1103,9 +1119,16 @@ function initCaseModal() {
   });
 }
 
-window.openCaseStudy = function(projectId) {
+window.openCaseStudy = function(projectId, triggerEl) {
   const project = KB_PROJECTS.find(p => p.id === projectId);
   if (!project) return;
+
+  if (triggerEl && triggerEl.classList) {
+    triggerEl.classList.add('btn-loading');
+    setTimeout(() => {
+      if (triggerEl.classList) triggerEl.classList.remove('btn-loading');
+    }, 450);
+  }
 
   const overlay = document.getElementById('case-study-modal');
   const body = document.getElementById('case-modal-body');
