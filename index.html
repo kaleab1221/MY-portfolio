@@ -27,10 +27,10 @@
   <title>KALEEGZIABHER FEKEDE — 4th Year Architecture Student at Wolkite University &amp; Founder of KB CREATIVE</title>
   <meta name="description" content="Portfolio of Kaleegziabher Fekede — 4th Year Architecture Student at Wolkite University and Founder of KB CREATIVE. Spatial architecture, interior design, technical 3D visualization, and brand identity systems.">
 
-  <!-- Premium Typography: Space Grotesk (Headings) + Inter (Body) + JetBrains Mono (Coordinates & Badges) -->
+  <!-- Premium Typography: Space Grotesk (Headings) + Inter (Body) + JetBrains Mono (Coordinates) + Noto Sans Ethiopic -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Core Stylesheet: Pure White Light Mode, Brand Navy (#044771) & Gold (#FFD042), Swiss Modular Grid -->
   <link rel="stylesheet" href="css/styles.css">
@@ -65,7 +65,7 @@
   <aside class="studio-status-strip" aria-label="Studio Direct Contact">
     <div class="container studio-status-content">
       <div>
-        <span>PHONE: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a></span>
+        <span><span data-i18n="phone_label">PHONE:</span> <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a></span>
       </div>
     </div>
   </aside>
@@ -80,28 +80,48 @@
         <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" class="kb-logo-header-img">
         <div class="brand-text-block">
           <span class="brand-name">KALEEGZIABHER FEKEDE</span>
-          <span class="brand-sub">4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY</span>
+          <span class="brand-sub" data-i18n="brand_sub">4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY</span>
         </div>
       </a>
 
       <!-- Desktop Minimalist Menu Navigation Links -->
       <nav aria-label="Main Navigation" class="desktop-nav-wrap">
         <ul class="nav-menu-links">
-          <li><a href="#work" class="nav-item-link"><span class="nav-item-index">01</span> Works</a></li>
-          <li><a href="#skills" class="nav-item-link"><span class="nav-item-index">02</span> Core Skills</a></li>
-          <li><a href="#contact" class="nav-item-link"><span class="nav-item-index">03</span> Contact</a></li>
+          <li><a href="#work" class="nav-item-link"><span class="nav-item-index">01</span> <span data-i18n="nav_works">Works</span></a></li>
+          <li><a href="#skills" class="nav-item-link"><span class="nav-item-index">02</span> <span data-i18n="nav_skills">Core Skills</span></a></li>
+          <li><a href="#contact" class="nav-item-link"><span class="nav-item-index">03</span> <span data-i18n="nav_contact">Contact</span></a></li>
         </ul>
       </nav>
 
-      <!-- Theme Controls, Inquire CTA & Clean Mobile Menu Toggle -->
+      <!-- Language Option (Short Abbreviation: EN / አማ), Merged Theme Switch with Icons, Inquire CTA & Mobile Toggle -->
       <div class="nav-controls">
-        <div class="theme-pill-selector" role="group" aria-label="Theme Mode">
-          <button class="theme-opt-btn active" data-theme-choice="light" title="Pure White Light Mode">Light</button>
-          <button class="theme-opt-btn" data-theme-choice="dark" title="Obsidian Navy Dark Mode">Dark</button>
-        </div>
+        <!-- Language Option: Short Abbreviation Name (EN / አማ) -->
+        <button class="lang-toggle-btn font-mono" id="lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ" title="Switch Language (EN / አማ)">
+          <span class="lang-opt lang-en active">EN</span>
+          <span class="lang-divider" aria-hidden="true">/</span>
+          <span class="lang-opt lang-am">አማ</span>
+        </button>
+
+        <!-- Merged Dark / Light Mode On-Off Toggle Button with Icons -->
+        <button class="theme-toggle-switch" id="theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode" title="Switch to Dark Mode">
+          <span class="switch-icon switch-icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+          </span>
+          <span class="switch-slider">
+            <span class="switch-thumb"></span>
+          </span>
+          <span class="switch-icon switch-icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+        </button>
 
         <a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" class="inquire-cta-pill desktop-inquire" aria-label="Initiate Collaboration with Kaleegziabher Fekede on Telegram">
-          <span>Initiate Collaboration</span>
+          <span data-i18n="cta_initiate">Initiate Collaboration</span>
           <span aria-hidden="true">↗</span>
         </a>
 
@@ -112,7 +132,7 @@
             <span class="hamburger-bar"></span>
             <span class="hamburger-bar"></span>
           </span>
-          <span class="menu-toggle-label font-mono">MENU</span>
+          <span class="menu-toggle-label font-mono" id="menu-toggle-label" data-i18n="menu_label">MENU</span>
         </button>
       </div>
     </div>
@@ -121,8 +141,39 @@
     <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
       <div class="mobile-nav-drawer-content">
         <div class="mobile-nav-header">
-          <div class="font-mono text-gold" style="font-size: 0.72rem; letter-spacing: 0.15em;">KB CREATIVE // MENU</div>
+          <div class="font-mono text-gold" style="font-size: 0.72rem; letter-spacing: 0.15em;" data-i18n="menu_header">KB CREATIVE // MENU</div>
           <button class="mobile-nav-close-btn" id="mobile-nav-close" aria-label="Close navigation menu">✕</button>
+        </div>
+
+        <!-- Mobile Drawer Quick Controls Strip (Language & Theme) -->
+        <div class="mobile-nav-settings-strip">
+          <div class="mobile-setting-item">
+            <span class="setting-label font-mono">LANG:</span>
+            <button class="lang-toggle-btn font-mono" id="mobile-lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ">
+              <span class="lang-opt lang-en active">EN</span>
+              <span class="lang-divider" aria-hidden="true">/</span>
+              <span class="lang-opt lang-am">አማ</span>
+            </button>
+          </div>
+          <div class="mobile-setting-item">
+            <span class="setting-label font-mono">THEME:</span>
+            <button class="theme-toggle-switch" id="mobile-theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode">
+              <span class="switch-icon switch-icon-sun" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+                </svg>
+              </span>
+              <span class="switch-slider">
+                <span class="switch-thumb"></span>
+              </span>
+              <span class="switch-icon switch-icon-moon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
 
         <nav aria-label="Mobile Navigation">
@@ -131,30 +182,30 @@
               <a href="#work" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
                   <span class="mobile-nav-index font-mono">01</span>
-                  <span class="mobile-nav-title">Works</span>
+                  <span class="mobile-nav-title" data-i18n="nav_works">Works</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
-                <span class="mobile-nav-sub font-mono">11 Curated Works • Spatial &amp; Brand</span>
+                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_works">11 Curated Works • Spatial &amp; Brand</span>
               </a>
             </li>
             <li>
               <a href="#skills" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
                   <span class="mobile-nav-index font-mono">02</span>
-                  <span class="mobile-nav-title">Core Skills</span>
+                  <span class="mobile-nav-title" data-i18n="nav_skills">Core Skills</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
-                <span class="mobile-nav-sub font-mono">8 Software Tools • Multilingual Fluency</span>
+                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_skills">8 Software Tools • Multilingual Fluency</span>
               </a>
             </li>
             <li>
               <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
                   <span class="mobile-nav-index font-mono">03</span>
-                  <span class="mobile-nav-title">Contact</span>
+                  <span class="mobile-nav-title" data-i18n="nav_contact">Contact</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
-                <span class="mobile-nav-sub font-mono">Direct Telegram, Phone &amp; Proposal</span>
+                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_contact">Direct Telegram, Phone &amp; Proposal</span>
               </a>
             </li>
           </ul>
@@ -167,14 +218,14 @@
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            <span>Download CV / Portfolio PDF [7.4 MB]</span>
+            <span data-i18n="mob_cv_btn">Download CV / Portfolio PDF [7.4 MB]</span>
           </a>
 
           <a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" class="mobile-nav-cta-btn" onclick="closeMobileNav()">
-            <span>Initiate Collaboration (Telegram) ↗</span>
+            <span data-i18n="mob_telegram_cta">Initiate Collaboration (Telegram) ↗</span>
           </a>
 
-          <div class="mobile-nav-footnote font-mono">
+          <div class="mobile-nav-footnote font-mono" data-i18n="mob_footnote">
             4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY
           </div>
         </div>
@@ -193,7 +244,7 @@
 
     <div class="container hero-content-grid-minimal">
       <div class="reveal-on-scroll">
-        <div class="hero-discipline-tag">
+        <div class="hero-discipline-tag" data-i18n="hero_tag">
           <span>● 4TH YEAR ARCHITECTURE STUDENT</span>
           <span>•</span>
           <span>WOLKITE UNIVERSITY</span>
@@ -201,12 +252,12 @@
           <span>KB CREATIVE</span>
         </div>
 
-        <h1 class="hero-main-title">
+        <h1 class="hero-main-title" data-i18n="hero_title">
           Hi, I'm <span class="highlight-yellow">Kaleegziabher Fekede</span>
           <span class="block outline-text">(KB CREATIVE).</span>
         </h1>
 
-        <p class="hero-bio-lead">
+        <p class="hero-bio-lead" data-i18n="hero_bio">
           <strong>4th-Year Architecture Student at Wolkite University</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of daylight-oriented spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.
         </p>
 
@@ -214,8 +265,8 @@
         <div class="hero-availability-statement">
           <div class="availability-status-dot" aria-hidden="true"></div>
           <div class="availability-text-wrap">
-            <span class="availability-status-tag font-mono">CURRENT AVAILABILITY // 2026 COMMISSIONS</span>
-            <p class="availability-body-text">
+            <span class="availability-status-tag font-mono" data-i18n="avail_tag">CURRENT AVAILABILITY // 2026 COMMISSIONS</span>
+            <p class="availability-body-text" data-i18n="avail_body">
               Accepting select client commissions for <strong>Spatial Architecture</strong> (residential &amp; interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering &amp; daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks &amp; brand guidelines).
             </p>
           </div>
@@ -224,7 +275,7 @@
         <!-- Streamlined Action Group with Download CV / Portfolio PDF Button -->
         <div class="hero-actions-group">
           <a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" class="btn-primary-hero" aria-label="Initiate Collaboration with Kaleegziabher Fekede on Telegram">
-            <span>Initiate Collaboration</span>
+            <span data-i18n="cta_initiate">Initiate Collaboration</span>
             <span class="cta-arrow" aria-hidden="true">↗</span>
           </a>
 
@@ -234,12 +285,12 @@
               <polyline points="7 10 12 15 17 10"></polyline>
               <line x1="12" y1="15" x2="12" y2="3"></line>
             </svg>
-            <span>Download CV / Portfolio PDF</span>
+            <span data-i18n="hero_cv">Download CV / Portfolio PDF</span>
             <span class="pdf-tag font-mono">PDF</span>
           </a>
 
           <a href="#work" class="hero-scroll-subtle">
-            <span>Explore 11 Curated Works</span>
+            <span data-i18n="hero_explore">Explore 11 Curated Works</span>
             <span class="scroll-arrow" aria-hidden="true">↓</span>
           </a>
         </div>
@@ -252,7 +303,7 @@
           <img src="assets/kb-logo.png" alt="KB CREATIVE Official Logo" class="hero-emblem-logo-img">
         </div>
         <h2 class="hero-emblem-title">KALEEGZIABHER FEKEDE</h2>
-        <div class="hero-emblem-subtitle">4th Year Architecture Student • Wolkite University</div>
+        <div class="hero-emblem-subtitle" data-i18n="brand_sub">4th Year Architecture Student • Wolkite University</div>
         <p style="font-size: 0.82rem; color: rgba(255,255,255,0.85); line-height: 1.5; margin-bottom: 1.5rem;">
           Founder &amp; Creative Lead, KB CREATIVE<br>
           Department of Architecture, Wolkite University
@@ -262,15 +313,15 @@
         <div class="hero-emblem-stats">
           <div class="emblem-stat-box">
             <div class="emblem-stat-val" data-counter="4" data-suffix="th Yr">4th Yr</div>
-            <div class="emblem-stat-label">Architecture Student</div>
+            <div class="emblem-stat-label" data-i18n="stat_student">Architecture Student</div>
           </div>
           <div class="emblem-stat-box">
             <div class="emblem-stat-val" data-counter="11" data-suffix="+">11+</div>
-            <div class="emblem-stat-label">Curated Case Studies</div>
+            <div class="emblem-stat-label" data-i18n="stat_studies">Curated Case Studies</div>
           </div>
           <div class="emblem-stat-box">
             <div class="emblem-stat-val" data-counter="100" data-suffix="%">100%</div>
-            <div class="emblem-stat-label">Daylight Orientation</div>
+            <div class="emblem-stat-label" data-i18n="stat_daylight">Daylight Orientation</div>
           </div>
         </div>
       </div>
@@ -318,20 +369,20 @@
     <div class="container navigator-flex">
       <!-- Primary Practice Filter Pills -->
       <div class="practice-toggle-pills" role="tablist">
-        <button class="practice-pill active" data-practice="all">All Works (11)</button>
-        <button class="practice-pill" data-practice="architecture">Spatial Architecture (05)</button>
-        <button class="practice-pill" data-practice="graphic">Brand &amp; Graphic Design (06)</button>
+        <button class="practice-pill active" data-practice="all" data-i18n="filter_all">All Works (11)</button>
+        <button class="practice-pill" data-practice="architecture" data-i18n="filter_arch">Spatial Architecture (05)</button>
+        <button class="practice-pill" data-practice="graphic" data-i18n="filter_brand">Brand &amp; Graphic Design (06)</button>
       </div>
 
       <!-- Sub-Category Typology Filter Pills -->
       <div class="sub-category-pills">
-        <button class="sub-pill active" data-sub="all">All Typologies</button>
-        <button class="sub-pill" data-sub="interior">Interior &amp; Renovation</button>
-        <button class="sub-pill" data-sub="mixeduse">Mixed-Use</button>
-        <button class="sub-pill" data-sub="residential">Residential</button>
-        <button class="sub-pill" data-sub="sports">Sports &amp; Wellness</button>
-        <button class="sub-pill" data-sub="sustainable">Sustainable / Eco</button>
-        <button class="sub-pill" data-sub="identity">Brand &amp; UI</button>
+        <button class="sub-pill active" data-sub="all" data-i18n="sub_all">All Typologies</button>
+        <button class="sub-pill" data-sub="interior" data-i18n="sub_interior">Interior &amp; Renovation</button>
+        <button class="sub-pill" data-sub="mixeduse" data-i18n="sub_mixeduse">Mixed-Use</button>
+        <button class="sub-pill" data-sub="residential" data-i18n="sub_residential">Residential</button>
+        <button class="sub-pill" data-sub="sports" data-i18n="sub_sports">Sports &amp; Wellness</button>
+        <button class="sub-pill" data-sub="sustainable" data-i18n="sub_sustainable">Sustainable / Eco</button>
+        <button class="sub-pill" data-sub="identity" data-i18n="sub_identity">Brand &amp; UI</button>
       </div>
     </div>
   </nav>
@@ -350,12 +401,12 @@
       <div class="section-editorial-header reveal-on-scroll">
         <div class="storytelling-chapter-pill font-mono">
           <span class="story-dot" aria-hidden="true"></span>
-          <span>CHAPTER 01 // ARCHITECTURAL &amp; BRAND CHRONICLE</span>
+          <span data-i18n="chap_01">CHAPTER 01 // ARCHITECTURAL &amp; BRAND CHRONICLE</span>
         </div>
         <div class="section-super-title">
-          <span aria-hidden="true">▪</span> PORTFOLIO ARCHIVE
+          <span aria-hidden="true">▪</span> <span data-i18n="archive_title">PORTFOLIO ARCHIVE</span>
         </div>
-        <h2 class="section-editorial-title">Curated Architectural &amp; Graphic Works</h2>
+        <h2 class="section-editorial-title" data-i18n="editorial_title">Curated Architectural &amp; Graphic Works</h2>
         <div class="font-mono" style="font-size: 0.75rem; color: var(--text-muted); margin-top: 1rem;" id="archive-count">
           INDEX // Showing 11 of 11 Curated Works
         </div>
@@ -379,10 +430,10 @@
       <div class="section-editorial-header reveal-on-scroll">
         <div class="storytelling-chapter-pill font-mono">
           <span class="story-dot" aria-hidden="true"></span>
-          <span>CHAPTER 02 // TECHNICAL DISCIPLINE &amp; CGI MATRIX</span>
+          <span data-i18n="chap_02">CHAPTER 02 // TECHNICAL DISCIPLINE &amp; CGI MATRIX</span>
         </div>
         <div class="section-super-title">
-          <span aria-hidden="true">▪</span> 02. Core Competencies &amp; Skills Matrix
+          <span aria-hidden="true">▪</span> <span data-i18n="skills_super">02. Core Competencies &amp; Skills Matrix</span>
         </div>
         <h2 class="section-editorial-title">Technical &amp; Disciplinary Toolkit</h2>
         <p class="section-editorial-desc">
@@ -607,20 +658,20 @@
       <div class="reveal-on-scroll">
         <div class="storytelling-chapter-pill font-mono" style="margin-bottom: 0.75rem;">
           <span class="story-dot" aria-hidden="true"></span>
-          <span>CHAPTER 03 // DIALOGUE &amp; COMMISSION INQUIRY</span>
+          <span data-i18n="chap_03">CHAPTER 03 // DIALOGUE &amp; COMMISSION INQUIRY</span>
         </div>
         <div class="font-mono text-gold" style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.5rem;">
-          ▪ 03. Direct Collaboration
+          ▪ <span data-i18n="contact_super">03. Direct Collaboration</span>
         </div>
         <h2 class="contact-hero-title">
           Let's Build Something <span style="color: var(--brand-yellow);">Remarkable</span> Together.
         </h2>
         <div class="contact-availability-strip font-mono">
           <span class="status-dot-pulse" aria-hidden="true"></span>
-          <span>CURRENT STATUS: AVAILABLE FOR ARCHITECTURE, 3D VISUALIZATION &amp; BRAND COMMISSIONS</span>
+          <span data-i18n="contact_status">CURRENT STATUS: AVAILABLE FOR ARCHITECTURE, 3D VISUALIZATION &amp; BRAND COMMISSIONS</span>
         </div>
 
-        <p class="contact-intro-p">
+        <p class="contact-intro-p" data-i18n="contact_intro">
           Currently a <strong>4th-Year Architecture Student at Wolkite University</strong> and principal designer at <strong>KB CREATIVE</strong>. Available for spatial architectural concepts, residential and interior renovations, photorealistic 3D visualization, or bespoke brand identity systems across Ethiopia and remote worldwide.
         </p>
 
@@ -635,8 +686,8 @@
               </svg>
             </div>
             <div class="cv-contact-text">
-              <div class="cv-contact-title">Download CV / Portfolio PDF</div>
-              <div class="cv-contact-meta font-mono">2026 Comprehensive Archive • Architecture &amp; Brand Systems [7.4 MB]</div>
+              <div class="cv-contact-title" data-i18n="contact_cv_title">Download CV / Portfolio PDF</div>
+              <div class="cv-contact-meta font-mono" data-i18n="contact_cv_meta">2026 Comprehensive Archive • Architecture &amp; Brand Systems [7.4 MB]</div>
             </div>
             <span class="cv-contact-download-arrow" aria-hidden="true">📥</span>
           </a>

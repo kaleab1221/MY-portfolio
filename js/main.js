@@ -24,6 +24,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initThemeEngine();
+  initLanguageEngine();
   initProjectsArchive();
   initSkillsAnimation();
   initMoveableCardTilt();
@@ -686,33 +687,243 @@ window.KB_PROJECTS = KB_PROJECTS;
 const projectSlideIndexes = {};
 
 /* ==========================================================================
-   2. Theme Switcher Engine (STRICTLY LIGHT & DARK ONLY)
+   2. Theme Switcher Engine (Merged On/Off Toggle Button with Sun/Moon Icons)
    ========================================================================== */
 function initThemeEngine() {
-  const themeButtons = document.querySelectorAll('.theme-opt-btn');
+  const themeToggles = document.querySelectorAll('.theme-toggle-switch, #theme-toggle-btn, #mobile-theme-toggle-btn');
   const storedTheme = localStorage.getItem('kb_theme') || 'light';
   
   // Enforce light or dark only
   const activeTheme = (storedTheme === 'dark') ? 'dark' : 'light';
   applyTheme(activeTheme);
 
-  themeButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const selected = btn.getAttribute('data-theme-choice');
-      const safeTheme = (selected === 'dark') ? 'dark' : 'light';
-      applyTheme(safeTheme);
-      localStorage.setItem('kb_theme', safeTheme);
+  themeToggles.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      const newTheme = (currentTheme === 'dark') ? 'light' : 'dark';
+      applyTheme(newTheme);
+      localStorage.setItem('kb_theme', newTheme);
+
+      if (typeof window.showToast === 'function') {
+        const lang = (window.getCurrentLang && window.getCurrentLang()) || 'en';
+        const isDark = (newTheme === 'dark');
+        const title = isDark ? (lang === 'am' ? 'ጨለማ ገጽታ' : 'DARK MODE') : (lang === 'am' ? 'ብርሃን ገጽታ' : 'LIGHT MODE');
+        const msg = isDark
+          ? (lang === 'am' ? 'የጨለማ ገጽታ በርቷል (Obsidian Navy)' : 'Obsidian Navy Dark Mode Active')
+          : (lang === 'am' ? 'የብርሃን ገጽታ በርቷል (Pure White)' : 'Pure White Light Mode Active');
+        window.showToast(title, msg, isDark ? '🌙' : '☀️');
+      }
     });
   });
 
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    themeButtons.forEach(b => {
-      if (b.getAttribute('data-theme-choice') === theme) {
-        b.classList.add('active');
-      } else {
-        b.classList.remove('active');
+    const isDark = (theme === 'dark');
+    themeToggles.forEach(b => {
+      b.setAttribute('aria-checked', isDark ? 'true' : 'false');
+      const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
+      b.setAttribute('title', isDark 
+        ? (isAm ? 'ወደ ብርሃን ገጽታ ቀይር (Light Mode)' : 'Switch to Light Mode')
+        : (isAm ? 'ወደ ጨለማ ገጽታ ቀይር (Dark Mode)' : 'Switch to Dark Mode')
+      );
+    });
+  }
+}
+
+/* ==========================================================================
+   3. Multilingual Amharic (አማ) & English (EN) Language Engine
+   ========================================================================== */
+const KB_I18N = {
+  en: {
+    // Header & Navigation
+    phone_label: "PHONE:",
+    brand_sub: "4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY",
+    nav_works: "Works",
+    nav_skills: "Core Skills",
+    nav_contact: "Contact",
+    cta_initiate: "Initiate Collaboration",
+    menu_label: "MENU",
+    menu_header: "KB CREATIVE // MENU",
+    
+    // Mobile Drawer
+    mob_sub_works: "11 Curated Works • Spatial & Brand",
+    mob_sub_skills: "8 Software Tools • Multilingual Fluency",
+    mob_sub_contact: "Direct Telegram, Phone & Proposal",
+    mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
+    mob_telegram_cta: "Initiate Collaboration (Telegram) ↗",
+    mob_footnote: "4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY",
+    
+    // Hero Section
+    hero_tag: `<span>● 4TH YEAR ARCHITECTURE STUDENT</span><span>•</span><span>WOLKITE UNIVERSITY</span><span>•</span><span>KB CREATIVE</span>`,
+    hero_title: `Hi, I'm <span class="highlight-yellow">Kaleegziabher Fekede</span> <span class="block outline-text">(KB CREATIVE).</span>`,
+    hero_bio: `<strong>4th-Year Architecture Student at Wolkite University</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of daylight-oriented spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.`,
+    avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
+    avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
+    hero_cv: "Download CV / Portfolio PDF",
+    hero_explore: "Explore 11 Curated Works",
+    
+    // Hero Stats
+    stat_student: "Architecture Student",
+    stat_studies: "Curated Case Studies",
+    stat_daylight: "Daylight Orientation",
+
+    // Practice Filter Pills
+    filter_all: "All Works (11)",
+    filter_arch: "Spatial Architecture (05)",
+    filter_brand: "Brand & Graphic Design (06)",
+    sub_all: "All Typologies",
+    sub_interior: "Interior & Renovation",
+    sub_mixeduse: "Mixed-Use",
+    sub_residential: "Residential",
+    sub_sports: "Sports & Wellness",
+    sub_sustainable: "Sustainable / Eco",
+    sub_identity: "Brand & UI",
+    
+    // Works Section
+    chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
+    archive_title: "PORTFOLIO ARCHIVE",
+    editorial_title: "Curated Architectural & Graphic Works",
+    view_case_study: "View Case Study",
+
+    // Skills Section
+    chap_02: "CHAPTER 02 // TECHNICAL DISCIPLINE & CGI MATRIX",
+    skills_super: "02. Core Competencies & Skills Matrix",
+
+    // Contact Section
+    chap_03: "CHAPTER 03 // DIALOGUE & COMMISSION INQUIRY",
+    contact_super: "03. Direct Collaboration",
+    contact_status: "CURRENT STATUS: AVAILABLE FOR ARCHITECTURE, 3D VISUALIZATION & BRAND COMMISSIONS",
+    contact_intro: `Currently a <strong>4th-Year Architecture Student at Wolkite University</strong> and principal designer at <strong>KB CREATIVE</strong>. Available for spatial architectural concepts, residential and interior renovations, photorealistic 3D visualization, or bespoke brand identity systems across Ethiopia and remote worldwide.`,
+    contact_cv_title: "Download CV / Portfolio PDF",
+    contact_cv_meta: "2026 Comprehensive Archive • Architecture & Brand Systems [7.4 MB]"
+  },
+  am: {
+    // Header & Navigation
+    phone_label: "ስልክ:",
+    brand_sub: "4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
+    nav_works: "ስራዎች",
+    nav_skills: "ዋና ክህሎቶች",
+    nav_contact: "አግኙን",
+    cta_initiate: "አብረን እንስራ",
+    menu_label: "ማውጫ",
+    menu_header: "KB CREATIVE // ማውጫ",
+    
+    // Mobile Drawer
+    mob_sub_works: "11 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
+    mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
+    mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
+    mob_telegram_cta: "በቴሌግራም ያግኙኝ ↗",
+    mob_footnote: "4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
+    
+    // Hero Section
+    hero_tag: `<span>● 4ኛ ዓመት የአርክቴክቸር ተማሪ</span><span>•</span><span>ወልቂጤ ዩኒቨርሲቲ</span><span>•</span><span>ኬቢ ክሪኤቲቭ</span>`,
+    hero_title: `ሰላም፣ እኔ <span class="highlight-yellow">ቃልእግዚአብሔር ፈቀደ</span> <span class="block outline-text">(KB CREATIVE) ነኝ።</span>`,
+    hero_bio: `<strong>በወልቂጤ ዩኒቨርሲቲ የ4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> መስራች። የተፈጥሮ ብርሃንን ባማከለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን እና የብራንድ መለያ ዲዛይን ላይ እሰራለሁ።`,
+    avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
+    avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
+    hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
+    hero_explore: "11 የተመረጡ ስራዎችን ይመልከቱ",
+    
+    // Hero Stats
+    stat_student: "የአርክቴክቸር ተማሪ",
+    stat_studies: "የተመረጡ ስራዎች",
+    stat_daylight: "የተፈጥሮ ብርሃን ተጠቃሚነት",
+
+    // Practice Filter Pills
+    filter_all: "ሁሉም ስራዎች (11)",
+    filter_arch: "አርክቴክቸር (05)",
+    filter_brand: "ብራንድ እና ግራፊክ ዲዛይን (06)",
+    sub_all: "ሁሉም አይነቶች",
+    sub_interior: "የውስጥ ዲዛይን እና እድሳት",
+    sub_mixeduse: "የተደባለቀ አገልግሎት",
+    sub_residential: "መኖሪያ ቤት",
+    sub_sports: "ስፖርት እና ጤና ማዕከል",
+    sub_sustainable: "ኢኮ-ተስማሚ ንድፍ",
+    sub_identity: "ብራንድ እና መለያ",
+    
+    // Works Section
+    chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
+    archive_title: "የስራዎች ማህደር",
+    editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ስራዎች",
+    view_case_study: "ዝርዝር ይመልከቱ",
+
+    // Skills Section
+    chap_02: "ክፍል 02 // የሙያ እና የቴክኒክ ብቃት",
+    skills_super: "02. ዋና ክህሎቶች እና የሶፍትዌር ብቃት",
+
+    // Contact Section
+    chap_03: "ክፍል 03 // ግንኙነት እና የስራ ስምምነት",
+    contact_super: "03. አብረን እንስራ // ያግኙን",
+    contact_status: "የስራ ዝግጁነት: ለአርክቴክቸር፣ 3D ቪዥዋላይዜሽን እና ብራንድ ዲዛይን ስራዎች ክፍት ነኝ",
+    contact_intro: `በወልቂጤ ዩኒቨርሲቲ የ<strong>4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> ዋና ዲዛይነር። ለህንፃ ንድፍ፣ ለመኖሪያ እና የውስጥ እድሳት፣ ለ3D ቪዥዋላይዜሽን ወይም ለብራንድ መለያ ስራዎች ዝግጁ ነኝ።`,
+    contact_cv_title: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
+    contact_cv_meta: "የ2026 አጠቃላይ ማህደር • ህንፃ እና ብራንድ ሲስተሞች [7.4 MB]"
+  }
+};
+
+window.getCurrentLang = function() {
+  return localStorage.getItem('kb_lang') || 'en';
+};
+
+function initLanguageEngine() {
+  const langToggles = document.querySelectorAll('.lang-toggle-btn, #lang-toggle-btn, #mobile-lang-toggle-btn');
+  const storedLang = localStorage.getItem('kb_lang') || 'en';
+  const initialLang = (storedLang === 'am') ? 'am' : 'en';
+
+  applyLanguage(initialLang);
+
+  langToggles.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const current = window.getCurrentLang();
+      const nextLang = (current === 'am') ? 'en' : 'am';
+      applyLanguage(nextLang);
+
+      if (typeof window.showToast === 'function') {
+        if (nextLang === 'am') {
+          window.showToast('ቋንቋ / LANGUAGE', 'አማርኛ ተመርጧል (Amharic Active)', '🇪🇹');
+        } else {
+          window.showToast('LANGUAGE / ቋንቋ', 'English Language Active', '🌐');
+        }
       }
+    });
+  });
+
+  function applyLanguage(lang) {
+    const currentLang = (lang === 'am') ? 'am' : 'en';
+    document.documentElement.lang = currentLang;
+    localStorage.setItem('kb_lang', currentLang);
+
+    // Update all language toggle buttons
+    langToggles.forEach(btn => {
+      const enOpt = btn.querySelector('.lang-en');
+      const amOpt = btn.querySelector('.lang-am');
+      if (enOpt) enOpt.classList.toggle('active', currentLang === 'en');
+      if (amOpt) amOpt.classList.toggle('active', currentLang === 'am');
+      btn.setAttribute('title', currentLang === 'am' ? 'Switch to English (EN)' : 'ወደ አማርኛ ቀይር (አማ)');
+    });
+
+    const dict = KB_I18N[currentLang];
+    if (!dict) return;
+
+    // Update all elements with data-i18n
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (dict[key]) {
+        el.innerHTML = dict[key];
+      }
+    });
+
+    // Update Card Buttons
+    document.querySelectorAll('.btn-card-view-case-study span:first-child').forEach(span => {
+      span.textContent = dict.view_case_study;
+    });
+
+    // Update Big hover button in project cards
+    document.querySelectorAll('.big-hover-btn').forEach(btn => {
+      btn.textContent = currentLang === 'am' ? 'ዝርዝር ይመልከቱ ↗' : 'VIEW CASE STUDY ↗';
     });
   }
 }
@@ -823,7 +1034,7 @@ function initProjectsArchive() {
                 </div>
               ` : ''}
               <div class="big-hover-action-wrap">
-                <span class="big-hover-btn font-mono">VIEW CASE STUDY ↗</span>
+                <span class="big-hover-btn font-mono">${(window.getCurrentLang && window.getCurrentLang() === 'am') ? 'ዝርዝር ይመልከቱ ↗' : 'VIEW CASE STUDY ↗'}</span>
                 <span class="big-hover-slide-caption font-mono" id="caption-${item.id}">
                   <span class="scrub-hint">↔ SCRUB:</span> ${currentSlide.caption}
                 </span>
@@ -865,7 +1076,7 @@ function initProjectsArchive() {
 
           <div class="simplified-card-action">
             <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('${item.id}', this)" aria-label="View Case Study for ${item.title}">
-              <span>View Case Study</span>
+              <span>${(window.getCurrentLang && window.getCurrentLang() === 'am') ? 'ዝርዝር ይመልከቱ' : 'View Case Study'}</span>
               <span class="case-study-arrow" aria-hidden="true">↗</span>
             </button>
           </div>
