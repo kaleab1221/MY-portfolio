@@ -794,6 +794,66 @@ const KB_PROJECTS = [
       <path d="M16 8h10l8 8v10l-8 8H16V8z" fill="#3D48E0" stroke="none"/>
       <rect x="18" y="14" width="8" height="12" fill="#041B2B" rx="1"/>
     </svg>`
+  },
+
+  // 14: DAMA MARKETING — CORPORATE MARKETING AGENCY & BRAND IDENTITY SYSTEM
+  {
+    id: 'dama-marketing-brand-identity',
+    service: "Corporate Marketing & Strategic Brand Architecture",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Figma"],
+    title: 'Dama Marketing',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Corporate Marketing & Brand Systems',
+    year: '2026',
+    gridRef: 'MOD-14',
+    sizeContext: 'Full Scale "D" Monogram • Executive Duplex Cards • Web Platform • Brand Collateral',
+    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
+    client: 'Dama Marketing Corporate Agency',
+    scale: 'Complete Corporate Identity System, Digital Web Interface & Executive Collateral',
+    medium: 'Geometric Serif Monogram "D", Deep Pine (#122720) & Imperial Gold (#B6903F), Duplex Matte Cards, Ceramic & Environmental Merch',
+    summary: 'Geometric corporate identity uniting a sharp cantilevered square pixel with a sculpted golden "D" monogram.',
+    description: 'Dama Marketing is a performance-driven corporate agency built on strategic precision and measurable market impact. The brand mark deconstructs the initial "D" into two interconnected kinetic modules: an elevated geometric square pixel that commands the upper-left horizon and a sculpted golden stem that grounds the composition. The identity balances executive authority with modern tech agility across dark forest green duplex collateral, responsive web UI, and executive lifestyle merchandise.',
+    challenge: 'Devising an emblem that expresses strategic stability while breaking the conventional mold of corporate marketing firms through bold geometric negative space and prestigious chromatic contrast.',
+    solution: 'Constructed an asymmetric dual-geometry monogram: an offset golden square anchor intersecting the uppercase "D" silhouette, unified by an aristocratic deep pine green (#122720) and rich imperial gold (#B6903F) palette with crisp modern typography.',
+    deliverables: [
+      'Primary Scalable Vector "D" Pixel Monogram & Wordmark (Full Scale 1:1)',
+      'Executive Matte Pine Business Cards with Imperial Gold Foil Stamping',
+      'Corporate Responsive Web Landing Page & Digital Brand Design System',
+      'Executive Ceramic Desk Merchandise & Gold Writing Instruments',
+      'Architectural All-Weather Client Umbrellas with Gold Metallic Branding',
+      'Comprehensive Corporate Brand Standards & Typography Guide'
+    ],
+    slides: [
+      { 
+        url: 'assets/dama-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary "D" Monogram on Deep Pine (#122720) (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#122720' 
+      },
+      { 
+        url: 'assets/dama-slide-02-cards.jpg', 
+        caption: 'Slide 02 // Executive Matte Green Business Cards with Gold Stamping' 
+      },
+      { 
+        url: 'assets/dama-slide-03-web.jpg', 
+        caption: 'Slide 03 // Responsive Corporate Web Platform & Digital Brand Suite' 
+      },
+      { 
+        url: 'assets/dama-slide-04-mug.jpg', 
+        caption: 'Slide 04 // Studio Executive Ceramic Mug & Gold Precision Pen' 
+      },
+      { 
+        url: 'assets/dama-slide-05-umbrella.jpg', 
+        caption: 'Slide 05 // Architectural All-Weather Umbrella with Gold Branding' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="7" y="10" width="7" height="7" fill="#B6903F" stroke="none"/>
+      <path d="M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z" fill="#B6903F" stroke="none"/>
+      <rect x="18" y="15" width="5" height="8" fill="#122720" rx="1"/>
+    </svg>`
   }
 ];
 
@@ -854,7 +914,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "13 Curated Works • Spatial & Brand",
+    mob_sub_works: "14 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
@@ -868,7 +928,7 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 13 Curated Works",
+    hero_explore: "Explore 14 Curated Works",
     
     // Hero Stats
     stat_student: "Architecture Student",
@@ -876,10 +936,10 @@ const KB_I18N = {
     stat_daylight: "Daylight Orientation",
 
     // Practice Filter Pills
-    filter_all: "All Works (13)",
+    filter_all: "All Works (14)",
     filter_arch: "Spatial Architecture (05)",
     filter_vis: "3D Visualization (05)",
-    filter_brand: "Brand Identity (08)",
+    filter_brand: "Brand Identity (09)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -918,7 +978,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "13 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "14 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
@@ -932,7 +992,7 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "13 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "14 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
@@ -940,10 +1000,10 @@ const KB_I18N = {
     stat_daylight: "የተፈጥሮ ብርሃን ተጠቃሚነት",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (13)",
+    filter_all: "ሁሉም ስራዎች (14)",
     filter_arch: "አርክቴክቸር (05)",
     filter_vis: "3D ቪዥዋላይዜሽን (05)",
-    filter_brand: "የብራንድ መለያ (08)",
+    filter_brand: "የብራንድ መለያ (09)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
