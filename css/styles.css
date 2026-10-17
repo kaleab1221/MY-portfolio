@@ -4611,3 +4611,72 @@ button:active,
   }
 }
 
+/* ==========================================================================
+   24. SWISS MODULAR EMPTY FILTER STATE & TOUCH UX REFINEMENTS
+   ========================================================================== */
+.empty-filter-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 5rem 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-hairline);
+  border-radius: 8px;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: filterEnter 0.35s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.empty-status-tag {
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  color: var(--brand-yellow);
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.empty-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 0.5rem 0;
+}
+
+.empty-desc {
+  max-width: 480px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 auto 1.75rem auto;
+}
+
+.empty-reset-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.85rem 1.6rem;
+  font-family: inherit;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Touch slider optimization: prevent browser gesture collision */
+.ba-slider-container {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Filter bar smooth touch scrolling */
+.practice-navigator-bar .navigator-flex {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.practice-navigator-bar .navigator-flex::-webkit-scrollbar {
+  display: none;
+}
+

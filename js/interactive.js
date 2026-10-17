@@ -242,15 +242,14 @@
   }
 
   /* ==========================================================================
-     3. INTERACTIVE HORIZONTAL MEDIA SCRUBBING
-     Hovering left-to-right across a project card scrubs through the 5 views
+     3. INTERACTIVE HORIZONTAL MEDIA SCRUBBING & TOUCH SWIPE
+     Hovering left-to-right across a project card scrubs through the views;
+     swiping horizontally on touch devices advances slides
      ========================================================================== */
   function initCardScrubbing() {
-    if (isTouchDevice()) return;
-
     function attachScrubbing() {
-      const ring = document.getElementById('kb-cursor-ring');
-      const badgeText = document.getElementById('kb-cursor-badge-text');
+      const ring = document.getElementById('cursor-ring');
+      const badgeText = document.getElementById('cursor-badge-text');
 
       document.querySelectorAll('.big-project-card').forEach((card) => {
         if (card._scrubAttached) return;
@@ -262,31 +261,55 @@
 
         let lastScrubIndex = -1;
 
-        mediaWrap.addEventListener('mousemove', (e) => {
-          const rect = mediaWrap.getBoundingClientRect();
-          const normX = Math.max(0, Math.min(0.999, (e.clientX - rect.left) / rect.width));
+        if (!isTouchDevice()) {
+          mediaWrap.addEventListener('mousemove', (e) => {
+            const rect = mediaWrap.getBoundingClientRect();
+            const normX = Math.max(0, Math.min(0.999, (e.clientX - rect.left) / rect.width));
 
-          // Map 0 -> 1 to slide index based on dynamic project slides
-          const proj = (window.KB_PROJECTS || []).find(p => p.id === projectId);
-          const totalSlides = proj && proj.slides ? proj.slides.length : 5;
-          const scrubIndex = Math.min(totalSlides - 1, Math.floor(normX * totalSlides));
+            // Map 0 -> 1 to slide index based on dynamic project slides
+            const proj = (window.KB_PROJECTS || []).find(p => p.id === projectId);
+            const totalSlides = proj && proj.slides ? proj.slides.length : 5;
+            const scrubIndex = Math.min(totalSlides - 1, Math.floor(normX * totalSlides));
 
-          if (badgeText) {
-            badgeText.textContent = `0${scrubIndex + 1}/0${totalSlides} ↗`;
-          }
+            if (badgeText) {
+              badgeText.textContent = `0${scrubIndex + 1}/0${totalSlides} ↗`;
+            }
 
-          if (scrubIndex !== lastScrubIndex && typeof window.goToSlide === 'function') {
-            lastScrubIndex = scrubIndex;
-            window.goToSlide(e, projectId, scrubIndex, true);
-          }
-        });
+            if (scrubIndex !== lastScrubIndex && typeof window.goToSlide === 'function') {
+              lastScrubIndex = scrubIndex;
+              window.goToSlide(e, projectId, scrubIndex, true);
+            }
+          });
 
-        mediaWrap.addEventListener('mouseleave', () => {
-          lastScrubIndex = -1;
-          if (badgeText) {
-            badgeText.textContent = 'VIEW ↗';
-          }
-        });
+          mediaWrap.addEventListener('mouseleave', () => {
+            lastScrubIndex = -1;
+            if (badgeText) {
+              badgeText.textContent = 'VIEW ↗';
+            }
+          });
+        } else {
+          // Touch swipe support for mobile/tablet users
+          let touchStartX = 0;
+          let touchStartY = 0;
+          mediaWrap.addEventListener('touchstart', (e) => {
+            if (e.touches && e.touches[0]) {
+              touchStartX = e.touches[0].clientX;
+              touchStartY = e.touches[0].clientY;
+            }
+          }, { passive: true });
+
+          mediaWrap.addEventListener('touchend', (e) => {
+            if (!e.changedTouches || !e.changedTouches[0]) return;
+            const diffX = e.changedTouches[0].clientX - touchStartX;
+            const diffY = e.changedTouches[0].clientY - touchStartY;
+            // Only trigger if horizontal swipe is prominent and larger than vertical swipe
+            if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+              if (typeof window.changeSlide === 'function') {
+                window.changeSlide(e, projectId, diffX < 0 ? 1 : -1);
+              }
+            }
+          }, { passive: true });
+        }
       });
     }
 

@@ -1092,14 +1092,44 @@ const KB_I18N = {
     // Skills Section
     chap_02: "CHAPTER 02 // TECHNICAL DISCIPLINE & CGI MATRIX",
     skills_super: "02. Core Competencies & Skills Matrix",
+    skills_title: "Technical & Disciplinary Toolkit",
+    skills_desc: "A rigorous cross-disciplinary synthesis of spatial precision, monolithic visual brand architecture, high-fidelity 3D visualization, and multilingual execution.",
+    academic_tag: "ACADEMIC PROFILE & STUDIO PEDAGOGY",
+    academic_title: "4th-Year Architecture Student — Wolkite University",
+    academic_desc: "Synthesizing university studio research in daylight-oriented tectonic architecture, bioclimatic spatial design, structural detailing, and BIM documentation with active commercial design commissions under <strong>KB CREATIVE</strong>.",
+    academic_badge: "CLASS OF 2026 // 4TH YEAR CANDIDATE",
+    discipline_arch_tag: "01 // SPATIAL ARCHITECTURE",
+    discipline_arch_title: "Architecture",
+    discipline_brand_tag: "02 // BRAND & VISUAL IDENTITY",
+    discipline_brand_title: "Brand Systems",
+    discipline_strat_tag: "03 // STRATEGY & DIRECTION",
+    discipline_strat_title: "Creative Direction",
+    skills_software_tag: "TECHNICAL COMPUTING // 8 INDUSTRY TOOLS",
+    skills_software_title: "Software Skills",
+    skills_lang_tag: "FLUENCY & REGIONAL CONTEXT",
+    skills_lang_title: "Languages",
+    lang_amharic: "Amharic (Native Proficiency)",
+    lang_english: "English (Professional Working)",
+    collab_note_title: "LEADERSHIP & COLLABORATION",
+    collab_note_text: "Multilingual fluency facilitating seamless technical coordination with construction teams on site, academic peers at Wolkite University, and commercial corporate clients across Ethiopia and worldwide.",
 
     // Contact Section
     chap_03: "CHAPTER 03 // DIALOGUE & COMMISSION INQUIRY",
     contact_super: "03. Direct Collaboration",
+    contact_hero_title: `Let's Build Something <span style="color: var(--brand-yellow);">Remarkable</span> Together.`,
     contact_status: "CURRENT STATUS: AVAILABLE FOR ARCHITECTURE, 3D VISUALIZATION & BRAND COMMISSIONS",
     contact_intro: `Currently a <strong>4th-Year Architecture Student at Wolkite University</strong> and principal designer at <strong>KB CREATIVE</strong>. Available for spatial architectural concepts, residential and interior renovations, photorealistic 3D visualization, or bespoke brand identity systems across Ethiopia and remote worldwide.`,
     contact_cv_title: "Download CV / Portfolio PDF",
-    contact_cv_meta: "2026 Comprehensive Archive • Architecture & Brand Systems [7.4 MB]"
+    contact_cv_meta: "2026 Comprehensive Archive • Architecture & Brand Systems [7.4 MB]",
+    inquiry_name_label: "Your Full Name",
+    inquiry_email_label: "Email Address",
+    inquiry_service_label: "Project Scope Required",
+    inquiry_brief_label: "Project Brief & Site Details",
+    inquiry_submit: "Transmit Proposal To Kaleegziabher Fekede →",
+    empty_void_tag: "00 // VOID SPECIFICATION",
+    empty_void_title: "No projects match the selected filter combination",
+    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 16 curated works.",
+    empty_reset_btn: "Reset Filters (Show All 16 Works) →"
   },
   am: {
     // Header & Navigation
@@ -1156,14 +1186,44 @@ const KB_I18N = {
     // Skills Section
     chap_02: "ክፍል 02 // የሙያ እና የቴክኒክ ብቃት",
     skills_super: "02. ዋና ክህሎቶች እና የሶፍትዌር ብቃት",
+    skills_title: "የቴክኒክ እና የሙያ ብቃት ማትሪክስ",
+    skills_desc: "የቦታ ጥንቃቄ፣ የብራንድ ዲዛይን፣ ከፍተኛ ጥራት ያለው 3D ቪዥዋላይዜሽን እና የባለብዙ ቋንቋ ቅንጅት።",
+    academic_tag: "የትምህርት መረጃ እና የስቱዲዮ ልምምድ",
+    academic_title: "4ኛ ዓመት የአርክቴክቸር ተማሪ — ወልቂጤ ዩኒቨርሲቲ",
+    academic_desc: "በተፈጥሮ ብርሃን ተጠቃሚነት፣ በባዮክላይማቲክ ንድፍ፣ በመዋቅር ዝርዝር እና በBIM ሰነዶች ላይ ያተኮረ ዩኒቨርሲቲ ምርምርን ከ<strong>KB CREATIVE</strong> ተግባራዊ ስራዎች ጋር ማስተሳሰር።",
+    academic_badge: "የ2026 ተመራቂ // የ4ኛ ዓመት እጩ",
+    discipline_arch_tag: "01 // ህንፃ እና የቦታ ንድፍ",
+    discipline_arch_title: "አርክቴክቸር",
+    discipline_brand_tag: "02 // የብራንድ መለያ ዲዛይን",
+    discipline_brand_title: "የብራንድ ስርዓቶች",
+    discipline_strat_tag: "03 // ስትራቴጂ እና ምሪት",
+    discipline_strat_title: "የፈጠራ ምሪት",
+    skills_software_tag: "የኮምፒውተር ሶፍትዌር // 8 የኢንዱስትሪ መተግበሪያዎች",
+    skills_software_title: "የሶፍትዌር ክህሎቶች",
+    skills_lang_tag: "የቋንቋ ችሎታ እና ክልላዊ ግንኙነት",
+    skills_lang_title: "ቋንቋዎች",
+    lang_amharic: "አማርኛ (የአፍ መፍቻ ቋንቋ)",
+    lang_english: "እንግሊዝኛ (የስራ ቋንቋ)",
+    collab_note_title: "አመራር እና ትብብር",
+    collab_note_text: "ከግንባታ ቡድኖች፣ ከወልቂጤ ዩኒቨርሲቲ ተማሪዎች እና አለምአቀፍ ደንበኞች ጋር ያለምንም እንቅፋት በብቃት ለመስራት የሚያስችል የቋንቋ ክህሎት።",
 
     // Contact Section
     chap_03: "ክፍል 03 // ግንኙነት እና የስራ ስምምነት",
     contact_super: "03. አብረን እንስራ // ያግኙን",
+    contact_hero_title: `አብረን <span style="color: var(--brand-yellow);">ድንቅ ነገር</span> እንገንባ።`,
     contact_status: "የስራ ዝግጁነት: ለአርክቴክቸር፣ 3D ቪዥዋላይዜሽን እና ብራንድ ዲዛይን ስራዎች ክፍት ነኝ",
     contact_intro: `በወልቂጤ ዩኒቨርሲቲ የ<strong>4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> ዋና ዲዛይነር። ለህንፃ ንድፍ፣ ለመኖሪያ እና የውስጥ እድሳት፣ ለ3D ቪዥዋላይዜሽን ወይም ለብራንድ መለያ ስራዎች ዝግጁ ነኝ።`,
     contact_cv_title: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    contact_cv_meta: "የ2026 አጠቃላይ ማህደር • ህንፃ እና ብራንድ ሲስተሞች [7.4 MB]"
+    contact_cv_meta: "የ2026 አጠቃላይ ማህደር • ህንፃ እና ብራንድ ሲስተሞች [7.4 MB]",
+    inquiry_name_label: "ሙሉ ስምዎት",
+    inquiry_email_label: "ኢሜይል አድራሻ",
+    inquiry_service_label: "የፕሮጀክቱ አይነት",
+    inquiry_brief_label: "የፕሮጀክቱ ዝርዝር እና የቦታ መረጃ",
+    inquiry_submit: "ፕሮፖዛሉን ለቃልእግዚአብሔር ፈቀደ ይላኩ →",
+    empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
+    empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
+    empty_void_desc: "ሁሉንም 16 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
+    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 16 ስራዎች አሳይ) →"
   }
 };
 
@@ -1331,19 +1391,47 @@ function initProjectsArchive() {
 
   subPills.forEach(sp => {
     sp.addEventListener('click', () => {
-      subPills.forEach(s => s.classList.remove('active'));
-      sp.classList.add('active');
+      const targetSub = sp.getAttribute('data-sub');
+      const archSubs = ['interior', 'mixeduse', 'residential', 'sports', 'sustainable'];
+
       transitionFilter(() => {
-        activeSubCategory = sp.getAttribute('data-sub');
+        activeSubCategory = targetSub;
+
+        // Smart Filter Harmonization: align active practice with selected typology
+        if (targetSub !== 'all') {
+          if (archSubs.includes(targetSub) && activePractice === 'graphic') {
+            activePractice = 'architecture';
+            practicePills.forEach(p => {
+              p.classList.toggle('active', p.getAttribute('data-practice') === 'architecture');
+            });
+          } else if (targetSub === 'identity' && (activePractice === 'architecture' || activePractice === 'visualization')) {
+            activePractice = 'graphic';
+            practicePills.forEach(p => {
+              p.classList.toggle('active', p.getAttribute('data-practice') === 'graphic');
+            });
+          }
+        }
+
+        subPills.forEach(s => s.classList.remove('active'));
+        sp.classList.add('active');
       });
     });
   });
+
+  window.resetAllFilters = function() {
+    activePractice = 'all';
+    activeSubCategory = 'all';
+    practicePills.forEach((p, idx) => p.classList.toggle('active', idx === 0));
+    subPills.forEach((s, idx) => s.classList.toggle('active', idx === 0));
+    transitionFilter(() => {});
+  };
 
   function render() {
     let filtered = KB_PROJECTS;
 
     if (activePractice === 'visualization') {
-      filtered = filtered.filter(p => p.practice === 'architecture' || (p.software && p.software.some(s => /D5|Rhino|Blender|Lumion/i.test(s))));
+      // 3D Visualization corresponds to the 6 cinematic CGI architectural works
+      filtered = filtered.filter(p => p.practice === 'architecture');
     } else if (activePractice !== 'all') {
       filtered = filtered.filter(p => p.practice === activePractice);
     }
@@ -1354,6 +1442,22 @@ function initProjectsArchive() {
 
     if (projectCountEl) {
       projectCountEl.textContent = `INDEX // Showing ${filtered.length} of ${KB_PROJECTS.length} Works`;
+    }
+
+    if (filtered.length === 0) {
+      const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
+      const dict = KB_I18N[isAm ? 'am' : 'en'] || KB_I18N.en;
+      container.innerHTML = `
+        <div class="empty-filter-state">
+          <div class="empty-status-tag font-mono">${dict.empty_void_tag || '00 // VOID SPECIFICATION'}</div>
+          <h3 class="empty-title">${dict.empty_void_title || 'No projects match the selected filter combination'}</h3>
+          <p class="empty-desc">${dict.empty_void_desc || 'Clear your sub-category selection or switch practice typologies to explore all 16 curated works.'}</p>
+          <button type="button" class="btn-brand-yellow empty-reset-btn" onclick="window.resetAllFilters()">
+            <span>${dict.empty_reset_btn || 'Reset Filters (Show All 16 Works) →'}</span>
+          </button>
+        </div>
+      `;
+      return;
     }
 
     container.innerHTML = filtered.map((item, cardIndex) => {
@@ -1685,6 +1789,12 @@ function initSkillsAnimation() {
   const skillBars = document.querySelectorAll('.skill-progress-fill');
   let animated = false;
 
+  // Set initial 0% text to ensure a smooth upward count-up
+  skillBars.forEach(bar => {
+    const countEl = bar.closest('.skill-progress-row')?.querySelector('.skill-percent-number');
+    if (countEl) countEl.textContent = '0%';
+  });
+
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting && !animated) {
@@ -1704,7 +1814,7 @@ function initSkillsAnimation() {
       // Expand progress bar width smoothly
       bar.style.width = `${targetPercent}%`;
 
-      // Animate percentage count-up
+      // Animate percentage count-up smoothly
       if (countEl) {
         let current = 0;
         const stepTime = Math.max(10, Math.floor(1200 / targetPercent));
