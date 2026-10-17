@@ -296,30 +296,30 @@ const KB_PROJECTS = [
     ],
     slides: [
       { 
-        url: 'assets/acute-logo.svg', 
-        caption: 'Slide 01 // Acute Engineering Primary Vector Logo & Corporate Identity Mark (Full Scale)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
+        url: 'assets/office-slide-01-elevation.jpg', 
+        caption: 'Slide 01 // Executive Workspace & Branded Calacatta Marble Feature Wall (Photorealistic CGI)' 
       },
       { 
-        url: 'assets/office-slide-01-elevation.jpg', 
-        caption: 'Slide 02 // Executive Workspace & Branded Calacatta Marble Feature Wall' 
+        url: 'assets/office-slide-03-wide.jpg', 
+        caption: 'Slide 02 // Executive Command Suite, Halo Ring Chandeliers & Fluted Millwork' 
       },
       { 
         url: 'assets/office-slide-02-isometric.jpg', 
         caption: 'Slide 03 // 3D Isometric Cutaway — Dual-Zone Spatial Organization (22.6 m²)' 
       },
       { 
-        url: 'assets/office-slide-03-wide.jpg', 
-        caption: 'Slide 04 // Executive Command Suite, Halo Ring Chandeliers & Fluted Millwork' 
-      },
-      { 
         url: 'assets/office-slide-04-divider.jpg', 
-        caption: 'Slide 05 // Steel & Timber Partition Screen — Sequence of Arrival & Transition' 
+        caption: 'Slide 04 // Steel & Timber Partition Screen — Sequence of Arrival & Transition' 
       },
       { 
         url: 'assets/office-slide-05-workstation.jpg', 
-        caption: 'Slide 06 // Workstation Perspective, CAD Drafting Interface & Curated Art' 
+        caption: 'Slide 05 // Workstation Perspective, CAD Drafting Interface & Curated Art' 
+      },
+      { 
+        url: 'assets/acute-logo.svg', 
+        caption: 'Slide 06 // Acute Engineering Primary Vector Logo & Corporate Identity Mark (Full Scale)', 
+        fit: 'contain', 
+        bg: '#FFFFFF' 
       }
     ],
     iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
