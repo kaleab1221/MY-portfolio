@@ -854,6 +854,63 @@ const KB_PROJECTS = [
       <path d="M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z" fill="#B6903F" stroke="none"/>
       <rect x="18" y="15" width="5" height="8" fill="#122720" rx="1"/>
     </svg>`
+  },
+
+  // 15: G+2 FAMILY RESIDENCE — KARA, ADDIS ABABA (250 M² PLOT)
+  {
+    id: 'kara-g2-family-residence',
+    service: "G+2+Terrace Residential Architecture & Daylight Simulation",
+    role: "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Autodesk Revit","D5 Render","AutoCAD","Adobe Photoshop"],
+    title: 'G+2 Family Residence',
+    practice: 'architecture',
+    subCategory: 'residential',
+    practiceLabel: 'Residential Architecture & CGI',
+    year: '2026',
+    gridRef: 'MOD-15',
+    sizeContext: '250 m² Kara Plot • G+2+Terrace • Solar Daylight • Private Pergola',
+    location: 'Kara, Addis Ababa, Ethiopia',
+    client: 'Private Family Residence Commission',
+    scale: 'G+2 + Rooftop Terrace (250 m² Plot, 480 m² Gross Built Area)',
+    medium: 'Reinforced Concrete Frame, Ribbed Architectural Fins, Low-E High-Span Glazing & D5 Atmospheric Simulation',
+    summary: 'Contemporary G+2 multi-generational family villa optimizing vertical light, privacy screening, and rooftop terrace living on a 250 m² Kara plot.',
+    description: 'Situated in Kara, Addis Ababa, this G+2+Terrace residence transforms a constrained 250 m² suburban plot into an airy vertical sanctuary. The massing articulates clean white horizontal floor plates banded by an ambient-lit frame, balanced with vertical architectural screening fins that temper direct solar gain while preserving private panoramas. The ground level hosts communal gathering and formal receiving, leading up to private family suites and crowning with a landscaped rooftop entertainment terrace and timber pergola.',
+    challenge: 'Maximizing spatial comfort, natural cross-ventilation, and privacy for an active family on a dense 250 m² corner plot without sacrificing exterior yard space or architectural lightness.',
+    solution: 'Engineered a vertical zoning strategy: compact efficient core footprint, cantilevered balconies with glass balustrades for perceived weightlessness, floor-to-ceiling daylight apertures oriented away from street sightlines, and a panoramic rooftop terrace.',
+    deliverables: [
+      'Complete Architectural Planning & Multi-Level Floor Layouts (G+2+Terrace)',
+      'Photorealistic Daylight & Twilight Atmospheric CGI (D5 Render)',
+      'Detailed Interior Spatial Layouts: Open Kitchen, Dining & Living Lounge',
+      'Master Bathroom Ensuite Terrazzo & Vanity Architectural Detailing',
+      'Rooftop Pergola, Balcony Screening Fins & Gate Entry Architecture',
+      'BIM Documentation & Construction Detailing in Autodesk Revit'
+    ],
+    slides: [
+      { 
+        url: 'assets/kara-residence-slide-01-day.jpg', 
+        caption: 'Slide 01 // Daylight Exterior Facade, Perimeter Architecture & Landscaping (Full Scale 1:1)' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-02-twilight.jpg', 
+        caption: 'Slide 02 // Twilight Elevation & Architectural Illumination Study' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-03-living.jpg', 
+        caption: 'Slide 03 // Sunlit Family Living Lounge & Traditional Ethiopian Coffee Ceremony Space' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-04-kitchen.jpg', 
+        caption: 'Slide 04 // Open-Plan Island Kitchen & Dining Wing with Slatted Timber Screening' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-05-bath.jpg', 
+        caption: 'Slide 05 // Master Ensuite Terrazzo Bath & Floating Stone Vanity Detail' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M6 34h28M10 34V16l10-8 10 8v18M14 22h12v12H14z" stroke="#FFD042" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M14 14h12" stroke="#FFD042" stroke-linecap="round"/>
+    </svg>`
   }
 ];
 
@@ -914,7 +971,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "14 Curated Works • Spatial & Brand",
+    mob_sub_works: "15 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
@@ -928,7 +985,7 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 14 Curated Works",
+    hero_explore: "Explore 15 Curated Works",
     
     // Hero Stats
     stat_student: "Architecture Student",
@@ -936,9 +993,9 @@ const KB_I18N = {
     stat_daylight: "Daylight Orientation",
 
     // Practice Filter Pills
-    filter_all: "All Works (14)",
-    filter_arch: "Spatial Architecture (05)",
-    filter_vis: "3D Visualization (05)",
+    filter_all: "All Works (15)",
+    filter_arch: "Spatial Architecture (06)",
+    filter_vis: "3D Visualization (06)",
     filter_brand: "Brand Identity (09)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
@@ -978,7 +1035,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "14 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "15 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
@@ -992,7 +1049,7 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "14 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "15 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
@@ -1000,9 +1057,9 @@ const KB_I18N = {
     stat_daylight: "የተፈጥሮ ብርሃን ተጠቃሚነት",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (14)",
-    filter_arch: "አርክቴክቸር (05)",
-    filter_vis: "3D ቪዥዋላይዜሽን (05)",
+    filter_all: "ሁሉም ስራዎች (15)",
+    filter_arch: "አርክቴክቸር (06)",
+    filter_vis: "3D ቪዥዋላይዜሽን (06)",
     filter_brand: "የብራንድ መለያ (09)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
