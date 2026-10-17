@@ -677,6 +677,67 @@ const KB_PROJECTS = [
       <circle cx="15" cy="30" r="2.5" fill="#FFD042"/>
       <circle cx="23" cy="30" r="2.5" fill="#FFD042"/>
     </svg>`
+  },
+
+  // 12: ALMAZ JEWELLERY (አልማዝ ጌጣጌጥ) — HAUTE JOAILLERIE, BRAND IDENTITY & PACKAGING ECOSYSTEM
+  {
+    id: 'almaz-jewellery-brand-identity',
+    service: "Haute Joaillerie & Luxury Brand Identity",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
+    title: 'Almaz Jewellery',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Luxury Brand Identity & Packaging',
+    year: '2026',
+    gridRef: 'MOD-12',
+    sizeContext: 'Full Scale Solitaire Mark • Velvet Pouch • Boutiques • 24K Duplex Cards',
+    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
+    client: 'Almaz Jewellery (አልማዝ ጌጣጌጥ) Haute Joaillerie',
+    scale: 'Flagship Luxury Maison Brand Architecture & Packaging Ecosystem',
+    medium: 'Solitaire Ring Monogram, Champagne Bronze (#E89258), Pure White (#FFFFFF) & Obsidian (#000000), Velvet & Gold Foil',
+    summary: 'Minimalist haute joaillerie identity synthesizing a brilliant-cut diamond crown with an arching letter "A" ring band.',
+    description: 'Almaz (አልማዝ — the Ge\'ez word for diamond) bridges timeless Ethiopian heritage with modern luxury joaillerie. The mark fuses a precision brilliant-cut diamond solitaire with the upward arch of a bespoke letter \'A\', forming an iconic ring silhouette that reads with instant clarity across scales. Executed across flagship boutique glazing, matte presentation ring cases, debossed velvet pouches, and duplex cards with subtle Ethiopian cross watermarks.',
+    challenge: 'Distilling the ancient reverence of Ethiopian jewelry into a modern, monoline luxury emblem that commands prestige on high-end boutique storefronts while remaining crisp on 10mm ring tags.',
+    solution: 'Engineered a geometric dual-arch construction: an outer circular band crowned by a faceted diamond solitaire, cradling a sculpted letter \'A\'. Anchored by a warm champagne bronze (#E89258) and pitch obsidian (#000000) palette that exudes quiet luxury.',
+    deliverables: [
+      'Primary Scalable Solitaire Diamond & "A" Ring Vector Logomark (Full Scale 1:1)',
+      'Flagship Boutique Storefront Glazing & Illuminated Window Display Graphics',
+      'Luxury Matte Black Presentation Jewelry Box & Diamond Ring Setting Display',
+      'Debossed Obsidian Velvet Drawstring Jewelry Pouches with Embroidered Emblem',
+      'Executive Duplex Business Cards with Embossed Ethiopian Cross Watermarks',
+      'Comprehensive Haute Joaillerie Identity Guidelines & Typography Specs'
+    ],
+    slides: [
+      { 
+        url: 'assets/almaz-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary Solitaire Diamond "A" Vector Logomark (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#000000' 
+      },
+      { 
+        url: 'assets/almaz-slide-02-storefront.jpg', 
+        caption: 'Slide 02 // Flagship Luxury Boutique Glazed Facade & Showcase Display' 
+      },
+      { 
+        url: 'assets/almaz-slide-03-box.jpg', 
+        caption: 'Slide 03 // Matte Black Presentation Box, Solitaire Ring & Gold Card' 
+      },
+      { 
+        url: 'assets/almaz-slide-04-pouch.jpg', 
+        caption: 'Slide 04 // Debossed Velvet Drawstring Pouch & Brilliant Cut Diamonds' 
+      },
+      { 
+        url: 'assets/almaz-slide-05-cards.jpg', 
+        caption: 'Slide 05 // Duplex Luxury Business Cards with Ethiopian Cross Watermarks' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="20,5 26,11 14,11" stroke="#E89258" fill="#E89258"/>
+      <circle cx="20" cy="23" r="10" stroke="#E89258" stroke-width="2.5"/>
+      <path d="M16 28 L20 17 L24 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="17.5" y1="23" x2="22.5" y2="23" stroke="#FFFFFF" stroke-width="2"/>
+    </svg>`
   }
 ];
 
@@ -737,7 +798,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "11 Curated Works • Spatial & Brand",
+    mob_sub_works: "12 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
@@ -751,7 +812,7 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 11 Curated Works",
+    hero_explore: "Explore 12 Curated Works",
     
     // Hero Stats
     stat_student: "Architecture Student",
@@ -759,10 +820,10 @@ const KB_I18N = {
     stat_daylight: "Daylight Orientation",
 
     // Practice Filter Pills
-    filter_all: "All Works (11)",
+    filter_all: "All Works (12)",
     filter_arch: "Spatial Architecture (05)",
     filter_vis: "3D Visualization (05)",
-    filter_brand: "Brand Identity (06)",
+    filter_brand: "Brand Identity (07)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -801,7 +862,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "11 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "12 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
@@ -815,7 +876,7 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "11 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "12 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
@@ -823,10 +884,10 @@ const KB_I18N = {
     stat_daylight: "የተፈጥሮ ብርሃን ተጠቃሚነት",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (11)",
+    filter_all: "ሁሉም ስራዎች (12)",
     filter_arch: "አርክቴክቸር (05)",
     filter_vis: "3D ቪዥዋላይዜሽን (05)",
-    filter_brand: "የብራንድ መለያ (06)",
+    filter_brand: "የብራንድ መለያ (07)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
