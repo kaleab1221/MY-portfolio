@@ -331,532 +331,7 @@ const KB_PROJECTS = [
     </svg>`
   },
 
-  // 06: WORKER LINK — DIGITAL PLATFORM, TRUST-BASED IDENTITY & MOBILE UI (RECENT WORK — FIRST ON BRANDING)
-  {
-    id: 'worker-link-brand-identity',
-    service: "Brand Identity & Mobile UI Systems",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Figma","Blender"],
-    title: 'Worker Link — Platform Identity & UI',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Mobile UI',
-    year: '2026',
-    gridRef: 'MOD-06',
-    sizeContext: 'Full Scale Interlocked Mark • Mobile UI • 3D Signage • Badges',
-    location: 'Addis Ababa, Ethiopia',
-    client: 'Worker Link Platform (@worker_link / workerlink.com)',
-    scale: 'Comprehensive Digital Product Brand System & UI Architecture',
-    medium: 'Geometric Monoline Vector, Teal (#105B72) & Soft Mint (#40989F) Palette, Mobile UI, 3D Signage',
-    summary: 'Trust-anchored visual identity and mobile UI connecting families directly with verified domestic professionals.',
-    description: 'Worker Link is an innovative digital platform built in Addis Ababa to connect families directly, safely, and transparently with verified professional housekeepers—eliminating predatory brokers. The visual identity embodies this core mission: removing the middleman so two people are directly joined. The logo forms an interlocking link between two human silhouettes that together create a subtle heart shape, communicating direct connection, safety, warmth, and reliable neighbourly care. Scaled seamlessly across mobile app profile interfaces, real-time push notification widgets, illuminated 3D hanging signage, and digital product touchpoints.',
-    challenge: 'Designing a mark that conveys professional security, technical reliability, and digital modernity while exuding approachable domestic warmth and mutual human trust without feeling clinical.',
-    solution: 'Engineered an interlocking dual-figure geometry mapped to a strict 45° diagonal construction grid with equal-radius circular terminations, harmonizing deep corporate teal (#105B72) with warm approachable mint (#40989F) to symbolize the two connected parties in balanced equilibrium.',
-    deliverables: [
-      'Primary Scalable Vector Interlocked Heart Logomark & Wordmark',
-      'Geometric Construction Grid & 45° Vector Angle Blueprint Documentation',
-      'Repetitive Dynamic Brand Pattern for Digital & Physical Collateral',
-      'Mobile Application Profile UI Design & Verified Badge System',
-      'Push Notification Center UI & App Launcher Iconography',
-      '3D Illuminated Hanging Physical Signage & Mobile Handset Mockups'
-    ],
-    slides: [
-      { 
-        url: 'assets/workerlink-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary Interlocked Vector Logomark (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
-      },
-      { 
-        url: 'assets/workerlink-slide-02-concept.jpg', 
-        caption: 'Slide 02 // Geometric Grid Construction & Brand Pattern' 
-      },
-      { 
-        url: 'assets/workerlink-slide-03-ui.jpg', 
-        caption: 'Slide 03 // Mobile App Profile UI & Push Notifications' 
-      },
-      { 
-        url: 'assets/workerlink-slide-04-signage.jpg', 
-        caption: 'Slide 04 // 3D App Icon & Illuminated Hanging Signage' 
-      },
-      { 
-        url: 'assets/workerlink-slide-05-device.jpg', 
-        caption: 'Slide 05 // Illuminated 3D Brand Badge in Dark Context' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M14 16 L22 24 A4 4 0 0 1 16 30 L10 24 A4 4 0 0 1 16 18 L20 22" stroke="#40989F" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M26 16 L18 24 A4 4 0 0 0 24 30 L30 24 A4 4 0 0 0 24 18 L20 22" stroke="#105B72" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="12" cy="12" r="2.5" fill="#40989F"/>
-      <circle cx="28" cy="12" r="2.5" fill="#105B72"/>
-    </svg>`
-  },
-
-  // 07: JORDANO JEMOLE CONSTRUCTION P.L.C — CORPORATE BRAND IDENTITY & SITE SYSTEM
-  {
-    id: 'jordano-jemole-construction-identity',
-    service: "Corporate Brand Identity & Site Safety Graphics",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
-    title: 'Jordano Jemole Construction P.L.C',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Corporate System',
-    year: '2026',
-    gridRef: 'MOD-07',
-    sizeContext: 'Full Scale Monolith Mark • Geometric Frame • High-Vis Gear • Hardhat',
-    location: 'Ethiopia (KB CREATIVE Commission)',
-    client: 'Jordano Jemole Construction P.L.C',
-    scale: 'Corporate Visual Identity Architecture & Civil Construction System',
-    medium: 'Monoline Tectonic Geometry, Construction Amber (#F5A623) & Slate Charcoal (#3A3D40), Apparel & Field Gear',
-    summary: 'Tectonic brand identity engineering a monolithic column monogram that commands instant authority on heavy civil construction sites.',
-    description: 'Jordano Jemole Construction P.L.C is a premier civil engineering and building construction firm. The corporate visual identity anchors the brand\'s market reputation for structural integrity, technical precision, and enduring durability. The primary emblem features a soaring, multi-tiered monolithic tower monogram framed within a bold industrial boundary, symbolizing vertical ascension, structural foundation, and engineering strength. The comprehensive system scales flawlessly from high-visibility safety workwear and site safety hardhats to corporate stationery, contracts, and executive apparel.',
-    challenge: 'Designing a heavy-duty identity rugged enough to withstand intense field execution on active construction sites while maintaining polished, sophisticated authority across high-stakes corporate investor meetings and formal architectural dossiers.',
-    solution: 'Constructed an architectural monolithic column monogram mapped to equal-angle upward chevrons with high-visibility safety amber (#F5A623) enclosed by an industrial slate grey boundary (#3A3D40), achieving instant 50-meter visibility across high-traffic site conditions and razor-sharp clarity on luxury corporate collateral.',
-    deliverables: [
-      'Primary Scalable Vector Monolithic Logomark & Wordmark (Full Scale)',
-      'Field Safety Hardhat Industrial Graphic Specifications',
-      'High-Visibility Site Safety Vest Reflective Patch Embroidery',
-      'Corporate Executive Stationery Suite (Letterhead, Business Cards, Envelope)',
-      'Staff & Project Manager Embroidered Navy Polo Shirt Suite',
-      'Brand Standards Manual, Construction Grid & Color Hierarchy'
-    ],
-    slides: [
-      { 
-        url: 'assets/jordano-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary Monolithic Vector Logomark & Boundary (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
-      },
-      { 
-        url: 'assets/jordano-slide-02-vest.jpg', 
-        caption: 'Slide 02 // High-Vis Site Safety Vest with Embroidered Emblem' 
-      },
-      { 
-        url: 'assets/jordano-slide-03-hardhat.jpg', 
-        caption: 'Slide 03 // Safety Hardhat on Active Concrete Construction Site' 
-      },
-      { 
-        url: 'assets/jordano-slide-04-stationery.jpg', 
-        caption: 'Slide 04 // Executive Corporate Stationery & Duplex Cards' 
-      },
-      { 
-        url: 'assets/jordano-slide-05-polo.jpg', 
-        caption: 'Slide 05 // Site Management Navy Piqué Polo with Gold Emblem' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="8" y="4" width="24" height="32" stroke="#555555" stroke-width="2" rx="1"/>
-      <path d="M16 26 C16 29 24 29 24 26 V12 L20 8 L16 12 Z" fill="#F5A623" stroke="#F5A623"/>
-      <path d="M12 24 C12 30 28 30 28 24" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>`
-  },
-
-  // 08: TILET FASHION (ጥለት ፋሽን) — BRAND IDENTITY & FASHION BOUTIQUE (REAL PROJECT — BOLE CENTURY MALL)
-  {
-    id: 'tilet-fashion-brand-identity',
-    service: "Haute Couture Brand Identity & Retail Packaging",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
-    title: 'Tilet Fashion (ጥለት ፋሽን)',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Fashion Design',
-    year: '2025',
-    gridRef: 'MOD-08',
-    sizeContext: 'Full Scale Royal Emblem • Ge\'ez Typography • Bole Century Mall Storefront',
-    location: 'Bole Century Mall, Addis Ababa, Ethiopia',
-    client: 'Tilet Fashion (ጥለት ፋሽን) Haute Couture',
-    scale: 'Flagship Luxury Boutique Identity & Packaging Suite',
-    medium: 'Custom Ge\'ez Wordmark, Obsidian (#0A0A0A) & Crimson Red (#D32F2F) Palette, Storefront Glazing, Duplex Cards',
-    summary: 'Haute couture brand identity transforming traditional Ethiopian collar embroidery into an imperial geometric emblem.',
-    description: 'Tilet Fashion (ጥለት ፋሽን) is an upscale contemporary couture fashion house at Bole Century Mall, specializing in luxury handcrafted Habesha Kemis and tailored woven wear. The visual identity transforms the iconic Ethiopian "Tilet" collar embroidery into an imperial geometric emblem, paired with bespoke geometric Ge\'ez typography. The identity was applied across the flagship boutique window storefront, luxury matte black retail bags with crimson rope handles, executive duplex business cards, and debossed 3D wall signage.',
-    challenge: 'Reimagining the sacred, deeply rooted traditional Ethiopian handwoven Tilet embroidery patterns into a clean, modern luxury emblem that commands prestige on high-end boutique storefronts while remaining instantly recognizable to traditional fashion patrons.',
-    solution: 'Designed an imperial diamond collar emblem pairing a dynamic curved collar arc with a diamond jewel base in high-contrast crimson red on pitch black, supported by custom-drawn architectural Amharic letterforms for "ጥለት ፋሽን".',
-    deliverables: [
-      'Primary Scalable Royal Emblem & Ge\'ez Calligraphic Mark',
-      'Flagship Boutique Storefront Glazing & Architectural Facade Display',
-      'Luxury Matte Black Retail Shopping Bags with Crimson Rope Handles',
-      'Executive Duplex Business Cards (Black & White Variants)',
-      'Debossed 3D Architectural Wall Signage Box',
-      'Boutique Packaging Specifications & Brand Standards'
-    ],
-    slides: [
-      { 
-        url: 'assets/tilet-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Royal Diamond Collar Emblem & Ge\'ez Mark (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#000000' 
-      },
-      { 
-        url: 'assets/tilet-slide-02-storefront.jpg', 
-        caption: 'Slide 02 // Flagship Storefront Window & Mannequin Display' 
-      },
-      { 
-        url: 'assets/tilet-slide-03-packaging.jpg', 
-        caption: 'Slide 03 // Luxury Matte Black Retail Bag with Crimson Handles' 
-      },
-      { 
-        url: 'assets/tilet-slide-04-cards.jpg', 
-        caption: 'Slide 04 // Executive Duplex Business Cards in Black & White' 
-      },
-      { 
-        url: 'assets/tilet-slide-05-signage.jpg', 
-        caption: 'Slide 05 // Debossed 3D Architectural Wall Signage Box' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 10 C16 14 24 14 28 10 C26 18 14 18 12 10z" fill="#D32F2F" stroke="#D32F2F"/>
-      <polygon points="20,18 28,26 20,34 12,26" fill="#D32F2F" stroke="#D32F2F"/>
-    </svg>`
-  },
-
-  // 09: BEGO MEAZA MEDIA — BRAND IDENTITY & LOGO DESIGN (REAL PROJECT — KB CREATIVE COMMISSION)
-  {
-    id: 'bego-meaza-media-identity',
-    service: "Broadcast Media Identity & Digital Systems",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Blender"],
-    title: 'Bego Meaza Media',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Logo Design',
-    year: '2024',
-    gridRef: 'MOD-09',
-    sizeContext: 'Full Brand Architecture • Monogram Mark • Environmental Signage • App Icon',
-    location: 'Ethiopia (KB CREATIVE Commission)',
-    client: 'Bego Meaza Media',
-    scale: 'Complete Visual Brand Architecture & Multi-Platform Identity',
-    medium: 'Geometric Logomark, Black × Red × White Palette, Signage Mockups, UI Application',
-    summary: 'Dynamic broadcast media identity fusing an energetic monogram with forward-motion play symbolism.',
-    description: 'Bego Meaza Media required a bold, high-memorability corporate identity to anchor their media brand across digital and physical touchpoints. The logomark fuses a stylized letter "B" with an integrated play button symbol — a seamless visual metaphor for media flow and forward progress. Delivered across business cards, environmental 3D signage, mobile app icon, and brand construction grid.',
-    challenge: 'Creating a single logomark that communicates both media entertainment and professional credibility across scales — from a 16px app icon to a large-format 3D wall installation.',
-    solution: 'Designed a monoline geometric "B + Play" symbol using a strict geometric grid with equal stroke weights, ensuring perfect legibility at all sizes and contrast on both light and dark surfaces.',
-    deliverables: ['Primary Logomark & Symbol System', '3D Environmental Wall Signage Mockup', 'Business Card Light & Dark Variants', 'Mobile App Icon Design', 'Brand Color Palette (Black · Red · White)', 'Geometric Construction Grid Documentation'],
-    slides: [
-      { 
-        url: 'assets/bego-meaza-slide-03.jpg', 
-        caption: 'Slide 01 // Primary "B + Play" Monogram Vector on White (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
-      },
-      { 
-        url: 'assets/bego-meaza-slide-01.jpg', 
-        caption: 'Slide 02 // 3D Concept Model & Dynamic Media Motion' 
-      },
-      { 
-        url: 'assets/bego-meaza-slide-02.jpg', 
-        caption: 'Slide 03 // Business Card Light & Dark Executive Variants' 
-      },
-      { 
-        url: 'assets/bego-meaza-slide-04.jpg', 
-        caption: 'Slide 04 // Environmental Signage, App Icon & Color Palette' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 8 C12 8 12 20 12 26 C12 31 16 34 20 34 C24 34 28 31 28 26 L28 20" stroke="#FFD042" stroke-linecap="round"/>
-      <polygon points="18,13 30,20 18,27" stroke="#FFFFFF" fill="none"/>
-    </svg>`
-  },
-
-  // 10: MESOB MEALS — BRAND IDENTITY, FOOD PACKAGING & DELIVERY SYSTEM (REAL PROJECT)
-  {
-    id: 'mesob-meals-brand-identity',
-    service: "Culinary Brand Identity & Packaging Ecosystem",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
-    title: 'Mesob Meals',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Packaging Design',
-    year: '2025',
-    gridRef: 'MOD-10',
-    sizeContext: 'Full Scale Cultural Mark • Eco Packaging • Courier Fleet Gear • Apparel',
-    location: 'Ethiopia (KB CREATIVE Commission)',
-    client: 'Mesob Meals Food Delivery Service',
-    scale: 'Comprehensive Hospitality & Delivery Visual Ecosystem',
-    medium: 'Cultural Heritage Monogram, Emerald (#083B32) & Warm Ochre (#F4A71D) Palette, Food Packaging, Uniform Embroidery',
-    summary: 'Modernist culinary brand identity distilling the iconic woven mesob into a clean cultural monogram.',
-    description: 'Mesob Meals is an Ethiopian food delivery platform celebrating authentic culinary heritage with modern logistical speed. The identity centers on a minimalist geometric silhouette of the traditional handwoven "Mesob" (symbolizing community, hospitality, and communal dining) crowned with a modern warm ochre lid and a clean arching base. The brand ecosystem spans compostable meal container bands, kraft paper takeout bags, embroidered kitchen aprons, and weather-resistant insulated courier transit boxes.',
-    challenge: 'Reinventing an ancient, highly ornate traditional cultural artifact (the Mesob basket) into a clean, modern, scalable vector mark that prints crisply on small meal container labels while looking commanding on courier delivery gear across busy city streets.',
-    solution: 'Distilled the complex wickerwork of the traditional mesob into bold, pure geometric planes — pairing deep Ethiopian forest emerald green (#083B32) with warm sunlit ochre (#F4A71D) and pure white accents for maximum street-level visibility and appetizing warmth.',
-    deliverables: [
-      'Primary Scalable Vector Logo Mark & Cultural Monogram',
-      'Food Container Labeling & Tamper-Evident Safety Bands',
-      'Eco-Friendly Kraft Takeout Bag Graphics',
-      'High-Visibility Insulated Courier Transit Bags',
-      'Chef & Kitchen Staff Embroidered Uniform Apparel',
-      'Brand Color Palette & Cultural Typography Guidelines'
-    ],
-    slides: [
-      { 
-        url: 'assets/mesob-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Cultural Mesob Monogram Vector on Emerald (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#083B32' 
-      },
-      { 
-        url: 'assets/mesob-slide-02-packaging.jpg', 
-        caption: 'Slide 02 // Eco-Friendly Food Packaging & Kraft Takeout Bags' 
-      },
-      { 
-        url: 'assets/mesob-slide-03-delivery.jpg', 
-        caption: 'Slide 03 // Courier Delivery Fleet Uniform & Handheld Transit Box' 
-      },
-      { 
-        url: 'assets/mesob-slide-04-bag.jpg', 
-        caption: 'Slide 04 // Insulated Thermal Courier Transit Backpack' 
-      },
-      { 
-        url: 'assets/mesob-slide-05-apron.jpg', 
-        caption: 'Slide 05 // Executive Chef & Kitchen Apron with Gold Embroidery' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M10 28h20c0 4-4 6-10 6s-10-2-10-6z" fill="#083B32" stroke="#FFD042" />
-      <path d="M12 28 C12 18 16 14 20 14 C24 14 28 18 28 28" stroke="#FFFFFF" />
-      <rect x="17" y="8" width="6" height="6" rx="1" stroke="#FFD042" fill="#FFD042" />
-    </svg>`
-  },
-
-  // 11: DANU STORE — BRAND IDENTITY, RETAIL STOREFRONT & MERCHANDISE SYSTEM (REAL PROJECT — BOLE ROAD)
-  {
-    id: 'danu-store-brand-identity',
-    service: "Retail Brand Identity & Environmental Storefront",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Blender","Adobe InDesign"],
-    title: 'Danu Store',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Retail Design',
-    year: '2025',
-    gridRef: 'MOD-11',
-    sizeContext: 'Full Scale Cart Monogram • Bole Road Storefront • Merchandise Suite',
-    location: 'Bole Road, Addis Ababa, Ethiopia',
-    client: 'Danu Store Retail & E-Commerce',
-    scale: 'Flagship Retail Brand Architecture & Environmental Identity',
-    medium: 'Shopping Cart Monogram, Obsidian (#000000) & Electric Yellow (#FFD042) Palette, Storefront Signage, Merchandise',
-    summary: 'Contemporary retail brand identity marrying an iconic shopping cart monogram with luxury store architecture.',
-    description: 'Danu Store is a contemporary retail and lifestyle brand on Bole Road, Addis Ababa. The visual identity transforms the lowercase letter "d" into a fluid shopping cart monogram with two distinct wheel anchor points, signifying momentum, convenience, and curated commerce. The identity was executed across the architectural flagship storefront with 3D illuminated exterior signage, staff barista/clerk aprons and embroidered polos, heavyweight canvas eco-totes, luxury matte black retail rope bags, and gold-foiled executive business cards.',
-    challenge: 'Engineering a minimalist monogram that functions simultaneously as a legible lowercase "d" and a shopping cart, commanding high street visibility on illuminated night facades while maintaining prestige on luxury retail print collateral.',
-    solution: 'Designed a high-contrast monoline geometry in electric yellow against obsidian black, featuring calibrated circular wheel proportions and an upward sweeping stem that provides instant recall across digital app icons and physical boutique architecture.',
-    deliverables: [
-      'Primary Scalable Vector Logo Mark & Shopping Cart Monogram',
-      'Flagship Architectural Storefront Facade & 3D Illuminated Signage',
-      'Staff Uniform Apparel Suite (Embroidered Aprons, Polos, Caps)',
-      'Heavyweight Canvas Eco-Tote Bag with Golden Monogram',
-      'Luxury Matte Black Retail Rope-Handle Shopping Bags',
-      'Executive Gold Foil Business Cards (Plot 101, Bole Road)'
-    ],
-    slides: [
-      { 
-        url: 'assets/danu-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Shopping Cart Monogram Vector on Black (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#000000' 
-      },
-      { 
-        url: 'assets/danu-slide-02-storefront.jpg', 
-        caption: 'Slide 02 // Flagship Bole Road Facade with 3D Illuminated Signage' 
-      },
-      { 
-        url: 'assets/danu-slide-03-merchandise.jpg', 
-        caption: 'Slide 03 // Staff Merchandise Flatlay — Polos, Aprons & Caps' 
-      },
-      { 
-        url: 'assets/danu-slide-04-totebag.jpg', 
-        caption: 'Slide 04 // Heavyweight Canvas Eco-Tote with Golden Monogram' 
-      },
-      { 
-        url: 'assets/danu-slide-05-collateral.jpg', 
-        caption: 'Slide 05 // Luxury Matte Black Retail Bag & Gold-Foil Cards' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M16 24a5 5 0 1 1 0-10 5 5 0 0 1 5 5v12" stroke="#FFD042" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="15" cy="30" r="2.5" fill="#FFD042"/>
-      <circle cx="23" cy="30" r="2.5" fill="#FFD042"/>
-    </svg>`
-  },
-
-  // 12: ALMAZ JEWELLERY (አልማዝ ጌጣጌጥ) — HAUTE JOAILLERIE, BRAND IDENTITY & PACKAGING ECOSYSTEM
-  {
-    id: 'almaz-jewellery-brand-identity',
-    service: "Haute Joaillerie & Luxury Brand Identity",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
-    title: 'Almaz Jewellery',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Luxury Brand Identity & Packaging',
-    year: '2026',
-    gridRef: 'MOD-12',
-    sizeContext: 'Full Scale Solitaire Mark • Velvet Pouch • Boutiques • 24K Duplex Cards',
-    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
-    client: 'Almaz Jewellery (አልማዝ ጌጣጌጥ) Haute Joaillerie',
-    scale: 'Flagship Luxury Maison Brand Architecture & Packaging Ecosystem',
-    medium: 'Solitaire Ring Monogram, Champagne Bronze (#E89258), Pure White (#FFFFFF) & Obsidian (#000000), Velvet & Gold Foil',
-    summary: 'Minimalist haute joaillerie identity synthesizing a brilliant-cut diamond crown with an arching letter "A" ring band.',
-    description: 'Almaz (አልማዝ — the Ge\'ez word for diamond) bridges timeless Ethiopian heritage with modern luxury joaillerie. The mark fuses a precision brilliant-cut diamond solitaire with the upward arch of a bespoke letter \'A\', forming an iconic ring silhouette that reads with instant clarity across scales. Executed across flagship boutique glazing, matte presentation ring cases, debossed velvet pouches, and duplex cards with subtle Ethiopian cross watermarks.',
-    challenge: 'Distilling the ancient reverence of Ethiopian jewelry into a modern, monoline luxury emblem that commands prestige on high-end boutique storefronts while remaining crisp on 10mm ring tags.',
-    solution: 'Engineered a geometric dual-arch construction: an outer circular band crowned by a faceted diamond solitaire, cradling a sculpted letter \'A\'. Anchored by a warm champagne bronze (#E89258) and pitch obsidian (#000000) palette that exudes quiet luxury.',
-    deliverables: [
-      'Primary Scalable Solitaire Diamond & "A" Ring Vector Logomark (Full Scale 1:1)',
-      'Flagship Boutique Storefront Glazing & Illuminated Window Display Graphics',
-      'Luxury Matte Black Presentation Jewelry Box & Diamond Ring Setting Display',
-      'Debossed Obsidian Velvet Drawstring Jewelry Pouches with Embroidered Emblem',
-      'Executive Duplex Business Cards with Embossed Ethiopian Cross Watermarks',
-      'Comprehensive Haute Joaillerie Identity Guidelines & Typography Specs'
-    ],
-    slides: [
-      { 
-        url: 'assets/almaz-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary Solitaire Diamond "A" Vector Logomark (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#000000' 
-      },
-      { 
-        url: 'assets/almaz-slide-02-storefront.jpg', 
-        caption: 'Slide 02 // Flagship Luxury Boutique Glazed Facade & Showcase Display' 
-      },
-      { 
-        url: 'assets/almaz-slide-03-box.jpg', 
-        caption: 'Slide 03 // Matte Black Presentation Box, Solitaire Ring & Gold Card' 
-      },
-      { 
-        url: 'assets/almaz-slide-04-pouch.jpg', 
-        caption: 'Slide 04 // Debossed Velvet Drawstring Pouch & Brilliant Cut Diamonds' 
-      },
-      { 
-        url: 'assets/almaz-slide-05-cards.jpg', 
-        caption: 'Slide 05 // Duplex Luxury Business Cards with Ethiopian Cross Watermarks' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <polygon points="20,5 26,11 14,11" stroke="#E89258" fill="#E89258"/>
-      <circle cx="20" cy="23" r="10" stroke="#E89258" stroke-width="2.5"/>
-      <path d="M16 28 L20 17 L24 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="17.5" y1="23" x2="22.5" y2="23" stroke="#FFFFFF" stroke-width="2"/>
-    </svg>`
-  },
-
-  // 13: DOT CREATIVE — CREATIVE AGENCY & BRAND DESIGN STUDIO
-  {
-    id: 'dot-creative-agency-identity',
-    service: "Creative Agency & Brand Design Studio",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
-    title: 'DOT CREATIVE',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Agency Identity & Visual Systems',
-    year: '2026',
-    gridRef: 'MOD-13',
-    sizeContext: 'Full Scale Monogram • Geometric Blueprint • Studio Apparel • Duplex Cards',
-    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
-    client: 'DOT CREATIVE Design Agency',
-    scale: 'Complete Visual Identity Architecture & Studio Collateral',
-    medium: 'Geometric Monogram, Electric Cobalt (#3D48E0) & Platinum (#C4C7C9), Apparel & Acrylic Signage',
-    summary: 'Geometric visual identity synthesizing an architectural monogram "D" with an offset square dot anchor.',
-    description: 'DOT CREATIVE is an avant-garde design studio dedicated to high-impact visual systems. The identity explores the core unit of digital and spatial design—the dot. Reimagined as an offset geometric square anchor that balances a chamfered monogram "D", the mark conveys architectural stability and dynamic forward vector motion. Deployed across blueprint drafting grids, oversized studio signage, staff apparel, and gradient duplex collateral.',
-    challenge: 'Crafting an agency mark bold enough to stand out in a saturated creative market while maintaining modular geometric clarity that works on architectural blueprints and high-contrast digital interfaces.',
-    solution: 'Constructed a 45° chamfered letter "D" paired with a floating square dot terminal, balanced by an electric cobalt (#3D48E0) and slate gradient palette with custom bespoke mechanical typography.',
-    deliverables: [
-      'Primary Scalable Vector "D + Dot" Logomark & Wordmark (Full Scale 1:1)',
-      'Geometric Grid Blueprint Construction & Angle Analysis',
-      'Agency Floor-Standing Illuminated Acrylic Lightbox Signage',
-      'Studio Team Heavyweight Cotton Embroidered Apparel',
-      'Gradient Duplex Executive Business Cards with Soft-Touch Laminate',
-      'Comprehensive Brand Guidelines & Digital Touchpoint System'
-    ],
-    slides: [
-      { 
-        url: 'assets/dot-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary "D + Dot" Vector Monogram on White (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
-      },
-      { 
-        url: 'assets/dot-slide-02-grid.jpg', 
-        caption: 'Slide 02 // Geometric Blueprint Grid & 45° Construction Architecture' 
-      },
-      { 
-        url: 'assets/dot-slide-03-signage.jpg', 
-        caption: 'Slide 03 // Studio Lightbox Signage & Team Embroidered Apparel Suite' 
-      },
-      { 
-        url: 'assets/dot-slide-04-card.jpg', 
-        caption: 'Slide 04 // Gradient Duplex Business Card & Soft-Touch Matte Finish' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="8" y="8" width="6" height="6" fill="#A0A0A0" stroke="none"/>
-      <path d="M16 8h10l8 8v10l-8 8H16V8z" fill="#3D48E0" stroke="none"/>
-      <rect x="18" y="14" width="8" height="12" fill="#041B2B" rx="1"/>
-    </svg>`
-  },
-
-  // 14: DAMA MARKETING — CORPORATE MARKETING AGENCY & BRAND IDENTITY SYSTEM
-  {
-    id: 'dama-marketing-brand-identity',
-    service: "Corporate Marketing & Strategic Brand Architecture",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Figma"],
-    title: 'Dama Marketing',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Corporate Marketing & Brand Systems',
-    year: '2026',
-    gridRef: 'MOD-14',
-    sizeContext: 'Full Scale "D" Monogram • Executive Duplex Cards • Web Platform • Brand Collateral',
-    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
-    client: 'Dama Marketing Corporate Agency',
-    scale: 'Complete Corporate Identity System, Digital Web Interface & Executive Collateral',
-    medium: 'Geometric Serif Monogram "D", Deep Pine (#122720) & Imperial Gold (#B6903F), Duplex Matte Cards, Ceramic & Environmental Merch',
-    summary: 'Geometric corporate identity uniting a sharp cantilevered square pixel with a sculpted golden "D" monogram.',
-    description: 'Dama Marketing is a performance-driven corporate agency built on strategic precision and measurable market impact. The brand mark deconstructs the initial "D" into two interconnected kinetic modules: an elevated geometric square pixel that commands the upper-left horizon and a sculpted golden stem that grounds the composition. The identity balances executive authority with modern tech agility across dark forest green duplex collateral, responsive web UI, and executive lifestyle merchandise.',
-    challenge: 'Devising an emblem that expresses strategic stability while breaking the conventional mold of corporate marketing firms through bold geometric negative space and prestigious chromatic contrast.',
-    solution: 'Constructed an asymmetric dual-geometry monogram: an offset golden square anchor intersecting the uppercase "D" silhouette, unified by an aristocratic deep pine green (#122720) and rich imperial gold (#B6903F) palette with crisp modern typography.',
-    deliverables: [
-      'Primary Scalable Vector "D" Pixel Monogram & Wordmark (Full Scale 1:1)',
-      'Executive Matte Pine Business Cards with Imperial Gold Foil Stamping',
-      'Corporate Responsive Web Landing Page & Digital Brand Design System',
-      'Executive Ceramic Desk Merchandise & Gold Writing Instruments',
-      'Architectural All-Weather Client Umbrellas with Gold Metallic Branding',
-      'Comprehensive Corporate Brand Standards & Typography Guide'
-    ],
-    slides: [
-      { 
-        url: 'assets/dama-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary "D" Monogram on Deep Pine (#122720) (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#122720' 
-      },
-      { 
-        url: 'assets/dama-slide-02-cards.jpg', 
-        caption: 'Slide 02 // Executive Matte Green Business Cards with Gold Stamping' 
-      },
-      { 
-        url: 'assets/dama-slide-03-web.jpg', 
-        caption: 'Slide 03 // Responsive Corporate Web Platform & Digital Brand Suite' 
-      },
-      { 
-        url: 'assets/dama-slide-04-mug.jpg', 
-        caption: 'Slide 04 // Studio Executive Ceramic Mug & Gold Precision Pen' 
-      },
-      { 
-        url: 'assets/dama-slide-05-umbrella.jpg', 
-        caption: 'Slide 05 // Architectural All-Weather Umbrella with Gold Branding' 
-      }
-    ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="7" y="10" width="7" height="7" fill="#B6903F" stroke="none"/>
-      <path d="M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z" fill="#B6903F" stroke="none"/>
-      <rect x="18" y="15" width="5" height="8" fill="#122720" rx="1"/>
-    </svg>`
-  },
-
-  // 15: G+2 FAMILY RESIDENCE — KARA, ADDIS ABABA (250 M² PLOT)
+  // 06: G+2 FAMILY RESIDENCE — KARA, ADDIS ABABA (ARCHITECTURAL & RESIDENTIAL)
   {
     id: 'kara-g2-family-residence',
     service: "G+2+Terrace Residential Architecture & Daylight Simulation",
@@ -867,7 +342,7 @@ const KB_PROJECTS = [
     subCategory: 'residential',
     practiceLabel: 'Residential Architecture & CGI',
     year: '2026',
-    gridRef: 'MOD-15',
+    gridRef: 'MOD-06',
     sizeContext: 'Kara, Addis Ababa | 250 m² Plot • G+2+Terrace • 9 Multi-View Perspectives',
     location: 'Kara, Addis Ababa | 250 m² Plot',
     client: 'Private Family Residence Commission',
@@ -927,6 +402,531 @@ const KB_PROJECTS = [
     iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M6 34h28M10 34V16l10-8 10 8v18M14 22h12v12H14z" stroke="#FFD042" stroke-linecap="round" stroke-linejoin="round"/>
       <path d="M14 14h12" stroke="#FFD042" stroke-linecap="round"/>
+    </svg>`
+  },
+
+  // 07: WORKER LINK — DIGITAL PLATFORM, TRUST-BASED IDENTITY & MOBILE UI (RECENT WORK — FIRST ON BRANDING)
+  {
+    id: 'worker-link-brand-identity',
+    service: "Brand Identity & Mobile UI Systems",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Figma","Blender"],
+    title: 'Worker Link — Platform Identity & UI',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Brand Identity & Mobile UI',
+    year: '2026',
+    gridRef: 'MOD-07',
+    sizeContext: 'Full Scale Interlocked Mark • Mobile UI • 3D Signage • Badges',
+    location: 'Addis Ababa, Ethiopia',
+    client: 'Worker Link Platform (@worker_link / workerlink.com)',
+    scale: 'Comprehensive Digital Product Brand System & UI Architecture',
+    medium: 'Geometric Monoline Vector, Teal (#105B72) & Soft Mint (#40989F) Palette, Mobile UI, 3D Signage',
+    summary: 'Trust-anchored visual identity and mobile UI connecting families directly with verified domestic professionals.',
+    description: 'Worker Link is an innovative digital platform built in Addis Ababa to connect families directly, safely, and transparently with verified professional housekeepers—eliminating predatory brokers. The visual identity embodies this core mission: removing the middleman so two people are directly joined. The logo forms an interlocking link between two human silhouettes that together create a subtle heart shape, communicating direct connection, safety, warmth, and reliable neighbourly care. Scaled seamlessly across mobile app profile interfaces, real-time push notification widgets, illuminated 3D hanging signage, and digital product touchpoints.',
+    challenge: 'Designing a mark that conveys professional security, technical reliability, and digital modernity while exuding approachable domestic warmth and mutual human trust without feeling clinical.',
+    solution: 'Engineered an interlocking dual-figure geometry mapped to a strict 45° diagonal construction grid with equal-radius circular terminations, harmonizing deep corporate teal (#105B72) with warm approachable mint (#40989F) to symbolize the two connected parties in balanced equilibrium.',
+    deliverables: [
+      'Primary Scalable Vector Interlocked Heart Logomark & Wordmark',
+      'Geometric Construction Grid & 45° Vector Angle Blueprint Documentation',
+      'Repetitive Dynamic Brand Pattern for Digital & Physical Collateral',
+      'Mobile Application Profile UI Design & Verified Badge System',
+      'Push Notification Center UI & App Launcher Iconography',
+      '3D Illuminated Hanging Physical Signage & Mobile Handset Mockups'
+    ],
+    slides: [
+      { 
+        url: 'assets/workerlink-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary Interlocked Vector Logomark (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#FFFFFF' 
+      },
+      { 
+        url: 'assets/workerlink-slide-02-concept.jpg', 
+        caption: 'Slide 02 // Geometric Grid Construction & Brand Pattern' 
+      },
+      { 
+        url: 'assets/workerlink-slide-03-ui.jpg', 
+        caption: 'Slide 03 // Mobile App Profile UI & Push Notifications' 
+      },
+      { 
+        url: 'assets/workerlink-slide-04-signage.jpg', 
+        caption: 'Slide 04 // 3D App Icon & Illuminated Hanging Signage' 
+      },
+      { 
+        url: 'assets/workerlink-slide-05-device.jpg', 
+        caption: 'Slide 05 // Illuminated 3D Brand Badge in Dark Context' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M14 16 L22 24 A4 4 0 0 1 16 30 L10 24 A4 4 0 0 1 16 18 L20 22" stroke="#40989F" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M26 16 L18 24 A4 4 0 0 0 24 30 L30 24 A4 4 0 0 0 24 18 L20 22" stroke="#105B72" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="12" cy="12" r="2.5" fill="#40989F"/>
+      <circle cx="28" cy="12" r="2.5" fill="#105B72"/>
+    </svg>`
+  },
+
+  // 08: JORDANO JEMOLE CONSTRUCTION P.L.C — CORPORATE BRAND IDENTITY & SITE SYSTEM
+  {
+    id: 'jordano-jemole-construction-identity',
+    service: "Corporate Brand Identity & Site Safety Graphics",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
+    title: 'Jordano Jemole Construction P.L.C',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Brand Identity & Corporate System',
+    year: '2026',
+    gridRef: 'MOD-08',
+    sizeContext: 'Full Scale Monolith Mark • Geometric Frame • High-Vis Gear • Hardhat',
+    location: 'Ethiopia (KB CREATIVE Commission)',
+    client: 'Jordano Jemole Construction P.L.C',
+    scale: 'Corporate Visual Identity Architecture & Civil Construction System',
+    medium: 'Monoline Tectonic Geometry, Construction Amber (#F5A623) & Slate Charcoal (#3A3D40), Apparel & Field Gear',
+    summary: 'Tectonic brand identity engineering a monolithic column monogram that commands instant authority on heavy civil construction sites.',
+    description: 'Jordano Jemole Construction P.L.C is a premier civil engineering and building construction firm. The corporate visual identity anchors the brand\'s market reputation for structural integrity, technical precision, and enduring durability. The primary emblem features a soaring, multi-tiered monolithic tower monogram framed within a bold industrial boundary, symbolizing vertical ascension, structural foundation, and engineering strength. The comprehensive system scales flawlessly from high-visibility safety workwear and site safety hardhats to corporate stationery, contracts, and executive apparel.',
+    challenge: 'Designing a heavy-duty identity rugged enough to withstand intense field execution on active construction sites while maintaining polished, sophisticated authority across high-stakes corporate investor meetings and formal architectural dossiers.',
+    solution: 'Constructed an architectural monolithic column monogram mapped to equal-angle upward chevrons with high-visibility safety amber (#F5A623) enclosed by an industrial slate grey boundary (#3A3D40), achieving instant 50-meter visibility across high-traffic site conditions and razor-sharp clarity on luxury corporate collateral.',
+    deliverables: [
+      'Primary Scalable Vector Monolithic Logomark & Wordmark (Full Scale)',
+      'Field Safety Hardhat Industrial Graphic Specifications',
+      'High-Visibility Site Safety Vest Reflective Patch Embroidery',
+      'Corporate Executive Stationery Suite (Letterhead, Business Cards, Envelope)',
+      'Staff & Project Manager Embroidered Navy Polo Shirt Suite',
+      'Brand Standards Manual, Construction Grid & Color Hierarchy'
+    ],
+    slides: [
+      { 
+        url: 'assets/jordano-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary Monolithic Vector Logomark & Boundary (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#FFFFFF' 
+      },
+      { 
+        url: 'assets/jordano-slide-02-vest.jpg', 
+        caption: 'Slide 02 // High-Vis Site Safety Vest with Embroidered Emblem' 
+      },
+      { 
+        url: 'assets/jordano-slide-03-hardhat.jpg', 
+        caption: 'Slide 03 // Safety Hardhat on Active Concrete Construction Site' 
+      },
+      { 
+        url: 'assets/jordano-slide-04-stationery.jpg', 
+        caption: 'Slide 04 // Executive Corporate Stationery & Duplex Cards' 
+      },
+      { 
+        url: 'assets/jordano-slide-05-polo.jpg', 
+        caption: 'Slide 05 // Site Management Navy Piqué Polo with Gold Emblem' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="8" y="4" width="24" height="32" stroke="#555555" stroke-width="2" rx="1"/>
+      <path d="M16 26 C16 29 24 29 24 26 V12 L20 8 L16 12 Z" fill="#F5A623" stroke="#F5A623"/>
+      <path d="M12 24 C12 30 28 30 28 24" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
+    </svg>`
+  },
+
+  // 09: TILET FASHION (ጥለት ፋሽን) — BRAND IDENTITY & FASHION BOUTIQUE (REAL PROJECT — BOLE CENTURY MALL)
+  {
+    id: 'tilet-fashion-brand-identity',
+    service: "Haute Couture Brand Identity & Retail Packaging",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
+    title: 'Tilet Fashion (ጥለት ፋሽን)',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Brand Identity & Fashion Design',
+    year: '2025',
+    gridRef: 'MOD-09',
+    sizeContext: 'Full Scale Royal Emblem • Ge\'ez Typography • Bole Century Mall Storefront',
+    location: 'Bole Century Mall, Addis Ababa, Ethiopia',
+    client: 'Tilet Fashion (ጥለት ፋሽን) Haute Couture',
+    scale: 'Flagship Luxury Boutique Identity & Packaging Suite',
+    medium: 'Custom Ge\'ez Wordmark, Obsidian (#0A0A0A) & Crimson Red (#D32F2F) Palette, Storefront Glazing, Duplex Cards',
+    summary: 'Haute couture brand identity transforming traditional Ethiopian collar embroidery into an imperial geometric emblem.',
+    description: 'Tilet Fashion (ጥለት ፋሽን) is an upscale contemporary couture fashion house at Bole Century Mall, specializing in luxury handcrafted Habesha Kemis and tailored woven wear. The visual identity transforms the iconic Ethiopian "Tilet" collar embroidery into an imperial geometric emblem, paired with bespoke geometric Ge\'ez typography. The identity was applied across the flagship boutique window storefront, luxury matte black retail bags with crimson rope handles, executive duplex business cards, and debossed 3D wall signage.',
+    challenge: 'Reimagining the sacred, deeply rooted traditional Ethiopian handwoven Tilet embroidery patterns into a clean, modern luxury emblem that commands prestige on high-end boutique storefronts while remaining instantly recognizable to traditional fashion patrons.',
+    solution: 'Designed an imperial diamond collar emblem pairing a dynamic curved collar arc with a diamond jewel base in high-contrast crimson red on pitch black, supported by custom-drawn architectural Amharic letterforms for "ጥለት ፋሽን".',
+    deliverables: [
+      'Primary Scalable Royal Emblem & Ge\'ez Calligraphic Mark',
+      'Flagship Boutique Storefront Glazing & Architectural Facade Display',
+      'Luxury Matte Black Retail Shopping Bags with Crimson Rope Handles',
+      'Executive Duplex Business Cards (Black & White Variants)',
+      'Debossed 3D Architectural Wall Signage Box',
+      'Boutique Packaging Specifications & Brand Standards'
+    ],
+    slides: [
+      { 
+        url: 'assets/tilet-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Royal Diamond Collar Emblem & Ge\'ez Mark (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#000000' 
+      },
+      { 
+        url: 'assets/tilet-slide-02-storefront.jpg', 
+        caption: 'Slide 02 // Flagship Storefront Window & Mannequin Display' 
+      },
+      { 
+        url: 'assets/tilet-slide-03-packaging.jpg', 
+        caption: 'Slide 03 // Luxury Matte Black Retail Bag with Crimson Handles' 
+      },
+      { 
+        url: 'assets/tilet-slide-04-cards.jpg', 
+        caption: 'Slide 04 // Executive Duplex Business Cards in Black & White' 
+      },
+      { 
+        url: 'assets/tilet-slide-05-signage.jpg', 
+        caption: 'Slide 05 // Debossed 3D Architectural Wall Signage Box' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 10 C16 14 24 14 28 10 C26 18 14 18 12 10z" fill="#D32F2F" stroke="#D32F2F"/>
+      <polygon points="20,18 28,26 20,34 12,26" fill="#D32F2F" stroke="#D32F2F"/>
+    </svg>`
+  },
+
+  // 10: BEGO MEAZA MEDIA — BRAND IDENTITY & LOGO DESIGN (REAL PROJECT — KB CREATIVE COMMISSION)
+  {
+    id: 'bego-meaza-media-identity',
+    service: "Broadcast Media Identity & Digital Systems",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Blender"],
+    title: 'Bego Meaza Media',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Brand Identity & Logo Design',
+    year: '2024',
+    gridRef: 'MOD-10',
+    sizeContext: 'Full Brand Architecture • Monogram Mark • Environmental Signage • App Icon',
+    location: 'Ethiopia (KB CREATIVE Commission)',
+    client: 'Bego Meaza Media',
+    scale: 'Complete Visual Brand Architecture & Multi-Platform Identity',
+    medium: 'Geometric Logomark, Black × Red × White Palette, Signage Mockups, UI Application',
+    summary: 'Dynamic broadcast media identity fusing an energetic monogram with forward-motion play symbolism.',
+    description: 'Bego Meaza Media required a bold, high-memorability corporate identity to anchor their media brand across digital and physical touchpoints. The logomark fuses a stylized letter "B" with an integrated play button symbol — a seamless visual metaphor for media flow and forward progress. Delivered across business cards, environmental 3D signage, mobile app icon, and brand construction grid.',
+    challenge: 'Creating a single logomark that communicates both media entertainment and professional credibility across scales — from a 16px app icon to a large-format 3D wall installation.',
+    solution: 'Designed a monoline geometric "B + Play" symbol using a strict geometric grid with equal stroke weights, ensuring perfect legibility at all sizes and contrast on both light and dark surfaces.',
+    deliverables: ['Primary Logomark & Symbol System', '3D Environmental Wall Signage Mockup', 'Business Card Light & Dark Variants', 'Mobile App Icon Design', 'Brand Color Palette (Black · Red · White)', 'Geometric Construction Grid Documentation'],
+    slides: [
+      { 
+        url: 'assets/bego-meaza-slide-03.jpg', 
+        caption: 'Slide 01 // Primary "B + Play" Monogram Vector on White (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#FFFFFF' 
+      },
+      { 
+        url: 'assets/bego-meaza-slide-01.jpg', 
+        caption: 'Slide 02 // 3D Concept Model & Dynamic Media Motion' 
+      },
+      { 
+        url: 'assets/bego-meaza-slide-02.jpg', 
+        caption: 'Slide 03 // Business Card Light & Dark Executive Variants' 
+      },
+      { 
+        url: 'assets/bego-meaza-slide-04.jpg', 
+        caption: 'Slide 04 // Environmental Signage, App Icon & Color Palette' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M12 8 C12 8 12 20 12 26 C12 31 16 34 20 34 C24 34 28 31 28 26 L28 20" stroke="#FFD042" stroke-linecap="round"/>
+      <polygon points="18,13 30,20 18,27" stroke="#FFFFFF" fill="none"/>
+    </svg>`
+  },
+
+  // 11: MESOB MEALS — BRAND IDENTITY, FOOD PACKAGING & DELIVERY SYSTEM (REAL PROJECT)
+  {
+    id: 'mesob-meals-brand-identity',
+    service: "Culinary Brand Identity & Packaging Ecosystem",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
+    title: 'Mesob Meals',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Brand Identity & Packaging Design',
+    year: '2025',
+    gridRef: 'MOD-11',
+    sizeContext: 'Full Scale Cultural Mark • Eco Packaging • Courier Fleet Gear • Apparel',
+    location: 'Ethiopia (KB CREATIVE Commission)',
+    client: 'Mesob Meals Food Delivery Service',
+    scale: 'Comprehensive Hospitality & Delivery Visual Ecosystem',
+    medium: 'Cultural Heritage Monogram, Emerald (#083B32) & Warm Ochre (#F4A71D) Palette, Food Packaging, Uniform Embroidery',
+    summary: 'Modernist culinary brand identity distilling the iconic woven mesob into a clean cultural monogram.',
+    description: 'Mesob Meals is an Ethiopian food delivery platform celebrating authentic culinary heritage with modern logistical speed. The identity centers on a minimalist geometric silhouette of the traditional handwoven "Mesob" (symbolizing community, hospitality, and communal dining) crowned with a modern warm ochre lid and a clean arching base. The brand ecosystem spans compostable meal container bands, kraft paper takeout bags, embroidered kitchen aprons, and weather-resistant insulated courier transit boxes.',
+    challenge: 'Reinventing an ancient, highly ornate traditional cultural artifact (the Mesob basket) into a clean, modern, scalable vector mark that prints crisply on small meal container labels while looking commanding on courier delivery gear across busy city streets.',
+    solution: 'Distilled the complex wickerwork of the traditional mesob into bold, pure geometric planes — pairing deep Ethiopian forest emerald green (#083B32) with warm sunlit ochre (#F4A71D) and pure white accents for maximum street-level visibility and appetizing warmth.',
+    deliverables: [
+      'Primary Scalable Vector Logo Mark & Cultural Monogram',
+      'Food Container Labeling & Tamper-Evident Safety Bands',
+      'Eco-Friendly Kraft Takeout Bag Graphics',
+      'High-Visibility Insulated Courier Transit Bags',
+      'Chef & Kitchen Staff Embroidered Uniform Apparel',
+      'Brand Color Palette & Cultural Typography Guidelines'
+    ],
+    slides: [
+      { 
+        url: 'assets/mesob-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Cultural Mesob Monogram Vector on Emerald (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#083B32' 
+      },
+      { 
+        url: 'assets/mesob-slide-02-packaging.jpg', 
+        caption: 'Slide 02 // Eco-Friendly Food Packaging & Kraft Takeout Bags' 
+      },
+      { 
+        url: 'assets/mesob-slide-03-delivery.jpg', 
+        caption: 'Slide 03 // Courier Delivery Fleet Uniform & Handheld Transit Box' 
+      },
+      { 
+        url: 'assets/mesob-slide-04-bag.jpg', 
+        caption: 'Slide 04 // Insulated Thermal Courier Transit Backpack' 
+      },
+      { 
+        url: 'assets/mesob-slide-05-apron.jpg', 
+        caption: 'Slide 05 // Executive Chef & Kitchen Apron with Gold Embroidery' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M10 28h20c0 4-4 6-10 6s-10-2-10-6z" fill="#083B32" stroke="#FFD042" />
+      <path d="M12 28 C12 18 16 14 20 14 C24 14 28 18 28 28" stroke="#FFFFFF" />
+      <rect x="17" y="8" width="6" height="6" rx="1" stroke="#FFD042" fill="#FFD042" />
+    </svg>`
+  },
+
+  // 12: DANU STORE — BRAND IDENTITY, RETAIL STOREFRONT & MERCHANDISE SYSTEM (REAL PROJECT — BOLE ROAD)
+  {
+    id: 'danu-store-brand-identity',
+    service: "Retail Brand Identity & Environmental Storefront",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Blender","Adobe InDesign"],
+    title: 'Danu Store',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Brand Identity & Retail Design',
+    year: '2025',
+    gridRef: 'MOD-12',
+    sizeContext: 'Full Scale Cart Monogram • Bole Road Storefront • Merchandise Suite',
+    location: 'Bole Road, Addis Ababa, Ethiopia',
+    client: 'Danu Store Retail & E-Commerce',
+    scale: 'Flagship Retail Brand Architecture & Environmental Identity',
+    medium: 'Shopping Cart Monogram, Obsidian (#000000) & Electric Yellow (#FFD042) Palette, Storefront Signage, Merchandise',
+    summary: 'Contemporary retail brand identity marrying an iconic shopping cart monogram with luxury store architecture.',
+    description: 'Danu Store is a contemporary retail and lifestyle brand on Bole Road, Addis Ababa. The visual identity transforms the lowercase letter "d" into a fluid shopping cart monogram with two distinct wheel anchor points, signifying momentum, convenience, and curated commerce. The identity was executed across the architectural flagship storefront with 3D illuminated exterior signage, staff barista/clerk aprons and embroidered polos, heavyweight canvas eco-totes, luxury matte black retail rope bags, and gold-foiled executive business cards.',
+    challenge: 'Engineering a minimalist monogram that functions simultaneously as a legible lowercase "d" and a shopping cart, commanding high street visibility on illuminated night facades while maintaining prestige on luxury retail print collateral.',
+    solution: 'Designed a high-contrast monoline geometry in electric yellow against obsidian black, featuring calibrated circular wheel proportions and an upward sweeping stem that provides instant recall across digital app icons and physical boutique architecture.',
+    deliverables: [
+      'Primary Scalable Vector Logo Mark & Shopping Cart Monogram',
+      'Flagship Architectural Storefront Facade & 3D Illuminated Signage',
+      'Staff Uniform Apparel Suite (Embroidered Aprons, Polos, Caps)',
+      'Heavyweight Canvas Eco-Tote Bag with Golden Monogram',
+      'Luxury Matte Black Retail Rope-Handle Shopping Bags',
+      'Executive Gold Foil Business Cards (Plot 101, Bole Road)'
+    ],
+    slides: [
+      { 
+        url: 'assets/danu-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Shopping Cart Monogram Vector on Black (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#000000' 
+      },
+      { 
+        url: 'assets/danu-slide-02-storefront.jpg', 
+        caption: 'Slide 02 // Flagship Bole Road Facade with 3D Illuminated Signage' 
+      },
+      { 
+        url: 'assets/danu-slide-03-merchandise.jpg', 
+        caption: 'Slide 03 // Staff Merchandise Flatlay — Polos, Aprons & Caps' 
+      },
+      { 
+        url: 'assets/danu-slide-04-totebag.jpg', 
+        caption: 'Slide 04 // Heavyweight Canvas Eco-Tote with Golden Monogram' 
+      },
+      { 
+        url: 'assets/danu-slide-05-collateral.jpg', 
+        caption: 'Slide 05 // Luxury Matte Black Retail Bag & Gold-Foil Cards' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M16 24a5 5 0 1 1 0-10 5 5 0 0 1 5 5v12" stroke="#FFD042" stroke-width="2.5" stroke-linecap="round"/>
+      <circle cx="15" cy="30" r="2.5" fill="#FFD042"/>
+      <circle cx="23" cy="30" r="2.5" fill="#FFD042"/>
+    </svg>`
+  },
+
+  // 13: ALMAZ JEWELLERY (አልማዝ ጌጣጌጥ) — HAUTE JOAILLERIE, BRAND IDENTITY & PACKAGING ECOSYSTEM
+  {
+    id: 'almaz-jewellery-brand-identity',
+    service: "Haute Joaillerie & Luxury Brand Identity",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
+    title: 'Almaz Jewellery',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Luxury Brand Identity & Packaging',
+    year: '2026',
+    gridRef: 'MOD-13',
+    sizeContext: 'Full Scale Solitaire Mark • Velvet Pouch • Boutiques • 24K Duplex Cards',
+    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
+    client: 'Almaz Jewellery (አልማዝ ጌጣጌጥ) Haute Joaillerie',
+    scale: 'Flagship Luxury Maison Brand Architecture & Packaging Ecosystem',
+    medium: 'Solitaire Ring Monogram, Champagne Bronze (#E89258), Pure White (#FFFFFF) & Obsidian (#000000), Velvet & Gold Foil',
+    summary: 'Minimalist haute joaillerie identity synthesizing a brilliant-cut diamond crown with an arching letter "A" ring band.',
+    description: 'Almaz (አልማዝ — the Ge\'ez word for diamond) bridges timeless Ethiopian heritage with modern luxury joaillerie. The mark fuses a precision brilliant-cut diamond solitaire with the upward arch of a bespoke letter \'A\', forming an iconic ring silhouette that reads with instant clarity across scales. Executed across flagship boutique glazing, matte presentation ring cases, debossed velvet pouches, and duplex cards with subtle Ethiopian cross watermarks.',
+    challenge: 'Distilling the ancient reverence of Ethiopian jewelry into a modern, monoline luxury emblem that commands prestige on high-end boutique storefronts while remaining crisp on 10mm ring tags.',
+    solution: 'Engineered a geometric dual-arch construction: an outer circular band crowned by a faceted diamond solitaire, cradling a sculpted letter \'A\'. Anchored by a warm champagne bronze (#E89258) and pitch obsidian (#000000) palette that exudes quiet luxury.',
+    deliverables: [
+      'Primary Scalable Solitaire Diamond & "A" Ring Vector Logomark (Full Scale 1:1)',
+      'Flagship Boutique Storefront Glazing & Illuminated Window Display Graphics',
+      'Luxury Matte Black Presentation Jewelry Box & Diamond Ring Setting Display',
+      'Debossed Obsidian Velvet Drawstring Jewelry Pouches with Embroidered Emblem',
+      'Executive Duplex Business Cards with Embossed Ethiopian Cross Watermarks',
+      'Comprehensive Haute Joaillerie Identity Guidelines & Typography Specs'
+    ],
+    slides: [
+      { 
+        url: 'assets/almaz-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary Solitaire Diamond "A" Vector Logomark (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#000000' 
+      },
+      { 
+        url: 'assets/almaz-slide-02-storefront.jpg', 
+        caption: 'Slide 02 // Flagship Luxury Boutique Glazed Facade & Showcase Display' 
+      },
+      { 
+        url: 'assets/almaz-slide-03-box.jpg', 
+        caption: 'Slide 03 // Matte Black Presentation Box, Solitaire Ring & Gold Card' 
+      },
+      { 
+        url: 'assets/almaz-slide-04-pouch.jpg', 
+        caption: 'Slide 04 // Debossed Velvet Drawstring Pouch & Brilliant Cut Diamonds' 
+      },
+      { 
+        url: 'assets/almaz-slide-05-cards.jpg', 
+        caption: 'Slide 05 // Duplex Luxury Business Cards with Ethiopian Cross Watermarks' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <polygon points="20,5 26,11 14,11" stroke="#E89258" fill="#E89258"/>
+      <circle cx="20" cy="23" r="10" stroke="#E89258" stroke-width="2.5"/>
+      <path d="M16 28 L20 17 L24 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="17.5" y1="23" x2="22.5" y2="23" stroke="#FFFFFF" stroke-width="2"/>
+    </svg>`
+  },
+
+  // 14: DOT CREATIVE — CREATIVE AGENCY & BRAND DESIGN STUDIO
+  {
+    id: 'dot-creative-agency-identity',
+    service: "Creative Agency & Brand Design Studio",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
+    title: 'DOT CREATIVE',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Agency Identity & Visual Systems',
+    year: '2026',
+    gridRef: 'MOD-14',
+    sizeContext: 'Full Scale Monogram • Geometric Blueprint • Studio Apparel • Duplex Cards',
+    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
+    client: 'DOT CREATIVE Design Agency',
+    scale: 'Complete Visual Identity Architecture & Studio Collateral',
+    medium: 'Geometric Monogram, Electric Cobalt (#3D48E0) & Platinum (#C4C7C9), Apparel & Acrylic Signage',
+    summary: 'Geometric visual identity synthesizing an architectural monogram "D" with an offset square dot anchor.',
+    description: 'DOT CREATIVE is an avant-garde design studio dedicated to high-impact visual systems. The identity explores the core unit of digital and spatial design—the dot. Reimagined as an offset geometric square anchor that balances a chamfered monogram "D", the mark conveys architectural stability and dynamic forward vector motion. Deployed across blueprint drafting grids, oversized studio signage, staff apparel, and gradient duplex collateral.',
+    challenge: 'Crafting an agency mark bold enough to stand out in a saturated creative market while maintaining modular geometric clarity that works on architectural blueprints and high-contrast digital interfaces.',
+    solution: 'Constructed a 45° chamfered letter "D" paired with a floating square dot terminal, balanced by an electric cobalt (#3D48E0) and slate gradient palette with custom bespoke mechanical typography.',
+    deliverables: [
+      'Primary Scalable Vector "D + Dot" Logomark & Wordmark (Full Scale 1:1)',
+      'Geometric Grid Blueprint Construction & Angle Analysis',
+      'Agency Floor-Standing Illuminated Acrylic Lightbox Signage',
+      'Studio Team Heavyweight Cotton Embroidered Apparel',
+      'Gradient Duplex Executive Business Cards with Soft-Touch Laminate',
+      'Comprehensive Brand Guidelines & Digital Touchpoint System'
+    ],
+    slides: [
+      { 
+        url: 'assets/dot-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary "D + Dot" Vector Monogram on White (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#FFFFFF' 
+      },
+      { 
+        url: 'assets/dot-slide-02-grid.jpg', 
+        caption: 'Slide 02 // Geometric Blueprint Grid & 45° Construction Architecture' 
+      },
+      { 
+        url: 'assets/dot-slide-03-signage.jpg', 
+        caption: 'Slide 03 // Studio Lightbox Signage & Team Embroidered Apparel Suite' 
+      },
+      { 
+        url: 'assets/dot-slide-04-card.jpg', 
+        caption: 'Slide 04 // Gradient Duplex Business Card & Soft-Touch Matte Finish' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="8" y="8" width="6" height="6" fill="#A0A0A0" stroke="none"/>
+      <path d="M16 8h10l8 8v10l-8 8H16V8z" fill="#3D48E0" stroke="none"/>
+      <rect x="18" y="14" width="8" height="12" fill="#041B2B" rx="1"/>
+    </svg>`
+  },
+
+  // 15: DAMA MARKETING — CORPORATE MARKETING AGENCY & BRAND IDENTITY SYSTEM
+  {
+    id: 'dama-marketing-brand-identity',
+    service: "Corporate Marketing & Strategic Brand Architecture",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Figma"],
+    title: 'Dama Marketing',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Corporate Marketing & Brand Systems',
+    year: '2026',
+    gridRef: 'MOD-15',
+    sizeContext: 'Full Scale "D" Monogram • Executive Duplex Cards • Web Platform • Brand Collateral',
+    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
+    client: 'Dama Marketing Corporate Agency',
+    scale: 'Complete Corporate Identity System, Digital Web Interface & Executive Collateral',
+    medium: 'Geometric Serif Monogram "D", Deep Pine (#122720) & Imperial Gold (#B6903F), Duplex Matte Cards, Ceramic & Environmental Merch',
+    summary: 'Geometric corporate identity uniting a sharp cantilevered square pixel with a sculpted golden "D" monogram.',
+    description: 'Dama Marketing is a performance-driven corporate agency built on strategic precision and measurable market impact. The brand mark deconstructs the initial "D" into two interconnected kinetic modules: an elevated geometric square pixel that commands the upper-left horizon and a sculpted golden stem that grounds the composition. The identity balances executive authority with modern tech agility across dark forest green duplex collateral, responsive web UI, and executive lifestyle merchandise.',
+    challenge: 'Devising an emblem that expresses strategic stability while breaking the conventional mold of corporate marketing firms through bold geometric negative space and prestigious chromatic contrast.',
+    solution: 'Constructed an asymmetric dual-geometry monogram: an offset golden square anchor intersecting the uppercase "D" silhouette, unified by an aristocratic deep pine green (#122720) and rich imperial gold (#B6903F) palette with crisp modern typography.',
+    deliverables: [
+      'Primary Scalable Vector "D" Pixel Monogram & Wordmark (Full Scale 1:1)',
+      'Executive Matte Pine Business Cards with Imperial Gold Foil Stamping',
+      'Corporate Responsive Web Landing Page & Digital Brand Design System',
+      'Executive Ceramic Desk Merchandise & Gold Writing Instruments',
+      'Architectural All-Weather Client Umbrellas with Gold Metallic Branding',
+      'Comprehensive Corporate Brand Standards & Typography Guide'
+    ],
+    slides: [
+      { 
+        url: 'assets/dama-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary "D" Monogram on Deep Pine (#122720) (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#122720' 
+      },
+      { 
+        url: 'assets/dama-slide-02-cards.jpg', 
+        caption: 'Slide 02 // Executive Matte Green Business Cards with Gold Stamping' 
+      },
+      { 
+        url: 'assets/dama-slide-03-web.jpg', 
+        caption: 'Slide 03 // Responsive Corporate Web Platform & Digital Brand Suite' 
+      },
+      { 
+        url: 'assets/dama-slide-04-mug.jpg', 
+        caption: 'Slide 04 // Studio Executive Ceramic Mug & Gold Precision Pen' 
+      },
+      { 
+        url: 'assets/dama-slide-05-umbrella.jpg', 
+        caption: 'Slide 05 // Architectural All-Weather Umbrella with Gold Branding' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="7" y="10" width="7" height="7" fill="#B6903F" stroke="none"/>
+      <path d="M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z" fill="#B6903F" stroke="none"/>
+      <rect x="18" y="15" width="5" height="8" fill="#122720" rx="1"/>
     </svg>`
   }
 ];
