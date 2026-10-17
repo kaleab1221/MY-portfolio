@@ -928,6 +928,67 @@ const KB_PROJECTS = [
       <path d="M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z" fill="#B6903F" stroke="none"/>
       <rect x="18" y="15" width="5" height="8" fill="#122720" rx="1"/>
     </svg>`
+  },
+
+  // 16: TINU GIFTS — ARTISANAL PACKAGING ARCHITECTURE & BRAND IDENTITY SYSTEM
+  {
+    id: 'tinu-gifts-brand-identity',
+    service: "Artisanal Packaging Architecture & Brand Identity System",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
+    title: 'TINU GIFTS',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Luxury Packaging & Brand Identity',
+    year: '2026',
+    gridRef: 'MOD-16',
+    sizeContext: 'Full Scale Monogram • Braided Rope Bags • Cotton Tags • Duplex Cards',
+    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
+    client: 'TINU GIFTS Boutique Maison',
+    scale: 'Boutique Packaging Suite, Retail Signage & Complete Visual Identity Architecture',
+    medium: 'Architectural Gift Box Monogram, Warm Oat (#E9DCCC) & Deep Mocha (#6F6154), Bronze Foil Stamping, Textured Kraft & Cotton Stock',
+    summary: 'Warm luxury packaging identity synthesizing an architectural gift box with twin geometric ribbon wings and bespoke serif typography.',
+    description: 'TINU GIFTS is a boutique gifting maison celebrated for thoughtful, high-end presentation and artisanal craft. The visual identity translates the tactile intimacy of unboxing into an architectural emblem: an upright gift box framed by angled ribbon terminals that subtly form the letters "T" and "G". Set in a soothing warm oat cream (#E9DCCC) and roasted mocha (#6F6154) palette, the identity extends across textured linen-finish rope bags, embossed cotton gift tags with natural jute ties, rounded duplex cards, and illuminated boutique blade signage.',
+    challenge: 'Crafting a gift brand identity that feels exquisitely personal and artisanal while retaining sharp geometric structure suitable for luxury retail storefronts, bronze foil stamping, and micro-embossed packaging tags.',
+    solution: 'Engineered a balanced tripartite glyph: a central vertical pillar flanked by outward-angled ribbon wings, creating a sculptural gift silhouette that scales with pristine legibility from a 15mm brass-eyelet gift tag to oversized retail signage.',
+    deliverables: [
+      'Primary Scalable Vector "T + G" Gift Box Monogram & Wordmark (Full Scale 1:1)',
+      'Textured Linen-Finish Paper Gift Bags with Braided Cord Handles & Copper Foil',
+      'Heavyweight Cotton Textured Gift Tags with Brass Eyelets & Jute Twine',
+      'Rounded-Corner Duplex Mocha & Oat Business Cards with Debossed Emblems',
+      'Boutique Storefront Projecting Blade Lightbox Signage & Architectural Plaque',
+      'Complete Boutique Brand Standards & Luxury Packaging Guidelines'
+    ],
+    slides: [
+      { 
+        url: 'assets/tinu-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary "T + G" Gift Box Vector Monogram on Warm Oat (#E9DCCC) (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#E9DCCC' 
+      },
+      { 
+        url: 'assets/tinu-slide-02-bag.jpg', 
+        caption: 'Slide 02 // Textured Paper Gift Bag with Braided Cord Handles & Copper Foil Stamping' 
+      },
+      { 
+        url: 'assets/tinu-slide-03-tag.jpg', 
+        caption: 'Slide 03 // Heavyweight Cotton Textured Gift Tag with Brass Eyelet & Jute Twine' 
+      },
+      { 
+        url: 'assets/tinu-slide-04-cards.jpg', 
+        caption: 'Slide 04 // Rounded-Corner Duplex Mocha & Oat Business Cards with Debossed Mark' 
+      },
+      { 
+        url: 'assets/tinu-slide-05-storefront.jpg', 
+        caption: 'Slide 05 // Boutique Storefront Projecting Blade Lightbox Signage & Exterior Plaque' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M8 12 L14 10 V32 H8 Z" fill="#6F6154" stroke="none"/>
+      <path d="M17 10 H23 V32 H17 Z" fill="#6F6154" stroke="none"/>
+      <path d="M26 10 L32 12 V32 H26 Z" fill="#6F6154" stroke="none"/>
+      <rect x="8" y="28" width="24" height="4" fill="#6F6154" stroke="none"/>
+    </svg>`
   }
 ];
 
@@ -988,7 +1049,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "15 Curated Works • Spatial & Brand",
+    mob_sub_works: "16 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
@@ -1002,7 +1063,7 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 15 Curated Works",
+    hero_explore: "Explore 16 Curated Works",
     
     // Hero Stats
     stat_student: "Architecture Student",
@@ -1010,10 +1071,10 @@ const KB_I18N = {
     stat_daylight: "Daylight Orientation",
 
     // Practice Filter Pills
-    filter_all: "All Works (15)",
+    filter_all: "All Works (16)",
     filter_arch: "Spatial Architecture (06)",
     filter_vis: "3D Visualization (06)",
-    filter_brand: "Brand Identity (09)",
+    filter_brand: "Brand Identity (10)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -1052,7 +1113,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "15 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "16 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
@@ -1066,7 +1127,7 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "15 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "16 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
@@ -1074,10 +1135,10 @@ const KB_I18N = {
     stat_daylight: "የተፈጥሮ ብርሃን ተጠቃሚነት",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (15)",
+    filter_all: "ሁሉም ስራዎች (16)",
     filter_arch: "አርክቴክቸር (06)",
     filter_vis: "3D ቪዥዋላይዜሽን (06)",
-    filter_brand: "የብራንድ መለያ (09)",
+    filter_brand: "የብራንድ መለያ (10)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
