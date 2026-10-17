@@ -738,6 +738,62 @@ const KB_PROJECTS = [
       <path d="M16 28 L20 17 L24 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
       <line x1="17.5" y1="23" x2="22.5" y2="23" stroke="#FFFFFF" stroke-width="2"/>
     </svg>`
+  },
+
+  // 13: DOT CREATIVE — CREATIVE AGENCY & BRAND DESIGN STUDIO
+  {
+    id: 'dot-creative-agency-identity',
+    service: "Creative Agency & Brand Design Studio",
+    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
+    title: 'DOT CREATIVE',
+    practice: 'graphic',
+    subCategory: 'identity',
+    practiceLabel: 'Agency Identity & Visual Systems',
+    year: '2026',
+    gridRef: 'MOD-13',
+    sizeContext: 'Full Scale Monogram • Geometric Blueprint • Studio Apparel • Duplex Cards',
+    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
+    client: 'DOT CREATIVE Design Agency',
+    scale: 'Complete Visual Identity Architecture & Studio Collateral',
+    medium: 'Geometric Monogram, Electric Cobalt (#3D48E0) & Platinum (#C4C7C9), Apparel & Acrylic Signage',
+    summary: 'Geometric visual identity synthesizing an architectural monogram "D" with an offset square dot anchor.',
+    description: 'DOT CREATIVE is an avant-garde design studio dedicated to high-impact visual systems. The identity explores the core unit of digital and spatial design—the dot. Reimagined as an offset geometric square anchor that balances a chamfered monogram "D", the mark conveys architectural stability and dynamic forward vector motion. Deployed across blueprint drafting grids, oversized studio signage, staff apparel, and gradient duplex collateral.',
+    challenge: 'Crafting an agency mark bold enough to stand out in a saturated creative market while maintaining modular geometric clarity that works on architectural blueprints and high-contrast digital interfaces.',
+    solution: 'Constructed a 45° chamfered letter "D" paired with a floating square dot terminal, balanced by an electric cobalt (#3D48E0) and slate gradient palette with custom bespoke mechanical typography.',
+    deliverables: [
+      'Primary Scalable Vector "D + Dot" Logomark & Wordmark (Full Scale 1:1)',
+      'Geometric Grid Blueprint Construction & Angle Analysis',
+      'Agency Floor-Standing Illuminated Acrylic Lightbox Signage',
+      'Studio Team Heavyweight Cotton Embroidered Apparel',
+      'Gradient Duplex Executive Business Cards with Soft-Touch Laminate',
+      'Comprehensive Brand Guidelines & Digital Touchpoint System'
+    ],
+    slides: [
+      { 
+        url: 'assets/dot-slide-01-logo.jpg', 
+        caption: 'Slide 01 // Primary "D + Dot" Vector Monogram on White (Full Scale 1:1)', 
+        fit: 'contain', 
+        bg: '#FFFFFF' 
+      },
+      { 
+        url: 'assets/dot-slide-02-grid.jpg', 
+        caption: 'Slide 02 // Geometric Blueprint Grid & 45° Construction Architecture' 
+      },
+      { 
+        url: 'assets/dot-slide-03-signage.jpg', 
+        caption: 'Slide 03 // Studio Lightbox Signage & Team Embroidered Apparel Suite' 
+      },
+      { 
+        url: 'assets/dot-slide-04-card.jpg', 
+        caption: 'Slide 04 // Gradient Duplex Business Card & Soft-Touch Matte Finish' 
+      }
+    ],
+    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
+      <rect x="8" y="8" width="6" height="6" fill="#A0A0A0" stroke="none"/>
+      <path d="M16 8h10l8 8v10l-8 8H16V8z" fill="#3D48E0" stroke="none"/>
+      <rect x="18" y="14" width="8" height="12" fill="#041B2B" rx="1"/>
+    </svg>`
   }
 ];
 
@@ -798,7 +854,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "12 Curated Works • Spatial & Brand",
+    mob_sub_works: "13 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
@@ -812,7 +868,7 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 12 Curated Works",
+    hero_explore: "Explore 13 Curated Works",
     
     // Hero Stats
     stat_student: "Architecture Student",
@@ -820,10 +876,10 @@ const KB_I18N = {
     stat_daylight: "Daylight Orientation",
 
     // Practice Filter Pills
-    filter_all: "All Works (12)",
+    filter_all: "All Works (13)",
     filter_arch: "Spatial Architecture (05)",
     filter_vis: "3D Visualization (05)",
-    filter_brand: "Brand Identity (07)",
+    filter_brand: "Brand Identity (08)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -862,7 +918,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "12 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "13 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
@@ -876,7 +932,7 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "12 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "13 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
@@ -884,10 +940,10 @@ const KB_I18N = {
     stat_daylight: "የተፈጥሮ ብርሃን ተጠቃሚነት",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (12)",
+    filter_all: "ሁሉም ስራዎች (13)",
     filter_arch: "አርክቴክቸር (05)",
     filter_vis: "3D ቪዥዋላይዜሽን (05)",
-    filter_brand: "የብራንድ መለያ (07)",
+    filter_brand: "የብራንድ መለያ (08)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
