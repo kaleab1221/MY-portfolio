@@ -868,22 +868,23 @@ const KB_PROJECTS = [
     practiceLabel: 'Residential Architecture & CGI',
     year: '2026',
     gridRef: 'MOD-15',
-    sizeContext: '250 m² Kara Plot • G+2+Terrace • Solar Daylight • Private Pergola',
-    location: 'Kara, Addis Ababa, Ethiopia',
+    sizeContext: 'Kara, Addis Ababa | 250 m² Plot • G+2+Terrace • 9 Multi-View Perspectives',
+    location: 'Kara, Addis Ababa | 250 m² Plot',
     client: 'Private Family Residence Commission',
     scale: 'G+2 + Rooftop Terrace (250 m² Plot, 480 m² Gross Built Area)',
     medium: 'Reinforced Concrete Frame, Ribbed Architectural Fins, Low-E High-Span Glazing & D5 Atmospheric Simulation',
-    summary: 'Contemporary G+2 multi-generational family villa optimizing vertical light, privacy screening, and rooftop terrace living on a 250 m² Kara plot.',
-    description: 'Situated in Kara, Addis Ababa, this G+2+Terrace residence transforms a constrained 250 m² suburban plot into an airy vertical sanctuary. The massing articulates clean white horizontal floor plates banded by an ambient-lit frame, balanced with vertical architectural screening fins that temper direct solar gain while preserving private panoramas. The ground level hosts communal gathering and formal receiving, leading up to private family suites and crowning with a landscaped rooftop entertainment terrace and timber pergola.',
-    challenge: 'Maximizing spatial comfort, natural cross-ventilation, and privacy for an active family on a dense 250 m² corner plot without sacrificing exterior yard space or architectural lightness.',
-    solution: 'Engineered a vertical zoning strategy: compact efficient core footprint, cantilevered balconies with glass balustrades for perceived weightlessness, floor-to-ceiling daylight apertures oriented away from street sightlines, and a panoramic rooftop terrace.',
+    summary: 'A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation.',
+    description: 'A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation. The proposal organizes the house into a clear hierarchy of public, semi-private, private and service spaces, while responding to the site\'s orientation, slope and urban context. Spanning across 9 comprehensive perspectives: from sunlit living lounges with traditional Ethiopian coffee ceremony corners to a sacred private prayer sanctuary (Tselot Bet), open island kitchen, master bedroom retreat, executive study office, and landscaped rooftop terrace.',
+    challenge: 'Organizing a multi-generational family home into an intuitive hierarchy of public reception, private sleeping sanctuaries, and dedicated spiritual prayer spaces on a dense 250 m² Kara plot with optimal daylight and cross-ventilation.',
+    solution: 'Designed a vertical zoning sequence with compact structural footprint, cantilevered balconies for solar shading, acoustic isolation for the private prayer and study quarters, and generous floor-to-ceiling glazing opening to landscaped outdoor terraces.',
     deliverables: [
-      'Complete Architectural Planning & Multi-Level Floor Layouts (G+2+Terrace)',
-      'Photorealistic Daylight & Twilight Atmospheric CGI (D5 Render)',
-      'Detailed Interior Spatial Layouts: Open Kitchen, Dining & Living Lounge',
-      'Master Bathroom Ensuite Terrazzo & Vanity Architectural Detailing',
-      'Rooftop Pergola, Balcony Screening Fins & Gate Entry Architecture',
-      'BIM Documentation & Construction Detailing in Autodesk Revit'
+      'Complete Architectural Planning & Spatial Hierarchy (Public, Semi-Private, Private & Service Zones)',
+      '9 Photorealistic CGI Perspectives (Daylight, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)',
+      'Traditional Ethiopian Spiritual Prayer Room (Tselot Bet) with Illuminated Cross Ceiling & Begena Display',
+      'Master Bedroom Retreat with Integrated Fluted Wood Study & Minimalist Headboard',
+      'Executive Home Office Studio & Architectural Library with Mesh Detailing',
+      'Entrance Foyer with Custom Integrated Millwork Bench & Dressing Storage',
+      'BIM Documentation & Construction Detailing in Autodesk Revit & D5 Render'
     ],
     slides: [
       { 
@@ -905,6 +906,22 @@ const KB_PROJECTS = [
       { 
         url: 'assets/kara-residence-slide-05-bath.jpg', 
         caption: 'Slide 05 // Master Ensuite Terrazzo Bath & Floating Stone Vanity Detail' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-06-prayer.jpg', 
+        caption: 'Slide 06 // Traditional Spiritual Sanctuary & Private Prayer Room (Tselot Bet)' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-07-bedroom.jpg', 
+        caption: 'Slide 07 // Master Bedroom Suite with Integrated Study Nook & Ambient Lighting' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-08-office.jpg', 
+        caption: 'Slide 08 // Executive Home Office & Architectural Study Studio' 
+      },
+      { 
+        url: 'assets/kara-residence-slide-09-foyer.jpg', 
+        caption: 'Slide 09 // Entrance Foyer, Mudroom Bench & Custom Millwork Storage' 
       }
     ],
     iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
