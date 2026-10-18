@@ -1387,7 +1387,7 @@ const KB_I18N = {
     // Hero Section
     hero_tag: `<span>● 4TH YEAR ARCHITECTURE STUDENT</span><span>•</span><span>WOLKITE UNIVERSITY</span><span>•</span><span>KB CREATIVE</span>`,
     hero_title: `Hi, I'm <span class="highlight-yellow">Kaleegziabher Fekede</span> <span class="block outline-text">(KB CREATIVE).</span>`,
-    hero_bio: `<strong>4th-Year Architecture Student at Wolkite University</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of daylight-oriented spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.`,
+    hero_bio: `<strong>4th-Year Architecture Student at Wolkite University</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.`,
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
@@ -1423,7 +1423,7 @@ const KB_I18N = {
     skills_desc: "A rigorous cross-disciplinary synthesis of spatial precision, monolithic visual brand architecture, high-fidelity 3D visualization, and multilingual execution.",
     academic_tag: "ACADEMIC PROFILE & STUDIO PEDAGOGY",
     academic_title: "4th-Year Architecture Student — Wolkite University",
-    academic_desc: "Synthesizing university studio research in daylight-oriented tectonic architecture, bioclimatic spatial design, structural detailing, and BIM documentation with active commercial design commissions under <strong>KB CREATIVE</strong>.",
+    academic_desc: "Synthesizing university studio research in bioclimatic spatial design, structural detailing, and BIM documentation with active commercial design commissions under <strong>KB CREATIVE</strong>.",
     academic_badge: "CLASS OF 2026 // 4TH YEAR CANDIDATE",
     discipline_arch_tag: "01 // SPATIAL ARCHITECTURE",
     discipline_arch_title: "Architecture",
@@ -1524,7 +1524,7 @@ const KB_I18N = {
     // Hero Section
     hero_tag: `<span>● 4ኛ ዓመት የአርክቴክቸር ተማሪ</span><span>•</span><span>ወልቂጤ ዩኒቨርሲቲ</span><span>•</span><span>ኬቢ ክሪኤቲቭ</span>`,
     hero_title: `ሰላም፣ እኔ <span class="highlight-yellow">ቃልእግዚአብሔር ፈቀደ</span> <span class="block outline-text">(KB CREATIVE) ነኝ።</span>`,
-    hero_bio: `<strong>በወልቂጤ ዩኒቨርሲቲ የ4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> መስራች። የተፈጥሮ ብርሃንን ባማከለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን እና የብራንድ መለያ ዲዛይን ላይ እሰራለሁ።`,
+    hero_bio: `<strong>በወልቂጤ ዩኒቨርሲቲ የ4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> መስራች። በህንፃ እና የቦታ ንድፍ፣ 3D ቪዥዋላይዜሽን እና የብራንድ መለያ ዲዛይን ላይ እሰራለሁ።`,
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
@@ -1560,7 +1560,7 @@ const KB_I18N = {
     skills_desc: "የቦታ ጥንቃቄ፣ የብራንድ ዲዛይን፣ ከፍተኛ ጥራት ያለው 3D ቪዥዋላይዜሽን እና የባለብዙ ቋንቋ ቅንጅት።",
     academic_tag: "የትምህርት መረጃ እና የስቱዲዮ ልምምድ",
     academic_title: "4ኛ ዓመት የአርክቴክቸር ተማሪ — ወልቂጤ ዩኒቨርሲቲ",
-    academic_desc: "በተፈጥሮ ብርሃን ተጠቃሚነት፣ በባዮክላይማቲክ ንድፍ፣ በመዋቅር ዝርዝር እና በBIM ሰነዶች ላይ ያተኮረ ዩኒቨርሲቲ ምርምርን ከ<strong>KB CREATIVE</strong> ተግባራዊ ስራዎች ጋር ማስተሳሰር።",
+    academic_desc: "በባዮክላይማቲክ የቦታ ንድፍ፣ በመዋቅር ዝርዝር እና በBIM ሰነዶች ላይ ያተኮረ ዩኒቨርሲቲ ምርምርን ከ<strong>KB CREATIVE</strong> ተግባራዊ ስራዎች ጋር ማስተሳሰር።",
     academic_badge: "የ2026 ተመራቂ // የ4ኛ ዓመት እጩ",
     discipline_arch_tag: "01 // ህንፃ እና የቦታ ንድፍ",
     discipline_arch_title: "አርክቴክቸር",
@@ -1726,9 +1726,7 @@ function initLanguageEngine() {
         tickerTrack.innerHTML = `
           <span>✦ የ4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ</span>
           <span class="ticker-dot">•</span>
-          <span>የKB CREATIVE ስቱዲዮ ስራዎች</span>
-          <span class="ticker-dot">•</span>
-          <span>የተፈጥሮ ብርሃን ህንፃ ንድፍ</span>
+          <span>የKB CREATIVE መስራች</span>
           <span class="ticker-dot">•</span>
           <span>የብራንድ መለያ ዲዛይን</span>
           <span class="ticker-dot">•</span>
@@ -1738,9 +1736,7 @@ function initLanguageEngine() {
           <span class="ticker-dot">•</span>
           <span>✦ የ4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ</span>
           <span class="ticker-dot">•</span>
-          <span>የKB CREATIVE ስቱዲዮ ስራዎች</span>
-          <span class="ticker-dot">•</span>
-          <span>የተፈጥሮ ብርሃን ህንፃ ንድፍ</span>
+          <span>የKB CREATIVE መስራች</span>
           <span class="ticker-dot">•</span>
           <span>የብራንድ መለያ ዲዛይን</span>
           <span class="ticker-dot">•</span>
@@ -1753,9 +1749,7 @@ function initLanguageEngine() {
         tickerTrack.innerHTML = `
           <span>✦ 4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY</span>
           <span class="ticker-dot">•</span>
-          <span>KB CREATIVE STUDIO PRACTICE</span>
-          <span class="ticker-dot">•</span>
-          <span>DAYLIGHT-ORIENTED TECTONIC ARCHITECTURE</span>
+          <span>KB CREATIVE FOUNDER</span>
           <span class="ticker-dot">•</span>
           <span>MONOLITHIC BRAND IDENTITY SYSTEMS</span>
           <span class="ticker-dot">•</span>
@@ -1765,9 +1759,7 @@ function initLanguageEngine() {
           <span class="ticker-dot">•</span>
           <span>✦ 4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY</span>
           <span class="ticker-dot">•</span>
-          <span>KB CREATIVE STUDIO PRACTICE</span>
-          <span class="ticker-dot">•</span>
-          <span>DAYLIGHT-ORIENTED TECTONIC ARCHITECTURE</span>
+          <span>KB CREATIVE FOUNDER</span>
           <span class="ticker-dot">•</span>
           <span>MONOLITHIC BRAND IDENTITY SYSTEMS</span>
           <span class="ticker-dot">•</span>

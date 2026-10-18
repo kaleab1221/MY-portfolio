@@ -23,10 +23,144 @@
   const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ==========================================================================
-     1. FLUID MAGNETIC CURSOR SUITE (Replaced with Native Responsive Cursor)
+     1. FLUID MAGNETIC CURSOR SUITE (Desktop Magnetic Attraction)
      ========================================================================== */
   function initInteractiveCursor() {
-    // Preserves native OS pointer precision and responsiveness without lag
+    if (isTouchDevice() || prefersReducedMotion()) return;
+
+    const ring = document.getElementById('cursor-ring');
+    const dot = document.getElementById('cursor-dot');
+    const badgeText = document.getElementById('cursor-badge-text');
+
+    if (!ring || !dot) return;
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+    let ringX = mouseX;
+    let ringY = mouseY;
+    let dotX = mouseX;
+    let dotY = mouseY;
+
+    let magneticTarget = null;
+    let isVisible = false;
+
+    // Track mouse position
+    window.addEventListener('mousemove', (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+      if (!isVisible) {
+        isVisible = true;
+        ring.style.opacity = '1';
+        dot.style.opacity = '1';
+      }
+    });
+
+    window.addEventListener('mouseleave', () => {
+      isVisible = false;
+      ring.style.opacity = '0';
+      dot.style.opacity = '0';
+    });
+
+    window.addEventListener('mousedown', () => {
+      ring.classList.add('cursor-clicking');
+    });
+
+    window.addEventListener('mouseup', () => {
+      ring.classList.remove('cursor-clicking');
+    });
+
+    // Attach magnetic listeners to buttons and interactive pills
+    function attachMagneticElements() {
+      const magneticSelectors = [
+        '.btn-primary-hero',
+        '.inquire-cta-pill',
+        '.practice-pill',
+        '.circle-nav-btn',
+        '.btn-brand-yellow',
+        '.btn-brand-outline',
+        '.social-direct-pill',
+        '.nav-item-link',
+        '.brand-identity-wrap',
+        '.btn-card-view-case-study',
+        '.theme-toggle-btn',
+        '.lang-toggle-btn'
+      ];
+
+      document.querySelectorAll(magneticSelectors.join(', ')).forEach((el) => {
+        if (el._magneticAttached) return;
+        el._magneticAttached = true;
+
+        el.addEventListener('mouseenter', () => {
+          magneticTarget = el;
+          ring.classList.add('cursor-magnetic');
+        });
+
+        el.addEventListener('mouseleave', () => {
+          magneticTarget = null;
+          ring.classList.remove('cursor-magnetic');
+          el.style.transform = '';
+        });
+
+        el.addEventListener('mousemove', (e) => {
+          if (!magneticTarget) return;
+          const rect = el.getBoundingClientRect();
+          const centerX = rect.left + rect.width / 2;
+          const centerY = rect.top + rect.height / 2;
+          const pullStrength = 0.22;
+
+          const dx = (e.clientX - centerX) * pullStrength;
+          const dy = (e.clientY - centerY) * pullStrength;
+
+          el.style.transform = `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px)`;
+        });
+      });
+
+      // Project Card Hover Mode -> transforms cursor to "VIEW ↗"
+      document.querySelectorAll('.big-project-card').forEach((card) => {
+        if (card._cursorAttached) return;
+        card._cursorAttached = true;
+
+        card.addEventListener('mouseenter', () => {
+          ring.classList.add('cursor-card-hover');
+          if (badgeText) {
+            badgeText.textContent = 'VIEW ↗';
+          }
+        });
+
+        card.addEventListener('mouseleave', () => {
+          ring.classList.remove('cursor-card-hover');
+          if (badgeText) {
+            badgeText.textContent = '';
+          }
+        });
+      });
+    }
+
+    attachMagneticElements();
+    const observer = new MutationObserver(attachMagneticElements);
+    const archiveGrid = document.getElementById('big-projects-container');
+    if (archiveGrid) {
+      observer.observe(archiveGrid, { childList: true });
+    }
+
+    // Smooth 60 FPS Lerp Loop
+    function renderCursor() {
+      const ringLerp = 0.2;
+      const dotLerp = 0.88;
+
+      ringX += (mouseX - ringX) * ringLerp;
+      ringY += (mouseY - ringY) * ringLerp;
+
+      dotX += (mouseX - dotX) * dotLerp;
+      dotY += (mouseY - dotY) * dotLerp;
+
+      ring.style.transform = `translate3d(${ringX.toFixed(2)}px, ${ringY.toFixed(2)}px, 0)`;
+      dot.style.transform = `translate3d(${dotX.toFixed(2)}px, ${dotY.toFixed(2)}px, 0)`;
+
+      requestAnimationFrame(renderCursor);
+    }
+
+    requestAnimationFrame(renderCursor);
   }
 
   /* ==========================================================================
