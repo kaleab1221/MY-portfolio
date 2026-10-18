@@ -177,9 +177,10 @@
 
     const sections = [
       { id: 'about', label: '00 STUDIO' },
-      { id: 'work', label: 'CH.01 WORKS' },
-      { id: 'skills', label: 'CH.02 TOOLKIT' },
-      { id: 'contact', label: 'CH.03 COLLAB' }
+      { id: 'work', label: '01 WORKS' },
+      { id: 'skills', label: '02 TOOLKIT' },
+      { id: 'faq', label: '03 FAQ' },
+      { id: 'contact', label: '04 CONTACT' }
     ];
 
     let ticking = false;

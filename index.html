@@ -53,8 +53,8 @@
       <span class="hud-section-label font-mono" id="hud-current-section">01 WORKS</span>
     </div>
     <div class="hud-action-sep" aria-hidden="true">|</div>
-    <a href="#about" class="hud-status-link font-mono" id="hud-scroll-link">
-      <span>TOP ↑</span>
+    <a href="#about" class="hud-status-link font-mono" id="hud-scroll-link" aria-label="Back to Top" title="Back to Top">
+      <span class="hud-top-icon" aria-hidden="true">↑</span>
     </a>
   </aside>
 
@@ -89,7 +89,8 @@
         <ul class="nav-menu-links">
           <li><a href="#work" class="nav-item-link"><span class="nav-item-index">01</span> <span data-i18n="nav_works">Works</span></a></li>
           <li><a href="#skills" class="nav-item-link"><span class="nav-item-index">02</span> <span data-i18n="nav_skills">Core Skills</span></a></li>
-          <li><a href="#contact" class="nav-item-link"><span class="nav-item-index">03</span> <span data-i18n="nav_contact">Contact</span></a></li>
+          <li><a href="#faq" class="nav-item-link"><span class="nav-item-index">03</span> <span data-i18n="nav_faq">FAQ</span></a></li>
+          <li><a href="#contact" class="nav-item-link"><span class="nav-item-index">04</span> <span data-i18n="nav_contact">Contact</span></a></li>
         </ul>
       </nav>
 
@@ -189,9 +190,19 @@
               </a>
             </li>
             <li>
-              <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">
+              <a href="#faq" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
                   <span class="mobile-nav-index font-mono">03</span>
+                  <span class="mobile-nav-title" data-i18n="nav_faq">FAQ</span>
+                  <span class="mobile-nav-arrow" aria-hidden="true">→</span>
+                </div>
+                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_faq">Clarifications &amp; Project Process</span>
+              </a>
+            </li>
+            <li>
+              <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">
+                <div class="mobile-nav-link-row">
+                  <span class="mobile-nav-index font-mono">04</span>
                   <span class="mobile-nav-title" data-i18n="nav_contact">Contact</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
@@ -308,10 +319,6 @@
           <div class="emblem-stat-box">
             <div class="emblem-stat-val" data-counter="16" data-suffix="+">16+</div>
             <div class="emblem-stat-label" data-i18n="stat_studies">Curated Case Studies</div>
-          </div>
-          <div class="emblem-stat-box">
-            <div class="emblem-stat-val" data-counter="100" data-suffix="%">100%</div>
-            <div class="emblem-stat-label" data-i18n="stat_daylight">Daylight Orientation</div>
           </div>
         </div>
       </div>
@@ -641,7 +648,161 @@
   </section>
 
   <!-- ========================================================================
-       SECTION 03: CONTACT & COLLABORATION
+       SECTION 03: FREQUENTLY ASKED QUESTIONS (Interactive Morph Accordion)
+       ======================================================================== -->
+  <section class="kb-faq-section" id="faq">
+    <div class="container">
+      
+      <!-- Section Editorial Header -->
+      <div class="section-editorial-header reveal-on-scroll">
+        <div class="storytelling-chapter-pill font-mono">
+          <span class="story-dot" aria-hidden="true"></span>
+          <span data-i18n="chap_03">CHAPTER 03 // FREQUENTLY ASKED QUESTIONS</span>
+        </div>
+        <div class="section-super-title">
+          <span aria-hidden="true">▪</span> <span data-i18n="faq_super">03. Inquiries &amp; Process Architecture</span>
+        </div>
+        <h2 class="section-editorial-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+        <p class="section-editorial-desc" data-i18n="faq_desc">
+          Essential clarifications on architectural commissions, cinematic 3D CGI visualization workflows, technical deliverables, and bespoke brand identity design with Kaleegziabher Fekede (KB CREATIVE).
+        </p>
+      </div>
+
+      <!-- Swiss Modular FAQ Accordion Grid -->
+      <div class="faq-accordion-grid reveal-on-scroll reveal-delay-1">
+        
+        <!-- FAQ Item 1 -->
+        <div class="faq-accordion-item" data-faq-index="1">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-1" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">01 //</span>
+              <span data-i18n="faq_q1">What architectural and design services does KB CREATIVE provide?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-1" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a1">
+                We specialize in three integrated disciplines: (1) <strong>Spatial Architecture</strong> for residential villas (such as the Kara G+2 Residence), interior workplace renovations (Acute Engineering), and commercial mixed-use concourses (MENA MALL); (2) <strong>Cinematic 3D CGI Visualization</strong> featuring photorealistic atmospheric daylight simulations, materiality texturing, and BIM documentation in Autodesk Revit &amp; D5 Render; and (3) <strong>Corporate Brand Identity Systems</strong> covering logomarks, typography, and packaging architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-accordion-item" data-faq-index="2">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-2" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">02 //</span>
+              <span data-i18n="faq_q2">How does the project design workflow proceed from concept to final delivery?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-2" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a2">
+                Every project follows an architectural 4-stage methodology: (1) <strong>Brief &amp; Site Analysis</strong>: clarifying programmatic requirements, plot dimensions, slope, and solar angles; (2) <strong>Spatial Massing &amp; Circulation Zoning</strong>: structural grid layout and functional space hierarchy; (3) <strong>Photorealistic 3D Simulation</strong>: exploring lighting conditions, materials, and camera perspectives for client alignment; and (4) <strong>Technical Working Drawings</strong>: dimensioned architectural plans, sections, joinery specifications, and high-resolution marketing visuals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-accordion-item" data-faq-index="3">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-3" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">03 //</span>
+              <span data-i18n="faq_q3">What files or information are needed to start a 3D visualization project?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-3" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a3">
+                To initiate a 3D visualization commission, you can provide CAD files (.dwg), 3D models (Revit, Rhino, SketchUp, or Blender), architectural PDF drawings, or even hand-sketched floor plans with dimensions. Providing reference imagery, landscape context, or preferred material palettes accelerates the lighting and texturing phase.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-accordion-item" data-faq-index="4">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-4" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">04 //</span>
+              <span data-i18n="faq_q4">Do you accept remote and international commissions outside Ethiopia?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-4" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a4">
+                Yes. While based between Wolkite University and Addis Ababa, Ethiopia, KB CREATIVE actively collaborates with international developers, architects, and private clients worldwide. Digital collaboration is conducted seamlessly via Telegram (<a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" style="color:var(--brand-yellow); text-decoration:none; font-weight:700;">@Kalegzi_7</a>), email, Google Meet, and secure cloud storage.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-accordion-item" data-faq-index="5">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-5" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">05 //</span>
+              <span data-i18n="faq_q5">What is the typical turnaround timeline for deliverables?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-5" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a5">
+                Turnaround timelines are calibrated to scope: high-fidelity 3D renderings (3–5 perspectives) are typically delivered within <strong>3 to 7 business days</strong>. Comprehensive residential concepts, interior spatial renovation designs, or corporate brand identity suites range between <strong>1 to 3 weeks</strong> with structured milestone check-ins.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-accordion-item" data-faq-index="6">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-6" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">06 //</span>
+              <span data-i18n="faq_q6">Can I commission a unified Spatial Architecture and Brand Identity package?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-6" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a6">
+                Yes. A core strength of KB CREATIVE is the cross-disciplinary union of spatial architecture and corporate visual identity. For commercial developments, retail malls (e.g., MENA MALL), and corporate offices (Acute Engineering), we design the architectural spaces alongside the 3D illuminated exterior storefront signage, interior wayfinding graphics, and company branding collateral.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       SECTION 04: CONTACT & COLLABORATION
        ✏️ EDIT HERE: Your Telegram, LinkedIn, Instagram, Email, and Phone
        ======================================================================== -->
   <section class="devani-contact-section" id="contact">
@@ -649,10 +810,10 @@
       <div class="reveal-on-scroll">
         <div class="storytelling-chapter-pill font-mono" style="margin-bottom: 0.75rem;">
           <span class="story-dot" aria-hidden="true"></span>
-          <span data-i18n="chap_03">CHAPTER 03 // DIALOGUE &amp; COMMISSION INQUIRY</span>
+          <span data-i18n="chap_04">CHAPTER 04 // DIALOGUE &amp; COMMISSION INQUIRY</span>
         </div>
         <div class="font-mono text-gold" style="font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 0.5rem;">
-          ▪ <span data-i18n="contact_super">03. Direct Collaboration</span>
+          ▪ <span data-i18n="contact_super">04. Direct Collaboration</span>
         </div>
         <h2 class="contact-hero-title" data-i18n="contact_hero_title">
           Let's Build Something <span style="color: var(--brand-yellow);">Remarkable</span> Together.
@@ -769,9 +930,8 @@
             Project Title
           </h3>
         </div>
-        <button class="case-modal-close-btn font-mono" id="case-modal-close" aria-label="Close modal">
-          <span class="esc-kbd">ESC</span>
-          <span class="close-x">✕</span>
+        <button class="case-modal-close-btn" id="case-modal-close" aria-label="Close modal" title="Close modal">
+          <span class="close-x" aria-hidden="true">✕</span>
         </button>
       </div>
 

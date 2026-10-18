@@ -36,961 +36,979 @@ document.addEventListener('DOMContentLoaded', () => {
       Construction, and Brand & Identity)
    ========================================================================== */
 const KB_PROJECTS = [
-  // 01: MIXED USE TOWER & JENA MALL (REAL PROJECT — GUBRE TOWN)
+  // MOD-01: G+2 FAMILY RESIDENCE
   {
-    id: 'mixed-use-tower-gubre',
-    service: "Mixed-Use Architecture & Commercial Planning",
-    role: "Lead Architectural Designer & 3D CGI Artist (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
-    software: ["AutoCAD","Rhino 3D","D5 Render","Adobe Photoshop"],
-    title: 'Mixed-Use Tower & Jena Mall',
-    practice: 'architecture',
-    subCategory: 'mixeduse',
-    practiceLabel: 'Mixed-Use & Commercial Architecture',
-    year: '2025',
-    gridRef: 'MOD-01',
-    sizeContext: '16 Levels (2B+G+14) • Retail Concourse • Corporate Offices • Highland Panorama',
-    location: 'Gubre Town, Ethiopia',
-    client: 'Commercial & Urban Development Consortium',
-    scale: '16-Level Urban Landmark (2 Basements + Ground + 14 Upper Floors)',
-    medium: 'Rhino 3D, D5 Render, AutoCAD Working Drawings, Double Glazing & Louvered Metal Screen',
-    summary: 'Sixteen-level vertical landmark uniting retail concourses, corporate workspaces, and panoramic residences in Gubre Town.',
-    description: 'A modern architectural landmark in Gubre Town, designed to seamlessly integrate vibrant commercial zones with premium urban living. The project balances high-traffic retail and corporate environments with secure, private residential spaces. The component breakdown encompasses 2 Basements (secure parking, storage, and MEP services), Ground Floor high-ceiling retail storefronts with distinct residential and commercial lobbies, 14 Upper Floors (lower levels dedicated to flexible open-plan corporate offices, upper levels dedicated to premium apartments designed for natural light and panoramic highland views), and a multi-functional rooftop lounge with a green community sky terrace.',
-    challenge: 'Balancing heavy pedestrian commercial traffic at the podium level with strict privacy, acoustic buffering, and dedicated security access for the upper residential floors.',
-    solution: 'Segmented the vertical circulation cores into isolated access banks, creating independent entrance lobbies while deploying a 5-stage form consolidation that optimizes structural footprint, daylight orientation, and passive solar shading.',
-    deliverables: [
-      '5-Stage Form Development & Building Mass Consolidation Study',
-      '2 Basements Parking, Storage & MEP Service Infrastructure Layouts',
-      'Ground Floor Retail Storefronts, Jena Mall Concourse & Twin Lobbies',
-      'Flexible Open-Plan Corporate Office Floorplates (Lower Levels)',
-      'High-Rise Premium Residential Unit Plans & Panoramic Penthouse Layouts',
-      'Nocturnal Lighting, Aerial Skyline & Pedestrian Plaza Visualization Suite'
+    "id": "kara-g2-family-residence",
+    "service": "G+2+Terrace Residential Architecture & Daylight Simulation",
+    "role": "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Autodesk Revit",
+      "D5 Render",
+      "AutoCAD",
+      "Adobe Photoshop"
     ],
-    slides: [
-      { 
-        url: 'assets/mixed-use-slide-01-night.jpg', 
-        caption: 'Slide 01 // Nocturnal Facade & Jena Mall Concourse' 
+    "title": "G+2 Family Residence",
+    "practice": "architecture",
+    "subCategory": "residential",
+    "practiceLabel": "Residential Architecture & CGI",
+    "year": "2026",
+    "gridRef": "MOD-01",
+    "sizeContext": "Kara, Addis Ababa | 250 m² Plot • G+2+Terrace • 9 Multi-View Perspectives",
+    "location": "Kara, Addis Ababa | 250 m² Plot",
+    "client": "Private Family Residence Commission",
+    "scale": "G+2 + Rooftop Terrace (250 m² Plot, 480 m² Gross Built Area)",
+    "medium": "Reinforced Concrete Frame, Ribbed Architectural Fins, Low-E High-Span Glazing & D5 Atmospheric Simulation",
+    "summary": "A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation.",
+    "description": "A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation. The proposal organizes the house into a clear hierarchy of public, semi-private, private and service spaces, while responding to the site's orientation, slope and urban context. Spanning across 9 comprehensive perspectives: from sunlit living lounges with traditional Ethiopian coffee ceremony corners to a sacred private prayer sanctuary (Tselot Bet), open island kitchen, master bedroom retreat, executive study office, and landscaped rooftop terrace.",
+    "challenge": "Organizing a multi-generational family home into an intuitive hierarchy of public reception, private sleeping sanctuaries, and dedicated spiritual prayer spaces on a dense 250 m² Kara plot with optimal daylight and cross-ventilation.",
+    "solution": "Designed a vertical zoning sequence with compact structural footprint, cantilevered balconies for solar shading, acoustic isolation for the private prayer and study quarters, and generous floor-to-ceiling glazing opening to landscaped outdoor terraces.",
+    "deliverables": [
+      "Complete Architectural Planning & Spatial Hierarchy (Public, Semi-Private, Private & Service Zones)",
+      "9 Photorealistic CGI Perspectives (Daylight, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)",
+      "Traditional Ethiopian Spiritual Prayer Room (Tselot Bet) with Illuminated Cross Ceiling & Begena Display",
+      "Master Bedroom Retreat with Integrated Fluted Wood Study & Minimalist Headboard",
+      "Executive Home Office Studio & Architectural Library with Mesh Detailing",
+      "Entrance Foyer with Custom Integrated Millwork Bench & Dressing Storage",
+      "BIM Documentation & Construction Detailing in Autodesk Revit & D5 Render"
+    ],
+    "slides": [
+      {
+        "url": "assets/kara-residence-slide-01-day.jpg",
+        "caption": "Slide 01 // Daylight Exterior Facade, Perimeter Architecture & Landscaping (Full Scale 1:1)"
       },
-      { 
-        url: 'assets/mixed-use-slide-02-aerial.jpg', 
-        caption: 'Slide 02 // Aerial Massing & Skyline Silhouette' 
+      {
+        "url": "assets/kara-residence-slide-02-twilight.jpg",
+        "caption": "Slide 02 // Twilight Elevation & Architectural Illumination Study"
       },
-      { 
-        url: 'assets/mixed-use-slide-03-street.jpg', 
-        caption: 'Slide 03 // Pedestrian Plaza & Retail Promenade' 
+      {
+        "url": "assets/kara-residence-slide-03-living.jpg",
+        "caption": "Slide 03 // Sunlit Family Living Lounge & Traditional Ethiopian Coffee Ceremony Space"
       },
-      { 
-        url: 'assets/mixed-use-slide-04-office.jpg', 
-        caption: 'Slide 04 // Corporate Office Interior & Acoustic Timber' 
+      {
+        "url": "assets/kara-residence-slide-04-kitchen.jpg",
+        "caption": "Slide 04 // Open-Plan Island Kitchen & Dining Wing with Slatted Timber Screening"
       },
-      { 
-        url: 'assets/mixed-use-slide-05-living.jpg', 
-        caption: 'Slide 05 // High-Rise Residence & Highland Panorama' 
+      {
+        "url": "assets/kara-residence-slide-05-bath.jpg",
+        "caption": "Slide 05 // Master Ensuite Terrazzo Bath & Floating Stone Vanity Detail"
+      },
+      {
+        "url": "assets/kara-residence-slide-06-prayer.jpg",
+        "caption": "Slide 06 // Traditional Spiritual Sanctuary & Private Prayer Room (Tselot Bet)"
+      },
+      {
+        "url": "assets/kara-residence-slide-07-bedroom.jpg",
+        "caption": "Slide 07 // Master Bedroom Suite with Integrated Study Nook & Ambient Lighting"
+      },
+      {
+        "url": "assets/kara-residence-slide-08-office.jpg",
+        "caption": "Slide 08 // Executive Home Office & Architectural Study Studio"
+      },
+      {
+        "url": "assets/kara-residence-slide-09-foyer.jpg",
+        "caption": "Slide 09 // Entrance Foyer, Mudroom Bench & Custom Millwork Storage"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="12" y="6" width="16" height="30" stroke="#FFD042" />
-      <line x1="16" y1="12" x2="24" y2="12" stroke="#FFFFFF" />
-      <line x1="16" y1="18" x2="24" y2="18" stroke="#FFFFFF" />
-      <line x1="16" y1="24" x2="24" y2="24" stroke="#FFFFFF" />
-      <line x1="16" y1="30" x2="24" y2="30" stroke="#FFFFFF" />
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M6 34h28M10 34V16l10-8 10 8v18M14 22h12v12H14z\" stroke=\"#FFD042\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M14 14h12\" stroke=\"#FFD042\" stroke-linecap=\"round\"/>\n    </svg>"
   },
 
-  // 02: CLIMATE RESPONSIVE RESIDENCE (REAL PROJECT — DIRE DAWA)
+  // MOD-02: ACUTE ENGINEERING — OFFICE RENOVATION
   {
-    id: 'climate-responsive-residence-diredawa',
-    service: "Bioclimatic Residential Architecture",
-    role: "Lead Architectural Designer & Passive Solar Strategist (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
-    software: ["AutoCAD","Rhino 3D","D5 Render","Adobe Photoshop","Climate Consultant"],
-    title: 'Climate-Responsive Private Residence',
-    practice: 'architecture',
-    subCategory: 'residential',
-    practiceLabel: 'Residential & Bioclimatic Architecture',
-    year: '2025',
-    gridRef: 'MOD-02',
-    sizeContext: 'G+2 Bioclimatic Villa • Central Cooling Atrium • 45° Solar Fins • Dire Dawa',
-    location: 'Dire Dawa, Ethiopia',
-    client: 'Private Family Residence Commission',
-    scale: 'G+2 Residence with Integrated Thermal Atrium & Shaded Terraces',
-    medium: '45° Aluminum Vertical Fins, Living Green Wall Irrigation, Textured Concrete, Passive Courtyard Atrium',
-    summary: 'Bioclimatic residential villa engineered with 45° passive solar louvers and a central microclimate cooling atrium.',
-    description: 'A contemporary G+2 private residence engineered specifically for Dire Dawa\'s intense thermal environment. The design prioritizes passive cooling strategies, utilizing an integrated central courtyard and a dynamic louvered facade system to drastically reduce solar heat gain while maximizing natural cross-ventilation. The Ground Floor organizes public living, dining, and an open kitchen wrapping around the landscaped courtyard, guest suite, and parking. The First Floor hosts family bedrooms, study room, prayer room, and shaded balconies. The Second Floor accommodates the master suite, private gym, home office, and entertainment terrace.',
-    challenge: 'Mitigating high ambient temperatures and harsh solar radiation characteristic of Dire Dawa without relying exclusively on energy-intensive mechanical air conditioning.',
-    solution: 'Introduced a central courtyard that acts as a thermal chimney, drawing cool air through perimeter landscaped buffers while blocking 80% of direct solar heat via 45° angled aluminum vertical fins paired with an irrigated living wall.',
-    deliverables: [
-      'Bioclimatic 4-Step Form Development & Solar Permeability Study',
-      'Ground, First & Second Floor Architectural Plans (Scale 1:100)',
-      'East, North, South & West Elevation Drawings with Louver Layouts',
-      'Vertical Fins Detail Specifications (45° Angle, 5.0 Offset, Aluminum)',
-      'Internal Courtyard 3D Architectural Section & Green Wall Irrigation Plan',
-      'Daylight Exterior Streetscape & Interior Courtyard Living Renderings'
+    "id": "acute-engineering-office-renovation",
+    "service": "Interior Architecture & Workplace Renovation",
+    "role": "Lead Interior Architect & Spatial Designer (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "software": [
+      "AutoCAD",
+      "Rhino 3D",
+      "D5 Render",
+      "Adobe Photoshop"
     ],
-    slides: [
-      { 
-        url: 'assets/residence-slide-01-street.jpg', 
-        caption: 'Slide 01 // Daylight Street Elevation & Dynamic Louvers' 
+    "title": "Acute Engineering — Office Renovation",
+    "practice": "architecture",
+    "subCategory": "interior",
+    "practiceLabel": "Interior Architecture & Workplace Renovation",
+    "year": "2026",
+    "gridRef": "MOD-02",
+    "sizeContext": "22.6 m² (4.2m × 5.4m) • Steel & Timber Screen • Dual Spatial Zones • Bole Michael",
+    "location": "Bole Michael, Addis Ababa, Ethiopia",
+    "client": "Acute Engineering",
+    "scale": "22.6 m² (4.2m × 5.4m) Executive Office & Consultation Suite",
+    "medium": "Steel & Slatted Oak Joinery, Bookmatched Calacatta Marble, Floating Halo LED Rings, Acoustic Carpet",
+    "summary": "Transforming a compact 22.6 m² footprint into a dual-zone executive suite through a tectonic steel and timber screen that choreographs arrival, transition, and destination.",
+    "description": "A high-precision interior renovation for Acute Engineering located in Bole Michael, Addis Ababa. Within an uncompromising 22.6 m² envelope (4.2m × 5.4m), the open floor was masterfully bifurcated into two distinct programmatic realms: an informal client arrival & meeting lounge, and a commanding formal executive command workstation. A custom-fabricated steel and slatted oak screen serves as the primary dividing element—filtering light, organizing sightlines, and orchestrating a clear sequence of arrival, transition, and destination within a single unified room. The executive desk is backed by a bookmatched Calacatta marble feature slab mounting the 3D illuminated Acute Engineering corporate emblem, framed by bespoke floor-to-ceiling joinery and architectural halo ring lighting.",
+    "challenge": "Integrating an executive workstation, formal client consultation zone, and high-density storage within an uncompromising 22.6 m² footprint without visual congestion or spatial claustrophobia.",
+    "solution": "Designed an open-framework steel and timber screen that functions simultaneously as a room divider, display vitrine, and acoustic buffer—preserving continuous sightlines and perimeter natural daylight while establishing absolute privacy for executive management.",
+    "deliverables": [
+      "Spatial Layout & Circulation Zoning Plan (Scale 1:50)",
+      "Steel & Slatted Timber Partition Screen Construction Detail",
+      "Bookmatched Marble Feature Wall & 3D Logo Integration Spec",
+      "Full-Height Storage Joinery & Hidden Wardrobe Millwork",
+      "3D Isometric Cutaway & Photorealistic Perspective Visualization Suite"
+    ],
+    "slides": [
+      {
+        "url": "assets/office-slide-01-elevation.jpg",
+        "caption": "Slide 01 // Executive Workspace & Branded Calacatta Marble Feature Wall (Photorealistic CGI)"
       },
-      { 
-        url: 'assets/residence-slide-02-corner.jpg', 
-        caption: 'Slide 02 // Corner Perspective & Shaded Veranda' 
+      {
+        "url": "assets/office-slide-03-wide.jpg",
+        "caption": "Slide 02 // Executive Command Suite, Halo Ring Chandeliers & Fluted Millwork"
       },
-      { 
-        url: 'assets/residence-slide-03-courtyard.jpg', 
-        caption: 'Slide 03 // 3D Section — Central Bioclimatic Atrium' 
+      {
+        "url": "assets/office-slide-02-isometric.jpg",
+        "caption": "Slide 03 // 3D Isometric Cutaway — Dual-Zone Spatial Organization (22.6 m²)"
       },
-      { 
-        url: 'assets/residence-slide-04-interior.jpg', 
-        caption: 'Slide 04 // Living Lounge & Daylit Courtyard Connection' 
+      {
+        "url": "assets/office-slide-04-divider.jpg",
+        "caption": "Slide 04 // Steel & Timber Partition Screen — Sequence of Arrival & Transition"
       },
-      { 
-        url: 'assets/residence-slide-05-axon.jpg', 
-        caption: 'Slide 05 // Passive Solar Form Development & Shading' 
+      {
+        "url": "assets/office-slide-05-workstation.jpg",
+        "caption": "Slide 05 // Workstation Perspective, CAD Drafting Interface & Curated Art"
+      },
+      {
+        "url": "assets/acute-logo.svg",
+        "caption": "Slide 06 // Acute Engineering Primary Vector Logo & Corporate Identity Mark (Full Scale)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M8 32V14l12-8 12 8v18H8z" stroke="#FFD042" />
-      <rect x="15" y="18" width="10" height="14" stroke="#FFFFFF" />
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"6\" y=\"8\" width=\"28\" height=\"24\" rx=\"2\" stroke=\"#FFD042\" />\n      <line x1=\"22\" y1=\"8\" x2=\"22\" y2=\"32\" stroke=\"#FFFFFF\" stroke-dasharray=\"2 2\"/>\n      <path d=\"M11 26 L16 14 L21 26\" stroke=\"#1456CC\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M13 22 L19 22\" stroke=\"#E6222E\" stroke-width=\"2\"/>\n      <rect x=\"25\" y=\"14\" width=\"6\" height=\"12\" fill=\"#FFD042\" stroke=\"none\" rx=\"1\"/>\n    </svg>"
   },
 
-  // 03: VERTICAL SPORTS & WELLNESS CENTER (REAL PROJECT — COMPACT URBAN COMPLEX)
+  // MOD-03: MIXED-USE TOWER & MENA MALL
   {
-    id: 'vertical-sports-wellness-center',
-    service: "Sports Architecture & Structural Steel Truss Design",
-    role: "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
-    software: ["AutoCAD","Rhino 3D","D5 Render","Adobe Photoshop"],
-    title: 'Vertical Sports & Wellness Center',
-    practice: 'architecture',
-    subCategory: 'sports',
-    practiceLabel: 'Sports & Public Architecture',
-    year: '2025',
-    gridRef: 'MOD-03',
-    sizeContext: 'G+2 Athletic Complex • 18m Clear-Span Truss • Multi-Tiered Courts',
-    location: 'Urban Center, Ethiopia',
-    client: 'Municipal Sports & Community Recreation',
-    scale: 'G+2 Vertical Facility with Rooftop Sports Terrace',
-    medium: 'Reinforced Concrete Frame, High-Performance Acoustic Glazing, Steel Trusses, Perforated Solar Shading',
-    summary: 'Compact urban sports complex stacking Olympic gymnastics, indoor athletic courts, and daylight wellness lounges.',
-    description: 'The objective of this project was to design a modern, vertical sports and wellness center within a compact urban footprint. Moving away from sprawling horizontal sports complexes, this G+2 facility stacks diverse athletic programs to optimize land use while maintaining seamless spatial transitions, high acoustic separation, and clear user circulation. The complex integrates an expansive ground entrance plaza, shaded drop-off zones, professional indoor gymnasium, cardiovascular and weight suites, athlete recovery zones, and a top-floor wellness cafeteria with floor-to-ceiling glass framing panoramic landscape views.',
-    challenge: 'Isolating high-impact vibrations and acoustic reverberation generated by multi-level gymnasium sports from quiet administrative and wellness dining spaces.',
-    solution: 'Adopted a vertical structural zoning strategy with decoupled concrete slab dampeners and heavy acoustic perimeter partitions between athletic courts and social wellness facilities.',
-    deliverables: [
-      'Ground, First & Second Floor Architectural Spatial Plans',
-      'Longitudinal & Transverse Double-Height Cross Sections',
-      'Pedestrian Plaza, Bus Terminal & Vehicle Drop-Off Access Masterplan',
-      'Acoustic Barrier & Structural Frame Coordination Documentation',
-      'Exterior Daylight, Aerial Rooftop & Interior Cafeteria Render Suite'
+    "id": "mixed-use-tower-gubre",
+    "service": "Mixed-Use Architecture & Commercial Planning",
+    "role": "Lead Architectural Designer & 3D CGI Artist (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "software": [
+      "AutoCAD",
+      "Rhino 3D",
+      "D5 Render",
+      "Adobe Photoshop"
     ],
-    slides: [
-      { 
-        url: 'assets/sport-slide-01-plaza.jpg', 
-        caption: 'Slide 01 // Kinetic Facade & Elevated Glazed Concourse' 
+    "title": "Mixed-Use Tower & MENA MALL",
+    "practice": "architecture",
+    "subCategory": "mixeduse",
+    "practiceLabel": "Mixed-Use & Commercial Architecture",
+    "year": "2025",
+    "gridRef": "MOD-03",
+    "sizeContext": "16 Levels (2B+G+14) • Retail Concourse • Corporate Offices • Highland Panorama",
+    "location": "Gubre Town, Ethiopia",
+    "client": "Commercial & Urban Development Consortium",
+    "scale": "16-Level Urban Landmark (2 Basements + Ground + 14 Upper Floors)",
+    "medium": "Rhino 3D, D5 Render, AutoCAD Working Drawings, Double Glazing & Louvered Metal Screen",
+    "summary": "Sixteen-level vertical landmark uniting retail concourses, corporate workspaces, and panoramic residences in Gubre Town.",
+    "description": "A modern architectural landmark in Gubre Town, designed to seamlessly integrate vibrant commercial zones with premium urban living. The project balances high-traffic retail and corporate environments with secure, private residential spaces. The component breakdown encompasses 2 Basements (secure parking, storage, and MEP services), Ground Floor high-ceiling retail storefronts with distinct residential and commercial lobbies, 14 Upper Floors (lower levels dedicated to flexible open-plan corporate offices, upper levels dedicated to premium apartments designed for natural light and panoramic highland views), and a multi-functional rooftop lounge with a green community sky terrace.",
+    "challenge": "Balancing heavy pedestrian commercial traffic at the podium level with strict privacy, acoustic buffering, and dedicated security access for the upper residential floors.",
+    "solution": "Segmented the vertical circulation cores into isolated access banks, creating independent entrance lobbies while deploying a 5-stage form consolidation that optimizes structural footprint, daylight orientation, and passive solar shading.",
+    "deliverables": [
+      "5-Stage Form Development & Building Mass Consolidation Study",
+      "2 Basements Parking, Storage & MEP Service Infrastructure Layouts",
+      "Ground Floor Retail Storefronts, MENA MALL Concourse & Twin Lobbies",
+      "Flexible Open-Plan Corporate Office Floorplates (Lower Levels)",
+      "High-Rise Premium Residential Unit Plans & Panoramic Penthouse Layouts",
+      "Nocturnal Lighting, Aerial Skyline & Pedestrian Plaza Visualization Suite"
+    ],
+    "slides": [
+      {
+        "url": "assets/mixed-use-slide-01-night.jpg",
+        "caption": "Slide 01 // Nocturnal Facade & MENA MALL Concourse"
       },
-      { 
-        url: 'assets/sport-slide-02-aerial.jpg', 
-        caption: 'Slide 02 // Aerial Perspective & Aerodynamic Roof Plane' 
+      {
+        "url": "assets/mixed-use-slide-02-aerial.jpg",
+        "caption": "Slide 02 // Aerial Massing & Skyline Silhouette"
       },
-      { 
-        url: 'assets/sport-slide-03-facade.jpg', 
-        caption: 'Slide 03 // Gymnastics Arena & 18m Clear-Span Truss' 
+      {
+        "url": "assets/mixed-use-slide-03-street.jpg",
+        "caption": "Slide 03 // Pedestrian Plaza & Retail Promenade"
       },
-      { 
-        url: 'assets/sport-slide-04-street.jpg', 
-        caption: 'Slide 04 // Streetscape Perspective & Transit Promenade' 
+      {
+        "url": "assets/mixed-use-slide-04-office.jpg",
+        "caption": "Slide 04 // Corporate Office Interior & Acoustic Timber"
       },
-      { 
-        url: 'assets/sport-slide-05-interior.jpg', 
-        caption: 'Slide 05 // Wellness Lounge & Panoramic Glazing' 
+      {
+        "url": "assets/mixed-use-slide-05-living.jpg",
+        "caption": "Slide 05 // High-Rise Residence & Highland Panorama"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <circle cx="20" cy="20" r="14" stroke="#FFD042" />
-      <path d="M10 20h20M20 10v20" stroke="#FFFFFF" />
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"12\" y=\"6\" width=\"16\" height=\"30\" stroke=\"#FFD042\" />\n      <line x1=\"16\" y1=\"12\" x2=\"24\" y2=\"12\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"18\" x2=\"24\" y2=\"18\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"24\" x2=\"24\" y2=\"24\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"30\" x2=\"24\" y2=\"30\" stroke=\"#FFFFFF\" />\n    </svg>"
   },
 
-  // 04: SUSTAINABLE BAMBOO & FERRO-CEMENT HOUSING (REAL PROJECT — APPROPRIATE TECHNOLOGY)
+  // MOD-04: CLIMATE-RESPONSIVE PRIVATE RESIDENCE
   {
-    id: 'bamboo-ferrocement-sustainable-housing',
-    service: "Sustainable Eco-Housing & Appropriate Technology",
-    role: "Lead Architectural Designer & Material Researcher (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
-    software: ["AutoCAD","SketchUp","D5 Render","Adobe Photoshop"],
-    title: 'Sustainable Bamboo & Ferrocement Housing',
-    practice: 'architecture',
-    subCategory: 'sustainable',
-    practiceLabel: 'Sustainable Architecture & Eco-Housing',
-    year: '2024',
-    gridRef: 'MOD-04',
-    sizeContext: 'Eco-Dwelling • Bundled Bamboo Space Frame • 25mm Thin-Shell Vaults',
-    location: 'Highland Eco-Settlement, Ethiopia',
-    client: 'Sustainable Habitat & Appropriate Technology Research',
-    scale: 'Two-Level Eco-Residential Dwelling on Sloped Hillside',
-    medium: 'Bamboo Culms (Dendrocalamus asper), 25mm Ferro-Cement Panels, Timber Decking, Clay Roof Tiles',
-    summary: 'Low-carbon housing prototype uniting treated highland bamboo space frames with 25mm ferrocement thin shells.',
-    description: 'An innovative exploration of appropriate building technology combining native bundled bamboo culms with thin-shell ferro-cement panels. The primary skeleton utilizes a triangulated bamboo space frame with bundled culms (typically Dendrocalamus asper or Bambusa balcooa) for structural columns that distribute gravity loads. The secondary shell applies thin-shell ferro-cement panels (25mm–30mm thickness) strategically integrated into the "shear bays" of the bamboo frame. Bamboo handles the tensile stresses of wind and seismic loads, while ferro-cement provides the compressive strength, thermal mass, and fire resistance that bamboo lacks. Molded curved ferro-cement walls absorb heat during the day, while high-porosity lightweight bamboo louvers facilitate continuous cross-ventilation.',
-    challenge: 'Harmonizing the flexible tensile properties of natural organic bamboo with the rigid compressive strength of cementitious plaster without joint cracking.',
-    solution: 'Engineered pin-jointed steel gusset brackets and wire mesh lap-joints that permit thermal expansion while transferring shear loads seamlessly between bamboo bundles and ferro-cement diaphragm walls.',
-    deliverables: [
-      'Ground, First Floor & Roof Structural Framing Plans',
-      'Site Contour & Hillside Stilt Foundation Plan',
-      'Front, Rear, Left & Right Architectural Elevations',
-      'Bamboo Culm Joinery & Ferro-Cement Shear Bay Details',
-      'Full Exterior Hillside Perspective & Material Texture Renderings'
+    "id": "climate-responsive-residence-diredawa",
+    "service": "Bioclimatic Residential Architecture",
+    "role": "Lead Architectural Designer & Passive Solar Strategist (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "software": [
+      "AutoCAD",
+      "Rhino 3D",
+      "D5 Render",
+      "Adobe Photoshop",
+      "Climate Consultant"
     ],
-    slides: [
-      { 
-        url: 'assets/bamboo-slide-01-hillside.jpg', 
-        caption: 'Slide 01 // Hillside Elevation & Stilt Foundation' 
+    "title": "Climate-Responsive Private Residence",
+    "practice": "architecture",
+    "subCategory": "residential",
+    "practiceLabel": "Residential & Bioclimatic Architecture",
+    "year": "2025",
+    "gridRef": "MOD-04",
+    "sizeContext": "G+2 Bioclimatic Villa • Central Cooling Atrium • 45° Solar Fins • Dire Dawa",
+    "location": "Dire Dawa, Ethiopia",
+    "client": "Private Family Residence Commission",
+    "scale": "G+2 Residence with Integrated Thermal Atrium & Shaded Terraces",
+    "medium": "45° Aluminum Vertical Fins, Living Green Wall Irrigation, Textured Concrete, Passive Courtyard Atrium",
+    "summary": "Bioclimatic residential villa engineered with 45° passive solar louvers and a central microclimate cooling atrium.",
+    "description": "A contemporary G+2 private residence engineered specifically for Dire Dawa's intense thermal environment. The design prioritizes passive cooling strategies, utilizing an integrated central courtyard and a dynamic louvered facade system to drastically reduce solar heat gain while maximizing natural cross-ventilation. The Ground Floor organizes public living, dining, and an open kitchen wrapping around the landscaped courtyard, guest suite, and parking. The First Floor hosts family bedrooms, study room, prayer room, and shaded balconies. The Second Floor accommodates the master suite, private gym, home office, and entertainment terrace.",
+    "challenge": "Mitigating high ambient temperatures and harsh solar radiation characteristic of Dire Dawa without relying exclusively on energy-intensive mechanical air conditioning.",
+    "solution": "Introduced a central courtyard that acts as a thermal chimney, drawing cool air through perimeter landscaped buffers while blocking 80% of direct solar heat via 45° angled aluminum vertical fins paired with an irrigated living wall.",
+    "deliverables": [
+      "Bioclimatic 4-Step Form Development & Solar Permeability Study",
+      "Ground, First & Second Floor Architectural Plans (Scale 1:100)",
+      "East, North, South & West Elevation Drawings with Louver Layouts",
+      "Vertical Fins Detail Specifications (45° Angle, 5.0 Offset, Aluminum)",
+      "Internal Courtyard 3D Architectural Section & Green Wall Irrigation Plan",
+      "Daylight Exterior Streetscape & Interior Courtyard Living Renderings"
+    ],
+    "slides": [
+      {
+        "url": "assets/residence-slide-01-street.jpg",
+        "caption": "Slide 01 // Daylight Street Elevation & Dynamic Louvers"
       },
-      { 
-        url: 'assets/bamboo-slide-02-landscape.jpg', 
-        caption: 'Slide 02 // Landscape Perspective & Shaded Porch' 
+      {
+        "url": "assets/residence-slide-02-corner.jpg",
+        "caption": "Slide 02 // Corner Perspective & Shaded Veranda"
       },
-      { 
-        url: 'assets/bamboo-slide-03-detail.jpg', 
-        caption: 'Slide 03 // Triangulated Bamboo Space Frame Joinery' 
+      {
+        "url": "assets/residence-slide-03-courtyard.jpg",
+        "caption": "Slide 03 // 3D Section — Central Bioclimatic Atrium"
       },
-      { 
-        url: 'assets/bamboo-slide-04-veranda.jpg', 
-        caption: 'Slide 04 // Shaded Veranda & Forest Approach Nested in Canopy' 
+      {
+        "url": "assets/residence-slide-04-interior.jpg",
+        "caption": "Slide 04 // Living Lounge & Daylit Courtyard Connection"
       },
-      { 
-        url: 'assets/bamboo-slide-05-elevation.jpg', 
-        caption: 'Slide 05 // Distant Terrain Perspective & Eco-Footprint' 
+      {
+        "url": "assets/residence-slide-05-axon.jpg",
+        "caption": "Slide 05 // Passive Solar Form Development & Shading"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 34V14l8-8 8 8v20" stroke="#FFD042" />
-      <line x1="8" y1="34" x2="32" y2="34" stroke="#FFFFFF" />
-      <line x1="16" y1="22" x2="24" y2="22" stroke="#FFD042" />
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M8 32V14l12-8 12 8v18H8z\" stroke=\"#FFD042\" />\n      <rect x=\"15\" y=\"18\" width=\"10\" height=\"14\" stroke=\"#FFFFFF\" />\n    </svg>"
   },
 
-  // 05: ACUTE ENGINEERING HEADQUARTERS — OFFICE RENOVATION (REAL PROJECT — BOLE MICHAEL)
+  // MOD-05: VERTICAL SPORTS & WELLNESS CENTER
   {
-    id: 'acute-engineering-office-renovation',
-    service: "Interior Architecture & Workplace Renovation",
-    role: "Lead Interior Architect & Spatial Designer (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
-    software: ["AutoCAD","Rhino 3D","D5 Render","Adobe Photoshop"],
-    title: 'Acute Engineering — Office Renovation',
-    practice: 'architecture',
-    subCategory: 'interior',
-    practiceLabel: 'Interior Architecture & Workplace Renovation',
-    year: '2026',
-    gridRef: 'MOD-05',
-    sizeContext: '22.6 m² (4.2m × 5.4m) • Steel & Timber Screen • Dual Spatial Zones • Bole Michael',
-    location: 'Bole Michael, Addis Ababa, Ethiopia',
-    client: 'Acute Engineering',
-    scale: '22.6 m² (4.2m × 5.4m) Executive Office & Consultation Suite',
-    medium: 'Steel & Slatted Oak Joinery, Bookmatched Calacatta Marble, Floating Halo LED Rings, Acoustic Carpet',
-    summary: 'Transforming a compact 22.6 m² footprint into a dual-zone executive suite through a tectonic steel and timber screen that choreographs arrival, transition, and destination.',
-    description: 'A high-precision interior renovation for Acute Engineering located in Bole Michael, Addis Ababa. Within an uncompromising 22.6 m² envelope (4.2m × 5.4m), the open floor was masterfully bifurcated into two distinct programmatic realms: an informal client arrival & meeting lounge, and a commanding formal executive command workstation. A custom-fabricated steel and slatted oak screen serves as the primary dividing element—filtering light, organizing sightlines, and orchestrating a clear sequence of arrival, transition, and destination within a single unified room. The executive desk is backed by a bookmatched Calacatta marble feature slab mounting the 3D illuminated Acute Engineering corporate emblem, framed by bespoke floor-to-ceiling joinery and architectural halo ring lighting.',
-    challenge: 'Integrating an executive workstation, formal client consultation zone, and high-density storage within an uncompromising 22.6 m² footprint without visual congestion or spatial claustrophobia.',
-    solution: 'Designed an open-framework steel and timber screen that functions simultaneously as a room divider, display vitrine, and acoustic buffer—preserving continuous sightlines and perimeter natural daylight while establishing absolute privacy for executive management.',
-    deliverables: [
-      'Spatial Layout & Circulation Zoning Plan (Scale 1:50)',
-      'Steel & Slatted Timber Partition Screen Construction Detail',
-      'Bookmatched Marble Feature Wall & 3D Logo Integration Spec',
-      'Full-Height Storage Joinery & Hidden Wardrobe Millwork',
-      '3D Isometric Cutaway & Photorealistic Perspective Visualization Suite'
+    "id": "vertical-sports-wellness-center",
+    "service": "Sports Architecture & Structural Steel Truss Design",
+    "role": "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "software": [
+      "AutoCAD",
+      "Rhino 3D",
+      "D5 Render",
+      "Adobe Photoshop"
     ],
-    slides: [
-      { 
-        url: 'assets/office-slide-01-elevation.jpg', 
-        caption: 'Slide 01 // Executive Workspace & Branded Calacatta Marble Feature Wall (Photorealistic CGI)' 
+    "title": "Vertical Sports & Wellness Center",
+    "practice": "architecture",
+    "subCategory": "sports",
+    "practiceLabel": "Sports & Public Architecture",
+    "year": "2025",
+    "gridRef": "MOD-05",
+    "sizeContext": "G+2 Athletic Complex • 18m Clear-Span Truss • Multi-Tiered Courts",
+    "location": "Urban Center, Ethiopia",
+    "client": "Municipal Sports & Community Recreation",
+    "scale": "G+2 Vertical Facility with Rooftop Sports Terrace",
+    "medium": "Reinforced Concrete Frame, High-Performance Acoustic Glazing, Steel Trusses, Perforated Solar Shading",
+    "summary": "Compact urban sports complex stacking Olympic gymnastics, indoor athletic courts, and daylight wellness lounges.",
+    "description": "The objective of this project was to design a modern, vertical sports and wellness center within a compact urban footprint. Moving away from sprawling horizontal sports complexes, this G+2 facility stacks diverse athletic programs to optimize land use while maintaining seamless spatial transitions, high acoustic separation, and clear user circulation. The complex integrates an expansive ground entrance plaza, shaded drop-off zones, professional indoor gymnasium, cardiovascular and weight suites, athlete recovery zones, and a top-floor wellness cafeteria with floor-to-ceiling glass framing panoramic landscape views.",
+    "challenge": "Isolating high-impact vibrations and acoustic reverberation generated by multi-level gymnasium sports from quiet administrative and wellness dining spaces.",
+    "solution": "Adopted a vertical structural zoning strategy with decoupled concrete slab dampeners and heavy acoustic perimeter partitions between athletic courts and social wellness facilities.",
+    "deliverables": [
+      "Ground, First & Second Floor Architectural Spatial Plans",
+      "Longitudinal & Transverse Double-Height Cross Sections",
+      "Pedestrian Plaza, Bus Terminal & Vehicle Drop-Off Access Masterplan",
+      "Acoustic Barrier & Structural Frame Coordination Documentation",
+      "Exterior Daylight, Aerial Rooftop & Interior Cafeteria Render Suite"
+    ],
+    "slides": [
+      {
+        "url": "assets/sport-slide-01-plaza.jpg",
+        "caption": "Slide 01 // Kinetic Facade & Elevated Glazed Concourse"
       },
-      { 
-        url: 'assets/office-slide-03-wide.jpg', 
-        caption: 'Slide 02 // Executive Command Suite, Halo Ring Chandeliers & Fluted Millwork' 
+      {
+        "url": "assets/sport-slide-02-aerial.jpg",
+        "caption": "Slide 02 // Aerial Perspective & Aerodynamic Roof Plane"
       },
-      { 
-        url: 'assets/office-slide-02-isometric.jpg', 
-        caption: 'Slide 03 // 3D Isometric Cutaway — Dual-Zone Spatial Organization (22.6 m²)' 
+      {
+        "url": "assets/sport-slide-03-facade.jpg",
+        "caption": "Slide 03 // Gymnastics Arena & 18m Clear-Span Truss"
       },
-      { 
-        url: 'assets/office-slide-04-divider.jpg', 
-        caption: 'Slide 04 // Steel & Timber Partition Screen — Sequence of Arrival & Transition' 
+      {
+        "url": "assets/sport-slide-04-street.jpg",
+        "caption": "Slide 04 // Streetscape Perspective & Transit Promenade"
       },
-      { 
-        url: 'assets/office-slide-05-workstation.jpg', 
-        caption: 'Slide 05 // Workstation Perspective, CAD Drafting Interface & Curated Art' 
-      },
-      { 
-        url: 'assets/acute-logo.svg', 
-        caption: 'Slide 06 // Acute Engineering Primary Vector Logo & Corporate Identity Mark (Full Scale)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
+      {
+        "url": "assets/sport-slide-05-interior.jpg",
+        "caption": "Slide 05 // Wellness Lounge & Panoramic Glazing"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="6" y="8" width="28" height="24" rx="2" stroke="#FFD042" />
-      <line x1="22" y1="8" x2="22" y2="32" stroke="#FFFFFF" stroke-dasharray="2 2"/>
-      <path d="M11 26 L16 14 L21 26" stroke="#1456CC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M13 22 L19 22" stroke="#E6222E" stroke-width="2"/>
-      <rect x="25" y="14" width="6" height="12" fill="#FFD042" stroke="none" rx="1"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <circle cx=\"20\" cy=\"20\" r=\"14\" stroke=\"#FFD042\" />\n      <path d=\"M10 20h20M20 10v20\" stroke=\"#FFFFFF\" />\n    </svg>"
   },
 
-  // 06: G+2 FAMILY RESIDENCE — KARA, ADDIS ABABA (ARCHITECTURAL & RESIDENTIAL)
+  // MOD-06: SUSTAINABLE BAMBOO & FERROCEMENT HOUSING
   {
-    id: 'kara-g2-family-residence',
-    service: "G+2+Terrace Residential Architecture & Daylight Simulation",
-    role: "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Autodesk Revit","D5 Render","AutoCAD","Adobe Photoshop"],
-    title: 'G+2 Family Residence',
-    practice: 'architecture',
-    subCategory: 'residential',
-    practiceLabel: 'Residential Architecture & CGI',
-    year: '2026',
-    gridRef: 'MOD-06',
-    sizeContext: 'Kara, Addis Ababa | 250 m² Plot • G+2+Terrace • 9 Multi-View Perspectives',
-    location: 'Kara, Addis Ababa | 250 m² Plot',
-    client: 'Private Family Residence Commission',
-    scale: 'G+2 + Rooftop Terrace (250 m² Plot, 480 m² Gross Built Area)',
-    medium: 'Reinforced Concrete Frame, Ribbed Architectural Fins, Low-E High-Span Glazing & D5 Atmospheric Simulation',
-    summary: 'A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation.',
-    description: 'A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation. The proposal organizes the house into a clear hierarchy of public, semi-private, private and service spaces, while responding to the site\'s orientation, slope and urban context. Spanning across 9 comprehensive perspectives: from sunlit living lounges with traditional Ethiopian coffee ceremony corners to a sacred private prayer sanctuary (Tselot Bet), open island kitchen, master bedroom retreat, executive study office, and landscaped rooftop terrace.',
-    challenge: 'Organizing a multi-generational family home into an intuitive hierarchy of public reception, private sleeping sanctuaries, and dedicated spiritual prayer spaces on a dense 250 m² Kara plot with optimal daylight and cross-ventilation.',
-    solution: 'Designed a vertical zoning sequence with compact structural footprint, cantilevered balconies for solar shading, acoustic isolation for the private prayer and study quarters, and generous floor-to-ceiling glazing opening to landscaped outdoor terraces.',
-    deliverables: [
-      'Complete Architectural Planning & Spatial Hierarchy (Public, Semi-Private, Private & Service Zones)',
-      '9 Photorealistic CGI Perspectives (Daylight, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)',
-      'Traditional Ethiopian Spiritual Prayer Room (Tselot Bet) with Illuminated Cross Ceiling & Begena Display',
-      'Master Bedroom Retreat with Integrated Fluted Wood Study & Minimalist Headboard',
-      'Executive Home Office Studio & Architectural Library with Mesh Detailing',
-      'Entrance Foyer with Custom Integrated Millwork Bench & Dressing Storage',
-      'BIM Documentation & Construction Detailing in Autodesk Revit & D5 Render'
+    "id": "bamboo-ferrocement-sustainable-housing",
+    "service": "Sustainable Eco-Housing & Appropriate Technology",
+    "role": "Lead Architectural Designer & Material Researcher (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "software": [
+      "AutoCAD",
+      "SketchUp",
+      "D5 Render",
+      "Adobe Photoshop"
     ],
-    slides: [
-      { 
-        url: 'assets/kara-residence-slide-01-day.jpg', 
-        caption: 'Slide 01 // Daylight Exterior Facade, Perimeter Architecture & Landscaping (Full Scale 1:1)' 
+    "title": "Sustainable Bamboo & Ferrocement Housing",
+    "practice": "architecture",
+    "subCategory": "sustainable",
+    "practiceLabel": "Sustainable Architecture & Eco-Housing",
+    "year": "2024",
+    "gridRef": "MOD-06",
+    "sizeContext": "Eco-Dwelling • Bundled Bamboo Space Frame • 25mm Thin-Shell Vaults",
+    "location": "Highland Eco-Settlement, Ethiopia",
+    "client": "Sustainable Habitat & Appropriate Technology Research",
+    "scale": "Two-Level Eco-Residential Dwelling on Sloped Hillside",
+    "medium": "Bamboo Culms (Dendrocalamus asper), 25mm Ferro-Cement Panels, Timber Decking, Clay Roof Tiles",
+    "summary": "Low-carbon housing prototype uniting treated highland bamboo space frames with 25mm ferrocement thin shells.",
+    "description": "An innovative exploration of appropriate building technology combining native bundled bamboo culms with thin-shell ferro-cement panels. The primary skeleton utilizes a triangulated bamboo space frame with bundled culms (typically Dendrocalamus asper or Bambusa balcooa) for structural columns that distribute gravity loads. The secondary shell applies thin-shell ferro-cement panels (25mm–30mm thickness) strategically integrated into the \"shear bays\" of the bamboo frame. Bamboo handles the tensile stresses of wind and seismic loads, while ferro-cement provides the compressive strength, thermal mass, and fire resistance that bamboo lacks. Molded curved ferro-cement walls absorb heat during the day, while high-porosity lightweight bamboo louvers facilitate continuous cross-ventilation.",
+    "challenge": "Harmonizing the flexible tensile properties of natural organic bamboo with the rigid compressive strength of cementitious plaster without joint cracking.",
+    "solution": "Engineered pin-jointed steel gusset brackets and wire mesh lap-joints that permit thermal expansion while transferring shear loads seamlessly between bamboo bundles and ferro-cement diaphragm walls.",
+    "deliverables": [
+      "Ground, First Floor & Roof Structural Framing Plans",
+      "Site Contour & Hillside Stilt Foundation Plan",
+      "Front, Rear, Left & Right Architectural Elevations",
+      "Bamboo Culm Joinery & Ferro-Cement Shear Bay Details",
+      "Full Exterior Hillside Perspective & Material Texture Renderings"
+    ],
+    "slides": [
+      {
+        "url": "assets/bamboo-slide-01-hillside.jpg",
+        "caption": "Slide 01 // Hillside Elevation & Stilt Foundation"
       },
-      { 
-        url: 'assets/kara-residence-slide-02-twilight.jpg', 
-        caption: 'Slide 02 // Twilight Elevation & Architectural Illumination Study' 
+      {
+        "url": "assets/bamboo-slide-02-landscape.jpg",
+        "caption": "Slide 02 // Landscape Perspective & Shaded Porch"
       },
-      { 
-        url: 'assets/kara-residence-slide-03-living.jpg', 
-        caption: 'Slide 03 // Sunlit Family Living Lounge & Traditional Ethiopian Coffee Ceremony Space' 
+      {
+        "url": "assets/bamboo-slide-03-detail.jpg",
+        "caption": "Slide 03 // Triangulated Bamboo Space Frame Joinery"
       },
-      { 
-        url: 'assets/kara-residence-slide-04-kitchen.jpg', 
-        caption: 'Slide 04 // Open-Plan Island Kitchen & Dining Wing with Slatted Timber Screening' 
+      {
+        "url": "assets/bamboo-slide-04-veranda.jpg",
+        "caption": "Slide 04 // Shaded Veranda & Forest Approach Nested in Canopy"
       },
-      { 
-        url: 'assets/kara-residence-slide-05-bath.jpg', 
-        caption: 'Slide 05 // Master Ensuite Terrazzo Bath & Floating Stone Vanity Detail' 
-      },
-      { 
-        url: 'assets/kara-residence-slide-06-prayer.jpg', 
-        caption: 'Slide 06 // Traditional Spiritual Sanctuary & Private Prayer Room (Tselot Bet)' 
-      },
-      { 
-        url: 'assets/kara-residence-slide-07-bedroom.jpg', 
-        caption: 'Slide 07 // Master Bedroom Suite with Integrated Study Nook & Ambient Lighting' 
-      },
-      { 
-        url: 'assets/kara-residence-slide-08-office.jpg', 
-        caption: 'Slide 08 // Executive Home Office & Architectural Study Studio' 
-      },
-      { 
-        url: 'assets/kara-residence-slide-09-foyer.jpg', 
-        caption: 'Slide 09 // Entrance Foyer, Mudroom Bench & Custom Millwork Storage' 
+      {
+        "url": "assets/bamboo-slide-05-elevation.jpg",
+        "caption": "Slide 05 // Distant Terrain Perspective & Eco-Footprint"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M6 34h28M10 34V16l10-8 10 8v18M14 22h12v12H14z" stroke="#FFD042" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M14 14h12" stroke="#FFD042" stroke-linecap="round"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 34V14l8-8 8 8v20\" stroke=\"#FFD042\" />\n      <line x1=\"8\" y1=\"34\" x2=\"32\" y2=\"34\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"22\" x2=\"24\" y2=\"22\" stroke=\"#FFD042\" />\n    </svg>"
   },
 
-  // 07: WORKER LINK — DIGITAL PLATFORM, TRUST-BASED IDENTITY & MOBILE UI (RECENT WORK — FIRST ON BRANDING)
+  // MOD-07: WORKER LINK — PLATFORM IDENTITY & UI
   {
-    id: 'worker-link-brand-identity',
-    service: "Brand Identity & Mobile UI Systems",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Figma","Blender"],
-    title: 'Worker Link — Platform Identity & UI',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Mobile UI',
-    year: '2026',
-    gridRef: 'MOD-07',
-    sizeContext: 'Full Scale Interlocked Mark • Mobile UI • 3D Signage • Badges',
-    location: 'Addis Ababa, Ethiopia',
-    client: 'Worker Link Platform (@worker_link / workerlink.com)',
-    scale: 'Comprehensive Digital Product Brand System & UI Architecture',
-    medium: 'Geometric Monoline Vector, Teal (#105B72) & Soft Mint (#40989F) Palette, Mobile UI, 3D Signage',
-    summary: 'Trust-anchored visual identity and mobile UI connecting families directly with verified domestic professionals.',
-    description: 'Worker Link is an innovative digital platform built in Addis Ababa to connect families directly, safely, and transparently with verified professional housekeepers—eliminating predatory brokers. The visual identity embodies this core mission: removing the middleman so two people are directly joined. The logo forms an interlocking link between two human silhouettes that together create a subtle heart shape, communicating direct connection, safety, warmth, and reliable neighbourly care. Scaled seamlessly across mobile app profile interfaces, real-time push notification widgets, illuminated 3D hanging signage, and digital product touchpoints.',
-    challenge: 'Designing a mark that conveys professional security, technical reliability, and digital modernity while exuding approachable domestic warmth and mutual human trust without feeling clinical.',
-    solution: 'Engineered an interlocking dual-figure geometry mapped to a strict 45° diagonal construction grid with equal-radius circular terminations, harmonizing deep corporate teal (#105B72) with warm approachable mint (#40989F) to symbolize the two connected parties in balanced equilibrium.',
-    deliverables: [
-      'Primary Scalable Vector Interlocked Heart Logomark & Wordmark',
-      'Geometric Construction Grid & 45° Vector Angle Blueprint Documentation',
-      'Repetitive Dynamic Brand Pattern for Digital & Physical Collateral',
-      'Mobile Application Profile UI Design & Verified Badge System',
-      'Push Notification Center UI & App Launcher Iconography',
-      '3D Illuminated Hanging Physical Signage & Mobile Handset Mockups'
+    "id": "worker-link-brand-identity",
+    "service": "Brand Identity & Mobile UI Systems",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Figma",
+      "Blender"
     ],
-    slides: [
-      { 
-        url: 'assets/workerlink-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary Interlocked Vector Logomark (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
+    "title": "Worker Link — Platform Identity & UI",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Brand Identity & Mobile UI",
+    "year": "2026",
+    "gridRef": "MOD-07",
+    "sizeContext": "Full Scale Interlocked Mark • Mobile UI • 3D Signage • Badges",
+    "location": "Addis Ababa, Ethiopia",
+    "client": "Worker Link Platform (@worker_link / workerlink.com)",
+    "scale": "Comprehensive Digital Product Brand System & UI Architecture",
+    "medium": "Geometric Monoline Vector, Teal (#105B72) & Soft Mint (#40989F) Palette, Mobile UI, 3D Signage",
+    "summary": "Trust-anchored visual identity and mobile UI connecting families directly with verified domestic professionals.",
+    "description": "Worker Link is an innovative digital platform built in Addis Ababa to connect families directly, safely, and transparently with verified professional housekeepers—eliminating predatory brokers. The visual identity embodies this core mission: removing the middleman so two people are directly joined. The logo forms an interlocking link between two human silhouettes that together create a subtle heart shape, communicating direct connection, safety, warmth, and reliable neighbourly care. Scaled seamlessly across mobile app profile interfaces, real-time push notification widgets, illuminated 3D hanging signage, and digital product touchpoints.",
+    "challenge": "Designing a mark that conveys professional security, technical reliability, and digital modernity while exuding approachable domestic warmth and mutual human trust without feeling clinical.",
+    "solution": "Engineered an interlocking dual-figure geometry mapped to a strict 45° diagonal construction grid with equal-radius circular terminations, harmonizing deep corporate teal (#105B72) with warm approachable mint (#40989F) to symbolize the two connected parties in balanced equilibrium.",
+    "deliverables": [
+      "Primary Scalable Vector Interlocked Heart Logomark & Wordmark",
+      "Geometric Construction Grid & 45° Vector Angle Blueprint Documentation",
+      "Repetitive Dynamic Brand Pattern for Digital & Physical Collateral",
+      "Mobile Application Profile UI Design & Verified Badge System",
+      "Push Notification Center UI & App Launcher Iconography",
+      "3D Illuminated Hanging Physical Signage & Mobile Handset Mockups"
+    ],
+    "slides": [
+      {
+        "url": "assets/workerlink-slide-01-logo.jpg",
+        "caption": "Slide 01 // Primary Interlocked Vector Logomark (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
       },
-      { 
-        url: 'assets/workerlink-slide-02-concept.jpg', 
-        caption: 'Slide 02 // Geometric Grid Construction & Brand Pattern' 
+      {
+        "url": "assets/workerlink-slide-02-concept.jpg",
+        "caption": "Slide 02 // Geometric Grid Construction & Brand Pattern"
       },
-      { 
-        url: 'assets/workerlink-slide-03-ui.jpg', 
-        caption: 'Slide 03 // Mobile App Profile UI & Push Notifications' 
+      {
+        "url": "assets/workerlink-slide-03-ui.jpg",
+        "caption": "Slide 03 // Mobile App Profile UI & Push Notifications"
       },
-      { 
-        url: 'assets/workerlink-slide-04-signage.jpg', 
-        caption: 'Slide 04 // 3D App Icon & Illuminated Hanging Signage' 
+      {
+        "url": "assets/workerlink-slide-04-signage.jpg",
+        "caption": "Slide 04 // 3D App Icon & Illuminated Hanging Signage"
       },
-      { 
-        url: 'assets/workerlink-slide-05-device.jpg', 
-        caption: 'Slide 05 // Illuminated 3D Brand Badge in Dark Context' 
+      {
+        "url": "assets/workerlink-slide-05-device.jpg",
+        "caption": "Slide 05 // Illuminated 3D Brand Badge in Dark Context"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M14 16 L22 24 A4 4 0 0 1 16 30 L10 24 A4 4 0 0 1 16 18 L20 22" stroke="#40989F" stroke-width="2.5" stroke-linecap="round"/>
-      <path d="M26 16 L18 24 A4 4 0 0 0 24 30 L30 24 A4 4 0 0 0 24 18 L20 22" stroke="#105B72" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="12" cy="12" r="2.5" fill="#40989F"/>
-      <circle cx="28" cy="12" r="2.5" fill="#105B72"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M14 16 L22 24 A4 4 0 0 1 16 30 L10 24 A4 4 0 0 1 16 18 L20 22\" stroke=\"#40989F\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <path d=\"M26 16 L18 24 A4 4 0 0 0 24 30 L30 24 A4 4 0 0 0 24 18 L20 22\" stroke=\"#105B72\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"12\" cy=\"12\" r=\"2.5\" fill=\"#40989F\"/>\n      <circle cx=\"28\" cy=\"12\" r=\"2.5\" fill=\"#105B72\"/>\n    </svg>"
   },
 
-  // 08: JORDANO JEMOLE CONSTRUCTION P.L.C — CORPORATE BRAND IDENTITY & SITE SYSTEM
+  // MOD-08: JORDANO JEMOLE CONSTRUCTION P.L.C
   {
-    id: 'jordano-jemole-construction-identity',
-    service: "Corporate Brand Identity & Site Safety Graphics",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
-    title: 'Jordano Jemole Construction P.L.C',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Corporate System',
-    year: '2026',
-    gridRef: 'MOD-08',
-    sizeContext: 'Full Scale Monolith Mark • Geometric Frame • High-Vis Gear • Hardhat',
-    location: 'Ethiopia (KB CREATIVE Commission)',
-    client: 'Jordano Jemole Construction P.L.C',
-    scale: 'Corporate Visual Identity Architecture & Civil Construction System',
-    medium: 'Monoline Tectonic Geometry, Construction Amber (#F5A623) & Slate Charcoal (#3A3D40), Apparel & Field Gear',
-    summary: 'Tectonic brand identity engineering a monolithic column monogram that commands instant authority on heavy civil construction sites.',
-    description: 'Jordano Jemole Construction P.L.C is a premier civil engineering and building construction firm. The corporate visual identity anchors the brand\'s market reputation for structural integrity, technical precision, and enduring durability. The primary emblem features a soaring, multi-tiered monolithic tower monogram framed within a bold industrial boundary, symbolizing vertical ascension, structural foundation, and engineering strength. The comprehensive system scales flawlessly from high-visibility safety workwear and site safety hardhats to corporate stationery, contracts, and executive apparel.',
-    challenge: 'Designing a heavy-duty identity rugged enough to withstand intense field execution on active construction sites while maintaining polished, sophisticated authority across high-stakes corporate investor meetings and formal architectural dossiers.',
-    solution: 'Constructed an architectural monolithic column monogram mapped to equal-angle upward chevrons with high-visibility safety amber (#F5A623) enclosed by an industrial slate grey boundary (#3A3D40), achieving instant 50-meter visibility across high-traffic site conditions and razor-sharp clarity on luxury corporate collateral.',
-    deliverables: [
-      'Primary Scalable Vector Monolithic Logomark & Wordmark (Full Scale)',
-      'Field Safety Hardhat Industrial Graphic Specifications',
-      'High-Visibility Site Safety Vest Reflective Patch Embroidery',
-      'Corporate Executive Stationery Suite (Letterhead, Business Cards, Envelope)',
-      'Staff & Project Manager Embroidered Navy Polo Shirt Suite',
-      'Brand Standards Manual, Construction Grid & Color Hierarchy'
+    "id": "jordano-jemole-construction-identity",
+    "service": "Corporate Brand Identity & Site Safety Graphics",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign"
     ],
-    slides: [
-      { 
-        url: 'assets/jordano-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary Monolithic Vector Logomark & Boundary (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
+    "title": "Jordano Jemole Construction P.L.C",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Brand Identity & Corporate System",
+    "year": "2026",
+    "gridRef": "MOD-08",
+    "sizeContext": "Full Scale Monolith Mark • Geometric Frame • High-Vis Gear • Hardhat",
+    "location": "Ethiopia (KB CREATIVE Commission)",
+    "client": "Jordano Jemole Construction P.L.C",
+    "scale": "Corporate Visual Identity Architecture & Civil Construction System",
+    "medium": "Monoline Tectonic Geometry, Construction Amber (#F5A623) & Slate Charcoal (#3A3D40), Apparel & Field Gear",
+    "summary": "Tectonic brand identity engineering a monolithic column monogram that commands instant authority on heavy civil construction sites.",
+    "description": "Jordano Jemole Construction P.L.C is a premier civil engineering and building construction firm. The corporate visual identity anchors the brand's market reputation for structural integrity, technical precision, and enduring durability. The primary emblem features a soaring, multi-tiered monolithic tower monogram framed within a bold industrial boundary, symbolizing vertical ascension, structural foundation, and engineering strength. The comprehensive system scales flawlessly from high-visibility safety workwear and site safety hardhats to corporate stationery, contracts, and executive apparel.",
+    "challenge": "Designing a heavy-duty identity rugged enough to withstand intense field execution on active construction sites while maintaining polished, sophisticated authority across high-stakes corporate investor meetings and formal architectural dossiers.",
+    "solution": "Constructed an architectural monolithic column monogram mapped to equal-angle upward chevrons with high-visibility safety amber (#F5A623) enclosed by an industrial slate grey boundary (#3A3D40), achieving instant 50-meter visibility across high-traffic site conditions and razor-sharp clarity on luxury corporate collateral.",
+    "deliverables": [
+      "Primary Scalable Vector Monolithic Logomark & Wordmark (Full Scale)",
+      "Field Safety Hardhat Industrial Graphic Specifications",
+      "High-Visibility Site Safety Vest Reflective Patch Embroidery",
+      "Corporate Executive Stationery Suite (Letterhead, Business Cards, Envelope)",
+      "Staff & Project Manager Embroidered Navy Polo Shirt Suite",
+      "Brand Standards Manual, Construction Grid & Color Hierarchy"
+    ],
+    "slides": [
+      {
+        "url": "assets/jordano-slide-01-logo.jpg",
+        "caption": "Slide 01 // Primary Monolithic Vector Logomark & Boundary (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
       },
-      { 
-        url: 'assets/jordano-slide-02-vest.jpg', 
-        caption: 'Slide 02 // High-Vis Site Safety Vest with Embroidered Emblem' 
+      {
+        "url": "assets/jordano-slide-02-vest.jpg",
+        "caption": "Slide 02 // High-Vis Site Safety Vest with Embroidered Emblem"
       },
-      { 
-        url: 'assets/jordano-slide-03-hardhat.jpg', 
-        caption: 'Slide 03 // Safety Hardhat on Active Concrete Construction Site' 
+      {
+        "url": "assets/jordano-slide-03-hardhat.jpg",
+        "caption": "Slide 03 // Safety Hardhat on Active Concrete Construction Site"
       },
-      { 
-        url: 'assets/jordano-slide-04-stationery.jpg', 
-        caption: 'Slide 04 // Executive Corporate Stationery & Duplex Cards' 
+      {
+        "url": "assets/jordano-slide-04-stationery.jpg",
+        "caption": "Slide 04 // Executive Corporate Stationery & Duplex Cards"
       },
-      { 
-        url: 'assets/jordano-slide-05-polo.jpg', 
-        caption: 'Slide 05 // Site Management Navy Piqué Polo with Gold Emblem' 
+      {
+        "url": "assets/jordano-slide-05-polo.jpg",
+        "caption": "Slide 05 // Site Management Navy Piqué Polo with Gold Emblem"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="8" y="4" width="24" height="32" stroke="#555555" stroke-width="2" rx="1"/>
-      <path d="M16 26 C16 29 24 29 24 26 V12 L20 8 L16 12 Z" fill="#F5A623" stroke="#F5A623"/>
-      <path d="M12 24 C12 30 28 30 28 24" stroke="#F5A623" stroke-width="2.5" stroke-linecap="round"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"8\" y=\"4\" width=\"24\" height=\"32\" stroke=\"#555555\" stroke-width=\"2\" rx=\"1\"/>\n      <path d=\"M16 26 C16 29 24 29 24 26 V12 L20 8 L16 12 Z\" fill=\"#F5A623\" stroke=\"#F5A623\"/>\n      <path d=\"M12 24 C12 30 28 30 28 24\" stroke=\"#F5A623\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n    </svg>"
   },
 
-  // 09: TILET FASHION (ጥለት ፋሽን) — BRAND IDENTITY & FASHION BOUTIQUE (REAL PROJECT — BOLE CENTURY MALL)
+  // MOD-09: TILET FASHION (ጥለት ፋሽን)
   {
-    id: 'tilet-fashion-brand-identity',
-    service: "Haute Couture Brand Identity & Retail Packaging",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
-    title: 'Tilet Fashion (ጥለት ፋሽን)',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Fashion Design',
-    year: '2025',
-    gridRef: 'MOD-09',
-    sizeContext: 'Full Scale Royal Emblem • Ge\'ez Typography • Bole Century Mall Storefront',
-    location: 'Bole Century Mall, Addis Ababa, Ethiopia',
-    client: 'Tilet Fashion (ጥለት ፋሽን) Haute Couture',
-    scale: 'Flagship Luxury Boutique Identity & Packaging Suite',
-    medium: 'Custom Ge\'ez Wordmark, Obsidian (#0A0A0A) & Crimson Red (#D32F2F) Palette, Storefront Glazing, Duplex Cards',
-    summary: 'Haute couture brand identity transforming traditional Ethiopian collar embroidery into an imperial geometric emblem.',
-    description: 'Tilet Fashion (ጥለት ፋሽን) is an upscale contemporary couture fashion house at Bole Century Mall, specializing in luxury handcrafted Habesha Kemis and tailored woven wear. The visual identity transforms the iconic Ethiopian "Tilet" collar embroidery into an imperial geometric emblem, paired with bespoke geometric Ge\'ez typography. The identity was applied across the flagship boutique window storefront, luxury matte black retail bags with crimson rope handles, executive duplex business cards, and debossed 3D wall signage.',
-    challenge: 'Reimagining the sacred, deeply rooted traditional Ethiopian handwoven Tilet embroidery patterns into a clean, modern luxury emblem that commands prestige on high-end boutique storefronts while remaining instantly recognizable to traditional fashion patrons.',
-    solution: 'Designed an imperial diamond collar emblem pairing a dynamic curved collar arc with a diamond jewel base in high-contrast crimson red on pitch black, supported by custom-drawn architectural Amharic letterforms for "ጥለት ፋሽን".',
-    deliverables: [
-      'Primary Scalable Royal Emblem & Ge\'ez Calligraphic Mark',
-      'Flagship Boutique Storefront Glazing & Architectural Facade Display',
-      'Luxury Matte Black Retail Shopping Bags with Crimson Rope Handles',
-      'Executive Duplex Business Cards (Black & White Variants)',
-      'Debossed 3D Architectural Wall Signage Box',
-      'Boutique Packaging Specifications & Brand Standards'
+    "id": "tilet-fashion-brand-identity",
+    "service": "Haute Couture Brand Identity & Retail Packaging",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign"
     ],
-    slides: [
-      { 
-        url: 'assets/tilet-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Royal Diamond Collar Emblem & Ge\'ez Mark (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#000000' 
+    "title": "Tilet Fashion (ጥለት ፋሽን)",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Brand Identity & Fashion Design",
+    "year": "2025",
+    "gridRef": "MOD-09",
+    "sizeContext": "Full Scale Royal Emblem • Ge'ez Typography • Bole Century Mall Storefront",
+    "location": "Bole Century Mall, Addis Ababa, Ethiopia",
+    "client": "Tilet Fashion (ጥለት ፋሽን) Haute Couture",
+    "scale": "Flagship Luxury Boutique Identity & Packaging Suite",
+    "medium": "Custom Ge'ez Wordmark, Obsidian (#0A0A0A) & Crimson Red (#D32F2F) Palette, Storefront Glazing, Duplex Cards",
+    "summary": "Haute couture brand identity transforming traditional Ethiopian collar embroidery into an imperial geometric emblem.",
+    "description": "Tilet Fashion (ጥለት ፋሽን) is an upscale contemporary couture fashion house at Bole Century Mall, specializing in luxury handcrafted Habesha Kemis and tailored woven wear. The visual identity transforms the iconic Ethiopian \"Tilet\" collar embroidery into an imperial geometric emblem, paired with bespoke geometric Ge'ez typography. The identity was applied across the flagship boutique window storefront, luxury matte black retail bags with crimson rope handles, executive duplex business cards, and debossed 3D wall signage.",
+    "challenge": "Reimagining the sacred, deeply rooted traditional Ethiopian handwoven Tilet embroidery patterns into a clean, modern luxury emblem that commands prestige on high-end boutique storefronts while remaining instantly recognizable to traditional fashion patrons.",
+    "solution": "Designed an imperial diamond collar emblem pairing a dynamic curved collar arc with a diamond jewel base in high-contrast crimson red on pitch black, supported by custom-drawn architectural Amharic letterforms for \"ጥለት ፋሽን\".",
+    "deliverables": [
+      "Primary Scalable Royal Emblem & Ge'ez Calligraphic Mark",
+      "Flagship Boutique Storefront Glazing & Architectural Facade Display",
+      "Luxury Matte Black Retail Shopping Bags with Crimson Rope Handles",
+      "Executive Duplex Business Cards (Black & White Variants)",
+      "Debossed 3D Architectural Wall Signage Box",
+      "Boutique Packaging Specifications & Brand Standards"
+    ],
+    "slides": [
+      {
+        "url": "assets/tilet-slide-01-logo.jpg",
+        "caption": "Slide 01 // Royal Diamond Collar Emblem & Ge'ez Mark (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#000000"
       },
-      { 
-        url: 'assets/tilet-slide-02-storefront.jpg', 
-        caption: 'Slide 02 // Flagship Storefront Window & Mannequin Display' 
+      {
+        "url": "assets/tilet-slide-02-storefront.jpg",
+        "caption": "Slide 02 // Flagship Storefront Window & Mannequin Display"
       },
-      { 
-        url: 'assets/tilet-slide-03-packaging.jpg', 
-        caption: 'Slide 03 // Luxury Matte Black Retail Bag with Crimson Handles' 
+      {
+        "url": "assets/tilet-slide-03-packaging.jpg",
+        "caption": "Slide 03 // Luxury Matte Black Retail Bag with Crimson Handles"
       },
-      { 
-        url: 'assets/tilet-slide-04-cards.jpg', 
-        caption: 'Slide 04 // Executive Duplex Business Cards in Black & White' 
+      {
+        "url": "assets/tilet-slide-04-cards.jpg",
+        "caption": "Slide 04 // Executive Duplex Business Cards in Black & White"
       },
-      { 
-        url: 'assets/tilet-slide-05-signage.jpg', 
-        caption: 'Slide 05 // Debossed 3D Architectural Wall Signage Box' 
+      {
+        "url": "assets/tilet-slide-05-signage.jpg",
+        "caption": "Slide 05 // Debossed 3D Architectural Wall Signage Box"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 10 C16 14 24 14 28 10 C26 18 14 18 12 10z" fill="#D32F2F" stroke="#D32F2F"/>
-      <polygon points="20,18 28,26 20,34 12,26" fill="#D32F2F" stroke="#D32F2F"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 10 C16 14 24 14 28 10 C26 18 14 18 12 10z\" fill=\"#D32F2F\" stroke=\"#D32F2F\"/>\n      <polygon points=\"20,18 28,26 20,34 12,26\" fill=\"#D32F2F\" stroke=\"#D32F2F\"/>\n    </svg>"
   },
 
-  // 10: BEGO MEAZA MEDIA — BRAND IDENTITY & LOGO DESIGN (REAL PROJECT — KB CREATIVE COMMISSION)
+  // MOD-10: BEGO MEAZA MEDIA
   {
-    id: 'bego-meaza-media-identity',
-    service: "Broadcast Media Identity & Digital Systems",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Blender"],
-    title: 'Bego Meaza Media',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Logo Design',
-    year: '2024',
-    gridRef: 'MOD-10',
-    sizeContext: 'Full Brand Architecture • Monogram Mark • Environmental Signage • App Icon',
-    location: 'Ethiopia (KB CREATIVE Commission)',
-    client: 'Bego Meaza Media',
-    scale: 'Complete Visual Brand Architecture & Multi-Platform Identity',
-    medium: 'Geometric Logomark, Black × Red × White Palette, Signage Mockups, UI Application',
-    summary: 'Dynamic broadcast media identity fusing an energetic monogram with forward-motion play symbolism.',
-    description: 'Bego Meaza Media required a bold, high-memorability corporate identity to anchor their media brand across digital and physical touchpoints. The logomark fuses a stylized letter "B" with an integrated play button symbol — a seamless visual metaphor for media flow and forward progress. Delivered across business cards, environmental 3D signage, mobile app icon, and brand construction grid.',
-    challenge: 'Creating a single logomark that communicates both media entertainment and professional credibility across scales — from a 16px app icon to a large-format 3D wall installation.',
-    solution: 'Designed a monoline geometric "B + Play" symbol using a strict geometric grid with equal stroke weights, ensuring perfect legibility at all sizes and contrast on both light and dark surfaces.',
-    deliverables: ['Primary Logomark & Symbol System', '3D Environmental Wall Signage Mockup', 'Business Card Light & Dark Variants', 'Mobile App Icon Design', 'Brand Color Palette (Black · Red · White)', 'Geometric Construction Grid Documentation'],
-    slides: [
-      { 
-        url: 'assets/bego-meaza-slide-03.jpg', 
-        caption: 'Slide 01 // Primary "B + Play" Monogram Vector on White (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
+    "id": "bego-meaza-media-identity",
+    "service": "Broadcast Media Identity & Digital Systems",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Blender"
+    ],
+    "title": "Bego Meaza Media",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Brand Identity & Logo Design",
+    "year": "2024",
+    "gridRef": "MOD-10",
+    "sizeContext": "Full Brand Architecture • Monogram Mark • Environmental Signage • App Icon",
+    "location": "Ethiopia (KB CREATIVE Commission)",
+    "client": "Bego Meaza Media",
+    "scale": "Complete Visual Brand Architecture & Multi-Platform Identity",
+    "medium": "Geometric Logomark, Black × Red × White Palette, Signage Mockups, UI Application",
+    "summary": "Dynamic broadcast media identity fusing an energetic monogram with forward-motion play symbolism.",
+    "description": "Bego Meaza Media required a bold, high-memorability corporate identity to anchor their media brand across digital and physical touchpoints. The logomark fuses a stylized letter \"B\" with an integrated play button symbol — a seamless visual metaphor for media flow and forward progress. Delivered across business cards, environmental 3D signage, mobile app icon, and brand construction grid.",
+    "challenge": "Creating a single logomark that communicates both media entertainment and professional credibility across scales — from a 16px app icon to a large-format 3D wall installation.",
+    "solution": "Designed a monoline geometric \"B + Play\" symbol using a strict geometric grid with equal stroke weights, ensuring perfect legibility at all sizes and contrast on both light and dark surfaces.",
+    "deliverables": [
+      "Primary Logomark & Symbol System",
+      "3D Environmental Wall Signage Mockup",
+      "Business Card Light & Dark Variants",
+      "Mobile App Icon Design",
+      "Brand Color Palette (Black · Red · White)",
+      "Geometric Construction Grid Documentation"
+    ],
+    "slides": [
+      {
+        "url": "assets/bego-meaza-slide-03.jpg",
+        "caption": "Slide 01 // Primary \"B + Play\" Monogram Vector on White (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
       },
-      { 
-        url: 'assets/bego-meaza-slide-01.jpg', 
-        caption: 'Slide 02 // 3D Concept Model & Dynamic Media Motion' 
+      {
+        "url": "assets/bego-meaza-slide-01.jpg",
+        "caption": "Slide 02 // 3D Concept Model & Dynamic Media Motion"
       },
-      { 
-        url: 'assets/bego-meaza-slide-02.jpg', 
-        caption: 'Slide 03 // Business Card Light & Dark Executive Variants' 
+      {
+        "url": "assets/bego-meaza-slide-02.jpg",
+        "caption": "Slide 03 // Business Card Light & Dark Executive Variants"
       },
-      { 
-        url: 'assets/bego-meaza-slide-04.jpg', 
-        caption: 'Slide 04 // Environmental Signage, App Icon & Color Palette' 
+      {
+        "url": "assets/bego-meaza-slide-04.jpg",
+        "caption": "Slide 04 // Environmental Signage, App Icon & Color Palette"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M12 8 C12 8 12 20 12 26 C12 31 16 34 20 34 C24 34 28 31 28 26 L28 20" stroke="#FFD042" stroke-linecap="round"/>
-      <polygon points="18,13 30,20 18,27" stroke="#FFFFFF" fill="none"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 8 C12 8 12 20 12 26 C12 31 16 34 20 34 C24 34 28 31 28 26 L28 20\" stroke=\"#FFD042\" stroke-linecap=\"round\"/>\n      <polygon points=\"18,13 30,20 18,27\" stroke=\"#FFFFFF\" fill=\"none\"/>\n    </svg>"
   },
 
-  // 11: MESOB MEALS — BRAND IDENTITY, FOOD PACKAGING & DELIVERY SYSTEM (REAL PROJECT)
+  // MOD-11: MESOB MEALS
   {
-    id: 'mesob-meals-brand-identity',
-    service: "Culinary Brand Identity & Packaging Ecosystem",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign"],
-    title: 'Mesob Meals',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Packaging Design',
-    year: '2025',
-    gridRef: 'MOD-11',
-    sizeContext: 'Full Scale Cultural Mark • Eco Packaging • Courier Fleet Gear • Apparel',
-    location: 'Ethiopia (KB CREATIVE Commission)',
-    client: 'Mesob Meals Food Delivery Service',
-    scale: 'Comprehensive Hospitality & Delivery Visual Ecosystem',
-    medium: 'Cultural Heritage Monogram, Emerald (#083B32) & Warm Ochre (#F4A71D) Palette, Food Packaging, Uniform Embroidery',
-    summary: 'Modernist culinary brand identity distilling the iconic woven mesob into a clean cultural monogram.',
-    description: 'Mesob Meals is an Ethiopian food delivery platform celebrating authentic culinary heritage with modern logistical speed. The identity centers on a minimalist geometric silhouette of the traditional handwoven "Mesob" (symbolizing community, hospitality, and communal dining) crowned with a modern warm ochre lid and a clean arching base. The brand ecosystem spans compostable meal container bands, kraft paper takeout bags, embroidered kitchen aprons, and weather-resistant insulated courier transit boxes.',
-    challenge: 'Reinventing an ancient, highly ornate traditional cultural artifact (the Mesob basket) into a clean, modern, scalable vector mark that prints crisply on small meal container labels while looking commanding on courier delivery gear across busy city streets.',
-    solution: 'Distilled the complex wickerwork of the traditional mesob into bold, pure geometric planes — pairing deep Ethiopian forest emerald green (#083B32) with warm sunlit ochre (#F4A71D) and pure white accents for maximum street-level visibility and appetizing warmth.',
-    deliverables: [
-      'Primary Scalable Vector Logo Mark & Cultural Monogram',
-      'Food Container Labeling & Tamper-Evident Safety Bands',
-      'Eco-Friendly Kraft Takeout Bag Graphics',
-      'High-Visibility Insulated Courier Transit Bags',
-      'Chef & Kitchen Staff Embroidered Uniform Apparel',
-      'Brand Color Palette & Cultural Typography Guidelines'
+    "id": "mesob-meals-brand-identity",
+    "service": "Culinary Brand Identity & Packaging Ecosystem",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign"
     ],
-    slides: [
-      { 
-        url: 'assets/mesob-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Cultural Mesob Monogram Vector on Emerald (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#083B32' 
+    "title": "Mesob Meals",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Brand Identity & Packaging Design",
+    "year": "2025",
+    "gridRef": "MOD-11",
+    "sizeContext": "Full Scale Cultural Mark • Eco Packaging • Courier Fleet Gear • Apparel",
+    "location": "Ethiopia (KB CREATIVE Commission)",
+    "client": "Mesob Meals Food Delivery Service",
+    "scale": "Comprehensive Hospitality & Delivery Visual Ecosystem",
+    "medium": "Cultural Heritage Monogram, Emerald (#083B32) & Warm Ochre (#F4A71D) Palette, Food Packaging, Uniform Embroidery",
+    "summary": "Modernist culinary brand identity distilling the iconic woven mesob into a clean cultural monogram.",
+    "description": "Mesob Meals is an Ethiopian food delivery platform celebrating authentic culinary heritage with modern logistical speed. The identity centers on a minimalist geometric silhouette of the traditional handwoven \"Mesob\" (symbolizing community, hospitality, and communal dining) crowned with a modern warm ochre lid and a clean arching base. The brand ecosystem spans compostable meal container bands, kraft paper takeout bags, embroidered kitchen aprons, and weather-resistant insulated courier transit boxes.",
+    "challenge": "Reinventing an ancient, highly ornate traditional cultural artifact (the Mesob basket) into a clean, modern, scalable vector mark that prints crisply on small meal container labels while looking commanding on courier delivery gear across busy city streets.",
+    "solution": "Distilled the complex wickerwork of the traditional mesob into bold, pure geometric planes — pairing deep Ethiopian forest emerald green (#083B32) with warm sunlit ochre (#F4A71D) and pure white accents for maximum street-level visibility and appetizing warmth.",
+    "deliverables": [
+      "Primary Scalable Vector Logo Mark & Cultural Monogram",
+      "Food Container Labeling & Tamper-Evident Safety Bands",
+      "Eco-Friendly Kraft Takeout Bag Graphics",
+      "High-Visibility Insulated Courier Transit Bags",
+      "Chef & Kitchen Staff Embroidered Uniform Apparel",
+      "Brand Color Palette & Cultural Typography Guidelines"
+    ],
+    "slides": [
+      {
+        "url": "assets/mesob-slide-01-logo.jpg",
+        "caption": "Slide 01 // Cultural Mesob Monogram Vector on Emerald (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#083B32"
       },
-      { 
-        url: 'assets/mesob-slide-02-packaging.jpg', 
-        caption: 'Slide 02 // Eco-Friendly Food Packaging & Kraft Takeout Bags' 
+      {
+        "url": "assets/mesob-slide-02-packaging.jpg",
+        "caption": "Slide 02 // Eco-Friendly Food Packaging & Kraft Takeout Bags"
       },
-      { 
-        url: 'assets/mesob-slide-03-delivery.jpg', 
-        caption: 'Slide 03 // Courier Delivery Fleet Uniform & Handheld Transit Box' 
+      {
+        "url": "assets/mesob-slide-03-delivery.jpg",
+        "caption": "Slide 03 // Courier Delivery Fleet Uniform & Handheld Transit Box"
       },
-      { 
-        url: 'assets/mesob-slide-04-bag.jpg', 
-        caption: 'Slide 04 // Insulated Thermal Courier Transit Backpack' 
+      {
+        "url": "assets/mesob-slide-04-bag.jpg",
+        "caption": "Slide 04 // Insulated Thermal Courier Transit Backpack"
       },
-      { 
-        url: 'assets/mesob-slide-05-apron.jpg', 
-        caption: 'Slide 05 // Executive Chef & Kitchen Apron with Gold Embroidery' 
+      {
+        "url": "assets/mesob-slide-05-apron.jpg",
+        "caption": "Slide 05 // Executive Chef & Kitchen Apron with Gold Embroidery"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M10 28h20c0 4-4 6-10 6s-10-2-10-6z" fill="#083B32" stroke="#FFD042" />
-      <path d="M12 28 C12 18 16 14 20 14 C24 14 28 18 28 28" stroke="#FFFFFF" />
-      <rect x="17" y="8" width="6" height="6" rx="1" stroke="#FFD042" fill="#FFD042" />
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M10 28h20c0 4-4 6-10 6s-10-2-10-6z\" fill=\"#083B32\" stroke=\"#FFD042\" />\n      <path d=\"M12 28 C12 18 16 14 20 14 C24 14 28 18 28 28\" stroke=\"#FFFFFF\" />\n      <rect x=\"17\" y=\"8\" width=\"6\" height=\"6\" rx=\"1\" stroke=\"#FFD042\" fill=\"#FFD042\" />\n    </svg>"
   },
 
-  // 12: DANU STORE — BRAND IDENTITY, RETAIL STOREFRONT & MERCHANDISE SYSTEM (REAL PROJECT — BOLE ROAD)
+  // MOD-12: DANU STORE
   {
-    id: 'danu-store-brand-identity',
-    service: "Retail Brand Identity & Environmental Storefront",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Blender","Adobe InDesign"],
-    title: 'Danu Store',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Brand Identity & Retail Design',
-    year: '2025',
-    gridRef: 'MOD-12',
-    sizeContext: 'Full Scale Cart Monogram • Bole Road Storefront • Merchandise Suite',
-    location: 'Bole Road, Addis Ababa, Ethiopia',
-    client: 'Danu Store Retail & E-Commerce',
-    scale: 'Flagship Retail Brand Architecture & Environmental Identity',
-    medium: 'Shopping Cart Monogram, Obsidian (#000000) & Electric Yellow (#FFD042) Palette, Storefront Signage, Merchandise',
-    summary: 'Contemporary retail brand identity marrying an iconic shopping cart monogram with luxury store architecture.',
-    description: 'Danu Store is a contemporary retail and lifestyle brand on Bole Road, Addis Ababa. The visual identity transforms the lowercase letter "d" into a fluid shopping cart monogram with two distinct wheel anchor points, signifying momentum, convenience, and curated commerce. The identity was executed across the architectural flagship storefront with 3D illuminated exterior signage, staff barista/clerk aprons and embroidered polos, heavyweight canvas eco-totes, luxury matte black retail rope bags, and gold-foiled executive business cards.',
-    challenge: 'Engineering a minimalist monogram that functions simultaneously as a legible lowercase "d" and a shopping cart, commanding high street visibility on illuminated night facades while maintaining prestige on luxury retail print collateral.',
-    solution: 'Designed a high-contrast monoline geometry in electric yellow against obsidian black, featuring calibrated circular wheel proportions and an upward sweeping stem that provides instant recall across digital app icons and physical boutique architecture.',
-    deliverables: [
-      'Primary Scalable Vector Logo Mark & Shopping Cart Monogram',
-      'Flagship Architectural Storefront Facade & 3D Illuminated Signage',
-      'Staff Uniform Apparel Suite (Embroidered Aprons, Polos, Caps)',
-      'Heavyweight Canvas Eco-Tote Bag with Golden Monogram',
-      'Luxury Matte Black Retail Rope-Handle Shopping Bags',
-      'Executive Gold Foil Business Cards (Plot 101, Bole Road)'
+    "id": "danu-store-brand-identity",
+    "service": "Retail Brand Identity & Environmental Storefront",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Blender",
+      "Adobe InDesign"
     ],
-    slides: [
-      { 
-        url: 'assets/danu-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Shopping Cart Monogram Vector on Black (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#000000' 
+    "title": "Danu Store",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Brand Identity & Retail Design",
+    "year": "2025",
+    "gridRef": "MOD-12",
+    "sizeContext": "Full Scale Cart Monogram • Bole Road Storefront • Merchandise Suite",
+    "location": "Bole Road, Addis Ababa, Ethiopia",
+    "client": "Danu Store Retail & E-Commerce",
+    "scale": "Flagship Retail Brand Architecture & Environmental Identity",
+    "medium": "Shopping Cart Monogram, Obsidian (#000000) & Electric Yellow (#FFD042) Palette, Storefront Signage, Merchandise",
+    "summary": "Contemporary retail brand identity marrying an iconic shopping cart monogram with luxury store architecture.",
+    "description": "Danu Store is a contemporary retail and lifestyle brand on Bole Road, Addis Ababa. The visual identity transforms the lowercase letter \"d\" into a fluid shopping cart monogram with two distinct wheel anchor points, signifying momentum, convenience, and curated commerce. The identity was executed across the architectural flagship storefront with 3D illuminated exterior signage, staff barista/clerk aprons and embroidered polos, heavyweight canvas eco-totes, luxury matte black retail rope bags, and gold-foiled executive business cards.",
+    "challenge": "Engineering a minimalist monogram that functions simultaneously as a legible lowercase \"d\" and a shopping cart, commanding high street visibility on illuminated night facades while maintaining prestige on luxury retail print collateral.",
+    "solution": "Designed a high-contrast monoline geometry in electric yellow against obsidian black, featuring calibrated circular wheel proportions and an upward sweeping stem that provides instant recall across digital app icons and physical boutique architecture.",
+    "deliverables": [
+      "Primary Scalable Vector Logo Mark & Shopping Cart Monogram",
+      "Flagship Architectural Storefront Facade & 3D Illuminated Signage",
+      "Staff Uniform Apparel Suite (Embroidered Aprons, Polos, Caps)",
+      "Heavyweight Canvas Eco-Tote Bag with Golden Monogram",
+      "Luxury Matte Black Retail Rope-Handle Shopping Bags",
+      "Executive Gold Foil Business Cards (Plot 101, Bole Road)"
+    ],
+    "slides": [
+      {
+        "url": "assets/danu-slide-01-logo.jpg",
+        "caption": "Slide 01 // Shopping Cart Monogram Vector on Black (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#000000"
       },
-      { 
-        url: 'assets/danu-slide-02-storefront.jpg', 
-        caption: 'Slide 02 // Flagship Bole Road Facade with 3D Illuminated Signage' 
+      {
+        "url": "assets/danu-slide-02-storefront.jpg",
+        "caption": "Slide 02 // Flagship Bole Road Facade with 3D Illuminated Signage"
       },
-      { 
-        url: 'assets/danu-slide-03-merchandise.jpg', 
-        caption: 'Slide 03 // Staff Merchandise Flatlay — Polos, Aprons & Caps' 
+      {
+        "url": "assets/danu-slide-03-merchandise.jpg",
+        "caption": "Slide 03 // Staff Merchandise Flatlay — Polos, Aprons & Caps"
       },
-      { 
-        url: 'assets/danu-slide-04-totebag.jpg', 
-        caption: 'Slide 04 // Heavyweight Canvas Eco-Tote with Golden Monogram' 
+      {
+        "url": "assets/danu-slide-04-totebag.jpg",
+        "caption": "Slide 04 // Heavyweight Canvas Eco-Tote with Golden Monogram"
       },
-      { 
-        url: 'assets/danu-slide-05-collateral.jpg', 
-        caption: 'Slide 05 // Luxury Matte Black Retail Bag & Gold-Foil Cards' 
+      {
+        "url": "assets/danu-slide-05-collateral.jpg",
+        "caption": "Slide 05 // Luxury Matte Black Retail Bag & Gold-Foil Cards"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M16 24a5 5 0 1 1 0-10 5 5 0 0 1 5 5v12" stroke="#FFD042" stroke-width="2.5" stroke-linecap="round"/>
-      <circle cx="15" cy="30" r="2.5" fill="#FFD042"/>
-      <circle cx="23" cy="30" r="2.5" fill="#FFD042"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M16 24a5 5 0 1 1 0-10 5 5 0 0 1 5 5v12\" stroke=\"#FFD042\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"15\" cy=\"30\" r=\"2.5\" fill=\"#FFD042\"/>\n      <circle cx=\"23\" cy=\"30\" r=\"2.5\" fill=\"#FFD042\"/>\n    </svg>"
   },
 
-  // 13: ALMAZ JEWELLERY (አልማዝ ጌጣጌጥ) — HAUTE JOAILLERIE, BRAND IDENTITY & PACKAGING ECOSYSTEM
+  // MOD-13: ALMAZ JEWELLERY
   {
-    id: 'almaz-jewellery-brand-identity',
-    service: "Haute Joaillerie & Luxury Brand Identity",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
-    title: 'Almaz Jewellery',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Luxury Brand Identity & Packaging',
-    year: '2026',
-    gridRef: 'MOD-13',
-    sizeContext: 'Full Scale Solitaire Mark • Velvet Pouch • Boutiques • 24K Duplex Cards',
-    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
-    client: 'Almaz Jewellery (አልማዝ ጌጣጌጥ) Haute Joaillerie',
-    scale: 'Flagship Luxury Maison Brand Architecture & Packaging Ecosystem',
-    medium: 'Solitaire Ring Monogram, Champagne Bronze (#E89258), Pure White (#FFFFFF) & Obsidian (#000000), Velvet & Gold Foil',
-    summary: 'Minimalist haute joaillerie identity synthesizing a brilliant-cut diamond crown with an arching letter "A" ring band.',
-    description: 'Almaz (አልማዝ — the Ge\'ez word for diamond) bridges timeless Ethiopian heritage with modern luxury joaillerie. The mark fuses a precision brilliant-cut diamond solitaire with the upward arch of a bespoke letter \'A\', forming an iconic ring silhouette that reads with instant clarity across scales. Executed across flagship boutique glazing, matte presentation ring cases, debossed velvet pouches, and duplex cards with subtle Ethiopian cross watermarks.',
-    challenge: 'Distilling the ancient reverence of Ethiopian jewelry into a modern, monoline luxury emblem that commands prestige on high-end boutique storefronts while remaining crisp on 10mm ring tags.',
-    solution: 'Engineered a geometric dual-arch construction: an outer circular band crowned by a faceted diamond solitaire, cradling a sculpted letter \'A\'. Anchored by a warm champagne bronze (#E89258) and pitch obsidian (#000000) palette that exudes quiet luxury.',
-    deliverables: [
-      'Primary Scalable Solitaire Diamond & "A" Ring Vector Logomark (Full Scale 1:1)',
-      'Flagship Boutique Storefront Glazing & Illuminated Window Display Graphics',
-      'Luxury Matte Black Presentation Jewelry Box & Diamond Ring Setting Display',
-      'Debossed Obsidian Velvet Drawstring Jewelry Pouches with Embroidered Emblem',
-      'Executive Duplex Business Cards with Embossed Ethiopian Cross Watermarks',
-      'Comprehensive Haute Joaillerie Identity Guidelines & Typography Specs'
+    "id": "almaz-jewellery-brand-identity",
+    "service": "Haute Joaillerie & Luxury Brand Identity",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Blender"
     ],
-    slides: [
-      { 
-        url: 'assets/almaz-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary Solitaire Diamond "A" Vector Logomark (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#000000' 
+    "title": "Almaz Jewellery",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Luxury Brand Identity & Packaging",
+    "year": "2026",
+    "gridRef": "MOD-13",
+    "sizeContext": "Full Scale Solitaire Mark • Velvet Pouch • Boutiques • 24K Duplex Cards",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "Almaz Jewellery (አልማዝ ጌጣጌጥ) Haute Joaillerie",
+    "scale": "Flagship Luxury Maison Brand Architecture & Packaging Ecosystem",
+    "medium": "Solitaire Ring Monogram, Champagne Bronze (#E89258), Pure White (#FFFFFF) & Obsidian (#000000), Velvet & Gold Foil",
+    "summary": "Minimalist haute joaillerie identity synthesizing a brilliant-cut diamond crown with an arching letter \"A\" ring band.",
+    "description": "Almaz (አልማዝ — the Ge'ez word for diamond) bridges timeless Ethiopian heritage with modern luxury joaillerie. The mark fuses a precision brilliant-cut diamond solitaire with the upward arch of a bespoke letter 'A', forming an iconic ring silhouette that reads with instant clarity across scales. Executed across flagship boutique glazing, matte presentation ring cases, debossed velvet pouches, and duplex cards with subtle Ethiopian cross watermarks.",
+    "challenge": "Distilling the ancient reverence of Ethiopian jewelry into a modern, monoline luxury emblem that commands prestige on high-end boutique storefronts while remaining crisp on 10mm ring tags.",
+    "solution": "Engineered a geometric dual-arch construction: an outer circular band crowned by a faceted diamond solitaire, cradling a sculpted letter 'A'. Anchored by a warm champagne bronze (#E89258) and pitch obsidian (#000000) palette that exudes quiet luxury.",
+    "deliverables": [
+      "Primary Scalable Solitaire Diamond & \"A\" Ring Vector Logomark (Full Scale 1:1)",
+      "Flagship Boutique Storefront Glazing & Illuminated Window Display Graphics",
+      "Luxury Matte Black Presentation Jewelry Box & Diamond Ring Setting Display",
+      "Debossed Obsidian Velvet Drawstring Jewelry Pouches with Embroidered Emblem",
+      "Executive Duplex Business Cards with Embossed Ethiopian Cross Watermarks",
+      "Comprehensive Haute Joaillerie Identity Guidelines & Typography Specs"
+    ],
+    "slides": [
+      {
+        "url": "assets/almaz-slide-01-logo.jpg",
+        "caption": "Slide 01 // Primary Solitaire Diamond \"A\" Vector Logomark (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#000000"
       },
-      { 
-        url: 'assets/almaz-slide-02-storefront.jpg', 
-        caption: 'Slide 02 // Flagship Luxury Boutique Glazed Facade & Showcase Display' 
+      {
+        "url": "assets/almaz-slide-02-storefront.jpg",
+        "caption": "Slide 02 // Flagship Luxury Boutique Glazed Facade & Showcase Display"
       },
-      { 
-        url: 'assets/almaz-slide-03-box.jpg', 
-        caption: 'Slide 03 // Matte Black Presentation Box, Solitaire Ring & Gold Card' 
+      {
+        "url": "assets/almaz-slide-03-box.jpg",
+        "caption": "Slide 03 // Matte Black Presentation Box, Solitaire Ring & Gold Card"
       },
-      { 
-        url: 'assets/almaz-slide-04-pouch.jpg', 
-        caption: 'Slide 04 // Debossed Velvet Drawstring Pouch & Brilliant Cut Diamonds' 
+      {
+        "url": "assets/almaz-slide-04-pouch.jpg",
+        "caption": "Slide 04 // Debossed Velvet Drawstring Pouch & Brilliant Cut Diamonds"
       },
-      { 
-        url: 'assets/almaz-slide-05-cards.jpg', 
-        caption: 'Slide 05 // Duplex Luxury Business Cards with Ethiopian Cross Watermarks' 
+      {
+        "url": "assets/almaz-slide-05-cards.jpg",
+        "caption": "Slide 05 // Duplex Luxury Business Cards with Ethiopian Cross Watermarks"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <polygon points="20,5 26,11 14,11" stroke="#E89258" fill="#E89258"/>
-      <circle cx="20" cy="23" r="10" stroke="#E89258" stroke-width="2.5"/>
-      <path d="M16 28 L20 17 L24 28" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
-      <line x1="17.5" y1="23" x2="22.5" y2="23" stroke="#FFFFFF" stroke-width="2"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <polygon points=\"20,5 26,11 14,11\" stroke=\"#E89258\" fill=\"#E89258\"/>\n      <circle cx=\"20\" cy=\"23\" r=\"10\" stroke=\"#E89258\" stroke-width=\"2.5\"/>\n      <path d=\"M16 28 L20 17 L24 28\" stroke=\"#FFFFFF\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <line x1=\"17.5\" y1=\"23\" x2=\"22.5\" y2=\"23\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n    </svg>"
   },
 
-  // 14: DOT CREATIVE — CREATIVE AGENCY & BRAND DESIGN STUDIO
+  // MOD-14: DOT CREATIVE
   {
-    id: 'dot-creative-agency-identity',
-    service: "Creative Agency & Brand Design Studio",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
-    title: 'DOT CREATIVE',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Agency Identity & Visual Systems',
-    year: '2026',
-    gridRef: 'MOD-14',
-    sizeContext: 'Full Scale Monogram • Geometric Blueprint • Studio Apparel • Duplex Cards',
-    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
-    client: 'DOT CREATIVE Design Agency',
-    scale: 'Complete Visual Identity Architecture & Studio Collateral',
-    medium: 'Geometric Monogram, Electric Cobalt (#3D48E0) & Platinum (#C4C7C9), Apparel & Acrylic Signage',
-    summary: 'Geometric visual identity synthesizing an architectural monogram "D" with an offset square dot anchor.',
-    description: 'DOT CREATIVE is an avant-garde design studio dedicated to high-impact visual systems. The identity explores the core unit of digital and spatial design—the dot. Reimagined as an offset geometric square anchor that balances a chamfered monogram "D", the mark conveys architectural stability and dynamic forward vector motion. Deployed across blueprint drafting grids, oversized studio signage, staff apparel, and gradient duplex collateral.',
-    challenge: 'Crafting an agency mark bold enough to stand out in a saturated creative market while maintaining modular geometric clarity that works on architectural blueprints and high-contrast digital interfaces.',
-    solution: 'Constructed a 45° chamfered letter "D" paired with a floating square dot terminal, balanced by an electric cobalt (#3D48E0) and slate gradient palette with custom bespoke mechanical typography.',
-    deliverables: [
-      'Primary Scalable Vector "D + Dot" Logomark & Wordmark (Full Scale 1:1)',
-      'Geometric Grid Blueprint Construction & Angle Analysis',
-      'Agency Floor-Standing Illuminated Acrylic Lightbox Signage',
-      'Studio Team Heavyweight Cotton Embroidered Apparel',
-      'Gradient Duplex Executive Business Cards with Soft-Touch Laminate',
-      'Comprehensive Brand Guidelines & Digital Touchpoint System'
+    "id": "dot-creative-agency-identity",
+    "service": "Creative Agency & Brand Design Studio",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Blender"
     ],
-    slides: [
-      { 
-        url: 'assets/dot-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary "D + Dot" Vector Monogram on White (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#FFFFFF' 
+    "title": "DOT CREATIVE",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Agency Identity & Visual Systems",
+    "year": "2026",
+    "gridRef": "MOD-14",
+    "sizeContext": "Full Scale Monogram • Geometric Blueprint • Studio Apparel • Duplex Cards",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "DOT CREATIVE Design Agency",
+    "scale": "Complete Visual Identity Architecture & Studio Collateral",
+    "medium": "Geometric Monogram, Electric Cobalt (#3D48E0) & Platinum (#C4C7C9), Apparel & Acrylic Signage",
+    "summary": "Geometric visual identity synthesizing an architectural monogram \"D\" with an offset square dot anchor.",
+    "description": "DOT CREATIVE is an avant-garde design studio dedicated to high-impact visual systems. The identity explores the core unit of digital and spatial design—the dot. Reimagined as an offset geometric square anchor that balances a chamfered monogram \"D\", the mark conveys architectural stability and dynamic forward vector motion. Deployed across blueprint drafting grids, oversized studio signage, staff apparel, and gradient duplex collateral.",
+    "challenge": "Crafting an agency mark bold enough to stand out in a saturated creative market while maintaining modular geometric clarity that works on architectural blueprints and high-contrast digital interfaces.",
+    "solution": "Constructed a 45° chamfered letter \"D\" paired with a floating square dot terminal, balanced by an electric cobalt (#3D48E0) and slate gradient palette with custom bespoke mechanical typography.",
+    "deliverables": [
+      "Primary Scalable Vector \"D + Dot\" Logomark & Wordmark (Full Scale 1:1)",
+      "Geometric Grid Blueprint Construction & Angle Analysis",
+      "Agency Floor-Standing Illuminated Acrylic Lightbox Signage",
+      "Studio Team Heavyweight Cotton Embroidered Apparel",
+      "Gradient Duplex Executive Business Cards with Soft-Touch Laminate",
+      "Comprehensive Brand Guidelines & Digital Touchpoint System"
+    ],
+    "slides": [
+      {
+        "url": "assets/dot-slide-01-logo.jpg",
+        "caption": "Slide 01 // Primary \"D + Dot\" Vector Monogram on White (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
       },
-      { 
-        url: 'assets/dot-slide-02-grid.jpg', 
-        caption: 'Slide 02 // Geometric Blueprint Grid & 45° Construction Architecture' 
+      {
+        "url": "assets/dot-slide-02-grid.jpg",
+        "caption": "Slide 02 // Geometric Blueprint Grid & 45° Construction Architecture"
       },
-      { 
-        url: 'assets/dot-slide-03-signage.jpg', 
-        caption: 'Slide 03 // Studio Lightbox Signage & Team Embroidered Apparel Suite' 
+      {
+        "url": "assets/dot-slide-03-signage.jpg",
+        "caption": "Slide 03 // Studio Lightbox Signage & Team Embroidered Apparel Suite"
       },
-      { 
-        url: 'assets/dot-slide-04-card.jpg', 
-        caption: 'Slide 04 // Gradient Duplex Business Card & Soft-Touch Matte Finish' 
+      {
+        "url": "assets/dot-slide-04-card.jpg",
+        "caption": "Slide 04 // Gradient Duplex Business Card & Soft-Touch Matte Finish"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="8" y="8" width="6" height="6" fill="#A0A0A0" stroke="none"/>
-      <path d="M16 8h10l8 8v10l-8 8H16V8z" fill="#3D48E0" stroke="none"/>
-      <rect x="18" y="14" width="8" height="12" fill="#041B2B" rx="1"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"8\" y=\"8\" width=\"6\" height=\"6\" fill=\"#A0A0A0\" stroke=\"none\"/>\n      <path d=\"M16 8h10l8 8v10l-8 8H16V8z\" fill=\"#3D48E0\" stroke=\"none\"/>\n      <rect x=\"18\" y=\"14\" width=\"8\" height=\"12\" fill=\"#041B2B\" rx=\"1\"/>\n    </svg>"
   },
 
-  // 15: DAMA MARKETING — CORPORATE MARKETING AGENCY & BRAND IDENTITY SYSTEM
+  // MOD-15: DAMA MARKETING
   {
-    id: 'dama-marketing-brand-identity',
-    service: "Corporate Marketing & Strategic Brand Architecture",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Figma"],
-    title: 'Dama Marketing',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Corporate Marketing & Brand Systems',
-    year: '2026',
-    gridRef: 'MOD-15',
-    sizeContext: 'Full Scale "D" Monogram • Executive Duplex Cards • Web Platform • Brand Collateral',
-    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
-    client: 'Dama Marketing Corporate Agency',
-    scale: 'Complete Corporate Identity System, Digital Web Interface & Executive Collateral',
-    medium: 'Geometric Serif Monogram "D", Deep Pine (#122720) & Imperial Gold (#B6903F), Duplex Matte Cards, Ceramic & Environmental Merch',
-    summary: 'Geometric corporate identity uniting a sharp cantilevered square pixel with a sculpted golden "D" monogram.',
-    description: 'Dama Marketing is a performance-driven corporate agency built on strategic precision and measurable market impact. The brand mark deconstructs the initial "D" into two interconnected kinetic modules: an elevated geometric square pixel that commands the upper-left horizon and a sculpted golden stem that grounds the composition. The identity balances executive authority with modern tech agility across dark forest green duplex collateral, responsive web UI, and executive lifestyle merchandise.',
-    challenge: 'Devising an emblem that expresses strategic stability while breaking the conventional mold of corporate marketing firms through bold geometric negative space and prestigious chromatic contrast.',
-    solution: 'Constructed an asymmetric dual-geometry monogram: an offset golden square anchor intersecting the uppercase "D" silhouette, unified by an aristocratic deep pine green (#122720) and rich imperial gold (#B6903F) palette with crisp modern typography.',
-    deliverables: [
-      'Primary Scalable Vector "D" Pixel Monogram & Wordmark (Full Scale 1:1)',
-      'Executive Matte Pine Business Cards with Imperial Gold Foil Stamping',
-      'Corporate Responsive Web Landing Page & Digital Brand Design System',
-      'Executive Ceramic Desk Merchandise & Gold Writing Instruments',
-      'Architectural All-Weather Client Umbrellas with Gold Metallic Branding',
-      'Comprehensive Corporate Brand Standards & Typography Guide'
+    "id": "dama-marketing-brand-identity",
+    "service": "Corporate Marketing & Strategic Brand Architecture",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Figma"
     ],
-    slides: [
-      { 
-        url: 'assets/dama-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary "D" Monogram on Deep Pine (#122720) (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#122720' 
+    "title": "Dama Marketing",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Corporate Marketing & Brand Systems",
+    "year": "2026",
+    "gridRef": "MOD-15",
+    "sizeContext": "Full Scale \"D\" Monogram • Executive Duplex Cards • Web Platform • Brand Collateral",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "Dama Marketing Corporate Agency",
+    "scale": "Complete Corporate Identity System, Digital Web Interface & Executive Collateral",
+    "medium": "Geometric Serif Monogram \"D\", Deep Pine (#122720) & Imperial Gold (#B6903F), Duplex Matte Cards, Ceramic & Environmental Merch",
+    "summary": "Geometric corporate identity uniting a sharp cantilevered square pixel with a sculpted golden \"D\" monogram.",
+    "description": "Dama Marketing is a performance-driven corporate agency built on strategic precision and measurable market impact. The brand mark deconstructs the initial \"D\" into two interconnected kinetic modules: an elevated geometric square pixel that commands the upper-left horizon and a sculpted golden stem that grounds the composition. The identity balances executive authority with modern tech agility across dark forest green duplex collateral, responsive web UI, and executive lifestyle merchandise.",
+    "challenge": "Devising an emblem that expresses strategic stability while breaking the conventional mold of corporate marketing firms through bold geometric negative space and prestigious chromatic contrast.",
+    "solution": "Constructed an asymmetric dual-geometry monogram: an offset golden square anchor intersecting the uppercase \"D\" silhouette, unified by an aristocratic deep pine green (#122720) and rich imperial gold (#B6903F) palette with crisp modern typography.",
+    "deliverables": [
+      "Primary Scalable Vector \"D\" Pixel Monogram & Wordmark (Full Scale 1:1)",
+      "Executive Matte Pine Business Cards with Imperial Gold Foil Stamping",
+      "Corporate Responsive Web Landing Page & Digital Brand Design System",
+      "Executive Ceramic Desk Merchandise & Gold Writing Instruments",
+      "Architectural All-Weather Client Umbrellas with Gold Metallic Branding",
+      "Comprehensive Corporate Brand Standards & Typography Guide"
+    ],
+    "slides": [
+      {
+        "url": "assets/dama-slide-01-logo.jpg",
+        "caption": "Slide 01 // Primary \"D\" Monogram on Deep Pine (#122720) (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#122720"
       },
-      { 
-        url: 'assets/dama-slide-02-cards.jpg', 
-        caption: 'Slide 02 // Executive Matte Green Business Cards with Gold Stamping' 
+      {
+        "url": "assets/dama-slide-02-cards.jpg",
+        "caption": "Slide 02 // Executive Matte Green Business Cards with Gold Stamping"
       },
-      { 
-        url: 'assets/dama-slide-03-web.jpg', 
-        caption: 'Slide 03 // Responsive Corporate Web Platform & Digital Brand Suite' 
+      {
+        "url": "assets/dama-slide-03-web.jpg",
+        "caption": "Slide 03 // Responsive Corporate Web Platform & Digital Brand Suite"
       },
-      { 
-        url: 'assets/dama-slide-04-mug.jpg', 
-        caption: 'Slide 04 // Studio Executive Ceramic Mug & Gold Precision Pen' 
+      {
+        "url": "assets/dama-slide-04-mug.jpg",
+        "caption": "Slide 04 // Studio Executive Ceramic Mug & Gold Precision Pen"
       },
-      { 
-        url: 'assets/dama-slide-05-umbrella.jpg', 
-        caption: 'Slide 05 // Architectural All-Weather Umbrella with Gold Branding' 
+      {
+        "url": "assets/dama-slide-05-umbrella.jpg",
+        "caption": "Slide 05 // Architectural All-Weather Umbrella with Gold Branding"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <rect x="7" y="10" width="7" height="7" fill="#B6903F" stroke="none"/>
-      <path d="M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z" fill="#B6903F" stroke="none"/>
-      <rect x="18" y="15" width="5" height="8" fill="#122720" rx="1"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"7\" y=\"10\" width=\"7\" height=\"7\" fill=\"#B6903F\" stroke=\"none\"/>\n      <path d=\"M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z\" fill=\"#B6903F\" stroke=\"none\"/>\n      <rect x=\"18\" y=\"15\" width=\"5\" height=\"8\" fill=\"#122720\" rx=\"1\"/>\n    </svg>"
   },
 
-  // 16: TINU GIFTS — ARTISANAL PACKAGING ARCHITECTURE & BRAND IDENTITY SYSTEM
+  // MOD-16: TINU GIFTS
   {
-    id: 'tinu-gifts-brand-identity',
-    service: "Artisanal Packaging Architecture & Brand Identity System",
-    role: "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    software: ["Adobe Illustrator","Adobe Photoshop","Adobe InDesign","Blender"],
-    title: 'TINU GIFTS',
-    practice: 'graphic',
-    subCategory: 'identity',
-    practiceLabel: 'Luxury Packaging & Brand Identity',
-    year: '2026',
-    gridRef: 'MOD-16',
-    sizeContext: 'Full Scale Monogram • Braided Rope Bags • Cotton Tags • Duplex Cards',
-    location: 'Addis Ababa, Ethiopia (KB CREATIVE Commission)',
-    client: 'TINU GIFTS Boutique Maison',
-    scale: 'Boutique Packaging Suite, Retail Signage & Complete Visual Identity Architecture',
-    medium: 'Architectural Gift Box Monogram, Warm Oat (#E9DCCC) & Deep Mocha (#6F6154), Bronze Foil Stamping, Textured Kraft & Cotton Stock',
-    summary: 'Warm luxury packaging identity synthesizing an architectural gift box with twin geometric ribbon wings and bespoke serif typography.',
-    description: 'TINU GIFTS is a boutique gifting maison celebrated for thoughtful, high-end presentation and artisanal craft. The visual identity translates the tactile intimacy of unboxing into an architectural emblem: an upright gift box framed by angled ribbon terminals that subtly form the letters "T" and "G". Set in a soothing warm oat cream (#E9DCCC) and roasted mocha (#6F6154) palette, the identity extends across textured linen-finish rope bags, embossed cotton gift tags with natural jute ties, rounded duplex cards, and illuminated boutique blade signage.',
-    challenge: 'Crafting a gift brand identity that feels exquisitely personal and artisanal while retaining sharp geometric structure suitable for luxury retail storefronts, bronze foil stamping, and micro-embossed packaging tags.',
-    solution: 'Engineered a balanced tripartite glyph: a central vertical pillar flanked by outward-angled ribbon wings, creating a sculptural gift silhouette that scales with pristine legibility from a 15mm brass-eyelet gift tag to oversized retail signage.',
-    deliverables: [
-      'Primary Scalable Vector "T + G" Gift Box Monogram & Wordmark (Full Scale 1:1)',
-      'Textured Linen-Finish Paper Gift Bags with Braided Cord Handles & Copper Foil',
-      'Heavyweight Cotton Textured Gift Tags with Brass Eyelets & Jute Twine',
-      'Rounded-Corner Duplex Mocha & Oat Business Cards with Debossed Emblems',
-      'Boutique Storefront Projecting Blade Lightbox Signage & Architectural Plaque',
-      'Complete Boutique Brand Standards & Luxury Packaging Guidelines'
+    "id": "tinu-gifts-brand-identity",
+    "service": "Artisanal Packaging Architecture & Brand Identity System",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Blender"
     ],
-    slides: [
-      { 
-        url: 'assets/tinu-slide-01-logo.jpg', 
-        caption: 'Slide 01 // Primary "T + G" Gift Box Vector Monogram on Warm Oat (#E9DCCC) (Full Scale 1:1)', 
-        fit: 'contain', 
-        bg: '#E9DCCC' 
+    "title": "TINU GIFTS",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Luxury Packaging & Brand Identity",
+    "year": "2026",
+    "gridRef": "MOD-16",
+    "sizeContext": "Full Scale Monogram • Braided Rope Bags • Cotton Tags • Duplex Cards",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "TINU GIFTS Boutique Maison",
+    "scale": "Boutique Packaging Suite, Retail Signage & Complete Visual Identity Architecture",
+    "medium": "Architectural Gift Box Monogram, Warm Oat (#E9DCCC) & Deep Mocha (#6F6154), Bronze Foil Stamping, Textured Kraft & Cotton Stock",
+    "summary": "Warm luxury packaging identity synthesizing an architectural gift box with twin geometric ribbon wings and bespoke serif typography.",
+    "description": "TINU GIFTS is a boutique gifting maison celebrated for thoughtful, high-end presentation and artisanal craft. The visual identity translates the tactile intimacy of unboxing into an architectural emblem: an upright gift box framed by angled ribbon terminals that subtly form the letters \"T\" and \"G\". Set in a soothing warm oat cream (#E9DCCC) and roasted mocha (#6F6154) palette, the identity extends across textured linen-finish rope bags, embossed cotton gift tags with natural jute ties, rounded duplex cards, and illuminated boutique blade signage.",
+    "challenge": "Crafting a gift brand identity that feels exquisitely personal and artisanal while retaining sharp geometric structure suitable for luxury retail storefronts, bronze foil stamping, and micro-embossed packaging tags.",
+    "solution": "Engineered a balanced tripartite glyph: a central vertical pillar flanked by outward-angled ribbon wings, creating a sculptural gift silhouette that scales with pristine legibility from a 15mm brass-eyelet gift tag to oversized retail signage.",
+    "deliverables": [
+      "Primary Scalable Vector \"T + G\" Gift Box Monogram & Wordmark (Full Scale 1:1)",
+      "Textured Linen-Finish Paper Gift Bags with Braided Cord Handles & Copper Foil",
+      "Heavyweight Cotton Textured Gift Tags with Brass Eyelets & Jute Twine",
+      "Rounded-Corner Duplex Mocha & Oat Business Cards with Debossed Emblems",
+      "Boutique Storefront Projecting Blade Lightbox Signage & Architectural Plaque",
+      "Complete Boutique Brand Standards & Luxury Packaging Guidelines"
+    ],
+    "slides": [
+      {
+        "url": "assets/tinu-slide-01-logo.jpg",
+        "caption": "Slide 01 // Primary \"T + G\" Gift Box Vector Monogram on Warm Oat (#E9DCCC) (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#E9DCCC"
       },
-      { 
-        url: 'assets/tinu-slide-02-bag.jpg', 
-        caption: 'Slide 02 // Textured Paper Gift Bag with Braided Cord Handles & Copper Foil Stamping' 
+      {
+        "url": "assets/tinu-slide-02-bag.jpg",
+        "caption": "Slide 02 // Textured Paper Gift Bag with Braided Cord Handles & Copper Foil Stamping"
       },
-      { 
-        url: 'assets/tinu-slide-03-tag.jpg', 
-        caption: 'Slide 03 // Heavyweight Cotton Textured Gift Tag with Brass Eyelet & Jute Twine' 
+      {
+        "url": "assets/tinu-slide-03-tag.jpg",
+        "caption": "Slide 03 // Heavyweight Cotton Textured Gift Tag with Brass Eyelet & Jute Twine"
       },
-      { 
-        url: 'assets/tinu-slide-04-cards.jpg', 
-        caption: 'Slide 04 // Rounded-Corner Duplex Mocha & Oat Business Cards with Debossed Mark' 
+      {
+        "url": "assets/tinu-slide-04-cards.jpg",
+        "caption": "Slide 04 // Rounded-Corner Duplex Mocha & Oat Business Cards with Debossed Mark"
       },
-      { 
-        url: 'assets/tinu-slide-05-storefront.jpg', 
-        caption: 'Slide 05 // Boutique Storefront Projecting Blade Lightbox Signage & Exterior Plaque' 
+      {
+        "url": "assets/tinu-slide-05-storefront.jpg",
+        "caption": "Slide 05 // Boutique Storefront Projecting Blade Lightbox Signage & Exterior Plaque"
       }
     ],
-    iconSvg: `<svg viewBox="0 0 40 40" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2">
-      <path d="M8 12 L14 10 V32 H8 Z" fill="#6F6154" stroke="none"/>
-      <path d="M17 10 H23 V32 H17 Z" fill="#6F6154" stroke="none"/>
-      <path d="M26 10 L32 12 V32 H26 Z" fill="#6F6154" stroke="none"/>
-      <rect x="8" y="28" width="24" height="4" fill="#6F6154" stroke="none"/>
-    </svg>`
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M8 12 L14 10 V32 H8 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <path d=\"M17 10 H23 V32 H17 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <path d=\"M26 10 L32 12 V32 H26 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <rect x=\"8\" y=\"28\" width=\"24\" height=\"4\" fill=\"#6F6154\" stroke=\"none\"/>\n    </svg>"
   }
-];
+];;
 
 // Make projects globally available for scrubbing engine
 window.KB_PROJECTS = KB_PROJECTS;
@@ -1043,6 +1061,7 @@ const KB_I18N = {
     brand_sub: "4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY",
     nav_works: "Works",
     nav_skills: "Core Skills",
+    nav_faq: "FAQ",
     nav_contact: "Contact",
     cta_initiate: "Initiate Collaboration",
     menu_label: "MENU",
@@ -1051,6 +1070,7 @@ const KB_I18N = {
     // Mobile Drawer
     mob_sub_works: "16 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
+    mob_sub_faq: "Clarifications & Project Process",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
     mob_telegram_cta: "Initiate Collaboration (Telegram) ↗",
@@ -1068,7 +1088,6 @@ const KB_I18N = {
     // Hero Stats
     stat_student: "Architecture Student",
     stat_studies: "Curated Case Studies",
-    stat_daylight: "Daylight Orientation",
 
     // Practice Filter Pills
     filter_all: "All Works (16)",
@@ -1113,9 +1132,27 @@ const KB_I18N = {
     collab_note_title: "LEADERSHIP & COLLABORATION",
     collab_note_text: "Multilingual fluency facilitating seamless technical coordination with construction teams on site, academic peers at Wolkite University, and commercial corporate clients across Ethiopia and worldwide.",
 
+    // FAQ Section
+    chap_03: "CHAPTER 03 // FREQUENTLY ASKED QUESTIONS",
+    faq_super: "03. Inquiries & Process Architecture",
+    faq_title: "Frequently Asked Questions",
+    faq_desc: "Essential clarifications on architectural commissions, cinematic 3D CGI visualization workflows, technical deliverables, and bespoke brand identity design with Kaleegziabher Fekede (KB CREATIVE).",
+    faq_q1: "What architectural and design services does KB CREATIVE provide?",
+    faq_a1: "We specialize in three integrated disciplines: (1) <strong>Spatial Architecture</strong> for residential villas (such as the Kara G+2 Residence), interior workplace renovations (Acute Engineering), and commercial mixed-use concourses (MENA MALL); (2) <strong>Cinematic 3D CGI Visualization</strong> featuring photorealistic atmospheric daylight simulations, materiality texturing, and BIM documentation in Autodesk Revit &amp; D5 Render; and (3) <strong>Corporate Brand Identity Systems</strong> covering logomarks, typography, and packaging architecture.",
+    faq_q2: "How does the project design workflow proceed from concept to final delivery?",
+    faq_a2: "Every project follows an architectural 4-stage methodology: (1) <strong>Brief &amp; Site Analysis</strong>: clarifying programmatic requirements, plot dimensions, slope, and solar angles; (2) <strong>Spatial Massing &amp; Circulation Zoning</strong>: structural grid layout and functional space hierarchy; (3) <strong>Photorealistic 3D Simulation</strong>: exploring lighting conditions, materials, and camera perspectives for client alignment; and (4) <strong>Technical Working Drawings</strong>: dimensioned architectural plans, sections, joinery specifications, and high-resolution marketing visuals.",
+    faq_q3: "What files or information are needed to start a 3D visualization project?",
+    faq_a3: "To initiate a 3D visualization commission, you can provide CAD files (.dwg), 3D models (Revit, Rhino, SketchUp, or Blender), architectural PDF drawings, or even hand-sketched floor plans with dimensions. Providing reference imagery, landscape context, or preferred material palettes accelerates the lighting and texturing phase.",
+    faq_q4: "Do you accept remote and international commissions outside Ethiopia?",
+    faq_a4: "Yes. While based between Wolkite University and Addis Ababa, Ethiopia, KB CREATIVE actively collaborates with international developers, architects, and private clients worldwide. Digital collaboration is conducted seamlessly via Telegram (<a href=\"https://t.me/Kalegzi_7\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand-yellow); text-decoration:none; font-weight:700;\">@Kalegzi_7</a>), email, Google Meet, and secure cloud storage.",
+    faq_q5: "What is the typical turnaround timeline for deliverables?",
+    faq_a5: "Turnaround timelines are calibrated to scope: high-fidelity 3D renderings (3–5 perspectives) are typically delivered within <strong>3 to 7 business days</strong>. Comprehensive residential concepts, interior spatial renovation designs, or corporate brand identity suites range between <strong>1 to 3 weeks</strong> with structured milestone check-ins.",
+    faq_q6: "Can I commission a unified Spatial Architecture and Brand Identity package?",
+    faq_a6: "Yes. A core strength of KB CREATIVE is the cross-disciplinary union of spatial architecture and corporate visual identity. For commercial developments, retail malls (e.g., MENA MALL), and corporate offices (Acute Engineering), we design the architectural spaces alongside the 3D illuminated exterior storefront signage, interior wayfinding graphics, and company branding collateral.",
+
     // Contact Section
-    chap_03: "CHAPTER 03 // DIALOGUE & COMMISSION INQUIRY",
-    contact_super: "03. Direct Collaboration",
+    chap_04: "CHAPTER 04 // DIALOGUE & COMMISSION INQUIRY",
+    contact_super: "04. Direct Collaboration",
     contact_hero_title: `Let's Build Something <span style="color: var(--brand-yellow);">Remarkable</span> Together.`,
     contact_status: "CURRENT STATUS: AVAILABLE FOR ARCHITECTURE, 3D VISUALIZATION & BRAND COMMISSIONS",
     contact_intro: `Currently a <strong>4th-Year Architecture Student at Wolkite University</strong> and principal designer at <strong>KB CREATIVE</strong>. Available for spatial architectural concepts, residential and interior renovations, photorealistic 3D visualization, or bespoke brand identity systems across Ethiopia and remote worldwide.`,
@@ -1137,6 +1174,7 @@ const KB_I18N = {
     brand_sub: "4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
     nav_works: "ስራዎች",
     nav_skills: "ዋና ክህሎቶች",
+    nav_faq: "ተዘውታሪ ጥያቄዎች",
     nav_contact: "አግኙን",
     cta_initiate: "አብረን እንስራ",
     menu_label: "ማውጫ",
@@ -1145,6 +1183,7 @@ const KB_I18N = {
     // Mobile Drawer
     mob_sub_works: "16 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
+    mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
     mob_telegram_cta: "በቴሌግራም ያግኙኝ ↗",
@@ -1162,7 +1201,6 @@ const KB_I18N = {
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
     stat_studies: "የተመረጡ ስራዎች",
-    stat_daylight: "የተፈጥሮ ብርሃን ተጠቃሚነት",
 
     // Practice Filter Pills
     filter_all: "ሁሉም ስራዎች (16)",
@@ -1207,9 +1245,27 @@ const KB_I18N = {
     collab_note_title: "አመራር እና ትብብር",
     collab_note_text: "ከግንባታ ቡድኖች፣ ከወልቂጤ ዩኒቨርሲቲ ተማሪዎች እና አለምአቀፍ ደንበኞች ጋር ያለምንም እንቅፋት በብቃት ለመስራት የሚያስችል የቋንቋ ክህሎት።",
 
+    // FAQ Section
+    chap_03: "ክፍል 03 // ተዘውታሪ ጥያቄዎች",
+    faq_super: "03. የጥያቄዎች እና የአሰራር ሂደት ማብራሪያ",
+    faq_title: "ተዘውታሪ ጥያቄዎች እና መልሶች",
+    faq_desc: "ስለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የቴክኒክ ሰነዶች እና የብራንድ መለያ ስራዎች ከአርክቴክቸራል ዲዛይነር ቃልእግዚአብሔር ፈቀደ (KB CREATIVE) ጋር ለመስራት የሚያስፈልጉ ጠቃሚ መረጃዎች።",
+    faq_q1: "KB CREATIVE ምን አይነት የአርክቴክቸር እና የዲዛይን አገልግሎቶችን ይሰጣል?",
+    faq_a1: "በሶስት ዋና ዋና ዘርፎች እንሰራለን፦ (1) <strong>የቦታ እና የህንፃ ንድፍ</strong> ለመኖሪያ ቤቶች (እንደ ካራ G+2 መኖሪያ)፣ ለውስጥ እድሳት (አኪዩት ኢንጂነሪንግ) እና ለንግድ ማዕከላት (ሜና ሞል)፤ (2) <strong>3D CGI ቪዥዋላይዜሽን</strong> የብርሃን እና የቁሳቁስ እውነተኛ እይታዎችን እና የBIM ሰነዶችን በAutodesk Revit እና D5 Render ማዘጋጀት፤ እና (3) <strong>የብራንድ መለያ ዲዛይን</strong> ሎጎዎችን፣ ፊደላትን እና የማሸጊያ ንድፎችን ያጠቃልላል።",
+    faq_q2: "የፕሮጀክት ዲዛይን እና የማጠናቀቂያ ሂደት እንዴት ይካሄዳል?",
+    faq_a2: "ስራችን በ4 ደረጃዎች ይከናወናል፦ (1) <strong>የቦታ እና የፍላጎት ጥናት</strong>፦ የቦታውን ስፋት፣ አቅጣጫ እና የፀሐይ ብርሃን ሁኔታ መመርመር፤ (2) <strong>የቦታ ክፍፍል እና ቅርፅ ማውጣት</strong>፦ የተግባር አደረጃጀትን ማስተካከል፤ (3) <strong>እውነተኛ 3D ቪዥዋላይዜሽን</strong>፦ የብርሃን እና የቀለማት ሁኔታን በምስል ማሳየት፤ እና (4) <strong>የግንባታ ዝርዝር ሰነዶች</strong>፦ ትክክለኛ መለኪያ ያላቸው ፕላኖች፣ ሴክሽኖች እና ዝርዝር መመሪያዎችን ማዘጋጀት።",
+    faq_q3: "የ3D ቪዥዋላይዜሽን ስራ ለመጀመር ምን አይነት ፋይሎች ያስፈልጋሉ?",
+    faq_a3: "የCAD ፋይሎች (.dwg)፣ የ3D ሞዴሎች (Revit፣ Rhino፣ SketchUp)፣ የPDF ፕላኖች ወይም በእጅ የተሳሉ መለኪያ ያላቸው ስኬቾችን መስጠት ይችላሉ። የቦታውን ፎቶዎች እና የሚፈልጓቸውን የቀለም ምርጫዎች ማካተት ስራውን ያፋጥነዋል።",
+    faq_q4: "ከኢትዮጵያ ውጭ ያሉ አለምአቀፍ ስራዎችን በኦንላይን ይቀበላሉ?",
+    faq_a4: "አዎ። በወልቂጤ ዩኒቨርሲቲ እና በአዲስ አበባ የምንገኝ ቢሆንም፣ በቴሌግራም (<a href=\"https://t.me/Kalegzi_7\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--brand-yellow); text-decoration:none; font-weight:700;\">@Kalegzi_7</a>)፣ በኢሜይል እና በኦንላይን ስብሰባዎች ከአለም ዙሪያ ካሉ ደንበኞች ጋር በተሳካ ሁኔታ እንሰራለን።",
+    faq_q5: "አንድን ፕሮጀክት ለማጠናቀቅ ምን ያህል ጊዜ ይወስዳል?",
+    faq_a5: "እንደ ስራው ስፋት ይወሰናል፦ ከፍተኛ ጥራት ያላቸው የ3D ምስሎች (ከ3-5 እይታዎች) በ<strong>ከ3 እስከ 7 የስራ ቀናት</strong> ውስጥ ይደርሳሉ። አጠቃላይ የመኖሪያ ህንፃ ዲዛይኖች እና የብራንድ መለያ ስራዎች ከ<strong>1 እስከ 3 ሳምንታት</strong> ሊወስዱ ይችላሉ።",
+    faq_q6: "የህንፃ ንድፍ እና የብራንድ መለያ ስራን በአንድ ላይ ማዘዝ ይቻላል?",
+    faq_a6: "አዎ። የKB CREATIVE አንዱ ልዩ ጥንካሬ የህንፃ ንድፍን ከንግድ ምልክት ጋር አጣምሮ መስራት ነው። ለንግድ ማዕከላት (ለምሳሌ ሜና ሞል) እና ለቢሮዎች የህንፃውን ንድፍ ከውጭ እና ከውስጥ የማስታወቂያ ቦርዶች እና የኮርፖሬት መለያዎች ጋር አቀናጅተን እንሰራለን።",
+
     // Contact Section
-    chap_03: "ክፍል 03 // ግንኙነት እና የስራ ስምምነት",
-    contact_super: "03. አብረን እንስራ // ያግኙን",
+    chap_04: "ክፍል 04 // ግንኙነት እና የስራ ስምምነት",
+    contact_super: "04. አብረን እንስራ // ያግኙን",
     contact_hero_title: `አብረን <span style="color: var(--brand-yellow);">ድንቅ ነገር</span> እንገንባ።`,
     contact_status: "የስራ ዝግጁነት: ለአርክቴክቸር፣ 3D ቪዥዋላይዜሽን እና ብራንድ ዲዛይን ስራዎች ክፍት ነኝ",
     contact_intro: `በወልቂጤ ዩኒቨርሲቲ የ<strong>4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> ዋና ዲዛይነር። ለህንፃ ንድፍ፣ ለመኖሪያ እና የውስጥ እድሳት፣ ለ3D ቪዥዋላይዜሽን ወይም ለብራንድ መለያ ስራዎች ዝግጁ ነኝ።`,
@@ -1224,6 +1280,27 @@ const KB_I18N = {
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
     empty_void_desc: "ሁሉንም 16 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
     empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 16 ስራዎች አሳይ) →"
+  }
+};
+
+window.toggleFaq = function(button) {
+  const item = button.closest('.faq-accordion-item');
+  if (!item) return;
+  const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+  document.querySelectorAll('.faq-accordion-item.active').forEach(openItem => {
+    if (openItem !== item) {
+      openItem.classList.remove('active');
+      openItem.querySelector('.faq-trigger-btn')?.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  if (isExpanded) {
+    item.classList.remove('active');
+    button.setAttribute('aria-expanded', 'false');
+  } else {
+    item.classList.add('active');
+    button.setAttribute('aria-expanded', 'true');
   }
 };
 
@@ -1948,7 +2025,6 @@ window.openCaseStudy = function(projectId, triggerEl) {
       <div class="modal-block-tag font-mono">03 // FINAL IMAGES &amp; ARCHITECTURAL DRAWINGS (${project.slides.length} MULTI-VIEW PERSPECTIVES)</div>
       <div class="modal-hero-viewport" style="background: ${project.slides[0].bg || '#02121D'};">
         <img src="${project.slides[0].url}" alt="${project.title}" id="modal-active-img" style="object-fit: contain;">
-        <span class="modal-scale-indicator font-mono">📐 FULL SCALE • PROPORTIONAL VIEW</span>
         <div class="modal-slide-caption-bar font-mono" id="modal-active-caption">
           ${project.slides[0].caption}
         </div>
