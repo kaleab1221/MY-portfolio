@@ -2857,8 +2857,9 @@ body.dark-mode .academic-banner-tag {
   }
 }
 
-/* 3. Floating Dynamic Island HUD */
+/* 3. Floating Dynamic Island HUD (Disabled per user request) */
 .interactive-floating-hud {
+  display: none !important;
   position: fixed;
   bottom: 2rem;
   right: 2rem;

@@ -171,18 +171,6 @@
      ========================================================================== */
   function initScrollProgressAndHUD() {
     const progressBar = document.getElementById('scroll-progress-bar');
-    const hud = document.getElementById('floating-hud');
-    const hudSection = document.getElementById('hud-current-section');
-    const hudScrollLink = document.getElementById('hud-scroll-link');
-
-    const sections = [
-      { id: 'about', label: '00 STUDIO' },
-      { id: 'work', label: '01 WORKS' },
-      { id: 'skills', label: '02 TOOLKIT' },
-      { id: 'faq', label: '03 FAQ' },
-      { id: 'contact', label: '04 CONTACT' }
-    ];
-
     let ticking = false;
 
     window.addEventListener('scroll', () => {
@@ -203,39 +191,6 @@
       // Update golden progress bar
       if (progressBar) {
         progressBar.style.width = `${progressPercent.toFixed(2)}%`;
-      }
-
-      // Update Dynamic Island Section Tracker
-      if (hudSection) {
-        const scrollMid = scrollTop + window.innerHeight * 0.35;
-        let activeLabel = '01 WORKS';
-
-        for (let i = sections.length - 1; i >= 0; i--) {
-          const el = document.getElementById(sections[i].id);
-          if (el && el.offsetTop <= scrollMid) {
-            activeLabel = sections[i].label;
-            break;
-          }
-        }
-
-        if (hudSection.textContent !== activeLabel) {
-          hudSection.style.opacity = '0.3';
-          setTimeout(() => {
-            hudSection.textContent = activeLabel;
-            hudSection.style.opacity = '1';
-          }, 100);
-        }
-      }
-
-      // Show/hide floating HUD dock: only appears after scrolling past the Hero section
-      if (hud) {
-        const heroEl = document.getElementById('about');
-        const heroThreshold = heroEl ? (heroEl.offsetTop + heroEl.offsetHeight * 0.7) : 480;
-        if (scrollTop > heroThreshold) {
-          hud.classList.add('visible');
-        } else {
-          hud.classList.remove('visible');
-        }
       }
     }
 

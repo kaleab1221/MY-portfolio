@@ -1016,6 +1016,314 @@ window.KB_PROJECTS = KB_PROJECTS;
 // Active slide tracking index for each project card
 const projectSlideIndexes = {};
 
+
+/* ==========================================================================
+   AUTHENTIC AMHARIC LOCALIZATION DATA FOR ALL 16 CURATED WORKS
+   ========================================================================== */
+const KB_PROJECT_AM = {
+  "kara-g2-family-residence": {
+    title: "የG+2 ቤተሰብ መኖሪያ ቤት",
+    service: "የG+2+ቴራስ መኖሪያ ቤት አርክቴክቸር እና የተፈጥሮ ብርሃን ሲሙሌሽን",
+    location: "ካራ፣ አዲስ አበባ | 250 ካሬ ሜትር ይዞታ",
+    client: "የግል ቤተሰብ መኖሪያ ኮሚሽን",
+    sizeContext: "ካራ፣ አዲስ አበባ | 250 ካሬ ሜትር ይዞታ • G+2+ቴራስ • 9 የተለያዩ እይታዎች",
+    role: "ዋና አርክቴክቸራል ዲዛይነር እና 3D ቪዥዋላይዘር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
+    summary: "የቤተሰብ አኗኗርን፣ ግላዊነትን፣ የተፈጥሮ ብርሃንን፣ ንጹህ አየርን እና የተመቻቸ እንቅስቃሴን ሚዛናዊ በሆነ መንገድ ያቀናጀ ዘመናዊ የG+2 መኖሪያ ህንፃ።",
+    description: "የቤተሰብ አኗኗርን፣ ግላዊነትን፣ የተፈጥሮ ብርሃንን፣ አየር ማናፈሻን፣ የውጪ መዝናኛ ቦታን እና የተሳለጠ እንቅስቃሴን ሚዛናዊ በሆነ መንገድ ያቀናጀ ዘመናዊ የG+2 ቤተሰብ መኖሪያ። ንድፉ ቤቱን የህዝብ፣ ከፊል-የግል፣ የግል እና የአገልግሎት መስጫ ክፍሎች በማለት ግልጽ በሆነ ደረጃ ያደራጃል፤ የቦታውን አቅጣጫ፣ የመሬቱን አቀማመጥ እና የከተማውን ከባቢ ያገናዝባል። ስራው በ9 አጠቃላይ እይታዎች የቀረበ ሲሆን፤ ከባህላዊ የቡና ማፍያ ጥግ ካላቸው የሳሎን ክፍሎች ጀምሮ እስከ ተቀደሰ የግል የጸሎት ቤት (ጸሎት ቤት)፣ ክፍት የኩሽና ደሴት፣ የዋና መኝታ ቤት እረፍት ክፍል፣ የስራ ቢሮ እና በአረንጓዴ ያጌጠ የጣሪያ ቴራስን ያካትታል።",
+    challenge: "በተጨናነቀ የ250 ካሬ ሜትር ይዞታ ላይ የቤተሰብ መቀበያ፣ የግል መኝታዎች እና ልዩ የጸሎት ቤትን በደረጃ በማዋቀር የተሟላ የተፈጥሮ ብርሃንና ንጹህ አየር እንዲያገኙ ማድረግ።",
+    solution: "አነስተኛ የመሬት ስፋት የሚጠቀም አቀባዊ መዋቅር በመንደፍ፣ የፀሐይ ብርሃንን የሚከላከሉ ሰፋፊ በረንዳዎችን በማካተት እና ለጸሎትና ጥናት ክፍሎች ፀጥታ የሰፈነበት የተለየ የቦታ ክፍፍል ተዘጋጅቷል።",
+    deliverables: [
+      "የተሟላ የአርክቴክቸር ፕላን እና የቦታ ክፍፍል (የህዝብ፣ ከፊል-የግል፣ የግል እና የአገልግሎት ዞኖች)",
+      "9 ከፍተኛ ጥራት ያላቸው የ3D እይታዎች (የቀን፣ የምሽት፣ የሳሎን፣ የኩሽና፣ የመታጠቢያ፣ የጸሎት ቤት፣ የመኝታ፣ የቢሮ እና የመግቢያ)",
+      "ልዩ ባህላዊ የጸሎት ቤት (የበገና ማስቀመጫ እና የበራ መስቀል ጣሪያ ያለው)",
+      "ዋና መኝታ ቤት ከጥናት ጠረጴዛ እና ከልዩ የእንጨት ማስጌጫ ጋር",
+      "የቤት ውስጥ የስራ ቢሮ እና የአርክቴክቸር ቤተ-መጽሐፍት",
+      "የመግቢያ ኮሪደር ከተሰራ የልብስ እና የጫማ ማስቀመጫ ጋር",
+      "የBIM የግንባታ ሰነዶች በAutodesk Revit እና D5 Render"
+    ]
+  },
+  "acute-engineering-office-renovation": {
+    title: "አኪዩት ኢንጂነሪንግ — የቢሮ እድሳት",
+    service: "የውስጥ አርክቴክቸር እና የስራ ቦታ እድሳት",
+    location: "ቦሌ ሚካኤል፣ አዲስ አበባ፣ ኢትዮጵያ",
+    client: "አኪዩት ኢንጂነሪንግ",
+    sizeContext: "22.6 ካሬ ሜትር (4.2m × 5.4m) • የብረት እና የእንጨት መከፋፈያ • ሁለት ዞኖች • ቦሌ ሚካኤል",
+    role: "ዋና የውስጥ አርክቴክት እና የቦታ ዲዛይነር (ቃልእግዚአብሔር ፈቀደ • 4ኛ ዓመት አርክቴክቸር፣ ወልቂጤ ዩኒቨርሲቲ / KB CREATIVE)",
+    summary: "የ22.6 ካሬ ሜትር ጠባብ ቦታን ልዩ በሆነ የብረት እና የእንጨት መከፋፈያ አማካኝነት ወደ ሁለት ተግባራዊ ዞኖች (የስራ እና የደንበኛ መቀበያ) የለወጠ የውስጥ እድሳት።",
+    description: "በቦሌ ሚካኤል አዲስ አበባ ለሚገኘው አኪዩት ኢንጂነሪንግ የተሰራ ከፍተኛ ጥራት ያለው የውስጥ እድሳት። በ22.6 ካሬ ሜትር (4.2m × 5.4m) ጠባብ ቦታ ውስጥ ክፍት ወለሉ በብልሃት ለሁለት ተከፍሏል፦ መደበኛ ያልሆነ የደንበኛ መቀበያ እና የውይይት ሳሎን፣ እንዲሁም የአመራር ስራ ጠረጴዛ። በብጁ የተሰራ የብረት እና የኦክ እንጨት መከፋፈያ ብርሃንን ሳያግድ የክፍሉን እንቅስቃሴ በማደራጀት እንደ ዋና መለያ ያገለግላል። የአመራር ጠረጴዛው ጀርባ የበራ የአኪዩት ኢንጂነሪንግ የ3D ሎጎ የተገጠመለት የካላካታ እብነ-በረድ ግድግዳ እና የተንጠለጠሉ ክብ የLED መብራቶች አሉት።",
+    challenge: "በ22.6 ካሬ ሜትር ጠባብ ክፍል ውስጥ የስራ ጠረጴዛን፣ የደንበኞች መወያያ ቦታን እና እቃ ማስቀመጫዎችን ያለመጨናነቅና ክፍት ስሜትን ጠብቆ ማደራጀት።",
+    solution: "ብርሃንን ሳያግድ ቦታን የሚከፋፍል፣ ለዕቃዎች ማስቀመጫነት የሚያገለግል እና የድምፅ ቅነሳ የሚያደርግ ውብ የብረትና የኦክ እንጨት መከፋፈያ ስክሪን ተነድፏል።",
+    deliverables: [
+      "የውስጥ ቦታ ክፍፍል እና የስራ እንቅስቃሴ ፕላን (22.6 ካሬ ሜትር)",
+      "ብጁ የብረት እና የእንጨት መከፋፈያ ዝርዝር ዲዛይን",
+      "የካላካታ እብነ-በረድ ግድግዳ እና የበራ የኮርፖሬት ሎጎ አሰራር",
+      "የተንጠለጠሉ ክብ የLED መብራቶች እና የጣሪያ ዲዛይን",
+      "የስራ ጠረጴዛ እና የወለል ምንጣፍ ዝርዝር ሰነዶች"
+    ]
+  },
+  "mixed-use-tower-gubre": {
+    title: "ሁለገብ ታወር እና ሜና ሞል",
+    service: "የንግድ እና ሁለገብ ህንፃ አርክቴክቸር",
+    location: "ጉብሬ ከተማ፣ ጉራጌ ዞን፣ ኢትዮጵያ",
+    client: "የንግድ እና የመኖሪያ ህብረት ስራ ማህበር",
+    sizeContext: "1,450 ካሬ ሜትር ይዞታ • G+6 ሁለገብ ህንፃ • የሜና ሞል አትሪየም",
+    role: "አርክቴክቸራል ዲዛይነር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
+    summary: "ለጉብሬ ከተማ የንግድ ማዕከልነትን እና ዘመናዊ አኗኗርን የሚያስተዋውቅ፣ የገበያ ማዕከልና መኖሪያ ቤቶችን ያካተተ ሁለገብ ህንፃ።",
+    description: "በጉብሬ ከተማ እምብርት የሚገኝ የንግድ እና የመኖሪያ ህንፃ ፕሮጀክት። ህንፃው በመሬት እና በመጀመሪያ ፎቆች ላይ ሰፊ የሜና ሞል የገበያ ማዕከል፣ በመካከለኛ ፎቆች ላይ ዘመናዊ የቢሮ ክፍሎች፣ እንዲሁም በከፍተኛ ፎቆች ላይ የተፈጥሮ ብርሃን የሚያገኙ የግል መኖሪያ ቤቶችን ያካትታል።",
+    challenge: "የህዝብ ገበያ አዳራሾችን፣ የቢሮዎችን እንቅስቃሴ እና የመኖሪያ ቤቶችን ግላዊነት በአንድ ህንፃ ውስጥ ያለመተፋፈግ ማቀናጀት።",
+    solution: "በመሬት ላይ ሰፊ አትሪየም ያለው የገበያ ማዕከል (ሜና ሞል) በማድረግ፣ በላይኞቹ ፎቆች ላይ ደግሞ የተፈጥሮ ብርሃን የሚያገኙ መኖሪያዎችን መፍጠር።",
+    deliverables: [
+      "የህንፃው አጠቃላይ አርክቴክቸራል ንድፍ እና ሞዴሊንግ",
+      "የሜና ሞል የንግድ አትሪየም እና የውስጥ ክፍሎች ንድፍ",
+      "የውጪ ገጽታ እና የፀሐይ ብርሃን መከላከያ ፊኖች ዝርዝር",
+      "ከፍተኛ ጥራት ያላቸው የቀንና የምሽት የ3D ምስሎች"
+    ]
+  },
+  "climate-responsive-residence-diredawa": {
+    title: "የአየር ንብረትን ያማከለ የግል መኖሪያ ቤት",
+    service: "ባዮክላይማቲክ የመኖሪያ ቤት አርክቴክቸር",
+    location: "ድሬዳዋ፣ ኢትዮጵያ",
+    client: "የግል ኮሚሽን",
+    sizeContext: "380 ካሬ ሜትር • ፓሲቭ ቅዝቃዜ • ጥልቅ ጥላ • ድሬዳዋ",
+    role: "አርክቴክቸራል ዲዛይነር (ቃልእግዚአብሔር ፈቀደ)",
+    summary: "የድሬዳዋን ከፍተኛ ሙቀት ከግምት በማስገባት የተነደፈ፣ ተፈጥሯዊ የአየር ዝውውርንና የጥላ አወቃቀርን የተጠቀመ ዘመናዊ መኖሪያ ቤት።",
+    description: "ለድሬዳዋ ከፊል-በረሃማ አየር ንብረት የተነደፈ ዘመናዊ ቪላ። የቤቱ አቀማመጥ ኃይለኛውን የቀትር ፀሐይ በመከላከል ቀዝቃዛውን የንጋት ብርሃን እና ተፈጥሯዊ አየር ወደ ውስጥ እንዲገባ ያደርጋል።",
+    challenge: "በከፍተኛ ሙቀት ውስጥ አነስተኛ የኤሌክትሪክ ሃይል በመጠቀም የቤቱን ውስጣዊ ቅዝቃዜ መጠበቅ።",
+    solution: "ጥልቅ ጥላ የሚሰጡ ጣሪያዎች፣ መስቀለኛ የተፈጥሮ ንፋስ ማስገቢያ መስኮቶች እና የሙቀት መከላከያ ቁሳቁሶችን መጠቀም።",
+    deliverables: [
+      "የአየር ንብረት ጥናት እና የፀሐይ አቅጣጫ ትንተና",
+      "የመኖሪያ ህንፃው አጠቃላይ የአርክቴክቸር ፕላን",
+      "የተፈጥሮ አየር ዝውውር እና የጥላ ዲያግራሞች",
+      "የውስጥ እና የውጭ 3D እይታዎች"
+    ]
+  },
+  "vertical-sports-wellness-center": {
+    title: "አቀባዊ የስፖርት እና ጤና ማዕከል",
+    service: "የህዝብ መዝናኛ እና የስፖርት ማዕከል አርክቴክቸር",
+    location: "ወልቂጤ፣ ኢትዮጵያ",
+    client: "የማዘጋጃ ቤት የህዝብ ፕሮጀክት ጥናት",
+    sizeContext: "2,800 ካሬ ሜትር • ባለብዙ ሜዳ አቀባዊ መዋቅር • ወልቂጤ",
+    role: "አርክቴክቸራል ዲዛይነር (ቃልእግዚአብሔር ፈቀደ)",
+    summary: "በከተማ ውስጥ በርካታ የስፖርት ማዘውተሪያዎችን፣ ጂምናዚየሞችን እና የመዝናኛ ስፍራዎችን በአቀባዊ ያዋቀረ የህዝብ ማዕከል።",
+    description: "የወልቂጤ ከተማን ወጣቶች እና ስፖርተኞች የሚያገለግል ሁለገብ የስፖርት ኮምፕሌክስ። የቅርጫት ኳስ፣ የቮሊቦል እና የጂም ክፍሎችን በአንድ ማዕከል ያገናኛል።",
+    challenge: "ትላልቅ ስፋት የሚጠይቁ የስፖርት ሜዳዎችን በቁመት በማስተናገድ ምቹ የስራ እንቅስቃሴ መፍጠር።",
+    solution: "ረጅም ርቀት የሚዘረጉ ጠንካራ የብረት መዋቅሮችን በመጠቀም ሰፋፊ ክፍት አዳራሾችን እና የተሳለጠ የእንቅስቃሴ ኮሪደሮችን ማደራጀት።",
+    deliverables: [
+      "የቦታ አደረጃጀት እና የስፖርት ሜዳዎች ፕላን",
+      "የመዋቅር ዝርዝር እና የደህንነት መውጫዎች ንድፍ",
+      "የ3D ህንፃ እይታዎች እና የወለል ፕላኖች"
+    ]
+  },
+  "bamboo-ferrocement-sustainable-housing": {
+    title: "ዘላቂ የቀርከሃ እና ፌሮሲሚንቶ መኖሪያ",
+    service: "ኢኮ-ተስማሚ እና አነስተኛ ወጪ የሚጠይቅ ህንፃ",
+    location: "ጉራጌ ዞን፣ ኢትዮጵያ",
+    client: "ዘላቂ የመኖሪያ ምርምር ተነሳሽነት",
+    sizeContext: "120 ካሬ ሜትር • የአካባቢ ቀርከሃ • ዝቅተኛ ወጪ • ጉራጌ ዞን",
+    role: "ተመራማሪ እና አርክቴክቸራል ዲዛይነር (ቃልእግዚአብሔር ፈቀደ)",
+    summary: "የአካባቢ የተፈጥሮ ጥሬ ዕቃዎችን (ቀርከሃና ቀላል ሲሚንቶ) በመጠቀም የተሰራ ዘላቂ፣ ውብ እና ተመጣጣኝ ዋጋ ያለው የመኖሪያ ፕሮጀክት።",
+    description: "ለአካባቢ ተስማሚ እና ኢኮኖሚያዊ የሆነ የመኖሪያ ቤት ሞዴል። የአካባቢውን ባህላዊ የግንባታ እውቀት ከዘመናዊ የምህንድስና ጥበብ ጋር ያዋህዳል።",
+    challenge: "ተመጣጣኝ ዋጋ ባላቸው የአካባቢ ቁሳቁሶች ጠንካራና ዘመናዊ መልክ ያለው አስተማማኝ ቤት መገንባት።",
+    solution: "ቀርከሃን በመዋቅር ማጠናከሪያነት በመጠቀም እና በቀጭን የፌሮሲሚንቶ ንብርብር ጥንካሬንና የአየር ንብረት መቋቋምን ማረጋገጥ።",
+    deliverables: [
+      "የቁሳቁስ ጥናት እና የመዋቅር ጥንካሬ ሙከራ ሰነዶች",
+      "የመገጣጠሚያ ዝርዝር ንድፎች (Joinery Details)",
+      "የተሟሉ የግንባታ ፕላኖች እና 3D ማሳያዎች"
+    ]
+  },
+  "worker-link-brand-identity": {
+    title: "ወርከር ሊንክ — የዲጂታል ፕላትፎርም መለያ እና UI",
+    service: "የብራንድ መለያ እና የUI/UX ዲዛይን",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "ወርከር ሊንክ ቴክኖሎጂስ",
+    sizeContext: "ዲጂታል መድረክ • የሞባይል UI/UX • የብራንድ መመሪያ ስርዓት",
+    role: "የብራንድ እና የUI ዲዛይነር (KB CREATIVE)",
+    summary: "የሙያተኞችን እና ቀጣሪዎችን ግንኙነት የሚያሳልጥ የዲጂታል መድረክ ብራንድ መለያ፣ ሎጎ እና የተጠቃሚ ገጽታ (UI)።",
+    description: "ለወርከር ሊንክ የተሰራ የተሟላ የብራንድ ማንነት። የሞባይል አፕሊኬሽን ዲዛይን፣ የድረ-ገጽ በይነገጽ እና የዲጂታል ግብይት ሰነዶችን ያጠቃልላል።",
+    challenge: "አስተማማኝ፣ ሙያዊ እና በቀላሉ የሚታወስ የቴክኖሎጂ ብራንድ መለያ መፍጠር።",
+    solution: "ግንኙነትን እና እድገትን የሚያሳዩ ጂኦሜትሪክ ቅርጾችን በመጠቀም ዘመናዊ የሞባይል አፕሊኬሽን ገጽታ ማዘጋጀት።",
+    deliverables: [
+      "የሎጎ ዲዛይን እና የብራንድ መመሪያ",
+      "የሞባይል አፕሊኬሽን UI/UX ገጾች",
+      "የአዶዎች እና የቀለም ምርጫዎች ስርዓት"
+    ]
+  },
+  "jordano-jemole-construction-identity": {
+    title: "ጆርዳኖ ጀሞሌ ኮንስትራክሽን ኃ/የተ/የግ/ማ",
+    service: "የኮርፖሬት ብራንድ መለያ እና ማስታወቂያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "ጆርዳኖ ጀሞሌ ኮንስትራክሽን ኃ/የተ/የግ/ማ",
+    sizeContext: "የኮርፖሬት መለያ • የግንባታ ስራ ተቋራጭ • ሙሉ የብራንድ ማንነት",
+    role: "የብራንድ መለያ ዲዛይነር (KB CREATIVE)",
+    summary: "ለግንባታ ስራ ተቋራጭ ድርጅት ጥንካሬን እና ሙያዊ አስተማማኝነትን የሚያንፀባርቅ የኮርፖሬት መለያ ስርዓት።",
+    description: "ለጆርዳኖ ጀሞሌ ኮንስትራክሽን የተዘጋጀ ሙሉ የብራንድ ማንነት። የስራ ቦታ ማስታወቂያዎች፣ ሰነዶች እና የተሽከርካሪ ብራንዲንግን ያጠቃልላል።",
+    challenge: "በግንባታ ኢንዱስትሪ ውስጥ ጎልቶ የሚታይና የኩባንያውን ምህንድስና ጥራት የሚገልጽ ሎጎ ማበጀት።",
+    solution: "መዋቅራዊ ቅርጾችን ከግንባታ መሳሪያዎች ውበት ጋር በማዋሃድ ጠንካራ የኮርፖሬት መለያ ተነድፏል።",
+    deliverables: [
+      "የኮርፖሬት ሎጎ እና የቀለም ስርዓት",
+      "የቢሮ ደብዳቤዎች እና ቢዝነስ ካርዶች",
+      "የስራ ቦታ ባነሮች እና የደህንነት አልባሳት መለያ"
+    ]
+  },
+  "tilet-fashion-brand-identity": {
+    title: "ጥለት ፋሽን (ጥለት ፋሽን)",
+    service: "የባህል ፋሽን አልባሳት ብራንድ መለያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "ጥለት ፋሽን ዲዛይን",
+    sizeContext: "የቅንጦት ባህላዊ ፋሽን • የማሸጊያ ንድፍ • የልብስ መለያ ታጎች",
+    role: "የብራንድ መለያ ዲዛይነር (KB CREATIVE)",
+    summary: "የኢትዮጵያን ባህላዊ ጥልፍ ጥበብ ከዘመናዊ ፋሽን ጋር የሚያዋህድ የልብስ ስፌት ብራንድ መለያ እና ማሸጊያ።",
+    description: "ለጥለት ፋሽን የተዘጋጀ ልዩ የብራንድ መለያ። የልብስ መለያ ታጎች፣ የስጦታ ቦርሳዎች እና የማህበራዊ ሚዲያ ገጾችን ያካተተ ነው።",
+    challenge: "ባህላዊ የጥለት ቅጦችን ወደ ዘመናዊ አነስተኛ (minimalist) የብራንድ ቅርጽ መቀየር።",
+    solution: "የጥበብ መስመሮችን እና የጂኦሜትሪክ ጥልፍ ስልቶችን በማጣመር ውብና ማራኪ የፋሽን ሎጎ ተዘጋጅቷል።",
+    deliverables: [
+      "የጥለት ሎጎማርክ እና ፊደላት",
+      "የልብስ መለያ ታጎች እና ማሸጊያ ቦርሳዎች",
+      "የማህበራዊ ሚዲያ ማስተዋወቂያ ዲዛይን"
+    ]
+  },
+  "bego-meaza-media-identity": {
+    title: "በጎ መዓዛ ሚዲያ",
+    service: "የመገናኛ ብዙኃን እና የይዘት ማዕከል ብራንድ",
+    location: "ኢትዮጵያ",
+    client: "በጎ መዓዛ ሚዲያ ኔትወርክ",
+    sizeContext: "ዲጂታል ሚዲያ • የቴሌቪዥን ግራፊክስ • የማህበራዊ ገጾች መለያ",
+    role: "የፈጠራ ዲዛይነር (KB CREATIVE)",
+    summary: "መልካም ዜናዎችን፣ ባህልን እና ማህበራዊ እሴቶችን ለህዝብ የሚያደርስ የመገናኛ ብዙኃን ብራንድ መለያ።",
+    description: "ለበጎ መዓዛ ሚዲያ የተሰራ የተሟላ ዲጂታል ብራንድ። የቪዲዮ መግቢያ አኒሜሽን፣ የዜና ባነሮች እና የኦንላይን መለያዎችን ያካትታል።",
+    challenge: "ተዓማኒነትን፣ ሰላምን እና ተስፋን በአንድ እይታ የሚገልጽ የሚዲያ ሎጎ መቅረጽ።",
+    solution: "የብርሃን ጨረር እና ክፍት መጽሐፍን የሚያስታውስ ለስላሳና ማራኪ የእይታ መለያ ተፈጥሯል።",
+    deliverables: [
+      "የሚዲያ ሎጎማርክ",
+      "የስክሪን ግራፊክስ እና የታችኛው ባነር (Lower Thirds)",
+      "የማህበራዊ ገጾች መለያ ዲዛይን"
+    ]
+  },
+  "mesob-meals-brand-identity": {
+    title: "መሶብ ሚልስ",
+    service: "የምግብ መስተንግዶ እና የምግብ ቤት ብራንድ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "መሶብ ሚልስ ፈጣን ምግብ",
+    sizeContext: "የፈጣን ምግብ መስተንግዶ • የማሸጊያ ሳጥኖች • የሜኑ ዲዛይን",
+    role: "የብራንድ መለያ ዲዛይነር (KB CREATIVE)",
+    summary: "የኢትዮጵያን ባህላዊ የመሶብ መስተንግዶ ለዘመናዊ ፈጣን ምግብ አቅርቦት የሚያስተዋውቅ የምግብ ቤት መለያ።",
+    description: "ለመሶብ ሚልስ የተሰራ የተሟላ የምግብ ቤት ብራንድ። የሜኑ ካርዶች፣ የማሸጊያ ሳጥኖች እና የሰራተኞች ዩኒፎርም መለያዎችን ያጠቃልላል።",
+    challenge: "የመሶብን ባህላዊ ቅርጽ ወደ ፈጣንና ማራኪ ዘመናዊ የምግብ መለያ መቀየር።",
+    solution: "የሞቀ የምግብ ፍላጎት ቀለማት እና ግልጽ የመሶብ ቅርጽ ያለው ተወዳጅ ሎጎ ተዘጋጅቷል።",
+    deliverables: [
+      "የምግብ ቤት ሎጎ እና የቀለም መመሪያ",
+      "የምግብ ማሸጊያ ሳጥኖች እና መጠቅለያዎች",
+      "የሜኑ ካርድ እና የውስጥ ግድግዳ ግራፊክስ"
+    ]
+  },
+  "danu-store-brand-identity": {
+    title: "ዳኑ ስቶር",
+    service: "የችርቻሮ እና የፋሽን መደብር መለያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "ዳኑ ስቶር ኃ/የተ/የግ/ማ",
+    sizeContext: "የችርቻሮ መደብር • የመደብር ሰሌዳ • የሸቀጦች ማሸጊያ",
+    role: "የብራንድ ዲዛይነር (KB CREATIVE)",
+    summary: "ለዘመናዊ የችርቻሮ መደብር ንቁ፣ ወጣት ተኮር እና ተደራሽ የሆነ የንግድ መለያ ስርዓት።",
+    description: "ለዳኑ ስቶር የተሰራ የንግድ መለያ። የመደብር ቦርድ፣ የዋጋ መለጠፊያዎች እና የግብይት ቦርሳዎችን ያካተተ ነው።",
+    challenge: "በመደብር ውስጥ እና በኦንላይን ሽያጭ በቀላሉ የሚለይ ተለዋዋጭ ሎጎ መፍጠር።",
+    solution: "ቀላል ጂኦሜትሪክ ፊደላትን ከደማቅ ቀለማት ጋር በማጣመር ሁለገብ የመደብር መለያ ተዘጋጅቷል።",
+    deliverables: [
+      "የመደብር ሎጎ እና ፊደላት",
+      "የግብይት ቦርሳዎች እና የመለያ ታጎች",
+      "የመደብር ፊት ለፊት ሰሌዳ ንድፍ"
+    ]
+  },
+  "almaz-jewellery-brand-identity": {
+    title: "አልማዝ ጌጣጌጥ",
+    service: "የቅንጦት ጌጣጌጥ እና ጌጣጌጥ መደብር መለያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "አልማዝ ጌጣጌጥ እና አልማዝ አውደ ጥናት",
+    sizeContext: "የቅንጦት ጌጣጌጥ • የወርቅ ሳጥኖች • የደህንነት ሰርተፊኬት",
+    role: "የብራንድ ዲዛይነር (KB CREATIVE)",
+    summary: "የወርቅ እና አልማዝ ጌጣጌጦችን ክብር እና ውበት የሚያንፀባርቅ የከፍተኛ ደረጃ መለያ።",
+    description: "ለአልማዝ ጌጣጌጥ የተሰራ የተሟላ የብራንድ ስርዓት። የጌጣጌጥ ሳጥኖች፣ የዋስትና ሰርተፊኬቶች እና ልዩ የስጦታ መጠቅለያዎችን ያካትታል።",
+    challenge: "የረቀቀ ውበትን፣ ጥንቃቄን እና የቅንጦት ስሜትን በአነስተኛ መስመሮች መግለጽ።",
+    solution: "የአልማዝ ፍንጣቂ መስመሮችን ከወርቃማ ቀለሞች ጋር በማቀናጀት የቅንጦት ሎጎ ተነድፏል።",
+    deliverables: [
+      "የቅንጦት ሎጎማርክ እና ሞኖግራም",
+      "የጌጣጌጥ ሳጥኖች እና የሰርተፊኬት ዲዛይን",
+      "የመደብር ውስጣዊ መለያ ምልክቶች"
+    ]
+  },
+  "dot-creative-agency-identity": {
+    title: "ዶት ክሪኤቲቭ",
+    service: "የፈጠራ ስቱዲዮ እና የዲዛይን ኤጀንሲ መለያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "ዶት ክሪኤቲቭ ስቱዲዮ",
+    sizeContext: "የፈጠራ ስቱዲዮ • የኮርፖሬት መለያ • የፖርትፎሊዮ ሰነዶች",
+    role: "የፈጠራ ምሪት እና ዲዛይን (KB CREATIVE)",
+    summary: "አነስተኛ ቅርፅ ያለው፣ የሃሳብ መነሻ ነጥብን የሚያሳይ ለዲጂታል ፈጠራ ስቱዲዮ የተሰራ መለያ።",
+    description: "ለዶት ክሪኤቲቭ የተሰራ ሙሉ የብራንድ መለያ። ፖርትፎሊዮ ሰነዶች፣ ድረ-ገጽ እና የዲጂታል ካርዶችን ያጠቃልላል።",
+    challenge: "ከፍተኛ የፈጠራ ነፃነትን እና ትክክለኛነትን የሚያሳይ ዘመናዊ አርማ ማበጀት።",
+    solution: "ነጥብን እንደ ሃሳብ ጅማሮ በመውሰድ በጂኦሜትሪክ ቅንጅት የተሰራ አርማ ተዘጋጅቷል።",
+    deliverables: [
+      "የስቱዲዮ ሎጎ እና የቀለም ፓሌት",
+      "የቢዝነስ ካርዶች እና የፕሮፖዛል ሰነዶች",
+      "የድረ-ገጽ እና የማህበራዊ ገጾች ገጽታ"
+    ]
+  },
+  "dama-marketing-brand-identity": {
+    title: "ዳማ ማርኬቲንግ",
+    service: "የዲጂታል ግብይት እና የስትራቴጂ ኤጀንሲ መለያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "ዳማ ማርኬቲንግ እና ኮሙዩኒኬሽን",
+    sizeContext: "የግብይት ኤጀንሲ • የስትራቴጂ ሪፖርቶች • የዲጂታል ማስታወቂያዎች",
+    role: "የብራንድ መለያ ዲዛይነር (KB CREATIVE)",
+    summary: "የንግድ ድርጅቶችን እድገትና የገበያ ተደራሽነት የሚያሳልጥ የማርኬቲንግ ኤጀንሲ መለያ።",
+    description: "ለዳማ ማርኬቲንግ የተዘጋጀ የንግድ መለያ። የግብይት ሰነዶች፣ የሪፖርት አቀራረቦች እና ዲጂታል አርማዎችን ያካትታል።",
+    challenge: "የስትራቴጂክ አስተሳሰብንና የንግድ እንቅስቃሴን በአንድ እይታ መግለጽ።",
+    solution: "የዳማ ሰሌዳ ስትራቴጂን ከእድገት ቀስቶች ጋር በማጣመር የተሰራ ንቁ የኮርፖሬት አርማ።",
+    deliverables: [
+      "የኤጀንሲ ሎጎ እና መለያ",
+      "የአቀራረብ ስላይዶች (Pitch Deck) ቴምፕሌት",
+      "የዲጂታል ማስታወቂያ ግራፊክስ"
+    ]
+  },
+  "tinu-gifts-brand-identity": {
+    title: "ቲኑ ጊፍትስ",
+    service: "የስጦታ እና የዕደ-ጥበብ መደብር መለያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ",
+    client: "ቲኑ ጊፍትስ እና ቡቲክ",
+    sizeContext: "የስጦታ መደብር • ልዩ ማሸጊያዎች • የሪቫን ታጎች",
+    role: "የብራንድ ዲዛይነር (KB CREATIVE)",
+    summary: "ለወዳጅ ዘመድ የሚሰጡ ልዩ ስጦታዎችን እና የእጅ ስራዎችን የሚያቀርብ መደብር ማራኪ መለያ።",
+    description: "ለቲኑ ጊፍትስ የተሰራ የተሟላ የስጦታ መደብር ብራንድ። የስጦታ ካርዶች፣ የማሸጊያ ሪቫኖች እና ፌስቲቫል ባነሮችን ያጠቃልላል።",
+    challenge: "የፍቅርን፣ የደስታን እና የስጦታን ሞቅታ የሚያስተላልፍ ተግባቢ ሎጎ መፍጠር።",
+    solution: "የሪቫን መጠቅለያ እና የልብ ቅርጽን በፈጠራ በማዋሃድ የተዘጋጀ ማራኪ አርማ።",
+    deliverables: [
+      "የስጦታ መደብር ሎጎ",
+      "የስጦታ ካርዶች እና መጠቅለያ ሪቫኖች",
+      "የማሸጊያ ቦርሳዎች ዲዛይን"
+    ]
+  }
+};
+
+function getLocalizedProject(project, lang) {
+  if (lang === 'am' && KB_PROJECT_AM[project.id]) {
+    const am = KB_PROJECT_AM[project.id];
+    return {
+      ...project,
+      title: am.title || project.title,
+      service: am.service || project.service,
+      location: am.location || project.location,
+      client: am.client || project.client,
+      summary: am.summary || project.summary,
+      sizeContext: am.sizeContext || project.sizeContext,
+      role: am.role || project.role,
+      challenge: am.challenge || project.challenge,
+      solution: am.solution || project.solution,
+      description: am.description || project.description,
+      deliverables: am.deliverables || project.deliverables
+    };
+  }
+  return project;
+}
+
 /* ==========================================================================
    2. Theme Switcher Engine (Merged On/Off Toggle Button with Sun/Moon Icons)
    ========================================================================== */
@@ -1166,7 +1474,31 @@ const KB_I18N = {
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
     empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 16 curated works.",
-    empty_reset_btn: "Reset Filters (Show All 16 Works) →"
+    empty_reset_btn: "Reset Filters (Show All 16 Works) →",
+    mob_lang_label: "LANG:",
+    mob_theme_label: "THEME:",
+    footer_rights: "ALL RIGHTS RESERVED © 2026",
+    skill_arch_1: "Spatial Design",
+    skill_arch_2: "Bioclimatic Planning",
+    skill_arch_3: "Working Drawings",
+    skill_arch_4: "Space Optimization",
+    skill_arch_5: "Interior Architecture",
+    skill_arch_6: "Residential Estates",
+    skill_arch_7: "Atmospheric Visualization",
+    skill_brand_1: "Brand Architecture",
+    skill_brand_2: "Logomark Engineering",
+    skill_brand_3: "Digital UI / UX",
+    skill_brand_4: "Packaging Suites",
+    skill_brand_5: "Storefront Environments",
+    skill_brand_6: "Executive Collateral",
+    skill_brand_7: "Design Guidelines",
+    skill_lead_1: "Creative Direction",
+    skill_lead_2: "Project Strategy",
+    skill_lead_3: "Spatial Curation",
+    skill_lead_4: "Client Consultation",
+    skill_lead_5: "Studio Leadership",
+    skill_lead_6: "Academic Mentorship",
+    skill_lead_7: "Brand Management"
   },
   am: {
     // Header & Navigation
@@ -1279,7 +1611,31 @@ const KB_I18N = {
     empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
     empty_void_desc: "ሁሉንም 16 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
-    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 16 ስራዎች አሳይ) →"
+    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 16 ስራዎች አሳይ) →",
+    mob_lang_label: "ቋንቋ:",
+    mob_theme_label: "ገጽታ:",
+    footer_rights: "መብቱ በህግ የተጠበቀ ነው © 2026",
+    skill_arch_1: "የቦታ ንድፍ",
+    skill_arch_2: "የአየር ንብረት ተስማሚ ፕላን",
+    skill_arch_3: "የግንባታ ዝርዝር ሰነዶች",
+    skill_arch_4: "የቦታ አጠቃቀም ማሻሻል",
+    skill_arch_5: "የውስጥ አርክቴክቸር",
+    skill_arch_6: "የመኖሪያ መንደሮች ንድፍ",
+    skill_arch_7: "እውነተኛ የከባቢ አየር ምስል",
+    skill_brand_1: "የብራንድ አወቃቀር",
+    skill_brand_2: "የሎጎ ምህንድስና",
+    skill_brand_3: "የዲጂታል UI / UX",
+    skill_brand_4: "የማሸጊያ ንድፎች",
+    skill_brand_5: "የመደብር ፊት ለፊት እይታ",
+    skill_brand_6: "የኮርፖሬት መረጃ ሰነዶች",
+    skill_brand_7: "የብራንድ መመሪያ ደንቦች",
+    skill_lead_1: "የፈጠራ ምሪት",
+    skill_lead_2: "የፕሮጀክት ስትራቴጂ",
+    skill_lead_3: "የቦታ ቅንጅት",
+    skill_lead_4: "የደንበኛ ምክክር",
+    skill_lead_5: "የስቱዲዮ አመራር",
+    skill_lead_6: "የትምህርት ድጋፍ",
+    skill_lead_7: "የብራንድ አስተዳደር"
   }
 };
 
@@ -1363,15 +1719,93 @@ function initLanguageEngine() {
       }
     });
 
-    // Update Card Buttons
-    document.querySelectorAll('.btn-card-view-case-study span:first-child').forEach(span => {
-      span.textContent = dict.view_case_study;
-    });
+    // Update Kinetic Ticker Ribbon
+    const tickerTrack = document.querySelector('.kinetic-ticker-track');
+    if (tickerTrack) {
+      if (currentLang === 'am') {
+        tickerTrack.innerHTML = `
+          <span>✦ የ4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ</span>
+          <span class="ticker-dot">•</span>
+          <span>የKB CREATIVE ስቱዲዮ ስራዎች</span>
+          <span class="ticker-dot">•</span>
+          <span>የተፈጥሮ ብርሃን ህንፃ ንድፍ</span>
+          <span class="ticker-dot">•</span>
+          <span>የብራንድ መለያ ዲዛይን</span>
+          <span class="ticker-dot">•</span>
+          <span>D5 ሬንደር፣ ራይኖ እና ሪቪት ቪዥዋላይዜሽን</span>
+          <span class="ticker-dot">•</span>
+          <span>ኢትዮጵያ እና በኦንላይን በመላው አለም</span>
+          <span class="ticker-dot">•</span>
+          <span>✦ የ4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ</span>
+          <span class="ticker-dot">•</span>
+          <span>የKB CREATIVE ስቱዲዮ ስራዎች</span>
+          <span class="ticker-dot">•</span>
+          <span>የተፈጥሮ ብርሃን ህንፃ ንድፍ</span>
+          <span class="ticker-dot">•</span>
+          <span>የብራንድ መለያ ዲዛይን</span>
+          <span class="ticker-dot">•</span>
+          <span>D5 ሬንደር፣ ራይኖ እና ሪቪት ቪዥዋላይዜሽን</span>
+          <span class="ticker-dot">•</span>
+          <span>ኢትዮጵያ እና በኦንላይን በመላው አለም</span>
+          <span class="ticker-dot">•</span>
+        `;
+      } else {
+        tickerTrack.innerHTML = `
+          <span>✦ 4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY</span>
+          <span class="ticker-dot">•</span>
+          <span>KB CREATIVE STUDIO PRACTICE</span>
+          <span class="ticker-dot">•</span>
+          <span>DAYLIGHT-ORIENTED TECTONIC ARCHITECTURE</span>
+          <span class="ticker-dot">•</span>
+          <span>MONOLITHIC BRAND IDENTITY SYSTEMS</span>
+          <span class="ticker-dot">•</span>
+          <span>D5 RENDER, RHINO &amp; REVIT VISUALIZATION</span>
+          <span class="ticker-dot">•</span>
+          <span>ETHIOPIA &amp; REMOTE WORLDWIDE</span>
+          <span class="ticker-dot">•</span>
+          <span>✦ 4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY</span>
+          <span class="ticker-dot">•</span>
+          <span>KB CREATIVE STUDIO PRACTICE</span>
+          <span class="ticker-dot">•</span>
+          <span>DAYLIGHT-ORIENTED TECTONIC ARCHITECTURE</span>
+          <span class="ticker-dot">•</span>
+          <span>MONOLITHIC BRAND IDENTITY SYSTEMS</span>
+          <span class="ticker-dot">•</span>
+          <span>D5 RENDER, RHINO &amp; REVIT VISUALIZATION</span>
+          <span class="ticker-dot">•</span>
+          <span>ETHIOPIA &amp; REMOTE WORLDWIDE</span>
+          <span class="ticker-dot">•</span>
+        `;
+      }
+    }
 
-    // Update Big hover button in project cards
-    document.querySelectorAll('.big-hover-btn').forEach(btn => {
-      btn.textContent = currentLang === 'am' ? 'ዝርዝር ይመልከቱ ↗' : 'VIEW CASE STUDY ↗';
-    });
+    // Update Contact Form Inputs & Options
+    const nameInput = document.getElementById('inquiry-name');
+    const briefInput = document.getElementById('inquiry-brief');
+    const serviceSelect = document.getElementById('inquiry-service');
+    if (nameInput) {
+      nameInput.placeholder = (currentLang === 'am') ? 'ለምሳሌ፡ ሳሙኤል ዮሐንስ' : 'e.g. Samuel Yohannes';
+    }
+    if (briefInput) {
+      briefInput.placeholder = (currentLang === 'am') ? 'የፕሮጀክትዎን ቦታ፣ ስፋት፣ የሚፈልጉትን ጊዜ እና የዲዛይን ምርጫ ይግለጹ...' : 'Detail your project site, dimensions, timeline, and aesthetic goals...';
+    }
+    if (serviceSelect && serviceSelect.options.length >= 4) {
+      serviceSelect.options[0].text = (currentLang === 'am') ? 'የቦታ አርክቴክቸር እና የመኖሪያ ህንፃ ንድፍ' : 'Spatial Architecture & Residential Design';
+      serviceSelect.options[1].text = (currentLang === 'am') ? 'የብራንድ መለያ ስርዓት (KB CREATIVE)' : 'Brand Identity & System (KB CREATIVE)';
+      serviceSelect.options[2].text = (currentLang === 'am') ? '3D ቪዥዋላይዜሽን እና ሬንደሪንግ (D5/Lumion)' : '3D Visualization & Cinematic Renders (D5/Lumion)';
+      serviceSelect.options[3].text = (currentLang === 'am') ? 'የተቀናጀ የአርክቴክቸር እና የብራንድ ፓኬጅ' : 'Comprehensive Architecture + Brand Package';
+    }
+
+    // Immediately re-render all project cards with full language localization
+    if (typeof window.renderProjects === 'function') {
+      window.renderProjects();
+    }
+
+    // If case study modal is currently open, seamlessly re-render in the active language
+    const modalOverlay = document.getElementById('case-study-modal');
+    if (modalOverlay && modalOverlay.classList.contains('active') && window.currentActiveProjectId) {
+      window.openCaseStudy(window.currentActiveProjectId);
+    }
   }
 }
 
@@ -1504,7 +1938,10 @@ function initProjectsArchive() {
   };
 
   function render() {
+    window.renderProjects = render;
     let filtered = KB_PROJECTS;
+    const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
+    const dict = KB_I18N[isAm ? 'am' : 'en'] || KB_I18N.en;
 
     if (activePractice === 'visualization') {
       // 3D Visualization corresponds to the 6 cinematic CGI architectural works
@@ -1518,12 +1955,12 @@ function initProjectsArchive() {
     }
 
     if (projectCountEl) {
-      projectCountEl.textContent = `INDEX // Showing ${filtered.length} of ${KB_PROJECTS.length} Works`;
+      projectCountEl.textContent = isAm
+        ? `ማውጫ // ከ${KB_PROJECTS.length} ስራዎች ውስጥ ${filtered.length}ቱ እየታዩ ነው`
+        : `INDEX // Showing ${filtered.length} of ${KB_PROJECTS.length} Works`;
     }
 
     if (filtered.length === 0) {
-      const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
-      const dict = KB_I18N[isAm ? 'am' : 'en'] || KB_I18N.en;
       container.innerHTML = `
         <div class="empty-filter-state">
           <div class="empty-status-tag font-mono">${dict.empty_void_tag || '00 // VOID SPECIFICATION'}</div>
@@ -1541,6 +1978,7 @@ function initProjectsArchive() {
       const currentIdx = projectSlideIndexes[item.id] || 0;
       const currentSlide = item.slides[currentIdx] || item.slides[0];
       const totalSlides = item.slides.length;
+      const localizedItem = getLocalizedProject(item, isAm ? 'am' : 'en');
       const primaryTool = (item.software && item.software.length) ? item.software.slice(0, 2).join(' + ') : 'Revit + D5';
 
       return `
@@ -1551,29 +1989,29 @@ function initProjectsArchive() {
 
         <!-- Media Carousel with Exposed Multi-Slide Controls -->
         <div class="carousel-media-wrap" onclick="openCaseStudy('${item.id}')" title="Click to open case study">
-          <img src="${currentSlide.url}" alt="${item.title}" class="carousel-slide-img" id="img-${item.id}" loading="lazy" style="${currentSlide.fit === 'contain' ? `object-fit: contain; background: ${currentSlide.bg || '#041B2B'};`: ''}">
+          <img src="${currentSlide.url}" alt="${localizedItem.title}" class="carousel-slide-img" id="img-${item.id}" loading="lazy" style="${currentSlide.fit === 'contain' ? `object-fit: contain; background: ${currentSlide.bg || '#041B2B'};`: ''}">
           
           <!-- BIG.dk Signature Architectural Showcase Hover Overlay -->
           <div class="big-hover-scrim">
             <div class="big-hover-content">
               <div class="big-hover-meta-top font-mono">
-                <span class="big-hover-discipline">${(item.service || item.practiceLabel).toUpperCase()}</span>
+                <span class="big-hover-discipline">${(localizedItem.service || localizedItem.practiceLabel).toUpperCase()}</span>
                 <span class="big-hover-year">${item.year}</span>
               </div>
-              <h4 class="big-hover-heading">${item.title}</h4>
+              <h4 class="big-hover-heading">${localizedItem.title}</h4>
               <div class="big-hover-location font-mono">
-                <span>📍 ${item.location}</span>
+                <span>📍 ${localizedItem.location}</span>
               </div>
-              ${item.sizeContext ? `
+              ${localizedItem.sizeContext ? `
                 <div class="big-hover-size-pill font-mono">
                   <span class="size-icon" aria-hidden="true">📐</span>
-                  <span class="size-text">${item.sizeContext}</span>
+                  <span class="size-text">${localizedItem.sizeContext}</span>
                 </div>
               ` : ''}
               <div class="big-hover-action-wrap">
-                <span class="big-hover-btn font-mono">${(window.getCurrentLang && window.getCurrentLang() === 'am') ? 'ዝርዝር ይመልከቱ ↗' : 'VIEW CASE STUDY ↗'}</span>
+                <span class="big-hover-btn font-mono">${isAm ? 'ዝርዝር ይመልከቱ ↗' : 'VIEW CASE STUDY ↗'}</span>
                 <span class="big-hover-slide-caption font-mono" id="caption-${item.id}">
-                  <span class="scrub-hint">↔ SCRUB:</span> ${currentSlide.caption}
+                  <span class="scrub-hint">${isAm ? '↔ ምስሎችን ይቀያይሩ:' : '↔ SCRUB:'}</span> ${currentSlide.caption}
                 </span>
               </div>
             </div>
@@ -1583,7 +2021,7 @@ function initProjectsArchive() {
           <div class="project-bottom-meta-bar font-mono" aria-hidden="true">
             <span class="meta-bar-year">${item.year}</span>
             <span class="meta-bar-sep">•</span>
-            <span class="meta-bar-typology">${item.service || item.practiceLabel}</span>
+            <span class="meta-bar-typology">${localizedItem.service || localizedItem.practiceLabel}</span>
             <span class="meta-bar-sep">•</span>
             <span class="meta-bar-tool">${primaryTool}</span>
           </div>
@@ -1606,23 +2044,23 @@ function initProjectsArchive() {
         <!-- Simplified Card Body: Strictly Project Name, Location, Year, Service, Short Summary & View Case Study Button -->
         <div class="simplified-card-body">
           <div class="card-service-row">
-            <span class="card-service-tag font-mono">${item.service || item.practiceLabel}</span>
-            <span class="card-perspectives-pill font-mono">${totalSlides} Perspectives</span>
+            <span class="card-service-tag font-mono">${localizedItem.service || localizedItem.practiceLabel}</span>
+            <span class="card-perspectives-pill font-mono">${totalSlides} ${isAm ? 'እይታዎች' : 'Perspectives'}</span>
           </div>
 
-          <h3 class="simplified-card-title" onclick="openCaseStudy('${item.id}')">${item.title}</h3>
+          <h3 class="simplified-card-title" onclick="openCaseStudy('${item.id}')">${localizedItem.title}</h3>
 
           <div class="simplified-card-meta font-mono">
-            <span class="card-meta-location">${item.location}</span>
+            <span class="card-meta-location">${localizedItem.location}</span>
             <span class="text-gold">•</span>
             <span class="card-meta-year text-gold">${item.year}</span>
           </div>
 
-          <p class="simplified-card-summary">${item.summary}</p>
+          <p class="simplified-card-summary">${localizedItem.summary}</p>
 
           <div class="simplified-card-action">
-            <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('${item.id}', this)" aria-label="View Case Study for ${item.title}">
-              <span>${(window.getCurrentLang && window.getCurrentLang() === 'am') ? 'ዝርዝር ይመልከቱ' : 'View Case Study'}</span>
+            <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('${item.id}', this)" aria-label="View Case Study for ${localizedItem.title}">
+              <span>${isAm ? 'ዝርዝር ይመልከቱ' : 'View Case Study'}</span>
               <span class="case-study-arrow" aria-hidden="true">↗</span>
             </button>
           </div>
@@ -1930,8 +2368,12 @@ function initCaseModal() {
 }
 
 window.openCaseStudy = function(projectId, triggerEl) {
-  const project = KB_PROJECTS.find(p => p.id === projectId);
-  if (!project) return;
+  const rawProject = KB_PROJECTS.find(p => p.id === projectId);
+  if (!rawProject) return;
+
+  window.currentActiveProjectId = projectId;
+  const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
+  const project = getLocalizedProject(rawProject, isAm ? 'am' : 'en');
 
   if (triggerEl && triggerEl.classList) {
     triggerEl.classList.add('btn-loading');
@@ -1944,7 +2386,9 @@ window.openCaseStudy = function(projectId, triggerEl) {
   const body = document.getElementById('case-modal-body');
 
   document.getElementById('modal-project-title').textContent = project.title;
-  document.getElementById('modal-practice-tag').textContent = `${project.service || project.practiceLabel} // 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY [${project.gridRef}]`;
+  document.getElementById('modal-practice-tag').textContent = isAm
+    ? `${project.service || project.practiceLabel} // 4ኛ ዓመት አርክቴክቸር • ወልቂጤ ዩኒቨርሲቲ [${project.gridRef}]`
+    : `${project.service || project.practiceLabel} // 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY [${project.gridRef}]`;
 
   const softwareList = Array.isArray(project.software) ? project.software : [project.medium];
   const isArch = project.practice === 'architecture';
@@ -1954,18 +2398,18 @@ window.openCaseStudy = function(projectId, triggerEl) {
   const beforeAfterMarkup = isArch ? `
     <!-- 03.5 // INTERACTIVE BEFORE/AFTER SPLIT SLIDER FOR ARCHITECTURE -->
     <div class="modal-before-after-module">
-      <div class="modal-block-tag font-mono">✦ DUAL-PHASE ARCHITECTURAL STUDY // DRAGGABLE SPLIT SLIDER</div>
+      <div class="modal-block-tag font-mono">${isAm ? '✦ የሁለት ምዕራፍ የአርክቴክቸር ጥናት // ተንቀሳቃሽ ማወዳደሪያ' : '✦ DUAL-PHASE ARCHITECTURAL STUDY // DRAGGABLE SPLIT SLIDER'}</div>
       <div class="modal-ba-header">
         <div class="font-mono text-gold" style="font-size: 0.8rem; font-weight: 700;">
-          COMPARE: TECTONIC / MASSING STUDY (LEFT) ↔ FINAL D5 PHOTOREALISTIC RENDER (RIGHT)
+          ${isAm ? 'አወዳድር: የቅርፅ እና የመዋቅር ጥናት (በግራ) ↔ የመጨረሻው የD5 እውነተኛ ምስል (በቀኝ)' : 'COMPARE: TECTONIC / MASSING STUDY (LEFT) ↔ FINAL D5 PHOTOREALISTIC RENDER (RIGHT)'}
         </div>
         <div class="font-mono" style="font-size: 0.72rem; color: var(--text-secondary);">
-          DRAG KNOB OR CLICK ANYWHERE TO REVEAL
+          ${isAm ? 'ለማየት መሃሉን ይጎትቱ ወይም ይጫኑ' : 'DRAG KNOB OR CLICK ANYWHERE TO REVEAL'}
         </div>
       </div>
       <div class="ba-slider-container" id="modal-ba-slider" style="--slider-pct: 50%;">
-        <div class="ba-badge ba-badge-left font-mono">01 // MASSING / WIREFRAME</div>
-        <div class="ba-badge ba-badge-right font-mono">02 // FINAL D5 RENDER</div>
+        <div class="ba-badge ba-badge-left font-mono">${isAm ? '01 // የቅርፅ ጥናት' : '01 // MASSING / WIREFRAME'}</div>
+        <div class="ba-badge ba-badge-right font-mono">${isAm ? '02 // እውነተኛ የD5 ሬንደር' : '02 // FINAL D5 RENDER'}</div>
         <img src="${afterSlide.url}" alt="${project.title} - Final Photorealistic Render" class="ba-img-after">
         <img src="${beforeSlide.url}" alt="${project.title} - Tectonic Massing Study" class="ba-img-before">
         <div class="ba-slider-handle">
@@ -1983,38 +2427,38 @@ window.openCaseStudy = function(projectId, triggerEl) {
     <!-- Case Study Header Meta -->
     <div class="modal-header-meta font-mono">
       <div class="meta-item">
-        <span class="meta-label">LOCATION:</span>
+        <span class="meta-label">${isAm ? 'ቦታ:' : 'LOCATION:'}</span>
         <span class="meta-value">${project.location}</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">YEAR:</span>
+        <span class="meta-label">${isAm ? 'ዓመት:' : 'YEAR:'}</span>
         <span class="meta-value text-gold">${project.year}</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">SERVICE:</span>
+        <span class="meta-label">${isAm ? 'አገልግሎት:' : 'SERVICE:'}</span>
         <span class="meta-value">${project.service || project.practiceLabel}</span>
       </div>
       <div class="meta-item">
-        <span class="meta-label">CLIENT / COMMISSION:</span>
+        <span class="meta-label">${isAm ? 'ደንበኛ / ኮሚሽን:' : 'CLIENT / COMMISSION:'}</span>
         <span class="meta-value">${project.client}</span>
       </div>
     </div>
 
     <!-- 01 // YOUR ROLE & ATTRIBUTION -->
     <div class="modal-role-banner">
-      <div class="modal-block-tag font-mono">01 // YOUR ROLE &amp; ATTRIBUTION</div>
+      <div class="modal-block-tag font-mono">${isAm ? '01 // የእርስዎ ሚና እና የስራ ድርሻ' : '01 // YOUR ROLE &amp; ATTRIBUTION'}</div>
       <div class="modal-role-content">
         <div class="role-icon-badge" aria-hidden="true">★</div>
         <div>
           <div class="modal-role-title">${project.role}</div>
-          <div class="modal-role-subtitle font-mono">Department of Architecture, Wolkite University • Studio KB CREATIVE</div>
+          <div class="modal-role-subtitle font-mono">${isAm ? 'የአርክቴክቸር ትምህርት ክፍል፣ ወልቂጤ ዩኒቨርሲቲ • ስቱዲዮ KB CREATIVE' : 'Department of Architecture, Wolkite University • Studio KB CREATIVE'}</div>
         </div>
       </div>
     </div>
 
     <!-- 02 // SOFTWARE & DIGITAL TOOLS USED -->
     <div class="modal-software-section">
-      <div class="modal-block-tag font-mono">02 // SOFTWARE &amp; DIGITAL TOOLS USED</div>
+      <div class="modal-block-tag font-mono">${isAm ? '02 // የተጠቀሙባቸው ሶፍትዌሮች እና ዲጂታል መሳሪያዎች' : '02 // SOFTWARE &amp; DIGITAL TOOLS USED'}</div>
       <div class="modal-software-pills">
         ${softwareList.map(sw => `<span class="software-pill font-mono">${sw}</span>`).join('')}
       </div>
@@ -2022,7 +2466,7 @@ window.openCaseStudy = function(projectId, triggerEl) {
 
     <!-- 03 // FINAL IMAGES & ARCHITECTURAL DRAWINGS (Full Proportional Gallery) -->
     <div class="modal-gallery-section" style="margin-bottom: 2rem;">
-      <div class="modal-block-tag font-mono">03 // FINAL IMAGES &amp; ARCHITECTURAL DRAWINGS (${project.slides.length} MULTI-VIEW PERSPECTIVES)</div>
+      <div class="modal-block-tag font-mono">${isAm ? `03 // የመጨረሻ ምስሎች እና የአርክቴክቸር ንድፎች (${project.slides.length} የተለያዩ እይታዎች)` : `03 // FINAL IMAGES &amp; ARCHITECTURAL DRAWINGS (${project.slides.length} MULTI-VIEW PERSPECTIVES)`}</div>
       <div class="modal-hero-viewport" style="background: ${project.slides[0].bg || '#02121D'};">
         <img src="${project.slides[0].url}" alt="${project.title}" id="modal-active-img" style="object-fit: contain;">
         <div class="modal-slide-caption-bar font-mono" id="modal-active-caption">
@@ -2048,8 +2492,8 @@ window.openCaseStudy = function(projectId, triggerEl) {
       <!-- 04 // CHALLENGE -->
       <div class="modal-challenge-card">
         <div class="cs-card-header font-mono">
-          <span class="cs-badge cs-challenge-badge">04 // CHALLENGE</span>
-          <span class="cs-header-title">The Design Problem</span>
+          <span class="cs-badge cs-challenge-badge">${isAm ? '04 // ተግዳሮት' : '04 // CHALLENGE'}</span>
+          <span class="cs-header-title">${isAm ? 'የተፈታው የዲዛይን ችግር' : 'The Design Problem'}</span>
         </div>
         <p class="cs-body-text">${project.challenge}</p>
       </div>
@@ -2057,8 +2501,8 @@ window.openCaseStudy = function(projectId, triggerEl) {
       <!-- 05 // SOLUTION -->
       <div class="modal-solution-card">
         <div class="cs-card-header font-mono">
-          <span class="cs-badge cs-solution-badge">05 // SOLUTION</span>
-          <span class="cs-header-title">Engineered Execution</span>
+          <span class="cs-badge cs-solution-badge">${isAm ? '05 // መፍትሔ' : '05 // SOLUTION'}</span>
+          <span class="cs-header-title">${isAm ? 'የተተገበረው ስነ-ህንፃዊ መፍትሔ' : 'Engineered Execution'}</span>
         </div>
         <p class="cs-body-text">${project.solution}</p>
       </div>
@@ -2067,12 +2511,12 @@ window.openCaseStudy = function(projectId, triggerEl) {
     <!-- Project Overview Description & Key Deliverables -->
     <div class="modal-details-grid">
       <div class="modal-overview-col">
-        <div class="modal-block-tag font-mono">PROJECT OVERVIEW &amp; CONTEXT</div>
+        <div class="modal-block-tag font-mono">${isAm ? 'የፕሮጀክት አጠቃላይ እይታ እና ዳራ' : 'PROJECT OVERVIEW &amp; CONTEXT'}</div>
         <p class="modal-narrative-p">${project.description}</p>
       </div>
       <div class="modal-deliverables-col">
         <div class="modal-spec-card">
-          <div class="modal-block-tag font-mono">KEY DELIVERABLES &amp; DRAWINGS</div>
+          <div class="modal-block-tag font-mono">${isAm ? 'ዋና ዋና ውጤቶች እና ዝርዝር ፕላኖች' : 'KEY DELIVERABLES &amp; DRAWINGS'}</div>
           <ul class="modal-deliverables-list">
             ${project.deliverables.map(d => `
               <li class="modal-deliverable-item font-mono">
@@ -2083,7 +2527,7 @@ window.openCaseStudy = function(projectId, triggerEl) {
 
           <div class="modal-cta-wrap">
             <a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" class="btn-brand-yellow modal-cta-btn">
-              <span>Initiate Collaboration (KB CREATIVE)</span>
+              <span>${isAm ? 'የስራ ስምምነት ይጀምሩ (KB CREATIVE)' : 'Initiate Collaboration (KB CREATIVE)'}</span>
               <span aria-hidden="true">↗</span>
             </a>
           </div>
