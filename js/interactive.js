@@ -23,147 +23,10 @@
   const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ==========================================================================
-     1. FLUID MAGNETIC CURSOR SUITE (Desktop Only)
+     1. FLUID MAGNETIC CURSOR SUITE (Replaced with Native Responsive Cursor)
      ========================================================================== */
   function initInteractiveCursor() {
-    if (isTouchDevice() || prefersReducedMotion()) return;
-
-    const ring = document.getElementById('cursor-ring');
-    const dot = document.getElementById('cursor-dot');
-    const badgeText = document.getElementById('cursor-badge-text');
-
-    if (!ring || !dot) return;
-
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
-    let ringX = mouseX;
-    let ringY = mouseY;
-    let dotX = mouseX;
-    let dotY = mouseY;
-
-    let isHoveringInteractive = false;
-    let isHoveringCard = false;
-    let magneticTarget = null;
-    let isMouseDown = false;
-
-    // Track mouse position
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-      ring.style.opacity = '1';
-      dot.style.opacity = '1';
-    });
-
-    window.addEventListener('mouseleave', () => {
-      ring.style.opacity = '0';
-      dot.style.opacity = '0';
-    });
-
-    window.addEventListener('mousedown', () => {
-      isMouseDown = true;
-      ring.classList.add('cursor-clicking');
-    });
-
-    window.addEventListener('mouseup', () => {
-      isMouseDown = false;
-      ring.classList.remove('cursor-clicking');
-    });
-
-    // Attach magnetic listeners to buttons and pills
-    function attachMagneticElements() {
-      const magneticSelectors = [
-        '.btn-primary-hero',
-        '.inquire-cta-pill',
-        '.practice-pill',
-        '.circle-nav-btn',
-        '.btn-brand-yellow',
-        '.btn-brand-outline',
-        '.social-direct-pill',
-        '.nav-item-link',
-        '.brand-identity-wrap'
-      ];
-
-      document.querySelectorAll(magneticSelectors.join(', ')).forEach((el) => {
-        if (el._magneticAttached) return;
-        el._magneticAttached = true;
-
-        el.addEventListener('mouseenter', () => {
-          isHoveringInteractive = true;
-          magneticTarget = el;
-          ring.classList.add('cursor-magnetic');
-        });
-
-        el.addEventListener('mouseleave', () => {
-          isHoveringInteractive = false;
-          magneticTarget = null;
-          ring.classList.remove('cursor-magnetic');
-          el.style.transform = '';
-        });
-
-        el.addEventListener('mousemove', (e) => {
-          if (!magneticTarget) return;
-          const rect = el.getBoundingClientRect();
-          const centerX = rect.left + rect.width / 2;
-          const centerY = rect.top + rect.height / 2;
-          const pullStrength = 0.22;
-
-          const dx = (e.clientX - centerX) * pullStrength;
-          const dy = (e.clientY - centerY) * pullStrength;
-
-          el.style.transform = `translate(${dx.toFixed(1)}px, ${dy.toFixed(1)}px)`;
-        });
-      });
-
-      // Project Card Hover Mode -> transforms cursor to "VIEW 01/05 ↗"
-      document.querySelectorAll('.big-project-card').forEach((card) => {
-        if (card._cursorAttached) return;
-        card._cursorAttached = true;
-
-        card.addEventListener('mouseenter', () => {
-          isHoveringCard = true;
-          ring.classList.add('cursor-card-hover');
-          if (badgeText) {
-            badgeText.textContent = 'VIEW ↗';
-          }
-        });
-
-        card.addEventListener('mouseleave', () => {
-          isHoveringCard = false;
-          ring.classList.remove('cursor-card-hover');
-          if (badgeText) {
-            badgeText.textContent = '';
-          }
-        });
-      });
-    }
-
-    attachMagneticElements();
-    // Re-attach periodically in case cards were re-rendered or filtered
-    const observer = new MutationObserver(attachMagneticElements);
-    const archiveGrid = document.getElementById('big-projects-container');
-    if (archiveGrid) {
-      observer.observe(archiveGrid, { childList: true });
-    }
-
-    // Smooth Lerp Animation Loop (60 FPS)
-    function renderCursor() {
-      // Lerp calculations
-      const ringLerpFactor = 0.16;
-      const dotLerpFactor = 0.85;
-
-      ringX += (mouseX - ringX) * ringLerpFactor;
-      ringY += (mouseY - ringY) * ringLerpFactor;
-
-      dotX += (mouseX - dotX) * dotLerpFactor;
-      dotY += (mouseY - dotY) * dotLerpFactor;
-
-      ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
-      dot.style.transform = `translate3d(${dotX}px, ${dotY}px, 0)`;
-
-      requestAnimationFrame(renderCursor);
-    }
-
-    requestAnimationFrame(renderCursor);
+    // Preserves native OS pointer precision and responsiveness without lag
   }
 
   /* ==========================================================================
@@ -198,15 +61,10 @@
   }
 
   /* ==========================================================================
-     3. INTERACTIVE HORIZONTAL MEDIA SCRUBBING & TOUCH SWIPE
-     Hovering left-to-right across a project card scrubs through the views;
-     swiping horizontally on touch devices advances slides
+     3. INTERACTIVE TOUCH SWIPE FOR PROJECT SLIDES (Mobile/Touch)
      ========================================================================== */
   function initCardScrubbing() {
     function attachScrubbing() {
-      const ring = document.getElementById('cursor-ring');
-      const badgeText = document.getElementById('cursor-badge-text');
-
       document.querySelectorAll('.big-project-card').forEach((card) => {
         if (card._scrubAttached) return;
         card._scrubAttached = true;
@@ -215,36 +73,8 @@
         const projectId = card.id ? card.id.replace('card-', '') : null;
         if (!mediaWrap || !projectId) return;
 
-        let lastScrubIndex = -1;
-
-        if (!isTouchDevice()) {
-          mediaWrap.addEventListener('mousemove', (e) => {
-            const rect = mediaWrap.getBoundingClientRect();
-            const normX = Math.max(0, Math.min(0.999, (e.clientX - rect.left) / rect.width));
-
-            // Map 0 -> 1 to slide index based on dynamic project slides
-            const proj = (window.KB_PROJECTS || []).find(p => p.id === projectId);
-            const totalSlides = proj && proj.slides ? proj.slides.length : 5;
-            const scrubIndex = Math.min(totalSlides - 1, Math.floor(normX * totalSlides));
-
-            if (badgeText) {
-              badgeText.textContent = `0${scrubIndex + 1}/0${totalSlides} ↗`;
-            }
-
-            if (scrubIndex !== lastScrubIndex && typeof window.goToSlide === 'function') {
-              lastScrubIndex = scrubIndex;
-              window.goToSlide(e, projectId, scrubIndex, true);
-            }
-          });
-
-          mediaWrap.addEventListener('mouseleave', () => {
-            lastScrubIndex = -1;
-            if (badgeText) {
-              badgeText.textContent = 'VIEW ↗';
-            }
-          });
-        } else {
-          // Touch swipe support for mobile/tablet users
+        // Smooth touch swipe support for mobile/tablet users
+        if (isTouchDevice()) {
           let touchStartX = 0;
           let touchStartY = 0;
           mediaWrap.addEventListener('touchstart', (e) => {
@@ -277,27 +107,10 @@
   }
 
   /* ==========================================================================
-     4. INTERACTIVE CLICK RIPPLE FEEDBACK SYSTEM
+     4. INTERACTIVE CLICK FEEDBACK (Native CSS Active States)
      ========================================================================== */
   function initClickRipple() {
-    document.addEventListener('click', (e) => {
-      const target = e.target.closest('.btn-primary-hero, .inquire-cta-pill, .btn-brand-yellow, .practice-pill, .hero-emblem-card');
-      if (!target) return;
-
-      const rect = target.getBoundingClientRect();
-      const ripple = document.createElement('span');
-      ripple.className = 'interactive-click-ripple';
-
-      const size = Math.max(rect.width, rect.height) * 1.6;
-      ripple.style.width = ripple.style.height = `${size}px`;
-      ripple.style.left = `${e.clientX - rect.left - size / 2}px`;
-      ripple.style.top = `${e.clientY - rect.top - size / 2}px`;
-
-      target.appendChild(ripple);
-      setTimeout(() => {
-        if (ripple.parentNode) ripple.parentNode.removeChild(ripple);
-      }, 600);
-    });
+    // Replaced by high-precision, GPU-accelerated CSS active states
   }
 
   /* ==========================================================================
@@ -330,27 +143,10 @@
   }
 
   /* ==========================================================================
-     6. STUDIO ID CARD 3D TACTILE SHIMMER
+     6. STUDIO ID CARD ARCHITECTURAL ELEVATION
      ========================================================================== */
   function initStudioCardInteractions() {
-    const emblemCard = document.getElementById('hero-emblem-card');
-    if (!emblemCard) return;
-
-    emblemCard.addEventListener('click', (e) => {
-      // Trigger a celebratory gold shimmer pulse
-      emblemCard.classList.add('shimmer-pulse');
-      setTimeout(() => {
-        emblemCard.classList.remove('shimmer-pulse');
-      }, 700);
-
-      if (typeof window.showToast === 'function') {
-        window.showToast(
-          'Kaleegziabher Fekede • Wolkite University',
-          '4th Year Architecture Student & Founder of KB CREATIVE • Commissions 2026',
-          '🏛️'
-        );
-      }
-    });
+    // Uses clean architectural card elevation defined in CSS
   }
 
   /* ==========================================================================

@@ -2246,52 +2246,10 @@ function updateCardSlide(project, index, isScrubbing = false) {
 }
 
 /* ==========================================================================
-   4. 3D Website Style: Moveable Card Tilt & Specular Glare Micro-Interactions
+   4. Natural Editorial Card Hover Engine (Native 60fps GPU Transitions)
    ========================================================================== */
 function initMoveableCardTilt() {
-  // Mobile touch optimization: preserve 60fps scrolling on touch screens
-  const isTouch = window.matchMedia && window.matchMedia('(hover: none)').matches;
-  if (isTouch) return;
-
-  const cards = document.querySelectorAll('.big-project-card, .hero-emblem-card, .spline-identity-panel');
-
-  cards.forEach(card => {
-    if (card._tiltAttached) return;
-    card._tiltAttached = true;
-
-    const glare = card.querySelector('.card-glare-overlay');
-
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-
-      // 3D perspective tilt: capped at 6.0deg for Hero Profile Card, 3.2deg for project cards
-      const isHero = card.id === 'hero-emblem-card' || card.classList.contains('hero-emblem-card');
-      const maxAngle = isHero ? 6.0 : 3.2;
-
-      const rotateX = ((y - centerY) / centerY) * -maxAngle;
-      const rotateY = ((x - centerX) / centerX) * maxAngle;
-
-      card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateY(-4px)`;
-
-      // Dynamic Specular Glare Reflection tracking cursor
-      if (glare) {
-        const glareX = Math.round((x / rect.width) * 100);
-        const glareY = Math.round((y / rect.height) * 100);
-        glare.style.background = `radial-gradient(circle at ${glareX}% ${glareY}%, rgba(255, 255, 255, 0.22) 0%, transparent 65%)`;
-      }
-    });
-
-    card.addEventListener('mouseleave', () => {
-      card.style.transform = '';
-      if (glare) {
-        glare.style.background = '';
-      }
-    });
-  });
+  // Artificial 3D perspective distortion disabled in favor of clean architectural elevation
 }
 
 /* ==========================================================================
