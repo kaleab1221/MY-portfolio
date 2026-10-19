@@ -1424,6 +1424,7 @@ const KB_I18N = {
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
     editorial_title: "Curated Architectural & Graphic Works",
+    editorial_desc: "16 curated works spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1561,6 +1562,7 @@ const KB_I18N = {
     chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
     archive_title: "የስራዎች ማህደር",
     editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ስራዎች",
+    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 16 የተመረጡ ስራዎች።",
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
@@ -1976,14 +1978,56 @@ function initProjectsArchive() {
       return;
     }
 
-    container.innerHTML = filtered.map((item, cardIndex) => {
+    let htmlOutput = '';
+    let lastPractice = null;
+
+    filtered.forEach((item, cardIndex) => {
+      const isFirstItem = (cardIndex === 0);
+      const isSwitchToGraphic = (lastPractice === 'architecture' && item.practice === 'graphic');
+
+      if (isFirstItem || isSwitchToGraphic) {
+        lastPractice = item.practice;
+        const isArch = (item.practice === 'architecture');
+        const disciplineCount = filtered.filter(p => p.practice === item.practice).length;
+
+        const tagText = isArch
+          ? (isAm ? 'ዘርፍ 01 // አርክቴክቸር እና 3D ቪዥዋላይዜሽን' : 'DISCIPLINE 01 // SPATIAL ARCHITECTURE &amp; 3D CGI')
+          : (isAm ? 'ዘርፍ 02 // የግራፊክ ዲዛይን እና የብራንድ ማንነት' : 'DISCIPLINE 02 // GRAPHIC DESIGN &amp; BRAND IDENTITY');
+
+        const headingText = isArch
+          ? (isAm ? 'የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን' : 'Spatial Architecture &amp; Cinematic 3D Visualization')
+          : (isAm ? 'የግራፊክ ዲዛይን እና የኮርፖሬት ብራንድ ማንነት' : 'Graphic Design &amp; Corporate Brand Identity Systems');
+
+        const descText = isArch
+          ? (isAm ? 'የመኖሪያ ቪላዎች፣ የቢሮ እድሳቶች፣ ሁለገብ የገበያ ማዕከላት እና የማህበረሰብ አርክቴክቸር በAutodesk Revit፣ Rhino 3D እና D5 Render የተሰሩ ስራዎች።' : 'Residential villas, interior workplace renovations, commercial mixed-use retail concourses, and civic architecture modeled in Revit, Rhino &amp; D5 Render.')
+          : (isAm ? 'ሞኖሊቲክ የሎጎ ንድፍ፣ የጽሁፍ ቅርጽ ደረጃዎች፣ የድርጅት መለያ መመሪያዎች፣ የማሸጊያ አሰራር እና የመለያ ሰሌዳዎች።' : 'Monolithic logomarks, typography standards, corporate brand guidelines, packaging architecture, and environmental signage suites.');
+
+        htmlOutput += `
+        <!-- DISCIPLINE TITLE SECTION: ${isArch ? 'ARCHITECTURAL WORKS' : 'GRAPHIC WORKS'} -->
+        <div class="discipline-section-divider grid-col-full ${isArch ? 'divider-arch' : 'divider-graphic'}" id="${isArch ? 'arch-works-section' : 'graphic-works-section'}">
+          <div class="discipline-divider-content">
+            <div class="discipline-tag-row font-mono">
+              <span class="discipline-accent-bullet" aria-hidden="true">■</span>
+              <span class="discipline-tag-text">${tagText}</span>
+              <span class="discipline-count-badge font-mono">${disciplineCount} ${isAm ? 'ስራዎች' : 'Works'}</span>
+            </div>
+            <div class="discipline-title-row">
+              <h3 class="discipline-title-heading">${headingText}</h3>
+              <span class="discipline-title-hairline" aria-hidden="true"></span>
+            </div>
+            <p class="discipline-desc-lead">${descText}</p>
+          </div>
+        </div>
+        `;
+      }
+
       const currentIdx = projectSlideIndexes[item.id] || 0;
       const currentSlide = item.slides[currentIdx] || item.slides[0];
       const totalSlides = item.slides.length;
       const localizedItem = getLocalizedProject(item, isAm ? 'am' : 'en');
       const primaryTool = (item.software && item.software.length) ? item.software.slice(0, 2).join(' + ') : 'Revit + D5';
 
-      return `
+      htmlOutput += `
       <!-- SIMPLIFIED PROJECT CARD: [${item.gridRef}] -->
       <article class="big-project-card simplified-project-card" data-id="${item.id}" id="card-${item.id}" onmouseenter="startCardAutoSlide('${item.id}')" onmouseleave="stopCardAutoSlide('${item.id}')">
         <!-- 3D Specular Glare Overlay -->
@@ -2069,7 +2113,9 @@ function initProjectsArchive() {
         </div>
       </article>
       `;
-    }).join('');
+    });
+
+    container.innerHTML = htmlOutput;
 
     // Rebind moveable tilt animations to newly rendered cards
     initMoveableCardTilt();
