@@ -182,37 +182,6 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   background-color: var(--brand-navy);
 }
 
-/* TOP STATUS BAR */
-.studio-status-strip {
-  border-bottom: 1px solid var(--border-color);
-  background: var(--bg-secondary);
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
-  padding: 0.5rem 0;
-  color: var(--text-muted);
-  letter-spacing: 0.05em;
-}
-
-.studio-status-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.status-strip-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-@media (max-width: 992px) {
-  .hide-on-tablet {
-    display: none !important;
-  }
-}
-
 .status-dot-pulse {
   display: inline-block;
   width: 7px;
@@ -3178,9 +3147,6 @@ body.dark-mode #modal-practice-tag {
   .contact-inquiry-box {
     padding: 1.5rem 1.15rem;
   }
-  .studio-status-strip {
-    font-size: 0.65rem;
-  }
 }
 
 /* ==========================================================================
@@ -5174,14 +5140,6 @@ button:active,
   }
 }
 
-/* ==========================================================================
-   23. DECLUTTER FIXED HUDS ON VIEWPORTS <= 1280px
-   ========================================================================== */
-@media (max-width: 1280px) {
-  .studio-status-strip {
-    display: none !important;
-  }
-}
 
 /* ==========================================================================
    24. SWISS MODULAR EMPTY FILTER STATE & TOUCH UX REFINEMENTS
