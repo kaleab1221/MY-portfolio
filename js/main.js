@@ -217,24 +217,28 @@ const KB_PROJECTS = [
     ],
     "slides": [
       {
-        "url": "assets/mixed-use-slide-01-night.jpg",
-        "caption": "Slide 01 // Nocturnal Facade & MENA MALL Concourse"
+        "url": "assets/mixed-use-slide-01-daylight.jpg",
+        "caption": "Slide 01 // Exterior Daylight Facade, Streetscape & MENA MALL Concourse"
       },
       {
-        "url": "assets/mixed-use-slide-02-aerial.jpg",
-        "caption": "Slide 02 // Aerial Massing & Skyline Silhouette"
+        "url": "assets/mixed-use-slide-02-night.jpg",
+        "caption": "Slide 02 // Nocturnal Illumination & Evening Architectural Perspective"
       },
       {
-        "url": "assets/mixed-use-slide-03-street.jpg",
-        "caption": "Slide 03 // Pedestrian Plaza & Retail Promenade"
+        "url": "assets/mixed-use-slide-03-axonometric.jpg",
+        "caption": "Slide 03 // 5-Stage Form Development & MENA MALL Axonometric Massing"
       },
       {
-        "url": "assets/mixed-use-slide-04-office.jpg",
-        "caption": "Slide 04 // Corporate Office Interior & Acoustic Timber"
+        "url": "assets/mixed-use-slide-04-atrium.jpg",
+        "caption": "Slide 04 // Multi-Level Skylit Retail Concourse & Atrium"
       },
       {
-        "url": "assets/mixed-use-slide-05-living.jpg",
-        "caption": "Slide 05 // High-Rise Residence & Highland Panorama"
+        "url": "assets/mixed-use-slide-05-office.jpg",
+        "caption": "Slide 05 // Corporate Office Floorplate & Acoustic Timber Workplace"
+      },
+      {
+        "url": "assets/mixed-use-slide-06-lounge.jpg",
+        "caption": "Slide 06 // High-Rise Panoramic Residential Lounge Suite"
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"12\" y=\"6\" width=\"16\" height=\"30\" stroke=\"#FFD042\" />\n      <line x1=\"16\" y1=\"12\" x2=\"24\" y2=\"12\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"18\" x2=\"24\" y2=\"18\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"24\" x2=\"24\" y2=\"24\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"30\" x2=\"24\" y2=\"30\" stroke=\"#FFFFFF\" />\n    </svg>"
