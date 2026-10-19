@@ -1303,7 +1303,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .big-projects-grid > .discipline-section-divider:first-child {
-  margin-top: 0.5rem;
+  margin-top: 0;
 }
 
 .discipline-section-divider.divider-arch {
