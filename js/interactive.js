@@ -310,10 +310,41 @@
   }
 
   /* ==========================================================================
-     6. STUDIO ID CARD ARCHITECTURAL ELEVATION
+     6. STUDIO ID CARD ARCHITECTURAL ELEVATION & 3D TACTILE TILT
      ========================================================================== */
   function initStudioCardInteractions() {
-    // Uses clean architectural card elevation defined in CSS
+    if (isTouchDevice() || prefersReducedMotion()) return;
+    const card = document.getElementById('hero-emblem-card');
+    if (!card) return;
+
+    let bounds;
+    function updateBounds() {
+      bounds = card.getBoundingClientRect();
+    }
+
+    card.addEventListener('mouseenter', () => {
+      updateBounds();
+      card.style.transition = 'none';
+    });
+
+    card.addEventListener('mousemove', (e) => {
+      if (!bounds) updateBounds();
+      const mouseX = e.clientX - bounds.left;
+      const mouseY = e.clientY - bounds.top;
+      const halfWidth = bounds.width / 2;
+      const halfHeight = bounds.height / 2;
+
+      // Subtle tilt max 7 degrees
+      const rotateX = ((mouseY - halfHeight) / halfHeight) * -6.5;
+      const rotateY = ((mouseX - halfWidth) / halfWidth) * 6.5;
+
+      card.style.transform = `perspective(1000px) rotateX(${rotateX.toFixed(2)}deg) rotateY(${rotateY.toFixed(2)}deg) translateZ(8px)`;
+    });
+
+    card.addEventListener('mouseleave', () => {
+      card.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease';
+      card.style.transform = '';
+    });
   }
 
   /* ==========================================================================
@@ -552,6 +583,46 @@
     window.closeMobileNav = closeDrawer;
   }
 
+  /* ==========================================================================
+     12. HIGH-PRECISION EDITORIAL SCROLL SPY
+     Synchronizes navigation active state with active section viewport
+     ========================================================================== */
+  function initScrollSpy() {
+    const sections = ['about', 'work', 'skills', 'faq', 'contact'];
+    const navLinks = document.querySelectorAll('.desktop-nav-wrap .nav-item-link');
+    if (!navLinks.length) return;
+
+    function onScrollSpy() {
+      const scrollPos = (window.scrollY || window.pageYOffset) + 160;
+      let currentSectionId = '';
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const sec = document.getElementById(sections[i]);
+        if (sec) {
+          const top = sec.offsetTop;
+          if (scrollPos >= top) {
+            currentSectionId = sections[i];
+            break;
+          }
+        }
+      }
+
+      navLinks.forEach((link) => {
+        const href = link.getAttribute('href');
+        if (href === `#${currentSectionId}` || (currentSectionId === 'about' && href === '#work' && scrollPos < 350)) {
+          link.classList.add('active');
+        } else if (href === `#${currentSectionId}`) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', onScrollSpy, { passive: true });
+    onScrollSpy();
+  }
+
   // Self Initialization on DOM Ready
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
@@ -571,5 +642,6 @@
     initHeroGridParallax();
     initKineticTypographyInteractions();
     initMobileNavigation();
+    initScrollSpy();
   }
 })();

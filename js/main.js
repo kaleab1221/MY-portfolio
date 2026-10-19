@@ -1376,6 +1376,9 @@ const KB_I18N = {
   en: {
     // Header & Navigation
     phone_label: "PHONE:",
+    status_strip_location: "✦ ATELIER // WOLKITE & ADDIS ABABA, ETHIOPIA [8.04°N, 37.85°E]",
+    status_strip_standing: "ACADEMIC: 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY",
+    status_strip_contact: `TEL: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • 2026 COMMISSIONS OPEN`,
     brand_sub: "4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY",
     nav_works: "Works",
     nav_skills: "Core Skills",
@@ -1514,6 +1517,9 @@ const KB_I18N = {
   am: {
     // Header & Navigation
     phone_label: "ስልክ:",
+    status_strip_location: "✦ ስቱዲዮ // ወልቂጤ እና አዲስ አበባ፣ ኢትዮጵያ [8.04°N, 37.85°E]",
+    status_strip_standing: "የትምህርት ደረጃ: 4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
+    status_strip_contact: `ስልክ: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • ለ2026 ክፍት`,
     brand_sub: "4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
     nav_works: "ስራዎች",
     nav_skills: "ዋና ክህሎቶች",
@@ -2109,6 +2115,7 @@ function initProjectsArchive() {
               <span>${isAm ? 'ዝርዝር ይመልከቱ' : 'View Case Study'}</span>
               <span class="case-study-arrow" aria-hidden="true">↗</span>
             </button>
+            <span class="card-action-grid-ref font-mono">${item.gridRef || 'MOD'}</span>
           </div>
         </div>
       </article>
