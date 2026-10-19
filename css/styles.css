@@ -50,6 +50,7 @@
   --bg-secondary: #F8FAFC;
   --bg-surface: #FFFFFF;
   --bg-surface-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
   --bg-dark-hero: #044771; /* KB Brand Navy */
   
   --text-primary: #0F172A;
@@ -78,6 +79,7 @@
   --bg-secondary: #06263B;
   --bg-surface: #09314C;
   --bg-surface-elevated: #0C3C5D;
+  --bg-card: #041E32;
   --bg-dark-hero: #021421;
   
   --text-primary: #F8FAFC;
@@ -497,6 +499,27 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   align-items: center;
 }
 
+/* Modern Hero Staggered Keyframes & Dynamic Kinetic Typography */
+@keyframes heroEntranceFadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes heroGlowPulse {
+  0%, 100% {
+    text-shadow: 0 0 18px rgba(255, 208, 66, 0.28), 0 0 36px rgba(255, 208, 66, 0.12);
+  }
+  50% {
+    text-shadow: 0 0 32px rgba(255, 208, 66, 0.52), 0 0 55px rgba(255, 208, 66, 0.22);
+  }
+}
+
 .hero-discipline-tag {
   font-family: var(--font-mono);
   font-size: var(--font-size-caption);
@@ -508,6 +531,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   align-items: center;
   gap: 0.5rem;
   font-weight: 700;
+  animation: heroEntranceFadeUp 0.85s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both;
 }
 
 .hero-main-title {
@@ -518,16 +542,31 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   letter-spacing: -0.04em;
   margin-bottom: var(--space-phi-md);
   text-transform: uppercase;
+  animation: heroEntranceFadeUp 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.18s both;
 }
 
 .hero-main-title .highlight-yellow {
   color: var(--brand-yellow);
-  text-shadow: 0 0 24px rgba(255, 208, 66, 0.25);
+  display: inline-block;
+  animation: heroGlowPulse 4.5s ease-in-out infinite;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), text-shadow 0.35s ease;
+}
+
+.hero-main-title:hover .highlight-yellow {
+  transform: translateY(-2px);
+  text-shadow: 0 0 38px rgba(255, 208, 66, 0.7);
 }
 
 .hero-main-title .outline-text {
   -webkit-text-stroke: 1.5px rgba(255, 255, 255, 0.9);
   color: transparent;
+  display: inline-block;
+  transition: -webkit-text-stroke 0.3s ease, color 0.3s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-main-title:hover .outline-text {
+  -webkit-text-stroke: 1.5px var(--brand-yellow);
+  transform: translateY(-2px);
 }
 
 .hero-bio-lead {
@@ -537,6 +576,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   max-width: 620px;
   margin-bottom: var(--space-phi-lg);
   font-weight: 400;
+  animation: heroEntranceFadeUp 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.28s both;
 }
 
 .hero-actions-group {
@@ -544,6 +584,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   align-items: center;
   gap: var(--space-phi-md);
   flex-wrap: wrap;
+  animation: heroEntranceFadeUp 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.48s both;
 }
 
 /* SINGLE DOMINANT PRIMARY CALL TO ACTION */
@@ -692,7 +733,8 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   text-align: center;
   position: relative;
   will-change: transform;
-  animation: emblemCardFloat 7s ease-in-out infinite alternate;
+  animation: heroEntranceFadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) 0.25s both,
+             emblemCardFloat 7s ease-in-out 1.25s infinite alternate;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
   overflow: hidden;
 }
@@ -3536,6 +3578,7 @@ body.dark-mode .academic-banner-tag {
   box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  animation: heroEntranceFadeUp 0.95s cubic-bezier(0.16, 1, 0.3, 1) 0.38s both;
   transition: border-color 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
 }
 
@@ -4860,12 +4903,15 @@ button:active,
 
 /* ==========================================================================
    CHAPTER 03: FREQUENTLY ASKED QUESTIONS (SWISS MORPH ACCORDION)
+   Pure High-Contrast Clear White Space Architecture (Light Mode)
+   with Seamless Dark & Blueprint Elevation Themes
    ========================================================================== */
 .kb-faq-section {
   position: relative;
   padding: 6.5rem 0;
-  background: linear-gradient(180deg, transparent 0%, rgba(2, 27, 44, 0.45) 50%, transparent 100%);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: #FFFFFF;
+  border-top: 1px solid #E2E8F0;
+  border-bottom: 1px solid #E2E8F0;
 }
 
 .faq-accordion-grid {
@@ -4873,14 +4919,15 @@ button:active,
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 0.95rem;
+  gap: 1.05rem;
 }
 
 .faq-accordion-item {
-  background: var(--bg-card);
-  border: 1px solid var(--border-color);
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
   border-radius: var(--radius-sm);
   overflow: hidden;
+  box-shadow: 0 4px 18px rgba(4, 71, 113, 0.04);
   transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               background 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
@@ -4888,14 +4935,15 @@ button:active,
 }
 
 .faq-accordion-item:hover {
-  border-color: rgba(255, 208, 66, 0.35);
-  transform: translateY(-1px);
+  border-color: #044771;
+  box-shadow: 0 8px 28px rgba(4, 71, 113, 0.08);
+  transform: translateY(-2px);
 }
 
 .faq-accordion-item.active {
-  background: rgba(4, 27, 44, 0.92);
-  border-color: rgba(255, 208, 66, 0.55);
-  box-shadow: 0 12px 36px -12px rgba(0, 0, 0, 0.5), 0 0 24px -6px rgba(255, 208, 66, 0.12);
+  background: #FFFFFF;
+  border-color: #044771;
+  box-shadow: 0 12px 36px rgba(4, 71, 113, 0.12), 0 0 0 1px #044771;
 }
 
 .faq-trigger-btn {
@@ -4903,14 +4951,14 @@ button:active,
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.35rem 1.85rem;
+  padding: 1.45rem 1.85rem;
   background: transparent;
   border: none;
   text-align: left;
   cursor: pointer;
-  color: var(--text-primary);
+  color: #0F172A;
   font-family: inherit;
-  font-size: 1.05rem;
+  font-size: 1.06rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   gap: 1.25rem;
@@ -4918,43 +4966,44 @@ button:active,
 }
 
 .faq-trigger-btn:focus-visible {
-  outline: 2px solid var(--brand-yellow);
+  outline: 2px solid var(--brand-navy);
   outline-offset: -2px;
 }
 
 .faq-accordion-item:hover .faq-trigger-btn {
-  color: var(--brand-yellow);
+  color: var(--brand-navy);
 }
 
 .faq-accordion-item.active .faq-trigger-btn {
-  color: var(--brand-yellow);
+  color: var(--brand-navy);
 }
 
 .faq-question-text {
   display: flex;
   align-items: baseline;
-  gap: 0.95rem;
+  gap: 1.1rem;
   line-height: 1.45;
   flex: 1;
 }
 
 .faq-num {
-  color: var(--brand-yellow);
-  font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  opacity: 0.85;
+  color: var(--brand-navy);
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  opacity: 1;
   flex-shrink: 0;
 }
 
 /* Morph Plus-to-Minus Icon */
 .faq-morph-icon {
   position: relative;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: #F8FAFC;
+  border: 1px solid #CBD5E1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -4963,14 +5012,14 @@ button:active,
 }
 
 .faq-trigger-btn:hover .faq-morph-icon {
-  border-color: rgba(255, 208, 66, 0.4);
-  background: rgba(255, 208, 66, 0.1);
+  border-color: var(--brand-navy);
+  background: rgba(4, 71, 113, 0.08);
 }
 
 .morph-line-h,
 .morph-line-v {
   position: absolute;
-  background: var(--text-primary);
+  background: #0F172A;
   border-radius: 2px;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
               background 0.3s ease,
@@ -4978,28 +5027,28 @@ button:active,
 }
 
 .morph-line-h {
-  width: 13px;
+  width: 14px;
   height: 2px;
 }
 
 .morph-line-v {
   width: 2px;
-  height: 13px;
+  height: 14px;
 }
 
 .faq-accordion-item.active .faq-morph-icon {
-  background: var(--brand-yellow);
-  border-color: var(--brand-yellow);
+  background: var(--brand-navy);
+  border-color: var(--brand-navy);
   transform: rotate(180deg);
 }
 
 .faq-accordion-item.active .morph-line-h {
-  background: #021B2C;
+  background: #FFFFFF;
   transform: rotate(180deg);
 }
 
 .faq-accordion-item.active .morph-line-v {
-  background: #021B2C;
+  background: #FFFFFF;
   transform: rotate(90deg) scale(0);
   opacity: 0;
 }
@@ -5021,12 +5070,12 @@ button:active,
 
 .faq-content-inner p {
   margin: 0;
-  padding: 0 1.85rem 1.65rem 1.85rem;
-  color: var(--text-secondary);
+  padding: 0 1.85rem 1.75rem 1.85rem;
+  color: #334155;
   line-height: 1.8;
-  font-size: 0.95rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.06);
-  padding-top: 1.15rem;
+  font-size: 0.97rem;
+  border-top: 1px solid #F1F5F9;
+  padding-top: 1.25rem;
   opacity: 0;
   transform: translateY(-4px);
   transition: opacity 0.32s ease, transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
@@ -5038,8 +5087,91 @@ button:active,
 }
 
 .faq-content-inner p strong {
-  color: var(--text-primary);
-  font-weight: 600;
+  color: #0F172A;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   FAQ DARK & BLUEPRINT THEME ADAPTATION
+   ========================================================================== */
+[data-theme="dark"] .kb-faq-section,
+[data-theme="blueprint"] .kb-faq-section {
+  background: #021421;
+  border-top-color: rgba(255, 255, 255, 0.08);
+  border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .faq-accordion-item,
+[data-theme="blueprint"] .faq-accordion-item {
+  background: #041E32;
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .faq-accordion-item:hover,
+[data-theme="blueprint"] .faq-accordion-item:hover {
+  border-color: var(--brand-yellow);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55), 0 0 16px rgba(255, 208, 66, 0.15);
+}
+
+[data-theme="dark"] .faq-accordion-item.active,
+[data-theme="blueprint"] .faq-accordion-item.active {
+  background: #06263E;
+  border-color: var(--brand-yellow);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(255, 208, 66, 0.2);
+}
+
+[data-theme="dark"] .faq-trigger-btn,
+[data-theme="blueprint"] .faq-trigger-btn {
+  color: #F8FAFC;
+}
+
+[data-theme="dark"] .faq-accordion-item:hover .faq-trigger-btn,
+[data-theme="dark"] .faq-accordion-item.active .faq-trigger-btn,
+[data-theme="blueprint"] .faq-accordion-item:hover .faq-trigger-btn,
+[data-theme="blueprint"] .faq-accordion-item.active .faq-trigger-btn {
+  color: var(--brand-yellow);
+}
+
+[data-theme="dark"] .faq-num,
+[data-theme="blueprint"] .faq-num {
+  color: var(--brand-yellow);
+  opacity: 0.95;
+}
+
+[data-theme="dark"] .faq-morph-icon,
+[data-theme="blueprint"] .faq-morph-icon {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+[data-theme="dark"] .morph-line-h,
+[data-theme="dark"] .morph-line-v,
+[data-theme="blueprint"] .morph-line-h,
+[data-theme="blueprint"] .morph-line-v {
+  background: #FFFFFF;
+}
+
+[data-theme="dark"] .faq-accordion-item.active .faq-morph-icon,
+[data-theme="blueprint"] .faq-accordion-item.active .faq-morph-icon {
+  background: var(--brand-yellow);
+  border-color: var(--brand-yellow);
+}
+
+[data-theme="dark"] .faq-accordion-item.active .morph-line-h,
+[data-theme="blueprint"] .faq-accordion-item.active .morph-line-h {
+  background: #021B2C;
+}
+
+[data-theme="dark"] .faq-content-inner p,
+[data-theme="blueprint"] .faq-content-inner p {
+  color: #CBD5E1;
+  border-top-color: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="dark"] .faq-content-inner p strong,
+[data-theme="blueprint"] .faq-content-inner p strong {
+  color: #FFFFFF;
 }
 
 @media (max-width: 768px) {
@@ -5055,17 +5187,17 @@ button:active,
     gap: 0.65rem;
   }
   .faq-num {
-    font-size: 0.78rem;
+    font-size: 0.82rem;
   }
   .faq-morph-icon {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
   }
   .morph-line-h {
-    width: 11px;
+    width: 12px;
   }
   .morph-line-v {
-    height: 11px;
+    height: 12px;
   }
   .faq-content-inner p {
     padding: 0 1.25rem 1.35rem 1.25rem;
