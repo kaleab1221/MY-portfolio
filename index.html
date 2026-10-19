@@ -229,7 +229,11 @@
        ======================================================================== -->
   <section class="hero-minimal-section" id="about">
     <div class="hero-minimal-bg-art" id="hero-bg-art">
+      <div class="hero-aura-orb hero-aura-orb-1" aria-hidden="true"></div>
+      <div class="hero-aura-orb hero-aura-orb-2" aria-hidden="true"></div>
+      <div class="hero-aura-orb hero-aura-orb-3" aria-hidden="true"></div>
       <div class="hero-branding-gradient-mesh" id="hero-branding-gradient" aria-hidden="true"></div>
+      <div class="hero-ambient-vignette" aria-hidden="true"></div>
     </div>
 
     <div class="container hero-content-grid-minimal">
@@ -286,9 +290,8 @@
         </div>
       </div>
 
-      <!-- Hero Official KB CREATIVE Studio Identity Card (3D Tilt & Specular Glare) -->
+      <!-- Hero Official KB CREATIVE Studio Identity Card -->
       <div class="hero-emblem-card reveal-on-scroll reveal-delay-1" id="hero-emblem-card">
-        <div class="card-glare-overlay"></div>
         <div class="hero-emblem-logo-wrap">
           <img src="assets/kb-logo.png" alt="KB CREATIVE Official Logo" class="hero-emblem-logo-img">
         </div>
@@ -939,11 +942,26 @@
         <span>•</span>
         <span>KB CREATIVE</span>
       </div>
-      <div>
-        <span data-i18n="footer_rights">ALL RIGHTS RESERVED © 2026</span> • <span data-i18n="phone_label">TEL:</span> +251 941263180
+      <div class="footer-actions-wrap" style="display: flex; align-items: center; gap: 1.5rem;">
+        <div>
+          <span data-i18n="footer_rights">ALL RIGHTS RESERVED © 2026</span> • <span data-i18n="phone_label">TEL:</span> +251 941263180
+        </div>
+        <!-- Bottom of website: Top Button Action with ONLY top icon (No text) -->
+        <button type="button" class="footer-top-btn" id="footer-top-btn" aria-label="Return to top of page" title="Back to top">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
       </div>
     </div>
   </footer>
+
+  <!-- Floating Scroll-To-Top Button (Icon Only, Appears on Scroll) -->
+  <button type="button" class="floating-scroll-top-btn" id="floating-scroll-top-btn" aria-label="Return to top of page" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
 
   <!-- Contemporary Pop-Up Toast Notifications Container -->
   <div class="kb-toast-container" id="kb-toast-container" aria-live="polite"></div>

@@ -34,31 +34,36 @@
 
     if (!ring || !dot) return;
 
-    let mouseX = window.innerWidth / 2;
-    let mouseY = window.innerHeight / 2;
-    let ringX = mouseX;
-    let ringY = mouseY;
-    let dotX = mouseX;
-    let dotY = mouseY;
+    let mouseX = -9999;
+    let mouseY = -9999;
+    let ringX = -9999;
+    let ringY = -9999;
+    let dotX = -9999;
+    let dotY = -9999;
 
     let magneticTarget = null;
-    let isVisible = false;
+    let isActivated = false;
 
     // Track mouse position
     window.addEventListener('mousemove', (e) => {
+      // Guard against synthetic 0,0 coordinates
+      if (e.clientX <= 0 && e.clientY <= 0) return;
+
       mouseX = e.clientX;
       mouseY = e.clientY;
-      if (!isVisible) {
-        isVisible = true;
-        ring.style.opacity = '1';
-        dot.style.opacity = '1';
+      if (!isActivated) {
+        isActivated = true;
+        ringX = dotX = mouseX;
+        ringY = dotY = mouseY;
+        ring.classList.add('cursor-active');
+        dot.classList.add('cursor-active');
       }
     });
 
     window.addEventListener('mouseleave', () => {
-      isVisible = false;
-      ring.style.opacity = '0';
-      dot.style.opacity = '0';
+      isActivated = false;
+      ring.classList.remove('cursor-active');
+      dot.classList.remove('cursor-active');
     });
 
     window.addEventListener('mousedown', () => {
@@ -83,7 +88,9 @@
         '.brand-identity-wrap',
         '.btn-card-view-case-study',
         '.theme-toggle-btn',
-        '.lang-toggle-btn'
+        '.lang-toggle-btn',
+        '.floating-scroll-top-btn',
+        '.footer-top-btn'
       ];
 
       document.querySelectorAll(magneticSelectors.join(', ')).forEach((el) => {
@@ -164,11 +171,28 @@
   }
 
   /* ==========================================================================
-     2. REAL-TIME SCROLL READING PROGRESS & FLOATING DYNAMIC ISLAND HUD
+     2. REAL-TIME SCROLL READING PROGRESS & FLOATING TOP BUTTON ACTION
      ========================================================================== */
   function initScrollProgressAndHUD() {
     const progressBar = document.getElementById('scroll-progress-bar');
+    const floatingTopBtn = document.getElementById('floating-scroll-top-btn');
+    const footerTopBtn = document.getElementById('footer-top-btn');
     let ticking = false;
+
+    function scrollToTop(e) {
+      if (e) e.preventDefault();
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+
+    if (floatingTopBtn) {
+      floatingTopBtn.addEventListener('click', scrollToTop);
+    }
+    if (footerTopBtn) {
+      footerTopBtn.addEventListener('click', scrollToTop);
+    }
 
     window.addEventListener('scroll', () => {
       if (!ticking) {
@@ -188,6 +212,15 @@
       // Update golden progress bar
       if (progressBar) {
         progressBar.style.width = `${progressPercent.toFixed(2)}%`;
+      }
+
+      // Floating top button visibility toggle (icon only)
+      if (floatingTopBtn) {
+        if (scrollTop > 350) {
+          floatingTopBtn.classList.add('is-visible');
+        } else {
+          floatingTopBtn.classList.remove('is-visible');
+        }
       }
     }
 
