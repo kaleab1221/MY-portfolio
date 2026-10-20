@@ -219,6 +219,10 @@
        ======================================================================== -->
   <section class="hero-minimal-section" id="about">
     <div class="hero-minimal-bg-art" id="hero-bg-art">
+      <!-- React Bits: 3D GridScan WebGL2 Architectural Scanner -->
+      <div id="hero-grid-scan" class="grid-scan" aria-hidden="true">
+        <canvas id="grid-scan-canvas" class="grid-scan-canvas"></canvas>
+      </div>
       <div class="hero-aura-orb hero-aura-orb-1" aria-hidden="true"></div>
       <div class="hero-aura-orb hero-aura-orb-2" aria-hidden="true"></div>
       <div class="hero-aura-orb hero-aura-orb-3" aria-hidden="true"></div>
@@ -942,6 +946,7 @@
   <div class="kb-toast-container" id="kb-toast-container" aria-live="polite"></div>
 
   <!-- Core JavaScript Files -->
+  <script src="js/gridscan.js"></script>
   <script src="js/main.js"></script>
   <script src="js/interactive.js"></script>
   <script>
