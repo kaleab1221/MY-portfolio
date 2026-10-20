@@ -465,6 +465,15 @@ void main() {
 
     const isLightMode = () => document.documentElement.getAttribute('data-theme') === 'light' && !document.body.classList.contains('dark-mode');
 
+    const isMobile = () => {
+      return (
+        window.innerWidth <= 768 ||
+        (window.matchMedia && window.matchMedia('(max-width: 768px)').matches) ||
+        (window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches) ||
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent || '')
+      );
+    };
+
     const opts = Object.assign({
       linesColor: '#e2d90c',
       scanColor: '#7dd3fc',
@@ -493,31 +502,32 @@ void main() {
 
     function getSettings() {
       const light = isLightMode();
+      const mob = isMobile();
       return {
         linesColor: light ? '#044771' : opts.linesColor,
         scanColor: light ? '#0284c7' : opts.scanColor,
-        cells: clamp(opts.cells, 2, 40),
-        thickness: clamp(opts.lineThickness, 0.5, 4),
+        cells: mob ? 6 : clamp(opts.cells, 2, 40),
+        thickness: mob ? 0.75 : clamp(opts.lineThickness, 0.5, 4),
         style: STYLES[opts.lineStyle] ?? 0,
         depth: clamp(opts.depth, 0.5, 12),
-        depthFade: clamp(opts.depthFade, 0, 1),
-        parallax: clamp(opts.parallax, 0, 3),
-        points: opts.points,
-        reflection: clamp(opts.reflection, 0, 1),
-        shading: clamp(opts.shading, 0, 1),
+        depthFade: mob ? 0.75 : clamp(opts.depthFade, 0, 1),
+        parallax: mob ? 0 : clamp(opts.parallax, 0, 3),
+        points: mob ? false : opts.points,
+        reflection: mob ? 0.35 : clamp(opts.reflection, 0, 1),
+        shading: mob ? 0.35 : clamp(opts.shading, 0, 1),
         direction: opts.scanDirection,
         duration: clamp(opts.scanDuration, 0.3, 20),
         delay: clamp(opts.scanDelay, 0, 30),
         scanWidth: clamp(opts.scanWidth, 0.2, 5),
         trail: clamp(opts.trail, 0, 1),
-        glow: clamp(opts.glow, 0, 1.5),
+        glow: mob ? 0 : clamp(opts.glow, 0, 1.5),
         autoScan: opts.autoScan,
-        interactive: opts.interactive,
+        interactive: mob ? false : opts.interactive,
         clickEffect: opts.clickEffect,
         enableGyro: opts.enableGyro,
         intro: opts.intro,
         lightMode: light,
-        dpr: opts.dpr
+        dpr: mob ? 1 : opts.dpr
       };
     }
 
@@ -640,14 +650,16 @@ void main() {
       gl.bindFramebuffer(gl.FRAMEBUFFER, sceneBuffer);
       gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, scene.texture, 0);
       gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT1, gl.TEXTURE_2D, light.texture, 0);
-      const bw = Math.max(1, Math.round(canvas.width / 4));
-      const bh = Math.max(1, Math.round(canvas.height / 4));
-      sizeTarget(gl, bloomA, bw, bh);
-      sizeTarget(gl, bloomB, bw, bh);
-      gl.bindFramebuffer(gl.FRAMEBUFFER, bloomBufferA);
-      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, bloomA.texture, 0);
-      gl.bindFramebuffer(gl.FRAMEBUFFER, bloomBufferB);
-      gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, bloomB.texture, 0);
+      if (s.glow > 0) {
+        const bw = Math.max(1, Math.round(canvas.width / 4));
+        const bh = Math.max(1, Math.round(canvas.height / 4));
+        sizeTarget(gl, bloomA, bw, bh);
+        sizeTarget(gl, bloomB, bw, bh);
+        gl.bindFramebuffer(gl.FRAMEBUFFER, bloomBufferA);
+        gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, bloomA.texture, 0);
+        gl.bindFramebuffer(gl.FRAMEBUFFER, bloomBufferB);
+        gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, bloomB.texture, 0);
+      }
       gl.bindFramebuffer(gl.FRAMEBUFFER, null);
       draw();
       wake();
@@ -732,10 +744,22 @@ void main() {
       gl.activeTexture(gl.TEXTURE0);
     };
 
+    let lastRenderTime = 0;
     const frame = now => {
       raf = 0;
       if (!visible || document.hidden) return;
       const s = getSettings();
+      const mob = isMobile();
+
+      // Mobile FPS governor: limit to ~30 FPS on phone devices to save battery and prevent heat/lag
+      if (mob) {
+        if (now - lastRenderTime < 32) {
+          raf = requestAnimationFrame(frame);
+          return;
+        }
+      }
+      lastRenderTime = now;
+
       const dt = last ? clamp((now - last) / 1000, 0.001, 0.05) : 1 / 60;
       last = now;
       time += dt;
@@ -745,7 +769,7 @@ void main() {
       aimEye(s);
       updateEye(dt);
 
-      const aim = s.interactive && pointer.inside && !reduce ? 1 : 0;
+      const aim = s.interactive && pointer.inside && !reduce && !mob ? 1 : 0;
       if (aim) {
         const target = castRay(pointer.x, pointer.y);
         if (!hover.ready) Object.assign(hover, target, { ready: true });
@@ -802,8 +826,28 @@ void main() {
       return { u, v, inside: u >= 0 && u <= 1 && v >= 0 && v <= 1 };
     };
 
-    const onPointerMove = event => {
+    const triggerPingAtEvent = event => {
       const s = getSettings();
+      if (reduce || s.clickEffect === 'none') return;
+      const { u, v, inside } = locate(event);
+      if (!inside) return;
+      if (s.clickEffect === 'scan') {
+        if (introClock >= 1) startSweep(s);
+      } else {
+        const hit = castRay(u, v);
+        pings.unshift({ ...hit, age: 0 });
+        if (pings.length > MAX_PINGS) pings.pop();
+      }
+      wake();
+    };
+
+    const onPointerMove = event => {
+      // Discard touchmove events completely: phone users are scrolling/swiping!
+      if (event.pointerType === 'touch') return;
+
+      const s = getSettings();
+      if (!s.interactive || reduce) return;
+
       const { u, v, inside } = locate(event);
       pointer.x = u;
       pointer.y = v;
@@ -812,7 +856,7 @@ void main() {
       if (inside) {
         window.clearTimeout(leaveTimer);
         leaveTimer = 0;
-        if (s.interactive && !reduce) setLook(u * 2 - 1, v * 2 - 1, true);
+        setLook(u * 2 - 1, v * 2 - 1, true);
         wake();
       } else if (was && !leaveTimer) {
         leaveTimer = window.setTimeout(() => {
@@ -824,22 +868,31 @@ void main() {
       }
     };
 
+    let touchDownTime = 0;
+    let touchDownPos = { x: 0, y: 0 };
+
     const onPointerDown = event => {
       // Don't intercept clicks on interactive buttons, links, or form elements
       if (event.target && (event.target.closest('a, button, input, textarea, select, .hero-emblem-card'))) {
         return;
       }
-      const s = getSettings();
-      const { u, v, inside } = locate(event);
-      if (!inside || reduce || s.clickEffect === 'none') return;
-      if (s.clickEffect === 'scan') {
-        if (introClock >= 1) startSweep(s);
-      } else {
-        const hit = castRay(u, v);
-        pings.unshift({ ...hit, age: 0 });
-        if (pings.length > MAX_PINGS) pings.pop();
+      if (event.pointerType === 'touch') {
+        touchDownTime = performance.now();
+        touchDownPos = { x: event.clientX, y: event.clientY };
+        return;
       }
-      wake();
+      triggerPingAtEvent(event);
+    };
+
+    const onPointerUp = event => {
+      if (event.pointerType === 'touch') {
+        const elapsed = performance.now() - touchDownTime;
+        const dist = Math.hypot(event.clientX - touchDownPos.x, event.clientY - touchDownPos.y);
+        // Only trigger ping if user tapped briefly without scrolling (< 250ms & < 10px drift)
+        if (elapsed < 250 && dist < 10) {
+          triggerPingAtEvent(event);
+        }
+      }
     };
 
     const onPointerLeave = () => {
@@ -869,8 +922,13 @@ void main() {
       if (visible) {
         last = 0;
         wake();
+      } else {
+        if (raf) {
+          cancelAnimationFrame(raf);
+          raf = 0;
+        }
       }
-    });
+    }, { threshold: 0.02 });
     intersection.observe(container);
 
     const themeObserver = new MutationObserver(() => {
@@ -882,7 +940,10 @@ void main() {
     const heroSection = document.getElementById('about') || container;
     heroSection.addEventListener('pointermove', onPointerMove, { passive: true });
     heroSection.addEventListener('pointerdown', onPointerDown, { passive: true });
-    window.addEventListener('deviceorientation', onOrientation);
+    heroSection.addEventListener('pointerup', onPointerUp, { passive: true });
+    if (opts.enableGyro) {
+      window.addEventListener('deviceorientation', onOrientation);
+    }
     document.documentElement.addEventListener('pointerleave', onPointerLeave);
     document.addEventListener('visibilitychange', onVisibility);
 
@@ -900,7 +961,10 @@ void main() {
         themeObserver.disconnect();
         heroSection.removeEventListener('pointermove', onPointerMove);
         heroSection.removeEventListener('pointerdown', onPointerDown);
-        window.removeEventListener('deviceorientation', onOrientation);
+        heroSection.removeEventListener('pointerup', onPointerUp);
+        if (opts.enableGyro) {
+          window.removeEventListener('deviceorientation', onOrientation);
+        }
         document.documentElement.removeEventListener('pointerleave', onPointerLeave);
         document.removeEventListener('visibilitychange', onVisibility);
         [scene, light, bloomA, bloomB].forEach(target => gl.deleteTexture(target.texture));
