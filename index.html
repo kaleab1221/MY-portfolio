@@ -27,10 +27,17 @@
   <title>KALEEGZIABHER FEKEDE — 4th Year Architecture Student at Wolkite University &amp; Founder of KB CREATIVE</title>
   <meta name="description" content="Portfolio of Kaleegziabher Fekede — 4th Year Architecture Student at Wolkite University and Founder of KB CREATIVE. Spatial architecture, interior design, technical 3D visualization, and brand identity systems.">
 
-  <!-- Premium Typography: Plus Jakarta Sans (Modern Display) + Space Grotesk (Architectural Sans) + Inter (Editorial Body) + JetBrains Mono (Technical Coordinates) + Noto Sans Ethiopic -->
+  <!-- Preload Critical Logo Asset to Eliminate Layout Shift & Accelerate Initial Paint -->
+  <link rel="preload" as="image" href="assets/kb-logo.png" type="image/png">
+
+  <!-- High-Performance Typography: Streamlined font weights + non-render-blocking font loading -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&family=Noto+Sans+Ethiopic:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  </noscript>
 
   <!-- Core Stylesheet: Pure White Light Mode, Brand Navy (#044771) & Gold (#FFD042), Swiss Modular Grid -->
   <link rel="stylesheet" href="css/styles.css">
@@ -57,7 +64,7 @@
     <div class="container nav-layout">
       <!-- Official KB CREATIVE Studio Logo & Typography Block -->
       <a href="#" class="brand-identity-wrap" aria-label="Kaleegziabher Fekede KB Creative Home">
-        <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" class="kb-logo-header-img">
+        <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" class="kb-logo-header-img" width="38" height="38" decoding="async" fetchpriority="high">
         <div class="brand-text-block">
           <span class="brand-name">KALEEGZIABHER FEKEDE</span>
           <span class="brand-sub" data-i18n="brand_sub">4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY</span>
@@ -287,7 +294,7 @@
       <!-- Hero Official KB CREATIVE Studio Identity Card -->
       <div class="hero-emblem-card reveal-on-scroll reveal-delay-1" id="hero-emblem-card">
         <div class="hero-emblem-logo-wrap">
-          <img src="assets/kb-logo.png" alt="KB CREATIVE Official Logo" class="hero-emblem-logo-img">
+          <img src="assets/kb-logo.png" alt="KB CREATIVE Official Logo" class="hero-emblem-logo-img" width="76" height="76" decoding="async">
         </div>
         <h2 class="hero-emblem-title">KALEEGZIABHER FEKEDE</h2>
         <div class="hero-emblem-subtitle" data-i18n="brand_sub">4th Year Architecture Student • Wolkite University</div>
@@ -914,7 +921,7 @@
   <footer class="studio-main-footer">
     <div class="container footer-flex-wrap">
       <div style="display: flex; align-items: center; gap: 0.75rem;">
-        <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" style="width: 24px; height: 24px; object-fit: contain;">
+        <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" width="24" height="24" decoding="async" style="width: 24px; height: 24px; object-fit: contain;">
         <span class="text-gold font-bold">KALEEGZIABHER FEKEDE</span>
         <span>•</span>
         <span data-i18n="brand_sub">4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY</span>
@@ -945,10 +952,10 @@
   <!-- Contemporary Pop-Up Toast Notifications Container -->
   <div class="kb-toast-container" id="kb-toast-container" aria-live="polite"></div>
 
-  <!-- Core JavaScript Files -->
-  <script src="js/gridscan.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/interactive.js"></script>
+  <!-- Core JavaScript Files (Deferred for Non-Blocking Initial Page Paint) -->
+  <script defer src="js/gridscan.js"></script>
+  <script defer src="js/main.js"></script>
+  <script defer src="js/interactive.js"></script>
   <script>
     function handleContactSubmit(e) {
       e.preventDefault();

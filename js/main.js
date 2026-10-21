@@ -2041,7 +2041,7 @@ function initProjectsArchive() {
 
         <!-- Media Carousel with Exposed Multi-Slide Controls -->
         <div class="carousel-media-wrap" onclick="openCaseStudy('${item.id}')" title="Click to open case study">
-          <img src="${currentSlide.url}" alt="${localizedItem.title}" class="carousel-slide-img" id="img-${item.id}" loading="lazy" style="${currentSlide.fit === 'contain' ? `object-fit: contain; background: ${currentSlide.bg || '#041B2B'};`: ''}">
+          <img src="${currentSlide.url}" alt="${localizedItem.title}" class="carousel-slide-img" id="img-${item.id}" loading="lazy" decoding="async" style="${currentSlide.fit === 'contain' ? `object-fit: contain; background: ${currentSlide.bg || '#041B2B'};`: ''}">
           
           <!-- BIG.dk Signature Architectural Showcase Hover Overlay -->
           <div class="big-hover-scrim">
@@ -2134,6 +2134,8 @@ const cardSlideIntervals = {};
 const cardResetTimeouts = {};
 
 window.startCardAutoSlide = function(projectId) {
+  // Never run auto-slide hover timers on mobile/touch screens
+  if (window.matchMedia('(hover: none) and (pointer: coarse)').matches) return;
   const project = KB_PROJECTS.find(p => p.id === projectId);
   if (!project || project.slides.length <= 1) return;
 

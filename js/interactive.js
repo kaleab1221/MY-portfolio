@@ -592,31 +592,40 @@
     const navLinks = document.querySelectorAll('.desktop-nav-wrap .nav-item-link');
     if (!navLinks.length) return;
 
+    let spyTicking = false;
     function onScrollSpy() {
-      const scrollPos = (window.scrollY || window.pageYOffset) + 160;
-      let currentSectionId = '';
+      if (window.innerWidth <= 768) return; // Desktop nav is hidden on mobile; avoid reflow calculations
 
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const sec = document.getElementById(sections[i]);
-        if (sec) {
-          const top = sec.offsetTop;
-          if (scrollPos >= top) {
-            currentSectionId = sections[i];
-            break;
+      if (!spyTicking) {
+        requestAnimationFrame(() => {
+          const scrollPos = (window.scrollY || window.pageYOffset) + 160;
+          let currentSectionId = '';
+
+          for (let i = sections.length - 1; i >= 0; i--) {
+            const sec = document.getElementById(sections[i]);
+            if (sec) {
+              const top = sec.offsetTop;
+              if (scrollPos >= top) {
+                currentSectionId = sections[i];
+                break;
+              }
+            }
           }
-        }
-      }
 
-      navLinks.forEach((link) => {
-        const href = link.getAttribute('href');
-        if (href === `#${currentSectionId}` || (currentSectionId === 'about' && href === '#work' && scrollPos < 350)) {
-          link.classList.add('active');
-        } else if (href === `#${currentSectionId}`) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
+          navLinks.forEach((link) => {
+            const href = link.getAttribute('href');
+            if (href === `#${currentSectionId}` || (currentSectionId === 'about' && href === '#work' && scrollPos < 350)) {
+              link.classList.add('active');
+            } else if (href === `#${currentSectionId}`) {
+              link.classList.add('active');
+            } else {
+              link.classList.remove('active');
+            }
+          });
+          spyTicking = false;
+        });
+        spyTicking = true;
+      }
     }
 
     window.addEventListener('scroll', onScrollSpy, { passive: true });

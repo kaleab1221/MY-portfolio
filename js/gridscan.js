@@ -947,6 +947,24 @@ void main() {
     document.documentElement.addEventListener('pointerleave', onPointerLeave);
     document.addEventListener('visibilitychange', onVisibility);
 
+    // Mobile scroll governor: pause rendering during active touch-scroll to guarantee 60-120fps fluid scrolling
+    let scrollPauseTimer = null;
+    const onScroll = () => {
+      if (!isMobile()) return;
+      if (raf) {
+        cancelAnimationFrame(raf);
+        raf = 0;
+      }
+      clearTimeout(scrollPauseTimer);
+      scrollPauseTimer = setTimeout(() => {
+        if (visible && !document.hidden) {
+          last = 0;
+          wake();
+        }
+      }, 120);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
     resize();
     wake();
 
@@ -956,12 +974,14 @@ void main() {
       destroy: () => {
         cancelAnimationFrame(raf);
         window.clearTimeout(leaveTimer);
+        clearTimeout(scrollPauseTimer);
         resizeObserver.disconnect();
         intersection.disconnect();
         themeObserver.disconnect();
         heroSection.removeEventListener('pointermove', onPointerMove);
         heroSection.removeEventListener('pointerdown', onPointerDown);
         heroSection.removeEventListener('pointerup', onPointerUp);
+        window.removeEventListener('scroll', onScroll);
         if (opts.enableGyro) {
           window.removeEventListener('deviceorientation', onOrientation);
         }
@@ -976,10 +996,13 @@ void main() {
     };
   }
 
-  // Auto-mount on DOM ready
+  // Auto-mount on DOM ready with idle scheduling on mobile
   function init() {
     const heroScanContainer = document.getElementById('hero-grid-scan');
-    if (heroScanContainer) {
+    if (!heroScanContainer) return;
+
+    const startScanner = () => {
+      if (window.gridScanInstance) return;
       window.gridScanInstance = createGridScan(heroScanContainer, {
         linesColor: '#e2d90c',
         scanColor: '#7dd3fc',
@@ -1000,6 +1023,18 @@ void main() {
         interactive: true,
         intro: true
       });
+    };
+
+    // On phone devices, allow initial layout, critical fonts, and hero text to paint first
+    const isMobileDevice = window.innerWidth <= 768 || (window.matchMedia && window.matchMedia('(max-width: 768px)').matches);
+    if (isMobileDevice) {
+      if ('requestIdleCallback' in window) {
+        requestIdleCallback(startScanner, { timeout: 1200 });
+      } else {
+        setTimeout(startScanner, 150);
+      }
+    } else {
+      startScanner();
     }
   }
 
