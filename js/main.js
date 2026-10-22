@@ -1387,6 +1387,7 @@ const KB_I18N = {
     cta_initiate: "Initiate Collaboration",
     menu_label: "MENU",
     menu_header: "KB CREATIVE // MENU",
+    hud_stage_title: "STAGE // BG SELECTOR",
     
     // Mobile Drawer
     mob_sub_works: "16 Curated Works • Spatial & Brand",
@@ -1528,6 +1529,7 @@ const KB_I18N = {
     cta_initiate: "አብረን እንስራ",
     menu_label: "ማውጫ",
     menu_header: "KB CREATIVE // ማውጫ",
+    hud_stage_title: "የጀርባ ገጽታ // መምረጫ",
     
     // Mobile Drawer
     mob_sub_works: "16 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
