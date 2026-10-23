@@ -226,14 +226,10 @@
        ======================================================================== -->
   <section class="hero-minimal-section" id="about">
     <div class="hero-minimal-bg-art" id="hero-bg-art">
-      <!-- Mode 1: React Bits 3D GridScan WebGL2 Architectural Scanner -->
-      <div id="hero-grid-scan" class="grid-scan hero-stage-layer" aria-hidden="true">
+      <!-- React Bits: 3D GridScan WebGL2 Architectural Scanner -->
+      <div id="hero-grid-scan" class="grid-scan" aria-hidden="true">
         <canvas id="grid-scan-canvas" class="grid-scan-canvas"></canvas>
       </div>
-      <!-- Mode 2: Cyber Architectural Blueprint Matrix Canvas -->
-      <canvas id="hero-blueprint-canvas" class="hero-stage-canvas blueprint-canvas hero-stage-layer" aria-hidden="true"></canvas>
-      <!-- Mode 3: Celestial Tectonic Node Mesh Canvas -->
-      <canvas id="hero-tectonic-canvas" class="hero-stage-canvas tectonic-canvas hero-stage-layer" aria-hidden="true"></canvas>
       <div class="hero-aura-orb hero-aura-orb-1" aria-hidden="true"></div>
       <div class="hero-aura-orb hero-aura-orb-2" aria-hidden="true"></div>
       <div class="hero-aura-orb hero-aura-orb-3" aria-hidden="true"></div>
@@ -945,57 +941,6 @@
       </div>
     </div>
   </footer>
-
-  <!-- Architectural Stage & Background Engine HUD Controller -->
-  <aside class="arch-stage-hud" id="arch-stage-hud" aria-label="Interactive Background Stage Controller">
-    <div class="stage-hud-card" id="stage-hud-card">
-      <div class="stage-hud-header">
-        <span class="hud-status-dot" aria-hidden="true"></span>
-        <span class="hud-title font-mono" data-i18n="hud_stage_title">STAGE // BG SELECTOR</span>
-        <button type="button" class="stage-hud-toggle-btn" id="stage-hud-toggle-btn" aria-label="Toggle Stage Controls" title="Collapse / Expand Stage Controls">
-          <span class="hud-toggle-icon" id="hud-toggle-icon" aria-hidden="true">−</span>
-        </button>
-      </div>
-
-      <div class="stage-hud-body" id="stage-hud-body">
-        <!-- 4 Interactive Background Modes -->
-        <div class="stage-mode-selector" role="radiogroup" aria-label="Select Background Mode">
-          <button type="button" class="stage-mode-btn active" data-mode="lidar" role="radio" aria-checked="true" title="3D WebGL2 LiDAR Perspective Corridor">
-            <span class="mode-btn-icon" aria-hidden="true">⚡</span>
-            <span class="mode-btn-text">LiDAR 3D</span>
-            <span class="mode-indicator font-mono">ON</span>
-          </button>
-          <button type="button" class="stage-mode-btn" data-mode="blueprint" role="radio" aria-checked="false" title="Parametric CAD Architectural Blueprint">
-            <span class="mode-btn-icon" aria-hidden="true">📐</span>
-            <span class="mode-btn-text">Blueprint</span>
-            <span class="mode-indicator font-mono">OFF</span>
-          </button>
-          <button type="button" class="stage-mode-btn" data-mode="tectonic" role="radio" aria-checked="false" title="Celestial Tectonic Structural Node Mesh">
-            <span class="mode-btn-icon" aria-hidden="true">✦</span>
-            <span class="mode-btn-text">Tectonic</span>
-            <span class="mode-indicator font-mono">OFF</span>
-          </button>
-          <button type="button" class="stage-mode-btn" data-mode="studio" role="radio" aria-checked="false" title="Minimalist Bauhaus Studio Ambient Surface">
-            <span class="mode-btn-icon" aria-hidden="true">◻</span>
-            <span class="mode-btn-text">Minimal</span>
-            <span class="mode-indicator font-mono">OFF</span>
-          </button>
-        </div>
-
-        <!-- Laser Accent Swatches (for LiDAR & Blueprint Modes) -->
-        <div class="stage-laser-strip" id="stage-laser-strip">
-          <span class="laser-strip-label font-mono">ACCENT:</span>
-          <div class="laser-swatches">
-            <button type="button" class="laser-swatch-btn active" data-color="#7dd3fc" style="--swatch-color: #7dd3fc;" aria-label="Cyan Accent" title="Electric Cyan"></button>
-            <button type="button" class="laser-swatch-btn" data-color="#ffd042" style="--swatch-color: #ffd042;" aria-label="Gold Accent" title="Ochre Gold"></button>
-            <button type="button" class="laser-swatch-btn" data-color="#10b981" style="--swatch-color: #10b981;" aria-label="Emerald Accent" title="Atelier Emerald"></button>
-            <button type="button" class="laser-swatch-btn" data-color="#f43f5e" style="--swatch-color: #f43f5e;" aria-label="Rose Accent" title="Cyber Rose"></button>
-            <button type="button" class="laser-swatch-btn" data-color="#ffffff" style="--swatch-color: #ffffff;" aria-label="Silver Accent" title="Titanium White"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </aside>
 
   <!-- Floating Scroll-To-Top Button (Icon Only, Appears on Scroll) -->
   <button type="button" class="floating-scroll-top-btn" id="floating-scroll-top-btn" aria-label="Return to top of page" title="Back to top">

@@ -5517,10 +5517,9 @@ button:active,
 }
 
 /* ==========================================================================
-   25. ARCHITECTURAL STAGE & BACKGROUND SUITE
-   Modes: 3D LiDAR WebGL2, CAD Blueprint Matrix, Tectonic Mesh, Bauhaus Studio
+   25. REACT BITS // GRIDSCAN WEBGL2 ARCHITECTURAL BACKGROUND ENGINE
    ========================================================================== */
-.hero-stage-layer {
+.grid-scan {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -5528,25 +5527,9 @@ button:active,
   overflow: hidden;
   z-index: 3;
   pointer-events: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.5s;
 }
 
-.hero-stage-layer.active-stage {
-  opacity: 1;
-  visibility: visible;
-}
-
-.grid-scan {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.grid-scan-canvas,
-.hero-stage-canvas {
+.grid-scan-canvas {
   position: absolute;
   inset: 0;
   display: block;
@@ -5557,274 +5540,18 @@ button:active,
 }
 
 [data-theme="dark"] .grid-scan,
-[data-theme="dark"] .blueprint-canvas,
-[data-theme="dark"] .tectonic-canvas,
-body.dark-mode .grid-scan,
-body.dark-mode .blueprint-canvas,
-body.dark-mode .tectonic-canvas {
+body.dark-mode .grid-scan {
   mix-blend-mode: screen;
-}
-
-/* ==========================================================================
-   26. ARCHITECTURAL STAGE & BACKGROUND HUD CONTROLLER (GLASSMORPHIC DOCK)
-   ========================================================================== */
-.arch-stage-hud {
-  position: fixed;
-  bottom: 1.75rem;
-  left: 1.75rem;
-  z-index: 850;
-  font-family: var(--font-mono);
-  pointer-events: auto;
-  user-select: none;
-}
-
-.stage-hud-card {
-  background: rgba(2, 22, 36, 0.88);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(255, 208, 66, 0.3);
-  border-radius: var(--radius-sm, 8px);
-  padding: 0.75rem 0.95rem;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.55), 0 0 24px rgba(4, 71, 113, 0.35);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  min-width: 250px;
-}
-
-[data-theme="light"] .stage-hud-card {
-  background: rgba(255, 255, 255, 0.92);
-  border-color: rgba(4, 71, 113, 0.25);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12), 0 0 16px rgba(4, 71, 113, 0.08);
-}
-
-.stage-hud-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.65rem;
-  margin-bottom: 0.65rem;
-}
-
-.hud-status-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #10b981;
-  box-shadow: 0 0 8px #10b981;
-  animation: hudPulse 2s infinite ease-in-out;
-  flex-shrink: 0;
-}
-
-@keyframes hudPulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.3); opacity: 0.6; }
-}
-
-.hud-title {
-  font-size: 0.68rem;
-  font-weight: 700;
-  letter-spacing: 0.14em;
-  color: var(--brand-yellow);
-  flex-grow: 1;
-}
-
-[data-theme="light"] .hud-title {
-  color: var(--brand-navy, #044771);
-}
-
-.stage-hud-toggle-btn {
-  background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  color: inherit;
-  width: 22px;
-  height: 22px;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 0.85rem;
-  line-height: 1;
-  transition: all 0.2s ease;
-}
-
-[data-theme="light"] .stage-hud-toggle-btn {
-  border-color: rgba(4, 71, 113, 0.2);
-  color: var(--brand-navy, #044771);
-}
-
-.stage-hud-toggle-btn:hover {
-  background: rgba(255, 208, 66, 0.2);
-  border-color: var(--brand-yellow);
-}
-
-/* 4 Stage Mode Buttons */
-.stage-mode-selector {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.4rem;
-}
-
-.stage-mode-btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.35rem;
-  padding: 0.45rem 0.6rem;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 4px;
-  color: rgba(255, 255, 255, 0.82);
-  font-family: inherit;
-  font-size: 0.7rem;
-  cursor: pointer;
-  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
-  text-align: left;
-}
-
-[data-theme="light"] .stage-mode-btn {
-  background: rgba(4, 71, 113, 0.04);
-  border-color: rgba(4, 71, 113, 0.15);
-  color: #044771;
-}
-
-.stage-mode-btn:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 208, 66, 0.5);
-  color: #ffffff;
-}
-
-[data-theme="light"] .stage-mode-btn:hover {
-  background: rgba(4, 71, 113, 0.1);
-  border-color: #044771;
-}
-
-.stage-mode-btn.active {
-  background: rgba(255, 208, 66, 0.16);
-  border-color: var(--brand-yellow);
-  color: var(--brand-yellow);
-  box-shadow: 0 0 12px rgba(255, 208, 66, 0.25);
-  font-weight: 700;
-}
-
-[data-theme="light"] .stage-mode-btn.active {
-  background: #044771;
-  border-color: #044771;
-  color: #ffffff;
-  box-shadow: 0 4px 12px rgba(4, 71, 113, 0.25);
-}
-
-.mode-btn-icon {
-  font-size: 0.78rem;
-  flex-shrink: 0;
-}
-
-.mode-btn-text {
-  flex-grow: 1;
-}
-
-.mode-indicator {
-  font-size: 0.58rem;
-  opacity: 0.7;
-  letter-spacing: 0.05em;
-}
-
-.stage-mode-btn.active .mode-indicator {
-  opacity: 1;
-  font-weight: 800;
-}
-
-/* Laser & Accent Swatch Strip */
-.stage-laser-strip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-top: 0.65rem;
-  padding-top: 0.55rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-[data-theme="light"] .stage-laser-strip {
-  border-top-color: rgba(4, 71, 113, 0.15);
-}
-
-.laser-strip-label {
-  font-size: 0.62rem;
-  letter-spacing: 0.12em;
-  opacity: 0.75;
-}
-
-.laser-swatches {
-  display: flex;
-  align-items: center;
-  gap: 0.45rem;
-}
-
-.laser-swatch-btn {
-  width: 17px;
-  height: 17px;
-  border-radius: 50%;
-  background: var(--swatch-color);
-  border: 2px solid transparent;
-  cursor: pointer;
-  padding: 0;
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
-}
-
-.laser-swatch-btn:hover {
-  transform: scale(1.18);
-  box-shadow: 0 0 8px var(--swatch-color);
-}
-
-.laser-swatch-btn.active {
-  transform: scale(1.24);
-  border-color: #ffffff;
-  box-shadow: 0 0 12px var(--swatch-color);
-}
-
-[data-theme="light"] .laser-swatch-btn.active {
-  border-color: #044771;
-}
-
-/* Collapsed HUD State */
-.arch-stage-hud.collapsed .stage-hud-body {
-  display: none;
-}
-
-.arch-stage-hud.collapsed .stage-hud-header {
-  margin-bottom: 0;
-}
-
-.arch-stage-hud.collapsed .stage-hud-card {
-  min-width: auto;
-  padding: 0.45rem 0.75rem;
+  opacity: 0.95;
 }
 
 /* Mobile Phone Performance & Fitting Optimizations */
 @media (max-width: 768px) {
-  .hero-stage-layer {
-    opacity: 0;
+  .grid-scan {
+    opacity: 0.82;
   }
-  .hero-stage-layer.active-stage {
-    opacity: 0.85;
-  }
-  .arch-stage-hud {
-    bottom: 1rem;
-    left: 1rem;
-    max-width: calc(100vw - 2rem);
-  }
-  .stage-hud-card {
-    min-width: 220px;
-    padding: 0.65rem 0.8rem;
-  }
-  .stage-mode-selector {
-    grid-template-columns: 1fr 1fr;
-    gap: 0.35rem;
-  }
-  .stage-mode-btn {
-    padding: 0.4rem 0.5rem;
-    font-size: 0.68rem;
+  .grid-scan-canvas {
+    touch-action: pan-y;
   }
   .hero-minimal-bg-art {
     transform: translateZ(0);
@@ -5884,6 +5611,7 @@ body.dark-mode .tectonic-canvas {
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35) !important;
   }
 }
+
 
 
 
