@@ -89,7 +89,6 @@
         '.btn-card-view-case-study',
         '.theme-toggle-btn',
         '.lang-toggle-btn',
-        '.floating-scroll-top-btn',
         '.footer-top-btn'
       ];
 
@@ -171,11 +170,10 @@
   }
 
   /* ==========================================================================
-     2. REAL-TIME SCROLL READING PROGRESS & FLOATING TOP BUTTON ACTION
+     2. REAL-TIME SCROLL READING PROGRESS & FOOTER TOP BUTTON ACTION
      ========================================================================== */
   function initScrollProgressAndHUD() {
     const progressBar = document.getElementById('scroll-progress-bar');
-    const floatingTopBtn = document.getElementById('floating-scroll-top-btn');
     const footerTopBtn = document.getElementById('footer-top-btn');
     let ticking = false;
 
@@ -187,9 +185,6 @@
       });
     }
 
-    if (floatingTopBtn) {
-      floatingTopBtn.addEventListener('click', scrollToTop);
-    }
     if (footerTopBtn) {
       footerTopBtn.addEventListener('click', scrollToTop);
     }
@@ -212,15 +207,6 @@
       // Update golden progress bar
       if (progressBar) {
         progressBar.style.width = `${progressPercent.toFixed(2)}%`;
-      }
-
-      // Floating top button visibility toggle (icon only)
-      if (floatingTopBtn) {
-        if (scrollTop > 350) {
-          floatingTopBtn.classList.add('is-visible');
-        } else {
-          floatingTopBtn.classList.remove('is-visible');
-        }
       }
     }
 
