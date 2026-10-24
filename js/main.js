@@ -1016,8 +1016,73 @@ const KB_PROJECTS = [
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M8 12 L14 10 V32 H8 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <path d=\"M17 10 H23 V32 H17 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <path d=\"M26 10 L32 12 V32 H26 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <rect x=\"8\" y=\"28\" width=\"24\" height=\"4\" fill=\"#6F6154\" stroke=\"none\"/>\n    </svg>"
+  },
+
+  // MOD-17: ROMAN CATERING
+  {
+    "id": "roman-catering-brand-identity",
+    "service": "Hospitality Brand Identity & Eco Packaging System",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Blender"
+    ],
+    "title": "Roman Catering",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Hospitality Branding & Packaging",
+    "year": "2026",
+    "gridRef": "MOD-17",
+    "sizeContext": "Waiter + Mesob + R Monogram • Molded Fiber Packaging • Event Catering",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "Roman Catering & Hospitality Services",
+    "scale": "Full Brand Architecture, Sustainable Food Packaging & Collateral Suite",
+    "medium": "Synthesized Monogram, Amber Ochre (#F3A22D) & Deep Burgundy (#801414), Molded Fiber Boxes, Kraft Bags",
+    "summary": "A premier hospitality and catering brand identity uniting Ethiopian communal dining culture with contemporary banquet elegance.",
+    "description": "Roman Catering is a premier culinary and event catering service in Addis Ababa. The brand identity is grounded in an iconic geometric monogram constructed on a circular golden-ratio grid, synthesizing three core symbols: a banquet waiter in motion, the traditional Ethiopian dining basket (Mesob), and the capital letter 'R'. The visual system spans across sustainable molded fiber meal containers, custom branded sleeves and circular seal stickers, paper handle carry-out bags, repeating geometric tessellation patterns, and executive hospitality presentation platters.",
+    "challenge": "Synthesizing the cultural heritage of authentic Ethiopian communal dining (represented by the Mesob) with modern corporate catering efficiency and formal banquet hospitality into a single memorable, scalable mark.",
+    "solution": "Engineered a calibrated geometric glyph pairing warm amber ochre with deep burgundy red, complemented by an interlocking diamond-chevron brand pattern and sustainable packaging architecture that commands prestige across weddings, corporate summits, and premium meal deliveries.",
+    "deliverables": [
+      "Primary Scalable Monogram Lockup & Golden-Ratio Geometric Grid Construction",
+      "Conceptual Synthesis Matrix (Waiter Silhouette + Traditional Ethiopian Mesob + Letter 'R')",
+      "Sustainable Eco Packaging Suite (Molded Fiber Meal Boxes, Custom Sleeves & Circular Seals)",
+      "Repeating Interlocking Brand Tessellation Pattern in Dual Brand Colorways",
+      "Executive Banquet Presentation Collateral & Polished Wooden Serving Tray Mockup",
+      "Kraft Paper Rope-Handle Event Carry-Out Bags & Corporate Delivery Branding"
+    ],
+    "slides": [
+      {
+        "url": "assets/roman-slide-01-logo.png",
+        "caption": "Slide 01 // Primary Brand Monogram & Wordmark Lockup (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/roman-slide-02-concept.png",
+        "caption": "Slide 02 // Geometric Grid Construction & Concept Equation (Waiter + Mesob + R = Monogram)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/roman-slide-03-packaging.jpg",
+        "caption": "Slide 03 // Eco-Friendly Molded Fiber Meal Boxes, Branded Sleeves & Paper Carry-Out Bag"
+      },
+      {
+        "url": "assets/roman-slide-04-pattern.jpg",
+        "caption": "Slide 04 // Repeating Interlocking Brand Pattern & Dual Colorway (Amber/Burgundy & Monochrome)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/roman-slide-05-hospitality.jpg",
+        "caption": "Slide 05 // Executive Hospitality Serving Platter & Floating White Identity Lockup"
+      }
+    ],
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 28V14a8 8 0 0 1 16 0v2a8 8 0 0 1-8 8\" stroke=\"#F3A22D\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"20\" cy=\"17\" r=\"3\" fill=\"#801414\" stroke=\"none\"/>\n      <path d=\"M13 28L20 20L27 28\" stroke=\"#801414\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>"
   }
-];;
+];
 
 // Make projects globally available for scrubbing engine
 window.KB_PROJECTS = KB_PROJECTS;
@@ -1027,7 +1092,7 @@ const projectSlideIndexes = {};
 
 
 /* ==========================================================================
-   AUTHENTIC AMHARIC LOCALIZATION DATA FOR ALL 16 CURATED WORKS
+   AUTHENTIC AMHARIC LOCALIZATION DATA FOR ALL 17 CURATED WORKS
    ========================================================================== */
 const KB_PROJECT_AM = {
   "kara-g2-family-residence": {
@@ -1310,6 +1375,25 @@ const KB_PROJECT_AM = {
       "የስጦታ ካርዶች እና መጠቅለያ ሪቫኖች",
       "የማሸጊያ ቦርሳዎች ዲዛይን"
     ]
+  },
+  "roman-catering-brand-identity": {
+    title: "ሮማን ኬተሪንግ",
+    service: "የኬተሪንግ እና የሆስፒታሊቲ ብራንድ መለያ",
+    location: "አዲስ አበባ፣ ኢትዮጵያ (የKB CREATIVE ስራ)",
+    client: "ሮማን ኬተሪንግ እና የዝግጅት አዘጋጅ አገልግሎት",
+    sizeContext: "የአስተናጋጅ + የመሶብ + የR ሞኖግራም • ዘመናዊ የምግብ ማሸጊያዎች • የዝግጅት አቅርቦት",
+    role: "የብራንድ ዲዛይነር እና የፈጠራ ዳይሬክተር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
+    summary: "የኢትዮጵያን ባህላዊ መስተንግዶ እና ዘመናዊ የኬተሪንግ አገልግሎትን ያጣመረ የላቀ የብራንድ መለያ ስርዓት።",
+    description: "ለሮማን ኬተሪንግ የተሰራ የተሟላ የብራንድ መለያ ስርዓት። ሎጎው ሶስት ዋና ዋና ፅንሰ ሀሳቦችን በጂኦሜትሪክ ጥበብ ያዋህዳል፡- አስተናጋጅ በስራ ላይ፣ ባህላዊው የኢትዮጵያ መሶብ እና የእንግሊዝኛው ፊደል 'R'። ስራው ለአካባቢ ተስማሚ የሆኑ የምግብ ማሸጊያዎችን፣ የዝግጅት ማቅረቢያ ሳጥኖችን፣ የማሸጊያ ሪባኖችን እና የሰራተኞች መለያዎችን ያካትታል።",
+    challenge: "የባህላዊ መሶብን ሞቃት ገጽታ ከዘመናዊ የሆቴልና የዝግጅት ኬተሪንግ ደረጃ ጋር በማጣመር ቀላልና ተወዳጅ ሎጎ መፍጠር።",
+    solution: "ሞቃት አምበር እና ሬድ በርገንዲ ቀለማትን በመጠቀም፣ በጂኦሜትሪክ ግሪድ የተሰላ እና በማንኛውም ማሸጊያ ላይ በቀላሉ የሚታይ ሁለገብ ሎጎ ተዘጋጅቷል።",
+    deliverables: [
+      "ዋናው የሮማን ኬተሪንግ ሎጎ እና የጂኦሜትሪክ ግሪድ ንድፍ",
+      "የፅንሰ ሀሳብ ማብራሪያ (አስተናጋጅ + መሶብ + ፊደል R)",
+      "ለአካባቢ ተስማሚ የሆኑ የምግብ ማሸጊያ ሳጥኖች እና ቦርሳዎች",
+      "ተደጋጋሚ የብራንድ ፓተርን እና የቀለም ጥምረቶች",
+      "የሆስፒታሊቲ ማቅረቢያ ትሪ እና የክብር መለያዎች"
+    ]
   }
 };
 
@@ -1389,7 +1473,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "16 Curated Works • Spatial & Brand",
+    mob_sub_works: "17 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_faq: "Clarifications & Project Process",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
@@ -1404,17 +1488,17 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 16 Curated Works",
+    hero_explore: "Explore 17 Curated Works",
     
     // Hero Stats
     stat_student: "Architecture Student",
     stat_studies: "Curated Case Studies",
 
     // Practice Filter Pills
-    filter_all: "All Works (16)",
+    filter_all: "All Works (17)",
     filter_arch: "Spatial Architecture (06)",
     filter_vis: "3D Visualization (06)",
-    filter_brand: "Brand Identity (10)",
+    filter_brand: "Brand Identity (11)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -1427,7 +1511,7 @@ const KB_I18N = {
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
     editorial_title: "Curated Architectural & Graphic Works",
-    editorial_desc: "16 curated works spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
+    editorial_desc: "17 curated works spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1487,8 +1571,8 @@ const KB_I18N = {
     inquiry_submit: "Transmit Proposal To Kaleegziabher Fekede →",
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
-    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 16 curated works.",
-    empty_reset_btn: "Reset Filters (Show All 16 Works) →",
+    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 17 curated works.",
+    empty_reset_btn: "Reset Filters (Show All 17 Works) →",
     mob_lang_label: "LANG:",
     mob_theme_label: "THEME:",
     footer_rights: "ALL RIGHTS RESERVED © 2026",
@@ -1530,7 +1614,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "16 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "17 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
@@ -1545,17 +1629,17 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "16 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "17 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
     stat_studies: "የተመረጡ ስራዎች",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (16)",
+    filter_all: "ሁሉም ስራዎች (17)",
     filter_arch: "አርክቴክቸር (06)",
     filter_vis: "3D ቪዥዋላይዜሽን (06)",
-    filter_brand: "የብራንድ መለያ (10)",
+    filter_brand: "የብራንድ መለያ (11)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
@@ -1568,7 +1652,7 @@ const KB_I18N = {
     chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
     archive_title: "የስራዎች ማህደር",
     editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ስራዎች",
-    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 16 የተመረጡ ስራዎች።",
+    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 17 የተመረጡ ስራዎች።",
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
@@ -1628,8 +1712,8 @@ const KB_I18N = {
     inquiry_submit: "ፕሮፖዛሉን ለቃልእግዚአብሔር ፈቀደ ይላኩ →",
     empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
-    empty_void_desc: "ሁሉንም 16 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
-    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 16 ስራዎች አሳይ) →",
+    empty_void_desc: "ሁሉንም 17 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
+    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 17 ስራዎች አሳይ) →",
     mob_lang_label: "ቋንቋ:",
     mob_theme_label: "ገጽታ:",
     footer_rights: "መብቱ በህግ የተጠበቀ ነው © 2026",
@@ -1975,9 +2059,9 @@ function initProjectsArchive() {
         <div class="empty-filter-state">
           <div class="empty-status-tag font-mono">${dict.empty_void_tag || '00 // VOID SPECIFICATION'}</div>
           <h3 class="empty-title">${dict.empty_void_title || 'No projects match the selected filter combination'}</h3>
-          <p class="empty-desc">${dict.empty_void_desc || 'Clear your sub-category selection or switch practice typologies to explore all 16 curated works.'}</p>
+          <p class="empty-desc">${dict.empty_void_desc || 'Clear your sub-category selection or switch practice typologies to explore all 17 curated works.'}</p>
           <button type="button" class="btn-brand-yellow empty-reset-btn" onclick="window.resetAllFilters()">
-            <span>${dict.empty_reset_btn || 'Reset Filters (Show All 16 Works) →'}</span>
+            <span>${dict.empty_reset_btn || 'Reset Filters (Show All 17 Works) →'}</span>
           </button>
         </div>
       `;
