@@ -304,9 +304,10 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M8 32V14l12-8 12 8v18H8z\" stroke=\"#FFD042\" />\n      <rect x=\"15\" y=\"18\" width=\"10\" height=\"14\" stroke=\"#FFFFFF\" />\n    </svg>"
   },
 
-  // MOD-05: VERTICAL SPORTS & WELLNESS CENTER
+  // MOD-05: VERTICAL SPORTS & WELLNESS CENTER (Temporarily Hidden per User Request)
   {
     "id": "vertical-sports-wellness-center",
+    "hidden": true,
     "service": "Sports Architecture & Structural Steel Truss Design",
     "role": "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
     "software": [
@@ -362,9 +363,10 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <circle cx=\"20\" cy=\"20\" r=\"14\" stroke=\"#FFD042\" />\n      <path d=\"M10 20h20M20 10v20\" stroke=\"#FFFFFF\" />\n    </svg>"
   },
 
-  // MOD-06: SUSTAINABLE BAMBOO & FERROCEMENT HOUSING
+  // MOD-06: SUSTAINABLE BAMBOO & FERROCEMENT HOUSING (Temporarily Hidden per User Request)
   {
     "id": "bamboo-ferrocement-sustainable-housing",
+    "hidden": true,
     "service": "Sustainable Eco-Housing & Appropriate Technology",
     "role": "Lead Architectural Designer & Material Researcher (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
     "software": [
@@ -1478,7 +1480,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "17 Curated Works • Spatial & Brand",
+    mob_sub_works: "15 Curated Works • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_faq: "Clarifications & Project Process",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
@@ -1493,16 +1495,16 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 17 Curated Works",
+    hero_explore: "Explore 15 Curated Works",
     
     // Hero Stats
     stat_student: "Architecture Student",
     stat_studies: "Curated Case Studies",
 
     // Practice Filter Pills
-    filter_all: "All Works (17)",
-    filter_arch: "Spatial Architecture (06)",
-    filter_vis: "3D Visualization (06)",
+    filter_all: "All Works (15)",
+    filter_arch: "Spatial Architecture (04)",
+    filter_vis: "3D Visualization (04)",
     filter_brand: "Brand Identity (11)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
@@ -1516,7 +1518,7 @@ const KB_I18N = {
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
     editorial_title: "Curated Architectural & Graphic Works",
-    editorial_desc: "17 curated works spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
+    editorial_desc: "15 curated works spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1576,8 +1578,8 @@ const KB_I18N = {
     inquiry_submit: "Transmit Proposal To Kaleegziabher Fekede →",
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
-    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 17 curated works.",
-    empty_reset_btn: "Reset Filters (Show All 17 Works) →",
+    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 15 curated works.",
+    empty_reset_btn: "Reset Filters (Show All 15 Works) →",
     mob_lang_label: "LANG:",
     mob_theme_label: "THEME:",
     footer_rights: "ALL RIGHTS RESERVED © 2026",
@@ -1619,7 +1621,7 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "17 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "15 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
@@ -1634,16 +1636,16 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "17 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "15 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የአርክቴክቸር ተማሪ",
     stat_studies: "የተመረጡ ስራዎች",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (17)",
-    filter_arch: "አርክቴክቸር (06)",
-    filter_vis: "3D ቪዥዋላይዜሽን (06)",
+    filter_all: "ሁሉም ስራዎች (15)",
+    filter_arch: "አርክቴክቸር (04)",
+    filter_vis: "3D ቪዥዋላይዜሽን (04)",
     filter_brand: "የብራንድ መለያ (11)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
@@ -1657,7 +1659,7 @@ const KB_I18N = {
     chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
     archive_title: "የስራዎች ማህደር",
     editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ስራዎች",
-    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 17 የተመረጡ ስራዎች።",
+    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 15 የተመረጡ ስራዎች።",
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
@@ -1717,8 +1719,8 @@ const KB_I18N = {
     inquiry_submit: "ፕሮፖዛሉን ለቃልእግዚአብሔር ፈቀደ ይላኩ →",
     empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
-    empty_void_desc: "ሁሉንም 17 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
-    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 17 ስራዎች አሳይ) →",
+    empty_void_desc: "ሁሉንም 15 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
+    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 15 ስራዎች አሳይ) →",
     mob_lang_label: "ቋንቋ:",
     mob_theme_label: "ገጽታ:",
     footer_rights: "መብቱ በህግ የተጠበቀ ነው © 2026",
@@ -2038,12 +2040,13 @@ function initProjectsArchive() {
 
   function render() {
     window.renderProjects = render;
-    let filtered = KB_PROJECTS;
+    const baseProjects = KB_PROJECTS.filter(p => !p.hidden);
+    let filtered = baseProjects;
     const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
     const dict = KB_I18N[isAm ? 'am' : 'en'] || KB_I18N.en;
 
     if (activePractice === 'visualization') {
-      // 3D Visualization corresponds to the 6 cinematic CGI architectural works
+      // 3D Visualization corresponds to the active spatial CGI architectural works
       filtered = filtered.filter(p => p.practice === 'architecture');
     } else if (activePractice !== 'all') {
       filtered = filtered.filter(p => p.practice === activePractice);
@@ -2055,8 +2058,8 @@ function initProjectsArchive() {
 
     if (projectCountEl) {
       projectCountEl.textContent = isAm
-        ? `ማውጫ // ከ${KB_PROJECTS.length} ስራዎች ውስጥ ${filtered.length}ቱ እየታዩ ነው`
-        : `INDEX // Showing ${filtered.length} of ${KB_PROJECTS.length} Works`;
+        ? `ማውጫ // ከ${baseProjects.length} ስራዎች ውስጥ ${filtered.length}ቱ እየታዩ ነው`
+        : `INDEX // Showing ${filtered.length} of ${baseProjects.length} Works`;
     }
 
     if (filtered.length === 0) {
@@ -2064,9 +2067,9 @@ function initProjectsArchive() {
         <div class="empty-filter-state">
           <div class="empty-status-tag font-mono">${dict.empty_void_tag || '00 // VOID SPECIFICATION'}</div>
           <h3 class="empty-title">${dict.empty_void_title || 'No projects match the selected filter combination'}</h3>
-          <p class="empty-desc">${dict.empty_void_desc || 'Clear your sub-category selection or switch practice typologies to explore all 17 curated works.'}</p>
+          <p class="empty-desc">${dict.empty_void_desc || 'Clear your sub-category selection or switch practice typologies to explore all 15 curated works.'}</p>
           <button type="button" class="btn-brand-yellow empty-reset-btn" onclick="window.resetAllFilters()">
-            <span>${dict.empty_reset_btn || 'Reset Filters (Show All 17 Works) →'}</span>
+            <span>${dict.empty_reset_btn || 'Reset Filters (Show All 15 Works) →'}</span>
           </button>
         </div>
       `;
@@ -2121,9 +2124,11 @@ function initProjectsArchive() {
       const totalSlides = item.slides.length;
       const localizedItem = getLocalizedProject(item, isAm ? 'am' : 'en');
       const primaryTool = (item.software && item.software.length) ? item.software.slice(0, 2).join(' + ') : 'Revit + D5';
+      const itemIdx = baseProjects.indexOf(item);
+      const displayGridRef = itemIdx !== -1 ? 'MOD-' + String(itemIdx + 1).padStart(2, '0') : (item.gridRef || 'MOD');
 
       htmlOutput += `
-      <!-- SIMPLIFIED PROJECT CARD: [${item.gridRef}] -->
+      <!-- SIMPLIFIED PROJECT CARD: [${displayGridRef}] -->
       <article class="big-project-card simplified-project-card" data-id="${item.id}" id="card-${item.id}" onmouseenter="startCardAutoSlide('${item.id}')" onmouseleave="stopCardAutoSlide('${item.id}')">
         <!-- 3D Specular Glare Overlay -->
         <div class="card-glare-overlay"></div>
@@ -2204,7 +2209,7 @@ function initProjectsArchive() {
               <span>${isAm ? 'ዝርዝር ይመልከቱ' : 'View Case Study'}</span>
               <span class="case-study-arrow" aria-hidden="true">↗</span>
             </button>
-            <span class="card-action-grid-ref font-mono">${item.gridRef || 'MOD'}</span>
+            <span class="card-action-grid-ref font-mono">${displayGridRef}</span>
           </div>
         </div>
       </article>
@@ -2489,10 +2494,14 @@ window.openCaseStudy = function(projectId, triggerEl) {
   const overlay = document.getElementById('case-study-modal');
   const body = document.getElementById('case-modal-body');
 
+  const baseProjects = KB_PROJECTS.filter(p => !p.hidden);
+  const activeIdx = baseProjects.findIndex(p => p.id === project.id);
+  const displayGridRef = activeIdx !== -1 ? 'MOD-' + String(activeIdx + 1).padStart(2, '0') : (project.gridRef || 'MOD');
+
   document.getElementById('modal-project-title').textContent = project.title;
   document.getElementById('modal-practice-tag').textContent = isAm
-    ? `${project.service || project.practiceLabel} // 4ኛ ዓመት አርክቴክቸር • ወልቂጤ ዩኒቨርሲቲ [${project.gridRef}]`
-    : `${project.service || project.practiceLabel} // 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY [${project.gridRef}]`;
+    ? `${project.service || project.practiceLabel} // 4ኛ ዓመት አርክቴክቸር • ወልቂጤ ዩኒቨርሲቲ [${displayGridRef}]`
+    : `${project.service || project.practiceLabel} // 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY [${displayGridRef}]`;
 
   const softwareList = Array.isArray(project.software) ? project.software : [project.medium];
   const isArch = project.practice === 'architecture';
