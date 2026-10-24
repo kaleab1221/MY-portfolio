@@ -420,7 +420,77 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 34V14l8-8 8 8v20\" stroke=\"#FFD042\" />\n      <line x1=\"8\" y1=\"34\" x2=\"32\" y2=\"34\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"22\" x2=\"24\" y2=\"22\" stroke=\"#FFD042\" />\n    </svg>"
   },
 
-  // MOD-07: WORKER LINK — PLATFORM IDENTITY & UI
+  // MOD-07: ROMAN CATERING
+  {
+    "id": "roman-catering-brand-identity",
+    "service": "Hospitality Brand Identity & Eco Packaging System",
+    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Adobe InDesign",
+      "Blender"
+    ],
+    "title": "Roman Catering",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Hospitality Branding & Packaging",
+    "year": "2026",
+    "gridRef": "MOD-07",
+    "sizeContext": "Waiter + Mesob + R Monogram • Molded Fiber Packaging • Event Catering",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "Roman Catering & Hospitality Services",
+    "scale": "Full Brand Architecture, Sustainable Food Packaging & Collateral Suite",
+    "medium": "Synthesized Monogram, Amber Ochre (#F3A22D) & Deep Burgundy (#801414), Molded Fiber Boxes, Kraft Bags",
+    "summary": "A premier hospitality and catering brand identity uniting Ethiopian communal dining culture with contemporary banquet elegance.",
+    "description": "Roman Catering is a premier culinary and event catering service in Addis Ababa. The brand identity is grounded in an iconic geometric monogram constructed on a circular golden-ratio grid, synthesizing three core symbols: a banquet waiter in motion, the traditional Ethiopian dining basket (Mesob), and the capital letter 'R'. The visual system spans across sustainable molded fiber meal containers, custom branded sleeves and circular seal stickers, paper handle carry-out bags, repeating geometric tessellation patterns, executive hospitality presentation platters, and authentic cultural dining presentations.",
+    "challenge": "Synthesizing the cultural heritage of authentic Ethiopian communal dining (represented by the Mesob) with modern corporate catering efficiency and formal banquet hospitality into a single memorable, scalable mark.",
+    "solution": "Engineered a calibrated geometric glyph pairing warm amber ochre with deep burgundy red, complemented by an interlocking diamond-chevron brand pattern and sustainable packaging architecture that commands prestige across weddings, corporate summits, and premium meal deliveries.",
+    "deliverables": [
+      "Primary Scalable Monogram Lockup & Golden-Ratio Geometric Grid Construction",
+      "Conceptual Synthesis Matrix (Waiter Silhouette + Traditional Ethiopian Mesob + Letter 'R')",
+      "Sustainable Eco Packaging Suite (Molded Fiber Meal Boxes, Custom Sleeves & Circular Seals)",
+      "Repeating Interlocking Brand Tessellation Pattern in Dual Brand Colorways",
+      "Executive Banquet Presentation Collateral & Polished Wooden Serving Tray Mockup",
+      "Authentic Ethiopian Culinary Feast & Traditional Mesob Banquet Presentation",
+      "Kraft Paper Rope-Handle Event Carry-Out Bags & Corporate Delivery Branding"
+    ],
+    "slides": [
+      {
+        "url": "assets/roman-slide-01-logo.png",
+        "caption": "Slide 01 // Primary Brand Monogram & Wordmark Lockup (Full Scale 1:1)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/roman-slide-02-concept.png",
+        "caption": "Slide 02 // Geometric Grid Construction & Concept Equation (Waiter + Mesob + R = Monogram)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/roman-slide-03-packaging.jpg",
+        "caption": "Slide 03 // Eco-Friendly Molded Fiber Meal Boxes, Branded Sleeves & Paper Carry-Out Bag"
+      },
+      {
+        "url": "assets/roman-slide-04-pattern.jpg",
+        "caption": "Slide 04 // Repeating Interlocking Brand Pattern & Dual Colorway (Amber/Burgundy & Monochrome)",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/roman-slide-05-hospitality.jpg",
+        "caption": "Slide 05 // Executive Hospitality Serving Platter & Floating White Identity Lockup"
+      },
+      {
+        "url": "assets/roman-slide-06-banquet.jpg",
+        "caption": "Slide 06 // Authentic Ethiopian Culinary Feast & Traditional Mesob Banquet Presentation"
+      }
+    ],
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 28V14a8 8 0 0 1 16 0v2a8 8 0 0 1-8 8\" stroke=\"#F3A22D\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"20\" cy=\"17\" r=\"3\" fill=\"#801414\" stroke=\"none\"/>\n      <path d=\"M13 28L20 20L27 28\" stroke=\"#801414\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>"
+  },
+
+  // MOD-08: WORKER LINK — PLATFORM IDENTITY & UI
   {
     "id": "worker-link-brand-identity",
     "service": "Brand Identity & Mobile UI Systems",
@@ -436,7 +506,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Brand Identity & Mobile UI",
     "year": "2026",
-    "gridRef": "MOD-07",
+    "gridRef": "MOD-08",
     "sizeContext": "Full Scale Interlocked Mark • Mobile UI • 3D Signage • Badges",
     "location": "Addis Ababa, Ethiopia",
     "client": "Worker Link Platform (@worker_link / workerlink.com)",
@@ -481,7 +551,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M14 16 L22 24 A4 4 0 0 1 16 30 L10 24 A4 4 0 0 1 16 18 L20 22\" stroke=\"#40989F\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <path d=\"M26 16 L18 24 A4 4 0 0 0 24 30 L30 24 A4 4 0 0 0 24 18 L20 22\" stroke=\"#105B72\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"12\" cy=\"12\" r=\"2.5\" fill=\"#40989F\"/>\n      <circle cx=\"28\" cy=\"12\" r=\"2.5\" fill=\"#105B72\"/>\n    </svg>"
   },
 
-  // MOD-08: JORDANO JEMOLE CONSTRUCTION P.L.C
+  // MOD-09: JORDANO JEMOLE CONSTRUCTION P.L.C
   {
     "id": "jordano-jemole-construction-identity",
     "service": "Corporate Brand Identity & Site Safety Graphics",
@@ -496,7 +566,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Brand Identity & Corporate System",
     "year": "2026",
-    "gridRef": "MOD-08",
+    "gridRef": "MOD-09",
     "sizeContext": "Full Scale Monolith Mark • Geometric Frame • High-Vis Gear • Hardhat",
     "location": "Ethiopia (KB CREATIVE Commission)",
     "client": "Jordano Jemole Construction P.L.C",
@@ -541,7 +611,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"8\" y=\"4\" width=\"24\" height=\"32\" stroke=\"#555555\" stroke-width=\"2\" rx=\"1\"/>\n      <path d=\"M16 26 C16 29 24 29 24 26 V12 L20 8 L16 12 Z\" fill=\"#F5A623\" stroke=\"#F5A623\"/>\n      <path d=\"M12 24 C12 30 28 30 28 24\" stroke=\"#F5A623\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n    </svg>"
   },
 
-  // MOD-09: TILET FASHION (ጥለት ፋሽን)
+  // MOD-10: TILET FASHION (ጥለት ፋሽን)
   {
     "id": "tilet-fashion-brand-identity",
     "service": "Haute Couture Brand Identity & Retail Packaging",
@@ -556,7 +626,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Brand Identity & Fashion Design",
     "year": "2025",
-    "gridRef": "MOD-09",
+    "gridRef": "MOD-10",
     "sizeContext": "Full Scale Royal Emblem • Ge'ez Typography • Bole Century Mall Storefront",
     "location": "Bole Century Mall, Addis Ababa, Ethiopia",
     "client": "Tilet Fashion (ጥለት ፋሽን) Haute Couture",
@@ -601,7 +671,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 10 C16 14 24 14 28 10 C26 18 14 18 12 10z\" fill=\"#D32F2F\" stroke=\"#D32F2F\"/>\n      <polygon points=\"20,18 28,26 20,34 12,26\" fill=\"#D32F2F\" stroke=\"#D32F2F\"/>\n    </svg>"
   },
 
-  // MOD-10: BEGO MEAZA MEDIA
+  // MOD-11: BEGO MEAZA MEDIA
   {
     "id": "bego-meaza-media-identity",
     "service": "Broadcast Media Identity & Digital Systems",
@@ -616,7 +686,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Brand Identity & Logo Design",
     "year": "2024",
-    "gridRef": "MOD-10",
+    "gridRef": "MOD-11",
     "sizeContext": "Full Brand Architecture • Monogram Mark • Environmental Signage • App Icon",
     "location": "Ethiopia (KB CREATIVE Commission)",
     "client": "Bego Meaza Media",
@@ -657,7 +727,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 8 C12 8 12 20 12 26 C12 31 16 34 20 34 C24 34 28 31 28 26 L28 20\" stroke=\"#FFD042\" stroke-linecap=\"round\"/>\n      <polygon points=\"18,13 30,20 18,27\" stroke=\"#FFFFFF\" fill=\"none\"/>\n    </svg>"
   },
 
-  // MOD-11: MESOB MEALS
+  // MOD-12: MESOB MEALS
   {
     "id": "mesob-meals-brand-identity",
     "service": "Culinary Brand Identity & Packaging Ecosystem",
@@ -672,7 +742,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Brand Identity & Packaging Design",
     "year": "2025",
-    "gridRef": "MOD-11",
+    "gridRef": "MOD-12",
     "sizeContext": "Full Scale Cultural Mark • Eco Packaging • Courier Fleet Gear • Apparel",
     "location": "Ethiopia (KB CREATIVE Commission)",
     "client": "Mesob Meals Food Delivery Service",
@@ -717,7 +787,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M10 28h20c0 4-4 6-10 6s-10-2-10-6z\" fill=\"#083B32\" stroke=\"#FFD042\" />\n      <path d=\"M12 28 C12 18 16 14 20 14 C24 14 28 18 28 28\" stroke=\"#FFFFFF\" />\n      <rect x=\"17\" y=\"8\" width=\"6\" height=\"6\" rx=\"1\" stroke=\"#FFD042\" fill=\"#FFD042\" />\n    </svg>"
   },
 
-  // MOD-12: DANU STORE
+  // MOD-13: DANU STORE
   {
     "id": "danu-store-brand-identity",
     "service": "Retail Brand Identity & Environmental Storefront",
@@ -733,7 +803,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Brand Identity & Retail Design",
     "year": "2025",
-    "gridRef": "MOD-12",
+    "gridRef": "MOD-13",
     "sizeContext": "Full Scale Cart Monogram • Bole Road Storefront • Merchandise Suite",
     "location": "Bole Road, Addis Ababa, Ethiopia",
     "client": "Danu Store Retail & E-Commerce",
@@ -778,7 +848,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M16 24a5 5 0 1 1 0-10 5 5 0 0 1 5 5v12\" stroke=\"#FFD042\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"15\" cy=\"30\" r=\"2.5\" fill=\"#FFD042\"/>\n      <circle cx=\"23\" cy=\"30\" r=\"2.5\" fill=\"#FFD042\"/>\n    </svg>"
   },
 
-  // MOD-13: ALMAZ JEWELLERY
+  // MOD-14: ALMAZ JEWELLERY
   {
     "id": "almaz-jewellery-brand-identity",
     "service": "Haute Joaillerie & Luxury Brand Identity",
@@ -794,7 +864,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Luxury Brand Identity & Packaging",
     "year": "2026",
-    "gridRef": "MOD-13",
+    "gridRef": "MOD-14",
     "sizeContext": "Full Scale Solitaire Mark • Velvet Pouch • Boutiques • 24K Duplex Cards",
     "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
     "client": "Almaz Jewellery (አልማዝ ጌጣጌጥ) Haute Joaillerie",
@@ -839,7 +909,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <polygon points=\"20,5 26,11 14,11\" stroke=\"#E89258\" fill=\"#E89258\"/>\n      <circle cx=\"20\" cy=\"23\" r=\"10\" stroke=\"#E89258\" stroke-width=\"2.5\"/>\n      <path d=\"M16 28 L20 17 L24 28\" stroke=\"#FFFFFF\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <line x1=\"17.5\" y1=\"23\" x2=\"22.5\" y2=\"23\" stroke=\"#FFFFFF\" stroke-width=\"2\"/>\n    </svg>"
   },
 
-  // MOD-14: DOT CREATIVE
+  // MOD-15: DOT CREATIVE
   {
     "id": "dot-creative-agency-identity",
     "service": "Creative Agency & Brand Design Studio",
@@ -855,7 +925,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Agency Identity & Visual Systems",
     "year": "2026",
-    "gridRef": "MOD-14",
+    "gridRef": "MOD-15",
     "sizeContext": "Full Scale Monogram • Geometric Blueprint • Studio Apparel • Duplex Cards",
     "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
     "client": "DOT CREATIVE Design Agency",
@@ -896,7 +966,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"8\" y=\"8\" width=\"6\" height=\"6\" fill=\"#A0A0A0\" stroke=\"none\"/>\n      <path d=\"M16 8h10l8 8v10l-8 8H16V8z\" fill=\"#3D48E0\" stroke=\"none\"/>\n      <rect x=\"18\" y=\"14\" width=\"8\" height=\"12\" fill=\"#041B2B\" rx=\"1\"/>\n    </svg>"
   },
 
-  // MOD-15: DAMA MARKETING
+  // MOD-16: DAMA MARKETING
   {
     "id": "dama-marketing-brand-identity",
     "service": "Corporate Marketing & Strategic Brand Architecture",
@@ -912,7 +982,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Corporate Marketing & Brand Systems",
     "year": "2026",
-    "gridRef": "MOD-15",
+    "gridRef": "MOD-16",
     "sizeContext": "Full Scale \"D\" Monogram • Executive Duplex Cards • Web Platform • Brand Collateral",
     "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
     "client": "Dama Marketing Corporate Agency",
@@ -957,7 +1027,7 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <rect x=\"7\" y=\"10\" width=\"7\" height=\"7\" fill=\"#B6903F\" stroke=\"none\"/>\n      <path d=\"M14 10h10a9 9 0 0 1 9 9v0a9 9 0 0 1-9 9H14V10z\" fill=\"#B6903F\" stroke=\"none\"/>\n      <rect x=\"18\" y=\"15\" width=\"5\" height=\"8\" fill=\"#122720\" rx=\"1\"/>\n    </svg>"
   },
 
-  // MOD-16: TINU GIFTS
+  // MOD-17: TINU GIFTS
   {
     "id": "tinu-gifts-brand-identity",
     "service": "Artisanal Packaging Architecture & Brand Identity System",
@@ -973,7 +1043,7 @@ const KB_PROJECTS = [
     "subCategory": "identity",
     "practiceLabel": "Luxury Packaging & Brand Identity",
     "year": "2026",
-    "gridRef": "MOD-16",
+    "gridRef": "MOD-17",
     "sizeContext": "Full Scale Monogram • Braided Rope Bags • Cotton Tags • Duplex Cards",
     "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
     "client": "TINU GIFTS Boutique Maison",
@@ -1016,71 +1086,6 @@ const KB_PROJECTS = [
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M8 12 L14 10 V32 H8 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <path d=\"M17 10 H23 V32 H17 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <path d=\"M26 10 L32 12 V32 H26 Z\" fill=\"#6F6154\" stroke=\"none\"/>\n      <rect x=\"8\" y=\"28\" width=\"24\" height=\"4\" fill=\"#6F6154\" stroke=\"none\"/>\n    </svg>"
-  },
-
-  // MOD-17: ROMAN CATERING
-  {
-    "id": "roman-catering-brand-identity",
-    "service": "Hospitality Brand Identity & Eco Packaging System",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
-    "software": [
-      "Adobe Illustrator",
-      "Adobe Photoshop",
-      "Adobe InDesign",
-      "Blender"
-    ],
-    "title": "Roman Catering",
-    "practice": "graphic",
-    "subCategory": "identity",
-    "practiceLabel": "Hospitality Branding & Packaging",
-    "year": "2026",
-    "gridRef": "MOD-17",
-    "sizeContext": "Waiter + Mesob + R Monogram • Molded Fiber Packaging • Event Catering",
-    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
-    "client": "Roman Catering & Hospitality Services",
-    "scale": "Full Brand Architecture, Sustainable Food Packaging & Collateral Suite",
-    "medium": "Synthesized Monogram, Amber Ochre (#F3A22D) & Deep Burgundy (#801414), Molded Fiber Boxes, Kraft Bags",
-    "summary": "A premier hospitality and catering brand identity uniting Ethiopian communal dining culture with contemporary banquet elegance.",
-    "description": "Roman Catering is a premier culinary and event catering service in Addis Ababa. The brand identity is grounded in an iconic geometric monogram constructed on a circular golden-ratio grid, synthesizing three core symbols: a banquet waiter in motion, the traditional Ethiopian dining basket (Mesob), and the capital letter 'R'. The visual system spans across sustainable molded fiber meal containers, custom branded sleeves and circular seal stickers, paper handle carry-out bags, repeating geometric tessellation patterns, and executive hospitality presentation platters.",
-    "challenge": "Synthesizing the cultural heritage of authentic Ethiopian communal dining (represented by the Mesob) with modern corporate catering efficiency and formal banquet hospitality into a single memorable, scalable mark.",
-    "solution": "Engineered a calibrated geometric glyph pairing warm amber ochre with deep burgundy red, complemented by an interlocking diamond-chevron brand pattern and sustainable packaging architecture that commands prestige across weddings, corporate summits, and premium meal deliveries.",
-    "deliverables": [
-      "Primary Scalable Monogram Lockup & Golden-Ratio Geometric Grid Construction",
-      "Conceptual Synthesis Matrix (Waiter Silhouette + Traditional Ethiopian Mesob + Letter 'R')",
-      "Sustainable Eco Packaging Suite (Molded Fiber Meal Boxes, Custom Sleeves & Circular Seals)",
-      "Repeating Interlocking Brand Tessellation Pattern in Dual Brand Colorways",
-      "Executive Banquet Presentation Collateral & Polished Wooden Serving Tray Mockup",
-      "Kraft Paper Rope-Handle Event Carry-Out Bags & Corporate Delivery Branding"
-    ],
-    "slides": [
-      {
-        "url": "assets/roman-slide-01-logo.png",
-        "caption": "Slide 01 // Primary Brand Monogram & Wordmark Lockup (Full Scale 1:1)",
-        "fit": "contain",
-        "bg": "#FFFFFF"
-      },
-      {
-        "url": "assets/roman-slide-02-concept.png",
-        "caption": "Slide 02 // Geometric Grid Construction & Concept Equation (Waiter + Mesob + R = Monogram)",
-        "fit": "contain",
-        "bg": "#FFFFFF"
-      },
-      {
-        "url": "assets/roman-slide-03-packaging.jpg",
-        "caption": "Slide 03 // Eco-Friendly Molded Fiber Meal Boxes, Branded Sleeves & Paper Carry-Out Bag"
-      },
-      {
-        "url": "assets/roman-slide-04-pattern.jpg",
-        "caption": "Slide 04 // Repeating Interlocking Brand Pattern & Dual Colorway (Amber/Burgundy & Monochrome)",
-        "fit": "contain",
-        "bg": "#FFFFFF"
-      },
-      {
-        "url": "assets/roman-slide-05-hospitality.jpg",
-        "caption": "Slide 05 // Executive Hospitality Serving Platter & Floating White Identity Lockup"
-      }
-    ],
-    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 28V14a8 8 0 0 1 16 0v2a8 8 0 0 1-8 8\" stroke=\"#F3A22D\" stroke-width=\"2.5\" stroke-linecap=\"round\"/>\n      <circle cx=\"20\" cy=\"17\" r=\"3\" fill=\"#801414\" stroke=\"none\"/>\n      <path d=\"M13 28L20 20L27 28\" stroke=\"#801414\" stroke-width=\"3\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n    </svg>"
   }
 ];
 
