@@ -1562,8 +1562,8 @@ const KB_I18N = {
     faq_a6: "Yes. A core strength of KB CREATIVE is the cross-disciplinary union of spatial architecture and corporate visual identity. For commercial developments, retail malls (e.g., MENA MALL), and corporate offices (Acute Engineering), we design the architectural spaces alongside the 3D illuminated exterior storefront signage, interior wayfinding graphics, and company branding collateral.",
 
     // Contact Section
-    chap_04: "CHAPTER 04 // DIALOGUE & COMMISSION INQUIRY",
-    contact_super: "04. Direct Collaboration",
+    chap_04: "DIALOGUE & COMMISSION INQUIRY",
+    contact_super: "Direct Collaboration",
     contact_hero_title: `Let's Build Something <span style="color: var(--brand-yellow);">Remarkable</span> Together.`,
     contact_status: "CURRENT STATUS: AVAILABLE FOR ARCHITECTURE, 3D VISUALIZATION & BRAND COMMISSIONS",
     contact_intro: `Principal designer and architectural director at <strong>KB CREATIVE</strong>. Available for spatial architectural concepts, residential and interior renovations, photorealistic 3D visualization, or bespoke brand identity systems across Ethiopia and remote worldwide.`,
@@ -1701,8 +1701,8 @@ const KB_I18N = {
     faq_a6: "አዎ። የKB CREATIVE አንዱ ልዩ ጥንካሬ የህንፃ ንድፍን ከንግድ ምልክት ጋር አጣምሮ መስራት ነው። ለንግድ ማዕከላት (ለምሳሌ ሜና ሞል) እና ለቢሮዎች የህንፃውን ንድፍ ከውጭ እና ከውስጥ የማስታወቂያ ቦርዶች እና የኮርፖሬት መለያዎች ጋር አቀናጅተን እንሰራለን።",
 
     // Contact Section
-    chap_04: "ክፍል 04 // ግንኙነት እና የስራ ስምምነት",
-    contact_super: "04. አብረን እንስራ // ያግኙን",
+    chap_04: "ውይይት እና የስራ ጥያቄ",
+    contact_super: "አብረን እንስራ // ያግኙን",
     contact_hero_title: `አብረን <span style="color: var(--brand-yellow);">ድንቅ ነገር</span> እንገንባ።`,
     contact_status: "የስራ ዝግጁነት: ለአርክቴክቸር፣ 3D ቪዥዋላይዜሽን እና ብራንድ ዲዛይን ስራዎች ክፍት ነኝ",
     contact_intro: `በ<strong>KB CREATIVE</strong> ዋና ዲዛይነር እና የፈጠራ ዳይሬክተር። ለህንፃ ንድፍ፣ ለመኖሪያ እና የውስጥ እድሳት፣ ለ3D ቪዥዋላይዜሽን ወይም ለብራንድ መለያ ስራዎች ዝግጁ ነኝ።`,
@@ -2160,7 +2160,6 @@ function initProjectsArchive() {
               <span>${isAm ? 'ዝርዝር ይመልከቱ' : 'View Case Study'}</span>
               <span class="case-study-arrow" aria-hidden="true">↗</span>
             </button>
-            <span class="card-action-grid-ref font-mono">${displayGridRef}</span>
           </div>
         </div>
       </article>
@@ -2459,8 +2458,8 @@ window.openCaseStudy = function(projectId, triggerEl) {
 
   document.getElementById('modal-project-title').textContent = project.title;
   document.getElementById('modal-practice-tag').textContent = isAm
-    ? `${project.service || project.practiceLabel} // ስቱዲዮ KB CREATIVE [${displayGridRef}]`
-    : `${project.service || project.practiceLabel} // STUDIO KB CREATIVE [${displayGridRef}]`;
+    ? `${project.service || project.practiceLabel} // ስቱዲዮ KB CREATIVE`
+    : `${project.service || project.practiceLabel} // STUDIO KB CREATIVE`;
 
   const softwareList = Array.isArray(project.software) ? project.software : [project.medium];
   const isArch = project.practice === 'architecture';
