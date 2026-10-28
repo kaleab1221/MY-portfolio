@@ -158,6 +158,12 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   }
 }
 
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+}
+
 .font-display {
   font-family: var(--font-display);
 }
@@ -265,7 +271,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 .brand-sub {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   color: var(--brand-navy);
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -330,7 +336,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 .nav-item-index {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   color: var(--brand-yellow);
   font-weight: 700;
 }
@@ -851,7 +857,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 .emblem-stat-label {
   font-family: var(--font-mono);
-  font-size: 0.68rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   color: #F8FAFC !important;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -1616,7 +1622,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  font-size: 0.68rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -1640,7 +1646,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .big-hover-location {
-  font-size: 0.72rem;
+  font-size: clamp(0.74rem, 2vw, 0.82rem);
   color: rgba(255, 255, 255, 0.85);
   letter-spacing: 0.04em;
   transform: translateY(11px);
@@ -1658,7 +1664,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   color: var(--brand-yellow);
   padding: 0.25rem 0.65rem;
   border-radius: var(--radius-xs);
-  font-size: 0.7rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   letter-spacing: 0.04em;
   width: fit-content;
   transform: translateY(12px);
@@ -1691,7 +1697,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .big-hover-btn {
   background: var(--brand-yellow);
   color: var(--brand-navy-dark);
-  font-size: 0.7rem;
+  font-size: clamp(0.75rem, 1.8vw, 0.8rem);
   font-weight: 800;
   letter-spacing: 0.08em;
   padding: 0.35rem 0.85rem;
@@ -1701,7 +1707,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .big-hover-slide-caption {
-  font-size: 0.68rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   color: rgba(255, 255, 255, 0.92);
   letter-spacing: 0.04em;
   max-width: 65%;
@@ -1725,7 +1731,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   background: rgba(4, 71, 113, 0.9);
   color: var(--brand-yellow);
   border: 1px solid rgba(255, 208, 66, 0.4);
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   font-weight: 700;
   letter-spacing: 0.1em;
   padding: 0.3rem 0.65rem;
@@ -1743,7 +1749,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   color: var(--brand-yellow);
   border: 1px solid rgba(255, 208, 66, 0.4);
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   font-weight: 700;
   letter-spacing: 0.1em;
   padding: 0.3rem 0.65rem;
@@ -1956,7 +1962,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 .swiss-meta-label {
   color: var(--text-muted);
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -1996,7 +2002,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   background: rgba(2, 27, 44, 0.85);
   border: 1px solid rgba(255, 208, 66, 0.4);
   color: var(--brand-yellow);
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   padding: 0.35rem 0.75rem;
   border-radius: var(--radius-xs);
   letter-spacing: 0.1em;
@@ -2329,7 +2335,7 @@ body.dark-mode .academic-banner-tag {
 
 .analytics-box-tag {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: clamp(0.75rem, 1.8vw, 0.8rem);
   font-weight: 700;
   color: var(--brand-navy);
   letter-spacing: 0.15em;
@@ -2649,11 +2655,17 @@ body.dark-mode .academic-banner-tag {
   padding: 0;
   opacity: 0;
   visibility: hidden;
+  overflow: hidden;
   transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
   pointer-events: none;
 }
 
+.case-modal-overlay:not(.active) {
+  display: none !important;
+}
+
 .case-modal-overlay.active {
+  display: flex !important;
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -2979,6 +2991,21 @@ body.dark-mode #modal-practice-tag {
     grid-template-columns: 1fr !important;
     gap: 1.5rem !important;
   }
+  /* Case Modal Body on Tablet */
+  #case-modal-body,
+  .case-modal-body {
+    padding: 1.25rem 1rem !important;
+  }
+  /* Footer Brand Line */
+  .footer-brand-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 0.5rem;
+    font-size: 0.85rem;
+  }
   /* Toast positioned at top on mobile to avoid bottom UI collision */
   .kb-toast-container {
     top: 1rem;
@@ -2999,88 +3026,167 @@ body.dark-mode #modal-practice-tag {
     text-align: center;
     gap: 1rem;
   }
+  /* Contact Form Inputs prevent iOS auto-zoom */
+  .contact-inquiry-box input,
+  .contact-inquiry-box select,
+  .contact-inquiry-box textarea {
+    font-size: 16px !important;
+    min-height: 48px;
+  }
+}
+
+/* SMARTPHONES & SMALL MOBILES (<= 540px) */
+@media (max-width: 540px) {
+  .inquire-cta-pill {
+    display: none !important;
+  }
+  .modal-header-meta {
+    grid-template-columns: 1fr !important;
+    gap: 0.65rem !important;
+  }
 }
 
 /* SMARTPHONES & SMALL MOBILES (<= 480px) */
 @media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
   .nav-layout {
     height: 4rem;
   }
   .brand-identity-wrap {
-    gap: 0.5rem;
+    gap: 0.45rem;
+    min-width: 0;
+    flex-shrink: 1;
   }
   .kb-logo-header-img {
-    width: 34px;
-    height: 34px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+  .brand-text-block {
+    min-width: 0;
+    overflow: hidden;
   }
   .brand-name {
-    font-size: 0.92rem;
+    font-size: clamp(0.76rem, 3.2vw, 0.92rem);
     letter-spacing: -0.02em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .brand-sub {
     display: none;
   }
   .nav-controls {
-    gap: 0.45rem;
+    gap: 0.35rem;
+    flex-shrink: 0;
   }
   .circle-nav-btn {
-    width: 32px;
-    height: 32px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+  }
+  .mobile-nav-toggle-btn {
+    padding: 0.35rem 0.5rem;
+    min-width: 36px;
+    height: 30px;
+  }
+  .menu-toggle-label {
+    display: none !important;
   }
   .lang-circle-text {
     font-size: 0.78rem;
   }
-  .inquire-cta-pill {
-    padding: 0.45rem 0.8rem;
-    font-size: 0.65rem;
-    letter-spacing: 0.04em;
-  }
-  .inquire-cta-pill span:not(:last-child) {
-    font-size: 0.65rem;
-  }
   .hero-main-title {
-    font-size: clamp(1.85rem, 8.5vw, 2.45rem);
+    font-size: clamp(1.75rem, 7.8vw, 2.45rem);
     letter-spacing: -0.03em;
   }
   .hero-discipline-tag {
-    font-size: 0.65rem;
+    font-size: clamp(0.72rem, 2.2vw, 0.8rem);
     flex-wrap: wrap;
     gap: 0.35rem;
   }
   .hero-bio-lead {
-    font-size: 0.92rem;
-    line-height: 1.55;
+    font-size: clamp(0.92rem, 2.6vw, 1.05rem);
+    line-height: 1.6;
+  }
+  .hero-availability-statement {
+    padding: 1.1rem 1rem;
+  }
+  .availability-status-tag {
+    font-size: clamp(0.72rem, 2vw, 0.78rem);
   }
   .hero-emblem-card {
-    padding: 1.5rem 1rem;
+    padding: 1.4rem 1rem;
   }
   .hero-emblem-logo-wrap {
-    width: 105px;
-    height: 105px;
+    width: 95px;
+    height: 95px;
   }
   .hero-emblem-title {
-    font-size: 1.35rem;
+    font-size: clamp(1.15rem, 4vw, 1.35rem);
+  }
+  .hero-emblem-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.65rem;
   }
   .emblem-stat-val {
-    font-size: 1.25rem;
+    font-size: clamp(1.1rem, 3.5vw, 1.25rem);
+  }
+  .emblem-stat-label {
+    font-size: clamp(0.72rem, 2vw, 0.78rem);
   }
   .carousel-media-wrap {
-    height: 230px;
+    height: clamp(210px, 58vw, 250px);
   }
   .big-project-meta-box {
     padding: 1.25rem 1rem;
   }
   .big-hover-heading {
-    font-size: 1.1rem;
+    font-size: clamp(1rem, 3.6vw, 1.15rem);
+  }
+  #case-modal-body,
+  .case-modal-body {
+    padding: 1rem 0.75rem !important;
   }
   .swiss-modal-meta-grid {
     grid-template-columns: 1fr !important;
   }
   .modal-hero-viewport {
-    height: clamp(260px, 70vw, 380px) !important;
+    height: clamp(220px, 60vw, 340px) !important;
+  }
+  .modal-thumb-btn {
+    width: 82px !important;
+    height: 52px !important;
+  }
+  .modal-thumb-number {
+    font-size: 0.7rem;
+  }
+  .ba-slider-container {
+    aspect-ratio: 16 / 10;
+    height: auto !important;
+    min-height: 220px;
+    max-height: 320px;
+  }
+  .ba-badge {
+    font-size: clamp(0.68rem, 2vw, 0.75rem);
+    padding: 0.2rem 0.45rem;
+  }
+  .academic-banner-title {
+    font-size: clamp(1.1rem, 3.6vw, 1.35rem);
+  }
+  .academic-year-badge {
+    font-size: clamp(0.72rem, 2vw, 0.78rem);
+  }
+  .multilingual-note-title {
+    font-size: clamp(0.72rem, 2vw, 0.78rem);
   }
   .contact-inquiry-box {
-    padding: 1.5rem 1.15rem;
+    padding: 1.35rem 1rem;
+  }
+  .cv-contact-meta {
+    font-size: clamp(0.72rem, 2vw, 0.78rem);
   }
 }
 
@@ -3390,7 +3496,7 @@ body.dark-mode #modal-practice-tag {
   background: rgba(255, 208, 66, 0.08);
   border: 1px solid rgba(255, 208, 66, 0.3);
   border-radius: var(--radius-xs);
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 2vw, 0.8rem);
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -3573,14 +3679,22 @@ body.dark-mode #modal-practice-tag {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
   pointer-events: none;
-  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s;
   display: flex;
   justify-content: flex-end;
 }
 
+.mobile-nav-drawer:not(.active) {
+  display: none !important;
+}
+
 .mobile-nav-drawer.active {
+  display: flex !important;
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -3852,7 +3966,7 @@ body.dark-mode #modal-practice-tag {
   background: rgba(16, 185, 129, 0.12);
   border: 1px solid rgba(16, 185, 129, 0.3);
   border-radius: 9999px;
-  font-size: 0.68rem;
+  font-size: clamp(0.75rem, 1.8vw, 0.82rem);
   letter-spacing: 0.1em;
   color: #10b981;
   margin-bottom: 1rem;
@@ -3902,7 +4016,7 @@ body.dark-mode .btn-secondary-hero-pdf:hover {
   background: rgba(255, 208, 66, 0.2);
   color: var(--brand-yellow-dark, #b58900);
   border-radius: 3px;
-  font-size: 0.65rem;
+  font-size: clamp(0.75rem, 1.8vw, 0.8rem);
   font-weight: 700;
 }
 
@@ -3985,7 +4099,7 @@ body.dark-mode .pdf-tag {
 }
 
 .card-category-badge {
-  font-size: 0.65rem;
+  font-size: clamp(0.72rem, 1.8vw, 0.78rem);
   font-weight: 700;
   padding: 0.2rem 0.5rem;
   background: rgba(255, 208, 66, 0.15);
@@ -4068,7 +4182,7 @@ body.dark-mode .btn-view-case-study {
 /* ==========================================================================
    15. RESPONSIVE HOOKS FOR NEW ELEMENTS
    ========================================================================== */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .desktop-nav-wrap {
     display: none !important;
   }
@@ -4078,6 +4192,12 @@ body.dark-mode .btn-view-case-study {
   .desktop-inquire {
     display: none !important;
   }
+  .nav-menu-links {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
   .hero-actions-group {
     flex-direction: column;
     align-items: stretch;
@@ -4145,7 +4265,7 @@ body.dark-mode .card-service-tag {
 
 .card-perspectives-pill {
   font-family: var(--font-mono);
-  font-size: 0.7rem;
+  font-size: clamp(0.74rem, 1.8vw, 0.78rem);
   font-weight: 700;
   color: var(--text-muted);
   background: var(--bg-secondary);
@@ -4307,7 +4427,7 @@ body.dark-mode .simplified-project-card:hover .card-action-grid-ref {
 }
 
 .modal-block-tag {
-  font-size: 0.7rem;
+  font-size: clamp(0.72rem, 2vw, 0.8rem);
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
