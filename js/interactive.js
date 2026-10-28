@@ -332,6 +332,14 @@
       }
     }
 
+    // Immediately reveal hero above-the-fold content so it is never hidden
+    document.querySelectorAll('.hero-minimal-section .reveal-on-scroll, .hero-content-grid-minimal .reveal-on-scroll').forEach(revealElement);
+
+    // Ensure all project cards are immediately visible without blank delay
+    document.querySelectorAll('.big-project-card').forEach(card => {
+      card.classList.add('cascade-revealed');
+    });
+
     if (isReduced) {
       document.querySelectorAll('.reveal-on-scroll, .big-project-card').forEach(revealElement);
       return;
@@ -344,18 +352,12 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.08, rootMargin: '40px 0px 40px 0px' });
 
     function observeElements() {
       document.querySelectorAll('.reveal-on-scroll:not(._revealObserved)').forEach((el) => {
         el._revealObserved = true;
         observer.observe(el);
-      });
-
-      document.querySelectorAll('.big-project-card:not(._cascadeAttached)').forEach((card) => {
-        card._cascadeAttached = true;
-        card.classList.add('cascade-item');
-        observer.observe(card);
       });
     }
 

@@ -27,12 +27,14 @@
   <title>KB CREATIVE — Spatial Architecture, 3D CGI Visualization &amp; Brand Systems</title>
   <meta name="description" content="Portfolio of KB CREATIVE — Spatial Architecture, Photorealistic 3D CGI Visualization, and Corporate Brand Identity Systems.">
 
-  <!-- Always Scroll to Top on Page Reload -->
+  <!-- Always Scroll to Top on Page Reload (except when an anchor hash is provided) -->
   <script>
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
     }
-    window.scrollTo(0, 0);
+    if (!window.location.hash) {
+      window.scrollTo(0, 0);
+    }
   </script>
 
   <!-- Preload Critical Logo Asset to Eliminate Layout Shift & Accelerate Initial Paint -->
@@ -257,7 +259,7 @@
     </div>
 
     <div class="container hero-content-grid-minimal">
-      <div class="reveal-on-scroll">
+      <div class="reveal-on-scroll is-revealed">
         <div class="hero-discipline-tag" data-i18n="hero_tag">
           <span>● SPATIAL ARCHITECTURE</span>
           <span>•</span>
@@ -311,7 +313,7 @@
       </div>
 
       <!-- Hero Official KB CREATIVE Studio Identity Card -->
-      <div class="hero-emblem-card reveal-on-scroll reveal-delay-1" id="hero-emblem-card">
+      <div class="hero-emblem-card reveal-on-scroll is-revealed" id="hero-emblem-card">
         <div class="hero-emblem-logo-wrap">
           <img src="assets/kb-logo.png" alt="KB CREATIVE Official Logo" class="hero-emblem-logo-img" width="76" height="76" decoding="async">
         </div>
@@ -405,7 +407,909 @@
       
       <!-- Swiss Modular Projects Grid Container (Populated dynamically by js/main.js) -->
       <div class="big-projects-grid" id="big-projects-container">
-        <!-- Project cards rendered dynamically by main.js with exposed modular hairlines and multi-slide controls -->
+<!-- DISCIPLINE TITLE SECTION: ARCHITECTURAL WORKS -->
+        <div class="discipline-section-divider grid-col-full divider-arch" id="arch-works-section">
+          <div class="discipline-divider-content">
+            <div class="discipline-title-row">
+              <h3 class="discipline-title-heading">Spatial Architecture &amp; Cinematic 3D Visualization</h3>
+              <span class="discipline-title-hairline" aria-hidden="true"></span>
+            </div>
+            <p class="discipline-desc-lead">Residential villas, interior workplace renovations, commercial mixed-use retail concourses, and civic architecture modeled in Revit, Rhino &amp; D5 Render.</p>
+          </div>
+        </div>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-01] -->
+        <article class="big-project-card simplified-project-card" data-id="kara-g2-family-residence" id="card-kara-g2-family-residence" onmouseenter="startCardAutoSlide('kara-g2-family-residence')" onmouseleave="stopCardAutoSlide('kara-g2-family-residence')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('kara-g2-family-residence')" title="Click to open case study">
+            <img src="assets/kara-residence-slide-01-day.jpg" alt="G+2 Family Residence" class="carousel-slide-img" id="img-kara-g2-family-residence" loading="lazy" decoding="async" style="">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-kara-g2-family-residence">01 / 010</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'kara-g2-family-residence', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'kara-g2-family-residence', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'kara-g2-family-residence', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 4)" title="View 5"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 5)" title="View 6"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 6)" title="View 7"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 7)" title="View 8"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 8)" title="View 9"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'kara-g2-family-residence', 9)" title="View 10"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">G+2+Terrace Residential Architecture & Daylight Simulation</span>
+              <span class="card-perspectives-pill font-mono">10 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('kara-g2-family-residence')">G+2 Family Residence</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Kara, Addis Ababa | 250 m² Plot</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('kara-g2-family-residence', this)" aria-label="View Case Study for G+2 Family Residence">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-02] -->
+        <article class="big-project-card simplified-project-card" data-id="acute-engineering-office-renovation" id="card-acute-engineering-office-renovation" onmouseenter="startCardAutoSlide('acute-engineering-office-renovation')" onmouseleave="stopCardAutoSlide('acute-engineering-office-renovation')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('acute-engineering-office-renovation')" title="Click to open case study">
+            <img src="assets/office-slide-01-elevation.jpg" alt="Acute Engineering — Office Renovation" class="carousel-slide-img" id="img-acute-engineering-office-renovation" loading="lazy" decoding="async" style="">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-acute-engineering-office-renovation">01 / 06</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'acute-engineering-office-renovation', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'acute-engineering-office-renovation', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'acute-engineering-office-renovation', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'acute-engineering-office-renovation', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'acute-engineering-office-renovation', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'acute-engineering-office-renovation', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'acute-engineering-office-renovation', 4)" title="View 5"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'acute-engineering-office-renovation', 5)" title="View 6"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Interior Architecture & Workplace Renovation</span>
+              <span class="card-perspectives-pill font-mono">6 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('acute-engineering-office-renovation')">Acute Engineering — Office Renovation</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Bole Michael, Addis Ababa, Ethiopia</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">Transforming a compact 22.6 m² footprint into a dual-zone executive suite through a tectonic steel and timber screen that choreographs arrival, transition, and destination.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('acute-engineering-office-renovation', this)" aria-label="View Case Study for Acute Engineering — Office Renovation">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-03] -->
+        <article class="big-project-card simplified-project-card" data-id="mixed-use-tower-gubre" id="card-mixed-use-tower-gubre" onmouseenter="startCardAutoSlide('mixed-use-tower-gubre')" onmouseleave="stopCardAutoSlide('mixed-use-tower-gubre')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('mixed-use-tower-gubre')" title="Click to open case study">
+            <img src="assets/mixed-use-slide-01-daylight.jpg" alt="Mixed-Use Tower & MENA MALL" class="carousel-slide-img" id="img-mixed-use-tower-gubre" loading="lazy" decoding="async" style="">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-mixed-use-tower-gubre">01 / 06</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'mixed-use-tower-gubre', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'mixed-use-tower-gubre', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'mixed-use-tower-gubre', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mixed-use-tower-gubre', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mixed-use-tower-gubre', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mixed-use-tower-gubre', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mixed-use-tower-gubre', 4)" title="View 5"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mixed-use-tower-gubre', 5)" title="View 6"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Mixed-Use Architecture & Commercial Planning</span>
+              <span class="card-perspectives-pill font-mono">6 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('mixed-use-tower-gubre')">Mixed-Use Tower & MENA MALL</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Gubre Town, Ethiopia</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2025</span>
+            </div>
+
+            <p class="simplified-card-summary">Sixteen-level vertical landmark uniting retail concourses, corporate workspaces, and panoramic residences in Gubre Town.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('mixed-use-tower-gubre', this)" aria-label="View Case Study for Mixed-Use Tower & MENA MALL">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-04] -->
+        <article class="big-project-card simplified-project-card" data-id="climate-responsive-residence-diredawa" id="card-climate-responsive-residence-diredawa" onmouseenter="startCardAutoSlide('climate-responsive-residence-diredawa')" onmouseleave="stopCardAutoSlide('climate-responsive-residence-diredawa')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('climate-responsive-residence-diredawa')" title="Click to open case study">
+            <img src="assets/residence-slide-01-street.jpg" alt="Climate-Responsive Private Residence" class="carousel-slide-img" id="img-climate-responsive-residence-diredawa" loading="lazy" decoding="async" style="">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-climate-responsive-residence-diredawa">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'climate-responsive-residence-diredawa', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'climate-responsive-residence-diredawa', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'climate-responsive-residence-diredawa', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'climate-responsive-residence-diredawa', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'climate-responsive-residence-diredawa', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'climate-responsive-residence-diredawa', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'climate-responsive-residence-diredawa', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Bioclimatic Residential Architecture</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('climate-responsive-residence-diredawa')">Climate-Responsive Private Residence</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Dire Dawa, Ethiopia</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2025</span>
+            </div>
+
+            <p class="simplified-card-summary">Bioclimatic residential villa engineered with 45° passive solar louvers and a central microclimate cooling atrium.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('climate-responsive-residence-diredawa', this)" aria-label="View Case Study for Climate-Responsive Private Residence">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- DISCIPLINE TITLE SECTION: GRAPHIC WORKS -->
+        <div class="discipline-section-divider grid-col-full divider-graphic" id="graphic-works-section">
+          <div class="discipline-divider-content">
+            <div class="discipline-title-row">
+              <h3 class="discipline-title-heading">Graphic Design &amp; Corporate Brand Identity Systems</h3>
+              <span class="discipline-title-hairline" aria-hidden="true"></span>
+            </div>
+            <p class="discipline-desc-lead">Monolithic logomarks, typography standards, corporate brand guidelines, packaging architecture, and environmental signage suites.</p>
+          </div>
+        </div>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-05] -->
+        <article class="big-project-card simplified-project-card" data-id="roman-catering-brand-identity" id="card-roman-catering-brand-identity" onmouseenter="startCardAutoSlide('roman-catering-brand-identity')" onmouseleave="stopCardAutoSlide('roman-catering-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('roman-catering-brand-identity')" title="Click to open case study">
+            <img src="assets/roman-slide-01-logo.png" alt="Roman Catering" class="carousel-slide-img" id="img-roman-catering-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #FFFFFF;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-roman-catering-brand-identity">01 / 06</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'roman-catering-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'roman-catering-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'roman-catering-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'roman-catering-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'roman-catering-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'roman-catering-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'roman-catering-brand-identity', 4)" title="View 5"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'roman-catering-brand-identity', 5)" title="View 6"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Hospitality Brand Identity & Eco Packaging System</span>
+              <span class="card-perspectives-pill font-mono">6 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('roman-catering-brand-identity')">Roman Catering</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Addis Ababa, Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">A premier hospitality and catering brand identity uniting Ethiopian communal dining culture with contemporary banquet elegance.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('roman-catering-brand-identity', this)" aria-label="View Case Study for Roman Catering">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-06] -->
+        <article class="big-project-card simplified-project-card" data-id="worker-link-brand-identity" id="card-worker-link-brand-identity" onmouseenter="startCardAutoSlide('worker-link-brand-identity')" onmouseleave="stopCardAutoSlide('worker-link-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('worker-link-brand-identity')" title="Click to open case study">
+            <img src="assets/workerlink-slide-01-logo.jpg" alt="Worker Link — Platform Identity & UI" class="carousel-slide-img" id="img-worker-link-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #FFFFFF;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-worker-link-brand-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'worker-link-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'worker-link-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'worker-link-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'worker-link-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'worker-link-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'worker-link-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'worker-link-brand-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Brand Identity & Mobile UI Systems</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('worker-link-brand-identity')">Worker Link — Platform Identity & UI</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Addis Ababa, Ethiopia</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">Trust-anchored visual identity and mobile UI connecting families directly with verified domestic professionals.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('worker-link-brand-identity', this)" aria-label="View Case Study for Worker Link — Platform Identity & UI">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-07] -->
+        <article class="big-project-card simplified-project-card" data-id="jordano-jemole-construction-identity" id="card-jordano-jemole-construction-identity" onmouseenter="startCardAutoSlide('jordano-jemole-construction-identity')" onmouseleave="stopCardAutoSlide('jordano-jemole-construction-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('jordano-jemole-construction-identity')" title="Click to open case study">
+            <img src="assets/jordano-slide-01-logo.jpg" alt="Jordano Jemole Construction P.L.C" class="carousel-slide-img" id="img-jordano-jemole-construction-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #FFFFFF;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-jordano-jemole-construction-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'jordano-jemole-construction-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'jordano-jemole-construction-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'jordano-jemole-construction-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'jordano-jemole-construction-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'jordano-jemole-construction-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'jordano-jemole-construction-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'jordano-jemole-construction-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Corporate Brand Identity & Site Safety Graphics</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('jordano-jemole-construction-identity')">Jordano Jemole Construction P.L.C</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">Tectonic brand identity engineering a monolithic column monogram that commands instant authority on heavy civil construction sites.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('jordano-jemole-construction-identity', this)" aria-label="View Case Study for Jordano Jemole Construction P.L.C">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-08] -->
+        <article class="big-project-card simplified-project-card" data-id="tilet-fashion-brand-identity" id="card-tilet-fashion-brand-identity" onmouseenter="startCardAutoSlide('tilet-fashion-brand-identity')" onmouseleave="stopCardAutoSlide('tilet-fashion-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('tilet-fashion-brand-identity')" title="Click to open case study">
+            <img src="assets/tilet-slide-01-logo.jpg" alt="Tilet Fashion (ጥለት ፋሽን)" class="carousel-slide-img" id="img-tilet-fashion-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #000000;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-tilet-fashion-brand-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'tilet-fashion-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'tilet-fashion-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'tilet-fashion-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tilet-fashion-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tilet-fashion-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tilet-fashion-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tilet-fashion-brand-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Haute Couture Brand Identity & Retail Packaging</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('tilet-fashion-brand-identity')">Tilet Fashion (ጥለት ፋሽን)</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Bole Century Mall, Addis Ababa, Ethiopia</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2025</span>
+            </div>
+
+            <p class="simplified-card-summary">Haute couture brand identity transforming traditional Ethiopian collar embroidery into an imperial geometric emblem.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('tilet-fashion-brand-identity', this)" aria-label="View Case Study for Tilet Fashion (ጥለት ፋሽን)">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-09] -->
+        <article class="big-project-card simplified-project-card" data-id="bego-meaza-media-identity" id="card-bego-meaza-media-identity" onmouseenter="startCardAutoSlide('bego-meaza-media-identity')" onmouseleave="stopCardAutoSlide('bego-meaza-media-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('bego-meaza-media-identity')" title="Click to open case study">
+            <img src="assets/bego-meaza-slide-03.jpg" alt="Bego Meaza Media" class="carousel-slide-img" id="img-bego-meaza-media-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #FFFFFF;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-bego-meaza-media-identity">01 / 04</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'bego-meaza-media-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'bego-meaza-media-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'bego-meaza-media-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'bego-meaza-media-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'bego-meaza-media-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'bego-meaza-media-identity', 3)" title="View 4"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Broadcast Media Identity & Digital Systems</span>
+              <span class="card-perspectives-pill font-mono">4 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('bego-meaza-media-identity')">Bego Meaza Media</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2024</span>
+            </div>
+
+            <p class="simplified-card-summary">Dynamic broadcast media identity fusing an energetic monogram with forward-motion play symbolism.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('bego-meaza-media-identity', this)" aria-label="View Case Study for Bego Meaza Media">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-10] -->
+        <article class="big-project-card simplified-project-card" data-id="mesob-meals-brand-identity" id="card-mesob-meals-brand-identity" onmouseenter="startCardAutoSlide('mesob-meals-brand-identity')" onmouseleave="stopCardAutoSlide('mesob-meals-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('mesob-meals-brand-identity')" title="Click to open case study">
+            <img src="assets/mesob-slide-01-logo.jpg" alt="Mesob Meals" class="carousel-slide-img" id="img-mesob-meals-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #083B32;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-mesob-meals-brand-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'mesob-meals-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'mesob-meals-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'mesob-meals-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mesob-meals-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mesob-meals-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mesob-meals-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'mesob-meals-brand-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Culinary Brand Identity & Packaging Ecosystem</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('mesob-meals-brand-identity')">Mesob Meals</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2025</span>
+            </div>
+
+            <p class="simplified-card-summary">Modernist culinary brand identity distilling the iconic woven mesob into a clean cultural monogram.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('mesob-meals-brand-identity', this)" aria-label="View Case Study for Mesob Meals">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-11] -->
+        <article class="big-project-card simplified-project-card" data-id="danu-store-brand-identity" id="card-danu-store-brand-identity" onmouseenter="startCardAutoSlide('danu-store-brand-identity')" onmouseleave="stopCardAutoSlide('danu-store-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('danu-store-brand-identity')" title="Click to open case study">
+            <img src="assets/danu-slide-01-logo.jpg" alt="Danu Store" class="carousel-slide-img" id="img-danu-store-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #000000;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-danu-store-brand-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'danu-store-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'danu-store-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'danu-store-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'danu-store-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'danu-store-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'danu-store-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'danu-store-brand-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Retail Brand Identity & Environmental Storefront</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('danu-store-brand-identity')">Danu Store</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Bole Road, Addis Ababa, Ethiopia</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2025</span>
+            </div>
+
+            <p class="simplified-card-summary">Contemporary retail brand identity marrying an iconic shopping cart monogram with luxury store architecture.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('danu-store-brand-identity', this)" aria-label="View Case Study for Danu Store">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-12] -->
+        <article class="big-project-card simplified-project-card" data-id="almaz-jewellery-brand-identity" id="card-almaz-jewellery-brand-identity" onmouseenter="startCardAutoSlide('almaz-jewellery-brand-identity')" onmouseleave="stopCardAutoSlide('almaz-jewellery-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('almaz-jewellery-brand-identity')" title="Click to open case study">
+            <img src="assets/almaz-slide-01-logo.jpg" alt="Almaz Jewellery" class="carousel-slide-img" id="img-almaz-jewellery-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #000000;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-almaz-jewellery-brand-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'almaz-jewellery-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'almaz-jewellery-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'almaz-jewellery-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'almaz-jewellery-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'almaz-jewellery-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'almaz-jewellery-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'almaz-jewellery-brand-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Haute Joaillerie & Luxury Brand Identity</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('almaz-jewellery-brand-identity')">Almaz Jewellery</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Addis Ababa, Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">Minimalist haute joaillerie identity synthesizing a brilliant-cut diamond crown with an arching letter "A" ring band.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('almaz-jewellery-brand-identity', this)" aria-label="View Case Study for Almaz Jewellery">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-13] -->
+        <article class="big-project-card simplified-project-card" data-id="dot-creative-agency-identity" id="card-dot-creative-agency-identity" onmouseenter="startCardAutoSlide('dot-creative-agency-identity')" onmouseleave="stopCardAutoSlide('dot-creative-agency-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('dot-creative-agency-identity')" title="Click to open case study">
+            <img src="assets/dot-slide-01-logo.jpg" alt="DOT CREATIVE" class="carousel-slide-img" id="img-dot-creative-agency-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #FFFFFF;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-dot-creative-agency-identity">01 / 04</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'dot-creative-agency-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'dot-creative-agency-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'dot-creative-agency-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'dot-creative-agency-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'dot-creative-agency-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'dot-creative-agency-identity', 3)" title="View 4"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Creative Agency & Brand Design Studio</span>
+              <span class="card-perspectives-pill font-mono">4 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('dot-creative-agency-identity')">DOT CREATIVE</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Addis Ababa, Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">Geometric visual identity synthesizing an architectural monogram "D" with an offset square dot anchor.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('dot-creative-agency-identity', this)" aria-label="View Case Study for DOT CREATIVE">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-14] -->
+        <article class="big-project-card simplified-project-card" data-id="dama-marketing-brand-identity" id="card-dama-marketing-brand-identity" onmouseenter="startCardAutoSlide('dama-marketing-brand-identity')" onmouseleave="stopCardAutoSlide('dama-marketing-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('dama-marketing-brand-identity')" title="Click to open case study">
+            <img src="assets/dama-slide-01-logo.jpg" alt="Dama Marketing" class="carousel-slide-img" id="img-dama-marketing-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #122720;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-dama-marketing-brand-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'dama-marketing-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'dama-marketing-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'dama-marketing-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'dama-marketing-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'dama-marketing-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'dama-marketing-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'dama-marketing-brand-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Corporate Marketing & Strategic Brand Architecture</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('dama-marketing-brand-identity')">Dama Marketing</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Addis Ababa, Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">Geometric corporate identity uniting a sharp cantilevered square pixel with a sculpted golden "D" monogram.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('dama-marketing-brand-identity', this)" aria-label="View Case Study for Dama Marketing">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
+        
+        <!-- SIMPLIFIED PROJECT CARD: [MOD-15] -->
+        <article class="big-project-card simplified-project-card" data-id="tinu-gifts-brand-identity" id="card-tinu-gifts-brand-identity" onmouseenter="startCardAutoSlide('tinu-gifts-brand-identity')" onmouseleave="stopCardAutoSlide('tinu-gifts-brand-identity')">
+          <!-- 3D Specular Glare Overlay -->
+          <div class="card-glare-overlay"></div>
+
+          <!-- Media Carousel with Exposed Multi-Slide Controls -->
+          <div class="carousel-media-wrap" onclick="openCaseStudy('tinu-gifts-brand-identity')" title="Click to open case study">
+            <img src="assets/tinu-slide-01-logo.jpg" alt="TINU GIFTS" class="carousel-slide-img" id="img-tinu-gifts-brand-identity" loading="lazy" decoding="async" style="object-fit: contain; background: #E9DCCC;">
+
+            <!-- Slide Counter Badge (01 / 05) -->
+            <span class="slide-counter-badge font-mono" id="counter-tinu-gifts-brand-identity">01 / 05</span>
+
+            <!-- In-Card Slide Navigation Arrows -->
+            <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, 'tinu-gifts-brand-identity', -1)" aria-label="Previous view">‹</button>
+            <button type="button" class="slide-arrow-btn slide-arrow-next" onclick="changeSlide(event, 'tinu-gifts-brand-identity', 1)" aria-label="Next view">›</button>
+
+            <!-- Slide Indicator Dots -->
+            <div class="slide-dots-indicator" onclick="event.stopPropagation()">
+              
+                <span class="slide-dot active" onclick="goToSlide(event, 'tinu-gifts-brand-identity', 0)" title="View 1"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tinu-gifts-brand-identity', 1)" title="View 2"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tinu-gifts-brand-identity', 2)" title="View 3"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tinu-gifts-brand-identity', 3)" title="View 4"></span>
+              
+                <span class="slide-dot " onclick="goToSlide(event, 'tinu-gifts-brand-identity', 4)" title="View 5"></span>
+              
+            </div>
+          </div>
+          
+          <!-- Simplified Card Body -->
+          <div class="simplified-card-body">
+            <div class="card-service-row">
+              <span class="card-service-tag font-mono">Artisanal Packaging Architecture & Brand Identity System</span>
+              <span class="card-perspectives-pill font-mono">5 Perspectives</span>
+            </div>
+
+            <h3 class="simplified-card-title" onclick="openCaseStudy('tinu-gifts-brand-identity')">TINU GIFTS</h3>
+
+            <div class="simplified-card-meta font-mono">
+              <span class="card-meta-location">Addis Ababa, Ethiopia (KB CREATIVE Commission)</span>
+              <span class="text-gold">•</span>
+              <span class="card-meta-year text-gold">2026</span>
+            </div>
+
+            <p class="simplified-card-summary">Warm luxury packaging identity synthesizing an architectural gift box with twin geometric ribbon wings and bespoke serif typography.</p>
+
+            <div class="simplified-card-action">
+              <button type="button" class="btn-card-view-case-study" onclick="openCaseStudy('tinu-gifts-brand-identity', this)" aria-label="View Case Study for TINU GIFTS">
+                <span>View Case Study</span>
+                <span class="case-study-arrow" aria-hidden="true">↗</span>
+              </button>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>

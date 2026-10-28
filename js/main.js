@@ -6,29 +6,43 @@
  * ============================================================================
  */
 
-// Reset scroll to top on reload
+// Reset scroll to top on reload, unless anchor hash is provided
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 window.addEventListener('beforeunload', () => {
-  window.scrollTo(0, 0);
+  if (!window.location.hash) {
+    window.scrollTo(0, 0);
+  }
 });
-if (!window.location.hash || (performance.getEntriesByType && performance.getEntriesByType('navigation')[0]?.type === 'reload')) {
-  window.scrollTo(0, 0);
+
+function safeRun(name, fn) {
+  try {
+    fn();
+  } catch (err) {
+    console.error(`[KB CREATIVE] Error initializing ${name}:`, err);
+  }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  if (!window.location.hash) {
-    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+function handleHashScroll(hash) {
+  const target = document.querySelector(hash);
+  if (target) {
+    const headerOffset = 70;
+    const targetY = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+    window.scrollTo({
+      top: targetY,
+      behavior: 'smooth'
+    });
   }
-  initThemeEngine();
-  initLanguageEngine();
-  initProjectsArchive();
-  initSkillsAnimation();
-  initMoveableCardTilt();
-  initCaseModal();
-  initContactNavHandler();
-});
+}
+
+function initHashNavigationHandler() {
+  if (window.location.hash) {
+    setTimeout(() => {
+      handleHashScroll(window.location.hash);
+    }, 120);
+  }
+}
 
 // Fast, perfect jump to contact section on button click
 function initContactNavHandler() {
@@ -1950,102 +1964,27 @@ function initProjectsArchive() {
 
   render();
 
-  // FLIP Layout Animation Engine: First, Last, Invert, Play
+  // Direct clean filter transition
   function transitionFilter(updateFn) {
-    const cards = Array.from(container.querySelectorAll('.simplified-project-card'));
-    const firstPositions = new Map();
-
-    cards.forEach(card => {
-      const id = card.getAttribute('data-id');
-      if (id) {
-        firstPositions.set(id, card.getBoundingClientRect());
-      }
-    });
-
-    updateFn();
+    if (typeof updateFn === 'function') updateFn();
     render();
-
-    const newCards = Array.from(container.querySelectorAll('.simplified-project-card'));
-
-    newCards.forEach(card => {
-      const id = card.getAttribute('data-id');
-      const firstRect = firstPositions.get(id);
-
-      if (firstRect) {
-        const lastRect = card.getBoundingClientRect();
-        const dx = firstRect.left - lastRect.left;
-        const dy = firstRect.top - lastRect.top;
-
-        if (dx !== 0 || dy !== 0) {
-          card.style.transform = `translate(${dx}px, ${dy}px)`;
-          card.style.transition = 'none';
-        }
-      } else {
-        card.style.opacity = '0';
-        card.style.transform = 'scale(0.94)';
-        card.style.transition = 'none';
-      }
-    });
-
-    // Force layout reflow
-    void container.offsetHeight;
-
-    requestAnimationFrame(() => {
-      newCards.forEach(card => {
-        card.style.transition = 'transform 350ms cubic-bezier(0.22, 1, 0.36, 1), opacity 350ms cubic-bezier(0.22, 1, 0.36, 1)';
-        card.style.transform = 'translate(0, 0) scale(1)';
-        card.style.opacity = '1';
-      });
-
-      setTimeout(() => {
-        newCards.forEach(card => {
-          card.style.transition = '';
-          card.style.transform = '';
-          card.style.opacity = '';
-        });
-      }, 370);
-    });
   }
 
   practicePills.forEach(pill => {
     pill.addEventListener('click', () => {
       practicePills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
-      transitionFilter(() => {
-        activePractice = pill.getAttribute('data-practice');
-        activeSubCategory = 'all';
-        subPills.forEach(sp => sp.classList.remove('active'));
-        subPills[0]?.classList.add('active');
-      });
+      activePractice = pill.getAttribute('data-practice') || 'all';
+      render();
     });
   });
 
   subPills.forEach(sp => {
     sp.addEventListener('click', () => {
-      const targetSub = sp.getAttribute('data-sub');
-      const archSubs = ['interior', 'mixeduse', 'residential', 'sports', 'sustainable'];
-
-      transitionFilter(() => {
-        activeSubCategory = targetSub;
-
-        // Smart Filter Harmonization: align active practice with selected typology
-        if (targetSub !== 'all') {
-          if (archSubs.includes(targetSub) && activePractice === 'graphic') {
-            activePractice = 'architecture';
-            practicePills.forEach(p => {
-              p.classList.toggle('active', p.getAttribute('data-practice') === 'architecture');
-            });
-          } else if (targetSub === 'identity' && (activePractice === 'architecture' || activePractice === 'visualization')) {
-            activePractice = 'graphic';
-            practicePills.forEach(p => {
-              p.classList.toggle('active', p.getAttribute('data-practice') === 'graphic');
-            });
-          }
-        }
-
-        subPills.forEach(s => s.classList.remove('active'));
-        sp.classList.add('active');
-      });
+      subPills.forEach(s => s.classList.remove('active'));
+      sp.classList.add('active');
+      activeSubCategory = sp.getAttribute('data-sub') || 'all';
+      render();
     });
   });
 
@@ -2054,7 +1993,7 @@ function initProjectsArchive() {
     activeSubCategory = 'all';
     practicePills.forEach((p, idx) => p.classList.toggle('active', idx === 0));
     subPills.forEach((s, idx) => s.classList.toggle('active', idx === 0));
-    transitionFilter(() => {});
+    render();
   };
 
   function render() {
@@ -2386,11 +2325,20 @@ function initSkillsAnimation() {
   const skillBars = document.querySelectorAll('.skill-progress-fill');
   let animated = false;
 
-  // Set initial 0% text to ensure a smooth upward count-up
+  const isMobile = window.innerWidth <= 768 || window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+  const isReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Guarantee that all bars and percentage numbers display their correct values
   skillBars.forEach(bar => {
+    const targetPercent = parseInt(bar.getAttribute('data-percent'), 10) || 0;
+    bar.style.width = `${targetPercent}%`;
     const countEl = bar.closest('.skill-progress-row')?.querySelector('.skill-percent-number');
-    if (countEl) countEl.textContent = '0%';
+    if (countEl) countEl.textContent = `${targetPercent}%`;
   });
+
+  if (isMobile || isReduced) {
+    return;
+  }
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -2399,7 +2347,7 @@ function initSkillsAnimation() {
         animateAllBars();
       }
     });
-  }, { threshold: 0.15 });
+  }, { threshold: 0.05, rootMargin: '50px 0px 50px 0px' });
 
   observer.observe(skillsSection);
 
@@ -2408,13 +2356,11 @@ function initSkillsAnimation() {
       const targetPercent = parseInt(bar.getAttribute('data-percent'), 10) || 0;
       const countEl = bar.closest('.skill-progress-row')?.querySelector('.skill-percent-number');
 
-      // Expand progress bar width smoothly
       bar.style.width = `${targetPercent}%`;
 
-      // Animate percentage count-up smoothly
       if (countEl) {
         let current = 0;
-        const stepTime = Math.max(10, Math.floor(1200 / targetPercent));
+        const stepTime = Math.max(10, Math.floor(900 / targetPercent));
         const timer = setInterval(() => {
           current += 1;
           countEl.textContent = `${current}%`;
@@ -2431,6 +2377,15 @@ function initSkillsAnimation() {
 /* ==========================================================================
    6. Modal Case Study Viewer with Multi-View High-Resolution Gallery
    ========================================================================== */
+function closeCaseStudy() {
+  const overlay = document.getElementById('case-study-modal');
+  if (overlay) {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+}
+window.closeCaseStudy = closeCaseStudy;
+
 function initCaseModal() {
   const overlay = document.getElementById('case-study-modal');
   const closeBtn = document.getElementById('case-modal-close');
@@ -2841,3 +2796,37 @@ window.showToast = function(title, message, iconChar = '✓') {
     }, 380);
   }
 };
+
+/* ==========================================================================
+   Application Initialization
+   ========================================================================== */
+function initApp() {
+  safeRun('ThemeEngine', initThemeEngine);
+  safeRun('LanguageEngine', initLanguageEngine);
+  safeRun('ProjectsArchive', initProjectsArchive);
+  safeRun('SkillsAnimation', initSkillsAnimation);
+  safeRun('MoveableCardTilt', initMoveableCardTilt);
+  safeRun('CaseModal', initCaseModal);
+  safeRun('ContactNavHandler', initContactNavHandler);
+  safeRun('HashNavigationHandler', initHashNavigationHandler);
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initApp);
+} else {
+  initApp();
+}
+
+// Fallback safety to ensure all 15 project cards are active and populated
+window.addEventListener('load', () => {
+  const container = document.getElementById('big-projects-container');
+  if (container && (!container.children || container.children.length === 0)) {
+    if (typeof window.renderProjects === 'function') {
+      window.renderProjects();
+    }
+  }
+  if (window.location.hash) {
+    handleHashScroll(window.location.hash);
+  }
+});
+
