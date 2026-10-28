@@ -1524,8 +1524,6 @@ const KB_I18N = {
     view_case_study: "View Case Study",
 
     // Skills Section
-    chap_02: "CHAPTER 02 // TECHNICAL DISCIPLINE & CGI MATRIX",
-    skills_super: "02. Core Competencies & Skills Matrix",
     skills_title: "Technical & Disciplinary Toolkit",
     skills_desc: "A rigorous cross-disciplinary synthesis of spatial precision, monolithic visual brand architecture, high-fidelity 3D visualization, and multilingual execution.",
     academic_tag: "ACADEMIC PROFILE & STUDIO PEDAGOGY",
@@ -1548,8 +1546,6 @@ const KB_I18N = {
     collab_note_text: "Multilingual fluency facilitating seamless technical coordination with construction teams on site, academic peers at Wolkite University, and commercial corporate clients across Ethiopia and worldwide.",
 
     // FAQ Section
-    chap_03: "CHAPTER 03 // FREQUENTLY ASKED QUESTIONS",
-    faq_super: "03. Inquiries & Process Architecture",
     faq_title: "Frequently Asked Questions",
     faq_desc: "Essential clarifications on architectural commissions, cinematic 3D CGI visualization workflows, technical deliverables, and bespoke brand identity design with KB CREATIVE.",
     faq_q1: "What architectural and design services does KB CREATIVE provide?",
@@ -1667,8 +1663,6 @@ const KB_I18N = {
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
-    chap_02: "ክፍል 02 // የሙያ እና የቴክኒክ ብቃት",
-    skills_super: "02. ዋና ክህሎቶች እና የሶፍትዌር ብቃት",
     skills_title: "የቴክኒክ እና የሙያ ብቃት ማትሪክስ",
     skills_desc: "የቦታ ጥንቃቄ፣ የብራንድ ዲዛይን፣ ከፍተኛ ጥራት ያለው 3D ቪዥዋላይዜሽን እና የባለብዙ ቋንቋ ቅንጅት።",
     academic_tag: "የትምህርት መረጃ እና የስቱዲዮ ልምምድ",
@@ -1691,8 +1685,6 @@ const KB_I18N = {
     collab_note_text: "ከግንባታ ቡድኖች፣ ከወልቂጤ ዩኒቨርሲቲ የአካዳሚክ ባልደረቦች እና አለምአቀፍ ደንበኞች ጋር ያለምንም እንቅፋት በብቃት ለመስራት የሚያስችል የቋንቋ ክህሎት።",
 
     // FAQ Section
-    chap_03: "ክፍል 03 // ተዘውታሪ ጥያቄዎች",
-    faq_super: "03. የጥያቄዎች እና የአሰራር ሂደት ማብራሪያ",
     faq_title: "ተዘውታሪ ጥያቄዎች እና መልሶች",
     faq_desc: "ስለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የቴክኒክ ሰነዶች እና የብራንድ መለያ ስራዎች ከKB CREATIVE ጋር ለመስራት የሚያስፈልጉ ጠቃሚ መረጃዎች።",
     faq_q1: "KB CREATIVE ምን አይነት የአርክቴክቸር እና የዲዛይን አገልግሎቶችን ይሰጣል?",
@@ -2090,11 +2082,6 @@ function initProjectsArchive() {
       if (isFirstItem || isSwitchToGraphic) {
         lastPractice = item.practice;
         const isArch = (item.practice === 'architecture');
-        const disciplineCount = filtered.filter(p => p.practice === item.practice).length;
-
-        const tagText = isArch
-          ? (isAm ? 'ዘርፍ 01 // አርክቴክቸር እና 3D ቪዥዋላይዜሽን' : 'DISCIPLINE 01 // SPATIAL ARCHITECTURE &amp; 3D CGI')
-          : (isAm ? 'ዘርፍ 02 // የግራፊክ ዲዛይን እና የብራንድ ማንነት' : 'DISCIPLINE 02 // GRAPHIC DESIGN &amp; BRAND IDENTITY');
 
         const headingText = isArch
           ? (isAm ? 'የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን' : 'Spatial Architecture &amp; Cinematic 3D Visualization')
@@ -2108,11 +2095,6 @@ function initProjectsArchive() {
         <!-- DISCIPLINE TITLE SECTION: ${isArch ? 'ARCHITECTURAL WORKS' : 'GRAPHIC WORKS'} -->
         <div class="discipline-section-divider grid-col-full ${isArch ? 'divider-arch' : 'divider-graphic'}" id="${isArch ? 'arch-works-section' : 'graphic-works-section'}">
           <div class="discipline-divider-content">
-            <div class="discipline-tag-row font-mono">
-              <span class="discipline-accent-bullet" aria-hidden="true">■</span>
-              <span class="discipline-tag-text">${tagText}</span>
-              <span class="discipline-count-badge font-mono">${disciplineCount} ${isAm ? 'ፕሮጀክቶች' : 'Projects'}</span>
-            </div>
             <div class="discipline-title-row">
               <h3 class="discipline-title-heading">${headingText}</h3>
               <span class="discipline-title-hairline" aria-hidden="true"></span>
