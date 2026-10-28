@@ -2470,8 +2470,14 @@ function initCaseModal() {
   });
 
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && overlay.classList.contains('active')) {
-      closeCaseStudy();
+    if (overlay.classList.contains('active')) {
+      if (e.key === 'Escape') {
+        closeCaseStudy();
+      } else if (e.key === 'ArrowRight') {
+        window.modalNextSlide();
+      } else if (e.key === 'ArrowLeft') {
+        window.modalPrevSlide();
+      }
     }
   });
 }
@@ -2483,6 +2489,8 @@ window.openCaseStudy = function(projectId, triggerEl) {
   window.currentActiveProjectId = projectId;
   const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
   const project = getLocalizedProject(rawProject, isAm ? 'am' : 'en');
+  window._currentModalProject = project;
+  window._currentModalSlideIndex = 0;
 
   if (triggerEl && triggerEl.classList) {
     triggerEl.classList.add('btn-loading');
@@ -2580,17 +2588,22 @@ window.openCaseStudy = function(projectId, triggerEl) {
     <!-- 03 // FINAL IMAGES & ARCHITECTURAL DRAWINGS (Full Proportional Gallery) -->
     <div class="modal-gallery-section" style="margin-bottom: 2rem;">
       <div class="modal-block-tag font-mono">${isAm ? `03 // የመጨረሻ ምስሎች እና የአርክቴክቸር ንድፎች (${project.slides.length} የተለያዩ እይታዎች)` : `03 // FINAL IMAGES &amp; ARCHITECTURAL DRAWINGS (${project.slides.length} MULTI-VIEW PERSPECTIVES)`}</div>
-      <div class="modal-hero-viewport" style="background: ${project.slides[0].bg || '#02121D'};">
+      <div class="modal-hero-viewport" id="modal-hero-viewport" style="background: ${project.slides[0].bg || '#02121D'};">
         <img src="${project.slides[0].url}" alt="${project.title}" id="modal-active-img" style="object-fit: contain;">
-        <div class="modal-slide-caption-bar font-mono" id="modal-active-caption">
-          ${project.slides[0].caption}
-        </div>
+        ${project.slides.length > 1 ? `
+          <button type="button" class="modal-nav-arrow modal-nav-prev" onclick="modalPrevSlide(event)" aria-label="${isAm ? 'ቀዳሚ ምስል' : 'Previous slide'}" title="${isAm ? 'ቀዳሚ' : 'Previous'}">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button type="button" class="modal-nav-arrow modal-nav-next" onclick="modalNextSlide(event)" aria-label="${isAm ? 'ቀጣይ ምስል' : 'Next slide'}" title="${isAm ? 'ቀጣይ' : 'Next'}">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        ` : ''}
       </div>
 
       <!-- Multi-Perspective Thumbnail Strip -->
       <div class="modal-thumbnail-strip">
         ${project.slides.map((s, idx) => `
-          <button type="button" class="modal-thumb-btn ${idx === 0 ? 'active' : ''}" onclick="selectModalSlide('${s.url}', '${s.caption.replace(/'/g, "\\'")}', this, '${s.fit || ''}', '${s.bg || ''}')" title="${s.caption}">
+          <button type="button" class="modal-thumb-btn ${idx === 0 ? 'active' : ''}" onclick="selectModalSlide('${s.url}', '${s.caption.replace(/'/g, "\\'")}', this, '${s.fit || ''}', '${s.bg || ''}', ${idx})" title="${s.caption}">
             <img src="${s.url}" alt="${s.caption}" style="${s.fit === 'contain' ? `object-fit: contain; background: ${s.bg || '#02121D'};`: ''}">
             <span class="modal-thumb-number font-mono">0${idx + 1}</span>
           </button>
@@ -2652,6 +2665,31 @@ window.openCaseStudy = function(projectId, triggerEl) {
   overlay.classList.add('active');
   document.body.style.overflow = 'hidden';
 
+  const heroViewport = document.getElementById('modal-hero-viewport');
+  if (heroViewport && project.slides.length > 1) {
+    let touchStartX = 0;
+    let touchStartY = 0;
+    heroViewport.addEventListener('touchstart', (e) => {
+      if (e.touches && e.touches[0]) {
+        touchStartX = e.touches[0].clientX;
+        touchStartY = e.touches[0].clientY;
+      }
+    }, { passive: true });
+    heroViewport.addEventListener('touchend', (e) => {
+      if (e.changedTouches && e.changedTouches[0]) {
+        const diffX = e.changedTouches[0].clientX - touchStartX;
+        const diffY = e.changedTouches[0].clientY - touchStartY;
+        if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+          if (diffX < 0) {
+            window.modalNextSlide();
+          } else {
+            window.modalPrevSlide();
+          }
+        }
+      }
+    }, { passive: true });
+  }
+
   if (isArch) {
     const sliderEl = document.getElementById('modal-ba-slider');
     if (sliderEl) {
@@ -2702,7 +2740,10 @@ function initBeforeAfterSlider(container) {
   });
 }
 
-window.selectModalSlide = function(url, caption, btnEl, fit, bg) {
+window.selectModalSlide = function(url, caption, btnEl, fit, bg, idx) {
+  if (typeof idx === 'number') {
+    window._currentModalSlideIndex = idx;
+  }
   const heroImg = document.getElementById('modal-active-img');
   const captionEl = document.getElementById('modal-active-caption');
   const viewport = heroImg ? heroImg.closest('.modal-hero-viewport') : null;
@@ -2726,7 +2767,41 @@ window.selectModalSlide = function(url, caption, btnEl, fit, bg) {
   // Update active thumbnail border
   const buttons = document.querySelectorAll('.modal-thumb-btn');
   buttons.forEach(b => b.classList.remove('active'));
-  if (btnEl) btnEl.classList.add('active');
+  if (btnEl) {
+    btnEl.classList.add('active');
+  } else if (typeof idx === 'number' && buttons[idx]) {
+    buttons[idx].classList.add('active');
+  }
+};
+
+window.modalNextSlide = function(e) {
+  if (e && e.stopPropagation) e.stopPropagation();
+  if (!window._currentModalProject || !window._currentModalProject.slides || window._currentModalProject.slides.length <= 1) return;
+  const slides = window._currentModalProject.slides;
+  const nextIdx = ((window._currentModalSlideIndex || 0) + 1) % slides.length;
+  window.goToModalSlide(nextIdx);
+};
+
+window.modalPrevSlide = function(e) {
+  if (e && e.stopPropagation) e.stopPropagation();
+  if (!window._currentModalProject || !window._currentModalProject.slides || window._currentModalProject.slides.length <= 1) return;
+  const slides = window._currentModalProject.slides;
+  const prevIdx = ((window._currentModalSlideIndex || 0) - 1 + slides.length) % slides.length;
+  window.goToModalSlide(prevIdx);
+};
+
+window.goToModalSlide = function(idx) {
+  if (!window._currentModalProject || !window._currentModalProject.slides) return;
+  const slides = window._currentModalProject.slides;
+  if (idx < 0 || idx >= slides.length) return;
+  window._currentModalSlideIndex = idx;
+  const s = slides[idx];
+  const buttons = document.querySelectorAll('.modal-thumb-btn');
+  const btn = buttons[idx] || null;
+  window.selectModalSlide(s.url, s.caption, btn, s.fit || '', s.bg || '', idx);
+  if (btn && typeof btn.scrollIntoView === 'function') {
+    btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+  }
 };
 
 window.closeCaseStudy = function() {
