@@ -74,10 +74,11 @@
       <!-- Desktop Minimalist Menu Navigation Links -->
       <nav aria-label="Main Navigation" class="desktop-nav-wrap">
         <ul class="nav-menu-links">
-          <li><a href="#work" class="nav-item-link"><span class="nav-item-index">01</span> <span data-i18n="nav_works">Works</span></a></li>
-          <li><a href="#skills" class="nav-item-link"><span class="nav-item-index">02</span> <span data-i18n="nav_skills">Core Skills</span></a></li>
-          <li><a href="#faq" class="nav-item-link"><span class="nav-item-index">03</span> <span data-i18n="nav_faq">FAQ</span></a></li>
-          <li><a href="#contact" class="nav-item-link"><span class="nav-item-index">04</span> <span data-i18n="nav_contact">Contact</span></a></li>
+          <li><a href="#about" class="nav-item-link"><span class="nav-item-index">01</span> <span data-i18n="nav_about">About</span></a></li>
+          <li><a href="#work" class="nav-item-link"><span class="nav-item-index">02</span> <span data-i18n="nav_works">Projects</span></a></li>
+          <li><a href="#skills" class="nav-item-link"><span class="nav-item-index">03</span> <span data-i18n="nav_skills">Core Skills</span></a></li>
+          <li><a href="faq.html" class="nav-item-link"><span class="nav-item-index">04</span> <span data-i18n="nav_faq">FAQ</span></a></li>
+          <li><a href="#contact" class="nav-item-link"><span class="nav-item-index">05</span> <span data-i18n="nav_contact">Contact</span></a></li>
         </ul>
       </nav>
 
@@ -157,19 +158,29 @@
         <nav aria-label="Mobile Navigation">
           <ul class="mobile-menu-links">
             <li>
-              <a href="#work" class="mobile-nav-link" onclick="closeMobileNav()">
+              <a href="#about" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
                   <span class="mobile-nav-index font-mono">01</span>
-                  <span class="mobile-nav-title" data-i18n="nav_works">Works</span>
+                  <span class="mobile-nav-title" data-i18n="nav_about">About</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
-                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_works">15 Curated Works • Spatial &amp; Brand</span>
+                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_about">Studio Direction &amp; Spatial Pedagogy</span>
+              </a>
+            </li>
+            <li>
+              <a href="#work" class="mobile-nav-link" onclick="closeMobileNav()">
+                <div class="mobile-nav-link-row">
+                  <span class="mobile-nav-index font-mono">02</span>
+                  <span class="mobile-nav-title" data-i18n="nav_works">Projects</span>
+                  <span class="mobile-nav-arrow" aria-hidden="true">→</span>
+                </div>
+                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_works">15 Curated Projects • Spatial &amp; Brand</span>
               </a>
             </li>
             <li>
               <a href="#skills" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
-                  <span class="mobile-nav-index font-mono">02</span>
+                  <span class="mobile-nav-index font-mono">03</span>
                   <span class="mobile-nav-title" data-i18n="nav_skills">Core Skills</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
@@ -177,19 +188,19 @@
               </a>
             </li>
             <li>
-              <a href="#faq" class="mobile-nav-link" onclick="closeMobileNav()">
+              <a href="faq.html" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
-                  <span class="mobile-nav-index font-mono">03</span>
+                  <span class="mobile-nav-index font-mono">04</span>
                   <span class="mobile-nav-title" data-i18n="nav_faq">FAQ</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
-                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_faq">Clarifications &amp; Project Process</span>
+                <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_faq">Process &amp; Clarifications Page</span>
               </a>
             </li>
             <li>
               <a href="#contact" class="mobile-nav-link" onclick="closeMobileNav()">
                 <div class="mobile-nav-link-row">
-                  <span class="mobile-nav-index font-mono">04</span>
+                  <span class="mobile-nav-index font-mono">05</span>
                   <span class="mobile-nav-title" data-i18n="nav_contact">Contact</span>
                   <span class="mobile-nav-arrow" aria-hidden="true">→</span>
                 </div>
@@ -290,7 +301,7 @@
           </a>
 
           <a href="#work" class="hero-scroll-subtle">
-            <span data-i18n="hero_explore">Explore 15 Curated Works</span>
+            <span data-i18n="hero_explore">Explore 15 Curated Projects</span>
             <span class="scroll-arrow" aria-hidden="true">↓</span>
           </a>
         </div>
@@ -360,7 +371,7 @@
     <div class="container navigator-flex">
       <!-- Primary Practice Filter Pills -->
       <div class="practice-toggle-pills" role="tablist">
-        <button class="practice-pill active" data-practice="all" data-i18n="filter_all">All Works (15)</button>
+        <button class="practice-pill active" data-practice="all" data-i18n="filter_all">All Projects (15)</button>
         <button class="practice-pill" data-practice="architecture" data-i18n="filter_arch">Spatial Architecture (04)</button>
         <button class="practice-pill" data-practice="visualization" data-i18n="filter_vis">3D Visualization (04)</button>
         <button class="practice-pill" data-practice="graphic" data-i18n="filter_brand">Brand Identity (11)</button>

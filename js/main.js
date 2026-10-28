@@ -1471,7 +1471,8 @@ const KB_I18N = {
     status_strip_standing: "STUDIO: SPATIAL ARCHITECTURE & BRAND IDENTITY",
     status_strip_contact: `TEL: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • 2026 COMMISSIONS OPEN`,
     brand_sub: "SPATIAL ARCHITECTURE & BRAND IDENTITY",
-    nav_works: "Works",
+    nav_about: "About",
+    nav_works: "Projects",
     nav_skills: "Core Skills",
     nav_faq: "FAQ",
     nav_contact: "Contact",
@@ -1480,9 +1481,10 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // MENU",
     
     // Mobile Drawer
-    mob_sub_works: "15 Curated Works • Spatial & Brand",
+    mob_sub_about: "Studio Direction & Spatial Pedagogy",
+    mob_sub_works: "15 Curated Projects • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
-    mob_sub_faq: "Clarifications & Project Process",
+    mob_sub_faq: "Process & Clarifications Page",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
     mob_telegram_cta: "Initiate Collaboration (Telegram) ↗",
@@ -1495,14 +1497,14 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
-    hero_explore: "Explore 15 Curated Works",
+    hero_explore: "Explore 15 Curated Projects",
     
     // Hero Stats
     stat_student: "Spatial & Brand Design",
     stat_studies: "Curated Case Studies",
 
     // Practice Filter Pills
-    filter_all: "All Works (15)",
+    filter_all: "All Projects (15)",
     filter_arch: "Spatial Architecture (04)",
     filter_vis: "3D Visualization (04)",
     filter_brand: "Brand Identity (11)",
@@ -1514,11 +1516,11 @@ const KB_I18N = {
     sub_sustainable: "Sustainable / Eco",
     sub_identity: "Brand & UI",
     
-    // Works Section
+    // Projects Section
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
-    editorial_title: "Curated Architectural & Graphic Works",
-    editorial_desc: "15 curated works spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
+    editorial_title: "Curated Architectural & Graphic Projects",
+    editorial_desc: "15 curated projects spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1578,8 +1580,8 @@ const KB_I18N = {
     inquiry_submit: "Transmit Proposal To KB CREATIVE →",
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
-    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 15 curated works.",
-    empty_reset_btn: "Reset Filters (Show All 15 Works) →",
+    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 15 curated projects.",
+    empty_reset_btn: "Reset Filters (Show All 15 Projects) →",
     mob_lang_label: "LANG:",
     mob_theme_label: "THEME:",
     footer_rights: "ALL RIGHTS RESERVED © 2026",
@@ -1612,7 +1614,8 @@ const KB_I18N = {
     status_strip_standing: "ስቱዲዮ: የቦታ አርክቴክቸር እና የብራንድ ማንነት",
     status_strip_contact: `ስልክ: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • ለ2026 ክፍት`,
     brand_sub: "የቦታ አርክቴክቸር እና የብራንድ ማንነት",
-    nav_works: "ስራዎች",
+    nav_about: "ስለ እኔ",
+    nav_works: "ፕሮጀክቶች",
     nav_skills: "ዋና ክህሎቶች",
     nav_faq: "ተዘውታሪ ጥያቄዎች",
     nav_contact: "አግኙን",
@@ -1621,9 +1624,10 @@ const KB_I18N = {
     menu_header: "KB CREATIVE // ማውጫ",
     
     // Mobile Drawer
-    mob_sub_works: "15 የተመረጡ ስራዎች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_about: "የስራ ፍልስፍና እና የስቱዲዮ መረጃ",
+    mob_sub_works: "15 የተመረጡ ፕሮጀክቶች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
-    mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች",
+    mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች ገጽ",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
     mob_telegram_cta: "በቴሌግራም ያግኙኝ ↗",
@@ -1636,14 +1640,14 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "15 የተመረጡ ስራዎችን ይመልከቱ",
+    hero_explore: "15 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የቦታ እና ብራንድ ዲዛይን",
     stat_studies: "የተመረጡ ስራዎች",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ስራዎች (15)",
+    filter_all: "ሁሉም ፕሮጀክቶች (15)",
     filter_arch: "አርክቴክቸር (04)",
     filter_vis: "3D ቪዥዋላይዜሽን (04)",
     filter_brand: "የብራንድ መለያ (11)",
@@ -1655,11 +1659,11 @@ const KB_I18N = {
     sub_sustainable: "ኢኮ-ተስማሚ ንድፍ",
     sub_identity: "ብራንድ እና መለያ",
     
-    // Works Section
+    // Projects Section
     chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
     archive_title: "የስራዎች ማህደር",
-    editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ስራዎች",
-    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 15 የተመረጡ ስራዎች።",
+    editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ፕሮጀክቶች",
+    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 15 የተመረጡ ፕሮጀክቶች።",
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
@@ -2058,8 +2062,8 @@ function initProjectsArchive() {
 
     if (projectCountEl) {
       projectCountEl.textContent = isAm
-        ? `ማውጫ // ከ${baseProjects.length} ስራዎች ውስጥ ${filtered.length}ቱ እየታዩ ነው`
-        : `INDEX // Showing ${filtered.length} of ${baseProjects.length} Works`;
+        ? `ማውጫ // ከ${baseProjects.length} ፕሮጀክቶች ውስጥ ${filtered.length}ቱ እየታዩ ነው`
+        : `INDEX // Showing ${filtered.length} of ${baseProjects.length} Projects`;
     }
 
     if (filtered.length === 0) {
@@ -2067,9 +2071,9 @@ function initProjectsArchive() {
         <div class="empty-filter-state">
           <div class="empty-status-tag font-mono">${dict.empty_void_tag || '00 // VOID SPECIFICATION'}</div>
           <h3 class="empty-title">${dict.empty_void_title || 'No projects match the selected filter combination'}</h3>
-          <p class="empty-desc">${dict.empty_void_desc || 'Clear your sub-category selection or switch practice typologies to explore all 15 curated works.'}</p>
+          <p class="empty-desc">${dict.empty_void_desc || 'Clear your sub-category selection or switch practice typologies to explore all 15 curated projects.'}</p>
           <button type="button" class="btn-brand-yellow empty-reset-btn" onclick="window.resetAllFilters()">
-            <span>${dict.empty_reset_btn || 'Reset Filters (Show All 15 Works) →'}</span>
+            <span>${dict.empty_reset_btn || 'Reset Filters (Show All 15 Projects) →'}</span>
           </button>
         </div>
       `;
@@ -2107,7 +2111,7 @@ function initProjectsArchive() {
             <div class="discipline-tag-row font-mono">
               <span class="discipline-accent-bullet" aria-hidden="true">■</span>
               <span class="discipline-tag-text">${tagText}</span>
-              <span class="discipline-count-badge font-mono">${disciplineCount} ${isAm ? 'ስራዎች' : 'Works'}</span>
+              <span class="discipline-count-badge font-mono">${disciplineCount} ${isAm ? 'ፕሮጀክቶች' : 'Projects'}</span>
             </div>
             <div class="discipline-title-row">
               <h3 class="discipline-title-heading">${headingText}</h3>

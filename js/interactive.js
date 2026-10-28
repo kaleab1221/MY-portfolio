@@ -129,7 +129,7 @@
         card.addEventListener('mouseenter', () => {
           ring.classList.add('cursor-card-hover');
           if (badgeText) {
-            badgeText.textContent = 'VIEW ↗';
+            badgeText.textContent = '↗';
           }
         });
 

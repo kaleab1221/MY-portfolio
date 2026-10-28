@@ -3232,15 +3232,15 @@ body.dark-mode #modal-practice-tag {
   transition: width 0.08s ease-out;
 }
 
-/* 2. Fluid Magnetic Custom Cursor Suite (Desktop) */
+/* 2. Fluid Magnetic Custom Cursor Suite (Desktop - Small Sleek Bubble) */
 .interactive-cursor-ring {
   position: fixed;
   top: 0;
   left: 0;
-  width: 36px;
-  height: 36px;
-  margin-top: -18px;
-  margin-left: -18px;
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  margin-left: -13px;
   border: 1.5px solid rgba(255, 208, 66, 0.75);
   border-radius: 50%;
   pointer-events: none;
@@ -3267,10 +3267,10 @@ body.dark-mode #modal-practice-tag {
   position: fixed;
   top: 0;
   left: 0;
-  width: 6px;
-  height: 6px;
-  margin-top: -3px;
-  margin-left: -3px;
+  width: 5px;
+  height: 5px;
+  margin-top: -2.5px;
+  margin-left: -2.5px;
   background: var(--brand-yellow);
   border-radius: 50%;
   pointer-events: none;
@@ -3279,7 +3279,7 @@ body.dark-mode #modal-practice-tag {
   opacity: 0;
   visibility: hidden;
   will-change: transform;
-  box-shadow: 0 0 8px rgba(255, 208, 66, 0.9);
+  box-shadow: 0 0 6px rgba(255, 208, 66, 0.9);
   transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
@@ -3290,31 +3290,31 @@ body.dark-mode #modal-practice-tag {
 }
 
 .interactive-cursor-ring.cursor-magnetic {
-  width: 52px;
-  height: 52px;
-  margin-top: -26px;
-  margin-left: -26px;
+  width: 34px;
+  height: 34px;
+  margin-top: -17px;
+  margin-left: -17px;
   border-color: var(--brand-yellow);
   background: rgba(255, 208, 66, 0.16);
-  box-shadow: 0 0 16px rgba(255, 208, 66, 0.35);
+  box-shadow: 0 0 10px rgba(255, 208, 66, 0.25);
 }
 
 .interactive-cursor-ring.cursor-card-hover {
-  width: 84px;
-  height: 84px;
-  margin-top: -42px;
-  margin-left: -42px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
   background: rgba(2, 27, 43, 0.92);
   border: 1.5px solid var(--brand-yellow);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 208, 66, 0.3);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45), 0 0 10px rgba(255, 208, 66, 0.25);
 }
 
 .cursor-badge-text {
   font-family: var(--font-mono);
-  font-size: 0.65rem;
+  font-size: 0.48rem;
   font-weight: 800;
   color: var(--brand-yellow);
-  letter-spacing: 0.1em;
+  letter-spacing: 0.05em;
   pointer-events: none;
   user-select: none;
 }
@@ -5718,6 +5718,93 @@ body.dark-mode .hero-skyline-graphic,
     opacity: 0.15;
     object-position: bottom center;
   }
+}
+
+/* ==========================================================================
+   21. DEDICATED FAQ PAGE STYLES (faq.html)
+   ========================================================================== */
+.faq-page-main {
+  padding-top: calc(var(--nav-height) + 2.5rem);
+  padding-bottom: 5.5rem;
+  min-height: 85vh;
+  position: relative;
+  background: var(--bg-primary);
+}
+
+.faq-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+}
+
+.faq-breadcrumb a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.faq-breadcrumb a:hover {
+  color: var(--brand-yellow);
+}
+
+.faq-category-pills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 2rem 0 2.5rem 0;
+  justify-content: center;
+}
+
+.faq-category-pill {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.faq-category-pill:hover,
+.faq-category-pill.active {
+  background: var(--brand-yellow);
+  color: #041B2B;
+  border-color: var(--brand-yellow);
+  font-weight: 700;
+}
+
+.faq-cta-banner {
+  margin-top: 4rem;
+  padding: 2.75rem 2rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-xs);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.faq-cta-banner h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.faq-cta-banner p {
+  max-width: 580px;
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
 }
 
 

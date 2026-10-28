@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<!-- ==========================================================================
+     🏢 KB CREATIVE — FREQUENTLY ASKED QUESTIONS
+     Spatial Architecture, 3D CGI Visualization & Brand Systems
+     ========================================================================== -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Frequently Asked Questions — KB CREATIVE</title>
+  <meta name="description" content="Frequently asked questions on architectural commissions, cinematic 3D CGI visualization, BIM deliverables, and corporate brand systems with KB CREATIVE.">
+
+  <!-- Preload Critical Logo Asset -->
+  <link rel="preload" as="image" href="assets/kb-logo.png" type="image/png">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
+  </noscript>
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Interactive Top Scroll Reading Progress Bar -->
+  <div class="interactive-scroll-progress-bar" id="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Interactive Custom Fluid Magnetic Cursor -->
+  <div class="interactive-cursor-ring" id="cursor-ring" aria-hidden="true">
+    <span class="cursor-badge-text" id="cursor-badge-text"></span>
+  </div>
+  <div class="interactive-cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+
+  <!-- ========================================================================
+       MAIN NAVIGATION HEADER
+       ======================================================================== -->
+  <header class="main-nav-bar">
+    <div class="container nav-layout">
+      <!-- Official KB CREATIVE Studio Logo & Typography Block -->
+      <a href="index.html" class="brand-identity-wrap" aria-label="KB CREATIVE Home">
+        <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" class="kb-logo-header-img" width="38" height="38" decoding="async" fetchpriority="high">
+        <div class="brand-text-block">
+          <span class="brand-name">KB CREATIVE</span>
+          <span class="brand-sub" data-i18n="brand_sub">SPATIAL ARCHITECTURE &amp; BRAND IDENTITY</span>
+        </div>
+      </a>
+
+      <!-- Desktop Minimalist Menu Navigation Links -->
+      <nav aria-label="Main Navigation" class="desktop-nav-wrap">
+        <ul class="nav-menu-links">
+          <li><a href="index.html#about" class="nav-item-link"><span class="nav-item-index">01</span> <span data-i18n="nav_about">About</span></a></li>
+          <li><a href="index.html#work" class="nav-item-link"><span class="nav-item-index">02</span> <span data-i18n="nav_works">Projects</span></a></li>
+          <li><a href="index.html#skills" class="nav-item-link"><span class="nav-item-index">03</span> <span data-i18n="nav_skills">Core Skills</span></a></li>
+          <li><a href="faq.html" class="nav-item-link active" style="color: var(--brand-yellow); font-weight: 700;"><span class="nav-item-index">04</span> <span data-i18n="nav_faq">FAQ</span></a></li>
+          <li><a href="index.html#contact" class="nav-item-link"><span class="nav-item-index">05</span> <span data-i18n="nav_contact">Contact</span></a></li>
+        </ul>
+      </nav>
+
+      <!-- Circular Language Toggle and Theme Toggle -->
+      <div class="nav-controls">
+        <button class="circle-nav-btn lang-circle-btn" id="lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ" title="Switch Language (EN / አማ)">
+          <span class="lang-circle-text" id="lang-circle-text">EN</span>
+        </button>
+
+        <button class="circle-nav-btn theme-circle-btn" id="theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode" title="Switch to Dark Mode">
+          <span class="theme-circle-icon icon-moon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="theme-circle-icon icon-sun" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"></circle>
+              <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+            </svg>
+          </span>
+        </button>
+
+        <a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" class="inquire-cta-pill desktop-inquire" aria-label="Initiate Collaboration with KB CREATIVE on Telegram">
+          <span data-i18n="cta_initiate">Initiate Collaboration</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+
+        <!-- Mobile Navigation Toggle -->
+        <button class="mobile-nav-toggle-btn" id="mobile-nav-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="mobile-nav-drawer">
+          <span class="menu-icon-bars" aria-hidden="true">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </span>
+          <span class="mobile-nav-btn-text font-mono" data-i18n="menu_label">MENU</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true" aria-label="Mobile Navigation Menu">
+    <div class="mobile-nav-inner">
+      <div class="mobile-nav-header">
+        <div class="font-mono text-gold" style="font-size: 0.8rem; font-weight: 700;" data-i18n="menu_header">
+          KB CREATIVE // MENU
+        </div>
+        <div class="mobile-nav-actions">
+          <button class="circle-nav-btn lang-circle-btn" id="mobile-lang-toggle-btn" aria-label="Switch Language / ቋንቋ ይቀይሩ">
+            <span class="lang-circle-text" id="mobile-lang-circle-text">EN</span>
+          </button>
+          <button class="circle-nav-btn theme-circle-btn" id="mobile-theme-toggle-btn" role="switch" aria-checked="false" aria-label="Toggle dark/light mode">
+            <span class="theme-circle-icon icon-moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+              </svg>
+            </span>
+            <span class="theme-circle-icon icon-sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"></path>
+              </svg>
+            </span>
+          </button>
+          <button class="mobile-nav-close-btn" id="mobile-nav-close" aria-label="Close mobile navigation menu" onclick="closeMobileNav()">✕</button>
+        </div>
+      </div>
+
+      <nav aria-label="Mobile Navigation">
+        <ul class="mobile-menu-links">
+          <li>
+            <a href="index.html#about" class="mobile-nav-link" onclick="closeMobileNav()">
+              <div class="mobile-nav-link-row">
+                <span class="mobile-nav-index font-mono">01</span>
+                <span class="mobile-nav-title" data-i18n="nav_about">About</span>
+                <span class="mobile-nav-arrow" aria-hidden="true">→</span>
+              </div>
+              <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_about">Studio Direction &amp; Spatial Pedagogy</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#work" class="mobile-nav-link" onclick="closeMobileNav()">
+              <div class="mobile-nav-link-row">
+                <span class="mobile-nav-index font-mono">02</span>
+                <span class="mobile-nav-title" data-i18n="nav_works">Projects</span>
+                <span class="mobile-nav-arrow" aria-hidden="true">→</span>
+              </div>
+              <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_works">15 Curated Projects • Spatial &amp; Brand</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#skills" class="mobile-nav-link" onclick="closeMobileNav()">
+              <div class="mobile-nav-link-row">
+                <span class="mobile-nav-index font-mono">03</span>
+                <span class="mobile-nav-title" data-i18n="nav_skills">Core Skills</span>
+                <span class="mobile-nav-arrow" aria-hidden="true">→</span>
+              </div>
+              <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_skills">8 Software Tools • Multilingual Fluency</span>
+            </a>
+          </li>
+          <li>
+            <a href="faq.html" class="mobile-nav-link active" onclick="closeMobileNav()" style="color: var(--brand-yellow);">
+              <div class="mobile-nav-link-row">
+                <span class="mobile-nav-index font-mono">04</span>
+                <span class="mobile-nav-title" data-i18n="nav_faq">FAQ</span>
+                <span class="mobile-nav-arrow" aria-hidden="true">→</span>
+              </div>
+              <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_faq">Process &amp; Clarifications Page</span>
+            </a>
+          </li>
+          <li>
+            <a href="index.html#contact" class="mobile-nav-link" onclick="closeMobileNav()">
+              <div class="mobile-nav-link-row">
+                <span class="mobile-nav-index font-mono">05</span>
+                <span class="mobile-nav-title" data-i18n="nav_contact">Contact</span>
+                <span class="mobile-nav-arrow" aria-hidden="true">→</span>
+              </div>
+              <span class="mobile-nav-sub font-mono" data-i18n="mob_sub_contact">Direct Telegram, Phone &amp; Proposal</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav-footer">
+        <a href="assets/Kaleegziabher_Fekede_Portfolio.pdf" download="KB_CREATIVE_Portfolio.pdf" class="mobile-nav-pdf-btn" onclick="closeMobileNav()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 16px; height: 16px;" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+          <span data-i18n="mob_cv_btn">Download CV / Portfolio PDF [7.4 MB]</span>
+        </a>
+
+        <a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" class="mobile-nav-cta-btn" onclick="closeMobileNav()">
+          <span data-i18n="mob_telegram_cta">Initiate Collaboration (Telegram) ↗</span>
+        </a>
+
+        <div class="mobile-nav-footnote font-mono" data-i18n="mob_footnote">
+          KB CREATIVE • SPATIAL ARCHITECTURE &amp; BRAND IDENTITY
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ========================================================================
+       DEDICATED FAQ PAGE CONTENT
+       ======================================================================== -->
+  <main class="faq-page-main">
+    <div class="container">
+      
+      <!-- Breadcrumb Navigation -->
+      <div class="faq-breadcrumb font-mono">
+        <a href="index.html">HOME</a>
+        <span aria-hidden="true">/</span>
+        <span class="text-gold">FREQUENTLY ASKED QUESTIONS</span>
+      </div>
+
+      <!-- Section Editorial Header -->
+      <div class="section-editorial-header">
+        <div class="storytelling-chapter-pill font-mono">
+          <span class="story-dot" aria-hidden="true"></span>
+          <span data-i18n="chap_03">CHAPTER 03 // FREQUENTLY ASKED QUESTIONS</span>
+        </div>
+        <div class="section-super-title">
+          <span aria-hidden="true">▪</span> <span data-i18n="faq_super">03. Inquiries &amp; Process Architecture</span>
+        </div>
+        <h1 class="section-editorial-title" style="font-size: clamp(2rem, 5vw, 3rem);" data-i18n="faq_title">Frequently Asked Questions</h1>
+        <p class="section-editorial-desc" data-i18n="faq_desc">
+          Essential clarifications on architectural commissions, cinematic 3D CGI visualization workflows, technical deliverables, and bespoke brand identity design with KB CREATIVE.
+        </p>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="faq-category-pills-wrap" role="tablist" aria-label="FAQ Categories">
+        <button type="button" class="faq-category-pill active" data-category="all" onclick="filterFaqCategory('all', this)">All Questions (08)</button>
+        <button type="button" class="faq-category-pill" data-category="arch" onclick="filterFaqCategory('arch', this)">Spatial Architecture &amp; 3D CGI</button>
+        <button type="button" class="faq-category-pill" data-category="brand" onclick="filterFaqCategory('brand', this)">Brand Identity Systems</button>
+        <button type="button" class="faq-category-pill" data-category="process" onclick="filterFaqCategory('process', this)">Workflow &amp; Timelines</button>
+      </div>
+
+      <!-- Swiss Modular FAQ Accordion Grid -->
+      <div class="faq-accordion-grid">
+        
+        <!-- FAQ Item 1 -->
+        <div class="faq-accordion-item" data-category="arch" data-faq-index="1">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-1" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">01 //</span>
+              <span data-i18n="faq_q1">What architectural and design services does KB CREATIVE provide?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-1" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a1">
+                We specialize in three integrated disciplines: (1) <strong>Spatial Architecture</strong> for residential villas (such as the Kara G+2 Residence), interior workplace renovations (Acute Engineering), and commercial mixed-use concourses (MENA MALL); (2) <strong>Cinematic 3D CGI Visualization</strong> featuring photorealistic atmospheric daylight simulations, materiality texturing, and BIM documentation in Autodesk Revit &amp; D5 Render; and (3) <strong>Corporate Brand Identity Systems</strong> covering logomarks, typography, and packaging architecture.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-accordion-item" data-category="process" data-faq-index="2">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-2" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">02 //</span>
+              <span data-i18n="faq_q2">How does the project design workflow proceed from concept to final delivery?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-2" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a2">
+                Every project follows an architectural 4-stage methodology: (1) <strong>Brief &amp; Site Analysis</strong>: clarifying programmatic requirements, plot dimensions, slope, and solar angles; (2) <strong>Spatial Massing &amp; Circulation Zoning</strong>: structural grid layout and functional space hierarchy; (3) <strong>Photorealistic 3D Simulation</strong>: exploring lighting conditions, materials, and camera perspectives for client alignment; and (4) <strong>Technical Working Drawings</strong>: dimensioned architectural plans, sections, joinery specifications, and high-resolution marketing visuals.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-accordion-item" data-category="arch" data-faq-index="3">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-3" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">03 //</span>
+              <span data-i18n="faq_q3">What files or information are needed to start a 3D visualization project?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-3" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a3">
+                To initiate a 3D visualization commission, you can provide CAD files (.dwg), 3D models (Revit, Rhino, SketchUp, or Blender), architectural PDF drawings, or even hand-sketched floor plans with dimensions. Providing reference imagery, landscape context, or preferred material palettes accelerates the lighting and texturing phase.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-accordion-item" data-category="process" data-faq-index="4">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-4" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">04 //</span>
+              <span data-i18n="faq_q4">Do you accept remote and international commissions outside Ethiopia?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-4" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a4">
+                Yes. While based between Wolkite University and Addis Ababa, Ethiopia, KB CREATIVE actively collaborates with international developers, architects, and private clients worldwide. Digital collaboration is conducted seamlessly via Telegram (<a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" style="color:var(--brand-yellow); text-decoration:none; font-weight:700;">@Kalegzi_7</a>), email, Google Meet, and secure cloud storage.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-accordion-item" data-category="process" data-faq-index="5">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-5" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">05 //</span>
+              <span data-i18n="faq_q5">What is the typical turnaround timeline for deliverables?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-5" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a5">
+                Turnaround timelines are calibrated to scope: high-fidelity 3D renderings (3–5 perspectives) are typically delivered within <strong>3 to 7 business days</strong>. Comprehensive residential concepts, interior spatial renovation designs, or corporate brand identity suites range between <strong>1 to 3 weeks</strong> with structured milestone check-ins.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-accordion-item" data-category="arch" data-faq-index="6">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-6" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">06 //</span>
+              <span data-i18n="faq_q6">Can I commission a unified Spatial Architecture and Brand Identity package?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-6" role="region">
+            <div class="faq-content-inner">
+              <p data-i18n="faq_a6">
+                Yes. A core strength of KB CREATIVE is the cross-disciplinary union of spatial architecture and corporate visual identity. For commercial developments, retail malls (e.g., MENA MALL), and corporate offices (Acute Engineering), we design the architectural spaces alongside the 3D illuminated exterior storefront signage, interior wayfinding graphics, and company branding collateral.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 7: Brand Identity Scope -->
+        <div class="faq-accordion-item" data-category="brand" data-faq-index="7">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-7" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">07 //</span>
+              <span>What assets are included in a Corporate Brand Identity System?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-7" role="region">
+            <div class="faq-content-inner">
+              <p>
+                Every brand system commissioned with KB CREATIVE includes: (1) <strong>Primary &amp; Secondary Logomarks</strong>, geometric vector monograms, and responsive icon variations; (2) <strong>Brand Architecture Guidelines</strong> (clearspace rules, chromatic codes in CMYK/RGB/HEX, typographic hierarchy); (3) <strong>Stationery &amp; Executive Collateral</strong> (business cards, letterheads, invoice templates); and (4) <strong>Real-World Mockups</strong> illustrating storefront signage, apparel embroidery, and digital UI/UX implementations.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Item 8: Revisions & Collaboration -->
+        <div class="faq-accordion-item" data-category="process" data-faq-index="8">
+          <button type="button" class="faq-trigger-btn" aria-expanded="false" aria-controls="faq-ans-8" onclick="toggleFaq(this)">
+            <span class="faq-question-text">
+              <span class="faq-num font-mono">08 //</span>
+              <span>How are feedback cycles and revisions handled throughout the design process?</span>
+            </span>
+            <span class="faq-morph-icon" aria-hidden="true">
+              <span class="morph-line-h"></span>
+              <span class="morph-line-v"></span>
+            </span>
+          </button>
+          <div class="faq-content-collapse" id="faq-ans-8" role="region">
+            <div class="faq-content-inner">
+              <p>
+                We believe in structured milestone collaboration. Each commission includes dedicated review rounds at pivotal checkpoints (e.g. massing approval, lighting/material tests, and final presentation). This ensures full client alignment at every stage before technical documentation or final production assets are exported.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Still Have Questions CTA Banner -->
+      <div class="faq-cta-banner">
+        <div class="font-mono text-gold" style="font-size: 0.8rem; font-weight: 700; letter-spacing: 0.1em;">
+          READY TO COMMENCE YOUR PROJECT?
+        </div>
+        <h3>Have a Specific Question or Custom Inquiry?</h3>
+        <p>
+          Connect directly with KB CREATIVE to discuss your site dimensions, project timeline, and aesthetic parameters. We respond promptly within 24 hours.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; margin-top: 0.5rem;">
+          <a href="https://t.me/Kalegzi_7" target="_blank" rel="noopener" class="btn-brand-yellow font-mono" style="padding: 0.9rem 1.8rem; text-decoration: none;">
+            <span>Initiate Collaboration (Telegram)</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a href="index.html#contact" class="btn-brand-outline font-mono" style="padding: 0.9rem 1.8rem; text-decoration: none;">
+            <span>Transmit Project Brief Form</span>
+            <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================
+       MAIN STUDIO FOOTER
+       ======================================================================== -->
+  <footer class="studio-main-footer">
+    <div class="container footer-flex-wrap">
+      <div class="footer-brand-line">
+        <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" width="24" height="24" decoding="async" style="width: 24px; height: 24px; object-fit: contain;">
+        <span class="text-gold font-bold">KB CREATIVE</span>
+        <span>•</span>
+        <span data-i18n="brand_sub">SPATIAL ARCHITECTURE &amp; BRAND IDENTITY</span>
+      </div>
+      <div class="footer-actions-wrap" style="display: flex; align-items: center; gap: 1.5rem;">
+        <div>
+          <span data-i18n="footer_rights">ALL RIGHTS RESERVED © 2026</span> • <span data-i18n="phone_label">TEL:</span> +251 941263180
+        </div>
+        <button type="button" class="footer-top-btn" id="footer-top-btn" aria-label="Return to top of page" title="Back to top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="kb-toast-container" id="kb-toast-container" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script defer src="js/main.js"></script>
+  <script defer src="js/interactive.js"></script>
+  <script>
+    function filterFaqCategory(category, btnEl) {
+      document.querySelectorAll('.faq-category-pill').forEach(btn => btn.classList.remove('active'));
+      if (btnEl) btnEl.classList.add('active');
+
+      const items = document.querySelectorAll('.faq-accordion-item');
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
