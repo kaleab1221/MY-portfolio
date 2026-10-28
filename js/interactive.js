@@ -268,29 +268,14 @@
 
   /* ==========================================================================
      5. KEYBOARD NAVIGATION SUITE
-     Arrow keys cycle modal gallery, Escape dismisses
+     Modal navigation delegated cleanly to js/main.js modalNextSlide & modalPrevSlide
      ========================================================================== */
   function initKeyboardNavigation() {
     window.addEventListener('keydown', (e) => {
       const modal = document.getElementById('case-study-modal');
       if (!modal || !modal.classList.contains('active')) return;
-
-      const thumbs = modal.querySelectorAll('.modal-thumb-btn');
-      if (!thumbs.length) return;
-
-      let activeIndex = -1;
-      thumbs.forEach((thumb, idx) => {
-        if (thumb.classList.contains('active')) activeIndex = idx;
-      });
-
-      if (e.key === 'ArrowRight') {
+      if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
         e.preventDefault();
-        const nextIndex = (activeIndex + 1) % thumbs.length;
-        thumbs[nextIndex].click();
-      } else if (e.key === 'ArrowLeft') {
-        e.preventDefault();
-        const prevIndex = (activeIndex - 1 + thumbs.length) % thumbs.length;
-        thumbs[prevIndex].click();
       }
     });
   }

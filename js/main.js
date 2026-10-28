@@ -4,32 +4,55 @@
  * 🌟 KB CREATIVE — Spatial Architecture, 3D CGI Visualization & Brand Systems
  * Contact: kaleabjr22@gmail.com • +251 941263180
  * ============================================================================
- * 
- * 🛠️ HOW TO CUSTOMIZE PROJECTS & ADD YOUR OWN RENDERS:
- * ----------------------------------------------------------------------------
- * 1. HOW TO REPLACE IMAGES WITH YOUR OWN LOCAL FILES:
- *    - Put your JPG / PNG image in the "assets/" folder (e.g. "assets/my-render-1.jpg").
- *    - In the KB_PROJECTS array below, find your project and update the "url":
- *      { url: 'assets/my-render-1.jpg', caption: 'Slide 01 // Exterior Master Elevation' }
- * 
- * 2. HOW TO EDIT "SIZE CONTEXT" FOR ARCHITECTURE & DESIGN:
- *    - Each project has a "sizeContext" field (e.g. "1,850 m² • 4 Levels (G+3) • Footprint 32m × 24m").
- *    - This appears dynamically on hover over each project card!
- * 
- * 3. HOW TO ADD OR REMOVE PROJECT SLIDES:
- *    - Simply add or remove items in the "slides" array.
- *    - The in-card 01/05 counter and dot pagination automatically adapt!
- * ============================================================================
  */
 
+// Reset scroll to top on reload
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+window.addEventListener('beforeunload', () => {
+  window.scrollTo(0, 0);
+});
+if (!window.location.hash || (performance.getEntriesByType && performance.getEntriesByType('navigation')[0]?.type === 'reload')) {
+  window.scrollTo(0, 0);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  if (!window.location.hash) {
+    window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+  }
   initThemeEngine();
   initLanguageEngine();
   initProjectsArchive();
   initSkillsAnimation();
   initMoveableCardTilt();
   initCaseModal();
+  initContactNavHandler();
 });
+
+// Fast, perfect jump to contact section on button click
+function initContactNavHandler() {
+  document.addEventListener('click', (e) => {
+    const link = e.target.closest('a[href$="#contact"], a[href="#contact"]');
+    if (!link) return;
+    const contactSec = document.getElementById('contact');
+    if (contactSec) {
+      // Instantly reveal all elements in the contact section
+      contactSec.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        el.classList.add('is-revealed');
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        el.style.transition = 'none';
+      });
+      const headerOffset = 68;
+      const targetY = contactSec.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+      window.scrollTo({
+        top: targetY,
+        behavior: 'smooth'
+      });
+    }
+  });
+}
 
 /* ==========================================================================
    1. Projects Database (7 Curated Works in Residential, Interior, Commercial,
@@ -2442,6 +2465,14 @@ window.openCaseStudy = function(projectId, triggerEl) {
   window._currentModalProject = project;
   window._currentModalSlideIndex = 0;
 
+  // Preload all slides in project for smooth, instant lag-free switching
+  if (project.slides && project.slides.length) {
+    project.slides.forEach(s => {
+      const pImg = new Image();
+      pImg.src = s.url;
+    });
+  }
+
   if (triggerEl && triggerEl.classList) {
     triggerEl.classList.add('btn-loading');
     setTimeout(() => {
@@ -2698,29 +2729,33 @@ window.selectModalSlide = function(url, caption, btnEl, fit, bg, idx) {
   const captionEl = document.getElementById('modal-active-caption');
   const viewport = heroImg ? heroImg.closest('.modal-hero-viewport') : null;
   
+  // Clear any existing slide transition timeout to prevent lag & stacking
+  if (window._modalSlideTimer) {
+    clearTimeout(window._modalSlideTimer);
+    window._modalSlideTimer = null;
+  }
+
+  // Update active thumbnail border immediately for snappy feedback
+  const buttons = document.querySelectorAll('.modal-thumb-btn');
+  buttons.forEach((b, i) => {
+    if (i === idx || b === btnEl) {
+      b.classList.add('active');
+    } else {
+      b.classList.remove('active');
+    }
+  });
+
   if (heroImg) {
-    heroImg.style.opacity = '0.35';
-    setTimeout(() => {
-      heroImg.src = url;
-      if (viewport) {
-        viewport.style.background = bg || '#02121D';
-      }
-      heroImg.style.objectFit = 'contain';
-      heroImg.style.opacity = '1';
-    }, 100);
+    heroImg.src = url;
+    if (viewport) {
+      viewport.style.background = bg || '#02121D';
+    }
+    heroImg.style.objectFit = 'contain';
+    heroImg.style.opacity = '1';
   }
 
   if (captionEl) {
     captionEl.textContent = caption;
-  }
-
-  // Update active thumbnail border
-  const buttons = document.querySelectorAll('.modal-thumb-btn');
-  buttons.forEach(b => b.classList.remove('active'));
-  if (btnEl) {
-    btnEl.classList.add('active');
-  } else if (typeof idx === 'number' && buttons[idx]) {
-    buttons[idx].classList.add('active');
   }
 };
 
@@ -2750,7 +2785,7 @@ window.goToModalSlide = function(idx) {
   const btn = buttons[idx] || null;
   window.selectModalSlide(s.url, s.caption, btn, s.fit || '', s.bg || '', idx);
   if (btn && typeof btn.scrollIntoView === 'function') {
-    btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+    btn.scrollIntoView({ behavior: 'auto', block: 'nearest', inline: 'center' });
   }
 };
 

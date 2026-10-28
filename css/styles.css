@@ -1329,13 +1329,18 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 .discipline-section-divider {
   position: relative;
   background: #FFFFFF;
-  border: 1px solid #E2E8F0;
+  border: 1px solid rgba(2, 27, 43, 0.12);
   border-radius: var(--radius-sm);
   padding: 2.2rem 2.6rem;
   margin: 3.4rem 0 1.25rem 0;
-  box-shadow: 0 4px 20px rgba(4, 71, 113, 0.04);
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 14px 34px -6px rgba(2, 27, 43, 0.12), 0 4px 12px -2px rgba(2, 27, 43, 0.06);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease;
   overflow: hidden;
+}
+
+.discipline-section-divider:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 22px 45px -8px rgba(2, 27, 43, 0.16), 0 8px 18px -2px rgba(2, 27, 43, 0.08);
 }
 
 .big-projects-grid > .discipline-section-divider:first-child {
@@ -1343,12 +1348,31 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 }
 
 .discipline-section-divider.divider-arch {
-  border-left: 5px solid var(--brand-navy);
+  border-left: 6px solid var(--brand-navy);
+  border-top: 1px solid rgba(2, 27, 43, 0.14);
+  border-right: 1px solid rgba(2, 27, 43, 0.14);
+  border-bottom: 1px solid rgba(2, 27, 43, 0.14);
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5F9FC 100%);
+  box-shadow: 0 14px 34px -6px rgba(2, 27, 43, 0.13), 0 4px 12px -2px rgba(2, 27, 43, 0.06);
+}
+
+.discipline-section-divider.divider-arch:hover {
+  border-color: rgba(2, 27, 43, 0.25);
+  box-shadow: 0 22px 45px -8px rgba(2, 27, 43, 0.18), 0 8px 18px -2px rgba(2, 27, 43, 0.09);
 }
 
 .discipline-section-divider.divider-graphic {
-  border-left: 5px solid var(--brand-yellow);
-  background: linear-gradient(135deg, #FFFFFF 0%, #FAFCFF 100%);
+  border-left: 6px solid var(--brand-yellow);
+  border-top: 1px solid rgba(255, 208, 66, 0.45);
+  border-right: 1px solid rgba(255, 208, 66, 0.38);
+  border-bottom: 1px solid rgba(255, 208, 66, 0.38);
+  background: linear-gradient(135deg, #FFFFFF 0%, #FFFDF5 100%);
+  box-shadow: 0 14px 34px -6px rgba(217, 119, 6, 0.15), 0 4px 12px -2px rgba(2, 27, 43, 0.06);
+}
+
+.discipline-section-divider.divider-graphic:hover {
+  border-color: rgba(255, 208, 66, 0.65);
+  box-shadow: 0 22px 45px -8px rgba(217, 119, 6, 0.22), 0 8px 18px -2px rgba(2, 27, 43, 0.09);
 }
 
 .discipline-tag-row {
@@ -1401,15 +1425,20 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.14;
-  color: #0F172A;
+  color: var(--brand-navy);
   margin: 0;
   text-transform: uppercase;
 }
 
 .discipline-title-hairline {
   flex: 1;
-  height: 1px;
-  background: linear-gradient(90deg, #E2E8F0 0%, transparent 100%);
+  height: 2px;
+  background: linear-gradient(90deg, rgba(2, 27, 43, 0.25) 0%, rgba(255, 208, 66, 0.5) 45%, transparent 100%);
+  border-radius: 1px;
+}
+
+.divider-graphic .discipline-title-hairline {
+  background: linear-gradient(90deg, var(--brand-yellow) 0%, rgba(2, 27, 43, 0.15) 50%, transparent 100%);
 }
 
 .discipline-desc-lead {
@@ -1424,20 +1453,41 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 /* Dark Mode Overrides for Discipline Divider */
 [data-theme="dark"] .discipline-section-divider,
 [data-theme="blueprint"] .discipline-section-divider {
-  background: #041E32;
+  background: #021B2B;
   border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 18px 45px -5px rgba(0, 0, 0, 0.7), 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="dark"] .discipline-section-divider:hover,
+[data-theme="blueprint"] .discipline-section-divider:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 24px 55px -6px rgba(0, 0, 0, 0.8), 0 0 25px rgba(0, 0, 0, 0.5);
 }
 
 [data-theme="dark"] .discipline-section-divider.divider-arch,
 [data-theme="blueprint"] .discipline-section-divider.divider-arch {
   border-left-color: #38BDF8;
+  border-color: rgba(56, 189, 248, 0.25);
+  background: linear-gradient(135deg, #021B2B 0%, #03243A 100%);
+  box-shadow: 0 18px 45px -5px rgba(0, 0, 0, 0.7), 0 0 25px rgba(56, 189, 248, 0.12);
+}
+
+[data-theme="dark"] .discipline-section-divider.divider-arch .discipline-title-heading,
+[data-theme="blueprint"] .discipline-section-divider.divider-arch .discipline-title-heading {
+  color: #F8FAFC;
 }
 
 [data-theme="dark"] .discipline-section-divider.divider-graphic,
 [data-theme="blueprint"] .discipline-section-divider.divider-graphic {
   border-left-color: var(--brand-yellow);
-  background: linear-gradient(135deg, #041E32 0%, #06263F 100%);
+  border-color: rgba(255, 208, 66, 0.3);
+  background: linear-gradient(135deg, #021B2B 0%, #07283E 100%);
+  box-shadow: 0 18px 45px -5px rgba(0, 0, 0, 0.7), 0 0 25px rgba(255, 208, 66, 0.15);
+}
+
+[data-theme="dark"] .discipline-section-divider.divider-graphic .discipline-title-heading,
+[data-theme="blueprint"] .discipline-section-divider.divider-graphic .discipline-title-heading {
+  color: #F8FAFC;
 }
 
 [data-theme="dark"] .discipline-tag-row,
@@ -2504,6 +2554,17 @@ body.dark-mode .academic-banner-tag {
   padding: 6rem 0;
   border-top: 1px solid var(--border-color);
   position: relative;
+}
+
+/* Contact Section: Instantly Visible & Responsive with Zero Reveal Lag */
+.devani-contact-section .reveal-on-scroll,
+.devani-contact-section .contact-inquiry-box,
+.devani-contact-section .socials-horizontal-cluster,
+.devani-contact-section .contact-cv-box {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+  transition: none !important;
 }
 
 .contact-layout-grid {
