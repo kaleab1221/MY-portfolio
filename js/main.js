@@ -218,7 +218,7 @@ const KB_PROJECTS = [
     "slides": [
       {
         "url": "assets/mixed-use-slide-01-daylight.jpg",
-        "caption": "Slide 01 // Exterior Daylight Facade, Streetscape & MENA MALL Concourse"
+        "caption": "Slide 01 // Aerial Golden Hour Perspective, Streetscape & MENA MALL Concourse"
       },
       {
         "url": "assets/mixed-use-slide-02-night.jpg",
