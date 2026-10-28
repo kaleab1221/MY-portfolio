@@ -1,7 +1,7 @@
 /**
  * ============================================================================
- * 🏢 KALEEGZIABHER FEKEDE // ARCHITECTURAL DESIGNER & GRAPHIC DESIGNER
- * 🌟 KB CREATIVE — Wolkite University, 4th Year Architecture
+ * 🏢 KALEEGZIABHER FEKEDE // ARCHITECTURAL DESIGNER & CREATIVE DIRECTOR
+ * 🌟 KB CREATIVE — Spatial Architecture, 3D CGI Visualization & Brand Systems
  * Contact: kaleabjr22@gmail.com • +251 941263180
  * ============================================================================
  * 
@@ -121,7 +121,7 @@ const KB_PROJECTS = [
   {
     "id": "acute-engineering-office-renovation",
     "service": "Interior Architecture & Workplace Renovation",
-    "role": "Lead Interior Architect & Spatial Designer (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "role": "Lead Interior Architect & Spatial Designer (Kaleegziabher Fekede • KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -185,7 +185,7 @@ const KB_PROJECTS = [
   {
     "id": "mixed-use-tower-gubre",
     "service": "Mixed-Use Architecture & Commercial Planning",
-    "role": "Lead Architectural Designer & 3D CGI Artist (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "role": "Lead Architectural Designer & 3D CGI Artist (Kaleegziabher Fekede • KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -248,7 +248,7 @@ const KB_PROJECTS = [
   {
     "id": "climate-responsive-residence-diredawa",
     "service": "Bioclimatic Residential Architecture",
-    "role": "Lead Architectural Designer & Passive Solar Strategist (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "role": "Lead Architectural Designer & Passive Solar Strategist (Kaleegziabher Fekede • KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -309,7 +309,7 @@ const KB_PROJECTS = [
     "id": "vertical-sports-wellness-center",
     "hidden": true,
     "service": "Sports Architecture & Structural Steel Truss Design",
-    "role": "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "role": "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -368,7 +368,7 @@ const KB_PROJECTS = [
     "id": "bamboo-ferrocement-sustainable-housing",
     "hidden": true,
     "service": "Sustainable Eco-Housing & Appropriate Technology",
-    "role": "Lead Architectural Designer & Material Researcher (Kaleegziabher Fekede • 4th Year Architecture, Wolkite University / KB CREATIVE)",
+    "role": "Lead Architectural Designer & Material Researcher (Kaleegziabher Fekede • KB CREATIVE)",
     "software": [
       "AutoCAD",
       "SketchUp",
@@ -1130,7 +1130,7 @@ const KB_PROJECT_AM = {
     location: "ቦሌ ሚካኤል፣ አዲስ አበባ፣ ኢትዮጵያ",
     client: "አኪዩት ኢንጂነሪንግ",
     sizeContext: "22.6 ካሬ ሜትር (4.2m × 5.4m) • የብረት እና የእንጨት መከፋፈያ • ሁለት ዞኖች • ቦሌ ሚካኤል",
-    role: "ዋና የውስጥ አርክቴክት እና የቦታ ዲዛይነር (ቃልእግዚአብሔር ፈቀደ • 4ኛ ዓመት አርክቴክቸር፣ ወልቂጤ ዩኒቨርሲቲ / KB CREATIVE)",
+    role: "ዋና የውስጥ አርክቴክት እና የቦታ ዲዛይነር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
     summary: "የ22.6 ካሬ ሜትር ጠባብ ቦታን ልዩ በሆነ የብረት እና የእንጨት መከፋፈያ አማካኝነት ወደ ሁለት ተግባራዊ ዞኖች (የስራ እና የደንበኛ መቀበያ) የለወጠ የውስጥ እድሳት።",
     description: "በቦሌ ሚካኤል አዲስ አበባ ለሚገኘው አኪዩት ኢንጂነሪንግ የተሰራ ከፍተኛ ጥራት ያለው የውስጥ እድሳት። በ22.6 ካሬ ሜትር (4.2m × 5.4m) ጠባብ ቦታ ውስጥ ክፍት ወለሉ በብልሃት ለሁለት ተከፍሏል፦ መደበኛ ያልሆነ የደንበኛ መቀበያ እና የውይይት ሳሎን፣ እንዲሁም የአመራር ስራ ጠረጴዛ። በብጁ የተሰራ የብረት እና የኦክ እንጨት መከፋፈያ ብርሃንን ሳያግድ የክፍሉን እንቅስቃሴ በማደራጀት እንደ ዋና መለያ ያገለግላል። የአመራር ጠረጴዛው ጀርባ የበራ የአኪዩት ኢንጂነሪንግ የ3D ሎጎ የተገጠመለት የካላካታ እብነ-በረድ ግድግዳ እና የተንጠለጠሉ ክብ የLED መብራቶች አሉት።",
     challenge: "በ22.6 ካሬ ሜትር ጠባብ ክፍል ውስጥ የስራ ጠረጴዛን፣ የደንበኞች መወያያ ቦታን እና እቃ ማስቀመጫዎችን ያለመጨናነቅና ክፍት ስሜትን ጠብቆ ማደራጀት።",
@@ -1468,9 +1468,9 @@ const KB_I18N = {
     // Header & Navigation
     phone_label: "PHONE:",
     status_strip_location: "✦ ATELIER // WOLKITE & ADDIS ABABA, ETHIOPIA [8.04°N, 37.85°E]",
-    status_strip_standing: "ACADEMIC: 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY",
+    status_strip_standing: "STUDIO: SPATIAL ARCHITECTURE & BRAND IDENTITY",
     status_strip_contact: `TEL: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • 2026 COMMISSIONS OPEN`,
-    brand_sub: "4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY",
+    brand_sub: "SPATIAL ARCHITECTURE & BRAND IDENTITY",
     nav_works: "Works",
     nav_skills: "Core Skills",
     nav_faq: "FAQ",
@@ -1486,19 +1486,19 @@ const KB_I18N = {
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
     mob_cv_btn: "Download CV / Portfolio PDF [7.4 MB]",
     mob_telegram_cta: "Initiate Collaboration (Telegram) ↗",
-    mob_footnote: "4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY",
+    mob_footnote: "KB CREATIVE • SPATIAL ARCHITECTURE & BRAND IDENTITY",
     
     // Hero Section
-    hero_tag: `<span>● 4TH YEAR ARCHITECTURE STUDENT</span><span>•</span><span>WOLKITE UNIVERSITY</span><span>•</span><span>KB CREATIVE</span>`,
+    hero_tag: `<span>● SPATIAL ARCHITECTURE</span><span>•</span><span>3D CGI VISUALIZATION</span><span>•</span><span>KB CREATIVE</span>`,
     hero_title: `Hi, I'm <span class="highlight-yellow">Kaleegziabher Fekede</span> <span class="block outline-text">(KB CREATIVE).</span>`,
-    hero_bio: `<strong>4th-Year Architecture Student at Wolkite University</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.`,
+    hero_bio: `<strong>Architectural Designer</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.`,
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
     hero_cv: "Download CV / Portfolio PDF",
     hero_explore: "Explore 15 Curated Works",
     
     // Hero Stats
-    stat_student: "Architecture Student",
+    stat_student: "Spatial & Brand Design",
     stat_studies: "Curated Case Studies",
 
     // Practice Filter Pills
@@ -1527,9 +1527,9 @@ const KB_I18N = {
     skills_title: "Technical & Disciplinary Toolkit",
     skills_desc: "A rigorous cross-disciplinary synthesis of spatial precision, monolithic visual brand architecture, high-fidelity 3D visualization, and multilingual execution.",
     academic_tag: "ACADEMIC PROFILE & STUDIO PEDAGOGY",
-    academic_title: "4th-Year Architecture Student — Wolkite University",
+    academic_title: "Architecture & Environmental Design Candidate — Wolkite University",
     academic_desc: "Synthesizing university studio research in bioclimatic spatial design, structural detailing, and BIM documentation with active commercial design commissions under <strong>KB CREATIVE</strong>.",
-    academic_badge: "CLASS OF 2026 // 4TH YEAR CANDIDATE",
+    academic_badge: "CLASS OF 2026 // B.SC. CANDIDATE",
     discipline_arch_tag: "01 // SPATIAL ARCHITECTURE",
     discipline_arch_title: "Architecture",
     discipline_brand_tag: "02 // BRAND & VISUAL IDENTITY",
@@ -1568,7 +1568,7 @@ const KB_I18N = {
     contact_super: "04. Direct Collaboration",
     contact_hero_title: `Let's Build Something <span style="color: var(--brand-yellow);">Remarkable</span> Together.`,
     contact_status: "CURRENT STATUS: AVAILABLE FOR ARCHITECTURE, 3D VISUALIZATION & BRAND COMMISSIONS",
-    contact_intro: `Currently a <strong>4th-Year Architecture Student at Wolkite University</strong> and principal designer at <strong>KB CREATIVE</strong>. Available for spatial architectural concepts, residential and interior renovations, photorealistic 3D visualization, or bespoke brand identity systems across Ethiopia and remote worldwide.`,
+    contact_intro: `Principal designer and architectural director at <strong>KB CREATIVE</strong>. Available for spatial architectural concepts, residential and interior renovations, photorealistic 3D visualization, or bespoke brand identity systems across Ethiopia and remote worldwide.`,
     contact_cv_title: "Download CV / Portfolio PDF",
     contact_cv_meta: "2026 Comprehensive Archive • Architecture & Brand Systems [7.4 MB]",
     inquiry_name_label: "Your Full Name",
@@ -1609,9 +1609,9 @@ const KB_I18N = {
     // Header & Navigation
     phone_label: "ስልክ:",
     status_strip_location: "✦ ስቱዲዮ // ወልቂጤ እና አዲስ አበባ፣ ኢትዮጵያ [8.04°N, 37.85°E]",
-    status_strip_standing: "የትምህርት ደረጃ: 4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
+    status_strip_standing: "ስቱዲዮ: የቦታ አርክቴክቸር እና የብራንድ ማንነት",
     status_strip_contact: `ስልክ: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • ለ2026 ክፍት`,
-    brand_sub: "4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
+    brand_sub: "የቦታ አርክቴክቸር እና የብራንድ ማንነት",
     nav_works: "ስራዎች",
     nav_skills: "ዋና ክህሎቶች",
     nav_faq: "ተዘውታሪ ጥያቄዎች",
@@ -1627,19 +1627,19 @@ const KB_I18N = {
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
     mob_cv_btn: "ሲቪ / ፖርትፎሊዮ ያውርዱ [7.4 MB]",
     mob_telegram_cta: "በቴሌግራም ያግኙኝ ↗",
-    mob_footnote: "4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ",
+    mob_footnote: "ኬቢ ክሪኤቲቭ • አርክቴክቸር እና የብራንድ ማንነት",
     
     // Hero Section
-    hero_tag: `<span>● 4ኛ ዓመት የአርክቴክቸር ተማሪ</span><span>•</span><span>ወልቂጤ ዩኒቨርሲቲ</span><span>•</span><span>ኬቢ ክሪኤቲቭ</span>`,
+    hero_tag: `<span>● የቦታ አርክቴክቸር</span><span>•</span><span>3D ቪዥዋላይዜሽን</span><span>•</span><span>ኬቢ ክሪኤቲቭ</span>`,
     hero_title: `ሰላም፣ እኔ <span class="highlight-yellow">ቃልእግዚአብሔር ፈቀደ</span> <span class="block outline-text">(KB CREATIVE) ነኝ።</span>`,
-    hero_bio: `<strong>በወልቂጤ ዩኒቨርሲቲ የ4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> መስራች። በህንፃ እና የቦታ ንድፍ፣ 3D ቪዥዋላይዜሽን እና የብራንድ መለያ ዲዛይን ላይ እሰራለሁ።`,
+    hero_bio: `የ<strong>አርክቴክቸር ዲዛይነር</strong> እና የ<strong>KB CREATIVE</strong> መስራችና የፈጠራ ዳይሬክተር። በህንፃ እና የቦታ ንድፍ፣ 3D ቪዥዋላይዜሽን እና የብራንድ መለያ ዲዛይን ላይ እሰራለሁ።`,
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
     hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
     hero_explore: "15 የተመረጡ ስራዎችን ይመልከቱ",
     
     // Hero Stats
-    stat_student: "የአርክቴክቸር ተማሪ",
+    stat_student: "የቦታ እና ብራንድ ዲዛይን",
     stat_studies: "የተመረጡ ስራዎች",
 
     // Practice Filter Pills
@@ -1668,9 +1668,9 @@ const KB_I18N = {
     skills_title: "የቴክኒክ እና የሙያ ብቃት ማትሪክስ",
     skills_desc: "የቦታ ጥንቃቄ፣ የብራንድ ዲዛይን፣ ከፍተኛ ጥራት ያለው 3D ቪዥዋላይዜሽን እና የባለብዙ ቋንቋ ቅንጅት።",
     academic_tag: "የትምህርት መረጃ እና የስቱዲዮ ልምምድ",
-    academic_title: "4ኛ ዓመት የአርክቴክቸር ተማሪ — ወልቂጤ ዩኒቨርሲቲ",
+    academic_title: "የአርክቴክቸር እና የአካባቢ ንድፍ እጩ — ወልቂጤ ዩኒቨርሲቲ",
     academic_desc: "በባዮክላይማቲክ የቦታ ንድፍ፣ በመዋቅር ዝርዝር እና በBIM ሰነዶች ላይ ያተኮረ ዩኒቨርሲቲ ምርምርን ከ<strong>KB CREATIVE</strong> ተግባራዊ ስራዎች ጋር ማስተሳሰር።",
-    academic_badge: "የ2026 ተመራቂ // የ4ኛ ዓመት እጩ",
+    academic_badge: "የ2026 ተመራቂ // የአርክቴክቸር እጩ",
     discipline_arch_tag: "01 // ህንፃ እና የቦታ ንድፍ",
     discipline_arch_title: "አርክቴክቸር",
     discipline_brand_tag: "02 // የብራንድ መለያ ዲዛይን",
@@ -1684,7 +1684,7 @@ const KB_I18N = {
     lang_amharic: "አማርኛ (የአፍ መፍቻ ቋንቋ)",
     lang_english: "እንግሊዝኛ (የስራ ቋንቋ)",
     collab_note_title: "አመራር እና ትብብር",
-    collab_note_text: "ከግንባታ ቡድኖች፣ ከወልቂጤ ዩኒቨርሲቲ ተማሪዎች እና አለምአቀፍ ደንበኞች ጋር ያለምንም እንቅፋት በብቃት ለመስራት የሚያስችል የቋንቋ ክህሎት።",
+    collab_note_text: "ከግንባታ ቡድኖች፣ ከወልቂጤ ዩኒቨርሲቲ የአካዳሚክ ባልደረቦች እና አለምአቀፍ ደንበኞች ጋር ያለምንም እንቅፋት በብቃት ለመስራት የሚያስችል የቋንቋ ክህሎት።",
 
     // FAQ Section
     chap_03: "ክፍል 03 // ተዘውታሪ ጥያቄዎች",
@@ -1709,7 +1709,7 @@ const KB_I18N = {
     contact_super: "04. አብረን እንስራ // ያግኙን",
     contact_hero_title: `አብረን <span style="color: var(--brand-yellow);">ድንቅ ነገር</span> እንገንባ።`,
     contact_status: "የስራ ዝግጁነት: ለአርክቴክቸር፣ 3D ቪዥዋላይዜሽን እና ብራንድ ዲዛይን ስራዎች ክፍት ነኝ",
-    contact_intro: `በወልቂጤ ዩኒቨርሲቲ የ<strong>4ኛ ዓመት የአርክቴክቸር ተማሪ</strong> እና የ<strong>KB CREATIVE</strong> ዋና ዲዛይነር። ለህንፃ ንድፍ፣ ለመኖሪያ እና የውስጥ እድሳት፣ ለ3D ቪዥዋላይዜሽን ወይም ለብራንድ መለያ ስራዎች ዝግጁ ነኝ።`,
+    contact_intro: `በ<strong>KB CREATIVE</strong> ዋና ዲዛይነር እና የፈጠራ ዳይሬክተር። ለህንፃ ንድፍ፣ ለመኖሪያ እና የውስጥ እድሳት፣ ለ3D ቪዥዋላይዜሽን ወይም ለብራንድ መለያ ስራዎች ዝግጁ ነኝ።`,
     contact_cv_title: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
     contact_cv_meta: "የ2026 አጠቃላይ ማህደር • ህንፃ እና ብራንድ ሲስተሞች [7.4 MB]",
     inquiry_name_label: "ሙሉ ስምዎት",
@@ -1833,7 +1833,7 @@ function initLanguageEngine() {
     if (tickerTrack) {
       if (currentLang === 'am') {
         tickerTrack.innerHTML = `
-          <span>✦ የ4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ</span>
+          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ</span>
           <span class="ticker-dot">•</span>
           <span>የKB CREATIVE መስራች</span>
           <span class="ticker-dot">•</span>
@@ -1843,7 +1843,7 @@ function initLanguageEngine() {
           <span class="ticker-dot">•</span>
           <span>ኢትዮጵያ እና በኦንላይን በመላው አለም</span>
           <span class="ticker-dot">•</span>
-          <span>✦ የ4ኛ ዓመት የአርክቴክቸር ተማሪ • ወልቂጤ ዩኒቨርሲቲ</span>
+          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ</span>
           <span class="ticker-dot">•</span>
           <span>የKB CREATIVE መስራች</span>
           <span class="ticker-dot">•</span>
@@ -1856,7 +1856,7 @@ function initLanguageEngine() {
         `;
       } else {
         tickerTrack.innerHTML = `
-          <span>✦ 4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY</span>
+          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY CGI • KB CREATIVE ATELIER</span>
           <span class="ticker-dot">•</span>
           <span>KB CREATIVE FOUNDER</span>
           <span class="ticker-dot">•</span>
@@ -1866,7 +1866,7 @@ function initLanguageEngine() {
           <span class="ticker-dot">•</span>
           <span>ETHIOPIA &amp; REMOTE WORLDWIDE</span>
           <span class="ticker-dot">•</span>
-          <span>✦ 4TH YEAR ARCHITECTURE STUDENT • WOLKITE UNIVERSITY</span>
+          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY CGI • KB CREATIVE ATELIER</span>
           <span class="ticker-dot">•</span>
           <span>KB CREATIVE FOUNDER</span>
           <span class="ticker-dot">•</span>
@@ -2500,8 +2500,8 @@ window.openCaseStudy = function(projectId, triggerEl) {
 
   document.getElementById('modal-project-title').textContent = project.title;
   document.getElementById('modal-practice-tag').textContent = isAm
-    ? `${project.service || project.practiceLabel} // 4ኛ ዓመት አርክቴክቸር • ወልቂጤ ዩኒቨርሲቲ [${displayGridRef}]`
-    : `${project.service || project.practiceLabel} // 4TH YEAR ARCHITECTURE • WOLKITE UNIVERSITY [${displayGridRef}]`;
+    ? `${project.service || project.practiceLabel} // ስቱዲዮ KB CREATIVE [${displayGridRef}]`
+    : `${project.service || project.practiceLabel} // STUDIO KB CREATIVE [${displayGridRef}]`;
 
   const softwareList = Array.isArray(project.software) ? project.software : [project.medium];
   const isArch = project.practice === 'architecture';
@@ -2564,7 +2564,7 @@ window.openCaseStudy = function(projectId, triggerEl) {
         <div class="role-icon-badge" aria-hidden="true">★</div>
         <div>
           <div class="modal-role-title">${project.role}</div>
-          <div class="modal-role-subtitle font-mono">${isAm ? 'የአርክቴክቸር ትምህርት ክፍል፣ ወልቂጤ ዩኒቨርሲቲ • ስቱዲዮ KB CREATIVE' : 'Department of Architecture, Wolkite University • Studio KB CREATIVE'}</div>
+          <div class="modal-role-subtitle font-mono">${isAm ? 'ስቱዲዮ KB CREATIVE // የቦታ አርክቴክቸር እና የብራንድ ዲዛይን' : 'Studio KB CREATIVE // Spatial Architecture & Visual Identity'}</div>
         </div>
       </div>
     </div>
