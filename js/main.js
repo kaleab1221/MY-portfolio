@@ -2136,41 +2136,6 @@ function initProjectsArchive() {
         <!-- Media Carousel with Exposed Multi-Slide Controls -->
         <div class="carousel-media-wrap" onclick="openCaseStudy('${item.id}')" title="Click to open case study">
           <img src="${currentSlide.url}" alt="${localizedItem.title}" class="carousel-slide-img" id="img-${item.id}" loading="lazy" decoding="async" style="${currentSlide.fit === 'contain' ? `object-fit: contain; background: ${currentSlide.bg || '#041B2B'};`: ''}">
-          
-          <!-- BIG.dk Signature Architectural Showcase Hover Overlay -->
-          <div class="big-hover-scrim">
-            <div class="big-hover-content">
-              <div class="big-hover-meta-top font-mono">
-                <span class="big-hover-discipline">${(localizedItem.service || localizedItem.practiceLabel).toUpperCase()}</span>
-                <span class="big-hover-year">${item.year}</span>
-              </div>
-              <h4 class="big-hover-heading">${localizedItem.title}</h4>
-              <div class="big-hover-location font-mono">
-                <span>📍 ${localizedItem.location}</span>
-              </div>
-              ${localizedItem.sizeContext ? `
-                <div class="big-hover-size-pill font-mono">
-                  <span class="size-icon" aria-hidden="true">📐</span>
-                  <span class="size-text">${localizedItem.sizeContext}</span>
-                </div>
-              ` : ''}
-              <div class="big-hover-action-wrap">
-                <span class="big-hover-btn font-mono">${isAm ? 'ዝርዝር ይመልከቱ ↗' : 'VIEW CASE STUDY ↗'}</span>
-                <span class="big-hover-slide-caption font-mono" id="caption-${item.id}">
-                  <span class="scrub-hint">${isAm ? '↔ ምስሎችን ይቀያይሩ:' : '↔ SCRUB:'}</span> ${currentSlide.caption}
-                </span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Bottom Metadata Reveal Bar on Hover (Year • Typology • Primary Tool) -->
-          <div class="project-bottom-meta-bar font-mono" aria-hidden="true">
-            <span class="meta-bar-year">${item.year}</span>
-            <span class="meta-bar-sep">•</span>
-            <span class="meta-bar-typology">${localizedItem.service || localizedItem.practiceLabel}</span>
-            <span class="meta-bar-sep">•</span>
-            <span class="meta-bar-tool">${primaryTool}</span>
-          </div>
 
           <!-- Slide Counter Badge (01 / 05) -->
           <span class="slide-counter-badge font-mono" id="counter-${item.id}">0${currentIdx + 1} / 0${totalSlides}</span>
