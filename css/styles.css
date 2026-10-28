@@ -107,7 +107,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
-  overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
 }
 
@@ -125,8 +125,15 @@ body {
   color: var(--text-primary);
   line-height: var(--line-height-golden);
   font-size: var(--font-size-body);
-  overflow-x: hidden;
+  overflow-x: clip;
+  padding-top: 4.75rem;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 4.25rem;
+  }
 }
 
 /* Tactile micro-interactions for interactive elements */
@@ -207,22 +214,26 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
 
 /* MAIN NAVIGATION HEADER */
 .main-nav-bar {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 90;
-  background: rgba(255, 255, 255, 0.95);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border-color);
-  transition: all 0.25s ease;
+  transition: background 0.25s ease, border-color 0.25s ease;
 }
 
-[data-theme="dark"] .main-nav-bar {
-  background: rgba(4, 27, 43, 0.95);
+[data-theme="dark"] .main-nav-bar,
+body.dark-mode .main-nav-bar {
+  background: rgba(4, 27, 43, 0.96) !important;
 }
 
 [data-theme="blueprint"] .main-nav-bar {
-  background: rgba(6, 43, 70, 0.95);
+  background: rgba(6, 43, 70, 0.96);
 }
 
 .nav-layout {
@@ -1134,7 +1145,13 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   padding: 1.25rem 0;
   position: sticky;
   top: 4.75rem;
-  z-index: 80;
+  z-index: 900;
+}
+
+@media (max-width: 768px) {
+  .practice-navigator-bar {
+    top: 4.25rem;
+  }
 }
 
 .navigator-flex {

@@ -1,7 +1,7 @@
 /**
  * ============================================================================
  * 🏢 KALEEGZIABHER FEKEDE // ARCHITECTURAL DESIGNER & CREATIVE DIRECTOR
- * 🌟 KB CREATIVE — Spatial Architecture, 3D CGI Visualization & Brand Systems
+ * 🌟 KB CREATIVE — Spatial Architecture, 3D Visualization & Brand Systems
  * Contact: kaleabjr22@gmail.com • +251 941263180
  * ============================================================================
  */
@@ -102,7 +102,7 @@ const KB_PROJECTS = [
     "title": "G+2 Family Residence",
     "practice": "architecture",
     "subCategory": "residential",
-    "practiceLabel": "Residential Architecture & CGI",
+    "practiceLabel": "Residential Architecture & Visualization",
     "year": "2026",
     "gridRef": "MOD-01",
     "sizeContext": "Kara, Addis Ababa | 250 m² Plot • G+2+Terrace • 10 Multi-View Perspectives & Floor Plans",
@@ -117,7 +117,7 @@ const KB_PROJECTS = [
     "deliverables": [
       "Complete Architectural Planning & Spatial Hierarchy (Public, Semi-Private, Private & Service Zones)",
       "Technical Multi-Level Architectural Floor Plans & Site Circulation Layout (1:1 Proportional Plan)",
-      "9 Photorealistic CGI Perspectives (Daylight, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)",
+      "9 Photorealistic Perspectives (Daylight, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)",
       "Traditional Ethiopian Spiritual Prayer Room (Tselot Bet) with Illuminated Cross Ceiling & Begena Display",
       "Master Bedroom Retreat with Integrated Fluted Wood Study & Minimalist Headboard",
       "Executive Home Office Studio & Architectural Library with Mesh Detailing",
@@ -205,7 +205,7 @@ const KB_PROJECTS = [
     "slides": [
       {
         "url": "assets/office-slide-01-elevation.jpg",
-        "caption": "Slide 01 // Executive Workspace & Branded Calacatta Marble Feature Wall (Photorealistic CGI)"
+        "caption": "Slide 01 // Executive Workspace & Branded Calacatta Marble Feature Wall (Photorealistic Visualization)"
       },
       {
         "url": "assets/office-slide-03-wide.jpg",
@@ -237,7 +237,7 @@ const KB_PROJECTS = [
   {
     "id": "mixed-use-tower-gubre",
     "service": "Mixed-Use Architecture & Commercial Planning",
-    "role": "Lead Architectural Designer & 3D CGI Artist (KB CREATIVE)",
+    "role": "Lead Architectural Designer & 3D Visualization Artist (KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -1543,7 +1543,7 @@ const KB_I18N = {
     mob_footnote: "KB CREATIVE • SPATIAL ARCHITECTURE & BRAND IDENTITY",
     
     // Hero Section
-    hero_tag: `<span>● SPATIAL ARCHITECTURE</span><span>•</span><span>3D CGI VISUALIZATION</span><span>•</span><span>KB CREATIVE</span>`,
+    hero_tag: `<span>● SPATIAL ARCHITECTURE</span><span>•</span><span>3D VISUALIZATION</span><span>•</span><span>KB CREATIVE</span>`,
     hero_title: `Hi, I'm <span class="highlight-yellow">Kaleegziabher Fekede</span> <span class="block outline-text">(KB CREATIVE).</span>`,
     hero_bio: `<strong>Architectural Designer</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.`,
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
@@ -1572,7 +1572,7 @@ const KB_I18N = {
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
     editorial_title: "Curated Architectural & Graphic Projects",
-    editorial_desc: "15 curated projects spanning Spatial Architecture, Photorealistic 3D CGI, and Corporate Brand Identity Systems.",
+    editorial_desc: "15 curated projects spanning Spatial Architecture, Photorealistic 3D Visualization, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1599,9 +1599,9 @@ const KB_I18N = {
 
     // FAQ Section
     faq_title: "Frequently Asked Questions",
-    faq_desc: "Essential clarifications on architectural commissions, cinematic 3D CGI visualization workflows, technical deliverables, and bespoke brand identity design with KB CREATIVE.",
+    faq_desc: "Essential clarifications on architectural commissions, cinematic 3D visualization workflows, technical deliverables, and bespoke brand identity design with KB CREATIVE.",
     faq_q1: "What architectural and design services does KB CREATIVE provide?",
-    faq_a1: "We specialize in three integrated disciplines: (1) <strong>Spatial Architecture</strong> for residential villas (such as the Kara G+2 Residence), interior workplace renovations (Acute Engineering), and commercial mixed-use concourses (MENA MALL); (2) <strong>Cinematic 3D CGI Visualization</strong> featuring photorealistic atmospheric daylight simulations, materiality texturing, and BIM documentation in Autodesk Revit &amp; D5 Render; and (3) <strong>Corporate Brand Identity Systems</strong> covering logomarks, typography, and packaging architecture.",
+    faq_a1: "We specialize in three integrated disciplines: (1) <strong>Spatial Architecture</strong> for residential villas (such as the Kara G+2 Residence), interior workplace renovations (Acute Engineering), and commercial mixed-use concourses (MENA MALL); (2) <strong>Cinematic 3D Visualization</strong> featuring photorealistic atmospheric daylight simulations, materiality texturing, and BIM documentation in Autodesk Revit &amp; D5 Render; and (3) <strong>Corporate Brand Identity Systems</strong> covering logomarks, typography, and packaging architecture.",
     faq_q2: "How does the project design workflow proceed from concept to final delivery?",
     faq_a2: "Every project follows an architectural 4-stage methodology: (1) <strong>Brief &amp; Site Analysis</strong>: clarifying programmatic requirements, plot dimensions, slope, and solar angles; (2) <strong>Spatial Massing &amp; Circulation Zoning</strong>: structural grid layout and functional space hierarchy; (3) <strong>Photorealistic 3D Simulation</strong>: exploring lighting conditions, materials, and camera perspectives for client alignment; and (4) <strong>Technical Working Drawings</strong>: dimensioned architectural plans, sections, joinery specifications, and high-resolution marketing visuals.",
     faq_q3: "What files or information are needed to start a 3D visualization project?",
@@ -1740,7 +1740,7 @@ const KB_I18N = {
     faq_title: "ተዘውታሪ ጥያቄዎች እና መልሶች",
     faq_desc: "ስለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የቴክኒክ ሰነዶች እና የብራንድ መለያ ስራዎች ከKB CREATIVE ጋር ለመስራት የሚያስፈልጉ ጠቃሚ መረጃዎች።",
     faq_q1: "KB CREATIVE ምን አይነት የአርክቴክቸር እና የዲዛይን አገልግሎቶችን ይሰጣል?",
-    faq_a1: "በሶስት ዋና ዋና ዘርፎች እንሰራለን፦ (1) <strong>የቦታ እና የህንፃ ንድፍ</strong> ለመኖሪያ ቤቶች (እንደ ካራ G+2 መኖሪያ)፣ ለውስጥ እድሳት (አኪዩት ኢንጂነሪንግ) እና ለንግድ ማዕከላት (ሜና ሞል)፤ (2) <strong>3D CGI ቪዥዋላይዜሽን</strong> የብርሃን እና የቁሳቁስ እውነተኛ እይታዎችን እና የBIM ሰነዶችን በAutodesk Revit እና D5 Render ማዘጋጀት፤ እና (3) <strong>የብራንድ መለያ ዲዛይን</strong> ሎጎዎችን፣ ፊደላትን እና የማሸጊያ ንድፎችን ያጠቃልላል።",
+    faq_a1: "በሶስት ዋና ዋና ዘርፎች እንሰራለን፦ (1) <strong>የቦታ እና የህንፃ ንድፍ</strong> ለመኖሪያ ቤቶች (እንደ ካራ G+2 መኖሪያ)፣ ለውስጥ እድሳት (አኪዩት ኢንጂነሪንግ) እና ለንግድ ማዕከላት (ሜና ሞል)፤ (2) <strong>3D ቪዥዋላይዜሽን</strong> የብርሃን እና የቁሳቁስ እውነተኛ እይታዎችን እና የBIM ሰነዶችን በAutodesk Revit እና D5 Render ማዘጋጀት፤ እና (3) <strong>የብራንድ መለያ ዲዛይን</strong> ሎጎዎችን፣ ፊደላትን እና የማሸጊያ ንድፎችን ያጠቃልላል።",
     faq_q2: "የፕሮጀክት ዲዛይን እና የማጠናቀቂያ ሂደት እንዴት ይካሄዳል?",
     faq_a2: "ስራችን በ4 ደረጃዎች ይከናወናል፦ (1) <strong>የቦታ እና የፍላጎት ጥናት</strong>፦ የቦታውን ስፋት፣ አቅጣጫ እና የፀሐይ ብርሃን ሁኔታ መመርመር፤ (2) <strong>የቦታ ክፍፍል እና ቅርፅ ማውጣት</strong>፦ የተግባር አደረጃጀትን ማስተካከል፤ (3) <strong>እውነተኛ 3D ቪዥዋላይዜሽን</strong>፦ የብርሃን እና የቀለማት ሁኔታን በምስል ማሳየት፤ እና (4) <strong>የግንባታ ዝርዝር ሰነዶች</strong>፦ ትክክለኛ መለኪያ ያላቸው ፕላኖች፣ ሴክሽኖች እና ዝርዝር መመሪያዎችን ማዘጋጀት።",
     faq_q3: "የ3D ቪዥዋላይዜሽን ስራ ለመጀመር ምን አይነት ፋይሎች ያስፈልጋሉ?",
@@ -1904,7 +1904,7 @@ function initLanguageEngine() {
         `;
       } else {
         tickerTrack.innerHTML = `
-          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY CGI • KB CREATIVE ATELIER</span>
+          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE ATELIER</span>
           <span class="ticker-dot">•</span>
           <span>KB CREATIVE FOUNDER</span>
           <span class="ticker-dot">•</span>
@@ -1914,7 +1914,7 @@ function initLanguageEngine() {
           <span class="ticker-dot">•</span>
           <span>ETHIOPIA &amp; REMOTE WORLDWIDE</span>
           <span class="ticker-dot">•</span>
-          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY CGI • KB CREATIVE ATELIER</span>
+          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE ATELIER</span>
           <span class="ticker-dot">•</span>
           <span>KB CREATIVE FOUNDER</span>
           <span class="ticker-dot">•</span>
@@ -2019,7 +2019,7 @@ function initProjectsArchive() {
     const dict = KB_I18N[isAm ? 'am' : 'en'] || KB_I18N.en;
 
     if (activePractice === 'visualization') {
-      // 3D Visualization corresponds to the active spatial CGI architectural works
+      // 3D Visualization corresponds to the active spatial architectural works
       filtered = filtered.filter(p => p.practice === 'architecture');
     } else if (activePractice !== 'all') {
       filtered = filtered.filter(p => p.practice === activePractice);

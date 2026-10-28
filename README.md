@@ -13,7 +13,7 @@ A bespoke, world-class portfolio website combining the minimalist typographic cl
 - **Primary Practices**:
   1. **Architecture & Spatial Design** (Residential Complexes, Villas, Atrium Daylight, Floorplans)
   2. **Graphic Design & Brand Systems** (Monograms, Visual Identities, Company Profiles, UI/UX)
-  3. **3D Visualization & CGI** (Photorealistic Lighting Simulations, D5 Render, Lumion, V-Ray)
+  3. **3D Visualization** (Photorealistic Lighting Simulations, D5 Render, Lumion, V-Ray)
 
 ---
 
@@ -59,8 +59,8 @@ A bespoke, world-class portfolio website combining the minimalist typographic cl
    - **Studio Emblem Shimmer**: Click on the official **KB CREATIVE** studio identity card triggers an interactive 3D shimmer wave and toast credential notification.
    - **Keyboard Navigation**: In modal case studies, `←` and `→` arrow keys cycle through high-resolution perspectives, and `Escape` closes the viewer.
 4. **Scroll-Driven Storytelling & Kinetic Typography**:
-   - **Architectural Kinetic Ticker Ribbon**: Continuous horizontal kinetic typography ticker between Hero and Works sections (`✦ WOLKITE UNIVERSITY ARCHITECTURE • DAYLIGHT TECTONICS • MONOLITHIC BRAND IDENTITIES • D5 RENDER & RHINO CGI...`) with interactive hover damping.
-   - **Scroll-Driven Story Chapters**: Visual storytelling chapter badges (`CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE`, `CHAPTER 02 // TECHNICAL DISCIPLINE & CGI MATRIX`, `CHAPTER 03 // DIALOGUE & COMMISSION INQUIRY`).
+   - **Architectural Kinetic Ticker Ribbon**: Continuous horizontal kinetic typography ticker between Hero and Works sections (`✦ WOLKITE UNIVERSITY ARCHITECTURE • DAYLIGHT TECTONICS • MONOLITHIC BRAND IDENTITIES • D5 RENDER & RHINO VISUALIZATION...`) with interactive hover damping.
+   - **Scroll-Driven Story Chapters**: Visual storytelling chapter badges (`CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE`, `CHAPTER 02 // TECHNICAL DISCIPLINE MATRIX`, `CHAPTER 03 // DIALOGUE & COMMISSION INQUIRY`).
    - **Scroll-Driven Storytelling Cascade Reveal**: Projects smoothly rise into view with staggered cascade transitions as each enters the viewport.
    - **Tactile Micro-Interactions**: Tactile button clicks (`:active` scale down to `0.96`), pill hover glints, skill tag elevation, and input wave responses.
 5. **Official KB CREATIVE Studio Identity Card & Ambient 3D Matrix**:
