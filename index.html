@@ -27,12 +27,18 @@
   <title>KB CREATIVE — Spatial Architecture, 3D CGI Visualization &amp; Brand Systems</title>
   <meta name="description" content="Portfolio of KB CREATIVE — Spatial Architecture, Photorealistic 3D CGI Visualization, and Corporate Brand Identity Systems.">
 
-  <!-- Always Scroll to Top on Page Reload (except when an anchor hash is provided) -->
+  <!-- Always Scroll to Top on Page Reload -->
   <script>
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
     }
-    if (!window.location.hash) {
+    const navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+    const isPageReload = (navEntries && navEntries[0] && navEntries[0].type === 'reload') ||
+                         (window.performance && window.performance.navigation && window.performance.navigation.type === 1);
+    if (isPageReload) {
+      if (window.location.hash) {
+        history.replaceState(null, document.title, window.location.pathname + window.location.search);
+      }
       window.scrollTo(0, 0);
     }
   </script>
@@ -1643,9 +1649,9 @@
           </select>
 
           <label class="inquiry-label" for="inquiry-brief" data-i18n="inquiry_brief_label">Project Brief &amp; Site Details</label>
-          <textarea id="inquiry-brief" rows="3" class="inquiry-textarea" placeholder="Detail your project site, dimensions, timeline, and aesthetic goals..."></textarea>
+          <textarea id="inquiry-brief" rows="2" class="inquiry-textarea" placeholder="Detail your project site, dimensions, timeline, and aesthetic goals..."></textarea>
 
-          <button type="submit" class="btn-brand-yellow" style="width: 100%; justify-content: center; padding: 1rem;">
+          <button type="submit" class="btn-brand-yellow" style="width: 100%; justify-content: center; padding: 0.85rem 1rem;">
             <span data-i18n="inquiry_submit">Transmit Proposal To KB CREATIVE →</span>
           </button>
         </form>

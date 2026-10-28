@@ -6,14 +6,12 @@
  * ============================================================================
  */
 
-// Reset scroll to top on reload, unless anchor hash is provided
+// Reset scroll to top on reload
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
 window.addEventListener('beforeunload', () => {
-  if (!window.location.hash) {
-    window.scrollTo(0, 0);
-  }
+  window.scrollTo(0, 0);
 });
 
 function safeRun(name, fn) {
@@ -24,19 +22,31 @@ function safeRun(name, fn) {
   }
 }
 
+function isReloadNavigation() {
+  const navEntries = performance.getEntriesByType && performance.getEntriesByType('navigation');
+  return (navEntries && navEntries[0] && navEntries[0].type === 'reload') ||
+         (window.performance && window.performance.navigation && window.performance.navigation.type === 1);
+}
+
 function handleHashScroll(hash) {
+  if (isReloadNavigation()) return;
   const target = document.querySelector(hash);
   if (target) {
-    const headerOffset = 70;
+    const header = document.querySelector('.main-nav');
+    const headerOffset = header ? header.offsetHeight : 70;
     const targetY = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
     window.scrollTo({
-      top: targetY,
+      top: Math.max(0, targetY),
       behavior: 'smooth'
     });
   }
 }
 
 function initHashNavigationHandler() {
+  if (isReloadNavigation()) {
+    window.scrollTo(0, 0);
+    return;
+  }
   if (window.location.hash) {
     setTimeout(() => {
       handleHashScroll(window.location.hash);
@@ -49,6 +59,7 @@ function initContactNavHandler() {
   document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href$="#contact"], a[href="#contact"]');
     if (!link) return;
+    e.preventDefault();
     const contactSec = document.getElementById('contact');
     if (contactSec) {
       // Instantly reveal all elements in the contact section
@@ -58,12 +69,16 @@ function initContactNavHandler() {
         el.style.transform = 'none';
         el.style.transition = 'none';
       });
-      const headerOffset = 68;
+      const header = document.querySelector('.main-nav');
+      const headerOffset = header ? header.offsetHeight : 68;
       const targetY = contactSec.getBoundingClientRect().top + window.pageYOffset - headerOffset;
       window.scrollTo({
-        top: targetY,
+        top: Math.max(0, targetY),
         behavior: 'smooth'
       });
+      if (history.pushState) {
+        history.pushState(null, document.title, '#contact');
+      }
     }
   });
 }
@@ -2819,6 +2834,10 @@ if (document.readyState === 'loading') {
 
 // Fallback safety to ensure all 15 project cards are active and populated
 window.addEventListener('load', () => {
+  if (isReloadNavigation()) {
+    window.scrollTo(0, 0);
+    return;
+  }
   const container = document.getElementById('big-projects-container');
   if (container && (!container.children || container.children.length === 0)) {
     if (typeof window.renderProjects === 'function') {
