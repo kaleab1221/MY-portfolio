@@ -40,7 +40,7 @@ const KB_PROJECTS = [
   {
     "id": "kara-g2-family-residence",
     "service": "G+2+Terrace Residential Architecture & Daylight Simulation",
-    "role": "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Architectural Designer & 3D Visualizer (KB CREATIVE)",
     "software": [
       "Autodesk Revit",
       "D5 Render",
@@ -121,7 +121,7 @@ const KB_PROJECTS = [
   {
     "id": "acute-engineering-office-renovation",
     "service": "Interior Architecture & Workplace Renovation",
-    "role": "Lead Interior Architect & Spatial Designer (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Interior Architect & Spatial Designer (KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -185,7 +185,7 @@ const KB_PROJECTS = [
   {
     "id": "mixed-use-tower-gubre",
     "service": "Mixed-Use Architecture & Commercial Planning",
-    "role": "Lead Architectural Designer & 3D CGI Artist (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Architectural Designer & 3D CGI Artist (KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -248,7 +248,7 @@ const KB_PROJECTS = [
   {
     "id": "climate-responsive-residence-diredawa",
     "service": "Bioclimatic Residential Architecture",
-    "role": "Lead Architectural Designer & Passive Solar Strategist (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Architectural Designer & Passive Solar Strategist (KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -309,7 +309,7 @@ const KB_PROJECTS = [
     "id": "vertical-sports-wellness-center",
     "hidden": true,
     "service": "Sports Architecture & Structural Steel Truss Design",
-    "role": "Lead Architectural Designer & 3D Visualizer (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Architectural Designer & 3D Visualizer (KB CREATIVE)",
     "software": [
       "AutoCAD",
       "Rhino 3D",
@@ -368,7 +368,7 @@ const KB_PROJECTS = [
     "id": "bamboo-ferrocement-sustainable-housing",
     "hidden": true,
     "service": "Sustainable Eco-Housing & Appropriate Technology",
-    "role": "Lead Architectural Designer & Material Researcher (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Architectural Designer & Material Researcher (KB CREATIVE)",
     "software": [
       "AutoCAD",
       "SketchUp",
@@ -426,7 +426,7 @@ const KB_PROJECTS = [
   {
     "id": "roman-catering-brand-identity",
     "service": "Hospitality Brand Identity & Eco Packaging System",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -496,7 +496,7 @@ const KB_PROJECTS = [
   {
     "id": "worker-link-brand-identity",
     "service": "Brand Identity & Mobile UI Systems",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -557,7 +557,7 @@ const KB_PROJECTS = [
   {
     "id": "jordano-jemole-construction-identity",
     "service": "Corporate Brand Identity & Site Safety Graphics",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -617,7 +617,7 @@ const KB_PROJECTS = [
   {
     "id": "tilet-fashion-brand-identity",
     "service": "Haute Couture Brand Identity & Retail Packaging",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -677,7 +677,7 @@ const KB_PROJECTS = [
   {
     "id": "bego-meaza-media-identity",
     "service": "Broadcast Media Identity & Digital Systems",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -733,7 +733,7 @@ const KB_PROJECTS = [
   {
     "id": "mesob-meals-brand-identity",
     "service": "Culinary Brand Identity & Packaging Ecosystem",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -793,7 +793,7 @@ const KB_PROJECTS = [
   {
     "id": "danu-store-brand-identity",
     "service": "Retail Brand Identity & Environmental Storefront",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -854,7 +854,7 @@ const KB_PROJECTS = [
   {
     "id": "almaz-jewellery-brand-identity",
     "service": "Haute Joaillerie & Luxury Brand Identity",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -915,7 +915,7 @@ const KB_PROJECTS = [
   {
     "id": "dot-creative-agency-identity",
     "service": "Creative Agency & Brand Design Studio",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -972,7 +972,7 @@ const KB_PROJECTS = [
   {
     "id": "dama-marketing-brand-identity",
     "service": "Corporate Marketing & Strategic Brand Architecture",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -1033,7 +1033,7 @@ const KB_PROJECTS = [
   {
     "id": "tinu-gifts-brand-identity",
     "service": "Artisanal Packaging Architecture & Brand Identity System",
-    "role": "Lead Brand Identity Designer & Creative Director (Kaleegziabher Fekede • KB CREATIVE)",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
     "software": [
       "Adobe Illustrator",
       "Adobe Photoshop",
@@ -1389,7 +1389,7 @@ const KB_PROJECT_AM = {
     location: "አዲስ አበባ፣ ኢትዮጵያ (የKB CREATIVE ስራ)",
     client: "ሮማን ኬተሪንግ እና የዝግጅት አዘጋጅ አገልግሎት",
     sizeContext: "የአስተናጋጅ + የመሶብ + የR ሞኖግራም • ዘመናዊ የምግብ ማሸጊያዎች • የዝግጅት አቅርቦት",
-    role: "የብራንድ ዲዛይነር እና የፈጠራ ዳይሬክተር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
+    role: "የብራንድ ዲዛይነር እና የፈጠራ ዳይሬክተር (KB CREATIVE)",
     summary: "የኢትዮጵያን ባህላዊ መስተንግዶ እና ዘመናዊ የኬተሪንግ አገልግሎትን ያጣመረ የላቀ የብራንድ መለያ ስርዓት።",
     description: "ለሮማን ኬተሪንግ የተሰራ የተሟላ የብራንድ መለያ ስርዓት። ሎጎው ሶስት ዋና ዋና ፅንሰ ሀሳቦችን በጂኦሜትሪክ ጥበብ ያዋህዳል፡- አስተናጋጅ በስራ ላይ፣ ባህላዊው የኢትዮጵያ መሶብ እና የእንግሊዝኛው ፊደል 'R'። ስራው ለአካባቢ ተስማሚ የሆኑ የምግብ ማሸጊያዎችን፣ የዝግጅት ማቅረቢያ ሳጥኖችን፣ የማሸጊያ ሪባኖችን እና የሰራተኞች መለያዎችን ያካትታል።",
     challenge: "የባህላዊ መሶብን ሞቃት ገጽታ ከዘመናዊ የሆቴልና የዝግጅት ኬተሪንግ ደረጃ ጋር በማጣመር ቀላልና ተወዳጅ ሎጎ መፍጠር።",
@@ -1549,7 +1549,7 @@ const KB_I18N = {
     chap_03: "CHAPTER 03 // FREQUENTLY ASKED QUESTIONS",
     faq_super: "03. Inquiries & Process Architecture",
     faq_title: "Frequently Asked Questions",
-    faq_desc: "Essential clarifications on architectural commissions, cinematic 3D CGI visualization workflows, technical deliverables, and bespoke brand identity design with Kaleegziabher Fekede (KB CREATIVE).",
+    faq_desc: "Essential clarifications on architectural commissions, cinematic 3D CGI visualization workflows, technical deliverables, and bespoke brand identity design with KB CREATIVE.",
     faq_q1: "What architectural and design services does KB CREATIVE provide?",
     faq_a1: "We specialize in three integrated disciplines: (1) <strong>Spatial Architecture</strong> for residential villas (such as the Kara G+2 Residence), interior workplace renovations (Acute Engineering), and commercial mixed-use concourses (MENA MALL); (2) <strong>Cinematic 3D CGI Visualization</strong> featuring photorealistic atmospheric daylight simulations, materiality texturing, and BIM documentation in Autodesk Revit &amp; D5 Render; and (3) <strong>Corporate Brand Identity Systems</strong> covering logomarks, typography, and packaging architecture.",
     faq_q2: "How does the project design workflow proceed from concept to final delivery?",
@@ -1575,7 +1575,7 @@ const KB_I18N = {
     inquiry_email_label: "Email Address",
     inquiry_service_label: "Project Scope Required",
     inquiry_brief_label: "Project Brief & Site Details",
-    inquiry_submit: "Transmit Proposal To Kaleegziabher Fekede →",
+    inquiry_submit: "Transmit Proposal To KB CREATIVE →",
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
     empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 15 curated works.",
@@ -1690,7 +1690,7 @@ const KB_I18N = {
     chap_03: "ክፍል 03 // ተዘውታሪ ጥያቄዎች",
     faq_super: "03. የጥያቄዎች እና የአሰራር ሂደት ማብራሪያ",
     faq_title: "ተዘውታሪ ጥያቄዎች እና መልሶች",
-    faq_desc: "ስለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የቴክኒክ ሰነዶች እና የብራንድ መለያ ስራዎች ከአርክቴክቸራል ዲዛይነር ቃልእግዚአብሔር ፈቀደ (KB CREATIVE) ጋር ለመስራት የሚያስፈልጉ ጠቃሚ መረጃዎች።",
+    faq_desc: "ስለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የቴክኒክ ሰነዶች እና የብራንድ መለያ ስራዎች ከKB CREATIVE ጋር ለመስራት የሚያስፈልጉ ጠቃሚ መረጃዎች።",
     faq_q1: "KB CREATIVE ምን አይነት የአርክቴክቸር እና የዲዛይን አገልግሎቶችን ይሰጣል?",
     faq_a1: "በሶስት ዋና ዋና ዘርፎች እንሰራለን፦ (1) <strong>የቦታ እና የህንፃ ንድፍ</strong> ለመኖሪያ ቤቶች (እንደ ካራ G+2 መኖሪያ)፣ ለውስጥ እድሳት (አኪዩት ኢንጂነሪንግ) እና ለንግድ ማዕከላት (ሜና ሞል)፤ (2) <strong>3D CGI ቪዥዋላይዜሽን</strong> የብርሃን እና የቁሳቁስ እውነተኛ እይታዎችን እና የBIM ሰነዶችን በAutodesk Revit እና D5 Render ማዘጋጀት፤ እና (3) <strong>የብራንድ መለያ ዲዛይን</strong> ሎጎዎችን፣ ፊደላትን እና የማሸጊያ ንድፎችን ያጠቃልላል።",
     faq_q2: "የፕሮጀክት ዲዛይን እና የማጠናቀቂያ ሂደት እንዴት ይካሄዳል?",
@@ -1716,7 +1716,7 @@ const KB_I18N = {
     inquiry_email_label: "ኢሜይል አድራሻ",
     inquiry_service_label: "የፕሮጀክቱ አይነት",
     inquiry_brief_label: "የፕሮጀክቱ ዝርዝር እና የቦታ መረጃ",
-    inquiry_submit: "ፕሮፖዛሉን ለቃልእግዚአብሔር ፈቀደ ይላኩ →",
+    inquiry_submit: "ፕሮፖዛሉን ለKB CREATIVE ይላኩ →",
     empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
     empty_void_desc: "ሁሉንም 15 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
