@@ -110,7 +110,7 @@ const KB_PROJECTS = [
     "client": "Private Family Residence Commission",
     "scale": "G+2 + Rooftop Terrace (250 m² Plot, 480 m² Gross Built Area)",
     "medium": "Reinforced Concrete Frame, Ribbed Architectural Fins, Low-E High-Span Glazing & D5 Atmospheric Simulation",
-    "summary": "A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation.",
+    "summary": "Contemporary G+2 residence balancing multi-generational living, privacy, natural light, and outdoor terrace circulation.",
     "description": "A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation. The proposal organizes the house into a clear hierarchy of public, semi-private, private and service spaces, while responding to the site's orientation, slope and urban context. Spanning across 10 comprehensive perspectives and architectural drawings: from sunlit living lounges with traditional Ethiopian coffee ceremony corners to a sacred private prayer sanctuary (Tselot Bet), open island kitchen, master bedroom retreat, executive study office, landscaped rooftop terrace, and technical multi-level floor plans.",
     "challenge": "Organizing a multi-generational family home into an intuitive hierarchy of public reception, private sleeping sanctuaries, and dedicated spiritual prayer spaces on a dense 250 m² Kara plot with optimal daylight and cross-ventilation.",
     "solution": "Designed a vertical zoning sequence with compact structural footprint, cantilevered balconies for solar shading, acoustic isolation for the private prayer and study quarters, and generous floor-to-ceiling glazing opening to landscaped outdoor terraces.",
@@ -191,7 +191,7 @@ const KB_PROJECTS = [
     "client": "Acute Engineering",
     "scale": "22.6 m² (4.2m × 5.4m) Executive Office & Consultation Suite",
     "medium": "Steel & Slatted Oak Joinery, Bookmatched Calacatta Marble, Floating Halo LED Rings, Acoustic Carpet",
-    "summary": "Transforming a compact 22.6 m² footprint into a dual-zone executive suite through a tectonic steel and timber screen that choreographs arrival, transition, and destination.",
+    "summary": "Dual-zone executive workplace renovation within 22.6 m² featuring custom steel-and-oak partition screening.",
     "description": "A high-precision interior renovation for Acute Engineering located in Bole Michael, Addis Ababa. Within an uncompromising 22.6 m² envelope (4.2m × 5.4m), the open floor was masterfully bifurcated into two distinct programmatic realms: an informal client arrival & meeting lounge, and a commanding formal executive command workstation. A custom-fabricated steel and slatted oak screen serves as the primary dividing element—filtering light, organizing sightlines, and orchestrating a clear sequence of arrival, transition, and destination within a single unified room. The executive desk is backed by a bookmatched Calacatta marble feature slab mounting the 3D illuminated Acute Engineering corporate emblem, framed by bespoke floor-to-ceiling joinery and architectural halo ring lighting.",
     "challenge": "Integrating an executive workstation, formal client consultation zone, and high-density storage within an uncompromising 22.6 m² footprint without visual congestion or spatial claustrophobia.",
     "solution": "Designed an open-framework steel and timber screen that functions simultaneously as a room divider, display vitrine, and acoustic buffer—preserving continuous sightlines and perimeter natural daylight while establishing absolute privacy for executive management.",
@@ -255,7 +255,7 @@ const KB_PROJECTS = [
     "client": "Commercial & Urban Development Consortium",
     "scale": "16-Level Urban Landmark (2 Basements + Ground + 14 Upper Floors)",
     "medium": "Rhino 3D, D5 Render, AutoCAD Working Drawings, Double Glazing & Louvered Metal Screen",
-    "summary": "Sixteen-level vertical landmark uniting retail concourses, corporate workspaces, and panoramic residences in Gubre Town.",
+    "summary": "Sixteen-level commercial landmark integrating retail concourses, offices, and residences in Gubre.",
     "description": "A modern architectural landmark in Gubre Town, designed to seamlessly integrate vibrant commercial zones with premium urban living. The project balances high-traffic retail and corporate environments with secure, private residential spaces. The component breakdown encompasses 2 Basements (secure parking, storage, and MEP services), Ground Floor high-ceiling retail storefronts with distinct residential and commercial lobbies, 14 Upper Floors (lower levels dedicated to flexible open-plan corporate offices, upper levels dedicated to premium apartments designed for natural light and panoramic highland views), and a multi-functional rooftop lounge with a green community sky terrace.",
     "challenge": "Balancing heavy pedestrian commercial traffic at the podium level with strict privacy, acoustic buffering, and dedicated security access for the upper residential floors.",
     "solution": "Segmented the vertical circulation cores into isolated access banks, creating independent entrance lobbies while deploying a 5-stage form consolidation that optimizes structural footprint, daylight orientation, and passive solar shading.",
@@ -319,7 +319,7 @@ const KB_PROJECTS = [
     "client": "Private Family Residence Commission",
     "scale": "G+2 Residence with Integrated Thermal Atrium & Shaded Terraces",
     "medium": "45° Aluminum Vertical Fins, Living Green Wall Irrigation, Textured Concrete, Passive Courtyard Atrium",
-    "summary": "Bioclimatic residential villa engineered with 45° passive solar louvers and a central microclimate cooling atrium.",
+    "summary": "Bioclimatic villa featuring 45° solar louvers and a central passive cooling atrium in Dire Dawa.",
     "description": "A contemporary G+2 private residence engineered specifically for Dire Dawa's intense thermal environment. The design prioritizes passive cooling strategies, utilizing an integrated central courtyard and a dynamic louvered facade system to drastically reduce solar heat gain while maximizing natural cross-ventilation. The Ground Floor organizes public living, dining, and an open kitchen wrapping around the landscaped courtyard, guest suite, and parking. The First Floor hosts family bedrooms, study room, prayer room, and shaded balconies. The Second Floor accommodates the master suite, private gym, home office, and entertainment terrace.",
     "challenge": "Mitigating high ambient temperatures and harsh solar radiation characteristic of Dire Dawa without relying exclusively on energy-intensive mechanical air conditioning.",
     "solution": "Introduced a central courtyard that acts as a thermal chimney, drawing cool air through perimeter landscaped buffers while blocking 80% of direct solar heat via 45° angled aluminum vertical fins paired with an irrigated living wall.",
@@ -379,7 +379,7 @@ const KB_PROJECTS = [
     "client": "Municipal Sports & Community Recreation",
     "scale": "G+2 Vertical Facility with Rooftop Sports Terrace",
     "medium": "Reinforced Concrete Frame, High-Performance Acoustic Glazing, Steel Trusses, Perforated Solar Shading",
-    "summary": "Compact urban sports complex stacking Olympic gymnastics, indoor athletic courts, and daylight wellness lounges.",
+    "summary": "Urban sports complex stacking Olympic gymnastics, indoor athletic courts, and wellness lounges.",
     "description": "The objective of this project was to design a modern, vertical sports and wellness center within a compact urban footprint. Moving away from sprawling horizontal sports complexes, this G+2 facility stacks diverse athletic programs to optimize land use while maintaining seamless spatial transitions, high acoustic separation, and clear user circulation. The complex integrates an expansive ground entrance plaza, shaded drop-off zones, professional indoor gymnasium, cardiovascular and weight suites, athlete recovery zones, and a top-floor wellness cafeteria with floor-to-ceiling glass framing panoramic landscape views.",
     "challenge": "Isolating high-impact vibrations and acoustic reverberation generated by multi-level gymnasium sports from quiet administrative and wellness dining spaces.",
     "solution": "Adopted a vertical structural zoning strategy with decoupled concrete slab dampeners and heavy acoustic perimeter partitions between athletic courts and social wellness facilities.",
@@ -438,7 +438,7 @@ const KB_PROJECTS = [
     "client": "Sustainable Habitat & Appropriate Technology Research",
     "scale": "Two-Level Eco-Residential Dwelling on Sloped Hillside",
     "medium": "Bamboo Culms (Dendrocalamus asper), 25mm Ferro-Cement Panels, Timber Decking, Clay Roof Tiles",
-    "summary": "Low-carbon housing prototype uniting treated highland bamboo space frames with 25mm ferrocement thin shells.",
+    "summary": "Low-carbon housing prototype uniting highland bamboo space frames with 25mm ferrocement shells.",
     "description": "An innovative exploration of appropriate building technology combining native bundled bamboo culms with thin-shell ferro-cement panels. The primary skeleton utilizes a triangulated bamboo space frame with bundled culms (typically Dendrocalamus asper or Bambusa balcooa) for structural columns that distribute gravity loads. The secondary shell applies thin-shell ferro-cement panels (25mm–30mm thickness) strategically integrated into the \"shear bays\" of the bamboo frame. Bamboo handles the tensile stresses of wind and seismic loads, while ferro-cement provides the compressive strength, thermal mass, and fire resistance that bamboo lacks. Molded curved ferro-cement walls absorb heat during the day, while high-porosity lightweight bamboo louvers facilitate continuous cross-ventilation.",
     "challenge": "Harmonizing the flexible tensile properties of natural organic bamboo with the rigid compressive strength of cementitious plaster without joint cracking.",
     "solution": "Engineered pin-jointed steel gusset brackets and wire mesh lap-joints that permit thermal expansion while transferring shear loads seamlessly between bamboo bundles and ferro-cement diaphragm walls.",
@@ -496,7 +496,7 @@ const KB_PROJECTS = [
     "client": "Roman Catering & Hospitality Services",
     "scale": "Full Brand Architecture, Sustainable Food Packaging & Collateral Suite",
     "medium": "Synthesized Monogram, Amber Ochre (#F3A22D) & Deep Burgundy (#801414), Molded Fiber Boxes, Kraft Bags",
-    "summary": "A premier hospitality and catering brand identity uniting Ethiopian communal dining culture with contemporary banquet elegance.",
+    "summary": "Hospitality and banquet brand identity blending Ethiopian culinary traditions with modern elegance.",
     "description": "Roman Catering is a premier culinary and event catering service in Addis Ababa. The brand identity is grounded in an iconic geometric monogram constructed on a circular golden-ratio grid, synthesizing three core symbols: a banquet waiter in motion, the traditional Ethiopian dining basket (Mesob), and the capital letter 'R'. The visual system spans across sustainable molded fiber meal containers, custom branded sleeves and circular seal stickers, paper handle carry-out bags, repeating geometric tessellation patterns, executive hospitality presentation platters, and authentic cultural dining presentations.",
     "challenge": "Synthesizing the cultural heritage of authentic Ethiopian communal dining (represented by the Mesob) with modern corporate catering efficiency and formal banquet hospitality into a single memorable, scalable mark.",
     "solution": "Engineered a calibrated geometric glyph pairing warm amber ochre with deep burgundy red, complemented by an interlocking diamond-chevron brand pattern and sustainable packaging architecture that commands prestige across weddings, corporate summits, and premium meal deliveries.",
@@ -566,7 +566,7 @@ const KB_PROJECTS = [
     "client": "Worker Link Platform (@worker_link / workerlink.com)",
     "scale": "Comprehensive Digital Product Brand System & UI Architecture",
     "medium": "Geometric Monoline Vector, Teal (#105B72) & Soft Mint (#40989F) Palette, Mobile UI, 3D Signage",
-    "summary": "Trust-anchored visual identity and mobile UI connecting families directly with verified domestic professionals.",
+    "summary": "Trust-anchored visual identity and mobile UI connecting families with verified domestic services.",
     "description": "Worker Link is an innovative digital platform built in Addis Ababa to connect families directly, safely, and transparently with verified professional housekeepers—eliminating predatory brokers. The visual identity embodies this core mission: removing the middleman so two people are directly joined. The logo forms an interlocking link between two human silhouettes that together create a subtle heart shape, communicating direct connection, safety, warmth, and reliable neighbourly care. Scaled seamlessly across mobile app profile interfaces, real-time push notification widgets, illuminated 3D hanging signage, and digital product touchpoints.",
     "challenge": "Designing a mark that conveys professional security, technical reliability, and digital modernity while exuding approachable domestic warmth and mutual human trust without feeling clinical.",
     "solution": "Engineered an interlocking dual-figure geometry mapped to a strict 45° diagonal construction grid with equal-radius circular terminations, harmonizing deep corporate teal (#105B72) with warm approachable mint (#40989F) to symbolize the two connected parties in balanced equilibrium.",
@@ -626,7 +626,7 @@ const KB_PROJECTS = [
     "client": "Jordano Jemole Construction P.L.C",
     "scale": "Corporate Visual Identity Architecture & Civil Construction System",
     "medium": "Monoline Tectonic Geometry, Construction Amber (#F5A623) & Slate Charcoal (#3A3D40), Apparel & Field Gear",
-    "summary": "Tectonic brand identity engineering a monolithic column monogram that commands instant authority on heavy civil construction sites.",
+    "summary": "Monolithic column monogram and brand system crafted for heavy civil engineering and construction.",
     "description": "Jordano Jemole Construction P.L.C is a premier civil engineering and building construction firm. The corporate visual identity anchors the brand's market reputation for structural integrity, technical precision, and enduring durability. The primary emblem features a soaring, multi-tiered monolithic tower monogram framed within a bold industrial boundary, symbolizing vertical ascension, structural foundation, and engineering strength. The comprehensive system scales flawlessly from high-visibility safety workwear and site safety hardhats to corporate stationery, contracts, and executive apparel.",
     "challenge": "Designing a heavy-duty identity rugged enough to withstand intense field execution on active construction sites while maintaining polished, sophisticated authority across high-stakes corporate investor meetings and formal architectural dossiers.",
     "solution": "Constructed an architectural monolithic column monogram mapped to equal-angle upward chevrons with high-visibility safety amber (#F5A623) enclosed by an industrial slate grey boundary (#3A3D40), achieving instant 50-meter visibility across high-traffic site conditions and razor-sharp clarity on luxury corporate collateral.",
@@ -686,7 +686,7 @@ const KB_PROJECTS = [
     "client": "Tilet Fashion (ጥለት ፋሽን) Haute Couture",
     "scale": "Flagship Luxury Boutique Identity & Packaging Suite",
     "medium": "Custom Ge'ez Wordmark, Obsidian (#0A0A0A) & Crimson Red (#D32F2F) Palette, Storefront Glazing, Duplex Cards",
-    "summary": "Haute couture brand identity transforming traditional Ethiopian collar embroidery into an imperial geometric emblem.",
+    "summary": "Haute couture identity translating traditional Ethiopian collar embroidery into a geometric emblem.",
     "description": "Tilet Fashion (ጥለት ፋሽን) is an upscale contemporary couture fashion house at Bole Century Mall, specializing in luxury handcrafted Habesha Kemis and tailored woven wear. The visual identity transforms the iconic Ethiopian \"Tilet\" collar embroidery into an imperial geometric emblem, paired with bespoke geometric Ge'ez typography. The identity was applied across the flagship boutique window storefront, luxury matte black retail bags with crimson rope handles, executive duplex business cards, and debossed 3D wall signage.",
     "challenge": "Reimagining the sacred, deeply rooted traditional Ethiopian handwoven Tilet embroidery patterns into a clean, modern luxury emblem that commands prestige on high-end boutique storefronts while remaining instantly recognizable to traditional fashion patrons.",
     "solution": "Designed an imperial diamond collar emblem pairing a dynamic curved collar arc with a diamond jewel base in high-contrast crimson red on pitch black, supported by custom-drawn architectural Amharic letterforms for \"ጥለት ፋሽን\".",
@@ -746,7 +746,7 @@ const KB_PROJECTS = [
     "client": "Bego Meaza Media",
     "scale": "Complete Visual Brand Architecture & Multi-Platform Identity",
     "medium": "Geometric Logomark, Black × Red × White Palette, Signage Mockups, UI Application",
-    "summary": "Dynamic broadcast media identity fusing an energetic monogram with forward-motion play symbolism.",
+    "summary": "Broadcast media identity fusing dynamic typography with forward-motion play symbolism.",
     "description": "Bego Meaza Media required a bold, high-memorability corporate identity to anchor their media brand across digital and physical touchpoints. The logomark fuses a stylized letter \"B\" with an integrated play button symbol — a seamless visual metaphor for media flow and forward progress. Delivered across business cards, environmental 3D signage, mobile app icon, and brand construction grid.",
     "challenge": "Creating a single logomark that communicates both media entertainment and professional credibility across scales — from a 16px app icon to a large-format 3D wall installation.",
     "solution": "Designed a monoline geometric \"B + Play\" symbol using a strict geometric grid with equal stroke weights, ensuring perfect legibility at all sizes and contrast on both light and dark surfaces.",
@@ -802,7 +802,7 @@ const KB_PROJECTS = [
     "client": "Mesob Meals Food Delivery Service",
     "scale": "Comprehensive Hospitality & Delivery Visual Ecosystem",
     "medium": "Cultural Heritage Monogram, Emerald (#083B32) & Warm Ochre (#F4A71D) Palette, Food Packaging, Uniform Embroidery",
-    "summary": "Modernist culinary brand identity distilling the iconic woven mesob into a clean cultural monogram.",
+    "summary": "Modernist culinary identity distilling the iconic Ethiopian woven mesob into a clean mark.",
     "description": "Mesob Meals is an Ethiopian food delivery platform celebrating authentic culinary heritage with modern logistical speed. The identity centers on a minimalist geometric silhouette of the traditional handwoven \"Mesob\" (symbolizing community, hospitality, and communal dining) crowned with a modern warm ochre lid and a clean arching base. The brand ecosystem spans compostable meal container bands, kraft paper takeout bags, embroidered kitchen aprons, and weather-resistant insulated courier transit boxes.",
     "challenge": "Reinventing an ancient, highly ornate traditional cultural artifact (the Mesob basket) into a clean, modern, scalable vector mark that prints crisply on small meal container labels while looking commanding on courier delivery gear across busy city streets.",
     "solution": "Distilled the complex wickerwork of the traditional mesob into bold, pure geometric planes — pairing deep Ethiopian forest emerald green (#083B32) with warm sunlit ochre (#F4A71D) and pure white accents for maximum street-level visibility and appetizing warmth.",
@@ -863,7 +863,7 @@ const KB_PROJECTS = [
     "client": "Danu Store Retail & E-Commerce",
     "scale": "Flagship Retail Brand Architecture & Environmental Identity",
     "medium": "Shopping Cart Monogram, Obsidian (#000000) & Electric Yellow (#FFD042) Palette, Storefront Signage, Merchandise",
-    "summary": "Contemporary retail brand identity marrying an iconic shopping cart monogram with luxury store architecture.",
+    "summary": "Contemporary retail identity pairing an architectural shopping cart monogram with premium store design.",
     "description": "Danu Store is a contemporary retail and lifestyle brand on Bole Road, Addis Ababa. The visual identity transforms the lowercase letter \"d\" into a fluid shopping cart monogram with two distinct wheel anchor points, signifying momentum, convenience, and curated commerce. The identity was executed across the architectural flagship storefront with 3D illuminated exterior signage, staff barista/clerk aprons and embroidered polos, heavyweight canvas eco-totes, luxury matte black retail rope bags, and gold-foiled executive business cards.",
     "challenge": "Engineering a minimalist monogram that functions simultaneously as a legible lowercase \"d\" and a shopping cart, commanding high street visibility on illuminated night facades while maintaining prestige on luxury retail print collateral.",
     "solution": "Designed a high-contrast monoline geometry in electric yellow against obsidian black, featuring calibrated circular wheel proportions and an upward sweeping stem that provides instant recall across digital app icons and physical boutique architecture.",
@@ -924,7 +924,7 @@ const KB_PROJECTS = [
     "client": "Almaz Jewellery (አልማዝ ጌጣጌጥ) Haute Joaillerie",
     "scale": "Flagship Luxury Maison Brand Architecture & Packaging Ecosystem",
     "medium": "Solitaire Ring Monogram, Champagne Bronze (#E89258), Pure White (#FFFFFF) & Obsidian (#000000), Velvet & Gold Foil",
-    "summary": "Minimalist haute joaillerie identity synthesizing a brilliant-cut diamond crown with an arching letter \"A\" ring band.",
+    "summary": "Haute joaillerie identity synthesizing a diamond crown with an arching letter \"A\" ring band.",
     "description": "Almaz (አልማዝ — the Ge'ez word for diamond) bridges timeless Ethiopian heritage with modern luxury joaillerie. The mark fuses a precision brilliant-cut diamond solitaire with the upward arch of a bespoke letter 'A', forming an iconic ring silhouette that reads with instant clarity across scales. Executed across flagship boutique glazing, matte presentation ring cases, debossed velvet pouches, and duplex cards with subtle Ethiopian cross watermarks.",
     "challenge": "Distilling the ancient reverence of Ethiopian jewelry into a modern, monoline luxury emblem that commands prestige on high-end boutique storefronts while remaining crisp on 10mm ring tags.",
     "solution": "Engineered a geometric dual-arch construction: an outer circular band crowned by a faceted diamond solitaire, cradling a sculpted letter 'A'. Anchored by a warm champagne bronze (#E89258) and pitch obsidian (#000000) palette that exudes quiet luxury.",
@@ -985,7 +985,7 @@ const KB_PROJECTS = [
     "client": "DOT CREATIVE Design Agency",
     "scale": "Complete Visual Identity Architecture & Studio Collateral",
     "medium": "Geometric Monogram, Electric Cobalt (#3D48E0) & Platinum (#C4C7C9), Apparel & Acrylic Signage",
-    "summary": "Geometric visual identity synthesizing an architectural monogram \"D\" with an offset square dot anchor.",
+    "summary": "Geometric visual identity synthesizing an architectural monogram \"D\" with an offset square anchor.",
     "description": "DOT CREATIVE is an avant-garde design studio dedicated to high-impact visual systems. The identity explores the core unit of digital and spatial design—the dot. Reimagined as an offset geometric square anchor that balances a chamfered monogram \"D\", the mark conveys architectural stability and dynamic forward vector motion. Deployed across blueprint drafting grids, oversized studio signage, staff apparel, and gradient duplex collateral.",
     "challenge": "Crafting an agency mark bold enough to stand out in a saturated creative market while maintaining modular geometric clarity that works on architectural blueprints and high-contrast digital interfaces.",
     "solution": "Constructed a 45° chamfered letter \"D\" paired with a floating square dot terminal, balanced by an electric cobalt (#3D48E0) and slate gradient palette with custom bespoke mechanical typography.",
@@ -1042,7 +1042,7 @@ const KB_PROJECTS = [
     "client": "Dama Marketing Corporate Agency",
     "scale": "Complete Corporate Identity System, Digital Web Interface & Executive Collateral",
     "medium": "Geometric Serif Monogram \"D\", Deep Pine (#122720) & Imperial Gold (#B6903F), Duplex Matte Cards, Ceramic & Environmental Merch",
-    "summary": "Geometric corporate identity uniting a sharp cantilevered square pixel with a sculpted golden \"D\" monogram.",
+    "summary": "Corporate identity uniting a sharp cantilevered pixel with a sculpted golden \"D\" monogram.",
     "description": "Dama Marketing is a performance-driven corporate agency built on strategic precision and measurable market impact. The brand mark deconstructs the initial \"D\" into two interconnected kinetic modules: an elevated geometric square pixel that commands the upper-left horizon and a sculpted golden stem that grounds the composition. The identity balances executive authority with modern tech agility across dark forest green duplex collateral, responsive web UI, and executive lifestyle merchandise.",
     "challenge": "Devising an emblem that expresses strategic stability while breaking the conventional mold of corporate marketing firms through bold geometric negative space and prestigious chromatic contrast.",
     "solution": "Constructed an asymmetric dual-geometry monogram: an offset golden square anchor intersecting the uppercase \"D\" silhouette, unified by an aristocratic deep pine green (#122720) and rich imperial gold (#B6903F) palette with crisp modern typography.",
@@ -1103,7 +1103,7 @@ const KB_PROJECTS = [
     "client": "TINU GIFTS Boutique Maison",
     "scale": "Boutique Packaging Suite, Retail Signage & Complete Visual Identity Architecture",
     "medium": "Architectural Gift Box Monogram, Warm Oat (#E9DCCC) & Deep Mocha (#6F6154), Bronze Foil Stamping, Textured Kraft & Cotton Stock",
-    "summary": "Warm luxury packaging identity synthesizing an architectural gift box with twin geometric ribbon wings and bespoke serif typography.",
+    "summary": "Luxury gift packaging identity featuring geometric ribbon wings and bespoke serif typography.",
     "description": "TINU GIFTS is a boutique gifting maison celebrated for thoughtful, high-end presentation and artisanal craft. The visual identity translates the tactile intimacy of unboxing into an architectural emblem: an upright gift box framed by angled ribbon terminals that subtly form the letters \"T\" and \"G\". Set in a soothing warm oat cream (#E9DCCC) and roasted mocha (#6F6154) palette, the identity extends across textured linen-finish rope bags, embossed cotton gift tags with natural jute ties, rounded duplex cards, and illuminated boutique blade signage.",
     "challenge": "Crafting a gift brand identity that feels exquisitely personal and artisanal while retaining sharp geometric structure suitable for luxury retail storefronts, bronze foil stamping, and micro-embossed packaging tags.",
     "solution": "Engineered a balanced tripartite glyph: a central vertical pillar flanked by outward-angled ribbon wings, creating a sculptural gift silhouette that scales with pristine legibility from a 15mm brass-eyelet gift tag to oversized retail signage.",
@@ -1990,6 +1990,11 @@ function initProjectsArchive() {
       practicePills.forEach(p => p.classList.remove('active'));
       pill.classList.add('active');
       activePractice = pill.getAttribute('data-practice') || 'all';
+
+      // Reset sub-category pills to 'all' so every category filter always returns its full cards
+      activeSubCategory = 'all';
+      subPills.forEach((s, idx) => s.classList.toggle('active', idx === 0));
+
       render();
     });
   });
@@ -1999,6 +2004,16 @@ function initProjectsArchive() {
       subPills.forEach(s => s.classList.remove('active'));
       sp.classList.add('active');
       activeSubCategory = sp.getAttribute('data-sub') || 'all';
+
+      // Automatically sync practice pill to match the clicked typology
+      if (['interior', 'mixeduse', 'residential'].includes(activeSubCategory) && activePractice === 'graphic') {
+        activePractice = 'architecture';
+        practicePills.forEach(p => p.classList.toggle('active', p.getAttribute('data-practice') === 'architecture'));
+      } else if (activeSubCategory === 'identity' && ['architecture', 'visualization'].includes(activePractice)) {
+        activePractice = 'graphic';
+        practicePills.forEach(p => p.classList.toggle('active', p.getAttribute('data-practice') === 'graphic'));
+      }
+
       render();
     });
   });
