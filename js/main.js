@@ -63,6 +63,12 @@ function initContactNavHandler() {
     const link = e.target.closest('a[href$="#contact"], a[href="#contact"]');
     if (!link) return;
     e.preventDefault();
+
+    if (typeof window.scrollToTargetSection === 'function') {
+      window.scrollToTargetSection('contact');
+      return;
+    }
+
     const contactSec = document.getElementById('contact');
     if (contactSec) {
       // Instantly reveal all elements in the contact section
@@ -72,13 +78,20 @@ function initContactNavHandler() {
         el.style.transform = 'none';
         el.style.transition = 'none';
       });
+      contactSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
       const header = document.querySelector('.main-nav-bar') || document.querySelector('header');
-      const headerOffset = header ? header.offsetHeight : 68;
-      const targetY = contactSec.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-      window.scrollTo({
-        top: Math.max(0, targetY),
-        behavior: 'smooth'
-      });
+      const headerOffset = header ? header.offsetHeight : (window.innerWidth <= 768 ? 65 : 75);
+      function reAlign() {
+        const rect = contactSec.getBoundingClientRect();
+        if (Math.abs(rect.top - headerOffset) > 8) {
+          const currentY = window.pageYOffset || window.scrollY;
+          window.scrollTo(0, Math.max(0, currentY + rect.top - headerOffset));
+        }
+      }
+      setTimeout(reAlign, 400);
+      setTimeout(reAlign, 900);
+      setTimeout(reAlign, 1400);
+
       if (history.pushState) {
         history.pushState(null, document.title, '#contact');
       }
@@ -1549,10 +1562,10 @@ const KB_I18N = {
     // Hero Section
     hero_tag: `<span>● SPATIAL ARCHITECTURE</span><span>•</span><span>3D VISUALIZATION</span><span>•</span><span>KB CREATIVE</span>`,
     hero_title: `Hi, I'm <span class="highlight-yellow">Kaleegziabher Fekede</span> <span class="block outline-text">(KB CREATIVE).</span>`,
-    hero_bio: `<strong>Architectural Designer</strong> and Creative Director of <strong>KB CREATIVE</strong>. Practicing at the intersection of spatial architecture, technical 3D visualization, and monolithic corporate brand identity systems across Ethiopia and remote worldwide.`,
+    hero_bio: `<strong>Architectural Designer &amp; Creative Director</strong> leading <strong>KB CREATIVE</strong>. Developing spatial architecture, photorealistic 3D visualization, and brand identity systems from Addis Ababa and Wolkite, Ethiopia to clients worldwide.`,
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
-    avail_body: `Accepting select client commissions for <strong>Spatial Architecture</strong> (residential & interior renovations), <strong>Cinematic 3D Visualization</strong> (photorealistic rendering & daylight simulation), and <strong>Brand Identity Systems</strong> (monograms, logomarks & brand guidelines).`,
-    hero_cv: "Download CV / Portfolio PDF",
+    avail_body: `Available for select 2026 client commissions: residential villas, interior spaces, photorealistic CGI, and full brand identity packages.`,
+    hero_cv: "Download Portfolio PDF",
     hero_explore: "Explore 15 Curated Projects",
     
     // Hero Stats
@@ -1697,10 +1710,10 @@ const KB_I18N = {
     // Hero Section
     hero_tag: `<span>● የቦታ አርክቴክቸር</span><span>•</span><span>3D ቪዥዋላይዜሽን</span><span>•</span><span>ኬቢ ክሪኤቲቭ</span>`,
     hero_title: `ሰላም፣ እኔ <span class="highlight-yellow">ቃልእግዚአብሔር ፈቀደ</span> <span class="block outline-text">(KB CREATIVE) ነኝ።</span>`,
-    hero_bio: `የ<strong>አርክቴክቸር ዲዛይነር</strong> እና የ<strong>KB CREATIVE</strong> መስራችና የፈጠራ ዳይሬክተር። በህንፃ እና የቦታ ንድፍ፣ 3D ቪዥዋላይዜሽን እና የብራንድ መለያ ዲዛይን ላይ እሰራለሁ።`,
+    hero_bio: `የ<strong>አርክቴክቸር ዲዛይነር እና የፈጠራ ዳይሬክተር</strong> የ<strong>KB CREATIVE</strong> መሪ። በአዲስ አበባ እና ወልቂጤ፣ ኢትዮጵያ በመሆን አለምአቀፍ የቦታ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን እና የብራንድ መለያዎችን እሰራለሁ።`,
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
-    avail_body: `ለ<strong>አርክቴክቸር ህንፃ ንድፍ</strong> (መኖሪያ እና የውስጥ እድሳት)፣ ለ<strong>3D ቪዥዋላይዜሽን</strong> (የብርሃን እና የቁስ ሲሙሌሽን)፣ እና ለ<strong>ብራንድ መለያ ዲዛይን</strong> አዳዲስ ፕሮጀክቶችን እቀበላለሁ።`,
-    hero_cv: "ሲቪ / ፖርትፎሊዮ ያውርዱ",
+    avail_body: `ለ2026 የተመረጡ ስራዎች ክፍት ነኝ፦ የመኖሪያ ቪላዎች፣ የውስጥ እድሳት፣ 3D ቪዥዋላይዜሽን እና የተሟላ የብራንድ መለያ ዲዛይን።`,
+    hero_cv: "ፖርትፎሊዮ ያውርዱ",
     hero_explore: "15 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
     
     // Hero Stats

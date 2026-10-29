@@ -152,6 +152,30 @@ button:focus-visible, a:focus-visible, input:focus-visible, textarea:focus-visib
   outline-offset: 3px;
 }
 
+/* Accessible Skip Navigation Link */
+.skip-to-content-link {
+  position: absolute;
+  top: -120px;
+  left: 1.5rem;
+  z-index: 10000;
+  background: var(--brand-yellow, #FFD042);
+  color: #01131E;
+  padding: 0.75rem 1.25rem;
+  font-family: var(--font-display, sans-serif);
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  transition: top 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skip-to-content-link:focus {
+  top: 1.5rem;
+}
+
 .container {
   width: 100%;
   max-width: 1440px;
@@ -4346,6 +4370,41 @@ body.dark-mode .pdf-tag {
   background: rgba(255, 208, 66, 0.15);
 }
 
+/* Quick Telegram Direct Pill in Hero */
+.btn-hero-telegram {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.88rem 1.25rem;
+  background: rgba(2, 43, 69, 0.45);
+  border: 1px solid rgba(255, 208, 66, 0.35);
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 4px 12px rgba(1, 19, 30, 0.2);
+}
+
+.btn-hero-telegram:hover {
+  background: var(--brand-navy-accent, #044771);
+  border-color: var(--brand-yellow);
+  color: var(--brand-yellow);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(4, 71, 113, 0.35);
+}
+
+.btn-hero-telegram .telegram-icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
 /* Contact Section CV Download Box */
 .contact-cv-box {
   margin: 0.75rem 0 1rem 0;
@@ -4525,7 +4584,8 @@ body.dark-mode .btn-view-case-study {
     gap: 0.75rem;
   }
   .btn-primary-hero,
-  .btn-secondary-hero-pdf {
+  .btn-secondary-hero-pdf,
+  .btn-hero-telegram {
     width: 100%;
     justify-content: center;
   }

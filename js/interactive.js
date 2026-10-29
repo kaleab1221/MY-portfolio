@@ -585,6 +585,9 @@
       }
     }
 
+    // Expose globally for coordinated action handlers
+    window.scrollToTargetSection = scrollToTargetSection;
+
     // Coordinated desktop navigation smooth jump
     const desktopNavLinks = document.querySelectorAll('.desktop-nav-wrap .nav-item-link');
     desktopNavLinks.forEach(link => {
