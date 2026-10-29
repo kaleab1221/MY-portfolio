@@ -6594,6 +6594,84 @@ body.dark-mode .hero-skyline-graphic,
     text-decoration: none !important;
     font-weight: 700 !important;
   }
+
+  /* ==========================================================================
+     MOBILE CONTACT SECTION (max-width: 767px)
+     Ensures the entire contact section, direct channels, and proposal form
+     are perfectly framed, easily viewable, and never truncated.
+     ========================================================================== */
+  #contact {
+    scroll-margin-top: 68px !important;
+  }
+
+  .devani-contact-section {
+    padding: 2.25rem 0 clamp(180px, 35vh, 260px) 0 !important;
+    min-height: calc(100vh - 65px) !important;
+    box-sizing: border-box !important;
+  }
+
+  .contact-layout-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .contact-hero-title {
+    font-size: clamp(1.65rem, 5.5vw, 2.1rem) !important;
+    line-height: 1.15 !important;
+    margin-bottom: 0.65rem !important;
+  }
+
+  .contact-availability-strip {
+    font-size: 0.72rem !important;
+    padding: 0.4rem 0.65rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .contact-intro-p {
+    font-size: 0.88rem !important;
+    line-height: 1.52 !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  .contact-cv-box {
+    margin-bottom: 0.85rem !important;
+  }
+
+  .socials-horizontal-cluster {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 0.5rem !important;
+    margin-bottom: 0.85rem !important;
+  }
+
+  .social-direct-pill {
+    padding: 0.55rem 0.75rem !important;
+    font-size: 0.74rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .contact-inquiry-box {
+    padding: 1.35rem 1.15rem !important;
+    border-radius: 10px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45) !important;
+  }
+
+  .inquiry-label {
+    font-size: 0.7rem !important;
+    margin-bottom: 0.25rem !important;
+  }
+
+  .inquiry-input,
+  .inquiry-textarea {
+    font-size: 16px !important; /* Prevents auto-zoom on iOS */
+    padding: 0.65rem 0.75rem !important;
+    margin-bottom: 0.65rem !important;
+    border-radius: 6px !important;
+  }
+
+  .inquiry-textarea {
+    min-height: 72px !important;
+  }
 }
 
 

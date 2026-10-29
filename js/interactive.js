@@ -556,14 +556,29 @@
         el.style.transition = 'none';
       });
 
-      const header = document.querySelector('.main-nav-bar') || document.querySelector('header');
-      const headerOffset = header ? header.offsetHeight : 68;
-      const targetY = targetEl.getBoundingClientRect().top + window.pageYOffset - headerOffset;
-
-      window.scrollTo({
-        top: Math.max(0, targetY),
-        behavior: 'smooth'
+      // Target element smooth scroll-into-view
+      targetEl.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
       });
+
+      // Verification pass: handles deferred/lazy images between viewport and target
+      // that reflow during long smooth scrolls, ensuring exact header clearance
+      const header = document.querySelector('.main-nav-bar') || document.querySelector('header');
+      const headerOffset = header ? header.offsetHeight : (window.innerWidth <= 768 ? 65 : 80);
+
+      function reAlign() {
+        const rect = targetEl.getBoundingClientRect();
+        if (Math.abs(rect.top - headerOffset) > 8) {
+          const currentY = window.pageYOffset || window.scrollY;
+          const correctedY = currentY + rect.top - headerOffset;
+          window.scrollTo(0, Math.max(0, correctedY));
+        }
+      }
+
+      setTimeout(reAlign, 400);
+      setTimeout(reAlign, 900);
+      setTimeout(reAlign, 1400);
 
       if (history.pushState) {
         history.pushState(null, document.title, `#${targetId}`);
