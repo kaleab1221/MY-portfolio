@@ -4370,41 +4370,6 @@ body.dark-mode .pdf-tag {
   background: rgba(255, 208, 66, 0.15);
 }
 
-/* Quick Telegram Direct Pill in Hero */
-.btn-hero-telegram {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.88rem 1.25rem;
-  background: rgba(2, 43, 69, 0.45);
-  border: 1px solid rgba(255, 208, 66, 0.35);
-  color: #FFFFFF;
-  text-decoration: none;
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  font-weight: 600;
-  border-radius: var(--radius-sm);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  box-shadow: 0 4px 12px rgba(1, 19, 30, 0.2);
-}
-
-.btn-hero-telegram:hover {
-  background: var(--brand-navy-accent, #044771);
-  border-color: var(--brand-yellow);
-  color: var(--brand-yellow);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(4, 71, 113, 0.35);
-}
-
-.btn-hero-telegram .telegram-icon {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
-  flex-shrink: 0;
-}
-
 /* Contact Section CV Download Box */
 .contact-cv-box {
   margin: 0.75rem 0 1rem 0;
@@ -4584,8 +4549,7 @@ body.dark-mode .btn-view-case-study {
     gap: 0.75rem;
   }
   .btn-primary-hero,
-  .btn-secondary-hero-pdf,
-  .btn-hero-telegram {
+  .btn-secondary-hero-pdf {
     width: 100%;
     justify-content: center;
   }
