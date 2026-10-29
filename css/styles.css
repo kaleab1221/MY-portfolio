@@ -5991,45 +5991,30 @@ body.dark-mode .hero-skyline-graphic,
     opacity: 1 !important;
   }
 
-  /* Close button: 48px touch target */
+  /* Close button */
   .mobile-nav-close-btn {
-    width: 48px !important;
-    height: 48px !important;
-    min-width: 48px !important;
-    min-height: 48px !important;
+    width: 44px !important;
+    height: 44px !important;
+    min-width: 44px !important;
+    min-height: 44px !important;
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
-    font-size: 1.25rem !important;
-    border-radius: var(--radius-sm) !important;
+    font-size: 1.15rem !important;
+    border-radius: 8px !important;
     cursor: pointer !important;
     touch-action: manipulation !important;
-    border: 1px solid var(--border-color) !important;
-    background: transparent !important;
-    color: var(--text-primary) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    color: #FFFFFF !important;
+    transition: all 0.2s ease !important;
   }
 
-  /* Settings Strip: Compact spacing */
-  .mobile-nav-settings-strip {
-    flex-shrink: 0 !important;
-    margin: 0.45rem 1.25rem 0.25rem 1.25rem !important;
-    padding: 0.35rem 0.75rem !important;
-    border-radius: var(--radius-xs) !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-  }
-
-  .mobile-setting-item {
-    display: flex !important;
-    align-items: center !important;
-    gap: 0.5rem !important;
-    min-height: 48px !important;
-  }
-
-  .mobile-setting-item .circle-nav-btn {
-    min-width: 44px !important;
-    min-height: 44px !important;
+  .mobile-nav-close-btn:hover,
+  .mobile-nav-close-btn:active {
+    border-color: var(--brand-yellow) !important;
+    color: var(--brand-yellow) !important;
+    background: rgba(255, 208, 66, 0.1) !important;
   }
 
   /* 3 & 4. Scrollable Middle Navigation Area with Minimum Empty Space */
@@ -6039,70 +6024,80 @@ body.dark-mode .hero-skyline-graphic,
     overflow-y: auto !important;
     -webkit-overflow-scrolling: touch !important;
     overscroll-behavior: contain !important;
-    padding: 0.4rem 1.25rem 0.85rem 1.25rem !important;
+    padding: 0.75rem 1.25rem 1rem 1.25rem !important;
     margin: 0 !important;
   }
 
+  /* Hide navbar toggle button when mobile menu drawer is open so clean close-btn is used */
+  body.mobile-menu-open .mobile-nav-toggle-btn {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
+  /* Clean Minimalist Typographic Links (Topic Title Only) */
   .mobile-menu-links {
     list-style: none !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.45rem !important;
+    gap: 0.65rem !important;
     padding: 0 !important;
     margin: 0 !important;
   }
 
-  /* 5. Menu Cards with Minimum 48px Touch Target */
   .mobile-nav-link {
     display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    min-height: 48px !important;
-    padding: 0.65rem 0.95rem !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    min-height: 52px !important;
+    padding: 0.85rem 1.15rem !important;
     box-sizing: border-box !important;
-    background: var(--bg-secondary) !important;
-    border: 1px solid var(--border-color) !important;
-    border-radius: var(--radius-sm) !important;
+    background: rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.09) !important;
+    border-radius: 8px !important;
     text-decoration: none !important;
-    transition: background 0.18s ease, border-color 0.18s ease !important;
+    transition: all 0.22s ease !important;
     touch-action: manipulation !important;
   }
 
   .mobile-nav-link:hover,
   .mobile-nav-link:active,
   .mobile-nav-link:focus {
-    border-color: var(--brand-yellow) !important;
-    background: rgba(255, 208, 66, 0.12) !important;
-    transform: none !important;
+    border-color: rgba(255, 208, 66, 0.45) !important;
+    background: rgba(255, 208, 66, 0.08) !important;
+    transform: translateX(3px) !important;
   }
 
-  .mobile-nav-link-row {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    margin-bottom: 0.15rem !important;
+  .mobile-nav-link.active {
+    border-color: var(--brand-yellow) !important;
+    background: rgba(255, 208, 66, 0.1) !important;
   }
 
   .mobile-nav-title {
     font-family: var(--font-display) !important;
-    font-size: 1.05rem !important;
-    font-weight: 700 !important;
-    color: var(--text-primary) !important;
-    margin-left: 0 !important;
-    margin-right: auto !important;
+    font-size: 1.12rem !important;
+    font-weight: 600 !important;
+    color: #FFFFFF !important;
+    letter-spacing: 0.03em !important;
+    margin: 0 !important;
   }
 
   .mobile-nav-arrow {
-    color: var(--text-secondary) !important;
-    font-size: 1.05rem !important;
+    color: var(--brand-yellow) !important;
+    font-size: 1.15rem !important;
+    font-weight: 700 !important;
+    transition: transform 0.2s ease !important;
   }
 
+  .mobile-nav-link:hover .mobile-nav-arrow,
+  .mobile-nav-link:active .mobile-nav-arrow {
+    transform: translateX(3px) !important;
+  }
+
+  /* Completely suppress any sub-descriptions in the mobile menu for clean easy visual */
   .mobile-nav-sub {
-    font-size: 0.68rem !important;
-    color: var(--text-secondary) !important;
-    margin-left: 0 !important;
-    letter-spacing: 0.04em !important;
-    line-height: 1.3 !important;
+    display: none !important;
   }
 
   /* 3. Sticky Bottom Footer with "Download CV / Portfolio PDF" Button */
@@ -6113,15 +6108,15 @@ body.dark-mode .hero-skyline-graphic,
     right: 0 !important;
     margin-top: auto !important;
     flex-shrink: 0 !important;
-    background: rgba(3, 17, 28, 0.98) !important;
-    backdrop-filter: blur(18px) !important;
-    -webkit-backdrop-filter: blur(18px) !important;
-    border-top: 1px solid var(--border-color) !important;
-    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.45) !important;
-    padding: 0.75rem 1.25rem calc(0.75rem + env(safe-area-inset-bottom, 0px)) 1.25rem !important;
+    background: rgba(2, 14, 24, 0.98) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 -12px 28px rgba(0, 0, 0, 0.5) !important;
+    padding: 0.85rem 1.25rem calc(0.85rem + env(safe-area-inset-bottom, 0px)) 1.25rem !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 0.5rem !important;
+    gap: 0.55rem !important;
     z-index: 20 !important;
   }
 
@@ -6132,14 +6127,23 @@ body.dark-mode .hero-skyline-graphic,
     align-items: center !important;
     justify-content: center !important;
     gap: 0.6rem !important;
-    font-size: 0.78rem !important;
+    font-size: 0.8rem !important;
     font-weight: 700 !important;
-    background: var(--bg-surface) !important;
-    border: 1px solid var(--brand-yellow) !important;
-    color: var(--text-primary) !important;
-    border-radius: var(--radius-sm) !important;
+    background: var(--brand-yellow) !important;
+    border: none !important;
+    color: #041B2B !important;
+    border-radius: 8px !important;
     touch-action: manipulation !important;
     box-sizing: border-box !important;
+    box-shadow: 0 4px 14px rgba(255, 208, 66, 0.25) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+  }
+
+  .mobile-nav-pdf-btn:hover,
+  .mobile-nav-pdf-btn:active {
+    background: #FFE27A !important;
+    color: #041B2B !important;
+    transform: translateY(-1px) !important;
   }
 
   .mobile-nav-cta-btn {
@@ -6149,16 +6153,27 @@ body.dark-mode .hero-skyline-graphic,
     align-items: center !important;
     justify-content: center !important;
     font-size: 0.8rem !important;
-    border-radius: var(--radius-sm) !important;
+    background: rgba(255, 255, 255, 0.05) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 255, 255, 0.12) !important;
+    border-radius: 8px !important;
     touch-action: manipulation !important;
     box-sizing: border-box !important;
+    transition: all 0.2s ease !important;
+  }
+
+  .mobile-nav-cta-btn:hover,
+  .mobile-nav-cta-btn:active {
+    background: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.25) !important;
   }
 
   .mobile-nav-footnote {
     font-size: 0.62rem !important;
     margin-top: 0.15rem !important;
     text-align: center !important;
-    color: var(--text-secondary) !important;
+    color: rgba(255, 255, 255, 0.45) !important;
+    letter-spacing: 0.06em !important;
   }
 }
 
