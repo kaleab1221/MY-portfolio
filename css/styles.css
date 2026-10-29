@@ -1138,19 +1138,20 @@ body.dark-mode .main-nav-bar {
   }
 }
 
-/* PRACTICE & TYPOLOGY NAVIGATOR */
+/* PRACTICE & TYPOLOGY NAVIGATOR (NON-STICKY) */
 .practice-navigator-bar {
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border-color);
   padding: 1.25rem 0;
-  position: sticky;
-  top: 4.75rem;
-  z-index: 900;
+  position: relative;
+  top: auto;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
   .practice-navigator-bar {
-    top: 4.25rem;
+    position: relative;
+    top: auto;
   }
 }
 
@@ -3006,7 +3007,8 @@ body.dark-mode #modal-practice-tag {
   }
   .practice-navigator-bar {
     padding: 0.75rem 0;
-    top: 4.25rem;
+    position: relative;
+    top: auto;
   }
   .navigator-flex {
     flex-direction: column;
@@ -5048,12 +5050,13 @@ button:active,
 }
 
 /* ==========================================================================
-   19. STICKY GLASSMORPHIC FILTER BAR
+   19. GLASSMORPHIC FILTER BAR (NON-STICKY)
    ========================================================================== */
-.practice-navigator-bar.sticky-filter-bar {
-  position: sticky;
-  top: 4.5rem;
-  z-index: 90;
+.practice-navigator-bar.sticky-filter-bar,
+.practice-navigator-bar {
+  position: relative !important;
+  top: auto !important;
+  z-index: 10;
   background: rgba(4, 27, 43, 0.88);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
