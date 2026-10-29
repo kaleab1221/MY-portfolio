@@ -2877,6 +2877,64 @@ body.dark-mode .academic-banner-tag {
   gap: 1.5rem;
 }
 
+.footer-brand-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-brand-identity {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-kb-logo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.footer-brand-name {
+  color: var(--brand-yellow);
+  font-weight: 800;
+}
+
+.footer-desktop-bullet {
+  display: inline;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-brand-subtitle {
+  display: inline;
+}
+
+.footer-mobile-divider {
+  display: none;
+}
+
+.footer-actions-wrap {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-meta-block {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.footer-legal-line,
+.footer-phone-line {
+  display: inline;
+}
+
+.footer-phone-link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* BOTTOM OF WEBSITE: TOP BUTTON ACTION (Icon Only, No Text) */
 .footer-top-btn {
   width: 38px;
@@ -3270,16 +3328,6 @@ body.dark-mode #modal-practice-tag {
   .case-modal-body {
     padding: 1.25rem 1rem !important;
   }
-  /* Footer Brand Line */
-  .footer-brand-line {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 0.5rem;
-    font-size: 0.85rem;
-  }
   /* Toast positioned at top on mobile to avoid bottom UI collision */
   .kb-toast-container {
     top: 1rem;
@@ -3294,11 +3342,6 @@ body.dark-mode #modal-practice-tag {
     bottom: 1rem;
     right: 1rem;
     padding: 0.4rem 0.85rem;
-  }
-  .footer-flex-wrap {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
   }
   /* Contact Form Inputs prevent iOS auto-zoom */
   .contact-inquiry-box input,
@@ -6397,6 +6440,162 @@ body.dark-mode .hero-skyline-graphic,
     letter-spacing: 0.06em !important;
   }
 }
+
+/* ==========================================================================
+   MOBILE FOOTER OVERHAUL (max-width: 767px)
+   Strictly mobile-only: zero changes to desktop footer layout, CSS, or behavior.
+   ========================================================================== */
+@media (max-width: 767px) {
+  /* 1. Clean vertical stack with 24px horizontal padding and 28px vertical padding */
+  .studio-main-footer {
+    padding: 28px 24px !important;
+    background: #01131E !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+    font-family: var(--font-mono) !important;
+    box-sizing: border-box !important;
+  }
+
+  .studio-main-footer .container {
+    padding: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  .footer-flex-wrap {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    text-align: left !important;
+    gap: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  /* 2. First row: place KB logo and "KB CREATIVE" on the left */
+  .footer-brand-header {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding-right: 50px !important; /* 9. Safe spacing from the 38px Back to Top button */
+    box-sizing: border-box !important;
+  }
+
+  .footer-brand-identity {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 0.65rem !important;
+    height: 38px !important; /* Matches Back to Top button height for perfect alignment */
+  }
+
+  .footer-brand-identity .footer-kb-logo {
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0 !important;
+    object-fit: contain !important;
+  }
+
+  .footer-brand-identity .footer-brand-name {
+    font-size: 0.98rem !important;
+    font-weight: 800 !important;
+    color: var(--brand-yellow) !important;
+    letter-spacing: 0.05em !important;
+    white-space: nowrap !important;
+  }
+
+  /* 3. Remove the bullet after "KB CREATIVE" */
+  .footer-desktop-bullet {
+    display: none !important;
+  }
+
+  /* 4. Place "SPATIAL ARCHITECTURE & BRAND IDENTITY" on its own line below the first row */
+  .footer-brand-subtitle {
+    display: block !important;
+    width: 100% !important;
+    margin-top: 4px !important;
+    font-size: clamp(0.7rem, 2.7vw, 0.76rem) !important;
+    line-height: 1.45 !important;
+    color: rgba(255, 255, 255, 0.72) !important;
+    letter-spacing: 0.05em !important;
+    text-align: left !important;
+  }
+
+  /* 2. First row: circular Back to Top button pinned to the right of the first row */
+  .footer-top-btn {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    width: 38px !important;
+    height: 38px !important;
+    margin: 0 !important;
+    z-index: 2 !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    border: 1px solid rgba(255, 208, 66, 0.35) !important;
+    color: var(--brand-yellow) !important;
+  }
+
+  /* 5. Subtle divider line */
+  .footer-mobile-divider {
+    display: block !important;
+    width: 100% !important;
+    height: 1px !important;
+    background: rgba(255, 255, 255, 0.1) !important;
+    margin: 18px 0 !important;
+  }
+
+  /* 8. Left-aligned legal & phone stack */
+  .footer-actions-wrap {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 0 !important;
+    margin: 0 !important;
+  }
+
+  .footer-meta-block {
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    gap: 8px !important;
+  }
+
+  /* 6. Put legal text on one line: "© 2026 KB CREATIVE. All rights reserved." */
+  .footer-legal-line {
+    display: block !important;
+    width: 100% !important;
+    font-size: clamp(0.72rem, 2.7vw, 0.78rem) !important;
+    line-height: 1.5 !important;
+    color: rgba(255, 255, 255, 0.65) !important;
+    white-space: nowrap !important;
+    text-align: left !important;
+    margin: 0 !important;
+  }
+
+  /* 7. Put the phone number on its own line below: "Phone: +251 941 263 180" */
+  .footer-phone-line {
+    display: block !important;
+    width: 100% !important;
+    font-size: clamp(0.74rem, 2.8vw, 0.8rem) !important;
+    line-height: 1.5 !important;
+    color: rgba(255, 255, 255, 0.85) !important;
+    text-align: left !important;
+    margin: 0 !important;
+  }
+
+  .footer-phone-link {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+  }
+}
+
 
 
 

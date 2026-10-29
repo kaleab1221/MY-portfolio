@@ -1521,7 +1521,7 @@ function initThemeEngine() {
 const KB_I18N = {
   en: {
     // Header & Navigation
-    phone_label: "PHONE:",
+    phone_label: "Phone:",
     status_strip_location: "✦ STUDIO // WOLKITE & ADDIS ABABA, ETHIOPIA [8.04°N, 37.85°E]",
     status_strip_standing: "STUDIO: SPATIAL ARCHITECTURE & BRAND IDENTITY",
     status_strip_contact: `TEL: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • 2026 COMMISSIONS OPEN`,
@@ -1644,7 +1644,7 @@ const KB_I18N = {
     empty_reset_btn: "Reset Filters (Show All 15 Projects) →",
     mob_lang_label: "LANG:",
     mob_theme_label: "THEME:",
-    footer_rights: "ALL RIGHTS RESERVED © 2026",
+    footer_rights: "© 2026 KB CREATIVE. All rights reserved.",
     skill_arch_1: "Spatial Design",
     skill_arch_2: "Bioclimatic Planning",
     skill_arch_3: "Working Drawings",
@@ -1792,7 +1792,7 @@ const KB_I18N = {
     empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 15 ስራዎች አሳይ) →",
     mob_lang_label: "ቋንቋ:",
     mob_theme_label: "ገጽታ:",
-    footer_rights: "መብቱ በህግ የተጠበቀ ነው © 2026",
+    footer_rights: "© 2026 KB CREATIVE. መብቱ በህግ የተጠበቀ ነው።",
     skill_arch_1: "የቦታ ንድፍ",
     skill_arch_2: "የአየር ንብረት ተስማሚ ፕላን",
     skill_arch_3: "የግንባታ ዝርዝር ሰነዶች",

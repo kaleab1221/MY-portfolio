@@ -1772,15 +1772,25 @@
        ======================================================================== -->
   <footer class="studio-main-footer">
     <div class="container footer-flex-wrap">
-      <div class="footer-brand-line">
-        <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" width="24" height="24" decoding="async" style="width: 24px; height: 24px; object-fit: contain;">
-        <span class="text-gold font-bold">KB CREATIVE</span>
-        <span>•</span>
-        <span data-i18n="brand_sub">SPATIAL ARCHITECTURE &amp; BRAND IDENTITY</span>
+      <!-- Brand & Identity Info -->
+      <div class="footer-brand-header">
+        <div class="footer-brand-identity">
+          <img src="assets/kb-logo.png" alt="KB CREATIVE Logo" width="24" height="24" decoding="async" class="footer-kb-logo">
+          <span class="text-gold font-bold footer-brand-name">KB CREATIVE</span>
+        </div>
+        <span class="footer-desktop-bullet" aria-hidden="true">•</span>
+        <div class="footer-brand-subtitle" data-i18n="brand_sub">SPATIAL ARCHITECTURE &amp; BRAND IDENTITY</div>
       </div>
-      <div class="footer-actions-wrap" style="display: flex; align-items: center; gap: 1.5rem;">
-        <div>
-          <span data-i18n="footer_rights">ALL RIGHTS RESERVED © 2026</span> • <span data-i18n="phone_label">TEL:</span> +251 941263180
+
+      <!-- Subtle divider line for mobile stack -->
+      <div class="footer-mobile-divider" aria-hidden="true"></div>
+
+      <!-- Legal text & Contact block -->
+      <div class="footer-actions-wrap">
+        <div class="footer-meta-block">
+          <div class="footer-legal-line" data-i18n="footer_rights">© 2026 KB CREATIVE. All rights reserved.</div>
+          <span class="footer-desktop-bullet" aria-hidden="true">•</span>
+          <div class="footer-phone-line"><span data-i18n="phone_label">Phone:</span> <a href="tel:+251941263180" class="footer-phone-link">+251 941 263 180</a></div>
         </div>
         <!-- Bottom of website: Top Button Action with ONLY top icon (No text) -->
         <button type="button" class="footer-top-btn" id="footer-top-btn" aria-label="Return to top of page" title="Back to top">
