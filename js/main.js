@@ -32,7 +32,7 @@ function handleHashScroll(hash) {
   if (isReloadNavigation()) return;
   const target = document.querySelector(hash);
   if (target) {
-    const header = document.querySelector('.main-nav');
+    const header = document.querySelector('.main-nav-bar') || document.querySelector('header');
     const headerOffset = header ? header.offsetHeight : 70;
     const targetY = target.getBoundingClientRect().top + window.pageYOffset - headerOffset;
     window.scrollTo({
@@ -57,6 +57,9 @@ function initHashNavigationHandler() {
 // Fast, perfect jump to contact section on button click
 function initContactNavHandler() {
   document.addEventListener('click', (e) => {
+    // If inside mobile drawer, dedicated mobile navigation handler manages closing and scrolling
+    if (e.target.closest('#mobile-nav-drawer')) return;
+
     const link = e.target.closest('a[href$="#contact"], a[href="#contact"]');
     if (!link) return;
     e.preventDefault();
@@ -69,7 +72,7 @@ function initContactNavHandler() {
         el.style.transform = 'none';
         el.style.transition = 'none';
       });
-      const header = document.querySelector('.main-nav');
+      const header = document.querySelector('.main-nav-bar') || document.querySelector('header');
       const headerOffset = header ? header.offsetHeight : 68;
       const targetY = contactSec.getBoundingClientRect().top + window.pageYOffset - headerOffset;
       window.scrollTo({

@@ -527,6 +527,36 @@
       document.body.classList.remove('mobile-menu-open');
       document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
+      document.documentElement.style.height = '';
+      document.body.style.height = '';
+      document.documentElement.style.touchAction = '';
+      document.body.style.touchAction = '';
+    }
+
+    function scrollToTargetSection(targetId) {
+      const targetEl = document.getElementById(targetId);
+      if (!targetEl) return;
+
+      // Reveal any hidden scroll-reveal elements immediately in the target section
+      targetEl.querySelectorAll('.reveal-on-scroll').forEach(el => {
+        el.classList.add('is-revealed');
+        el.style.opacity = '1';
+        el.style.transform = 'none';
+        el.style.transition = 'none';
+      });
+
+      const header = document.querySelector('.main-nav-bar') || document.querySelector('header');
+      const headerOffset = header ? header.offsetHeight : 68;
+      const targetY = targetEl.getBoundingClientRect().top + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: Math.max(0, targetY),
+        behavior: 'smooth'
+      });
+
+      if (history.pushState) {
+        history.pushState(null, document.title, `#${targetId}`);
+      }
     }
 
     toggleBtn.addEventListener('click', (e) => {
@@ -545,10 +575,27 @@
       });
     }
 
-    // Automatically close the mobile menu whenever ANY navigation link or action button is selected
+    // Coordinated mobile menu link navigation & smooth section jump
     const drawerLinks = drawer.querySelectorAll('a, .mobile-nav-link');
     drawerLinks.forEach(link => {
-      link.addEventListener('click', () => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+
+        // Handle internal section anchors (e.g. #work, #skills, #about, #contact)
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          e.stopPropagation();
+          const targetId = href.substring(1);
+          closeDrawer();
+
+          // Wait a tick for drawer closing animation and body overflow unlock before smooth scrolling
+          setTimeout(() => {
+            scrollToTargetSection(targetId);
+          }, 80);
+          return;
+        }
+
+        // For page jumps or external links (e.g. faq.html, PDF download, Telegram)
         closeDrawer();
       });
     });
