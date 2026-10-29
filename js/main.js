@@ -1519,7 +1519,7 @@ const KB_I18N = {
   en: {
     // Header & Navigation
     phone_label: "PHONE:",
-    status_strip_location: "✦ ATELIER // WOLKITE & ADDIS ABABA, ETHIOPIA [8.04°N, 37.85°E]",
+    status_strip_location: "✦ STUDIO // WOLKITE & ADDIS ABABA, ETHIOPIA [8.04°N, 37.85°E]",
     status_strip_standing: "STUDIO: SPATIAL ARCHITECTURE & BRAND IDENTITY",
     status_strip_contact: `TEL: <a href="tel:+251941263180" style="color: inherit; text-decoration: none; font-weight: 700;">+251 941263180</a> • 2026 COMMISSIONS OPEN`,
     brand_sub: "SPATIAL ARCHITECTURE & BRAND IDENTITY",
@@ -1881,21 +1881,17 @@ function initLanguageEngine() {
     if (tickerTrack) {
       if (currentLang === 'am') {
         tickerTrack.innerHTML = `
-          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ</span>
+          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ ስቱዲዮ</span>
           <span class="ticker-dot">•</span>
           <span>የKB CREATIVE መስራች</span>
-          <span class="ticker-dot">•</span>
-          <span>የብራንድ መለያ ዲዛይን</span>
           <span class="ticker-dot">•</span>
           <span>D5 ሬንደር፣ ራይኖ እና ሪቪት ቪዥዋላይዜሽን</span>
           <span class="ticker-dot">•</span>
           <span>ኢትዮጵያ እና በኦንላይን በመላው አለም</span>
           <span class="ticker-dot">•</span>
-          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ</span>
+          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ ስቱዲዮ</span>
           <span class="ticker-dot">•</span>
           <span>የKB CREATIVE መስራች</span>
-          <span class="ticker-dot">•</span>
-          <span>የብራንድ መለያ ዲዛይን</span>
           <span class="ticker-dot">•</span>
           <span>D5 ሬንደር፣ ራይኖ እና ሪቪት ቪዥዋላይዜሽን</span>
           <span class="ticker-dot">•</span>
@@ -1904,21 +1900,17 @@ function initLanguageEngine() {
         `;
       } else {
         tickerTrack.innerHTML = `
-          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE ATELIER</span>
+          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE STUDIO</span>
           <span class="ticker-dot">•</span>
           <span>KB CREATIVE FOUNDER</span>
-          <span class="ticker-dot">•</span>
-          <span>MONOLITHIC BRAND IDENTITY SYSTEMS</span>
           <span class="ticker-dot">•</span>
           <span>D5 RENDER, RHINO &amp; REVIT VISUALIZATION</span>
           <span class="ticker-dot">•</span>
           <span>ETHIOPIA &amp; REMOTE WORLDWIDE</span>
           <span class="ticker-dot">•</span>
-          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE ATELIER</span>
+          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE STUDIO</span>
           <span class="ticker-dot">•</span>
           <span>KB CREATIVE FOUNDER</span>
-          <span class="ticker-dot">•</span>
-          <span>MONOLITHIC BRAND IDENTITY SYSTEMS</span>
           <span class="ticker-dot">•</span>
           <span>D5 RENDER, RHINO &amp; REVIT VISUALIZATION</span>
           <span class="ticker-dot">•</span>
@@ -2009,7 +2001,7 @@ function initProjectsArchive() {
       if (['interior', 'mixeduse', 'residential'].includes(activeSubCategory) && activePractice === 'graphic') {
         activePractice = 'architecture';
         practicePills.forEach(p => p.classList.toggle('active', p.getAttribute('data-practice') === 'architecture'));
-      } else if (activeSubCategory === 'identity' && ['architecture', 'visualization'].includes(activePractice)) {
+      } else if (activeSubCategory === 'identity' && activePractice === 'architecture') {
         activePractice = 'graphic';
         practicePills.forEach(p => p.classList.toggle('active', p.getAttribute('data-practice') === 'graphic'));
       }
@@ -2033,10 +2025,7 @@ function initProjectsArchive() {
     const isAm = (window.getCurrentLang && window.getCurrentLang() === 'am');
     const dict = KB_I18N[isAm ? 'am' : 'en'] || KB_I18N.en;
 
-    if (activePractice === 'visualization') {
-      // 3D Visualization corresponds to the active spatial architectural works
-      filtered = filtered.filter(p => p.practice === 'architecture');
-    } else if (activePractice !== 'all') {
+    if (activePractice !== 'all') {
       filtered = filtered.filter(p => p.practice === activePractice);
     }
 
