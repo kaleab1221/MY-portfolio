@@ -559,6 +559,18 @@
       }
     }
 
+    // Coordinated desktop navigation smooth jump
+    const desktopNavLinks = document.querySelectorAll('.desktop-nav-wrap .nav-item-link');
+    desktopNavLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          scrollToTargetSection(href.substring(1));
+        }
+      });
+    });
+
     toggleBtn.addEventListener('click', (e) => {
       e.stopPropagation();
       if (drawer.classList.contains('active')) {
@@ -630,7 +642,7 @@
      Synchronizes navigation active state with active section viewport
      ========================================================================== */
   function initScrollSpy() {
-    const sections = ['about', 'work', 'skills', 'faq', 'contact'];
+    const sections = ['work', 'skills', 'about', 'contact'];
     const navLinks = document.querySelectorAll('.desktop-nav-wrap .nav-item-link');
     if (!navLinks.length) return;
 
@@ -656,9 +668,7 @@
 
           navLinks.forEach((link) => {
             const href = link.getAttribute('href');
-            if (href === `#${currentSectionId}` || (currentSectionId === 'about' && href === '#work' && scrollPos < 350)) {
-              link.classList.add('active');
-            } else if (href === `#${currentSectionId}`) {
+            if (href === `#${currentSectionId}`) {
               link.classList.add('active');
             } else {
               link.classList.remove('active');
