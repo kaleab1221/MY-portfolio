@@ -642,7 +642,7 @@
      Synchronizes navigation active state with active section viewport
      ========================================================================== */
   function initScrollSpy() {
-    const sections = ['work', 'skills', 'about', 'faq', 'contact'];
+    const sections = ['hero', 'work', 'skills', 'about', 'faq', 'contact'];
     const navLinks = document.querySelectorAll('.desktop-nav-wrap .nav-item-link');
     if (!navLinks.length) return;
 

@@ -2577,21 +2577,22 @@ body.dark-mode .academic-banner-tag {
   overflow: hidden;
 }
 
-/* Emphasized About Rectangle Card Container with Interactive Hover Effect */
+/* Emphasized About Rectangle Card Container with High-Contrast KB CREATIVE Branding */
 .about-card-container {
-  background: var(--bg-surface);
-  border: 1px solid var(--border-color);
-  border-radius: 12px;
-  padding: clamp(2rem, 4vw, 3.5rem);
-  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.07);
+  background: linear-gradient(135deg, #041B2B 0%, #02111D 60%, #031826 100%);
+  border: 1.5px solid rgba(255, 208, 66, 0.4);
+  border-radius: 14px;
+  padding: clamp(2.25rem, 4.5vw, 4rem);
+  box-shadow: 0 16px 48px rgba(2, 14, 26, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.05);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
+  color: #FFFFFF;
 }
 
 .about-card-container:hover {
-  border-color: rgba(255, 208, 66, 0.55);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.22), 0 0 24px rgba(255, 208, 66, 0.12);
-  transform: translateY(-3px);
+  border-color: var(--brand-yellow);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 32px rgba(255, 208, 66, 0.25);
+  transform: translateY(-4px);
 }
 
 .about-card-header {
@@ -2599,15 +2600,24 @@ body.dark-mode .academic-banner-tag {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 1.25rem;
-  margin-bottom: 1.75rem;
-  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-super-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #FFD042 !important;
+  text-shadow: 0 0 16px rgba(255, 208, 66, 0.4);
 }
 
 .about-card-status {
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
-  color: var(--text-secondary);
+  letter-spacing: 0.14em;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .about-editorial-grid {
@@ -2623,19 +2633,12 @@ body.dark-mode .academic-banner-tag {
   gap: 0.85rem;
 }
 
-.about-super-label {
-  font-size: 0.76rem;
-  letter-spacing: 0.2em;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .about-lead-statement {
   font-family: var(--font-display);
-  font-size: clamp(1.5rem, 2.4vw, 2.3rem);
+  font-size: clamp(1.55rem, 2.5vw, 2.35rem);
   font-weight: 700;
-  line-height: 1.3;
-  color: var(--text-primary);
+  line-height: 1.32;
+  color: #FFFFFF !important;
   margin: 0;
   letter-spacing: -0.015em;
 }
@@ -2644,36 +2647,38 @@ body.dark-mode .academic-banner-tag {
   text-transform: uppercase !important;
   font-weight: 800 !important;
   letter-spacing: 0.04em !important;
-  color: var(--brand-yellow);
+  color: #FFD042 !important;
+  text-shadow: 0 0 18px rgba(255, 208, 66, 0.45);
 }
 
 .about-body-col {
   display: flex;
   flex-direction: column;
-  gap: 1.15rem;
+  gap: 1.2rem;
 }
 
 .about-paragraph {
-  font-size: clamp(0.98rem, 1.12vw, 1.08rem);
-  line-height: 1.72;
-  color: var(--text-secondary);
+  font-size: clamp(0.98rem, 1.12vw, 1.1rem);
+  line-height: 1.76;
+  color: #E2E8F0 !important;
   margin: 0;
 }
 
 .about-location-strip {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
-  padding: 0.85rem 1.25rem;
-  margin-top: 0.65rem;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  font-size: 0.82rem;
+  gap: 0.75rem;
+  padding: 0.9rem 1.35rem;
+  margin-top: 0.75rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 208, 66, 0.35);
+  border-radius: 8px;
+  font-size: 0.84rem;
   font-weight: 600;
-  color: var(--brand-yellow);
+  color: #FFD042 !important;
   line-height: 1.5;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(8px);
 }
 
 .about-location-strip .location-pin {
@@ -4889,12 +4894,12 @@ body.dark-mode .btn-card-view-case-study,
 }
 
 /* Anchor scroll margins for perfect framing below sticky header */
-#work, #skills, #about, #contact, section[id] {
+#hero, #work, #skills, #about, #faq, #contact, section[id] {
   scroll-margin-top: 80px;
 }
 
 @media (max-width: 768px) {
-  #work, #skills, #about, #contact, section[id] {
+  #hero, #work, #skills, #about, #faq, #contact, section[id] {
     scroll-margin-top: 65px;
   }
 }
