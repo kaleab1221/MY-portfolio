@@ -2579,19 +2579,19 @@ body.dark-mode .academic-banner-tag {
 
 /* Emphasized About Rectangle Card Container with High-Contrast KB CREATIVE Branding */
 .about-card-container {
-  background: linear-gradient(135deg, #041B2B 0%, #02111D 60%, #031826 100%);
-  border: 1.5px solid rgba(255, 208, 66, 0.4);
+  background: linear-gradient(140deg, #022B45 0%, #031F33 50%, #044771 100%);
+  border: 2px solid var(--brand-yellow);
   border-radius: 14px;
   padding: clamp(2.25rem, 4.5vw, 4rem);
-  box-shadow: 0 16px 48px rgba(2, 14, 26, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.05);
+  box-shadow: 0 20px 50px rgba(2, 43, 69, 0.45), 0 0 24px rgba(255, 208, 66, 0.2);
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   position: relative;
   color: #FFFFFF;
 }
 
 .about-card-container:hover {
-  border-color: var(--brand-yellow);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), 0 0 32px rgba(255, 208, 66, 0.25);
+  border-color: #FFE082;
+  box-shadow: 0 28px 64px rgba(2, 43, 69, 0.6), 0 0 36px rgba(255, 208, 66, 0.35);
   transform: translateY(-4px);
 }
 
@@ -2601,23 +2601,27 @@ body.dark-mode .academic-banner-tag {
   justify-content: space-between;
   padding-bottom: 1.25rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  border-bottom: 1px solid rgba(255, 208, 66, 0.25);
 }
 
 .about-super-label {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   letter-spacing: 0.22em;
   font-weight: 800;
   text-transform: uppercase;
-  color: #FFD042 !important;
-  text-shadow: 0 0 16px rgba(255, 208, 66, 0.4);
+  color: var(--brand-yellow) !important;
+  text-shadow: 0 0 16px rgba(255, 208, 66, 0.45);
 }
 
 .about-card-status {
   font-size: 0.72rem;
   font-weight: 700;
   letter-spacing: 0.14em;
-  color: rgba(255, 255, 255, 0.7);
+  color: #FFFFFF;
+  background: rgba(255, 208, 66, 0.15);
+  border: 1px solid rgba(255, 208, 66, 0.4);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
 }
 
 .about-editorial-grid {
@@ -2637,7 +2641,7 @@ body.dark-mode .academic-banner-tag {
   font-family: var(--font-display);
   font-size: clamp(1.55rem, 2.5vw, 2.35rem);
   font-weight: 700;
-  line-height: 1.32;
+  line-height: 1.34;
   color: #FFFFFF !important;
   margin: 0;
   letter-spacing: -0.015em;
@@ -2647,8 +2651,8 @@ body.dark-mode .academic-banner-tag {
   text-transform: uppercase !important;
   font-weight: 800 !important;
   letter-spacing: 0.04em !important;
-  color: #FFD042 !important;
-  text-shadow: 0 0 18px rgba(255, 208, 66, 0.45);
+  color: var(--brand-yellow) !important;
+  text-shadow: 0 0 20px rgba(255, 208, 66, 0.55);
 }
 
 .about-body-col {
@@ -2658,9 +2662,9 @@ body.dark-mode .academic-banner-tag {
 }
 
 .about-paragraph {
-  font-size: clamp(0.98rem, 1.12vw, 1.1rem);
-  line-height: 1.76;
-  color: #E2E8F0 !important;
+  font-size: clamp(1rem, 1.15vw, 1.12rem);
+  line-height: 1.78;
+  color: #F8FAFC !important;
   margin: 0;
 }
 
@@ -2668,16 +2672,16 @@ body.dark-mode .academic-banner-tag {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.9rem 1.35rem;
+  padding: 0.95rem 1.4rem;
   margin-top: 0.75rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 208, 66, 0.35);
+  background: rgba(2, 43, 69, 0.65);
+  border: 1.5px solid var(--brand-yellow);
   border-radius: 8px;
-  font-size: 0.84rem;
-  font-weight: 600;
-  color: #FFD042 !important;
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--brand-yellow) !important;
   line-height: 1.5;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(8px);
 }
 
@@ -2694,26 +2698,40 @@ body.dark-mode .academic-banner-tag {
 }
 
 /* ==========================================================================
-   ON-PAGE FREQUENTLY ASKED QUESTIONS (FAQ) SECTION
+   ON-PAGE FREQUENTLY ASKED QUESTIONS (FAQ) SECTION // HIGH CONTRAST BRANDING
    ========================================================================== */
 .faq-home-section {
   position: relative;
-  padding: clamp(3.5rem, 6vh, 5.5rem) 0;
-  background: var(--bg-surface);
-  border-bottom: 1px solid var(--border-color);
+  padding: clamp(3.75rem, 6.5vh, 6rem) 0;
+  background: #F1F5F9;
+  border-top: 2px solid #CBD5E1;
+  border-bottom: 2px solid #CBD5E1;
 }
 
 .faq-home-section .section-editorial-header {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
   text-align: left;
 }
 
 .faq-super-label {
-  font-size: 0.76rem;
-  letter-spacing: 0.2em;
-  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.22em;
+  font-weight: 800;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  color: var(--brand-navy, #044771) !important;
+}
+
+.faq-home-section .section-editorial-title {
+  color: var(--brand-navy-dark, #022B45) !important;
+  font-weight: 800;
+}
+
+.faq-home-section .section-editorial-desc {
+  color: #334155 !important;
+  font-size: 1.05rem;
+  font-weight: 500;
+  max-width: 820px;
 }
 
 /* SECTION: CONTACT & COLLABORATION (KB CREATIVE Signature Navy & Gold) */
@@ -5521,10 +5539,11 @@ button:active,
 
 .faq-accordion-item {
   background: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: var(--radius-sm);
+  border: 2px solid #CBD5E1;
+  border-left: 6px solid var(--brand-navy, #044771);
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 18px rgba(4, 71, 113, 0.04);
+  box-shadow: 0 4px 18px rgba(4, 71, 113, 0.08);
   transition: border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               background 0.3s cubic-bezier(0.16, 1, 0.3, 1),
               box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1),
@@ -5532,15 +5551,17 @@ button:active,
 }
 
 .faq-accordion-item:hover {
-  border-color: #044771;
-  box-shadow: 0 8px 28px rgba(4, 71, 113, 0.08);
+  border-color: var(--brand-navy, #044771);
+  border-left-color: var(--brand-yellow, #FFD042);
+  box-shadow: 0 10px 30px rgba(4, 71, 113, 0.16);
   transform: translateY(-2px);
 }
 
 .faq-accordion-item.active {
   background: #FFFFFF;
-  border-color: #044771;
-  box-shadow: 0 12px 36px rgba(4, 71, 113, 0.12), 0 0 0 1px #044771;
+  border-color: var(--brand-navy, #044771);
+  border-left-color: var(--brand-yellow, #FFD042);
+  box-shadow: 0 14px 38px rgba(4, 71, 113, 0.22);
 }
 
 .faq-trigger-btn {
@@ -5553,10 +5574,10 @@ button:active,
   border: none;
   text-align: left;
   cursor: pointer;
-  color: #0F172A;
+  color: #022B45;
   font-family: inherit;
-  font-size: 1.06rem;
-  font-weight: 700;
+  font-size: 1.08rem;
+  font-weight: 800;
   letter-spacing: -0.01em;
   gap: 1.25rem;
   transition: color 0.25s ease;
@@ -5589,6 +5610,10 @@ button:active,
   font-size: 0.92rem;
   font-weight: 800;
   letter-spacing: 0.06em;
+  background: rgba(4, 71, 113, 0.09);
+  border: 1px solid rgba(4, 71, 113, 0.2);
+  padding: 0.28rem 0.65rem;
+  border-radius: 6px;
   opacity: 1;
   flex-shrink: 0;
 }
@@ -5599,8 +5624,8 @@ button:active,
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  background: #F8FAFC;
-  border: 1px solid #CBD5E1;
+  background: var(--brand-navy, #044771);
+  border: 2px solid var(--brand-navy, #044771);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -5609,14 +5634,14 @@ button:active,
 }
 
 .faq-trigger-btn:hover .faq-morph-icon {
-  border-color: var(--brand-navy);
-  background: rgba(4, 71, 113, 0.08);
+  background: var(--brand-navy-dark, #022B45);
+  border-color: var(--brand-navy-dark, #022B45);
 }
 
 .morph-line-h,
 .morph-line-v {
   position: absolute;
-  background: #0F172A;
+  background: #FFFFFF;
   border-radius: 2px;
   transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
               background 0.3s ease,
@@ -5634,18 +5659,18 @@ button:active,
 }
 
 .faq-accordion-item.active .faq-morph-icon {
-  background: var(--brand-navy);
-  border-color: var(--brand-navy);
+  background: var(--brand-yellow);
+  border-color: var(--brand-yellow);
   transform: rotate(180deg);
 }
 
 .faq-accordion-item.active .morph-line-h {
-  background: #FFFFFF;
+  background: #022B45;
   transform: rotate(180deg);
 }
 
 .faq-accordion-item.active .morph-line-v {
-  background: #FFFFFF;
+  background: #022B45;
   transform: rotate(90deg) scale(0);
   opacity: 0;
 }
@@ -5668,11 +5693,11 @@ button:active,
 .faq-content-inner p {
   margin: 0;
   padding: 0 1.85rem 1.75rem 1.85rem;
-  color: #334155;
-  line-height: 1.8;
-  font-size: 0.97rem;
-  border-top: 1px solid #F1F5F9;
-  padding-top: 1.25rem;
+  color: #0F172A !important;
+  line-height: 1.82;
+  font-size: 1.01rem;
+  border-top: 1.5px solid #E2E8F0;
+  padding-top: 1.35rem;
   opacity: 0;
   transform: translateY(-4px);
   transition: opacity 0.32s ease, transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
@@ -5684,91 +5709,136 @@ button:active,
 }
 
 .faq-content-inner p strong {
-  color: #0F172A;
-  font-weight: 700;
+  color: var(--brand-navy, #044771) !important;
+  font-weight: 800;
 }
 
 /* ==========================================================================
    FAQ DARK & BLUEPRINT THEME ADAPTATION
    ========================================================================== */
+[data-theme="dark"] .faq-home-section,
+[data-theme="blueprint"] .faq-home-section,
+body.dark-mode .faq-home-section,
 [data-theme="dark"] .kb-faq-section,
 [data-theme="blueprint"] .kb-faq-section {
-  background: #021421;
-  border-top-color: rgba(255, 255, 255, 0.08);
-  border-bottom-color: rgba(255, 255, 255, 0.08);
+  background: #02111D !important;
+  border-top-color: rgba(255, 208, 66, 0.25) !important;
+  border-bottom-color: rgba(255, 208, 66, 0.25) !important;
+}
+
+[data-theme="dark"] .faq-super-label,
+[data-theme="blueprint"] .faq-super-label,
+body.dark-mode .faq-super-label {
+  color: var(--brand-yellow) !important;
+}
+
+[data-theme="dark"] .faq-home-section .section-editorial-title,
+[data-theme="blueprint"] .faq-home-section .section-editorial-title,
+body.dark-mode .faq-home-section .section-editorial-title {
+  color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .faq-home-section .section-editorial-desc,
+[data-theme="blueprint"] .faq-home-section .section-editorial-desc,
+body.dark-mode .faq-home-section .section-editorial-desc {
+  color: #E2E8F0 !important;
 }
 
 [data-theme="dark"] .faq-accordion-item,
-[data-theme="blueprint"] .faq-accordion-item {
+[data-theme="blueprint"] .faq-accordion-item,
+body.dark-mode .faq-accordion-item {
   background: #041E32;
-  border-color: rgba(255, 255, 255, 0.12);
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.4);
+  border: 1.5px solid rgba(255, 255, 255, 0.16);
+  border-left: 6px solid var(--brand-yellow);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.55);
 }
 
 [data-theme="dark"] .faq-accordion-item:hover,
-[data-theme="blueprint"] .faq-accordion-item:hover {
+[data-theme="blueprint"] .faq-accordion-item:hover,
+body.dark-mode .faq-accordion-item:hover {
   border-color: var(--brand-yellow);
-  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55), 0 0 16px rgba(255, 208, 66, 0.15);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 208, 66, 0.2);
 }
 
 [data-theme="dark"] .faq-accordion-item.active,
-[data-theme="blueprint"] .faq-accordion-item.active {
+[data-theme="blueprint"] .faq-accordion-item.active,
+body.dark-mode .faq-accordion-item.active {
   background: #06263E;
   border-color: var(--brand-yellow);
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.6), 0 0 24px rgba(255, 208, 66, 0.2);
+  border-left: 6px solid var(--brand-yellow);
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.75), 0 0 24px rgba(255, 208, 66, 0.25);
 }
 
 [data-theme="dark"] .faq-trigger-btn,
-[data-theme="blueprint"] .faq-trigger-btn {
-  color: #F8FAFC;
+[data-theme="blueprint"] .faq-trigger-btn,
+body.dark-mode .faq-trigger-btn {
+  color: #FFFFFF !important;
 }
 
 [data-theme="dark"] .faq-accordion-item:hover .faq-trigger-btn,
 [data-theme="dark"] .faq-accordion-item.active .faq-trigger-btn,
 [data-theme="blueprint"] .faq-accordion-item:hover .faq-trigger-btn,
-[data-theme="blueprint"] .faq-accordion-item.active .faq-trigger-btn {
-  color: var(--brand-yellow);
+[data-theme="blueprint"] .faq-accordion-item.active .faq-trigger-btn,
+body.dark-mode .faq-accordion-item:hover .faq-trigger-btn,
+body.dark-mode .faq-accordion-item.active .faq-trigger-btn {
+  color: var(--brand-yellow) !important;
 }
 
 [data-theme="dark"] .faq-num,
-[data-theme="blueprint"] .faq-num {
-  color: var(--brand-yellow);
-  opacity: 0.95;
+[data-theme="blueprint"] .faq-num,
+body.dark-mode .faq-num {
+  color: var(--brand-yellow) !important;
+  background: rgba(255, 208, 66, 0.18);
+  border: 1px solid rgba(255, 208, 66, 0.45);
+  opacity: 1;
 }
 
 [data-theme="dark"] .faq-morph-icon,
-[data-theme="blueprint"] .faq-morph-icon {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.18);
+[data-theme="blueprint"] .faq-morph-icon,
+body.dark-mode .faq-morph-icon {
+  background: rgba(255, 208, 66, 0.15);
+  border-color: var(--brand-yellow);
 }
 
 [data-theme="dark"] .morph-line-h,
 [data-theme="dark"] .morph-line-v,
 [data-theme="blueprint"] .morph-line-h,
-[data-theme="blueprint"] .morph-line-v {
-  background: #FFFFFF;
+[data-theme="blueprint"] .morph-line-v,
+body.dark-mode .morph-line-h,
+body.dark-mode .morph-line-v {
+  background: var(--brand-yellow);
 }
 
 [data-theme="dark"] .faq-accordion-item.active .faq-morph-icon,
-[data-theme="blueprint"] .faq-accordion-item.active .faq-morph-icon {
+[data-theme="blueprint"] .faq-accordion-item.active .faq-morph-icon,
+body.dark-mode .faq-accordion-item.active .faq-morph-icon {
   background: var(--brand-yellow);
   border-color: var(--brand-yellow);
 }
 
 [data-theme="dark"] .faq-accordion-item.active .morph-line-h,
-[data-theme="blueprint"] .faq-accordion-item.active .morph-line-h {
+[data-theme="blueprint"] .faq-accordion-item.active .morph-line-h,
+body.dark-mode .faq-accordion-item.active .morph-line-h {
+  background: #021B2C;
+}
+
+[data-theme="dark"] .faq-accordion-item.active .morph-line-v,
+[data-theme="blueprint"] .faq-accordion-item.active .morph-line-v,
+body.dark-mode .faq-accordion-item.active .morph-line-v {
   background: #021B2C;
 }
 
 [data-theme="dark"] .faq-content-inner p,
-[data-theme="blueprint"] .faq-content-inner p {
-  color: #CBD5E1;
-  border-top-color: rgba(255, 255, 255, 0.08);
+[data-theme="blueprint"] .faq-content-inner p,
+body.dark-mode .faq-content-inner p {
+  color: #F8FAFC !important;
+  border-top-color: rgba(255, 255, 255, 0.14);
 }
 
 [data-theme="dark"] .faq-content-inner p strong,
-[data-theme="blueprint"] .faq-content-inner p strong {
-  color: #FFFFFF;
+[data-theme="blueprint"] .faq-content-inner p strong,
+body.dark-mode .faq-content-inner p strong {
+  color: var(--brand-yellow) !important;
 }
 
 @media (max-width: 768px) {

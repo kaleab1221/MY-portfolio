@@ -534,6 +534,17 @@
     }
 
     function scrollToTargetSection(targetId) {
+      if (!targetId || targetId === 'hero' || targetId === 'top') {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+        if (history.pushState) {
+          history.pushState(null, document.title, '#hero');
+        }
+        return;
+      }
+
       const targetEl = document.getElementById(targetId);
       if (!targetEl) return;
 
