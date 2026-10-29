@@ -512,6 +512,9 @@
       toggleBtn.classList.add('active');
       toggleBtn.setAttribute('aria-expanded', 'true');
       drawer.setAttribute('aria-hidden', 'false');
+      document.documentElement.classList.add('mobile-menu-open');
+      document.body.classList.add('mobile-menu-open');
+      document.documentElement.style.overflow = 'hidden';
       document.body.style.overflow = 'hidden';
     }
 
@@ -520,6 +523,9 @@
       toggleBtn.classList.remove('active');
       toggleBtn.setAttribute('aria-expanded', 'false');
       drawer.setAttribute('aria-hidden', 'true');
+      document.documentElement.classList.remove('mobile-menu-open');
+      document.body.classList.remove('mobile-menu-open');
+      document.documentElement.style.overflow = '';
       document.body.style.overflow = '';
     }
 
@@ -539,12 +545,28 @@
       });
     }
 
+    // Automatically close the mobile menu whenever ANY navigation link or action button is selected
+    const drawerLinks = drawer.querySelectorAll('a, .mobile-nav-link');
+    drawerLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeDrawer();
+      });
+    });
+
     // Close when clicking directly on backdrop
     drawer.addEventListener('click', (e) => {
       if (e.target === drawer) {
         closeDrawer();
       }
     });
+
+    // Prevent background touch scrolling on backdrop while drawer is open
+    drawer.addEventListener('touchmove', (e) => {
+      const scrollableNav = drawer.querySelector('nav');
+      if (!scrollableNav || !scrollableNav.contains(e.target)) {
+        e.preventDefault();
+      }
+    }, { passive: false });
 
     // Close on Escape key
     document.addEventListener('keydown', (e) => {
