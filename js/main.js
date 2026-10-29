@@ -1601,14 +1601,14 @@ const KB_I18N = {
     collab_note_text: "Multilingual fluency facilitating seamless technical coordination with construction teams on site, academic peers at Wolkite University, and commercial corporate clients across Ethiopia and worldwide.",
 
     // Section 03: Studio Profile & About
-    chap_03: "CHAPTER 03 // STUDIO PROFILE & PRACTICE",
     about_super: "ABOUT THE STUDIO",
-    about_lead: `KB CREATIVE is an independent architecture and visual-design studio led by <span class="highlight-yellow">Kaleegziabher Fekede</span>.`,
+    about_lead: `KB CREATIVE is an independent architecture and visual-design studio led by <span class="highlight-yellow uppercase-name">KALEEGZIABHER FEKEDE</span>.`,
     about_p1: "We develop spatial concepts, 3D visualizations, and cohesive brand identity systems for clients across Ethiopia and worldwide. Our approach combines practical architectural thinking, clear visual communication, and detail driven creative direction.",
     about_p2: "From residential and interior design to cinematic visualization and corporate identity, every project is developed to be purposeful, refined, and ready to communicate its value.",
     about_location: "Based in Addis Ababa and Wolkite, Ethiopia • Available for selected local and remote commissions.",
 
     // FAQ Section
+    faq_super: "CLARIFICATIONS & PROCESS",
     faq_title: "Frequently Asked Questions",
     faq_desc: "Essential clarifications on architectural commissions, cinematic 3D visualization workflows, technical deliverables, and bespoke brand identity design with KB CREATIVE.",
     faq_q1: "What architectural and design services does KB CREATIVE provide?",
@@ -1748,14 +1748,14 @@ const KB_I18N = {
     collab_note_text: "ከግንባታ ቡድኖች፣ ከወልቂጤ ዩኒቨርሲቲ የአካዳሚክ ባልደረቦች እና አለምአቀፍ ደንበኞች ጋር ያለምንም እንቅፋት በብቃት ለመስራት የሚያስችል የቋንቋ ክህሎት።",
 
     // Section 03: Studio Profile & About
-    chap_03: "ክፍል 03 // የስቱዲዮ መገለጫ እና ልምምድ",
     about_super: "ስለ ስቱዲዮው",
-    about_lead: `KB CREATIVE በ<span class="highlight-yellow">ቃለእግዚአብሔር ፈቀደ</span> የሚመራ ራሱን የቻለ የአርክቴክቸር እና የቪዥዋል ዲዛይን ስቱዲዮ ነው።`,
+    about_lead: `KB CREATIVE በ<span class="highlight-yellow uppercase-name">ቃለእግዚአብሔር ፈቀደ</span> የሚመራ ራሱን የቻለ የአርክቴክቸር እና የቪዥዋል ዲዛይን ስቱዲዮ ነው።`,
     about_p1: "በኢትዮጵያ እና በዓለም ዙሪያ ላሉ ደንበኞች የቦታ ፅንሰ-ሀሳቦችን፣ 3D ቪዥዋላይዜሽን እና የተቀናጁ የብራንድ መለያ ስርዓቶችን እናዘጋጃለን። አካሄዳችን ተግባራዊ የስነ-ህንፃ አስተሳሰብን፣ ግልጽ የእይታ ተግባቦትን እና በዝርዝር ላይ ያተኮረ የፈጠራ ምሪትን ያጣምራል።",
     about_p2: "ከመኖሪያ እና የውስጥ ዲዛይን እስከ ሲኒማቲክ ቪዥዋላይዜሽን እና የድርጅት መለያ ማንነት ድረስ፣ እያንዳንዱ ፕሮጀክት ዓላማ ያለው፣ የተጣራ እና ዋጋውን ለመግለጽ ዝግጁ ሆኖ የተዘጋጀ ነው።",
     about_location: "በአዲስ አበባ እና በወልቂጤ፣ ኢትዮጵያ የሚገኝ • ለተመረጡ የሀገር ውስጥ እና የርቀት ስራዎች ክፍት ነው።",
 
     // FAQ Section
+    faq_super: "ማብራሪያዎች እና ሂደት",
     faq_title: "ተዘውታሪ ጥያቄዎች እና መልሶች",
     faq_desc: "ስለ ህንፃ ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የቴክኒክ ሰነዶች እና የብራንድ መለያ ስራዎች ከKB CREATIVE ጋር ለመስራት የሚያስፈልጉ ጠቃሚ መረጃዎች።",
     faq_q1: "KB CREATIVE ምን አይነት የአርክቴክቸር እና የዲዛይን አገልግሎቶችን ይሰጣል?",
