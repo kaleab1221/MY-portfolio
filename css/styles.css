@@ -3768,65 +3768,6 @@ body.dark-mode #modal-practice-tag {
 }
 
 /* ==========================================================================
-   KINETIC TYPOGRAPHY ARCHITECTURAL TICKER RIBBON
-   ========================================================================== */
-.kinetic-ticker-ribbon {
-  background: var(--brand-navy-dark);
-  border-top: 1px solid rgba(255, 208, 66, 0.25);
-  border-bottom: 1px solid rgba(255, 208, 66, 0.25);
-  overflow: hidden;
-  padding: 0.65rem 0;
-  position: relative;
-  user-select: none;
-  z-index: 15;
-}
-
-[data-theme="light"] .kinetic-ticker-ribbon {
-  background: #021B2C;
-}
-
-.kinetic-ticker-track {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-  width: max-content;
-  white-space: nowrap;
-  animation: kineticTickerGlide 32s linear infinite;
-  font-size: 0.72rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: rgba(255, 255, 255, 0.85);
-}
-
-.kinetic-ticker-track:hover {
-  animation-play-state: paused;
-}
-
-.kinetic-ticker-track span {
-  display: inline-block;
-  transition: color 0.2s ease;
-}
-
-.kinetic-ticker-track span:hover {
-  color: var(--brand-yellow);
-}
-
-.kinetic-ticker-track .ticker-dot {
-  color: var(--brand-yellow);
-  font-size: 0.9rem;
-}
-
-@keyframes kineticTickerGlide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* ==========================================================================
    SCROLL-DRIVEN STORYTELLING CHAPTER BADGES
    ========================================================================== */
 .storytelling-chapter-pill {

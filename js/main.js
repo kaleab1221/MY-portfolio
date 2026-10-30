@@ -1999,50 +1999,6 @@ function initLanguageEngine() {
       }
     });
 
-    // Update Kinetic Ticker Ribbon
-    const tickerTrack = document.querySelector('.kinetic-ticker-track');
-    if (tickerTrack) {
-      if (currentLang === 'am') {
-        tickerTrack.innerHTML = `
-          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ ስቱዲዮ</span>
-          <span class="ticker-dot">•</span>
-          <span>የKB CREATIVE መስራች</span>
-          <span class="ticker-dot">•</span>
-          <span>D5 ሬንደር፣ ራይኖ እና ሪቪት ቪዥዋላይዜሽን</span>
-          <span class="ticker-dot">•</span>
-          <span>ኢትዮጵያ እና በኦንላይን በመላው አለም</span>
-          <span class="ticker-dot">•</span>
-          <span>✦ የቦታ አርክቴክቸር እና ሲኒማቲክ 3D ሲሙሌሽን • ኬቢ ክሪኤቲቭ ስቱዲዮ</span>
-          <span class="ticker-dot">•</span>
-          <span>የKB CREATIVE መስራች</span>
-          <span class="ticker-dot">•</span>
-          <span>D5 ሬንደር፣ ራይኖ እና ሪቪት ቪዥዋላይዜሽን</span>
-          <span class="ticker-dot">•</span>
-          <span>ኢትዮጵያ እና በኦንላይን በመላው አለም</span>
-          <span class="ticker-dot">•</span>
-        `;
-      } else {
-        tickerTrack.innerHTML = `
-          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE STUDIO</span>
-          <span class="ticker-dot">•</span>
-          <span>KB CREATIVE FOUNDER</span>
-          <span class="ticker-dot">•</span>
-          <span>D5 RENDER, RHINO &amp; REVIT VISUALIZATION</span>
-          <span class="ticker-dot">•</span>
-          <span>ETHIOPIA &amp; REMOTE WORLDWIDE</span>
-          <span class="ticker-dot">•</span>
-          <span>✦ ARCHITECTURAL DESIGN &amp; HIGH-FIDELITY VISUALIZATION • KB CREATIVE STUDIO</span>
-          <span class="ticker-dot">•</span>
-          <span>KB CREATIVE FOUNDER</span>
-          <span class="ticker-dot">•</span>
-          <span>D5 RENDER, RHINO &amp; REVIT VISUALIZATION</span>
-          <span class="ticker-dot">•</span>
-          <span>ETHIOPIA &amp; REMOTE WORLDWIDE</span>
-          <span class="ticker-dot">•</span>
-        `;
-      }
-    }
-
     // Update Contact Form Inputs & Options
     const nameInput = document.getElementById('inquiry-name');
     const briefInput = document.getElementById('inquiry-brief');
