@@ -44,3 +44,4 @@ temp/
 .cache/
 push.bat
 scratch/
+*.zip
