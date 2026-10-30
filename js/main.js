@@ -490,7 +490,67 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 34V14l8-8 8 8v20\" stroke=\"#FFD042\" />\n      <line x1=\"8\" y1=\"34\" x2=\"32\" y2=\"34\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"22\" x2=\"24\" y2=\"22\" stroke=\"#FFD042\" />\n    </svg>"
   },
 
-  // MOD-07: ROMAN CATERING
+  // MOD-07: ET-CAM — ETHIOPIAN CREATIVE ADVERTISEMENT MEDIA
+  {
+    "id": "etcam-creative-advertisement-media",
+    "service": "Corporate Brand Identity, Stationery Architecture & Digital UI System",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Figma",
+      "Blender"
+    ],
+    "title": "ET-CAM — Ethiopian Creative Advertisement Media",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Corporate Brand Identity & Media Systems",
+    "year": "2026",
+    "gridRef": "MOD-07",
+    "sizeContext": "Full Brand Architecture • Stationery Suite • Browser & 3D App Ecosystem • 5 Curated Perspectives",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "ET-CAM (Ethiopian Creative Advertisement Media / etcam.com.et)",
+    "scale": "Comprehensive Brand Identity Architecture, Corporate Stationery Suite & Digital Media UI",
+    "medium": "Interlocking Vector Monogram, Energetic Tangerine (#F15A24) & Deep Corporate Navy (#002B49), Blind Deboss & Spot UV Stock, Digital UI Ecosystem",
+    "summary": "Dynamic corporate brand identity and multi-channel media ecosystem uniting bold geometric monogram architecture with complete physical and digital collateral.",
+    "description": "ET-CAM (Ethiopian Creative Advertisement Media) is an ambitious creative communications, media production, and advertisement agency founded in Addis Ababa. The brand identity bridges human creativity and media technology through a memorable, high-impact interlocking emblem: twin dynamic arcs in vibrant Tangerine Orange and Deep Corporate Navy seamlessly connecting into a digital node. The comprehensive identity extends across corporate print collateral—including executive foil-stamped letterheads, dual-palette business cards, bespoke stationery cases, and branded executive envelopes—through to a cohesive digital ecosystem featuring responsive browser favicons, interactive URL navigation, and a 3D tactile mobile application launcher icon.",
+    "challenge": "Crafting a multi-tiered corporate identity for an advertisement media agency that establishes immediate, authoritative recognition in print, scales down crisply to a 16px browser favicon and mobile app icon, and communicates bold creative purpose without visual clutter.",
+    "solution": "Developed a pure geometric interlocking monogram calibrated to equal radial arcs and continuous vector curves. Paired high-contrast energetic tangerine with authoritative deep navy, reinforced by a structured corporate stationery architecture and a tactile 3D digital application widget with cohesive typography.",
+    "deliverables": [
+      "Primary Scalable Vector Interlocking Monogram & Full Wordmark System",
+      "Official Corporate Color Architecture (Tangerine Orange, Corporate Navy & Pure Platinum)",
+      "Executive Print Collateral Suite (A4 Official Letterhead, Dual-Tone Business Cards, C5 Postal Envelope & Custom Pencil Sleeve)",
+      "Digital Media Touchpoints: High-Resolution Browser Tab Favicon, URL Address Interface & 3D Extruded App Icon with Notification Center",
+      "Cinematic Digital Billboard & MacBook Campaign Presentation Mockup",
+      "Artistic Brand Concept Visual: Human Touch & Creative Connection in Dichromatic Lighting",
+      "Complete Brand Identity Standards, Typography Hierarchy & Scale Guidelines"
+    ],
+    "slides": [
+      {
+        "url": "assets/etcam-slide-01-logo.jpg",
+        "caption": "Slide 01 // ET-CAM (Ethiopian Creative Advertisement Media) — Primary Logomark & Full Name Typography"
+      },
+      {
+        "url": "assets/etcam-slide-02-stationery.jpg",
+        "caption": "Slide 02 // Corporate Stationery Architecture: Executive Letterhead, Business Cards, Envelope & Custom Pencil Sleeve"
+      },
+      {
+        "url": "assets/etcam-slide-03-digital.jpg",
+        "caption": "Slide 03 // Digital Ecosystem: Browser Tab UI (etcam.com.et) & 3D Tactile Mobile App Launcher Icon"
+      },
+      {
+        "url": "assets/etcam-slide-04-showcase.jpg",
+        "caption": "Slide 04 // Campaign Presentation: MacBook Pro Display 'Creating Bold Brands with Purpose'"
+      },
+      {
+        "url": "assets/etcam-slide-05-concept.jpg",
+        "caption": "Slide 05 // Brand Narrative Concept: Human Touch & Creative Connection in Atmospheric Dichromatic Light"
+      }
+    ],
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M14 13 A 9 9 0 0 0 14 27 C 19 27 22 24 23 20\" stroke=\"#F15A24\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      <path d=\"M26 27 A 9 9 0 0 0 26 13 C 21 13 18 16 17 20\" stroke=\"#002B49\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      <circle cx=\"27\" cy=\"20\" r=\"2.2\" fill=\"#002B49\" stroke=\"none\" />\n    </svg>"
+  },
+
+  // MOD-08: ROMAN CATERING
   {
     "id": "roman-catering-brand-identity",
     "service": "Hospitality Brand Identity & Eco Packaging System",
@@ -1451,6 +1511,27 @@ const KB_PROJECT_AM = {
       "የማሸጊያ ቦርሳዎች ዲዛይን"
     ]
   },
+  "etcam-creative-advertisement-media": {
+    title: "ኢቲ-ካም (ET-CAM) — የፈጠራ ማስታወቂያ እና ሚዲያ",
+    service: "የኮርፖሬት ብራንድ መለያ፣ የህትመት ሰነዶች እና የዲጂታል UI ስርዓት",
+    location: "አዲስ አበባ፣ ኢትዮጵያ (የKB CREATIVE ስራ)",
+    client: "ኢቲ-ካም (Ethiopian Creative Advertisement Media / etcam.com.et)",
+    sizeContext: "የተሟላ የብራንድ ማንነት • የቢሮ የህትመት ሰነዶች • ብሮውዘር እና 3D አፕሊኬሽን • 5 የተመረጡ እይታዎች",
+    role: "ዋና የብራንድ ዲዛይነር እና የፈጠራ ዳይሬክተር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
+    summary: "ተለዋዋጭ የኮርፖሬት ብራንድ ማንነት እና ዲጂታል የሚዲያ ስነ-ምህዳር፤ ደማቅ ጂኦሜትሪክ ሞኖግራምን ከተሟላ የህትመት እና የዲጂታል መተግበሪያዎች ጋር ያቀናጀ።",
+    description: "ኢቲ-ካም (የኢትዮጵያ የፈጠራ ማስታወቂያ እና ሚዲያ) በአዲስ አበባ የተመሰረተ ዘመናዊ የፈጠራ ኮሙኒኬሽን እና የማስታወቂያ ድርጅት ነው። የብራንድ መለያው የሰው ልጅን የፈጠራ አስተሳሰብ ከሚዲያ ቴክኖሎጂ ጋር በሚያስተሳስር አስደናቂ የተጣመረ ሎጎ ተቀርጿል፤ በብርቱካናማ እና ጥቁር ሰማያዊ ቀለማት የተዋቀረ። ይህ የተሟላ የብራንድ ስራ ይፋዊ የደብዳቤ ራስጌዎችን፣ የንግድ ካርዶችን፣ የፖስታ ንድፎችን እና የብዕር ማስቀመጫዎችን እንዲሁም በድረ-ገጽ እና በሞባይል አፕሊኬሽን ላይ የሚታዩ 3D ዲጂታል ምልክቶችን ያካትታል።",
+    challenge: "ለማስታወቂያ እና ሚዲያ ተቋም በህትመትም ሆነ በዲጂታል ሚዲያ (እንደ ብሮውዘር ታብ እና አፕሊኬሽን አይከን) ወዲያውኑ የሚታወቅ እና ከፍተኛ ተጽዕኖ የሚፈጥር የብራንድ ማንነት መፍጠር።",
+    solution: "የተመጣጠነ የክብ ቅርጽ ጂኦሜትሪን በመጠቀም ጥቁር ሰማያዊ እና ደማቅ ብርቱካናማ ቀለማትን ያጣመረ ተለዋዋጭ ሞኖግራም ተቀርጾ፤ በተሟላ የቢሮ እቃዎች እና በ3D ዲጂታል አፕሊኬሽን አይከን ተደግፎ ተዘጋጅቷል።",
+    deliverables: [
+      "ዋና የቬክተር ሞኖግራም እና ይፋዊ የድርጅት ስም ጽሁፍ",
+      "የኮርፖሬት ቀለማት እና የፊደላት አጠቃቀም መመሪያ",
+      "የቢሮ የህትመት ሰነዶች (የደብዳቤ ራስጌ፣ የንግድ ካርዶች፣ ፖስታ እና የብዕር ማስቀመጫ)",
+      "የዲጂታል ሚዲያ ንድፎች (የብሮውዘር ታብ አይከን፣ የድረ-ገጽ አድራሻ ባር እና 3D ሞባይል አፕ አይከን)",
+      "የማክቡክ ላፕቶፕ የማስታወቂያ ማሳያ ሞክአፕ",
+      "የፈጠራ ትስስርን የሚያሳይ የኪነ-ጥበብ ምስል",
+      "የብራንድ መለያ ደረጃዎች እና ህጎች ሰነድ"
+    ]
+  },
   "roman-catering-brand-identity": {
     title: "ሮማን ኬተሪንግ",
     service: "የኬተሪንግ እና የሆስፒታሊቲ ብራንድ መለያ",
@@ -1551,7 +1632,7 @@ const KB_I18N = {
     
     // Mobile Drawer
     mob_sub_about: "Studio Direction & Spatial Pedagogy",
-    mob_sub_works: "15 Curated Projects • Spatial & Brand",
+    mob_sub_works: "16 Curated Projects • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_faq: "Process & Clarifications Page",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
@@ -1566,17 +1647,17 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Available for select 2026 client commissions: residential villas, interior spaces, photorealistic CGI, and full brand identity packages.`,
     hero_cv: "Download Portfolio PDF",
-    hero_explore: "Explore 15 Curated Projects",
+    hero_explore: "Explore 16 Curated Projects",
     
     // Hero Stats
     stat_student: "Spatial & Brand Design",
     stat_studies: "Curated Case Studies",
 
     // Practice Filter Pills
-    filter_all: "All Projects (15)",
+    filter_all: "All Projects (16)",
     filter_arch: "Spatial Architecture (04)",
     filter_vis: "3D Visualization (04)",
-    filter_brand: "Brand Identity (11)",
+    filter_brand: "Brand Identity (12)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -1589,7 +1670,7 @@ const KB_I18N = {
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
     editorial_title: "Curated Architectural & Graphic Projects",
-    editorial_desc: "15 curated projects spanning Spatial Architecture, Photorealistic 3D Visualization, and Corporate Brand Identity Systems.",
+    editorial_desc: "16 curated projects spanning Spatial Architecture, Photorealistic 3D Visualization, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1653,8 +1734,8 @@ const KB_I18N = {
     inquiry_submit: "Transmit Proposal To KB CREATIVE →",
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
-    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 15 curated projects.",
-    empty_reset_btn: "Reset Filters (Show All 15 Projects) →",
+    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 16 curated projects.",
+    empty_reset_btn: "Reset Filters (Show All 16 Projects) →",
     mob_lang_label: "LANG:",
     mob_theme_label: "THEME:",
     footer_rights: "© 2026 KB CREATIVE. All rights reserved.",
@@ -1699,7 +1780,7 @@ const KB_I18N = {
     
     // Mobile Drawer
     mob_sub_about: "የስራ ፍልስፍና እና የስቱዲዮ መረጃ",
-    mob_sub_works: "15 የተመረጡ ፕሮጀክቶች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "16 የተመረጡ ፕሮጀክቶች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች ገጽ",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
@@ -1714,17 +1795,17 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ2026 የተመረጡ ስራዎች ክፍት ነኝ፦ የመኖሪያ ቪላዎች፣ የውስጥ እድሳት፣ 3D ቪዥዋላይዜሽን እና የተሟላ የብራንድ መለያ ዲዛይን።`,
     hero_cv: "ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "15 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
+    hero_explore: "16 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የቦታ እና ብራንድ ዲዛይን",
     stat_studies: "የተመረጡ ስራዎች",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ፕሮጀክቶች (15)",
+    filter_all: "ሁሉም ፕሮጀክቶች (16)",
     filter_arch: "አርክቴክቸር (04)",
     filter_vis: "3D ቪዥዋላይዜሽን (04)",
-    filter_brand: "የብራንድ መለያ (11)",
+    filter_brand: "የብራንድ መለያ (12)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
@@ -1737,7 +1818,7 @@ const KB_I18N = {
     chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
     archive_title: "የስራዎች ማህደር",
     editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ፕሮጀክቶች",
-    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 15 የተመረጡ ፕሮጀክቶች።",
+    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 16 የተመረጡ ፕሮጀክቶች።",
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
@@ -1801,8 +1882,8 @@ const KB_I18N = {
     inquiry_submit: "ፕሮፖዛሉን ለKB CREATIVE ይላኩ →",
     empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
-    empty_void_desc: "ሁሉንም 15 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
-    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 15 ስራዎች አሳይ) →",
+    empty_void_desc: "ሁሉንም 16 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
+    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 16 ስራዎች አሳይ) →",
     mob_lang_label: "ቋንቋ:",
     mob_theme_label: "ገጽታ:",
     footer_rights: "© 2026 KB CREATIVE. መብቱ በህግ የተጠበቀ ነው።",
