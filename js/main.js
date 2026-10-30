@@ -507,19 +507,20 @@ const KB_PROJECTS = [
     "practiceLabel": "Corporate Brand Identity & Media Systems",
     "year": "2026",
     "gridRef": "MOD-07",
-    "sizeContext": "Full Brand Architecture • Stationery Suite • Browser & 3D App Ecosystem • 5 Curated Perspectives",
+    "sizeContext": "Full Brand Architecture • Stationery Suite • Browser & 3D App Ecosystem • 6 Curated Perspectives",
     "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
     "client": "ET-CAM (Ethiopian Creative Advertisement Media / etcam.com.et)",
     "scale": "Comprehensive Brand Identity Architecture, Corporate Stationery Suite & Digital Media UI",
     "medium": "Interlocking Vector Monogram, Energetic Tangerine (#F15A24) & Deep Corporate Navy (#002B49), Blind Deboss & Spot UV Stock, Digital UI Ecosystem",
     "summary": "Dynamic corporate brand identity and multi-channel media ecosystem uniting bold geometric monogram architecture with complete physical and digital collateral.",
-    "description": "ET-CAM (Ethiopian Creative Advertisement Media) is an ambitious creative communications, media production, and advertisement agency founded in Addis Ababa. The brand identity bridges human creativity and media technology through a memorable, high-impact interlocking emblem: twin dynamic arcs in vibrant Tangerine Orange and Deep Corporate Navy seamlessly connecting into a digital node. The comprehensive identity extends across corporate print collateral—including executive foil-stamped letterheads, dual-palette business cards, bespoke stationery cases, and branded executive envelopes—through to a cohesive digital ecosystem featuring responsive browser favicons, interactive URL navigation, and a 3D tactile mobile application launcher icon.",
+    "description": "ET-CAM (Ethiopian Creative Advertisement Media) is an ambitious creative communications, media production, and advertisement agency founded in Addis Ababa. The brand identity bridges human creativity and media technology through a memorable, high-impact interlocking emblem: twin dynamic arcs in vibrant Tangerine Orange and Deep Corporate Navy seamlessly connecting into a digital node. The comprehensive identity extends across corporate print collateral—including executive foil-stamped letterheads, dual-palette business cards with concentric ripple graphics, bespoke stationery cases, and branded executive envelopes—through to a cohesive digital ecosystem featuring responsive browser favicons, interactive URL navigation, and a 3D tactile mobile application launcher icon.",
     "challenge": "Crafting a multi-tiered corporate identity for an advertisement media agency that establishes immediate, authoritative recognition in print, scales down crisply to a 16px browser favicon and mobile app icon, and communicates bold creative purpose without visual clutter.",
-    "solution": "Developed a pure geometric interlocking monogram calibrated to equal radial arcs and continuous vector curves. Paired high-contrast energetic tangerine with authoritative deep navy, reinforced by a structured corporate stationery architecture and a tactile 3D digital application widget with cohesive typography.",
+    "solution": "Developed a pure geometric interlocking monogram calibrated to equal radial arcs and continuous vector curves. Paired high-contrast energetic tangerine with authoritative deep navy, reinforced by a structured corporate stationery architecture, concentric acoustic signal graphics, and a tactile 3D digital application widget with cohesive typography.",
     "deliverables": [
       "Primary Scalable Vector Interlocking Monogram & Full Wordmark System",
       "Official Corporate Color Architecture (Tangerine Orange, Corporate Navy & Pure Platinum)",
       "Executive Print Collateral Suite (A4 Official Letterhead, Dual-Tone Business Cards, C5 Postal Envelope & Custom Pencil Sleeve)",
+      "Dual-Tone Business Cards with Hypnotic Concentric Copper Signal Wave Graphic Pattern",
       "Digital Media Touchpoints: High-Resolution Browser Tab Favicon, URL Address Interface & 3D Extruded App Icon with Notification Center",
       "Cinematic Digital Billboard & MacBook Campaign Presentation Mockup",
       "Artistic Brand Concept Visual: Human Touch & Creative Connection in Dichromatic Lighting",
@@ -545,6 +546,10 @@ const KB_PROJECTS = [
       {
         "url": "assets/etcam-slide-05-concept.jpg",
         "caption": "Slide 05 // Brand Narrative Concept: Human Touch & Creative Connection in Atmospheric Dichromatic Light"
+      },
+      {
+        "url": "assets/etcam-slide-06-cards.jpg",
+        "caption": "Slide 06 // Executive Business Cards: Concentric Copper Signal Wave Graphics & Full Contact Specification"
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M14 13 A 9 9 0 0 0 14 27 C 19 27 22 24 23 20\" stroke=\"#F15A24\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      <path d=\"M26 27 A 9 9 0 0 0 26 13 C 21 13 18 16 17 20\" stroke=\"#002B49\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n      <circle cx=\"27\" cy=\"20\" r=\"2.2\" fill=\"#002B49\" stroke=\"none\" />\n    </svg>"
@@ -1516,16 +1521,17 @@ const KB_PROJECT_AM = {
     service: "የኮርፖሬት ብራንድ መለያ፣ የህትመት ሰነዶች እና የዲጂታል UI ስርዓት",
     location: "አዲስ አበባ፣ ኢትዮጵያ (የKB CREATIVE ስራ)",
     client: "ኢቲ-ካም (Ethiopian Creative Advertisement Media / etcam.com.et)",
-    sizeContext: "የተሟላ የብራንድ ማንነት • የቢሮ የህትመት ሰነዶች • ብሮውዘር እና 3D አፕሊኬሽን • 5 የተመረጡ እይታዎች",
+    sizeContext: "የተሟላ የብራንድ ማንነት • የቢሮ የህትመት ሰነዶች • ብሮውዘር እና 3D አፕሊኬሽን • 6 የተመረጡ እይታዎች",
     role: "ዋና የብራንድ ዲዛይነር እና የፈጠራ ዳይሬክተር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
     summary: "ተለዋዋጭ የኮርፖሬት ብራንድ ማንነት እና ዲጂታል የሚዲያ ስነ-ምህዳር፤ ደማቅ ጂኦሜትሪክ ሞኖግራምን ከተሟላ የህትመት እና የዲጂታል መተግበሪያዎች ጋር ያቀናጀ።",
     description: "ኢቲ-ካም (የኢትዮጵያ የፈጠራ ማስታወቂያ እና ሚዲያ) በአዲስ አበባ የተመሰረተ ዘመናዊ የፈጠራ ኮሙኒኬሽን እና የማስታወቂያ ድርጅት ነው። የብራንድ መለያው የሰው ልጅን የፈጠራ አስተሳሰብ ከሚዲያ ቴክኖሎጂ ጋር በሚያስተሳስር አስደናቂ የተጣመረ ሎጎ ተቀርጿል፤ በብርቱካናማ እና ጥቁር ሰማያዊ ቀለማት የተዋቀረ። ይህ የተሟላ የብራንድ ስራ ይፋዊ የደብዳቤ ራስጌዎችን፣ የንግድ ካርዶችን፣ የፖስታ ንድፎችን እና የብዕር ማስቀመጫዎችን እንዲሁም በድረ-ገጽ እና በሞባይል አፕሊኬሽን ላይ የሚታዩ 3D ዲጂታል ምልክቶችን ያካትታል።",
     challenge: "ለማስታወቂያ እና ሚዲያ ተቋም በህትመትም ሆነ በዲጂታል ሚዲያ (እንደ ብሮውዘር ታብ እና አፕሊኬሽን አይከን) ወዲያውኑ የሚታወቅ እና ከፍተኛ ተጽዕኖ የሚፈጥር የብራንድ ማንነት መፍጠር።",
-    solution: "የተመጣጠነ የክብ ቅርጽ ጂኦሜትሪን በመጠቀም ጥቁር ሰማያዊ እና ደማቅ ብርቱካናማ ቀለማትን ያጣመረ ተለዋዋጭ ሞኖግራም ተቀርጾ፤ በተሟላ የቢሮ እቃዎች እና በ3D ዲጂታል አፕሊኬሽን አይከን ተደግፎ ተዘጋጅቷል።",
+    solution: "የተመጣጠነ የክብ ቅርጽ ጂኦሜትሪን በመጠቀም ጥቁር ሰማያዊ እና ደማቅ ብርቱካናማ ቀለማትን ያጣመረ ተለዋዋጭ ሞኖግራም ተቀርጾ፤ በተሟላ የቢሮ እቃዎች፣ በሲግናል ሞገድ ግራፊክስ እና በ3D ዲጂታል አፕሊኬሽን አይከን ተደግፎ ተዘጋጅቷል።",
     deliverables: [
       "ዋና የቬክተር ሞኖግራም እና ይፋዊ የድርጅት ስም ጽሁፍ",
       "የኮርፖሬት ቀለማት እና የፊደላት አጠቃቀም መመሪያ",
       "የቢሮ የህትመት ሰነዶች (የደብዳቤ ራስጌ፣ የንግድ ካርዶች፣ ፖስታ እና የብዕር ማስቀመጫ)",
+      "ልዩ የንግድ ካርዶች በኮፐር የሲግናል ሞገድ ፓተርን እና ሙሉ አድራሻ",
       "የዲጂታል ሚዲያ ንድፎች (የብሮውዘር ታብ አይከን፣ የድረ-ገጽ አድራሻ ባር እና 3D ሞባይል አፕ አይከን)",
       "የማክቡክ ላፕቶፕ የማስታወቂያ ማሳያ ሞክአፕ",
       "የፈጠራ ትስስርን የሚያሳይ የኪነ-ጥበብ ምስል",
