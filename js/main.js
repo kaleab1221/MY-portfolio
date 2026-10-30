@@ -529,7 +529,9 @@ const KB_PROJECTS = [
     "slides": [
       {
         "url": "assets/etcam-slide-01-logo.jpg",
-        "caption": "Slide 01 // ET-CAM (Ethiopian Creative Advertisement Media) — Primary Logomark & Full Name Typography"
+        "caption": "Slide 01 // ET-CAM (Ethiopian Creative Advertisement Media) — Primary Logomark & Full Name Typography",
+        "fit": "contain",
+        "bg": "#FFFFFF"
       },
       {
         "url": "assets/etcam-slide-02-stationery.jpg",
