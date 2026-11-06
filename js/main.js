@@ -121,19 +121,19 @@ const KB_PROJECTS = [
     "practiceLabel": "Residential Architecture & Visualization",
     "year": "2026",
     "gridRef": "MOD-01",
-    "sizeContext": "Kara, Addis Ababa | 250 m² Plot • G+2+Terrace • 10 Multi-View Perspectives & Floor Plans",
+    "sizeContext": "Kara, Addis Ababa | 250 m² Plot • G+2+Terrace • 11 Multi-View Perspectives & Floor Plans",
     "location": "Kara, Addis Ababa | 250 m² Plot",
     "client": "Private Family Residence Commission",
     "scale": "G+2 + Rooftop Terrace (250 m² Plot, 480 m² Gross Built Area)",
     "medium": "Reinforced Concrete Frame, Ribbed Architectural Fins, Low-E High-Span Glazing & D5 Atmospheric Simulation",
     "summary": "Contemporary G+2 residence balancing multi-generational living, privacy, natural light, and outdoor terrace circulation.",
-    "description": "A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation. The proposal organizes the house into a clear hierarchy of public, semi-private, private and service spaces, while responding to the site's orientation, slope and urban context. Spanning across 10 comprehensive perspectives and architectural drawings: from sunlit living lounges with traditional Ethiopian coffee ceremony corners to a sacred private prayer sanctuary (Tselot Bet), open island kitchen, master bedroom retreat, executive study office, landscaped rooftop terrace, and technical multi-level floor plans.",
+    "description": "A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation. The proposal organizes the house into a clear hierarchy of public, semi-private, private and service spaces, while responding to the site's orientation, slope and urban context. Spanning across 11 comprehensive perspectives and architectural drawings: from sunlit living lounges with traditional Ethiopian coffee ceremony corners to a sacred private prayer sanctuary (Tselot Bet), open island kitchen, master bedroom retreat, executive study office, landscaped rooftop terrace, and technical multi-level floor plans.",
     "challenge": "Organizing a multi-generational family home into an intuitive hierarchy of public reception, private sleeping sanctuaries, and dedicated spiritual prayer spaces on a dense 250 m² Kara plot with optimal daylight and cross-ventilation.",
     "solution": "Designed a vertical zoning sequence with compact structural footprint, cantilevered balconies for solar shading, acoustic isolation for the private prayer and study quarters, and generous floor-to-ceiling glazing opening to landscaped outdoor terraces.",
     "deliverables": [
       "Complete Architectural Planning & Spatial Hierarchy (Public, Semi-Private, Private & Service Zones)",
       "Technical Multi-Level Architectural Floor Plans & Site Circulation Layout (1:1 Proportional Plan)",
-      "9 Photorealistic Perspectives (Daylight, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)",
+      "10 Photorealistic Perspectives (Daylight Widescreen, Daylight Vertical Elevation, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)",
       "Traditional Ethiopian Spiritual Prayer Room (Tselot Bet) with Illuminated Cross Ceiling & Begena Display",
       "Master Bedroom Retreat with Integrated Fluted Wood Study & Minimalist Headboard",
       "Executive Home Office Studio & Architectural Library with Mesh Detailing",
@@ -143,43 +143,47 @@ const KB_PROJECTS = [
     "slides": [
       {
         "url": "assets/kara-residence-slide-01-day.jpg",
-        "caption": "Slide 01 // Daylight Exterior Facade, Perimeter Architecture & Landscaping (Full Scale 1:1)"
+        "caption": "Slide 01 // Daylight Exterior Facade, Perimeter Architecture & Landscaping (Cinematic 16:9 CGI)"
+      },
+      {
+        "url": "assets/kara-residence-slide-daylight-perspective.jpg",
+        "caption": "Slide 02 // Architectural Daylight Elevation & Vertical Perspective Study"
       },
       {
         "url": "assets/kara-residence-slide-02-twilight.jpg",
-        "caption": "Slide 02 // Twilight Elevation & Architectural Illumination Study"
+        "caption": "Slide 03 // Twilight Elevation & Architectural Illumination Study"
       },
       {
         "url": "assets/kara-residence-slide-03-living.jpg",
-        "caption": "Slide 03 // Sunlit Family Living Lounge & Traditional Ethiopian Coffee Ceremony Space"
+        "caption": "Slide 04 // Sunlit Family Living Lounge & Traditional Ethiopian Coffee Ceremony Space"
       },
       {
         "url": "assets/kara-residence-slide-04-kitchen.jpg",
-        "caption": "Slide 04 // Open-Plan Island Kitchen & Dining Wing with Slatted Timber Screening"
+        "caption": "Slide 05 // Open-Plan Island Kitchen & Dining Wing with Slatted Timber Screening"
       },
       {
         "url": "assets/kara-residence-slide-05-bath.jpg",
-        "caption": "Slide 05 // Master Ensuite Terrazzo Bath & Floating Stone Vanity Detail"
+        "caption": "Slide 06 // Master Ensuite Terrazzo Bath & Floating Stone Vanity Detail"
       },
       {
         "url": "assets/kara-residence-slide-06-prayer.jpg",
-        "caption": "Slide 06 // Traditional Spiritual Sanctuary & Private Prayer Room (Tselot Bet)"
+        "caption": "Slide 07 // Traditional Spiritual Sanctuary & Private Prayer Room (Tselot Bet)"
       },
       {
         "url": "assets/kara-residence-slide-07-bedroom.jpg",
-        "caption": "Slide 07 // Master Bedroom Suite with Integrated Study Nook & Ambient Lighting"
+        "caption": "Slide 08 // Master Bedroom Suite with Integrated Study Nook & Ambient Lighting"
       },
       {
         "url": "assets/kara-residence-slide-08-office.jpg",
-        "caption": "Slide 08 // Executive Home Office & Architectural Study Studio"
+        "caption": "Slide 09 // Executive Home Office & Architectural Study Studio"
       },
       {
         "url": "assets/kara-residence-slide-09-foyer.jpg",
-        "caption": "Slide 09 // Entrance Foyer, Mudroom Bench & Custom Millwork Storage"
+        "caption": "Slide 10 // Entrance Foyer, Mudroom Bench & Custom Millwork Storage"
       },
       {
         "url": "assets/kara-residence-slide-10-floor-plan.jpg",
-        "caption": "Slide 10 // Architectural Floor Plans, Spatial Zoning & Circulation Hierarchy (Technical Drawing 1:1)"
+        "caption": "Slide 11 // Architectural Floor Plans, Spatial Zoning & Circulation Hierarchy (Technical Drawing 1:1)"
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M6 34h28M10 34V16l10-8 10 8v18M14 22h12v12H14z\" stroke=\"#FFD042\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M14 14h12\" stroke=\"#FFD042\" stroke-linecap=\"round\"/>\n    </svg>"
@@ -1331,16 +1335,16 @@ const KB_PROJECT_AM = {
     service: "የG+2+ቴራስ መኖሪያ ቤት አርክቴክቸር እና የተፈጥሮ ብርሃን ሲሙሌሽን",
     location: "ካራ፣ አዲስ አበባ | 250 ካሬ ሜትር ይዞታ",
     client: "የግል ቤተሰብ መኖሪያ ኮሚሽን",
-    sizeContext: "ካራ፣ አዲስ አበባ | 250 ካሬ ሜትር ይዞታ • G+2+ቴራስ • 10 የተለያዩ እይታዎች እና የወለል ፕላኖች",
+    sizeContext: "ካራ፣ አዲስ አበባ | 250 ካሬ ሜትር ይዞታ • G+2+ቴራስ • 11 የተለያዩ እይታዎች እና የወለል ፕላኖች",
     role: "ዋና አርክቴክቸራል ዲዛይነር እና 3D ቪዥዋላይዘር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
     summary: "የቤተሰብ አኗኗርን፣ ግላዊነትን፣ የተፈጥሮ ብርሃንን፣ ንጹህ አየርን እና የተመቻቸ እንቅስቃሴን ሚዛናዊ በሆነ መንገድ ያቀናጀ ዘመናዊ የG+2 መኖሪያ ህንፃ።",
-    description: "የቤተሰብ አኗኗርን፣ ግላዊነትን፣ የተፈጥሮ ብርሃንን፣ አየር ማናፈሻን፣ የውጪ መዝናኛ ቦታን እና የተሳለጠ እንቅስቃሴን ሚዛናዊ በሆነ መንገድ ያቀናጀ ዘመናዊ የG+2 ቤተሰብ መኖሪያ። ንድፉ ቤቱን የህዝብ፣ ከፊል-የግል፣ የግል እና የአገልግሎት መስጫ ክፍሎች በማለት ግልጽ በሆነ ደረጃ ያደራጃል፤ የቦታውን አቅጣጫ፣ የመሬቱን አቀማመጥ እና የከተማውን ከባቢ ያገናዝባል። ስራው በ10 አጠቃላይ እይታዎች እና ንድፎች የቀረበ ሲሆን፤ ከባህላዊ የቡና ማፍያ ጥግ ካላቸው የሳሎን ክፍሎች ጀምሮ እስከ ተቀደሰ የግል የጸሎት ቤት (ጸሎት ቤት)፣ ክፍት የኩሽና ደሴት፣ የዋና መኝታ ቤት እረፍት ክፍል፣ የስራ ቢሮ፣ በአረንጓዴ ያጌጠ የጣሪያ ቴራስ እና ዝርዝር የወለል ፕላኖችን ያካትታል።",
+    description: "የቤተሰብ አኗኗርን፣ ግላዊነትን፣ የተፈጥሮ ብርሃንን፣ አየር ማናፈሻን፣ የውጪ መዝናኛ ቦታን እና የተሳለጠ እንቅስቃሴን ሚዛናዊ በሆነ መንገድ ያቀናጀ ዘመናዊ የG+2 ቤተሰብ መኖሪያ። ንድፉ ቤቱን የህዝብ፣ ከፊል-የግል፣ የግል እና የአገልግሎት መስጫ ክፍሎች በማለት ግልጽ በሆነ ደረጃ ያደራጃል፤ የቦታውን አቅጣጫ፣ የመሬቱን አቀማመጥ እና የከተማውን ከባቢ ያገናዝባል። ስራው በ11 አጠቃላይ እይታዎች እና ንድፎች የቀረበ ሲሆን፤ ከባህላዊ የቡና ማፍያ ጥግ ካላቸው የሳሎን ክፍሎች ጀምሮ እስከ ተቀደሰ የግል የጸሎት ቤት (ጸሎት ቤት)፣ ክፍት የኩሽና ደሴት፣ የዋና መኝታ ቤት እረፍት ክፍል፣ የስራ ቢሮ፣ በአረንጓዴ ያጌጠ የጣሪያ ቴራስ እና ዝርዝር የወለል ፕላኖችን ያካትታል።",
     challenge: "በተጨናነቀ የ250 ካሬ ሜትር ይዞታ ላይ የቤተሰብ መቀበያ፣ የግል መኝታዎች እና ልዩ የጸሎት ቤትን በደረጃ በማዋቀር የተሟላ የተፈጥሮ ብርሃንና ንጹህ አየር እንዲያገኙ ማድረግ።",
     solution: "አነስተኛ የመሬት ስፋት የሚጠቀም አቀባዊ መዋቅር በመንደፍ፣ የፀሐይ ብርሃንን የሚከላከሉ ሰፋፊ በረንዳዎችን በማካተት እና ለጸሎትና ጥናት ክፍሎች ፀጥታ የሰፈነበት የተለየ የቦታ ክፍፍል ተዘጋጅቷል።",
     deliverables: [
       "የተሟላ የአርክቴክቸር ፕላን እና የቦታ ክፍፍል (የህዝብ፣ ከፊል-የግል፣ የግል እና የአገልግሎት ዞኖች)",
       "ዝርዝር የአርክቴክቸር የወለል ፕላኖች እና የሳይት እንቅስቃሴ ካርታ",
-      "9 ከፍተኛ ጥራት ያላቸው የ3D እይታዎች (የቀን፣ የምሽት፣ የሳሎን፣ የኩሽና፣ የመታጠቢያ፣ የጸሎት ቤት፣ የመኝታ፣ የቢሮ እና የመግቢያ)",
+      "10 ከፍተኛ ጥራት ያላቸው የ3D እይታዎች (የቀን ሲኒማቲክ፣ የቀን ቨርቲካል፣ የምሽት፣ የሳሎን፣ የኩሽና፣ የመታጠቢያ፣ የጸሎት ቤት፣ የመኝታ፣ የቢሮ እና የመግቢያ)",
       "ልዩ ባህላዊ የጸሎት ቤት (የበገና ማስቀመጫ እና የበራ መስቀል ጣሪያ ያለው)",
       "ዋና መኝታ ቤት ከጥናት ጠረጴዛ እና ከልዩ የእንጨት ማስጌጫ ጋር",
       "የቤት ውስጥ የስራ ቢሮ እና የአርክቴክቸር ቤተ-መጽሐፍት",
@@ -2663,7 +2667,7 @@ window.openCaseStudy = function(projectId, triggerEl) {
   const softwareList = Array.isArray(project.software) ? project.software : [project.medium];
   const isArch = project.practice === 'architecture';
   const afterSlide = project.slides[0];
-  const beforeSlide = project.slides[1] || project.slides[0];
+  const beforeSlide = project.slides.find(s => s.url && s.url.includes('twilight')) || project.slides[1] || project.slides[0];
 
   const beforeAfterMarkup = isArch ? `
     <!-- 03.5 // INTERACTIVE BEFORE/AFTER SPLIT SLIDER FOR ARCHITECTURE -->
