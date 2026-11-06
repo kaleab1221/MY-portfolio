@@ -130,12 +130,22 @@ const KB_PROJECTS = [
     "description": "A contemporary G+2 family residence designed to provide a balanced relationship between family living, privacy, natural light, ventilation, outdoor space and efficient circulation. The proposal organizes the house into a clear hierarchy of public, semi-private, private and service spaces, while responding to the site's orientation, slope and urban context. Spanning across 10 comprehensive perspectives and architectural drawings: from sunlit living lounges with traditional Ethiopian coffee ceremony corners to a sacred private prayer sanctuary (Tselot Bet), open island kitchen, master bedroom retreat, executive study office, landscaped rooftop terrace, and technical multi-level floor plans.",
     "challenge": "Organizing a multi-generational family home into an intuitive hierarchy of public reception, private sleeping sanctuaries, and dedicated spiritual prayer spaces on a dense 250 m² Kara plot with optimal daylight and cross-ventilation.",
     "solution": "Designed a vertical zoning sequence with compact structural footprint, cantilevered balconies for solar shading, acoustic isolation for the private prayer and study quarters, and generous floor-to-ceiling glazing opening to landscaped outdoor terraces.",
-    "massingImage": "assets/kara-residence-massing-study.png",
+    "splitSlider": {
+      "type": "day-night",
+      "beforeUrl": "assets/kara-residence-slide-02-twilight.jpg",
+      "afterUrl": "assets/kara-residence-slider-day.jpg",
+      "beforeLabelEn": "01 // NIGHT & TWILIGHT",
+      "afterLabelEn": "02 // DAYLIGHT SOLAR CGI",
+      "beforeLabelAm": "01 // የምሽት እና ድባብ ብርሃን",
+      "afterLabelAm": "02 // የቀን የተፈጥሮ ብርሃን",
+      "headerEn": "COMPARE: TWILIGHT & NIGHT ILLUMINATION (LEFT) ↔ DAYLIGHT SOLAR SIMULATION (RIGHT)",
+      "headerAm": "አወዳድር: የምሽት እና የድባብ ብርሃን ጥናት (በግራ) ↔ የቀን የተፈጥሮ የፀሐይ ብርሃን (በቀኝ)"
+    },
     "deliverables": [
       "Complete Architectural Planning & Spatial Hierarchy (Public, Semi-Private, Private & Service Zones)",
       "Technical Multi-Level Architectural Floor Plans & Site Circulation Layout (1:1 Proportional Plan)",
       "9 Photorealistic Perspectives (Daylight Widescreen, Twilight, Living, Kitchen, Bath, Prayer Room, Master Suite, Office & Foyer)",
-      "Tectonic Massing & Wireframe Volume Study (Interactive Split Slider)",
+      "Interactive Dual-Phase Split Slider: Twilight Illumination (Night) ↔ Solar Daylight Simulation (Day)",
       "Traditional Ethiopian Spiritual Prayer Room (Tselot Bet) with Illuminated Cross Ceiling & Begena Display",
       "Master Bedroom Retreat with Integrated Fluted Wood Study & Minimalist Headboard",
       "Executive Home Office Studio & Architectural Library with Mesh Detailing",
@@ -169,7 +179,7 @@ const KB_PROJECTS = [
       },
       {
         "url": "assets/kara-residence-slide-07-bedroom.jpg",
-        "caption": "Slide 08 // Master Bedroom Suite with Integrated Study Nook & Ambient Lighting"
+        "caption": "Slide 07 // Master Bedroom Suite with Integrated Study Nook & Ambient Lighting"
       },
       {
         "url": "assets/kara-residence-slide-08-office.jpg",
@@ -181,7 +191,7 @@ const KB_PROJECTS = [
       },
       {
         "url": "assets/kara-residence-slide-10-floor-plan.jpg",
-        "caption": "Slide 11 // Architectural Floor Plans, Spatial Zoning & Circulation Hierarchy (Technical Drawing 1:1)"
+        "caption": "Slide 10 // Architectural Floor Plans, Spatial Zoning & Circulation Hierarchy (Technical Drawing 1:1)"
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M6 34h28M10 34V16l10-8 10 8v18M14 22h12v12H14z\" stroke=\"#FFD042\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      <path d=\"M14 14h12\" stroke=\"#FFD042\" stroke-linecap=\"round\"/>\n    </svg>"
@@ -1343,7 +1353,7 @@ const KB_PROJECT_AM = {
       "የተሟላ የአርክቴክቸር ፕላን እና የቦታ ክፍፍል (የህዝብ፣ ከፊል-የግል፣ የግል እና የአገልግሎት ዞኖች)",
       "ዝርዝር የአርክቴክቸር የወለል ፕላኖች እና የሳይት እንቅስቃሴ ካርታ",
       "9 ከፍተኛ ጥራት ያላቸው የ3D እይታዎች (የቀን፣ የምሽት፣ የሳሎን፣ የኩሽና፣ የመታጠቢያ፣ የጸሎት ቤት፣ የመኝታ፣ የቢሮ እና የመግቢያ)",
-      "የህንፃው የቅርፅ እና የዋየርፍሬም ጥናት (በተንቀሳቃሽ ማወዳደሪያ)",
+      "ተንቀሳቃሽ የሁለት ምዕራፍ ማወዳደሪያ፡ የምሽት ብርሃን (Night) ↔ የቀን የፀሐይ ብርሃን (Day)",
       "ልዩ ባህላዊ የጸሎት ቤት (የበገና ማስቀመጫ እና የበራ መስቀል ጣሪያ ያለው)",
       "ዋና መኝታ ቤት ከጥናት ጠረጴዛ እና ከልዩ የእንጨት ማስጌጫ ጋር",
       "የቤት ውስጥ የስራ ቢሮ እና የአርክቴክቸር ቤተ-መጽሐፍት",
@@ -2665,26 +2675,41 @@ window.openCaseStudy = function(projectId, triggerEl) {
 
   const softwareList = Array.isArray(project.software) ? project.software : [project.medium];
   const isArch = project.practice === 'architecture';
-  const afterSlide = project.slides[0];
-  const beforeSlideUrl = project.massingImage || (project.slides.find(s => s.url && s.url.includes('twilight'))?.url) || (project.slides[1] ? project.slides[1].url : project.slides[0].url);
+  const sliderConfig = project.splitSlider;
+  const isNightDay = sliderConfig && sliderConfig.type === 'day-night';
+
+  const sliderHeader = isNightDay
+    ? (isAm ? sliderConfig.headerAm : sliderConfig.headerEn)
+    : (isAm ? 'አወዳድር: የቅርፅ እና የመዋቅር ጥናት (በግራ) ↔ የመጨረሻው የD5 እውነተኛ ምስል (በቀኝ)' : 'COMPARE: TECTONIC / MASSING STUDY (LEFT) ↔ FINAL D5 PHOTOREALISTIC RENDER (RIGHT)');
+
+  const badgeLeft = isNightDay
+    ? (isAm ? sliderConfig.beforeLabelAm : sliderConfig.beforeLabelEn)
+    : (isAm ? '01 // የቅርፅ ጥናት' : '01 // MASSING / WIREFRAME');
+
+  const badgeRight = isNightDay
+    ? (isAm ? sliderConfig.afterLabelAm : sliderConfig.afterLabelEn)
+    : (isAm ? '02 // እውነተኛ የD5 ሬንደር' : '02 // FINAL D5 RENDER');
+
+  const afterImgUrl = sliderConfig ? sliderConfig.afterUrl : project.slides[0].url;
+  const beforeImgUrl = sliderConfig ? sliderConfig.beforeUrl : (project.massingImage || (project.slides.find(s => s.url && s.url.includes('twilight'))?.url) || (project.slides[1] ? project.slides[1].url : project.slides[0].url));
 
   const beforeAfterMarkup = isArch ? `
     <!-- 03.5 // INTERACTIVE BEFORE/AFTER SPLIT SLIDER FOR ARCHITECTURE -->
     <div class="modal-before-after-module">
-      <div class="modal-block-tag font-mono">${isAm ? '✦ የሁለት ምዕራፍ የአርክቴክቸር ጥናት // ተንቀሳቃሽ ማወዳደሪያ' : '✦ DUAL-PHASE ARCHITECTURAL STUDY // DRAGGABLE SPLIT SLIDER'}</div>
+      <div class="modal-block-tag font-mono">${isAm ? (isNightDay ? '✦ የቀን እና የምሽት ሲሙሌሽን // ተንቀሳቃሽ ማወዳደሪያ' : '✦ የሁለት ምዕራፍ የአርክቴክቸር ጥናት // ተንቀሳቃሽ ማወዳደሪያ') : (isNightDay ? '✦ DAY & NIGHT ILLUMINATION SIMULATION // DRAGGABLE SPLIT SLIDER' : '✦ DUAL-PHASE ARCHITECTURAL STUDY // DRAGGABLE SPLIT SLIDER')}</div>
       <div class="modal-ba-header">
         <div class="font-mono text-gold" style="font-size: 0.8rem; font-weight: 700;">
-          ${isAm ? 'አወዳድር: የቅርፅ እና የመዋቅር ጥናት (በግራ) ↔ የመጨረሻው የD5 እውነተኛ ምስል (በቀኝ)' : 'COMPARE: TECTONIC / MASSING STUDY (LEFT) ↔ FINAL D5 PHOTOREALISTIC RENDER (RIGHT)'}
+          ${sliderHeader}
         </div>
         <div class="font-mono" style="font-size: 0.72rem; color: var(--text-secondary);">
           ${isAm ? 'ለማየት መሃሉን ይጎትቱ ወይም ይጫኑ' : 'DRAG KNOB OR CLICK ANYWHERE TO REVEAL'}
         </div>
       </div>
       <div class="ba-slider-container" id="modal-ba-slider" style="--slider-pct: 50%;">
-        <div class="ba-badge ba-badge-left font-mono">${isAm ? '01 // የቅርፅ ጥናት' : '01 // MASSING / WIREFRAME'}</div>
-        <div class="ba-badge ba-badge-right font-mono">${isAm ? '02 // እውነተኛ የD5 ሬንደር' : '02 // FINAL D5 RENDER'}</div>
-        <img src="${afterSlide.url}" alt="${project.title} - Final Photorealistic Render" class="ba-img-after">
-        <img src="${beforeSlideUrl}" alt="${project.title} - Tectonic Massing Study" class="ba-img-before">
+        <div class="ba-badge ba-badge-left font-mono">${badgeLeft}</div>
+        <div class="ba-badge ba-badge-right font-mono">${badgeRight}</div>
+        <img src="${afterImgUrl}" alt="${project.title} - Daylight Photorealistic Render" class="ba-img-after">
+        <img src="${beforeImgUrl}" alt="${project.title} - Twilight Illumination Study" class="ba-img-before">
         <div class="ba-slider-handle">
           <div class="ba-handle-line"></div>
           <div class="ba-handle-knob font-mono" aria-label="Drag to compare before and after">
