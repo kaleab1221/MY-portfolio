@@ -490,7 +490,69 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 34V14l8-8 8 8v20\" stroke=\"#FFD042\" />\n      <line x1=\"8\" y1=\"34\" x2=\"32\" y2=\"34\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"22\" x2=\"24\" y2=\"22\" stroke=\"#FFD042\" />\n    </svg>"
   },
 
-  // MOD-07: ET-CAM — ETHIOPIAN CREATIVE ADVERTISEMENT MEDIA
+  // MOD-07: 3 POINT STUDIO
+  {
+    "id": "threepoint-studio-brand-identity",
+    "service": "Architectural Brand Identity & Geometric Design System",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Figma",
+      "Blender"
+    ],
+    "title": "3 Point Studio",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "Architectural Branding & Identity Systems",
+    "year": "2026",
+    "gridRef": "MOD-07",
+    "sizeContext": "Tripartite Vector Monogram • Blueprint Grid • Stationery & Site Gear • 5 Perspectives",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "3 Point Studio (@3point_studio / 3pointstudio.com)",
+    "scale": "Comprehensive Architectural Studio Visual Identity & Environmental Collateral System",
+    "medium": "Geometric Vector Monogram, Crimson Oxide (#8B2626) & Slate Charcoal (#222B35), Hot Foil Deboss & Safety Gear",
+    "summary": "Architectural studio brand identity translating three-point perspective and tripartite co-founders into a pure geometric tripod monogram.",
+    "description": "3 Point Studio is a multidisciplinary architectural practice specializing in architectural design, spatial visualization, interior architecture, and construction drafting based in Addis Ababa, Ethiopia. The studio's brand identity synthesizes two core narratives: the union of three founding partners, and the architectural discipline of three-point perspective projection. The resulting emblem is a calibrated geometric tripod with tripartite circular nodes connected by fluid tangent fillets. The identity spans across precision blueprint construction sheets, luxury debossed business cards ('Turning Vision Into Value'), branded construction safety hard hats ('Three Points Endless Possibilities'), and monolithic modern architectural facade signage.",
+    "challenge": "Synthesizing the spatial rigor of architectural drafting and three-point perspective projection with a humanized emblem symbolizing three founding partners, ensuring seamless legibility across construction site gear, business cards, and monumental environmental signage.",
+    "solution": "Engineered an equilateral tripartite glyph based on intersecting circular tangents and precise angular radii. Anchored the brand in deep crimson oxide (#8B2626) and slate charcoal (#222B35), complemented by a repeating structural node pattern, tactile foil-stamped business collateral, and rugged on-site safety apparel.",
+    "deliverables": [
+      "Primary Scalable Tripartite Vector Monogram & Wordmark",
+      "Geometric Vector Blueprint Grid Construction & Radial Ratio Documentation",
+      "Three Founders & 3-Point Perspective Architectural Concept Narrative",
+      "Dual-Tone Executive Business Cards with Spot-UV Embossed Structural Pattern",
+      "On-Site Architectural Safety Apparel & Construction Hard Hat Branding",
+      "Modern Slatted Architectural Facade Environmental Studio Signage",
+      "Repeating Structural Node Tessellation Pattern in Crimson & Charcoal"
+    ],
+    "slides": [
+      {
+        "url": "assets/threepoint-slide-01-logo.jpg",
+        "caption": "Slide 01 // 3 Point Studio — Primary Architectural Logomark & Studio Wordmark",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/threepoint-slide-02-concept.png",
+        "caption": "Slide 02 // Geometric Concept & Vector Blueprint: Three Founders & 3-Point Perspective"
+      },
+      {
+        "url": "assets/threepoint-slide-03-cards.jpg",
+        "caption": "Slide 03 // Executive Business Cards: Spot-UV Structural Pattern 'Turning Vision Into Value'"
+      },
+      {
+        "url": "assets/threepoint-slide-04-hardhat.jpg",
+        "caption": "Slide 04 // On-Site Architecture Gear: Safety Hard Hat 'Three Points Endless Possibilities'"
+      },
+      {
+        "url": "assets/threepoint-slide-05-architecture.jpg",
+        "caption": "Slide 05 // Environmental Studio Signage: Modern Architectural Slatted Facade"
+      }
+    ],
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <circle cx=\"20\" cy=\"11\" r=\"3.5\" fill=\"#8B2626\" />\n      <circle cx=\"12\" cy=\"27\" r=\"3.5\" fill=\"#8B2626\" />\n      <circle cx=\"28\" cy=\"27\" r=\"3.5\" fill=\"#8B2626\" />\n      <path d=\"M20 14 C 20 20 14 24 14 24 M 20 20 C 20 20 26 24 26 24\" stroke=\"#8B2626\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n    </svg>"
+  },
+
+  // MOD-08: ET-CAM — ETHIOPIAN CREATIVE ADVERTISEMENT MEDIA
   {
     "id": "etcam-creative-advertisement-media",
     "service": "Corporate Brand Identity, Stationery Architecture & Digital UI System",
@@ -1518,6 +1580,26 @@ const KB_PROJECT_AM = {
       "የማሸጊያ ቦርሳዎች ዲዛይን"
     ]
   },
+  "threepoint-studio-brand-identity": {
+    title: "3 ፖይንት ስቱዲዮ (3 Point Studio)",
+    service: "የአርክቴክቸር ብራንድ መለያ እና የጂኦሜትሪክ ዲዛይን ስርዓት",
+    location: "አዲስ አበባ፣ ኢትዮጵያ (የKB CREATIVE ስራ)",
+    client: "3 ፖይንት ስቱዲዮ (@3point_studio / 3pointstudio.com)",
+    sizeContext: "የአርክቴክቸር ብራንድ ማንነት • የብሉፕሪንት ግሪድ • የቢሮ ካርዶች እና የሳይት አልባሳት • 5 የተመረጡ እይታዎች",
+    role: "ዋና የብራንድ ዲዛይነር እና የፈጠራ ዳይሬክተር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
+    summary: "የሶስት መስራቾችን ትስስር እና የሶስት-ነጥብ ፐርስፔክቲቭ የአርክቴክቸር ንድፍ ፍልስፍናን ያዋሃደ ዘመናዊ የስቱዲዮ ብራንድ መለያ።",
+    description: "3 ፖይንት ስቱዲዮ በአዲስ አበባ፣ ኢትዮጵያ የሚገኝ በአርክቴክቸር ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የውስጥ ዲዛይን እና የግንባታ ሰነዶች ዝግጅት ላይ የተሰማራ ተቋም ነው። የብራንዱ መለያ ሁለት ዋና ዋና ፅንሰ ሀሳቦችን ያዋህዳል፡- የሶስቱን መስራቾች ትብብር እና በአርክቴክቸር ንድፍ ውስጥ ያለውን የ3-ነጥብ ፐርስፔክቲቭ ህግ። ይህ ስራ የጂኦሜትሪክ ግሪድ ንድፍን፣ የተሟላ የቢሮ ካርዶችን ('Turning Vision Into Value')፣ የግንባታ ሳይት የደህንነት ቆቦችን ('Three Points Endless Possibilities') እና የዘመናዊ ህንፃ ፊት ለፊት የመለያ ሰሌዳዎችን ያካትታል።",
+    challenge: "የአርክቴክቸርን ቴክኒካል ጥንቃቄ ከሶስት መስራቾች ወዳጅነት ጋር በማጣመር በማንኛውም የህትመት፣ የዲጂታል እና የግንባታ ሳይት እቃዎች ላይ ግልጽ የሆነ ተጽዕኖ ፈጣሪ ሎጎ ማዘጋጀት።",
+    solution: "በትክክለኛ የክብ እና የከርቭ ስሌት የተሰራ ባለሶስት-አንጓ ጂኦሜትሪክ ሞኖግራም ተቀርጾ፤ በክሪምሰን ኦክሳይድ እና በከሰል ቻርኮል ቀለማት ታጅቦ ለስራ ካርዶች፣ ለሳይት ደህንነት ቆቦች እና ለህንፃ መለያ ሰሌዳዎች በሚመጥን መልኩ ተዘጋጅቷል።",
+    deliverables: [
+      "ዋና ባለሶስት-አንጓ ቬክተር ሞኖግራም እና የስቱዲዮ ስም ጽሁፍ",
+      "የጂኦሜትሪክ ግሪድ እና የአርክቴክቸር ፐርስፔክቲቭ ንድፍ ማብራሪያ",
+      "የስራ መለያ ካርዶች በልዩ ቴክስቸር ('Turning Vision Into Value')",
+      "የግንባታ ሳይት የደህንነት ቆብ ብራንዲንግ ('Three Points Endless Possibilities')",
+      "የዘመናዊ ህንፃ ፊት ለፊት የስቱዲዮ መለያ ሰሌዳ",
+      "ተደጋጋሚ የብራንድ ፓተርን እና የቀለም አጠቃቀም መመሪያ"
+    ]
+  },
   "etcam-creative-advertisement-media": {
     title: "ኢቲ-ካም (ET-CAM) — የፈጠራ ማስታወቂያ እና ሚዲያ",
     service: "የኮርፖሬት ብራንድ መለያ፣ የህትመት ሰነዶች እና የዲጂታል UI ስርዓት",
@@ -1640,7 +1722,7 @@ const KB_I18N = {
     
     // Mobile Drawer
     mob_sub_about: "Studio Direction & Spatial Pedagogy",
-    mob_sub_works: "16 Curated Projects • Spatial & Brand",
+    mob_sub_works: "17 Curated Projects • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_faq: "Process & Clarifications Page",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
@@ -1655,17 +1737,17 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Available for select 2026 client commissions: residential villas, interior spaces, photorealistic CGI, and full brand identity packages.`,
     hero_cv: "Download Portfolio PDF",
-    hero_explore: "Explore 16 Curated Projects",
+    hero_explore: "Explore 17 Curated Projects",
     
     // Hero Stats
     stat_student: "Spatial & Brand Design",
     stat_studies: "Curated Case Studies",
 
     // Practice Filter Pills
-    filter_all: "All Projects (16)",
+    filter_all: "All Projects (17)",
     filter_arch: "Spatial Architecture (04)",
     filter_vis: "3D Visualization (04)",
-    filter_brand: "Brand Identity (12)",
+    filter_brand: "Brand Identity (13)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -1678,7 +1760,7 @@ const KB_I18N = {
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
     editorial_title: "Curated Architectural & Graphic Projects",
-    editorial_desc: "16 curated projects spanning Spatial Architecture, Photorealistic 3D Visualization, and Corporate Brand Identity Systems.",
+    editorial_desc: "17 curated projects spanning Spatial Architecture, Photorealistic 3D Visualization, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1742,8 +1824,8 @@ const KB_I18N = {
     inquiry_submit: "Transmit Proposal To KB CREATIVE →",
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
-    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 16 curated projects.",
-    empty_reset_btn: "Reset Filters (Show All 16 Projects) →",
+    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 17 curated projects.",
+    empty_reset_btn: "Reset Filters (Show All 17 Projects) →",
     mob_lang_label: "LANG:",
     mob_theme_label: "THEME:",
     footer_rights: "© 2026 KB CREATIVE. All rights reserved.",
@@ -1788,7 +1870,7 @@ const KB_I18N = {
     
     // Mobile Drawer
     mob_sub_about: "የስራ ፍልስፍና እና የስቱዲዮ መረጃ",
-    mob_sub_works: "16 የተመረጡ ፕሮጀክቶች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "17 የተመረጡ ፕሮጀክቶች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች ገጽ",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
@@ -1803,17 +1885,17 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ2026 የተመረጡ ስራዎች ክፍት ነኝ፦ የመኖሪያ ቪላዎች፣ የውስጥ እድሳት፣ 3D ቪዥዋላይዜሽን እና የተሟላ የብራንድ መለያ ዲዛይን።`,
     hero_cv: "ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "16 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
+    hero_explore: "17 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የቦታ እና ብራንድ ዲዛይን",
     stat_studies: "የተመረጡ ስራዎች",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ፕሮጀክቶች (16)",
+    filter_all: "ሁሉም ፕሮጀክቶች (17)",
     filter_arch: "አርክቴክቸር (04)",
     filter_vis: "3D ቪዥዋላይዜሽን (04)",
-    filter_brand: "የብራንድ መለያ (12)",
+    filter_brand: "የብራንድ መለያ (13)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
@@ -1826,7 +1908,7 @@ const KB_I18N = {
     chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
     archive_title: "የስራዎች ማህደር",
     editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ፕሮጀክቶች",
-    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 16 የተመረጡ ፕሮጀክቶች።",
+    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 17 የተመረጡ ፕሮጀክቶች።",
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
@@ -1890,8 +1972,8 @@ const KB_I18N = {
     inquiry_submit: "ፕሮፖዛሉን ለKB CREATIVE ይላኩ →",
     empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
-    empty_void_desc: "ሁሉንም 16 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
-    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 16 ስራዎች አሳይ) →",
+    empty_void_desc: "ሁሉንም 17 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
+    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 17 ስራዎች አሳይ) →",
     mob_lang_label: "ቋንቋ:",
     mob_theme_label: "ገጽታ:",
     footer_rights: "© 2026 KB CREATIVE. መብቱ በህግ የተጠበቀ ነው።",
