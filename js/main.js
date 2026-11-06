@@ -507,23 +507,26 @@ const KB_PROJECTS = [
     "practiceLabel": "Architectural Branding & Identity Systems",
     "year": "2026",
     "gridRef": "MOD-07",
-    "sizeContext": "Tripartite Vector Monogram • Blueprint Grid • Stationery & Site Gear • 5 Perspectives",
+    "sizeContext": "Tripartite Vector Monogram • Blueprint Grid • Stationery & Digital System • 10 Perspectives",
     "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
     "client": "3 Point Studio (@3point_studio / 3pointstudio.com)",
     "scale": "Comprehensive Architectural Studio Visual Identity & Environmental Collateral System",
     "medium": "Geometric Vector Monogram, Crimson Oxide (#8B2626) & Slate Charcoal (#222B35), Hot Foil Deboss & Safety Gear",
     "summary": "Architectural studio brand identity translating three-point perspective and tripartite co-founders into a pure geometric tripod monogram.",
-    "description": "3 Point Studio is a multidisciplinary architectural practice specializing in architectural design, spatial visualization, interior architecture, and construction drafting based in Addis Ababa, Ethiopia. The studio's brand identity synthesizes two core narratives: the union of three founding partners, and the architectural discipline of three-point perspective projection. The resulting emblem is a calibrated geometric tripod with tripartite circular nodes connected by fluid tangent fillets. The identity spans across precision blueprint construction sheets, luxury debossed business cards ('Turning Vision Into Value'), branded construction safety hard hats ('Three Points Endless Possibilities'), and monolithic modern architectural facade signage.",
+    "description": "3 Point Studio is a multidisciplinary architectural practice specializing in architectural design, spatial visualization, interior architecture, and construction drafting based in Addis Ababa, Ethiopia. The studio's brand identity synthesizes two core narratives: the union of three founding partners, and the architectural discipline of three-point perspective projection. The resulting emblem is a calibrated geometric tripod with tripartite circular nodes connected by fluid tangent fillets. The identity spans across precision blueprint construction sheets, a monumental architectural showroom OLED totem, a luxury executive stationery suite with custom wax seal stamp, VIP leadership lanyard badges, debossed business cards ('Turning Vision Into Value'), digital mobile interfaces, on-site safety hard hats ('Three Points Endless Possibilities'), and modern timber-slatted facade environmental signage.",
     "challenge": "Synthesizing the spatial rigor of architectural drafting and three-point perspective projection with a humanized emblem symbolizing three founding partners, ensuring seamless legibility across construction site gear, business cards, and monumental environmental signage.",
     "solution": "Engineered an equilateral tripartite glyph based on intersecting circular tangents and precise angular radii. Anchored the brand in deep crimson oxide (#8B2626) and slate charcoal (#222B35), complemented by a repeating structural node pattern, tactile foil-stamped business collateral, and rugged on-site safety apparel.",
     "deliverables": [
       "Primary Scalable Tripartite Vector Monogram & Wordmark",
-      "Geometric Vector Blueprint Grid Construction & Radial Ratio Documentation",
-      "Three Founders & 3-Point Perspective Architectural Concept Narrative",
-      "Dual-Tone Executive Business Cards with Spot-UV Embossed Structural Pattern",
+      "Monumental OLED Totem Display & Architectural Showroom Visualizer",
+      "Executive Stationery Suite: Embossed Letterhead, Stamp & Custom Envelopes",
+      "Geometric Vector Blueprint Grid Construction & 3-Point Perspective Narrative",
+      "Executive VIP Identification Badge & Branded Leather Lanyard System",
+      "Dual-Tone Tactile Business Cards with Blind Deboss & Spot-UV Pattern",
+      "Digital Ecosystem: Mobile Social Profile & iOS Notification Interface",
       "On-Site Architectural Safety Apparel & Construction Hard Hat Branding",
-      "Modern Slatted Architectural Facade Environmental Studio Signage",
-      "Repeating Structural Node Tessellation Pattern in Crimson & Charcoal"
+      "Environmental Architectural Signage on Slatted Modern Facade",
+      "Modular Structural Node Tessellation Pattern in Crimson Oxide & Slate"
     ],
     "slides": [
       {
@@ -533,20 +536,44 @@ const KB_PROJECTS = [
         "bg": "#FFFFFF"
       },
       {
+        "url": "assets/threepoint-slide-display-totem.jpg",
+        "caption": "Slide 02 // Monumental Studio Totem & OLED Gallery Display in Architectural Showroom"
+      },
+      {
+        "url": "assets/threepoint-slide-stationery-suite.jpg",
+        "caption": "Slide 03 // Comprehensive Executive Stationery Suite, Wax Seal Stamp & Custom Collateral"
+      },
+      {
         "url": "assets/threepoint-slide-02-concept.png",
-        "caption": "Slide 02 // Geometric Concept & Vector Blueprint: Three Founders & 3-Point Perspective"
+        "caption": "Slide 04 // Geometric Blueprint Grid & 3-Point Perspective Architectural Concept Narrative",
+        "fit": "contain",
+        "bg": "#FFFFFF"
+      },
+      {
+        "url": "assets/threepoint-slide-id-lanyard.jpg",
+        "caption": "Slide 05 // Executive VIP Identity Badge & Premium Branded Leather Strap Lanyard"
       },
       {
         "url": "assets/threepoint-slide-03-cards.jpg",
-        "caption": "Slide 03 // Executive Business Cards: Spot-UV Structural Pattern 'Turning Vision Into Value'"
+        "caption": "Slide 06 // Dual-Tone Executive Business Cards with Spot-UV Embossed Structural Pattern"
+      },
+      {
+        "url": "assets/threepoint-slide-digital-profile.jpg",
+        "caption": "Slide 07 // Digital Brand Presence: Mobile Social Profile & iOS Notification System Mockup"
       },
       {
         "url": "assets/threepoint-slide-04-hardhat.jpg",
-        "caption": "Slide 04 // On-Site Architecture Gear: Safety Hard Hat 'Three Points Endless Possibilities'"
+        "caption": "Slide 08 // On-Site Architectural Safety Apparel: Construction Hard Hat Branding"
       },
       {
         "url": "assets/threepoint-slide-05-architecture.jpg",
-        "caption": "Slide 05 // Environmental Studio Signage: Modern Architectural Slatted Facade"
+        "caption": "Slide 09 // Environmental Studio Signage: Modern Timber-Slatted Facade Integration"
+      },
+      {
+        "url": "assets/threepoint-slide-pattern-tessellation.png",
+        "caption": "Slide 10 // Modular Design Language: Repeating Geometric Structural Node Tessellation Pattern",
+        "fit": "contain",
+        "bg": "#FFFFFF"
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <circle cx=\"20\" cy=\"11\" r=\"3.5\" fill=\"#8B2626\" />\n      <circle cx=\"12\" cy=\"27\" r=\"3.5\" fill=\"#8B2626\" />\n      <circle cx=\"28\" cy=\"27\" r=\"3.5\" fill=\"#8B2626\" />\n      <path d=\"M20 14 C 20 20 14 24 14 24 M 20 20 C 20 20 26 24 26 24\" stroke=\"#8B2626\" stroke-width=\"2.5\" stroke-linecap=\"round\" />\n    </svg>"
@@ -1585,19 +1612,23 @@ const KB_PROJECT_AM = {
     service: "የአርክቴክቸር ብራንድ መለያ እና የጂኦሜትሪክ ዲዛይን ስርዓት",
     location: "አዲስ አበባ፣ ኢትዮጵያ (የKB CREATIVE ስራ)",
     client: "3 ፖይንት ስቱዲዮ (@3point_studio / 3pointstudio.com)",
-    sizeContext: "የአርክቴክቸር ብራንድ ማንነት • የብሉፕሪንት ግሪድ • የቢሮ ካርዶች እና የሳይት አልባሳት • 5 የተመረጡ እይታዎች",
+    sizeContext: "የአርክቴክቸር ብራንድ ማንነት • የብሉፕሪንት ግሪድ • የቢሮ ሰነዶች • ዲጂታል UI እና ሳይት አልባሳት • 10 የተመረጡ እይታዎች",
     role: "ዋና የብራንድ ዲዛይነር እና የፈጠራ ዳይሬክተር (ቃልእግዚአብሔር ፈቀደ • KB CREATIVE)",
     summary: "የሶስት መስራቾችን ትስስር እና የሶስት-ነጥብ ፐርስፔክቲቭ የአርክቴክቸር ንድፍ ፍልስፍናን ያዋሃደ ዘመናዊ የስቱዲዮ ብራንድ መለያ።",
-    description: "3 ፖይንት ስቱዲዮ በአዲስ አበባ፣ ኢትዮጵያ የሚገኝ በአርክቴክቸር ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የውስጥ ዲዛይን እና የግንባታ ሰነዶች ዝግጅት ላይ የተሰማራ ተቋም ነው። የብራንዱ መለያ ሁለት ዋና ዋና ፅንሰ ሀሳቦችን ያዋህዳል፡- የሶስቱን መስራቾች ትብብር እና በአርክቴክቸር ንድፍ ውስጥ ያለውን የ3-ነጥብ ፐርስፔክቲቭ ህግ። ይህ ስራ የጂኦሜትሪክ ግሪድ ንድፍን፣ የተሟላ የቢሮ ካርዶችን ('Turning Vision Into Value')፣ የግንባታ ሳይት የደህንነት ቆቦችን ('Three Points Endless Possibilities') እና የዘመናዊ ህንፃ ፊት ለፊት የመለያ ሰሌዳዎችን ያካትታል።",
+    description: "3 ፖይንት ስቱዲዮ በአዲስ አበባ፣ ኢትዮጵያ የሚገኝ በአርክቴክቸር ንድፍ፣ 3D ቪዥዋላይዜሽን፣ የውስጥ ዲዛይን እና የግንባታ ሰነዶች ዝግጅት ላይ የተሰማራ ተቋም ነው። የብራንዱ መለያ ሁለት ዋና ዋና ፅንሰ ሀሳቦችን ያዋህዳል፡- የሶስቱን መስራቾች ትብብር እና በአርክቴክቸር ንድፍ ውስጥ ያለውን የ3-ነጥብ ፐርስፔክቲቭ ህግ። ይህ ስራ የጂኦሜትሪክ ግሪድ ንድፍን፣ ግዙፍ የኦሌድ ስቱዲዮ ቶተም ማሳያን፣ የተሟላ የቢሮ ሰነዶችንና ማህተምን፣ የአመራር መለያ ባጆችን፣ የዲጂታል ሞባይል UI፣ የግንባታ ሳይት የደህንነት ቆቦችን ('Three Points Endless Possibilities') እና የዘመናዊ ህንፃ ፊት ለፊት የመለያ ሰሌዳዎችን ያካትታል።",
     challenge: "የአርክቴክቸርን ቴክኒካል ጥንቃቄ ከሶስት መስራቾች ወዳጅነት ጋር በማጣመር በማንኛውም የህትመት፣ የዲጂታል እና የግንባታ ሳይት እቃዎች ላይ ግልጽ የሆነ ተጽዕኖ ፈጣሪ ሎጎ ማዘጋጀት።",
-    solution: "በትክክለኛ የክብ እና የከርቭ ስሌት የተሰራ ባለሶስት-አንጓ ጂኦሜትሪክ ሞኖግራም ተቀርጾ፤ በክሪምሰን ኦክሳይድ እና በከሰል ቻርኮል ቀለማት ታጅቦ ለስራ ካርዶች፣ ለሳይት ደህንነት ቆቦች እና ለህንፃ መለያ ሰሌዳዎች በሚመጥን መልኩ ተዘጋጅቷል።",
+    solution: "በትክክለኛ የክብ እና የከርቭ ስሌት የተሰራ ባለሶስት-አንጓ ጂኦሜትሪክ ሞኖግራም ተቀርጾ፤ በክሪምሰን ኦክሳይድ እና በከሰል ቻርኮል ቀለማት ታጅቦ ለስራ ካርዶች፣ ለትልቅ የስቱዲዮ ማሳያዎች፣ ለዲጂታል መተግበሪያዎች፣ ለሳይት ደህንነት ቆቦች እና ለህንፃ መለያ ሰሌዳዎች በሚመጥን መልኩ ተዘጋጅቷል።",
     deliverables: [
       "ዋና ባለሶስት-አንጓ ቬክተር ሞኖግራም እና የስቱዲዮ ስም ጽሁፍ",
+      "ግዙፍ የኦሌድ ስክሪን የስቱዲዮ ቶተም ማሳያ በዘመናዊ አዳራሽ",
+      "የተሟላ የቢሮ ሰነዶች፣ ማህተም፣ ፖስታ እና ብዕሮች ዲዛይን",
       "የጂኦሜትሪክ ግሪድ እና የአርክቴክቸር ፐርስፔክቲቭ ንድፍ ማብራሪያ",
+      "የአመራር የስራ መለያ ባጅ እና የቆዳ አንገት አንጠልጣይ",
       "የስራ መለያ ካርዶች በልዩ ቴክስቸር ('Turning Vision Into Value')",
+      "የዲጂታል ብራንድ ገጽታ እና የስልክ ማሳወቂያ UI",
       "የግንባታ ሳይት የደህንነት ቆብ ብራንዲንግ ('Three Points Endless Possibilities')",
       "የዘመናዊ ህንፃ ፊት ለፊት የስቱዲዮ መለያ ሰሌዳ",
-      "ተደጋጋሚ የብራንድ ፓተርን እና የቀለም አጠቃቀም መመሪያ"
+      "ተደጋጋሚ የብራንድ ሞጁላር ፓተርን እና የቀለም አጠቃቀም መመሪያ"
     ]
   },
   "etcam-creative-advertisement-media": {
@@ -2266,7 +2297,7 @@ function initProjectsArchive() {
           <img src="${currentSlide.url}" alt="${localizedItem.title}" class="carousel-slide-img" id="img-${item.id}" loading="lazy" decoding="async" style="${currentSlide.fit === 'contain' ? `object-fit: contain; background: ${currentSlide.bg || '#041B2B'};`: ''}">
 
           <!-- Slide Counter Badge (01 / 05) -->
-          <span class="slide-counter-badge font-mono" id="counter-${item.id}">0${currentIdx + 1} / 0${totalSlides}</span>
+          <span class="slide-counter-badge font-mono" id="counter-${item.id}">${String(currentIdx + 1).padStart(2, '0')} / ${String(totalSlides).padStart(2, '0')}</span>
 
           <!-- In-Card Slide Navigation Arrows -->
           <button type="button" class="slide-arrow-btn slide-arrow-prev" onclick="changeSlide(event, '${item.id}', -1)" aria-label="Previous view">‹</button>
@@ -2443,8 +2474,9 @@ function updateCardSlide(project, index, isScrubbing = false) {
   // Update Slide Counter (e.g. 02 / 05) with fade-up micro-tick
   if (counterEl) {
     const total = project.slides.length;
+    const formatted = `${String(index + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
     if (isScrubbing) {
-      counterEl.textContent = `0${index + 1} / 0${total}`;
+      counterEl.textContent = formatted;
       counterEl.style.opacity = '1';
       counterEl.style.transform = 'translateY(0)';
     } else {
@@ -2452,7 +2484,7 @@ function updateCardSlide(project, index, isScrubbing = false) {
       counterEl.style.opacity = '0.2';
       counterEl.style.transform = 'translateY(4px)';
       setTimeout(() => {
-        counterEl.textContent = `0${index + 1} / 0${total}`;
+        counterEl.textContent = formatted;
         counterEl.style.opacity = '1';
         counterEl.style.transform = 'translateY(0)';
       }, 90);
@@ -2462,8 +2494,9 @@ function updateCardSlide(project, index, isScrubbing = false) {
   // Update Slide Caption inside hover overlay with synchronized scrub hint
   if (captionEl) {
     const total = project.slides.length;
+    const scrubPrefix = `<span class="scrub-hint">↔ SCRUB [${String(index + 1).padStart(2, '0')}/${String(total).padStart(2, '0')}]:</span>`;
     if (isScrubbing) {
-      captionEl.innerHTML = `<span class="scrub-hint">↔ SCRUB [0${index + 1}/0${total}]:</span> ${slide.caption}`;
+      captionEl.innerHTML = `${scrubPrefix} ${slide.caption}`;
       captionEl.style.opacity = '1';
       captionEl.style.transform = 'translateY(0)';
     } else {
@@ -2472,7 +2505,7 @@ function updateCardSlide(project, index, isScrubbing = false) {
       captionEl.style.transform = 'translateY(8px)';
 
       setTimeout(() => {
-        captionEl.innerHTML = `<span class="scrub-hint">↔ SCRUB [0${index + 1}/0${total}]:</span> ${slide.caption}`;
+        captionEl.innerHTML = `${scrubPrefix} ${slide.caption}`;
         captionEl.style.transition = 'opacity 0.38s cubic-bezier(0.16, 1, 0.3, 1), transform 0.42s cubic-bezier(0.16, 1, 0.3, 1)';
         captionEl.style.opacity = '1';
         captionEl.style.transform = 'translateY(0)';
@@ -2721,7 +2754,7 @@ window.openCaseStudy = function(projectId, triggerEl) {
         ${project.slides.map((s, idx) => `
           <button type="button" class="modal-thumb-btn ${idx === 0 ? 'active' : ''}" onclick="selectModalSlide('${s.url}', '${s.caption.replace(/'/g, "\\'")}', this, '${s.fit || ''}', '${s.bg || ''}', ${idx})" title="${s.caption}">
             <img src="${s.url}" alt="${s.caption}" style="${s.fit === 'contain' ? `object-fit: contain; background: ${s.bg || '#02121D'};`: ''}">
-            <span class="modal-thumb-number font-mono">0${idx + 1}</span>
+            <span class="modal-thumb-number font-mono">${String(idx + 1).padStart(2, '0')}</span>
           </button>
         `).join('')}
       </div>
