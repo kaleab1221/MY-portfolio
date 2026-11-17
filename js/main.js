@@ -295,6 +295,7 @@ const KB_PROJECTS = [
       "High-Rise Premium Residential Unit Plans & Panoramic Penthouse Layouts",
       "Nocturnal Lighting, Aerial Skyline & Pedestrian Plaza Visualization Suite"
     ],
+    "massingImage": "assets/mixed-use-slide-03-axonometric.jpg",
     "slides": [
       {
         "url": "assets/mixed-use-slide-01-daylight.jpg",
@@ -302,11 +303,11 @@ const KB_PROJECTS = [
       },
       {
         "url": "assets/mixed-use-slide-02-night.jpg",
-        "caption": "Slide 02 // Nocturnal Illumination & Evening Architectural Perspective"
+        "caption": "Slide 02 // MENA MALL Nocturnal Illumination & Evening Streetscape Perspective"
       },
       {
         "url": "assets/mixed-use-slide-03-axonometric.jpg",
-        "caption": "Slide 03 // 5-Stage Form Development & MENA MALL Axonometric Massing"
+        "caption": "Slide 03 // MENA MALL Isometric Architectural Clay Rendering & Massing Study"
       },
       {
         "url": "assets/mixed-use-slide-04-atrium.jpg",
