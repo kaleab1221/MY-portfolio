@@ -503,7 +503,70 @@ const KB_PROJECTS = [
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <path d=\"M12 34V14l8-8 8 8v20\" stroke=\"#FFD042\" />\n      <line x1=\"8\" y1=\"34\" x2=\"32\" y2=\"34\" stroke=\"#FFFFFF\" />\n      <line x1=\"16\" y1=\"22\" x2=\"24\" y2=\"22\" stroke=\"#FFD042\" />\n    </svg>"
   },
 
-  // MOD-07: 3 POINT STUDIO
+  // MOD-07: SURA ELECTRONICS
+  {
+    "id": "sura-electronics-brand-identity",
+    "service": "AI Hardware & Tech Brand Identity System",
+    "role": "Lead Brand Identity Designer & Creative Director (KB CREATIVE)",
+    "software": [
+      "Adobe Illustrator",
+      "Adobe Photoshop",
+      "Figma",
+      "Blender"
+    ],
+    "title": "SURA Electronics",
+    "practice": "graphic",
+    "subCategory": "identity",
+    "practiceLabel": "AI Hardware & Corporate Brand Identity",
+    "year": "2026",
+    "gridRef": "MOD-07",
+    "sizeContext": "Hexagonal Lightning Bolt Monogram • AI Platform • 3D LED Exhibition Cube • 5 Perspectives",
+    "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
+    "client": "SURA Electronics (suraelectronics.com)",
+    "scale": "Comprehensive AI-Powered Hardware, IoT Wearable & Corporate Identity Ecosystem",
+    "medium": "Geometric Hexagonal Monogram, Electric Lime (#CCFF00) & Obsidian Carbon (#000000), 3D Corner LED Billboard & OLED Wearable",
+    "summary": "Tech hardware and AI platform visual identity fusing an architectural letter 'S' with a high-voltage lightning energy bolt.",
+    "description": "SURA Electronics is an emerging enterprise technology and AI hardware innovation company specializing in intelligent connected devices, smart energy systems, and enterprise data intelligence platforms. The brand identity fuses the initial 'S' with a sharp, geometric high-voltage lightning bolt housed within a precision hexagonal module. Grounded in obsidian carbon (#000000) and high-visibility electric lime (#CCFF00), the visual identity embodies raw computational power and dynamic electronic flow. The system scales from a monolithic 3D corner LED anamorphic exhibition cube to miniature glowing OLED smart wearable hardware, high-end corporate identity collateral, and sustainable branded merchandise.",
+    "challenge": "Creating an instantly iconic tech mark that unifies the foundational letter 'S' with electrical energy dynamics, capable of reproducing crisply at microscopic scale on physical IoT hardware chips while commanding massive visual presence on 3D architectural anamorphic corner LED displays.",
+    "solution": "Constructed an angled hexagonal prism glyph split by a dual-angled lightning strike, creating two interlocking kinetic facets. Paired high-contrast obsidian black with radioactive electric lime (#CCFF00) and crisp white typography for instantaneous recognition across digital interfaces, physical wearable emblems, and massive scale LED displays.",
+    "deliverables": [
+      "Primary Hexagonal 'S' + Lightning Bolt Logomark & Wordmark",
+      "Logo Concept & Mathematical Matrix (Letter S + Energy Bolt = Monogram)",
+      "Monumental 3D Anamorphic Corner LED Cube Exhibition Display",
+      "Handheld Smart IoT Wearable Device with Luminescent OLED Emblem",
+      "Eco-Friendly Obsidian Canvas Merchandise & Studio Showcase Collateral",
+      "Corporate Typography & High-Visibility Electric Lime Visual Standards"
+    ],
+    "slides": [
+      {
+        "url": "assets/sura-slide-01-logo.png",
+        "caption": "Slide 01 // SURA Electronics — Primary Hexagonal Monogram & Corporate Wordmark",
+        "fit": "contain",
+        "bg": "#000000"
+      },
+      {
+        "url": "assets/sura-slide-02-concept.jpg",
+        "caption": "Slide 02 // Geometric Concept Matrix — Letter 'S' + Lightning Bolt Energy Fusion",
+        "fit": "contain",
+        "bg": "#000000"
+      },
+      {
+        "url": "assets/sura-slide-03-led-cube.jpg",
+        "caption": "Slide 03 // Monumental 3D Corner LED Anamorphic Cube & Tech Exhibition Pavillion"
+      },
+      {
+        "url": "assets/sura-slide-04-device.jpg",
+        "caption": "Slide 04 // Handheld Smart IoT Wearable Device with Luminescent OLED Emblem"
+      },
+      {
+        "url": "assets/sura-slide-05-totebag.jpg",
+        "caption": "Slide 05 // Sustainable Obsidian Canvas Tote Bag & Studio Spotlight Showcase"
+      }
+    ],
+    "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <polygon points=\"20 4 34 12 34 28 20 36 6 28 6 12\" stroke=\"#CCFF00\" />\n      <polyline points=\"22 10 16 20 23 20 18 30\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n    </svg>"
+  },
+
+  // MOD-08: 3 POINT STUDIO
   {
     "id": "threepoint-studio-brand-identity",
     "service": "Architectural Brand Identity & Geometric Design System",
@@ -1339,6 +1402,35 @@ const projectSlideIndexes = {};
    AUTHENTIC AMHARIC LOCALIZATION DATA FOR ALL 17 CURATED WORKS
    ========================================================================== */
 const KB_PROJECT_AM = {
+  "sura-electronics-brand-identity": {
+    service: "የአርቴፊሻል ኢንተለጀንስ ሃርድዌር እና የቴክኖሎጂ ብራንድ መለያ",
+    title: "ሱራ ኤሌክትሮኒክስ (SURA Electronics)",
+    practiceLabel: "የቴክኖሎጂ እና የኮርፖሬት ብራንድ መለያ ስርዓት",
+    sizeContext: "ባለ 6-ማዕዘን የሃይል መብረቅ ሞኖግራም • የኤአይ ፕላትፎርም • 3D ኤግዚቢሽን ኪዩብ • 5 እይታዎች",
+    location: "አዲስ አበባ፣ ኢትዮጵያ (KB CREATIVE)",
+    client: "ሱራ ኤሌክትሮኒክስ (suraelectronics.com)",
+    scale: "አጠቃላይ የቴክኖሎጂ ሃርድዌር፣ አይኦቲ (IoT) ስማርት መሳሪያ እና የኮርፖሬት መለያ",
+    medium: "ጂኦሜትሪክ ባለ 6-ማዕዘን ሞኖግራም፣ ኤሌክትሪክ ላይም (#CCFF00) እና ጥቁር ካርቦን (#000000)",
+    summary: "የ'S' ፊደልን ከከፍተኛ የኤሌክትሪክ መብረቅ ሃይል ጋር በማዋሃድ የተሰራ ዘመናዊ የቴክኖሎጂ እና ኤአይ ብራንድ መለያ።",
+    description: "ሱራ ኤሌክትሮኒክስ (SURA Electronics) በአዲስ አበባ ኢትዮጵያ የተመሰረተ በዘመናዊ አርቴፊሻል ኢንተለጀንስ ሃርድዌር፣ ስማርት የተገናኙ መሳሪያዎች እና የዳታ ፕላትፎርም ላይ የተሰማራ የቴክኖሎጂ ኩባንያ ነው። የብራንድ መለያው የመነሻ ፊደል 'S'ን ከከፍተኛ የኤሌክትሪክ መብረቅ ሃይል ጋር በባለ 6-ማዕዘን (Hexagon) ቅርጽ ውስጥ በማዋሃድ የተሰራ ነው። በጥቁር ካርቦን እና ደማቅ ኤሌክትሪክ ላይም አረንጓዴ ቀለም ላይ የተመሰረተው ይህ መለያ ከትላልቅ 3D የኮርነር ኤልኢዲ ቢልቦርዶች ጀምሮ በትንንሽ ስማርት አይኦቲ መግብሮች፣ የድርጅት ሰነዶች እና ብራንድ የተደረጉ እቃዎች ላይ በከፍተኛ ጥራት ይታያል።",
+    challenge: "የ'S' ፊደልን እና የኤሌክትሪክ ሃይልን አንድ ላይ በማቀናጀት በትንንሽ ስማርት የቴክኖሎጂ ቺፖች ላይ ሳይደበዝዝ የሚታይ እንዲሁም በግዙፍ የ3D ኤልኢዲ ስክሪኖች ላይ አስደናቂ ሆኖ የሚታይ አይኮኒክ የቴክኖሎጂ ምልክት መፍጠር።",
+    solution: "ባለ 6-ማዕዘን ቅርፅን በመብረቅ ምልክት ለሁለት በመክፈል ሁለት ተለዋዋጭ ክፍሎችን መፍጠር። ከፍተኛ ንፅፅር ያለው ጥቁር ቀለም ከደማቅ ኤሌክትሪክ ላይም (#CCFF00) እና ንጹህ ነጭ ፊደላት ጋር በማጣመር በማንኛውም ዲጂታል እና አካላዊ ሚዲያ ላይ ወዲያውኑ የሚታወቅ ዲዛይን ማዘጋጀት።",
+    deliverables: [
+      "ዋና ባለ 6-ማዕዘን 'S' + የመብረቅ ምልክት ሎጎ እና ጽሁፍ",
+      "የሎጎ ጽንሰ-ሀሳብ ማትሪክስ (ፊደል S + የመብረቅ ሃይል = ሎጎ)",
+      "ግዙፍ የ 3D ኮርነር ኤልኢዲ አናሞርፊክ ኤግዚቢሽን ኪዩብ",
+      "በእጅ የሚያዝ ስማርት የአይኦቲ (IoT) መሳሪያ ከሚያበራ የኦኤልኢዲ አርማ ጋር",
+      "ለአካባቢ ተስማሚ የሆነ ጥቁር የሸራ ቦርሳ እና የቢሮ እቃዎች",
+      "የኮርፖሬት ፊደላት እና የኤሌክትሪክ ላይም የእይታ መመሪያዎች"
+    ],
+    slides: [
+      { caption: "እይታ 01 // ሱራ ኤሌክትሮኒክስ — ዋና ባለ 6-ማዕዘን ሞኖግራም እና የኩባንያው ሎጎ", fit: "contain", bg: "#000000" },
+      { caption: "እይታ 02 // የጂኦሜትሪክ ጽንሰ-ሀሳብ ማትሪክስ — ፊደል 'S' + የመብረቅ ሃይል ውህደት", fit: "contain", bg: "#000000" },
+      { caption: "እይታ 03 // ግዙፍ 3D ኮርነር ኤልኢዲ አናሞርፊክ ኪዩብ የቴክኖሎጂ ኤግዚቢሽን" },
+      { caption: "እይታ 04 // በእጅ የሚያዝ ስማርት የአይኦቲ (IoT) መሳሪያ ከሚያበራ የኦኤልኢዲ አርማ ጋር" },
+      { caption: "እይታ 05 // ለአካባቢ ተስማሚ የሆነ ጥቁር የሸራ ቦርሳ እና የዲዛይን እቃዎች" }
+    ]
+  },
   "kara-g2-family-residence": {
     title: "የG+2 ቤተሰብ መኖሪያ ቤት",
     service: "የG+2+ቴራስ መኖሪያ ቤት አርክቴክቸር እና የተፈጥሮ ብርሃን ሲሙሌሽን",
@@ -1767,7 +1859,7 @@ const KB_I18N = {
     
     // Mobile Drawer
     mob_sub_about: "Studio Direction & Spatial Pedagogy",
-    mob_sub_works: "17 Curated Projects • Spatial & Brand",
+    mob_sub_works: "18 Curated Projects • Spatial & Brand",
     mob_sub_skills: "8 Software Tools • Multilingual Fluency",
     mob_sub_faq: "Process & Clarifications Page",
     mob_sub_contact: "Direct Telegram, Phone & Proposal",
@@ -1782,17 +1874,17 @@ const KB_I18N = {
     avail_tag: "CURRENT AVAILABILITY // 2026 COMMISSIONS",
     avail_body: `Available for select 2026 client commissions: residential villas, interior spaces, photorealistic CGI, and full brand identity packages.`,
     hero_cv: "Download Portfolio PDF",
-    hero_explore: "Explore 17 Curated Projects",
+    hero_explore: "Explore 18 Curated Projects",
     
     // Hero Stats
     stat_student: "Spatial & Brand Design",
     stat_studies: "Curated Case Studies",
 
     // Practice Filter Pills
-    filter_all: "All Projects (17)",
+    filter_all: "All Projects (18)",
     filter_arch: "Spatial Architecture (04)",
     filter_vis: "3D Visualization (04)",
-    filter_brand: "Brand Identity (13)",
+    filter_brand: "Brand Identity (14)",
     sub_all: "All Typologies",
     sub_interior: "Interior & Renovation",
     sub_mixeduse: "Mixed-Use",
@@ -1805,7 +1897,7 @@ const KB_I18N = {
     chap_01: "CHAPTER 01 // ARCHITECTURAL & BRAND CHRONICLE",
     archive_title: "PORTFOLIO ARCHIVE",
     editorial_title: "Curated Architectural & Graphic Projects",
-    editorial_desc: "17 curated projects spanning Spatial Architecture, Photorealistic 3D Visualization, and Corporate Brand Identity Systems.",
+    editorial_desc: "18 curated projects spanning Spatial Architecture, Photorealistic 3D Visualization, and Corporate Brand Identity Systems.",
     view_case_study: "View Case Study",
 
     // Skills Section
@@ -1869,8 +1961,8 @@ const KB_I18N = {
     inquiry_submit: "Transmit Proposal To KB CREATIVE →",
     empty_void_tag: "00 // VOID SPECIFICATION",
     empty_void_title: "No projects match the selected filter combination",
-    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 17 curated projects.",
-    empty_reset_btn: "Reset Filters (Show All 17 Projects) →",
+    empty_void_desc: "Clear your sub-category selection or switch practice typologies to explore all 18 curated projects.",
+    empty_reset_btn: "Reset Filters (Show All 18 Projects) →",
     mob_lang_label: "LANG:",
     mob_theme_label: "THEME:",
     footer_rights: "© 2026 KB CREATIVE. All rights reserved.",
@@ -1915,7 +2007,7 @@ const KB_I18N = {
     
     // Mobile Drawer
     mob_sub_about: "የስራ ፍልስፍና እና የስቱዲዮ መረጃ",
-    mob_sub_works: "17 የተመረጡ ፕሮጀክቶች • ህንፃ እና ብራንድ ዲዛይን",
+    mob_sub_works: "18 የተመረጡ ፕሮጀክቶች • ህንፃ እና ብራንድ ዲዛይን",
     mob_sub_skills: "8 የሶፍትዌር መተግበሪያዎች • ቋንቋዎች",
     mob_sub_faq: "የአሰራር ሂደት እና ማብራሪያዎች ገጽ",
     mob_sub_contact: "ቴሌግራም፣ ስልክ እና የፕሮፖዛል ጥያቄ",
@@ -1930,17 +2022,17 @@ const KB_I18N = {
     avail_tag: "የስራ ዝግጁነት // የ2026 ስራዎች",
     avail_body: `ለ2026 የተመረጡ ስራዎች ክፍት ነኝ፦ የመኖሪያ ቪላዎች፣ የውስጥ እድሳት፣ 3D ቪዥዋላይዜሽን እና የተሟላ የብራንድ መለያ ዲዛይን።`,
     hero_cv: "ፖርትፎሊዮ ያውርዱ",
-    hero_explore: "17 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
+    hero_explore: "18 የተመረጡ ፕሮጀክቶችን ይመልከቱ",
     
     // Hero Stats
     stat_student: "የቦታ እና ብራንድ ዲዛይን",
     stat_studies: "የተመረጡ ስራዎች",
 
     // Practice Filter Pills
-    filter_all: "ሁሉም ፕሮጀክቶች (17)",
+    filter_all: "ሁሉም ፕሮጀክቶች (18)",
     filter_arch: "አርክቴክቸር (04)",
     filter_vis: "3D ቪዥዋላይዜሽን (04)",
-    filter_brand: "የብራንድ መለያ (13)",
+    filter_brand: "የብራንድ መለያ (14)",
     sub_all: "ሁሉም አይነቶች",
     sub_interior: "የውስጥ ዲዛይን እና እድሳት",
     sub_mixeduse: "የተደባለቀ አገልግሎት",
@@ -1953,7 +2045,7 @@ const KB_I18N = {
     chap_01: "ክፍል 01 // የአርክቴክቸር እና የብራንድ ስራዎች",
     archive_title: "የስራዎች ማህደር",
     editorial_title: "የተመረጡ የአርክቴክቸር እና ግራፊክ ዲዛይን ፕሮጀክቶች",
-    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 17 የተመረጡ ፕሮጀክቶች።",
+    editorial_desc: "የቦታ አርክቴክቸርን፣ የቀንና የምሽት 3D ቪዥዋላይዜሽንን እና ሞኖሊቲክ የኮርፖሬት ብራንድ መለያዎችን ያካተቱ 18 የተመረጡ ፕሮጀክቶች።",
     view_case_study: "ዝርዝር ይመልከቱ",
 
     // Skills Section
@@ -2017,8 +2109,8 @@ const KB_I18N = {
     inquiry_submit: "ፕሮፖዛሉን ለKB CREATIVE ይላኩ →",
     empty_void_tag: "00 // ምንም ውጤት አልተገኘም",
     empty_void_title: "ከተመረጠው መስፈርት ጋር የሚዛመድ ስራ የለም",
-    empty_void_desc: "ሁሉንም 17 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
-    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 17 ስራዎች አሳይ) →",
+    empty_void_desc: "ሁሉንም 18 ስራዎች ለማየት ማጣሪያውን ያጽዱ።",
+    empty_reset_btn: "ማጣሪያውን አጽዳ (ሁሉንም 18 ስራዎች አሳይ) →",
     mob_lang_label: "ቋንቋ:",
     mob_theme_label: "ገጽታ:",
     footer_rights: "© 2026 KB CREATIVE. መብቱ በህግ የተጠበቀ ነው።",
