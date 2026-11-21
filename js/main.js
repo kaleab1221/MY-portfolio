@@ -520,7 +520,7 @@ const KB_PROJECTS = [
     "practiceLabel": "AI Hardware & Corporate Brand Identity",
     "year": "2026",
     "gridRef": "MOD-07",
-    "sizeContext": "Hexagonal Lightning Bolt Monogram • AI Platform • 3D LED Exhibition Cube • 5 Perspectives",
+    "sizeContext": "Hexagonal Lightning Bolt Monogram • Dual-Tone Business Cards • Tactical Gear • 7 Perspectives",
     "location": "Addis Ababa, Ethiopia (KB CREATIVE Commission)",
     "client": "SURA Electronics (suraelectronics.com)",
     "scale": "Comprehensive AI-Powered Hardware, IoT Wearable & Corporate Identity Ecosystem",
@@ -532,6 +532,8 @@ const KB_PROJECTS = [
     "deliverables": [
       "Primary Hexagonal 'S' + Lightning Bolt Logomark & Wordmark",
       "Logo Concept & Mathematical Matrix (Letter S + Energy Bolt = Monogram)",
+      "Dual-Tone Executive Business Cards with Amharic & English Typography and QR Code",
+      "Field Hardware Technician Tactical Utility Vest & High-Visibility Apparel",
       "Monumental 3D Anamorphic Corner LED Cube Exhibition Display",
       "Handheld Smart IoT Wearable Device with Luminescent OLED Emblem",
       "Eco-Friendly Obsidian Canvas Merchandise & Studio Showcase Collateral",
@@ -551,16 +553,24 @@ const KB_PROJECTS = [
         "bg": "#000000"
       },
       {
+        "url": "assets/sura-slide-06-business-cards.jpg",
+        "caption": "Slide 03 // Executive Dual-Tone Business Cards — Surafel Gizaw (General Manager) • Amharic & English Collateral"
+      },
+      {
+        "url": "assets/sura-slide-07-tactical-vest.jpg",
+        "caption": "Slide 04 // Field Hardware Technician Tactical Utility Vest & High-Visibility Engineering Apparel"
+      },
+      {
         "url": "assets/sura-slide-03-led-cube.jpg",
-        "caption": "Slide 03 // Monumental 3D Corner LED Anamorphic Cube & Tech Exhibition Pavillion"
+        "caption": "Slide 05 // Monumental 3D Corner LED Anamorphic Cube & Tech Exhibition Pavillion"
       },
       {
         "url": "assets/sura-slide-04-device.jpg",
-        "caption": "Slide 04 // Handheld Smart IoT Wearable Device with Luminescent OLED Emblem"
+        "caption": "Slide 06 // Handheld Smart IoT Wearable Device with Luminescent OLED Emblem"
       },
       {
         "url": "assets/sura-slide-05-totebag.jpg",
-        "caption": "Slide 05 // Sustainable Obsidian Canvas Tote Bag & Studio Spotlight Showcase"
+        "caption": "Slide 07 // Sustainable Obsidian Canvas Tote Bag & Studio Spotlight Showcase"
       }
     ],
     "iconSvg": "<svg viewBox=\"0 0 40 40\" width=\"28\" height=\"28\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\">\n      <polygon points=\"20 4 34 12 34 28 20 36 6 28 6 12\" stroke=\"#CCFF00\" />\n      <polyline points=\"22 10 16 20 23 20 18 30\" stroke=\"#FFFFFF\" stroke-linecap=\"round\" stroke-linejoin=\"round\" />\n    </svg>"
@@ -1406,18 +1416,20 @@ const KB_PROJECT_AM = {
     service: "የአርቴፊሻል ኢንተለጀንስ ሃርድዌር እና የቴክኖሎጂ ብራንድ መለያ",
     title: "ሱራ ኤሌክትሮኒክስ (SURA Electronics)",
     practiceLabel: "የቴክኖሎጂ እና የኮርፖሬት ብራንድ መለያ ስርዓት",
-    sizeContext: "ባለ 6-ማዕዘን የሃይል መብረቅ ሞኖግራም • የኤአይ ፕላትፎርም • 3D ኤግዚቢሽን ኪዩብ • 5 እይታዎች",
+    sizeContext: "ባለ 6-ማዕዘን የሃይል መብረቅ ሞኖግራም • ባለሁለት ቀለም የቢዝነስ ካርድ • የመስክ ቴክኒሻን ልብስ • 7 እይታዎች",
     location: "አዲስ አበባ፣ ኢትዮጵያ (KB CREATIVE)",
     client: "ሱራ ኤሌክትሮኒክስ (suraelectronics.com)",
     scale: "አጠቃላይ የቴክኖሎጂ ሃርድዌር፣ አይኦቲ (IoT) ስማርት መሳሪያ እና የኮርፖሬት መለያ",
     medium: "ጂኦሜትሪክ ባለ 6-ማዕዘን ሞኖግራም፣ ኤሌክትሪክ ላይም (#CCFF00) እና ጥቁር ካርቦን (#000000)",
     summary: "የ'S' ፊደልን ከከፍተኛ የኤሌክትሪክ መብረቅ ሃይል ጋር በማዋሃድ የተሰራ ዘመናዊ የቴክኖሎጂ እና ኤአይ ብራንድ መለያ።",
-    description: "ሱራ ኤሌክትሮኒክስ (SURA Electronics) በአዲስ አበባ ኢትዮጵያ የተመሰረተ በዘመናዊ አርቴፊሻል ኢንተለጀንስ ሃርድዌር፣ ስማርት የተገናኙ መሳሪያዎች እና የዳታ ፕላትፎርም ላይ የተሰማራ የቴክኖሎጂ ኩባንያ ነው። የብራንድ መለያው የመነሻ ፊደል 'S'ን ከከፍተኛ የኤሌክትሪክ መብረቅ ሃይል ጋር በባለ 6-ማዕዘን (Hexagon) ቅርጽ ውስጥ በማዋሃድ የተሰራ ነው። በጥቁር ካርቦን እና ደማቅ ኤሌክትሪክ ላይም አረንጓዴ ቀለም ላይ የተመሰረተው ይህ መለያ ከትላልቅ 3D የኮርነር ኤልኢዲ ቢልቦርዶች ጀምሮ በትንንሽ ስማርት አይኦቲ መግብሮች፣ የድርጅት ሰነዶች እና ብራንድ የተደረጉ እቃዎች ላይ በከፍተኛ ጥራት ይታያል።",
+    description: "ሱራ ኤሌክትሮኒክስ (SURA Electronics) በአዲስ አበባ ኢትዮጵያ የተመሰረተ በዘመናዊ አርቴፊሻል ኢንተለጀንስ ሃርድዌር፣ ስማርት የተገናኙ መሳሪያዎች እና የዳታ ፕላትፎርም ላይ የተሰማራ የቴክኖሎጂ ኩባንያ ነው። የብራንድ መለያው የመነሻ ፊደል 'S'ን ከከፍተኛ የኤሌክትሪክ መብረቅ ሃይል ጋር በባለ 6-ማዕዘን (Hexagon) ቅርጽ ውስጥ በማዋሃድ የተሰራ ነው። በጥቁር ካርቦን እና ደማቅ ኤሌክትሪክ ላይም አረንጓዴ ቀለም ላይ የተመሰረተው ይህ መለያ ከትላልቅ 3D የኮርነር ኤልኢዲ ቢልቦርዶች ጀምሮ በትንንሽ ስማርት አይኦቲ መግብሮች፣ የድርጅት ሰነዶች፣ የመስክ ቴክኒሻን ታክቲካል ልብሶች እና ብራንድ የተደረጉ እቃዎች ላይ በከፍተኛ ጥራት ይታያል።",
     challenge: "የ'S' ፊደልን እና የኤሌክትሪክ ሃይልን አንድ ላይ በማቀናጀት በትንንሽ ስማርት የቴክኖሎጂ ቺፖች ላይ ሳይደበዝዝ የሚታይ እንዲሁም በግዙፍ የ3D ኤልኢዲ ስክሪኖች ላይ አስደናቂ ሆኖ የሚታይ አይኮኒክ የቴክኖሎጂ ምልክት መፍጠር።",
     solution: "ባለ 6-ማዕዘን ቅርፅን በመብረቅ ምልክት ለሁለት በመክፈል ሁለት ተለዋዋጭ ክፍሎችን መፍጠር። ከፍተኛ ንፅፅር ያለው ጥቁር ቀለም ከደማቅ ኤሌክትሪክ ላይም (#CCFF00) እና ንጹህ ነጭ ፊደላት ጋር በማጣመር በማንኛውም ዲጂታል እና አካላዊ ሚዲያ ላይ ወዲያውኑ የሚታወቅ ዲዛይን ማዘጋጀት።",
     deliverables: [
       "ዋና ባለ 6-ማዕዘን 'S' + የመብረቅ ምልክት ሎጎ እና ጽሁፍ",
       "የሎጎ ጽንሰ-ሀሳብ ማትሪክስ (ፊደል S + የመብረቅ ሃይል = ሎጎ)",
+      "ባለ ሁለት ቀለም የድርጅት የስራ መታወቂያ ካርድ (አማርኛ እና እንግሊዝኛ) ከQR ኮድ ጋር",
+      "የሃርድዌር ቴክኒሻኖች የስራ ላይ ታክቲካል ጃኬት እና የደህንነት ልብስ",
       "ግዙፍ የ 3D ኮርነር ኤልኢዲ አናሞርፊክ ኤግዚቢሽን ኪዩብ",
       "በእጅ የሚያዝ ስማርት የአይኦቲ (IoT) መሳሪያ ከሚያበራ የኦኤልኢዲ አርማ ጋር",
       "ለአካባቢ ተስማሚ የሆነ ጥቁር የሸራ ቦርሳ እና የቢሮ እቃዎች",
@@ -1426,9 +1438,11 @@ const KB_PROJECT_AM = {
     slides: [
       { caption: "እይታ 01 // ሱራ ኤሌክትሮኒክስ — ዋና ባለ 6-ማዕዘን ሞኖግራም እና የኩባንያው ሎጎ", fit: "contain", bg: "#000000" },
       { caption: "እይታ 02 // የጂኦሜትሪክ ጽንሰ-ሀሳብ ማትሪክስ — ፊደል 'S' + የመብረቅ ሃይል ውህደት", fit: "contain", bg: "#000000" },
-      { caption: "እይታ 03 // ግዙፍ 3D ኮርነር ኤልኢዲ አናሞርፊክ ኪዩብ የቴክኖሎጂ ኤግዚቢሽን" },
-      { caption: "እይታ 04 // በእጅ የሚያዝ ስማርት የአይኦቲ (IoT) መሳሪያ ከሚያበራ የኦኤልኢዲ አርማ ጋር" },
-      { caption: "እይታ 05 // ለአካባቢ ተስማሚ የሆነ ጥቁር የሸራ ቦርሳ እና የዲዛይን እቃዎች" }
+      { caption: "እይታ 03 // ባለ ሁለት ቀለም የስራ መታወቂያ ካርድ — ሱራፌል ግዛው (ስራ አስኪያጅ) • አማርኛ እና እንግሊዝኛ" },
+      { caption: "እይታ 04 // የመስክ ሃርድዌር ቴክኒሻኖች የስራ ላይ ታክቲካል ጃኬት እና የደህንነት ልብስ" },
+      { caption: "እይታ 05 // ግዙፍ 3D ኮርነር ኤልኢዲ አናሞርፊክ ኪዩብ የቴክኖሎጂ ኤግዚቢሽን" },
+      { caption: "እይታ 06 // በእጅ የሚያዝ ስማርት የአይኦቲ (IoT) መሳሪያ ከሚያበራ የኦኤልኢዲ አርማ ጋር" },
+      { caption: "እይታ 07 // ለአካባቢ ተስማሚ የሆነ ጥቁር የሸራ ቦርሳ እና የዲዛይን እቃዎች" }
     ]
   },
   "kara-g2-family-residence": {
