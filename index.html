@@ -79,7 +79,7 @@
   }
   </script>
 
-  <!-- Always Scroll to Top on Page Reload -->
+  <!-- Always Scroll to Top on Page Reload & Restore Preferences Pre-Paint -->
   <script>
     if ('scrollRestoration' in history) {
       history.scrollRestoration = 'manual';
@@ -93,19 +93,27 @@
       }
       window.scrollTo(0, 0);
     }
+    try {
+      var _storedTheme = localStorage.getItem('kb_theme');
+      if (_storedTheme === 'dark' || _storedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', _storedTheme);
+      }
+      var _storedLang = localStorage.getItem('kb_lang');
+      if (_storedLang === 'am' || _storedLang === 'en') {
+        document.documentElement.lang = _storedLang;
+      }
+    } catch (e) {}
   </script>
 
   <!-- Preload Critical Logo Asset to Eliminate Layout Shift & Accelerate Initial Paint -->
   <link rel="preload" as="image" href="assets/kb-logo.png" type="image/png">
 
-  <!-- High-Performance Typography: Streamlined font weights + non-render-blocking font loading -->
+  <!-- Zero-FOUT Typography: Direct Synchronous Loading + Full Weight Spectrum (400-800) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap" media="print" onload="this.media='all'">
-  <noscript>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&family=Noto+Sans+Ethiopic:wght@500;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Space+Grotesk:wght@500;700&display=swap">
-  </noscript>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+Ethiopic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap">
 
   <!-- Core Stylesheet: Pure White Light Mode, Brand Navy (#044771) & Gold (#FFD042), Swiss Modular Grid -->
   <link rel="stylesheet" href="css/styles.css">
